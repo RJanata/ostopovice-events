@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Správa akcí</title>
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/theme.js"></script>
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="site-header__title">
+        <h1>Správa akcí</h1>
+        <p class="site-header__lead">Přejmenování, kategorie a skrytí akcí. Změny se uloží do repozitáře a web se do pár minut přegeneruje.</p>
+      </div>
+      <div class="site-header__actions">
+        <a class="button button--ghost" href="./">← Zpět na kalendář</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="admin-box" id="token-box">
+      <h2>Přístup</h2>
+      <p class="admin-help">
+        Ukládání potřebuje GitHub token s právem zápisu do repozitáře <code id="repo-name"></code>.
+        Vytvoříte ho na GitHubu: Settings → Developer settings → Fine-grained tokens → Generate new token,
+        <em>Repository access</em>: jen tento repozitář, <em>Permissions → Contents</em>: Read and write.
+        Token se uloží jen v tomto prohlížeči.
+      </p>
+      <form class="admin-token" id="token-form">
+        <input type="password" id="token-input" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+        <button type="submit" class="button">Uložit token</button>
+        <button type="button" class="button button--ghost" id="token-forget" hidden>Zapomenout token</button>
+      </form>
+      <p class="admin-status" id="token-status"></p>
+    </section>
+
+    <section class="admin-box">
+      <div class="admin-tools">
+        <label class="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input type="search" id="admin-search" placeholder="Hledat akci…" autocomplete="off">
+        </label>
+        <select id="admin-source" class="admin-select"><option value="">Všechny zdroje</option></select>
+        <label class="admin-check"><input type="checkbox" id="admin-upcoming" checked> Jen nadcházející</label>
+        <label class="admin-check"><input type="checkbox" id="admin-changed"> Jen upravené</label>
+      </div>
+      <p class="admin-status" id="admin-message" role="status"></p>
+      <div id="admin-list"><p class="empty">Načítám akce…</p></div>
+    </section>
+  </main>
+
+  <template id="edit-form">
+    <form class="admin-edit">
+      <label class="admin-field">
+        <span>Název</span>
+        <input type="text" name="title">
+        <small class="admin-original"></small>
+      </label>
+      <fieldset class="admin-field">
+        <legend><label class="admin-check"><input type="checkbox" name="customCategories"> Vlastní kategorie</label></legend>
+        <div class="admin-categories"></div>
+        <small>Bez zaškrtnutí se kategorie určují automaticky podle pravidel.</small>
+      </fieldset>
+      <label class="admin-check"><input type="checkbox" name="hidden"> Skrýt akci (na webu ani v kalendářích se nezobrazí)</label>
+      <fieldset class="admin-field admin-scope" hidden>
+        <legend>Platí pro</legend>
+        <label class="admin-check"><input type="radio" name="scope" value="series"> <span class="admin-scope-series"></span></label>
+        <label class="admin-check"><input type="radio" name="scope" value="event"> jen tento termín</label>
+      </fieldset>
+      <div class="admin-actions">
+        <button type="submit" class="button">Uložit</button>
+        <button type="button" class="button button--ghost" data-action="cancel">Zrušit</button>
+        <button type="button" class="link-button admin-reset" data-action="reset">Vrátit původní stav</button>
+      </div>
+    </form>
+  </template>
+</body>
+</html>
