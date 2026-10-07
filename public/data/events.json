@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T23:16:48.013Z",
+ "generatedAt": "2026-10-07T23:29:55.625Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -10,7 +10,8 @@
    "color": "#c8102e",
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
-   "lastSuccess": "2026-10-07T23:16:48.013Z",
+   "adminRefresh": false,
+   "lastSuccess": "2026-10-07T23:29:55.625Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -23,7 +24,8 @@
    "color": "#e8490f",
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
-   "lastSuccess": "2026-10-07T23:16:48.013Z",
+   "adminRefresh": false,
+   "lastSuccess": "2026-10-07T23:29:55.625Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -36,7 +38,8 @@
    "color": "#2f6b47",
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
-   "lastSuccess": "2026-10-07T23:16:48.013Z",
+   "adminRefresh": false,
+   "lastSuccess": "2026-10-07T23:29:55.625Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -49,7 +52,8 @@
    "color": "#8a3a66",
    "link": null,
    "display": "dayLabel",
-   "lastSuccess": "2026-10-07T23:16:48.013Z",
+   "adminRefresh": false,
+   "lastSuccess": "2026-10-07T23:29:55.625Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -62,10 +66,11 @@
    "color": "#b06b12",
    "link": null,
    "display": "events",
-   "lastSuccess": "2026-10-07T23:16:48.013Z",
+   "adminRefresh": true,
+   "lastSuccess": "2026-10-07T23:29:55.625Z",
    "ok": true,
    "error": null,
-   "count": 7
+   "count": 6
   }
  ],
  "categories": [
@@ -3412,22 +3417,6 @@
    "categories": [
     "sport"
    ]
-  },
-  {
-   "id": "pripravovane-wr1n",
-   "source": "pripravovane",
-   "title": "Testovaci udalost",
-   "start": "2026-10-11",
-   "end": "2026-10-11",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "hidden": true
   },
   {
    "id": "knihovna-u5if78",
