@@ -30,7 +30,8 @@
       <p class="admin-help">
         Ukládání potřebuje GitHub token s právem zápisu do repozitáře <code id="repo-name"></code>.
         Vytvoříte ho na GitHubu: Settings → Developer settings → Fine-grained tokens → Generate new token,
-        <em>Repository access</em>: jen tento repozitář, <em>Permissions → Contents</em>: Read and write.
+        <em>Repository access</em>: jen tento repozitář, <em>Permissions</em>: <strong>Contents</strong> a <strong>Actions</strong> – obojí Read and write
+        (Actions je potřeba jen pro tlačítko „Znovu načíst kalendáře“).
         Token se uloží jen v tomto prohlížeči.
       </p>
       <form class="admin-token" id="token-form">
@@ -39,6 +40,18 @@
         <button type="button" class="button button--ghost" id="token-forget" hidden>Zapomenout token</button>
       </form>
       <p class="admin-status" id="token-status"></p>
+    </section>
+
+    <section class="admin-box">
+      <h2>Aktualizace</h2>
+      <p class="admin-help">Kalendáře se načítají automaticky 3× denně. Když potřebujete změnu ze zdrojů hned
+        (třeba nově přidanou akci v Google kalendáři), spusťte načtení ručně – trvá zhruba 1–2 minuty.</p>
+      <div class="admin-actions">
+        <button type="button" class="button" data-refresh="">Znovu načíst všechny kalendáře</button>
+        <span id="refresh-single"></span>
+        <span class="admin-status" id="refresh-status"></span>
+      </div>
+      <p class="admin-help admin-last-update">Poslední aktualizace dat: <span id="last-update">–</span></p>
     </section>
 
     <section class="admin-box">
@@ -62,6 +75,11 @@
         <span>Název</span>
         <input type="text" name="title">
         <small class="admin-original"></small>
+      </label>
+      <label class="admin-field">
+        <span>Místo / adresa</span>
+        <input type="text" name="location">
+        <small class="admin-original-location"></small>
       </label>
       <fieldset class="admin-field">
         <legend><label class="admin-check"><input type="checkbox" name="customCategories"> Vlastní kategorie</label></legend>

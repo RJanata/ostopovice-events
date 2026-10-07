@@ -1,5 +1,5 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde).",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje.",
   "sources": [
     {
       "id": "obec",
@@ -85,7 +85,8 @@
       "categories": [],
       "fallbackCategories": [],
       "link": null,
-      "$comment": "Zástupné akce pro budoucí události. Je poslední v pořadí, takže když stejnou akci (stejný název a den) vypíše skutečný zdroj, zobrazí se ta skutečná."
+      "$comment": "Zástupné akce pro budoucí události. Je poslední v pořadí, takže když stejnou akci (stejný název a den) vypíše skutečný zdroj, zobrazí se ta skutečná.",
+      "adminRefresh": true
     }
   ]
 }

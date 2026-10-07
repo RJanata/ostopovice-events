@@ -5,6 +5,11 @@ on:
     # UTC: v létě 6:15, 12:15, 18:15 pražského času, v zimě o hodinu dřív
     - cron: '15 4,10,16 * * *'
   workflow_dispatch:
+    inputs:
+      only:
+        description: 'Načíst jen jeden zdroj (id ze config/sources.json, prázdné = všechny)'
+        required: false
+        default: ''
   push:
     branches: [main]
 
@@ -34,7 +39,14 @@ jobs:
       - run: npm ci
 
       - name: Stažení akcí ze zdrojů
-        run: npm run collect
+        env:
+          ONLY_SOURCE: ${{ github.event.inputs.only }}
+        run: |
+          if [ -n "$ONLY_SOURCE" ]; then
+            npm run collect -- "--only=$ONLY_SOURCE"
+          else
+            npm run collect
+          fi
 
       # Commit jen když se změnily samotné akce (ne jen čas aktualizace) —
       # v repu je tak i archiv proběhlých akcí, které zdroje už nevypisují.

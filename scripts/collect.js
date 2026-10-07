@@ -78,6 +78,10 @@ function applySourceRules(event, source, rules) {
     e.title = e.originalTitle;
     delete e.originalTitle;
   }
+  if ('originalLocation' in e) {
+    e.location = e.originalLocation;
+    delete e.originalLocation;
+  }
   const hide = source.hideLocations || [];
   if (e.location && hide.some((pattern) => new RegExp(pattern, 'i').test(e.location))) e.location = '';
   e.categories = categorize(e, source, rules);
@@ -97,6 +101,7 @@ function applyOverrides(event, overrides) {
   if (!Object.keys(changes).length) return event;
   const result = { ...event, ...changes };
   if (changes.title && changes.title !== event.title) result.originalTitle = event.title;
+  if ('location' in changes && changes.location !== event.location) result.originalLocation = event.location;
   return result;
 }
 
@@ -203,8 +208,8 @@ async function main() {
 
   const publicSources = sources
     .filter((s) => s.enabled !== false)
-    .map(({ id, name, village, icon, color, link, display }) => ({
-      id, name, village, icon, color, link: link || null, display: display || 'events',
+    .map(({ id, name, village, icon, color, link, display, adminRefresh }) => ({
+      id, name, village, icon, color, link: link || null, display: display || 'events', adminRefresh: Boolean(adminRefresh),
       ...sourceStatus.find((st) => st.id === id),
     }));
 

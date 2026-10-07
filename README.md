@@ -49,12 +49,15 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 ## Správa akcí (admin.html)
 
 Stránka `admin.html` (na webu není odkaz, adresa `…/ostopovice-events/admin.html`) umí u akce
-změnit název, nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
+změnit název, místo/adresu, nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
 nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API;
 commit spustí workflow a web se do pár minut přegeneruje.
 
+Tlačítkem „Znovu načíst“ spustí workflow ručně — buď pro všechny zdroje, nebo jen pro
+zdroje s `adminRefresh: true` (workflow má vstup `only`, který předá `--only=<id>`).
+
 Potřebuje GitHub token: Settings → Developer settings → Fine-grained tokens, přístup jen
-k tomuto repozitáři, *Contents: Read and write*. Token se uloží v `localStorage` prohlížeče.
+k tomuto repozitáři, *Contents* a *Actions*: Read and write. Token se uloží v `localStorage` prohlížeče.
 Pozor: všechny GitHub Pages jednoho účtu sdílí doménu `<účet>.github.io`, takže token vidí
 i stránky ostatních projektů na stejné doméně — používej jen na svém počítači.
 

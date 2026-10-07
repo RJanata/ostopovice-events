@@ -62,3 +62,6 @@
   .admin-row { grid-template-columns: 1fr auto; }
   .admin-row__date { grid-column: 1 / -1; }
 }
+
+.admin-actions .admin-status { margin: 0; }
+.admin-last-update { margin: 10px 0 0; }

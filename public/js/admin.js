@@ -136,6 +136,7 @@ async function saveOverrides(next, message) {
 // ---------- Model akce ----------
 
 const baseTitle = (e) => e.originalTitle || e.title;
+const baseLocation = (e) => ('originalLocation' in e ? e.originalLocation : e.location) || '';
 const seriesKey = (e) => `${e.source}|${baseTitle(e)}`;
 
 function effective(e) {
@@ -143,6 +144,7 @@ function effective(e) {
   return {
     changes,
     title: changes.title || baseTitle(e),
+    location: 'location' in changes ? changes.location : baseLocation(e),
     categories: changes.categories || e.categories,
     hidden: Boolean(changes.hidden),
     changed: Object.keys(changes).length > 0,
@@ -188,12 +190,13 @@ function renderList() {
       pending.has(e.id) && '<span class="admin-badge admin-badge--pending">čeká na přegenerování webu</span>',
     ].filter(Boolean).join(' ');
     const renamed = eff.title !== baseTitle(e) ? `<span>původně: ${escapeHtml(baseTitle(e))}</span>` : '';
+    const place = eff.location ? `<span>📍 ${escapeHtml(eff.location)}</span>` : '';
     return `<div class="admin-row${eff.hidden ? ' admin-row--hidden' : ''}" data-id="${escapeHtml(e.id)}">
         <div class="admin-row__date">${escapeHtml(formatWhen(e))}</div>
         <div>
           <div class="admin-row__title">${escapeHtml(eff.title)}</div>
           <div class="admin-row__meta">
-            <span>${escapeHtml(src.name)}</span><span>${escapeHtml(cats)}</span>${renamed}${badges}
+            <span>${escapeHtml(src.name)}</span><span>${escapeHtml(cats)}</span>${place}${renamed}${badges}
           </div>
         </div>
         <button type="button" class="button button--small button--ghost" data-action="edit">Upravit</button>
@@ -216,6 +219,11 @@ function mountEditForm(slot, e) {
   form.elements.title.value = eff.title;
   form.elements.title.placeholder = baseTitle(e);
   form.querySelector('.admin-original').textContent = `Původní název ze zdroje: ${baseTitle(e)}`;
+  form.elements.location.value = eff.location;
+  form.elements.location.placeholder = baseLocation(e) || 'např. Sokolovna Ostopovice, Školní 5';
+  form.querySelector('.admin-original-location').textContent = baseLocation(e)
+    ? `Ze zdroje: ${baseLocation(e)}`
+    : 'Zdroj místo neuvádí (nebo jde o „domácí“ místo pořadatele, které se nezobrazuje).';
 
   const catBox = form.querySelector('.admin-categories');
   catBox.innerHTML = categories.map((c) => `<label class="admin-check"><input type="checkbox" name="cat" value="${escapeHtml(c.id)}"${eff.categories.includes(c.id) ? ' checked' : ''}> ${escapeHtml(c.label)}</label>`).join('');
@@ -241,6 +249,8 @@ function mountEditForm(slot, e) {
     const changes = {};
     const title = form.elements.title.value.trim();
     if (title && title !== baseTitle(e)) changes.title = title;
+    const location = form.elements.location.value.trim();
+    if (location !== baseLocation(e)) changes.location = location;
     if (form.elements.customCategories.checked) {
       const picked = [...form.querySelectorAll('input[name="cat"]:checked')].map((i) => i.value);
       if (!picked.length) {
@@ -290,6 +300,70 @@ async function commit(next, e, message, scope) {
     renderList();
   } catch (err) {
     setMessage(msg, err.message, 'error');
+  }
+}
+
+// ---------- Ruční načtení kalendářů (spuštění GitHub Action) ----------
+
+const WORKFLOW_FILE = 'update.yml';
+const POLL_MS = 8000;
+const POLL_LIMIT_MS = 6 * 60 * 1000;
+
+const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
+
+async function latestDispatchRun() {
+  const response = await github(`/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?event=workflow_dispatch&per_page=1`);
+  if (!response.ok) return null;
+  return (await response.json()).workflow_runs?.[0] || null;
+}
+
+/** Spustí načtení kalendářů; only = id jednoho zdroje, prázdné = všechny. */
+async function refreshSources(only = '') {
+  const buttons = document.querySelectorAll('[data-refresh]');
+  const status = $('refresh-status');
+  if (!getToken()) {
+    setMessage(status, 'Nejdřív uložte GitHub token (nahoře).', 'error');
+    return;
+  }
+  buttons.forEach((b) => { b.disabled = true; });
+  try {
+    const before = await latestDispatchRun();
+    const response = await github(`/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`, {
+      method: 'POST',
+      body: JSON.stringify({ ref: BRANCH, inputs: { only } }),
+    });
+    if (response.status === 403 || response.status === 404) {
+      throw new Error('Token nemá oprávnění spouštět Actions (Permissions → Actions: Read and write).');
+    }
+    if (!response.ok) throw new Error(`GitHub: HTTP ${response.status}`);
+    setMessage(status, 'Spuštěno, čekám na start…');
+
+    // počkat na nový běh a sledovat ho do konce
+    const started = Date.now();
+    let run = null;
+    while (Date.now() - started < POLL_LIMIT_MS) {
+      await sleep(POLL_MS);
+      const latest = await latestDispatchRun();
+      if (latest && latest.id !== before?.id) run = latest;
+      if (!run) continue;
+      if (run.status !== 'completed') {
+        setMessage(status, `Načítám kalendáře… (${Math.round((Date.now() - started) / 1000)} s)`);
+        continue;
+      }
+      if (run.conclusion === 'success') {
+        const what = only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
+        setMessage(status, `Hotovo – ${what} a web je aktualizovaný.`, 'ok');
+        await reloadEvents();
+      } else {
+        setMessage(status, `Načtení skončilo chybou (${run.conclusion}). Podrobnosti: GitHub → Actions.`, 'error');
+      }
+      return;
+    }
+    setMessage(status, 'Načítání trvá déle než obvykle – stav najdete na GitHubu v záložce Actions.');
+  } catch (err) {
+    setMessage(status, err.message, 'error');
+  } finally {
+    buttons.forEach((b) => { b.disabled = false; });
   }
 }
 
@@ -344,14 +418,30 @@ async function reloadOverrides() {
 
 // ---------- Start ----------
 
+async function reloadEvents({ render = true } = {}) {
+  const response = await fetch(`data/events.json?t=${Date.now()}`, { cache: 'no-store' });
+  data = await response.json();
+  sourcesById = Object.fromEntries(data.sources.map((s) => [s.id, s]));
+  categories = data.categories;
+  pending.clear();
+  $('last-update').textContent = new Date(data.generatedAt).toLocaleString('cs-CZ', {
+    timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit',
+  });
+  if (render) renderList();
+}
+
 async function init() {
   setupToken();
   checkToken();
 
-  const response = await fetch('data/events.json', { cache: 'no-cache' });
-  data = await response.json();
-  sourcesById = Object.fromEntries(data.sources.map((s) => [s.id, s]));
-  categories = data.categories;
+  await reloadEvents({ render: false });
+  $('refresh-single').innerHTML = data.sources
+    .filter((s) => s.adminRefresh)
+    .map((s) => `<button type="button" class="button button--ghost" data-refresh="${escapeHtml(s.id)}">Načíst jen ${escapeHtml(s.name)}</button>`)
+    .join(' ');
+  document.querySelectorAll('[data-refresh]').forEach((b) => {
+    b.addEventListener('click', () => refreshSources(b.dataset.refresh));
+  });
   $('admin-source').innerHTML += data.sources
     .filter((s) => s.display !== 'dayLabel')
     .map((s) => `<option value="${escapeHtml(s.id)}">${escapeHtml(s.name)}</option>`).join('');
