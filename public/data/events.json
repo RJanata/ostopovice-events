@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T23:48:14.701Z",
+ "generatedAt": "2026-10-07T23:57:43.516Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:37:57.583Z",
+   "lastSuccess": "2026-10-07T23:57:43.516Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:37:57.583Z",
+   "lastSuccess": "2026-10-07T23:57:43.516Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:37:57.583Z",
+   "lastSuccess": "2026-10-07T23:57:43.516Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:37:57.583Z",
+   "lastSuccess": "2026-10-07T23:57:43.516Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-07T23:48:14.701Z",
+   "lastSuccess": "2026-10-07T23:57:43.516Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3339,9 +3339,9 @@
    "start": "2026-10-07T16:30:00.000Z",
    "end": "2026-10-07T16:30:00.000Z",
    "allDay": false,
-   "location": "Restaurace U Volejníků, Školní 1/20, 664 49 Ostopovice, Česko",
+   "location": "Restaurace U Volejníků",
    "url": "",
-   "description": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!\n#link: https://www.facebook.com/events/1454231353296252",
    "image": "",
    "categories": [
     "ostatni"
