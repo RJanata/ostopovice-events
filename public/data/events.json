@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T23:29:55.625Z",
+ "generatedAt": "2026-10-07T23:37:57.583Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:29:55.625Z",
+   "lastSuccess": "2026-10-07T23:37:57.583Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:29:55.625Z",
+   "lastSuccess": "2026-10-07T23:37:57.583Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:29:55.625Z",
+   "lastSuccess": "2026-10-07T23:37:57.583Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:29:55.625Z",
+   "lastSuccess": "2026-10-07T23:37:57.583Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-07T23:29:55.625Z",
+   "lastSuccess": "2026-10-07T23:37:57.583Z",
    "ok": true,
    "error": null,
    "count": 6
@@ -3366,17 +3366,19 @@
   {
    "id": "obec-c0pv8v",
    "source": "obec",
-   "title": "Pozvánka na Babský hody 10. 10. 2026",
+   "title": "Babský hody",
    "start": "2026-10-10",
    "end": "2026-10-10",
    "allDay": true,
-   "location": "",
+   "location": "14:30 na návsi | 17:00 Sokolovna | 20:00 zábava",
    "url": "https://www.ostopovice.cz/kalendar-akci/pozvanka-na-babsky-hody-10-10-2026",
    "description": "",
    "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13933104",
    "categories": [
     "kultura"
-   ]
+   ],
+   "originalTitle": "Pozvánka na Babský hody 10. 10. 2026",
+   "originalLocation": ""
   },
   {
    "id": "sokol-3xp067",
