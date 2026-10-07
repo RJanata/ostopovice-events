@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akce v Ostopovicích</title>
+  <meta name="description" content="Všechny akce v Ostopovicích na jednom místě – obec, knihovna, Sokol a další.">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+  <script src="js/ics-export.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="site-header__title">
+        <h1>Akce v Ostopovicích</h1>
+        <p class="site-header__lead">Obec, knihovna, Sokol a další – všechno na jednom místě.</p>
+      </div>
+      <div class="site-header__actions">
+        <a class="button button--ghost" id="subscribe-link" href="data/akce.ics">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>
+          Přidat do mého kalendáře
+        </a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Přepnout tmavý režim" aria-pressed="false" title="Tmavý / světlý režim">
+          <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="filters" aria-label="Filtry">
+      <div class="filters__row">
+        <h2 class="filters__label">Zdroj</h2>
+        <div class="chips" id="source-filter"></div>
+      </div>
+      <div class="filters__row">
+        <h2 class="filters__label">Typ akce</h2>
+        <div class="chips" id="category-filter"></div>
+      </div>
+      <div class="filters__row" id="village-row" hidden>
+        <h2 class="filters__label">Obec</h2>
+        <div class="chips" id="village-filter"></div>
+      </div>
+      <div class="filters__tools">
+        <label class="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input type="search" id="search" placeholder="Hledat akci…" autocomplete="off">
+        </label>
+        <div class="view-switch" role="tablist" aria-label="Zobrazení">
+          <button type="button" role="tab" data-view="list">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg>
+            Seznam
+          </button>
+          <button type="button" role="tab" data-view="month">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8.5 14h.01M12 14h.01M15.5 14h.01M8.5 17h.01M12 17h.01"/></svg>
+            Měsíc
+          </button>
+        </div>
+      </div>
+      <p class="filters__summary"><span id="result-count"></span> <button type="button" class="link-button" id="download-filtered" hidden>Stáhnout výběr do kalendáře (.ics)</button>
+        <button type="button" class="link-button" id="reset-filters" hidden>Zrušit filtry</button></p>
+    </section>
+
+    <div id="status" class="status" hidden></div>
+    <div id="view" aria-live="polite"><p class="empty">Načítám akce…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Akce se automaticky přebírají ze zdrojů: <span id="source-links"></span>.</p>
+      <p>Aktualizováno <span id="generated-at">–</span>. Za správnost údajů odpovídají pořadatelé, podrobnosti vždy najdete u zdroje.</p>
+    </div>
+  </footer>
+
+  <template id="subscribe-help">
+    <div class="subscribe-help">
+      <div class="subscribe-help__filtered" hidden>
+        <p><strong>Váš výběr</strong> – <span class="subscribe-help__filter-text"></span></p>
+        <p class="subscribe-help__row">
+          <button type="button" class="button button--small" data-download-filtered>Stáhnout .ics</button>
+          <span class="subscribe-help__hint">Jednorázový import nadcházejících akcí podle filtru. Pozdější změny se samy nepromítnou –
+            pro automatické aktualizace použijte odběr níže.</span>
+        </p>
+      </div>
+      <p><strong>Odběr kalendáře</strong> – akce se vám budou samy objevovat v telefonu nebo počítači.
+        Můžete odebírat všechno, nebo jen typy akcí, které vás zajímají (třeba jen „Pro děti“).</p>
+      <ul class="subscribe-help__list"></ul>
+      <p class="subscribe-help__hint">
+        <strong>Přidat</strong> otevře kalendář v zařízení (iPhone, Mac, Outlook).
+        <strong>Google Kalendář:</strong> zkopírujte odkaz a vložte ho v Google Kalendáři do Další kalendáře → Přidat podle URL.
+        Akce s více typy (např. Pro děti i Vzdělávání) se při odběru více kalendářů objeví v každém z nich.
+      </p>
+    </div>
+  </template>
+</body>
+</html>
