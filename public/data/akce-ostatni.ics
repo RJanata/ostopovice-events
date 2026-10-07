@@ -7,4 +7,16 @@ X-WR-CALNAME:Akce v Ostopovicích – Ostatní
 X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:pripravovane-qi21ye@ostopovice-events
+DTSTAMP:20261007T234818Z
+DTSTART:20261007T163000Z
+DTEND:20261007T163000Z
+SUMMARY:Společně pro Ostopovice: Společně na pivo (nebo limo)
+LOCATION:Restaurace U Volejníků\, Školní 1/20\, 664 49 Ostopovice\, Če
+ sko
+DESCRIPTION:https://www.facebook.com/events/1454231353296252\n\nZdroj: Při
+ pravované události
+CATEGORIES:Ostatní
+END:VEVENT
 END:VCALENDAR
