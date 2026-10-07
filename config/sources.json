@@ -1,0 +1,91 @@
+{
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde).",
+  "sources": [
+    {
+      "id": "obec",
+      "name": "Obec Ostopovice",
+      "village": "Ostopovice",
+      "icon": "obec.png",
+      "color": "#c8102e",
+      "type": "ipo-rss",
+      "url": "https://www.ostopovice.cz/kalendar-akci?action=atom",
+      "link": "https://www.ostopovice.cz/kalendar-akci",
+      "categories": [],
+      "fallbackCategories": [
+        "obec"
+      ]
+    },
+    {
+      "id": "knihovna",
+      "name": "Knihovna Ostopovice",
+      "village": "Ostopovice",
+      "icon": "knihovna.png",
+      "color": "#e8490f",
+      "type": "wix-events",
+      "url": "https://www.knihovnaostopovice.cz/program",
+      "link": "https://www.knihovnaostopovice.cz/program",
+      "categories": [],
+      "fallbackCategories": [
+        "kultura"
+      ],
+      "options": {
+        "detailBaseUrl": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/"
+      },
+      "hideLocations": [
+        "Lípová 67",
+        "^Ostopovice$",
+        "^Knihovna Ostopovice$"
+      ]
+    },
+    {
+      "id": "sokol",
+      "name": "TJ Sokol Ostopovice",
+      "village": "Ostopovice",
+      "icon": "sokol.png",
+      "color": "#2f6b47",
+      "type": "nhjmop",
+      "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice&obdobi=vse",
+      "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
+      "categories": [
+        "sport"
+      ],
+      "skipRules": true,
+      "options": {
+        "location": ""
+      },
+      "hideLocations": [
+        "."
+      ]
+    },
+    {
+      "id": "svatky",
+      "name": "Státní svátky",
+      "village": null,
+      "icon": "svatky.svg",
+      "color": "#8a3a66",
+      "type": "ical",
+      "display": "dayLabel",
+      "url": "https://calendar.google.com/calendar/ical/cs.czech%23holiday%40group.v.calendar.google.com/public/basic.ics",
+      "categories": [],
+      "skipRules": true,
+      "options": {
+        "includeDescriptions": [
+          "Státní svátek"
+        ]
+      }
+    },
+    {
+      "id": "pripravovane",
+      "name": "Připravované události",
+      "village": "Ostopovice",
+      "icon": "pripravovane.svg",
+      "color": "#b06b12",
+      "type": "ical",
+      "url": "https://calendar.google.com/calendar/ical/39bec6db32101adf90c0e62ff88d533947e276072dcc15e3706e017acc48b6aa%40group.calendar.google.com/public/basic.ics",
+      "categories": [],
+      "fallbackCategories": [],
+      "link": null,
+      "$comment": "Zástupné akce pro budoucí události. Je poslední v pořadí, takže když stejnou akci (stejný název a den) vypíše skutečný zdroj, zobrazí se ta skutečná."
+    }
+  ]
+}
