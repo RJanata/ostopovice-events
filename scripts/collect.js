@@ -47,8 +47,19 @@ const readJson = async (file, fallback) => {
 
 const log = (...args) => console.log(...args);
 
+/** Řádek „#link: https://…“ v popisu = odkaz na akci (hlavně pro vlastní Google kalendáře). */
+function extractLink(description) {
+  let url = '';
+  const text = String(description || '').replace(/^[ \t]*#link[ \t]*:[ \t]*(\S+)[ \t]*$/gim, (line, link) => {
+    if (!url && /^https?:\/\//i.test(link)) url = link;
+    return '';
+  });
+  return { url, description: text };
+}
+
 function finalizeEvent(raw, source, rules, tagMap) {
-  const tagged = extractTags(raw.description, tagMap);
+  const linked = extractLink(raw.description);
+  const tagged = extractTags(linked.description, tagMap);
   const event = {
     id: `${source.id}-${shortHash(raw.uid)}`,
     source: source.id,
@@ -57,7 +68,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
     end: raw.end || raw.start,
     allDay: Boolean(raw.allDay),
     location: raw.location || '',
-    url: raw.url || '',
+    url: linked.url || raw.url || '',
     description: truncate(tagged.description),
     image: raw.image || '',
   };
@@ -73,20 +84,30 @@ function finalizeEvent(raw, source, rules, tagMap) {
  */
 function applySourceRules(event, source, rules) {
   const e = { ...event };
-  // archiv obsahuje už přejmenované akce → vrátit původní název, přepis se aplikuje znovu
-  if (e.originalTitle) {
-    e.title = e.originalTitle;
-    delete e.originalTitle;
+  // archiv obsahuje akce už s ručními úpravami → vrátit původní hodnoty, úpravy se aplikují znovu
+  for (const [field, originalField] of Object.entries(OVERRIDABLE)) {
+    if (originalField in e) {
+      e[field] = e[originalField];
+      delete e[originalField];
+    }
   }
-  if ('originalLocation' in e) {
-    e.location = e.originalLocation;
-    delete e.originalLocation;
-  }
+  for (const field of OVERRIDE_ONLY) delete e[field];
   const hide = source.hideLocations || [];
   if (e.location && hide.some((pattern) => new RegExp(pattern, 'i').test(e.location))) e.location = '';
   e.categories = categorize(e, source, rules);
   return e;
 }
+
+// pole, která jde přepsat v overrides.json; původní hodnota se schová pod druhým jménem
+const OVERRIDABLE = {
+  title: 'originalTitle',
+  location: 'originalLocation',
+  start: 'originalStart',
+  end: 'originalEnd',
+  allDay: 'originalAllDay',
+};
+// pole, která vznikají jen z ručních úprav (ze zdroje nikdy nepřijdou)
+const OVERRIDE_ONLY = ['note', 'hidden'];
 
 /**
  * Ruční úpravy z config/overrides.json:
@@ -100,8 +121,10 @@ function applyOverrides(event, overrides) {
   };
   if (!Object.keys(changes).length) return event;
   const result = { ...event, ...changes };
-  if (changes.title && changes.title !== event.title) result.originalTitle = event.title;
-  if ('location' in changes && changes.location !== event.location) result.originalLocation = event.location;
+  for (const [field, originalField] of Object.entries(OVERRIDABLE)) {
+    if (field in changes && changes[field] !== event[field]) result[originalField] = event[field];
+  }
+  if (!result.note) delete result.note;
   return result;
 }
 

@@ -257,6 +257,7 @@ function eventCard(e, day) {
       <div class="event__time">${timeLabel(e, day)}</div>
       <div class="event__body">
         <h3 class="event__title">${title}</h3>
+        ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         <div class="event__meta">
           <span class="event__source">${sourceIcon(source, true)}${escapeHtml(source.name)}${alsoIn.length ? ` (i ${escapeHtml(alsoIn.join(', '))})` : ''}</span>
           ${e.location ? `<span>${escapeHtml(e.location)}</span>` : ''}
@@ -648,7 +649,8 @@ function setupEvents() {
     } else if (dayButton) {
       state.selectedDay = state.selectedDay === dayButton.dataset.day ? null : dayButton.dataset.day;
       update({ keepHash: true });
-      document.getElementById('selected-day')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      // posouvat jen při výběru dne; po zrušení výběru zůstat u kalendáře
+      if (state.selectedDay) document.getElementById('selected-day')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   });
 

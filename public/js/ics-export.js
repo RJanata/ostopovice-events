@@ -63,7 +63,7 @@
       lines.push(`SUMMARY:${escapeText(e.title)}`);
       if (e.cancelled) lines.push('STATUS:CANCELLED');
       if (e.location) lines.push(`LOCATION:${escapeText(e.location)}`);
-      const description = [e.description, source && `Zdroj: ${source.name}`].filter(Boolean).join('\n\n');
+      const description = [e.note, e.description, source && `Zdroj: ${source.name}`].filter(Boolean).join('\n\n');
       if (description) lines.push(`DESCRIPTION:${escapeText(description)}`);
       if (e.url) lines.push(`URL:${e.url}`);
       const labels = (e.categories || []).map((c) => categoriesById[c]?.label || c);
