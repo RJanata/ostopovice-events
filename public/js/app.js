@@ -284,9 +284,8 @@ function dayHeading(day, holidays) {
 
 // ---------- Zobrazení: seznam ----------
 
-function renderList(events, holidays) {
-  const from = state.listFrom || today;
-  const to = addDays(from, state.listDays);
+/** Akce rozdělené po dnech v rozsahu from–to; dny se svátkem i bez akcí. */
+function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
   const byDay = new Map();
 
   const addTo = (day, e) => {
@@ -305,9 +304,28 @@ function renderList(events, holidays) {
     }
   }
 
-  for (const day of holidays.keys()) {
-    if (day >= from && day <= to && !byDay.has(day)) byDay.set(day, []);
+  if (holidayDays) {
+    for (const day of holidays.keys()) {
+      if (day >= from && day <= to && !byDay.has(day)) byDay.set(day, []);
+    }
   }
+  return byDay;
+}
+
+function renderDays(byDay, holidays) {
+  return [...byDay.keys()].sort().map((day) => {
+    const list = byDay.get(day).sort(compareEvents);
+    return `<section class="day${list.length ? '' : ' day--empty'}">${dayHeading(day, holidays)}${list.map((e) => eventCard(e, day)).join('')}</section>`;
+  }).join('');
+}
+
+function renderList(events, holidays) {
+  const from = state.listFrom || today;
+  // při hledání ukázat všechny nalezené akce, i ty za mnoho měsíců
+  const to = state.query
+    ? events.reduce((max, e) => (e._last > max ? e._last : max), from)
+    : addDays(from, state.listDays);
+  const byDay = groupByDay(events, from, to, holidays, { holidayDays: !state.query });
 
   const days = [...byDay.keys()].sort();
   const later = events.filter((e) => e._first > to).length;
@@ -320,10 +338,7 @@ function renderList(events, holidays) {
   if (!days.some((d) => byDay.get(d).length)) {
     html += `<p class="empty">${events.length ? 'V tomto období žádné akce nejsou.' : 'Filtrům neodpovídá žádná akce.'}</p>`;
   }
-  for (const day of days) {
-    const list = byDay.get(day).sort(compareEvents);
-    html += `<section class="day${list.length ? '' : ' day--empty'}">${dayHeading(day, holidays)}${list.map((e) => eventCard(e, day)).join('')}</section>`;
-  }
+  html += renderDays(byDay, holidays);
   if (later) {
     html += `<div class="more"><button type="button" class="button button--ghost" data-action="later">Zobrazit další akce (${later})</button></div>`;
   }
@@ -353,8 +368,8 @@ function renderMonth(events, holidays) {
   }
 
   // vybraný den může být i z okrajových týdnů (konec minulého / začátek dalšího měsíce)
-  const selected = state.selectedDay && state.selectedDay >= gridStart && state.selectedDay <= gridEnd ? state.selectedDay
-    : (today.startsWith(month) ? today : null);
+  // bez vybraného dne se pod kalendářem vypíše celý měsíc
+  const selected = state.selectedDay && state.selectedDay >= gridStart && state.selectedDay <= gridEnd ? state.selectedDay : null;
 
   const weekdayNames = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
   let weeksHtml = '';
@@ -428,12 +443,20 @@ function renderMonth(events, holidays) {
   const weekdaysHtml = `<div class="month__weekdays">${weekdayNames.map((n) => `<div class="month__weekday">${n}</div>`).join('')}</div>`;
 
   const title = formatDay(firstOfMonth, { month: 'long', year: 'numeric' });
-  let selectedHtml = '';
+  let selectedHtml;
   if (selected) {
     const list = (byDay.get(selected) || []).sort(compareEvents);
     selectedHtml = `<section class="day month__selected" id="selected-day">${dayHeading(selected, holidays)}`
       + (list.length ? list.map((e) => eventCard(e, selected)).join('') : '<p class="empty">Tento den žádné akce nejsou.</p>')
+      + `<div class="more"><button type="button" class="button button--ghost" data-action="whole-month">Zobrazit celý ${escapeHtml(formatDay(firstOfMonth, { month: 'long' }))}</button></div>`
       + '</section>';
+  } else {
+    const lastOfMonth = addDays(firstOfMonth, daysInMonth - 1);
+    const monthDays = groupByDay(events, firstOfMonth, lastOfMonth, holidays);
+    const hasEvents = [...monthDays.values()].some((list) => list.length);
+    selectedHtml = `<div class="month__selected" id="selected-day">`
+      + (hasEvents ? renderDays(monthDays, holidays) : '<p class="empty">V tomto měsíci žádné akce nejsou.</p>')
+      + '</div>';
   }
 
   return `
@@ -617,10 +640,13 @@ function setupEvents() {
       update();
     } else if (action === 'this-month') {
       state.month = null;
-      state.selectedDay = today;
+      state.selectedDay = null;
       update();
+    } else if (action === 'whole-month') {
+      state.selectedDay = null;
+      update({ keepHash: true });
     } else if (dayButton) {
-      state.selectedDay = dayButton.dataset.day;
+      state.selectedDay = state.selectedDay === dayButton.dataset.day ? null : dayButton.dataset.day;
       update({ keepHash: true });
       document.getElementById('selected-day')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
