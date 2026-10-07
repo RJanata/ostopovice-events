@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T22:40:52.541Z",
+ "generatedAt": "2026-10-07T23:15:36.176Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -10,7 +10,7 @@
    "color": "#c8102e",
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
-   "lastSuccess": "2026-10-07T22:40:52.541Z",
+   "lastSuccess": "2026-10-07T23:15:36.176Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -23,7 +23,7 @@
    "color": "#e8490f",
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
-   "lastSuccess": "2026-10-07T22:40:52.541Z",
+   "lastSuccess": "2026-10-07T23:15:36.176Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -36,7 +36,7 @@
    "color": "#2f6b47",
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
-   "lastSuccess": "2026-10-07T22:40:52.541Z",
+   "lastSuccess": "2026-10-07T23:15:36.176Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -49,7 +49,7 @@
    "color": "#8a3a66",
    "link": null,
    "display": "dayLabel",
-   "lastSuccess": "2026-10-07T22:40:52.541Z",
+   "lastSuccess": "2026-10-07T23:15:36.176Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -62,7 +62,7 @@
    "color": "#b06b12",
    "link": null,
    "display": "events",
-   "lastSuccess": "2026-10-07T22:40:52.541Z",
+   "lastSuccess": "2026-10-07T23:15:36.176Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3426,7 +3426,8 @@
    "image": "",
    "categories": [
     "ostatni"
-   ]
+   ],
+   "hidden": true
   },
   {
    "id": "knihovna-u5if78",
