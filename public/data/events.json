@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T23:57:43.516Z",
+ "generatedAt": "2026-10-07T23:59:11.137Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:57:43.516Z",
+   "lastSuccess": "2026-10-07T23:59:11.137Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:57:43.516Z",
+   "lastSuccess": "2026-10-07T23:59:11.137Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:57:43.516Z",
+   "lastSuccess": "2026-10-07T23:59:11.137Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-07T23:57:43.516Z",
+   "lastSuccess": "2026-10-07T23:59:11.137Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-07T23:57:43.516Z",
+   "lastSuccess": "2026-10-07T23:59:11.137Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3385,13 +3385,14 @@
    "start": "2026-10-10",
    "end": "2026-10-10",
    "allDay": true,
-   "location": "14:30 na návsi | 17:00 Sokolovna | 20:00 zábava",
+   "location": "náves a sokolovna",
    "url": "https://www.ostopovice.cz/kalendar-akci/pozvanka-na-babsky-hody-10-10-2026",
    "description": "",
    "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13933104",
    "categories": [
     "kultura"
    ],
+   "note": "14:30 na návsi | 17:00 Sokolovna | 20:00 zábava",
    "originalTitle": "Pozvánka na Babský hody 10. 10. 2026",
    "originalLocation": ""
   },
