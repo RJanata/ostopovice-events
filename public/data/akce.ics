@@ -1,0 +1,1306 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Akce v Ostopovicích
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:knihovna-1u1hvva@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260827T140000Z
+DTEND:20260827T153000Z
+SUMMARY:Senza hraní: Od základů po zahradu
+DESCRIPTION:Hravé objevování s prvky sensory play rozvíjí jemnou a hru
+ bou motoriku\, fantazii\, kreativitu a zapojuje všechny smysly. Postavím
+ e dům\, zasadíme strom a můžeme začít sklízet i zahrádku. Cihly\, 
+ malta\, písek a trocha hlíny nám v tom pomůžou.\n\nZdroj: Knihovna Os
+ topovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/s
+ enza-hrani-od-zakladu-po-zahradu
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-2751c6@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260831T170000Z
+DTEND:20260831T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-08-31-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1in2bsl@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260903T130000Z
+DTEND:20260903T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-09-03-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1mw20ur@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260906T130000Z
+DTEND:20260906T141500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Pod
+ lázky
+DESCRIPTION:Výsledek: 13:13\nČíslo utkání: 12\n\nZdroj: TJ Sokol Ostop
+ ovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-s3etba@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260907T170000Z
+DTEND:20260907T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-09-07-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-hzf2nk@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260908T160000Z
+DTEND:20260908T173000Z
+SUMMARY:Exoti - Příběhy lidí\, kteří vyčnívali z řady / beseda s B
+ arborou Šťastnou
+DESCRIPTION:Jaké to je\, být jiný než ostatní ve světě\, kde konform
+ ita je klíčem k úspěchu? Být jedinou svobodnou matkou ve městě\, ml
+ uvit doma jinou řečí než ve škole\, milovat člověka stejného pohla
+ ví\, chodit do kostela\, když ostatní jenom sedí u televize?\n\nZdroj:
+  Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ xoti-pribehy-lidi-kteri-vycnivali-z-rady-beseda-s-barborou-stastnou
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1eyss6d@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260910T130000Z
+DTEND:20260910T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-09-10-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-sio3ig@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260914T080000Z
+DTEND:20260914T090000Z
+SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
+ pololetí)
+DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
+ ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
+ , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-0
+ 9-14-10-00
+CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1hielbe@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260914T170000Z
+DTEND:20260914T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-09-14-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-5wtuq2@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260915T160000Z
+DTEND:20260915T180000Z
+SUMMARY:Jan Dungel: Krajiny / vernisáž výstavy
+DESCRIPTION:Slavnostní zahájení výstavy obrazů uznávaného ilustráto
+ ra\, malíře a biologa Jana Dungela. Podstatnou částí Dungelovy volné
+  tvorby je klasická malba (olej na plátně). Ve svých kresbách\, knih
+ ách a filmových dokumentech se dlouhodobě věnuje také dokumentaci a o
+ chraně divoké přírody v Jižní Americe.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ an-dungel-krajiny-vernisaz-vystavy
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-szvdeo@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260917T130000Z
+DTEND:20260917T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-09-17-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-11nudir@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260917T160000Z
+DTEND:20260917T180000Z
+SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
+  sv. Jakuba I.
+DESCRIPTION:První část přednášky Aleše Svobody o nejbizarnějším n
+ álezu brněnského podzemí. Historie objevení kostnice pod bývalým sv
+ atojakubským hřbitovem\, který byl založen na místě dnešního Jakub
+ ského náměstí i zajímavosti související s pohřbíváním a pohřeb
+ ními rituály.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-i
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-57htld@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260918T063000Z
+DTEND:20260918T074000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-09-18-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-r9judn@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260920T090000Z
+DTEND:20260920T101500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Avia 
+ Čakovice
+DESCRIPTION:Výsledek: 22:17\nČíslo utkání: 30\n\nZdroj: TJ Sokol Ostop
+ ovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1cms3ic@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260920T170000Z
+DTEND:20260920T180000Z
+SUMMARY:Listování: Legenda Z+H
+DESCRIPTION:LiStOVáNí vyjímá z pestrobarevné žánrové palety jednu v
+ ýjimku – cestopis. Navíc\, jeho autory jsou opravdové legendy\, Miros
+ lav Zikmund a Jiří Hanzelka. Popasovat se s knihami\, které více než 
+ po padesáti letech upravil Miroslav Zikmund\, je opravdová výzva.\n\nZd
+ roj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ istovani-legenda-z-h
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-18abbrb@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260921T140000Z
+DTEND:20260921T153000Z
+SUMMARY:Zpívárium / hlasový workshop
+DESCRIPTION:Účastníci workshopu s Evou Kratochvílovou se dotknou zákla
+ dů pěvecké techniky\, cesty k autentickému hlasovému projevu a improv
+ izace. Zpívárium je prostor pro lidi. Jeden z nejcennějších darů\, 
+ které můžeme sami sobě a svým dětem dát\, je společně a beze stra
+ chu hrát\, zpívat a tancovat.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
+ pivarium-hlasovy-workshop-4
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-99mghm@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260921T170000Z
+DTEND:20260921T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-09-21-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-wwawfq@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260924T130000Z
+DTEND:20260924T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-09-24-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-etqh79@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260925T063000Z
+DTEND:20260925T074000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-09-25-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1xbiz8z@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260926T080000Z
+DTEND:20260926T100000Z
+SUMMARY:Terapeutická jóga s Klárou / workshop
+DESCRIPTION:Téma solar\, moje hodnota (slinivka\, slezina). Skrze jógovou
+  praxi a různých vědomých technik si uvědomíme vlastní sílu a hodn
+ otu. Orgány slinivka a slezina jsou úzce propojené se solárním energe
+ tickym centrem. Znát svoji hodnotu a ustát si ji ve své síle je pro ty
+ to orgány velice důležité.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ erapeuticka-joga-s-klarou-workshop
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-61m6q1@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260928T170000Z
+DTEND:20260928T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-09-28-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-5l594u@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260929T160000Z
+DTEND:20260929T180000Z
+SUMMARY:Kosmická střelnice / přednáška Pavla Gabzdyla
+DESCRIPTION:Stopy po kosmickém bombardování jsou všude kolem nás. Sta
+ čí se jen dobře dívat. Přednáší popularizátor krás Sluneční so
+ ustavy Pavel Gabzdyl.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ osmicka-strelnice-prednaska-pavla-gabzdyla
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-9ylsch@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261001T130000Z
+DTEND:20261001T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-10-01-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-lg1p1d@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261001T160000Z
+DTEND:20261001T173000Z
+SUMMARY:Den architektury 2026: Architektura vzdělávání / přednáška
+DESCRIPTION:Publicista Petr Šmídek v ostopovické knihovně představí h
+ istorické i současné příklady školních budov u nás i v zahraničí
+ . Jaký otisk školy zanechají ve svých absolventech? Jak se vyvarovat j
+ ednosměrného předávání informací? Jaké prostředí nejlépe stimul
+ uje?\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-architektury-2026-architektura-vzdelavani-prednaska
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1sc0v88@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261002T063000Z
+DTEND:20261002T074000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-10-02-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1b2vb6l@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261002T160000Z
+DTEND:20261002T173000Z
+SUMMARY:Zeptej se vědce: Hodinářem vnitřního času
+DESCRIPTION:Tikají v nás a určují\, kdy budeme spát a kdy bdít\, kdy 
+ jíst a kdy nejefektivněji cvičit – biologické hodiny. Evoluční mec
+ hanismus\, který reaguje na rotaci Země kolem své osy\, na střídání
+  dne a noci. Najdeme je napříč rostlinnou i živočišnou říší. Ř
+ ídí\, kdy budou rostliny fotosyntetizovat či (...)\n\nZdroj: Knihovna O
+ stopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
+ eptej-se-vedce-hodinarem-vnitrniho-casu
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-yb369y@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261003T070000Z
+DTEND:20261003T081500Z
+SUMMARY:Národní házená: Přípravky · turnaj
+DESCRIPTION:Číslo utkání: 2\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-p1n0tv@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261003T140000Z
+DTEND:20261003T151500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Nýřa
+ ny
+DESCRIPTION:Výsledek: 16:15\nČíslo utkání: 38\n\nZdroj: TJ Sokol Ostop
+ ovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1nuh5w8@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261003T160000Z
+DTEND:20261003T173000Z
+SUMMARY:Film a architektura 2026 / The Silo and Us
+DESCRIPTION:Obří opuštěné betonové silo již řadu let hyzdí panoram
+ a malého poklidného přímořského městečka na jihu Dánska. Když u
+ ž to vypadá\, že město budovu jednou provždy srovná se zemí\, objev
+ í se skupina umělců a podnikatelů v kultuře\, jejichž cílem je pře
+ měnit tento trn v oku řady místních obyvatel (...)\n\nZdroj: Knihovna 
+ Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/f
+ ilm-a-architektura-2026-the-silo-and-us
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-rtm79k@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261004T083000Z
+DTEND:20261004T094500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Příc
+ hovice
+DESCRIPTION:Výsledek: 14:16\nČíslo utkání: 44\n\nZdroj: TJ Sokol Ostop
+ ovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1uv165i@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261005T160000Z
+DTEND:20261005T173000Z
+SUMMARY:Divadlo Feste: Osmdesátdevět aneb trenažér jedné revoluce
+DESCRIPTION:Projekt Osmdesátdevět je nejdéle reprízovanou událostí Di
+ vadla Feste. Vznikl již v roce 2008\, tedy dva roky po vzniku divadla. Od
+  té doby prošel vývojem podobně\, jako samotné Divadlo Feste\, aby dr
+ amaturgicky reflektoval aktuální přístupy k dokumentárnímu divadlu\,
+  a dá se tedy označit za (...)\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ ivadlo-feste-osmdesatdevet-aneb-trenazer-jedne-revoluce
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-nmnfay@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261008T130000Z
+DTEND:20261008T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-10-08-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-fjsj2r@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:Komunální volby 2026
+DESCRIPTION:Zdroj: Obec Ostopovice
+URL:https://www.ostopovice.cz/kalendar-akci/oznameni-o-dobe-a-miste-konani-
+ voleb-do-zastupitelstev-obci
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-c0pv8v@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Pozvánka na Babský hody 10. 10. 2026
+DESCRIPTION:Zdroj: Obec Ostopovice
+URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-babsky-hody-10-10-2
+ 026
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-3xp067@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261010T063000Z
+DTEND:20261010T074500Z
+SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – 1. N
+ H BRNO
+DESCRIPTION:Číslo utkání: 813M\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-ashlf7@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261010T080000Z
+DTEND:20261010T091500Z
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – 1. N
+ H BRNO
+DESCRIPTION:Číslo utkání: 618\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-wr1n@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Testovaci udalost
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-u5if78@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261012T080000Z
+DTEND:20261012T090000Z
+SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
+ pololetí)
+DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
+ ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
+ , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
+ 0-12-10-00
+CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-4fxfej@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261012T160000Z
+DTEND:20261012T173000Z
+SUMMARY:Jan Dungel / Jak se maluje prales
+DESCRIPTION:Jan Dungel více než 30 let dokumentuje přírodu v tropické 
+ Jižní Americe. Je autorem\, či spoluautorem několika knih a filmových
+  dokumentů této oblasti. Přednáškou přiblíží\, proč se dokumenta
+ ci jihoamerické přírody věnuje a co znamená malovat prales.\n\nZdroj:
+  Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ an-dungel-jak-se-maluje-prales
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-kbdo4r@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče
+DESCRIPTION:Zdroj: Obec Ostopovice
+URL:https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice
+CATEGORIES:Pro děti,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-t70nxm@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261014T170000Z
+DTEND:20261014T180000Z
+SUMMARY:Kniha dělá scény #2: Katka už nebude divná
+DESCRIPTION:Autentický příběh o dospívání\, hledání vlastní ident
+ ity a cestě k sebepřijetí. Divadelní adaptaci románu Petry Soukupové
+  pro scénické čtení režíruje Jiří Honzírek\, umělecký šéf Div
+ adla Feste. Hrají Sabina Šlachtová a Ivana Milbachová.\n\nZdroj: Kniho
+ vna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ niha-dela-sceny-2-katka-uz-nebude-divna
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-r4oeo8@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261015T130000Z
+DTEND:20261015T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-10-15-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-136fyqt@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261016T063000Z
+DTEND:20261016T074000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-10-16-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-4gkhvx@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261017T100000Z
+DTEND:20261017T111500Z
+SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ J
+ iskra Humpolec
+DESCRIPTION:Číslo utkání: 814\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-5hg2on@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261017T113000Z
+DTEND:20261017T124500Z
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ J
+ iskra Humpolec
+DESCRIPTION:Číslo utkání: 619M\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1mwjzye@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261017T130000Z
+DTEND:20261017T141500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Tym
+ ákov
+DESCRIPTION:Číslo utkání: 60\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1ngj7cc@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261018T083000Z
+DTEND:20261018T094500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Nez
+ věstice
+DESCRIPTION:Číslo utkání: 66\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-s0i3bz@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261019T170000Z
+DTEND:20261019T180000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-10-19-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-xe95hj@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261020T140000Z
+DTEND:20261020T170000Z
+SUMMARY:Dýňobraní
+DESCRIPTION:Oslava podzimu pro celou rodinu. Dýně\, dýně a zase dýně.
+  Přijďte dlabat\, tvořit\, hodovat\, kochat se okrasnými kousky\, zah
+ řát se pumpkin spice latté a dalšími kávovými speciály\, užít si
+  hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě do
+ mů.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ ynobrani-2
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-zvngm@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261022T130000Z
+DTEND:20261022T150000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-10-22-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1dbi5jj@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261022T160000Z
+DTEND:20261022T173000Z
+SUMMARY:Jak s bobrem po dobrém (i po zlém)
+DESCRIPTION:Bobři poskytují v naší poničené zemědělské krajině v
+ ýznamné ekologické služby. S ohledem na potřeby člověka ovšem hled
+ áme rovnováhu pro to\, kde je činnost bobra přijatelná a kde nikoliv.
+  Přednáší znalec v oboru ochrany přírody Vlastimil Kostkan.\n\nZdroj
+ : Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ ak-s-bobrem-po-dobrem-i-po-zlem
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-178aiil@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261023T063000Z
+DTEND:20261023T074000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-10-23-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1okkrm7@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261025T093000Z
+DTEND:20261025T104500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Svi
+ nov
+DESCRIPTION:Číslo utkání: 70\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-iknwj2@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261026T180000Z
+DTEND:20261026T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-10-26-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-ve7fdc@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261030T073000Z
+DTEND:20261030T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-10-30-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-ym1yn6@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Adventní vystoupení
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-4al37h@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261102T180000Z
+DTEND:20261102T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-11-02-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-12f8nmf@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261103T170000Z
+DTEND:20261103T180000Z
+SUMMARY:Mikro-teatro: La Pícara
+DESCRIPTION:Monodrama na hraně skutečného svědectví a mystifikace\,  i
+ nspirované životem skutečné postavy 17.století Cataliny de Erauso\, n
+ apsali dramatici Pavel Drábek a Joshem Overtonem. Catalina de Erauso v pa
+ tnácti letech utekla z kláštera a zbytek života prožila pod mužskou 
+ identitou\, což jí umožnilo (...)\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
+ ikro-teatro-la-picara
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-143zn8r@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Mikulášská nadílka
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-16gbckf@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261105T140000Z
+DTEND:20261105T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-11-05-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1n2hyqk@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261106T073000Z
+DTEND:20261106T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-06-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1oj78n4@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261109T090000Z
+DTEND:20261109T100000Z
+SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
+ pololetí)
+DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
+ ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
+ , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
+ 1-09-10-00
+CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1mho3qn@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261112T140000Z
+DTEND:20261112T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-11-12-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-oqt64q@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261113T073000Z
+DTEND:20261113T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-13-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ixvp6o@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Oslavy 17. listopadu
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-8l3x3a@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261119T140000Z
+DTEND:20261119T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-11-19-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1j8i6t8@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261120T073000Z
+DTEND:20261120T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-20-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-12uvg9g@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261123T180000Z
+DTEND:20261123T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-11-23-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1lwh7mo@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261126T140000Z
+DTEND:20261126T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-11-26-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-11719fd@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261126T170000Z
+DTEND:20261126T190000Z
+SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
+  sv. Jakuba II.
+DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
+ álezu brněnského podzemí. Historie objevení kostnice pod bývalým sv
+ atojakubským hřbitovem\, který byl založen na místě dnešního Jakub
+ ského náměstí i zajímavosti související s pohřbíváním a pohřeb
+ ními rituály.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
+CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-sqim65@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261127T073000Z
+DTEND:20261127T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-27-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1jipog0@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261130T180000Z
+DTEND:20261130T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-11-30-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-ah6n8y@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261203T140000Z
+DTEND:20261203T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-12-03-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-19oir1h@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261204T073000Z
+DTEND:20261204T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-12-04-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-mrfa59@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261207T090000Z
+DTEND:20261207T100000Z
+SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
+ pololetí)
+DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
+ ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
+ , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
+ 2-07-10-00
+CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-e508kx@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261207T180000Z
+DTEND:20261207T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-12-07-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-68gb6q@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261210T140000Z
+DTEND:20261210T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-12-10-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-142hbcz@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261211T073000Z
+DTEND:20261211T084000Z
+SUMMARY:Lit jóga
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-12-11-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-poaoty@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Folklórní soubor Háječek a Glonárky: Koledníci idú
+DESCRIPTION:Vystoupení dětí a ostopovických žen.\n\nZdroj: Připravova
+ né události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1ds5txp@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261214T180000Z
+DTEND:20261214T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-12-14-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-6trsjz@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261217T140000Z
+DTEND:20261217T160000Z
+SUMMARY:Knihovna dětem
+DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
+ ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
+ jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
+ knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
+ st.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ nihovna-detem-2026-12-17-15-00
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-l0efdh@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261221T180000Z
+DTEND:20261221T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-12-21-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1hodbme@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261228T180000Z
+DTEND:20261228T190000Z
+SUMMARY:Pilates & zdravá záda
+DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
+ kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
+ ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
+ á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
+ zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ ilates-zdrava-zada-2026-12-28-19-00
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1ulvu99@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20270111T090000Z
+DTEND:20270111T100000Z
+SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
+ pololetí)
+DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
+ ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
+ , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
+ nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
+ 1-11-10-00
+CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-133uvg@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Obecní ples
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-50muru@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ S
+ okol Vracov
+DESCRIPTION:Číslo utkání: 820\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1d38y02@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ S
+ okol Vracov
+DESCRIPTION:Číslo utkání: 629M\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1qskqny@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20270410T140000Z
+DTEND:20270410T151500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Ky
+ šice
+DESCRIPTION:Číslo utkání: 82\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-3mlot0@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – Drak
+ en Brno
+DESCRIPTION:Číslo utkání: 817\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-18ctu95@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
+ en Brno A
+DESCRIPTION:Číslo utkání: 623\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1tq34ir@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
+ en Brno B
+DESCRIPTION:Číslo utkání: 624M\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1s6ir4t@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20270411T083000Z
+DTEND:20270411T094500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Plzeň
+ -Újezd
+DESCRIPTION:Číslo utkání: 87\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-4ddw29@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20270425T083000Z
+DTEND:20270425T094500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Kr
+ čín
+DESCRIPTION:Číslo utkání: 102\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ye5f12@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Folklórní soubor Háječek: Vystoupení v Židlochovicích
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-4nac99@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20270516T083000Z
+DTEND:20270516T094500Z
+SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – SK Studé
+ nka A
+DESCRIPTION:Číslo utkání: 119\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-4qn92v@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – SK A
+ utonot Jihlava
+DESCRIPTION:Číslo utkání: 823\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-18cwzr4@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – SK A
+ utonot Jihlava
+DESCRIPTION:Číslo utkání: 633\n\nZdroj: TJ Sokol Ostopovice
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport
+END:VEVENT
+END:VCALENDAR

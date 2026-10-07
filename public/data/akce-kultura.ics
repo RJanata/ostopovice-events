@@ -1,0 +1,173 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Akce v Ostopovicích – Kultura
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:knihovna-5wtuq2@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260915T160000Z
+DTEND:20260915T180000Z
+SUMMARY:Jan Dungel: Krajiny / vernisáž výstavy
+DESCRIPTION:Slavnostní zahájení výstavy obrazů uznávaného ilustráto
+ ra\, malíře a biologa Jana Dungela. Podstatnou částí Dungelovy volné
+  tvorby je klasická malba (olej na plátně). Ve svých kresbách\, knih
+ ách a filmových dokumentech se dlouhodobě věnuje také dokumentaci a o
+ chraně divoké přírody v Jižní Americe.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ an-dungel-krajiny-vernisaz-vystavy
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1cms3ic@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20260920T170000Z
+DTEND:20260920T180000Z
+SUMMARY:Listování: Legenda Z+H
+DESCRIPTION:LiStOVáNí vyjímá z pestrobarevné žánrové palety jednu v
+ ýjimku – cestopis. Navíc\, jeho autory jsou opravdové legendy\, Miros
+ lav Zikmund a Jiří Hanzelka. Popasovat se s knihami\, které více než 
+ po padesáti letech upravil Miroslav Zikmund\, je opravdová výzva.\n\nZd
+ roj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ istovani-legenda-z-h
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1nuh5w8@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261003T160000Z
+DTEND:20261003T173000Z
+SUMMARY:Film a architektura 2026 / The Silo and Us
+DESCRIPTION:Obří opuštěné betonové silo již řadu let hyzdí panoram
+ a malého poklidného přímořského městečka na jihu Dánska. Když u
+ ž to vypadá\, že město budovu jednou provždy srovná se zemí\, objev
+ í se skupina umělců a podnikatelů v kultuře\, jejichž cílem je pře
+ měnit tento trn v oku řady místních obyvatel (...)\n\nZdroj: Knihovna 
+ Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/f
+ ilm-a-architektura-2026-the-silo-and-us
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1uv165i@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261005T160000Z
+DTEND:20261005T173000Z
+SUMMARY:Divadlo Feste: Osmdesátdevět aneb trenažér jedné revoluce
+DESCRIPTION:Projekt Osmdesátdevět je nejdéle reprízovanou událostí Di
+ vadla Feste. Vznikl již v roce 2008\, tedy dva roky po vzniku divadla. Od
+  té doby prošel vývojem podobně\, jako samotné Divadlo Feste\, aby dr
+ amaturgicky reflektoval aktuální přístupy k dokumentárnímu divadlu\,
+  a dá se tedy označit za (...)\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ ivadlo-feste-osmdesatdevet-aneb-trenazer-jedne-revoluce
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-c0pv8v@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Pozvánka na Babský hody 10. 10. 2026
+DESCRIPTION:Zdroj: Obec Ostopovice
+URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-babsky-hody-10-10-2
+ 026
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-t70nxm@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261014T170000Z
+DTEND:20261014T180000Z
+SUMMARY:Kniha dělá scény #2: Katka už nebude divná
+DESCRIPTION:Autentický příběh o dospívání\, hledání vlastní ident
+ ity a cestě k sebepřijetí. Divadelní adaptaci románu Petry Soukupové
+  pro scénické čtení režíruje Jiří Honzírek\, umělecký šéf Div
+ adla Feste. Hrají Sabina Šlachtová a Ivana Milbachová.\n\nZdroj: Kniho
+ vna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
+ niha-dela-sceny-2-katka-uz-nebude-divna
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-xe95hj@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261020T140000Z
+DTEND:20261020T170000Z
+SUMMARY:Dýňobraní
+DESCRIPTION:Oslava podzimu pro celou rodinu. Dýně\, dýně a zase dýně.
+  Přijďte dlabat\, tvořit\, hodovat\, kochat se okrasnými kousky\, zah
+ řát se pumpkin spice latté a dalšími kávovými speciály\, užít si
+  hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě do
+ mů.\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ ynobrani-2
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-ym1yn6@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Adventní vystoupení
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-12f8nmf@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART:20261103T170000Z
+DTEND:20261103T180000Z
+SUMMARY:Mikro-teatro: La Pícara
+DESCRIPTION:Monodrama na hraně skutečného svědectví a mystifikace\,  i
+ nspirované životem skutečné postavy 17.století Cataliny de Erauso\, n
+ apsali dramatici Pavel Drábek a Joshem Overtonem. Catalina de Erauso v pa
+ tnácti letech utekla z kláštera a zbytek života prožila pod mužskou 
+ identitou\, což jí umožnilo (...)\n\nZdroj: Knihovna Ostopovice
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
+ ikro-teatro-la-picara
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ixvp6o@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Oslavy 17. listopadu
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-poaoty@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Folklórní soubor Háječek a Glonárky: Koledníci idú
+DESCRIPTION:Vystoupení dětí a ostopovických žen.\n\nZdroj: Připravova
+ né události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-133uvg@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Obecní ples
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ye5f12@ostopovice-events
+DTSTAMP:20261007T224101Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Folklórní soubor Háječek: Vystoupení v Židlochovicích
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura
+END:VEVENT
+END:VCALENDAR

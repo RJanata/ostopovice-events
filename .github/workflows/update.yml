@@ -1,0 +1,67 @@
+name: Aktualizace a nasazení
+
+on:
+  schedule:
+    # UTC: v létě 6:15, 12:15, 18:15 pražského času, v zimě o hodinu dřív
+    - cron: '15 4,10,16 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Stažení akcí ze zdrojů
+        run: npm run collect
+
+      # Commit jen když se změnily samotné akce (ne jen čas aktualizace) —
+      # v repu je tak i archiv proběhlých akcí, které zdroje už nevypisují.
+      - name: Uložení dat do repozitáře
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          old=$(git show HEAD:public/data/events.json 2>/dev/null | jq -S '.events' || echo null)
+          new=$(jq -S '.events' public/data/events.json)
+          if [ "$old" != "$new" ]; then
+            git add public/data
+            git commit -m "Aktualizace akcí $(date -u +%Y-%m-%dT%H:%MZ)"
+          elif [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 45 * 86400 )) ]; then
+            # GitHub vypíná plánované workflow po 60 dnech bez aktivity v repu
+            git commit --allow-empty -m "Udržovací commit (plánovaná aktualizace)"
+          else
+            echo "Akce se nezměnily, není co commitovat."
+            exit 0
+          fi
+          git pull --rebase --autostash
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

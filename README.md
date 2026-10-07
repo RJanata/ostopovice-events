@@ -1,0 +1,102 @@
+# Akce v Ostopovicích
+
+Souhrnný kalendář obecních, kulturních a sportovních akcí z více zdrojů na jednom místě.
+Statický web (HTML + CSS + JS) na GitHub Pages, data přegeneruje GitHub Action třikrát denně.
+
+```
+zdroje (RSS, Wix, rozpis hřiště, Google iCal)
+   → scripts/collect.js  (Node, GitHub Action 3× denně)
+   → public/data/events.json + public/data/akce.ics
+   → statický web public/ (filtry podle zdroje a typu akce, seznam a měsíc)
+```
+
+## Zdroje
+
+| Zdroj | Typ adaptéru | Jak se čte |
+|---|---|---|
+| Obec Ostopovice | `ipo-rss` | RSS kalendáře akcí (redakční systém IPO). Jen datum, bez času → celodenní akce. Feed má jen nadcházející akce, proběhlé drží náš archiv. |
+| Knihovna Ostopovice | `wix-events` | Veřejné Wix Events API (token návštěvníka z `/_api/v1/access-tokens`). Vrací i všechny termíny opakovaných akcí a proběhlé akce. Záloha: seznam vložený ve stránce (omezený). |
+| TJ Sokol Ostopovice | `nhjmop` | Rozpis hřiště z nhjmop.cz (domácí utkání národní házené, celá sezóna). |
+| Státní svátky | `ical` | Google iCal; jen „Státní svátek“, zobrazují se jako popisek dne (`display: dayLabel`). |
+| Obecní kalendář (test) | `ical` | Google iCal. |
+
+## Konfigurace
+
+- **`config/sources.json`** — seznam zdrojů. Nový Google kalendář = zkopírovat blok `pripravovane`,
+  změnit `id`, `name`, `url` (veřejná adresa ve formátu iCal), `icon` a `color`.
+  - `categories` — kategorie, které dostane každá akce zdroje (Sokol → Sport)
+  - `fallbackCategories` — jen když pravidla nic nenajdou (obec → Obec, knihovna → Kultura)
+  - `skipRules: true` — pravidla podle klíčových slov se nepoužijí
+  - `village` — obec; až budou zdroje z víc obcí, objeví se na webu filtr „Obec“
+  - `hideLocations` — regexy „domácích“ adres zdroje (knihovna, hřiště); ty se nezobrazují,
+    adresa se ukáže jen u akcí, které jsou jinde
+  - `enabled: false` — zdroj dočasně vypnout
+- **`config/categories.json`** — kategorie a klíčová slova (regulární výrazy bez diakritiky,
+  porovnávají se s názvem a popisem akce).
+- **Kategorie přímo v popisu akce** (hlavně pro vlastní Google kalendáře): do popisu události
+  stačí napsat `#deti #kultura`, nebo samostatný řádek `Kategorie: Pro děti, Kultura`.
+  Platí id i název kategorie, bez ohledu na diakritiku (`#vzdelavani` = `#Vzdělávání`).
+  Štítky mají přednost před pravidly a z popisu na webu zmizí. Další aliasy jdou přidat
+  do kategorie jako `"tags": ["deticky"]`.
+- **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho
+  v `public/data/events.json`), např.:
+  ```json
+  { "events": { "obec-fjsj2r": { "title": "Komunální volby 2026" }, "obec-xyz": { "hidden": true } } }
+  ```
+  Původní název zdroje zůstává v datech jako `originalTitle`.
+- Ikony zdrojů: `public/icons/` (loga a favicony organizací, PNG/SVG). Ikony kategorií: `public/icons/categories/` (jednobarevné SVG, obarví se barvou kategorie).
+
+## Správa akcí (admin.html)
+
+Stránka `admin.html` (na webu není odkaz, adresa `…/ostopovice-events/admin.html`) umí u akce
+změnit název, nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
+nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API;
+commit spustí workflow a web se do pár minut přegeneruje.
+
+Potřebuje GitHub token: Settings → Developer settings → Fine-grained tokens, přístup jen
+k tomuto repozitáři, *Contents: Read and write*. Token se uloží v `localStorage` prohlížeče.
+Pozor: všechny GitHub Pages jednoho účtu sdílí doménu `<účet>.github.io`, takže token vidí
+i stránky ostatních projektů na stejné doméně — používej jen na svém počítači.
+
+## Chování sběru
+
+- Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená a web ukáže upozornění.
+- Zdroj, který najednou vrátí 0 akcí, i když dřív nějaké měl, se bere jako chyba (nejspíš se změnil web).
+- Proběhlé akce se drží 400 dní.
+- Kategorie se počítají při každém běhu znovu, takže úprava pravidel platí i zpětně.
+- Akce s názvem začínajícím „ZRUŠENO“ se zobrazí přeškrtnuté.
+- Státní svátky nejsou ve filtru zdrojů — zobrazují se vždy (u čísla dne v měsíci, v seznamu i dny bez akcí).
+- Skryté akce zůstávají v `events.json` (s `hidden: true`), aby je šlo v adminu znovu zobrazit.
+- Kromě `akce.ics` vzniká i `akce-<kategorie>.ics` pro každou kategorii (odběr jen „Pro děti“ apod.);
+  v .ics jsou akce od 60 dní zpět. Pro libovolnou kombinaci filtrů nabízí web jednorázové
+  stažení .ics vytvořeného přímo v prohlížeči (`js/ics-export.js`).
+- Stejná akce ve dvou zdrojích (stejný název a den) se zobrazí jen jednou.
+
+## Lokálně
+
+```bash
+npm install
+npm run collect          # stáhne data do public/data
+npm run collect -- --only=knihovna
+npm run serve            # náhled na http://localhost:4173
+```
+
+## Nasazení (GitHub Pages)
+
+1. Repozitář musí být veřejný (Pages zdarma).
+2. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+3. Workflow `.github/workflows/update.yml` běží 3× denně, po každém pushi do `main`
+   a ručně (Actions → Aktualizace a nasazení → Run workflow).
+4. Data se commitují jen tehdy, když se změnily akce. Když se 45 dní nic nezmění,
+   workflow udělá prázdný commit, aby GitHub plánované spouštění nevypnul.
+
+### Vlastní doména (volitelně)
+
+Např. `ostopovice.craz.cz`: v DNS přidat `CNAME ostopovice → <účet>.github.io`,
+pak Settings → Pages → Custom domain a zaškrtnout Enforce HTTPS. Hosting zůstává na GitHubu.
+
+## Filtry v URL
+
+Stav filtrů je v adrese za `#`, takže jde poslat odkaz, např.
+`#t=deti` (jen akce pro děti), `#v=month&z=sokol` (měsíc, jen Sokol), `#q=jóga`.
+Dvojklik na štítek filtru vybere jen tuto položku.
