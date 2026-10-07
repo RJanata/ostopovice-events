@@ -77,6 +77,22 @@
         <small class="admin-original"></small>
       </label>
       <label class="admin-field">
+        <span>Poznámka</span>
+        <textarea name="note" rows="2" placeholder="např. Změna místa – koná se v sokolovně"></textarea>
+        <small>Zobrazí se na webu vždy hned pod názvem akce.</small>
+      </label>
+      <fieldset class="admin-field admin-when">
+        <legend>Datum a čas</legend>
+        <div class="admin-when__row">
+          <label>Od <input type="date" name="startDate"></label>
+          <label><input type="time" name="startTime"></label>
+          <label>do <input type="date" name="endDate"></label>
+          <label><input type="time" name="endTime"></label>
+        </div>
+        <small>Bez času = celodenní akce. Datum konce vyplňte jen u vícedenní akce. <span class="admin-original-when"></span></small>
+        <small class="admin-when-series" hidden>Datum a čas lze měnit jen pro jeden termín – přepněte níže na „jen tento termín“.</small>
+      </fieldset>
+      <label class="admin-field">
         <span>Místo / adresa</span>
         <input type="text" name="location">
         <small class="admin-original-location"></small>

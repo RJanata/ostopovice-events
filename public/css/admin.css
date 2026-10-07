@@ -51,6 +51,15 @@
   background: var(--surface); color: var(--text); font: inherit;
 }
 .admin-field small { color: var(--muted); }
+.admin-field textarea, .admin-when input {
+  padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); color: var(--text); font: inherit;
+}
+.admin-field textarea { resize: vertical; }
+.admin-when__row { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.admin-when__row label { display: inline-flex; align-items: center; gap: 6px; }
+.admin-when input:disabled { opacity: 0.5; }
+.admin-row__note { margin-top: 2px; font-size: 0.85rem; padding-left: 6px; border-left: 3px solid var(--accent); }
 .admin-categories { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 4px 0; }
 .admin-categories[aria-disabled="true"] { opacity: 0.5; }
 .admin-scope { display: flex; flex-wrap: wrap; gap: 6px 16px; }

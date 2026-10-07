@@ -36,7 +36,9 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 - **Kategorie přímo v popisu akce** (hlavně pro vlastní Google kalendáře): do popisu události
   stačí napsat `#deti #kultura`, nebo samostatný řádek `Kategorie: Pro děti, Kultura`.
   Platí id i název kategorie, bez ohledu na diakritiku (`#vzdelavani` = `#Vzdělávání`).
-  Štítky mají přednost před pravidly a z popisu na webu zmizí. Další aliasy jdou přidat
+  Štítky mají přednost před pravidly a z popisu na webu zmizí.
+  Odkaz na akci jde zapsat samostatným řádkem `#link: https://…` — stane se z něj odkaz
+  v názvu akce a v popisu se nezobrazí. Další aliasy jdou přidat
   do kategorie jako `"tags": ["deticky"]`.
 - **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho
   v `public/data/events.json`), např.:
@@ -49,7 +51,8 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 ## Správa akcí (admin.html)
 
 Stránka `admin.html` (na webu není odkaz, adresa `…/ostopovice-events/admin.html`) umí u akce
-změnit název, místo/adresu, nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
+změnit název, místo/adresu, datum a čas (jen u jednoho termínu), přidat poznámku
+(na webu se zobrazí vždy pod názvem), nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
 nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API;
 commit spustí workflow a web se do pár minut přegeneruje.
 

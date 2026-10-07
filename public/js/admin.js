@@ -39,20 +39,45 @@ function normalize(text) {
 
 const dayKey = (date) => new Intl.DateTimeFormat('en-CA', { timeZone: TIME_ZONE, year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
 
-function formatWhen(e) {
-  if (e.allDay) {
-    const [y, m, d] = e.start.split('-').map(Number);
+/** when = { start, end, allDay } ve formátu events.json */
+function formatWhen(when) {
+  if (when.allDay) {
+    const [y, m, d] = when.start.split('-').map(Number);
     const text = `${d}. ${m}. ${y}`;
-    return e.end && e.end !== e.start ? `${text} – ${e.end.split('-').map(Number).reverse().join('. ')}` : text;
+    return when.end && when.end !== when.start ? `${text} – ${when.end.split('-').map(Number).reverse().join('. ')}` : text;
   }
-  return new Date(e.start).toLocaleString('cs-CZ', {
+  return new Date(when.start).toLocaleString('cs-CZ', {
     timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit',
   });
 }
 
-function lastDay(e) {
-  if (e.allDay) return e.end || e.start;
-  return dayKey(new Date(e.end || e.start));
+function lastDay(when) {
+  if (when.allDay) return when.end || when.start;
+  return dayKey(new Date(when.end || when.start));
+}
+
+/** ISO okamžik → pražské { date: 'YYYY-MM-DD', time: 'HH:MM' } */
+function toPragueParts(iso) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', {
+    timeZone: TIME_ZONE, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit',
+  }).formatToParts(new Date(iso)).map((p) => [p.type, p.value]));
+  return { date: `${parts.year}-${parts.month}-${parts.day}`, time: `${parts.hour}:${parts.minute}` };
+}
+
+/** Pražský místní čas → ISO v UTC (správně i přes přechod letního času). */
+function fromPragueParts(date, time) {
+  const [y, mo, d] = date.split('-').map(Number);
+  const [h, mi] = time.split(':').map(Number);
+  const guess = Date.UTC(y, mo - 1, d, h, mi);
+  const offsetAt = (ms) => {
+    const p = toPragueParts(new Date(ms).toISOString());
+    const [py, pmo, pd] = p.date.split('-').map(Number);
+    const [ph, pmi] = p.time.split(':').map(Number);
+    return Date.UTC(py, pmo - 1, pd, ph, pmi) - ms;
+  };
+  let result = guess - offsetAt(guess);
+  result = guess - offsetAt(result);
+  return new Date(result).toISOString();
 }
 
 function setMessage(element, text, kind = '') {
@@ -138,12 +163,26 @@ async function saveOverrides(next, message) {
 const baseTitle = (e) => e.originalTitle || e.title;
 const baseLocation = (e) => ('originalLocation' in e ? e.originalLocation : e.location) || '';
 const seriesKey = (e) => `${e.source}|${baseTitle(e)}`;
+const pick = (obj, key, originalKey) => (originalKey in obj ? obj[originalKey] : obj[key]);
+const baseWhen = (e) => ({
+  start: pick(e, 'start', 'originalStart'),
+  end: pick(e, 'end', 'originalEnd'),
+  allDay: pick(e, 'allDay', 'originalAllDay'),
+});
+const WHEN_FIELDS = ['start', 'end', 'allDay'];
 
 function effective(e) {
   const changes = { ...overrides.series[seriesKey(e)], ...overrides.events[e.id] };
+  const base = baseWhen(e);
   return {
     changes,
     title: changes.title || baseTitle(e),
+    when: {
+      start: changes.start ?? base.start,
+      end: changes.end ?? base.end,
+      allDay: changes.allDay ?? base.allDay,
+    },
+    note: changes.note || '',
     location: 'location' in changes ? changes.location : baseLocation(e),
     categories: changes.categories || e.categories,
     hidden: Boolean(changes.hidden),
@@ -168,8 +207,8 @@ function renderList() {
   const rows = data.events.filter((e) => {
     if (sourcesById[e.source]?.display === 'dayLabel') return false;
     if (source && e.source !== source) return false;
-    if (upcomingOnly && lastDay(e) < today) return false;
     const eff = effective(e);
+    if (upcomingOnly && lastDay(eff.when) < today) return false;
     if (changedOnly && !eff.changed) return false;
     if (query && !normalize(`${eff.title} ${baseTitle(e)}`).includes(query)) return false;
     return true;
@@ -191,12 +230,15 @@ function renderList() {
     ].filter(Boolean).join(' ');
     const renamed = eff.title !== baseTitle(e) ? `<span>původně: ${escapeHtml(baseTitle(e))}</span>` : '';
     const place = eff.location ? `<span>📍 ${escapeHtml(eff.location)}</span>` : '';
+    const link = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">původní akce ↗</a>` : '';
+    const moved = formatWhen(eff.when) !== formatWhen(baseWhen(e)) ? `<span>původně: ${escapeHtml(formatWhen(baseWhen(e)))}</span>` : '';
     return `<div class="admin-row${eff.hidden ? ' admin-row--hidden' : ''}" data-id="${escapeHtml(e.id)}">
-        <div class="admin-row__date">${escapeHtml(formatWhen(e))}</div>
+        <div class="admin-row__date">${escapeHtml(formatWhen(eff.when))}</div>
         <div>
           <div class="admin-row__title">${escapeHtml(eff.title)}</div>
+          ${eff.note ? `<div class="admin-row__note">${escapeHtml(eff.note)}</div>` : ''}
           <div class="admin-row__meta">
-            <span>${escapeHtml(src.name)}</span><span>${escapeHtml(cats)}</span>${place}${renamed}${badges}
+            <span>${escapeHtml(src.name)}</span><span>${escapeHtml(cats)}</span>${place}${renamed}${moved}${link}${badges}
           </div>
         </div>
         <button type="button" class="button button--small button--ghost" data-action="edit">Upravit</button>
@@ -237,12 +279,37 @@ function mountEditForm(slot, e) {
   syncCats();
 
   form.elements.hidden.checked = eff.hidden;
+  form.elements.note.value = eff.note;
+
+  // datum a čas (prázdný čas = celodenní akce)
+  const { when } = eff;
+  if (when.allDay) {
+    form.elements.startDate.value = when.start;
+    form.elements.endDate.value = when.end && when.end !== when.start ? when.end : '';
+  } else {
+    const from = toPragueParts(when.start);
+    const to = toPragueParts(when.end || when.start);
+    form.elements.startDate.value = from.date;
+    form.elements.startTime.value = from.time;
+    form.elements.endDate.value = to.date !== from.date ? to.date : '';
+    form.elements.endTime.value = when.end && when.end !== when.start ? to.time : '';
+  }
+  form.querySelector('.admin-original-when').textContent = `Ze zdroje: ${formatWhen(baseWhen(e))}`;
+
+  const whenInputs = form.querySelectorAll('.admin-when input');
+  const syncScope = () => {
+    const series = count > 1 && form.elements.scope.value === 'series';
+    whenInputs.forEach((i) => { i.disabled = series; });
+    form.querySelector('.admin-when-series').hidden = !series;
+  };
 
   if (count > 1) {
     form.querySelector('.admin-scope').hidden = false;
     form.querySelector('.admin-scope-series').textContent = `všechny termíny „${baseTitle(e)}“ (${count}, i budoucí)`;
     form.elements.scope.value = ownChanges ? 'event' : 'series';
+    form.querySelectorAll('input[name="scope"]').forEach((r) => r.addEventListener('change', syncScope));
   }
+  syncScope();
 
   form.addEventListener('submit', async (ev) => {
     ev.preventDefault();
@@ -260,12 +327,32 @@ function mountEditForm(slot, e) {
       changes.categories = picked;
     }
     if (form.elements.hidden.checked) changes.hidden = true;
+    const note = form.elements.note.value.trim();
+    if (note) changes.note = note;
 
     const scope = count > 1 ? form.elements.scope.value : 'event';
+
+    // datum a čas — jen u jednoho termínu
+    if (scope === 'event') {
+      let newWhen;
+      try {
+        newWhen = readWhen(form);
+      } catch (err) {
+        setMessage($('admin-message'), err.message, 'error');
+        return;
+      }
+      const base = baseWhen(e);
+      if (WHEN_FIELDS.some((f) => newWhen[f] !== base[f])) Object.assign(changes, newWhen);
+    }
+
     const next = { series: { ...overrides.series }, events: { ...overrides.events } };
     if (scope === 'series') {
       next.series[seriesKey(e)] = changes;
-      delete next.events[e.id]; // jinak by úprava jednoho termínu tu hromadnou přebila
+      // úprava jednoho termínu by tu hromadnou přebila → necháme z ní jen přesunuté datum
+      const own = next.events[e.id] || {};
+      const keep = Object.fromEntries(WHEN_FIELDS.filter((f) => f in own).map((f) => [f, own[f]]));
+      if (Object.keys(keep).length) next.events[e.id] = keep;
+      else delete next.events[e.id];
     } else {
       next.events[e.id] = changes;
     }
@@ -286,6 +373,24 @@ function mountEditForm(slot, e) {
 
   slot.replaceWith(form);
   form.elements.title.focus();
+}
+
+/** Datum a čas z formuláře → { start, end, allDay } ve formátu events.json */
+function readWhen(form) {
+  const startDate = form.elements.startDate.value;
+  const startTime = form.elements.startTime.value;
+  const endDate = form.elements.endDate.value || startDate;
+  const endTime = form.elements.endTime.value;
+  if (!startDate) throw new Error('Vyplňte datum začátku.');
+  if (!startTime) {
+    if (endTime) throw new Error('Bez času začátku je akce celodenní – smažte i čas konce, nebo doplňte čas začátku.');
+    if (endDate < startDate) throw new Error('Konec akce je dřív než začátek.');
+    return { start: startDate, end: endDate, allDay: true };
+  }
+  const start = fromPragueParts(startDate, startTime);
+  const end = endTime ? fromPragueParts(endDate, endTime) : start;
+  if (end < start) throw new Error('Konec akce je dřív než začátek.');
+  return { start, end, allDay: false };
 }
 
 async function commit(next, e, message, scope) {
