@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T08:57:01.438Z",
+ "generatedAt": "2026-10-08T14:26:32.071Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -12,7 +12,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -42,9 +42,9 @@
    "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T08:32:37.242Z",
-   "ok": false,
-   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (3 pokusy)",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
+   "ok": true,
+   "error": null,
    "count": 24
   },
   {
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,10 +87,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
-   "count": 231
+   "count": 53
   },
   {
    "id": "pripravovane",
@@ -102,10 +102,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T08:57:01.438Z",
+   "lastSuccess": "2026-10-08T14:26:32.071Z",
    "ok": true,
    "error": null,
-   "count": 7
+   "count": 14
   }
  ],
  "categories": [
@@ -3838,6 +3838,21 @@
    ]
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -3854,21 +3869,6 @@
    ],
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
    ]
   },
   {
@@ -4714,6 +4714,23 @@
    ]
   },
   {
+   "id": "pripravovane-1ug0pvk",
+   "source": "pripravovane",
+   "title": "Beseda, setkání a oslava významných jubileí seniorů",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "allDay": true,
+   "location": "Knihovna Ostopovice",
+   "url": "",
+   "description": "Pořádá obecní úřad\n#seniori",
+   "image": "",
+   "categories": [
+    "kultura",
+    "vzdelavani",
+    "obec"
+   ]
+  },
+  {
    "id": "seniori-fyvofl",
    "source": "seniori",
    "title": "Zábava, Martinské dostaveníčko",
@@ -4994,6 +5011,24 @@
    ]
   },
   {
+   "id": "pripravovane-1y0eeei",
+   "source": "pripravovane",
+   "title": "Adventní dílna",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "allDay": true,
+   "location": "Knihovna Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ]
+  },
+  {
    "id": "nezarazene-1lcdi2k",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -5081,7 +5116,7 @@
   {
    "id": "pripravovane-7nr8c",
    "source": "pripravovane",
-   "title": "Adventní vystoupení",
+   "title": "Rozsvěcení stromečku (1. adventní neděle)",
    "start": "2026-11-29",
    "end": "2026-11-29",
    "allDay": true,
@@ -5155,13 +5190,13 @@
   {
    "id": "pripravovane-1gi8z6o",
    "source": "pripravovane",
-   "title": "Adventní hra",
+   "title": "Adventní světýlka",
    "start": "2026-12-01",
    "end": "2026-12-24",
    "allDay": true,
    "location": "",
    "url": "",
-   "description": "",
+   "description": "Vánoční hra pro děti.",
    "image": "",
    "tagCategories": [
     "deti"
@@ -5396,6 +5431,24 @@
    ]
   },
   {
+   "id": "pripravovane-14ym9v0",
+   "source": "pripravovane",
+   "title": "Vánoce s Karlem: Karel Hegner & Fashion Strings",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "allDay": true,
+   "location": "Knihovna Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-142hbcz",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -5409,21 +5462,6 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "pripravovane-poaoty",
-   "source": "pripravovane",
-   "title": "Folklórní soubor Háječek a Glonárky: Koledníci idú",
-   "start": "2026-12-12",
-   "end": "2026-12-12",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "Vystoupení dětí a ostopovických žen.",
-   "image": "",
-   "categories": [
-    "kultura"
    ]
   },
   {
@@ -5535,6 +5573,21 @@
    ]
   },
   {
+   "id": "pripravovane-rm7wor",
+   "source": "pripravovane",
+   "title": "Folklórní soubor Háječek a Glonárky: Koledníci idú",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Vystoupení dětí a ostopovických žen.",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "nezarazene-43lv2n",
    "source": "nezarazene",
    "title": "Malá kopaná",
@@ -5638,6 +5691,26 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "pripravovane-vdnv5i",
+   "source": "pripravovane",
+   "title": "Betlémské světlo",
+   "start": "2026-12-24",
+   "end": "2026-12-24",
+   "allDay": true,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "cirkev",
+    "deti"
+   ],
+   "categories": [
+    "cirkev",
+    "deti"
+   ]
   },
   {
    "id": "svatky-1seqtp3",
@@ -5822,82 +5895,6 @@
    ]
   },
   {
-   "id": "nezarazene-8m958v",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-01-06T17:00:00.000Z",
-   "end": "2027-01-06T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1rj80xj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-06T17:30:00.000Z",
-   "end": "2027-01-06T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-krt3mj",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-01-10T16:00:00.000Z",
-   "end": "2027-01-10T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-8du8v4",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-10T18:00:00.000Z",
-   "end": "2027-01-10T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "knihovna-1ulvu99",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)",
@@ -5912,44 +5909,6 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
-  },
-  {
-   "id": "nezarazene-5pnutx",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-01-13T17:00:00.000Z",
-   "end": "2027-01-13T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-9gn7ml",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-13T17:30:00.000Z",
-   "end": "2027-01-13T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
    ]
   },
   {
@@ -5968,763 +5927,57 @@
    ]
   },
   {
-   "id": "nezarazene-v1j4mq",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-01-17T16:00:00.000Z",
-   "end": "2027-01-17T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-19fr7wp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-17T18:00:00.000Z",
-   "end": "2027-01-17T19:00:00.000Z",
-   "allDay": false,
+   "id": "pripravovane-151pfly",
+   "source": "pripravovane",
+   "title": "Poleskavský ples",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "allDay": true,
    "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1d1kstn",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-01-20T17:00:00.000Z",
-   "end": "2027-01-20T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
+   "url": "",
    "description": "",
    "image": "",
-   "recurring": true,
    "tagCategories": [
-    "cirkev"
+    "kultura"
    ],
    "categories": [
-    "cirkev"
+    "kultura"
    ]
   },
   {
-   "id": "nezarazene-1uh1nmn",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-20T17:30:00.000Z",
-   "end": "2027-01-20T18:30:00.000Z",
-   "allDay": false,
+   "id": "pripravovane-o73ikv",
+   "source": "pripravovane",
+   "title": "Sokolský ples",
+   "start": "2027-03-06",
+   "end": "2027-03-06",
+   "allDay": true,
    "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-11czraw",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-01-24T16:00:00.000Z",
-   "end": "2027-01-24T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-e4xl2b",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-24T18:00:00.000Z",
-   "end": "2027-01-24T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-65gp4y",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-01-27T17:00:00.000Z",
-   "end": "2027-01-27T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
+   "url": "",
    "description": "",
    "image": "",
-   "recurring": true,
    "tagCategories": [
-    "cirkev"
+    "kultura"
    ],
    "categories": [
-    "cirkev"
+    "kultura"
    ]
   },
   {
-   "id": "nezarazene-1bo4td6",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-27T17:30:00.000Z",
-   "end": "2027-01-27T18:30:00.000Z",
-   "allDay": false,
+   "id": "pripravovane-1c9br0i",
+   "source": "pripravovane",
+   "title": "Ples seniorů",
+   "start": "2027-03-19",
+   "end": "2027-03-19",
+   "allDay": true,
    "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "url": "",
+   "description": "#seniori",
    "image": "",
-   "recurring": true,
    "tagCategories": [
-    "sport"
+    "kultura"
    ],
    "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-hiqgsy",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-01-31T16:00:00.000Z",
-   "end": "2027-01-31T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-k0toct",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-31T18:00:00.000Z",
-   "end": "2027-01-31T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-13uy9lr",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-02-03T17:00:00.000Z",
-   "end": "2027-02-03T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-3tj5lz",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-03T17:30:00.000Z",
-   "end": "2027-02-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-3yn1f4",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-02-07T16:00:00.000Z",
-   "end": "2027-02-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-llnf3v",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-07T18:00:00.000Z",
-   "end": "2027-02-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10u0s0j",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-02-10T17:00:00.000Z",
-   "end": "2027-02-10T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1l8o3qv",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-10T17:30:00.000Z",
-   "end": "2027-02-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1beldy8",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-02-14T16:00:00.000Z",
-   "end": "2027-02-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-s546vf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-14T18:00:00.000Z",
-   "end": "2027-02-14T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-11ac8a",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-02-17T17:00:00.000Z",
-   "end": "2027-02-17T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1crpztu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-17T17:30:00.000Z",
-   "end": "2027-02-17T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-eo4y34",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-02-21T16:00:00.000Z",
-   "end": "2027-02-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-hxqrun",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-21T18:00:00.000Z",
-   "end": "2027-02-21T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-zq6uvk",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-02-24T17:00:00.000Z",
-   "end": "2027-02-24T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1vavz18",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-24T17:30:00.000Z",
-   "end": "2027-02-24T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1ru1dfv",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-02-28T16:00:00.000Z",
-   "end": "2027-02-28T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10sciio",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-28T18:00:00.000Z",
-   "end": "2027-02-28T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-17vby42",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-03-03T17:00:00.000Z",
-   "end": "2027-03-03T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-jpxjbu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-03T17:30:00.000Z",
-   "end": "2027-03-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-znoxlh",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-03-07T16:00:00.000Z",
-   "end": "2027-03-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1jtu5hi",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-07T18:00:00.000Z",
-   "end": "2027-03-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1kto3j2",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-03-10T17:00:00.000Z",
-   "end": "2027-03-10T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-rbbxsa",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-10T17:30:00.000Z",
-   "end": "2027-03-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1sdgj39",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-03-14T16:00:00.000Z",
-   "end": "2027-03-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1clzxkm",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-14T18:00:00.000Z",
-   "end": "2027-03-14T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-16sje7j",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-03-17T17:00:00.000Z",
-   "end": "2027-03-17T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1t6uccf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-17T17:30:00.000Z",
-   "end": "2027-03-17T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1j2nfrl",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-03-21T16:00:00.000Z",
-   "end": "2027-03-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-5sw9y",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-21T18:00:00.000Z",
-   "end": "2027-03-21T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-11q84z9",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-03-24T17:00:00.000Z",
-   "end": "2027-03-24T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-qoe3s1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-24T17:30:00.000Z",
-   "end": "2027-03-24T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
+    "kultura"
    ]
   },
   {
@@ -6741,44 +5994,6 @@
    "categories": []
   },
   {
-   "id": "nezarazene-u6eorl",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-03-28T15:00:00.000Z",
-   "end": "2027-03-28T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-13dpfr2",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-28T17:00:00.000Z",
-   "end": "2027-03-28T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-1tqijoz",
    "source": "svatky",
    "title": "Velikonoční pondělí",
@@ -6790,120 +6005,6 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
-  },
-  {
-   "id": "nezarazene-1bacf0i",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-03-31T16:00:00.000Z",
-   "end": "2027-03-31T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1t1kk6",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-31T16:30:00.000Z",
-   "end": "2027-03-31T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-102fzts",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-04-04T15:00:00.000Z",
-   "end": "2027-04-04T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-o82t5r",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-04T17:00:00.000Z",
-   "end": "2027-04-04T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1dtk7is",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-04-07T16:00:00.000Z",
-   "end": "2027-04-07T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-ry9ilo",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-07T16:30:00.000Z",
-   "end": "2027-04-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
   },
   {
    "id": "sokol-50muru",
@@ -7053,158 +6154,6 @@
    ]
   },
   {
-   "id": "nezarazene-1yd6jru",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-04-11T15:00:00.000Z",
-   "end": "2027-04-11T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-18ovs9t",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-11T17:00:00.000Z",
-   "end": "2027-04-11T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-18189l0",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-04-14T16:00:00.000Z",
-   "end": "2027-04-14T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-9i23tc",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-14T16:30:00.000Z",
-   "end": "2027-04-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1961qx1",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-04-18T15:00:00.000Z",
-   "end": "2027-04-18T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xi516q",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-18T17:00:00.000Z",
-   "end": "2027-04-18T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1sr6qb0",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-04-21T16:00:00.000Z",
-   "end": "2027-04-21T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-87uv7s",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-21T16:30:00.000Z",
-   "end": "2027-04-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "sokol-4ddw29",
    "source": "sokol",
    "title": "Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Krčín",
@@ -7226,82 +6175,6 @@
    ]
   },
   {
-   "id": "nezarazene-1kwrzt5",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-04-25T15:00:00.000Z",
-   "end": "2027-04-25T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1yyppya",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-25T17:00:00.000Z",
-   "end": "2027-04-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1772is7",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-04-28T16:00:00.000Z",
-   "end": "2027-04-28T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-18mbsj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-28T16:30:00.000Z",
-   "end": "2027-04-28T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-1u7v05b",
    "source": "svatky",
    "title": "Svátek práce",
@@ -7315,82 +6188,6 @@
    "categories": []
   },
   {
-   "id": "nezarazene-1ne57rr",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-05-02T15:00:00.000Z",
-   "end": "2027-05-02T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-mbmwl0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-02T17:00:00.000Z",
-   "end": "2027-05-02T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-x30k8r",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-05-05T16:00:00.000Z",
-   "end": "2027-05-05T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-jbvjon",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-05T16:30:00.000Z",
-   "end": "2027-05-05T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-1jy7eop",
    "source": "svatky",
    "title": "Den osvobození",
@@ -7402,82 +6199,6 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
-  },
-  {
-   "id": "nezarazene-1n53txi",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-05-09T15:00:00.000Z",
-   "end": "2027-05-09T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-uzuhlx",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-09T17:00:00.000Z",
-   "end": "2027-05-09T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-o2yr3r",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-05-12T16:00:00.000Z",
-   "end": "2027-05-12T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1w1yor3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-12T16:30:00.000Z",
-   "end": "2027-05-12T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
   },
   {
    "id": "pripravovane-1ye5f12",
@@ -7511,158 +6232,6 @@
     "score": ""
    },
    "shortTitle": "1. liga muži · Sokol Ostopovice – SK Studénka A",
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-946vku",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-05-16T15:00:00.000Z",
-   "end": "2027-05-16T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-t29tfp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-16T17:00:00.000Z",
-   "end": "2027-05-16T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-11bx7qy",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-05-19T16:00:00.000Z",
-   "end": "2027-05-19T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-c09kby",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-19T16:30:00.000Z",
-   "end": "2027-05-19T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-felqly",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-05-23T15:00:00.000Z",
-   "end": "2027-05-23T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10jcwu1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-23T17:00:00.000Z",
-   "end": "2027-05-23T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1b8msgw",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-05-26T16:00:00.000Z",
-   "end": "2027-05-26T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-qe28y0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-26T16:30:00.000Z",
-   "end": "2027-05-26T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
    "categories": [
     "sport"
    ]
@@ -7710,424 +6279,6 @@
    ]
   },
   {
-   "id": "nezarazene-18f5ati",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-05-30T15:00:00.000Z",
-   "end": "2027-05-30T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-7n94kp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-30T17:00:00.000Z",
-   "end": "2027-05-30T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-kzi7pt",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-06-02T16:00:00.000Z",
-   "end": "2027-06-02T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-nan8qp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-02T16:30:00.000Z",
-   "end": "2027-06-02T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1xblcwo",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-06-06T15:00:00.000Z",
-   "end": "2027-06-06T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-19mapcj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-06T17:00:00.000Z",
-   "end": "2027-06-06T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-z2q10o",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-06-09T16:00:00.000Z",
-   "end": "2027-06-09T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1h3w3ec",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-09T16:30:00.000Z",
-   "end": "2027-06-09T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-17un1fi",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-06-13T15:00:00.000Z",
-   "end": "2027-06-13T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1s0fedt",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-13T17:00:00.000Z",
-   "end": "2027-06-13T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-iktgeg",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-06-16T16:00:00.000Z",
-   "end": "2027-06-16T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-11l8l1c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-16T16:30:00.000Z",
-   "end": "2027-06-16T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1kaqu28",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-06-20T15:00:00.000Z",
-   "end": "2027-06-20T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1k00wo7",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-20T17:00:00.000Z",
-   "end": "2027-06-20T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1usarb0",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-06-23T16:00:00.000Z",
-   "end": "2027-06-23T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-5zp3ys",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-23T16:30:00.000Z",
-   "end": "2027-06-23T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1qopgu1",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-06-27T15:00:00.000Z",
-   "end": "2027-06-27T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1lob4uu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-27T17:00:00.000Z",
-   "end": "2027-06-27T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1bwpkh8",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-06-30T16:00:00.000Z",
-   "end": "2027-06-30T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-ro3gdc",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-30T16:30:00.000Z",
-   "end": "2027-06-30T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-hggz0n",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-07-04T15:00:00.000Z",
-   "end": "2027-07-04T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1t2xs8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-04T17:00:00.000Z",
-   "end": "2027-07-04T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-wxpdhy",
    "source": "svatky",
    "title": "Den slovanských věrozvěstů Cyrila a Metoděje",
@@ -8154,918 +6305,6 @@
    "categories": []
   },
   {
-   "id": "nezarazene-1yoxfav",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-07-07T16:00:00.000Z",
-   "end": "2027-07-07T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-6sr1un",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-07T16:30:00.000Z",
-   "end": "2027-07-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1b9x7rx",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-07-11T15:00:00.000Z",
-   "end": "2027-07-11T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1knc79a",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-11T17:00:00.000Z",
-   "end": "2027-07-11T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-8l2r4r",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-07-14T16:00:00.000Z",
-   "end": "2027-07-14T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-v5syfj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-14T16:30:00.000Z",
-   "end": "2027-07-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-pc3z9e",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-07-18T15:00:00.000Z",
-   "end": "2027-07-18T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1yv44f1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-18T17:00:00.000Z",
-   "end": "2027-07-18T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-w12j1v",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-07-21T16:00:00.000Z",
-   "end": "2027-07-21T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1v862gn",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-21T16:30:00.000Z",
-   "end": "2027-07-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-pbqfo6",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-07-25T15:00:00.000Z",
-   "end": "2027-07-25T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1hp6ryl",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-25T17:00:00.000Z",
-   "end": "2027-07-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-hp10w8",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-07-28T16:00:00.000Z",
-   "end": "2027-07-28T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-8rqfv0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-28T16:30:00.000Z",
-   "end": "2027-07-28T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-16fwtx7",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-08-01T15:00:00.000Z",
-   "end": "2027-08-01T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-eu8ze0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-01T17:00:00.000Z",
-   "end": "2027-08-01T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1dozcw9",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-08-04T16:00:00.000Z",
-   "end": "2027-08-04T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-xvqerp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-04T16:30:00.000Z",
-   "end": "2027-08-04T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1gwcc20",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-08-08T15:00:00.000Z",
-   "end": "2027-08-08T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-wuffw7",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-08T17:00:00.000Z",
-   "end": "2027-08-08T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-j21e3r",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-08-11T16:00:00.000Z",
-   "end": "2027-08-11T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1lvgumz",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-11T16:30:00.000Z",
-   "end": "2027-08-11T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-pa4482",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-08-15T15:00:00.000Z",
-   "end": "2027-08-15T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1pxfs7d",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-15T17:00:00.000Z",
-   "end": "2027-08-15T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1z96f0",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-08-18T16:00:00.000Z",
-   "end": "2027-08-18T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1hfrg1s",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-18T16:30:00.000Z",
-   "end": "2027-08-18T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-g3y8n0",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-08-22T15:00:00.000Z",
-   "end": "2027-08-22T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-b6q0mf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-22T17:00:00.000Z",
-   "end": "2027-08-22T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1m6slis",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-08-25T16:00:00.000Z",
-   "end": "2027-08-25T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-10ld7oo",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-25T16:30:00.000Z",
-   "end": "2027-08-25T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1kzst9l",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-08-29T15:00:00.000Z",
-   "end": "2027-08-29T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-13d4slm",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-29T17:00:00.000Z",
-   "end": "2027-08-29T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-14t0rc3",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-09-01T16:00:00.000Z",
-   "end": "2027-09-01T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1x3xklj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-01T16:30:00.000Z",
-   "end": "2027-09-01T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-rnw6ni",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-09-05T15:00:00.000Z",
-   "end": "2027-09-05T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1g857j1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-05T17:00:00.000Z",
-   "end": "2027-09-05T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-fpdbso",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-09-08T16:00:00.000Z",
-   "end": "2027-09-08T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1rqvn8c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-08T16:30:00.000Z",
-   "end": "2027-09-08T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1py28g6",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-09-12T15:00:00.000Z",
-   "end": "2027-09-12T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-z27v2l",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-12T17:00:00.000Z",
-   "end": "2027-09-12T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-7mvp62",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-09-15T16:00:00.000Z",
-   "end": "2027-09-15T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-8n9f4u",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-15T16:30:00.000Z",
-   "end": "2027-09-15T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1q73maf",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-09-19T15:00:00.000Z",
-   "end": "2027-09-19T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-q89evg",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-19T17:00:00.000Z",
-   "end": "2027-09-19T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-16cm6h4",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-09-22T16:00:00.000Z",
-   "end": "2027-09-22T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-uh7w28",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-22T16:30:00.000Z",
-   "end": "2027-09-22T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-121jyjt",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-09-26T15:00:00.000Z",
-   "end": "2027-09-26T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1mbdnbe",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-26T17:00:00.000Z",
-   "end": "2027-09-26T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-179n2hh",
    "source": "svatky",
    "title": "Den české státnosti",
@@ -9079,348 +6318,6 @@
    "categories": []
   },
   {
-   "id": "nezarazene-1x5ltd",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-09-29T16:00:00.000Z",
-   "end": "2027-09-29T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1qmbl4d",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-29T16:30:00.000Z",
-   "end": "2027-09-29T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xl4762",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-10-03T15:00:00.000Z",
-   "end": "2027-10-03T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-r2r0ix",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-03T17:00:00.000Z",
-   "end": "2027-10-03T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-e77u9c",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-10-06T16:00:00.000Z",
-   "end": "2027-10-06T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-dqlbqw",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-06T16:30:00.000Z",
-   "end": "2027-10-06T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1gvpmhm",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-10-10T15:00:00.000Z",
-   "end": "2027-10-10T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1g3m9nd",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-10T17:00:00.000Z",
-   "end": "2027-10-10T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-93xunq",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-10-13T16:00:00.000Z",
-   "end": "2027-10-13T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-csh7ym",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-13T16:30:00.000Z",
-   "end": "2027-10-13T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-vytcxz",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-10-17T15:00:00.000Z",
-   "end": "2027-10-17T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-15r4sj8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-17T17:00:00.000Z",
-   "end": "2027-10-17T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-wc3a8k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-10-20T16:00:00.000Z",
-   "end": "2027-10-20T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-wk6e3c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-20T16:30:00.000Z",
-   "end": "2027-10-20T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-zw782h",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-10-24T15:00:00.000Z",
-   "end": "2027-10-24T16:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xdif8y",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-24T17:00:00.000Z",
-   "end": "2027-10-24T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-16tx4cp",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-10-27T16:00:00.000Z",
-   "end": "2027-10-27T17:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-4meykp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-27T16:30:00.000Z",
-   "end": "2027-10-27T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
    "id": "svatky-18dqlnv",
    "source": "svatky",
    "title": "Den vzniku samostatného československého státu",
@@ -9432,158 +6329,6 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
-  },
-  {
-   "id": "nezarazene-rat67s",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-10-31T16:00:00.000Z",
-   "end": "2027-10-31T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1pcqb5n",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-31T18:00:00.000Z",
-   "end": "2027-10-31T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1qzhggf",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-11-03T17:00:00.000Z",
-   "end": "2027-11-03T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-15ycgfr",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-03T17:30:00.000Z",
-   "end": "2027-11-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-w7kz4k",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-11-07T16:00:00.000Z",
-   "end": "2027-11-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-dmrsy3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-07T18:00:00.000Z",
-   "end": "2027-11-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1hdbipv",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2027-11-10T17:00:00.000Z",
-   "end": "2027-11-10T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-lcyuh3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-10T17:30:00.000Z",
-   "end": "2027-11-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
   }
  ]
 }
