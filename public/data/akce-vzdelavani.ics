@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:knihovna-hzf2nk@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20260908T160000Z
 DTEND:20260908T173000Z
 SUMMARY:Exoti - Příběhy lidí\, kteří vyčnívali z řady / beseda s B
@@ -18,14 +18,14 @@ DESCRIPTION:Jaké to je\, být jiný než ostatní ve světě\, kde konform
  ita je klíčem k úspěchu? Být jedinou svobodnou matkou ve městě\, ml
  uvit doma jinou řečí než ve škole\, milovat člověka stejného pohla
  ví\, chodit do kostela\, když ostatní jenom sedí u televize?\n\nZdroj:
-  Knihovna Ostopovice
+  Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  xoti-pribehy-lidi-kteri-vycnivali-z-rady-beseda-s-barborou-stastnou
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-sio3ig@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20260914T080000Z
 DTEND:20260914T090000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
@@ -33,7 +33,7 @@ SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1.
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-0
  9-14-10-00
@@ -41,7 +41,7 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-5wtuq2@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20260915T160000Z
 DTEND:20260915T180000Z
 SUMMARY:Jan Dungel: Krajiny / vernisáž výstavy
@@ -49,14 +49,14 @@ DESCRIPTION:Slavnostní zahájení výstavy obrazů uznávaného ilustráto
  ra\, malíře a biologa Jana Dungela. Podstatnou částí Dungelovy volné
   tvorby je klasická malba (olej na plátně). Ve svých kresbách\, knih
  ách a filmových dokumentech se dlouhodobě věnuje také dokumentaci a o
- chraně divoké přírody v Jižní Americe.\n\nZdroj: Knihovna Ostopovice
+ chraně divoké přírody v Jižní Americe.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  an-dungel-krajiny-vernisaz-vystavy
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-11nudir@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20260917T160000Z
 DTEND:20260917T180000Z
 SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
@@ -65,27 +65,27 @@ DESCRIPTION:První část přednášky Aleše Svobody o nejbizarnějším n
  álezu brněnského podzemí. Historie objevení kostnice pod bývalým sv
  atojakubským hřbitovem\, který byl založen na místě dnešního Jakub
  ského náměstí i zajímavosti související s pohřbíváním a pohřeb
- ními rituály.\n\nZdroj: Knihovna Ostopovice
+ ními rituály.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-i
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-5l594u@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20260929T160000Z
 DTEND:20260929T180000Z
 SUMMARY:Kosmická střelnice / přednáška Pavla Gabzdyla
 DESCRIPTION:Stopy po kosmickém bombardování jsou všude kolem nás. Sta
  čí se jen dobře dívat. Přednáší popularizátor krás Sluneční so
- ustavy Pavel Gabzdyl.\n\nZdroj: Knihovna Ostopovice
+ ustavy Pavel Gabzdyl.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  osmicka-strelnice-prednaska-pavla-gabzdyla
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-lg1p1d@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261001T160000Z
 DTEND:20261001T173000Z
 SUMMARY:Den architektury 2026: Architektura vzdělávání / přednáška
@@ -93,14 +93,14 @@ DESCRIPTION:Publicista Petr Šmídek v ostopovické knihovně představí h
  istorické i současné příklady školních budov u nás i v zahraničí
  . Jaký otisk školy zanechají ve svých absolventech? Jak se vyvarovat j
  ednosměrného předávání informací? Jaké prostředí nejlépe stimul
- uje?\n\nZdroj: Knihovna Ostopovice
+ uje?\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-architektury-2026-architektura-vzdelavani-prednaska
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1b2vb6l@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261002T160000Z
 DTEND:20261002T173000Z
 SUMMARY:Zeptej se vědce: Hodinářem vnitřního času
@@ -108,15 +108,14 @@ DESCRIPTION:Tikají v nás a určují\, kdy budeme spát a kdy bdít\, kdy
  jíst a kdy nejefektivněji cvičit – biologické hodiny. Evoluční mec
  hanismus\, který reaguje na rotaci Země kolem své osy\, na střídání
   dne a noci. Najdeme je napříč rostlinnou i živočišnou říší. Ř
- ídí\, kdy budou rostliny fotosyntetizovat či (...)\n\nZdroj: Knihovna O
- stopovice
+ ídí\, kdy budou rostliny fotosyntetizovat či (...)\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
  eptej-se-vedce-hodinarem-vnitrniho-casu
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-u5if78@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261012T080000Z
 DTEND:20261012T090000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
@@ -124,7 +123,7 @@ SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1.
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  0-12-10-00
@@ -132,7 +131,7 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-4fxfej@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261012T160000Z
 DTEND:20261012T173000Z
 SUMMARY:Jan Dungel / Jak se maluje prales
@@ -140,14 +139,14 @@ DESCRIPTION:Jan Dungel více než 30 let dokumentuje přírodu v tropické
  Jižní Americe. Je autorem\, či spoluautorem několika knih a filmových
   dokumentů této oblasti. Přednáškou přiblíží\, proč se dokumenta
  ci jihoamerické přírody věnuje a co znamená malovat prales.\n\nZdroj:
-  Knihovna Ostopovice
+  Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  an-dungel-jak-se-maluje-prales
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1dbi5jj@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261022T160000Z
 DTEND:20261022T173000Z
 SUMMARY:Jak s bobrem po dobrém (i po zlém)
@@ -155,14 +154,14 @@ DESCRIPTION:Bobři poskytují v naší poničené zemědělské krajině v
  ýznamné ekologické služby. S ohledem na potřeby člověka ovšem hled
  áme rovnováhu pro to\, kde je činnost bobra přijatelná a kde nikoliv.
   Přednáší znalec v oboru ochrany přírody Vlastimil Kostkan.\n\nZdroj
- : Knihovna Ostopovice
+ : Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  ak-s-bobrem-po-dobrem-i-po-zlem
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-12f8nmf@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261103T170000Z
 DTEND:20261103T180000Z
 SUMMARY:Mikro-teatro: La Pícara
@@ -170,14 +169,14 @@ DESCRIPTION:Monodrama na hraně skutečného svědectví a mystifikace\,  i
  nspirované životem skutečné postavy 17.století Cataliny de Erauso\, n
  apsali dramatici Pavel Drábek a Joshem Overtonem. Catalina de Erauso v pa
  tnácti letech utekla z kláštera a zbytek života prožila pod mužskou 
- identitou\, což jí umožnilo (...)\n\nZdroj: Knihovna Ostopovice
+ identitou\, což jí umožnilo (...)\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
  ikro-teatro-la-picara
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1oj78n4@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261109T090000Z
 DTEND:20261109T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
@@ -185,7 +184,7 @@ SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1.
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  1-09-10-00
@@ -193,7 +192,7 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-11719fd@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261126T170000Z
 DTEND:20261126T190000Z
 SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
@@ -202,14 +201,14 @@ DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
  álezu brněnského podzemí. Historie objevení kostnice pod bývalým sv
  atojakubským hřbitovem\, který byl založen na místě dnešního Jakub
  ského náměstí i zajímavosti související s pohřbíváním a pohřeb
- ními rituály.\n\nZdroj: Knihovna Ostopovice
+ ními rituály.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
 CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-mrfa59@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261207T090000Z
 DTEND:20261207T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
@@ -217,7 +216,7 @@ SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1.
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  2-07-10-00
@@ -225,7 +224,7 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1ulvu99@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20270111T090000Z
 DTEND:20270111T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
@@ -233,7 +232,7 @@ SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1.
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna Ostopovice
+ ničky a jednoduché tvoření.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
  1-11-10-00

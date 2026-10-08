@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-10-08T01:45:57.949Z",
+ "generatedAt": "2026-10-08T02:01:52.755Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
    "id": "obec",
-   "name": "Obec Ostopovice",
+   "name": "Obec",
    "shortName": "Obec",
    "village": "Ostopovice",
    "icon": "obec.png",
@@ -12,14 +12,14 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 3
   },
   {
    "id": "knihovna",
-   "name": "Knihovna Ostopovice",
+   "name": "Knihovna",
    "shortName": "Knihovna",
    "village": "Ostopovice",
    "icon": "knihovna.png",
@@ -27,14 +27,14 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 231
   },
   {
    "id": "seniori",
-   "name": "Klub seniorů Ostopovice",
+   "name": "Klub seniorů",
    "shortName": "Senioři",
    "village": "Ostopovice",
    "icon": "seniori.svg",
@@ -42,14 +42,14 @@
    "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 24
   },
   {
    "id": "sokol",
-   "name": "TJ Sokol Ostopovice",
+   "name": "TJ Sokol",
    "shortName": "Sokol",
    "village": "Ostopovice",
    "icon": "sokol.png",
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,10 +72,25 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 30
+  },
+  {
+   "id": "nezarazene",
+   "name": "Nezařazené",
+   "shortName": "Nezařazené",
+   "village": "Ostopovice",
+   "icon": "nezarazene.svg",
+   "color": "#4a6b7c",
+   "link": null,
+   "display": "events",
+   "adminRefresh": true,
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "ok": true,
+   "error": null,
+   "count": 3
   },
   {
    "id": "pripravovane",
@@ -87,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "lastSuccess": "2026-10-08T02:01:52.755Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3692,6 +3707,21 @@
    ]
   },
   {
+   "id": "nezarazene-62g964",
+   "source": "nezarazene",
+   "title": "Busy",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "pripravovane-qi21ye",
    "source": "pripravovane",
    "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
@@ -3795,6 +3825,36 @@
    },
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-17yrhm2",
+   "source": "nezarazene",
+   "title": "Busy",
+   "start": "2026-10-11T15:00:00.000Z",
+   "end": "2026-10-11T16:30:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
+   "id": "nezarazene-1f0nfl",
+   "source": "nezarazene",
+   "title": "Busy",
+   "start": "2026-10-11T17:00:00.000Z",
+   "end": "2026-10-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "categories": [
+    "ostatni"
    ]
   },
   {

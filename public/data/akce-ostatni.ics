@@ -8,8 +8,17 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T020202Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Busy
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-qi21ye@ostopovice-events
-DTSTAMP:20261008T014605Z
+DTSTAMP:20261008T020202Z
 DTSTART:20261007T163000Z
 DTEND:20261007T163000Z
 SUMMARY:Společně pro Ostopovice: Společně na pivo (nebo limo)
@@ -18,6 +27,24 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! T
  ěšíme se na viděnou!\n\nZdroj: Připravované události
 URL:https://www.facebook.com/events/1454231353296252
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-17yrhm2@ostopovice-events
+DTSTAMP:20261008T020202Z
+DTSTART:20261011T150000Z
+DTEND:20261011T163000Z
+SUMMARY:Busy
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1f0nfl@ostopovice-events
+DTSTAMP:20261008T020202Z
+DTSTART:20261011T170000Z
+DTEND:20261011T180000Z
+SUMMARY:Busy
+DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Ostatní
 END:VEVENT
 END:VCALENDAR
