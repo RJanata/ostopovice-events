@@ -126,8 +126,11 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .filters--icons .chip .cat-icon { width: 18px; height: 18px; }
 .filters--icons .chips__selected { display: block; margin-top: -2px; }
 .filters--icons .chips__selected:empty { display: none; }
-.filters--icons:not(.filters--top) .chips__selected { flex-basis: 100%; padding-left: 84px; margin-top: -6px; }
-.filters--icons:not(.filters--top) .filters__row { flex-wrap: wrap; }
+/* nadpis vlevo + souhrn pod štítky: mřížka, aby se řada nemohla potají zalomit pod nadpis */
+.filters--icons:not(.filters--top) .filters__row {
+  display: grid; grid-template-columns: 72px minmax(0, 1fr); column-gap: 12px; row-gap: 2px; align-items: baseline;
+}
+.filters--icons:not(.filters--top) .chips__selected { grid-column: 2; margin-top: 0; }
 
 .chip {
   --chip-color: var(--accent);
