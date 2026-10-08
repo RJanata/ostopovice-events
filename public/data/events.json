@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:14:01.638Z",
+ "generatedAt": "2026-10-08T02:24:14.659Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -12,9 +12,9 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
-   "ok": false,
-   "error": "fetch failed",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
+   "ok": true,
+   "error": null,
    "count": 3
   },
   {
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:14:01.638Z",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -42,9 +42,9 @@
    "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
-   "ok": false,
-   "error": "fetch failed",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
+   "ok": true,
+   "error": null,
    "count": 24
   },
   {
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:14:01.638Z",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:14:01.638Z",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,7 +87,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:14:01.638Z",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
    "ok": true,
    "error": null,
    "count": 172
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:14:01.638Z",
+   "lastSuccess": "2026-10-08T02:24:14.659Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3335,6 +3335,7 @@
     "teams": "Sokol Ostopovice – TJ S. Podlázky",
     "score": "13:13"
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Podlázky",
    "categories": [
     "sport"
    ]
@@ -3498,6 +3499,7 @@
     "teams": "Sokol Ostopovice – TJ Avia Čakovice",
     "score": "22:17"
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Avia Čakovice",
    "categories": [
     "sport"
    ]
@@ -3732,6 +3734,7 @@
     "teams": "turnaj",
     "score": ""
    },
+   "shortTitle": "Přípravky · turnaj",
    "categories": [
     "sport"
    ]
@@ -3752,6 +3755,7 @@
     "teams": "Sokol Ostopovice – TJ Nýřany",
     "score": "16:15"
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Nýřany",
    "categories": [
     "sport"
    ]
@@ -3787,6 +3791,7 @@
     "teams": "Sokol Ostopovice – TJ Příchovice",
     "score": "14:16"
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Příchovice",
    "categories": [
     "sport"
    ]
@@ -3908,6 +3913,7 @@
     "teams": "TJ Sokol Ostopovice – 1. NH BRNO",
     "score": ""
    },
+   "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
     "sport"
    ]
@@ -3928,6 +3934,7 @@
     "teams": "TJ Sokol Ostopovice – 1. NH BRNO",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
     "sport"
    ]
@@ -4101,6 +4108,7 @@
     "teams": "TJ Sokol Ostopovice – TJ Jiskra Humpolec",
     "score": ""
    },
+   "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
     "sport"
    ]
@@ -4121,6 +4129,7 @@
     "teams": "TJ Sokol Ostopovice – TJ Jiskra Humpolec",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
     "sport"
    ]
@@ -4141,6 +4150,7 @@
     "teams": "Sokol Ostopovice – Sokol Tymákov",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Tymákov",
    "categories": [
     "sport"
    ]
@@ -4161,6 +4171,7 @@
     "teams": "Sokol Ostopovice – TJ S. Nezvěstice",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Nezvěstice",
    "categories": [
     "sport"
    ]
@@ -4317,6 +4328,7 @@
     "teams": "Sokol Ostopovice – Sokol Svinov",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Svinov",
    "categories": [
     "sport"
    ]
@@ -6367,6 +6379,7 @@
     "teams": "TJ Sokol Ostopovice – TJ Sokol Vracov",
     "score": ""
    },
+   "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
     "sport"
    ]
@@ -6387,6 +6400,7 @@
     "teams": "TJ Sokol Ostopovice – TJ Sokol Vracov",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
     "sport"
    ]
@@ -6407,6 +6421,7 @@
     "teams": "Sokol Ostopovice – TJ S. Kyšice",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Kyšice",
    "categories": [
     "sport"
    ]
@@ -6427,6 +6442,7 @@
     "teams": "TJ Sokol Ostopovice – Draken Brno",
     "score": ""
    },
+   "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – Draken Brno",
    "categories": [
     "sport"
    ]
@@ -6447,6 +6463,7 @@
     "teams": "TJ Sokol Ostopovice – Draken Brno A",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno A",
    "categories": [
     "sport"
    ]
@@ -6467,6 +6484,7 @@
     "teams": "TJ Sokol Ostopovice – Draken Brno B",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno B",
    "categories": [
     "sport"
    ]
@@ -6487,6 +6505,7 @@
     "teams": "Sokol Ostopovice – TJ Plzeň-Újezd",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Plzeň-Újezd",
    "categories": [
     "sport"
    ]
@@ -6621,6 +6640,7 @@
     "teams": "Sokol Ostopovice – Sokol Krčín",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Krčín",
    "categories": [
     "sport"
    ]
@@ -6853,6 +6873,7 @@
     "teams": "Sokol Ostopovice – SK Studénka A",
     "score": ""
    },
+   "shortTitle": "1. liga muži · Sokol Ostopovice – SK Studénka A",
    "categories": [
     "sport"
    ]
@@ -6987,6 +7008,7 @@
     "teams": "TJ Sokol Ostopovice – SK Autonot Jihlava",
     "score": ""
    },
+   "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
     "sport"
    ]
@@ -7007,6 +7029,7 @@
     "teams": "TJ Sokol Ostopovice – SK Autonot Jihlava",
     "score": ""
    },
+   "shortTitle": "Starší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
     "sport"
    ]
