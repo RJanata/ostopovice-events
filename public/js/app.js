@@ -361,10 +361,29 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
   return byDay;
 }
 
+/**
+ * Karty akcí jednoho dne. Pravidelné akce (cvičení, kurzy…) jsou sbalené do jednoho
+ * řádku na konci dne; při hledání se rozbalí, aby bylo vidět, co se našlo.
+ */
+function dayEvents(list, day) {
+  const sorted = [...list].sort(compareEvents);
+  const single = sorted.filter((e) => !e.recurring);
+  const regular = sorted.filter((e) => e.recurring);
+  let html = single.map((e) => eventCard(e, day)).join('');
+  if (regular.length) {
+    const names = [...new Set(regular.map((e) => e.title))].join(', ');
+    html += `<details class="day__regular"${state.query ? ' open' : ''}>
+        <summary>Pravidelné (${regular.length}): ${escapeHtml(names)}</summary>
+        ${regular.map((e) => eventCard(e, day)).join('')}
+      </details>`;
+  }
+  return html;
+}
+
 function renderDays(byDay, holidays) {
   return [...byDay.keys()].sort().map((day) => {
-    const list = byDay.get(day).sort(compareEvents);
-    return `<section class="day${list.length ? '' : ' day--empty'}">${dayHeading(day, holidays)}${list.map((e) => eventCard(e, day)).join('')}</section>`;
+    const list = byDay.get(day);
+    return `<section class="day${list.length ? '' : ' day--empty'}">${dayHeading(day, holidays)}${dayEvents(list, day)}</section>`;
   }).join('');
 }
 
@@ -429,7 +448,7 @@ function renderMonth(events, holidays) {
 
     // akce v týdnu jako pruhy: začátek, konec (sloupce 0–6), pokračování z/do jiného týdne
     const items = inGrid
-      .filter((e) => e._last >= weekStart && e._first <= weekEnd)
+      .filter((e) => !e.recurring && e._last >= weekStart && e._first <= weekEnd)
       .map((e) => ({
         e,
         from: colOf(e._first < weekStart ? weekStart : e._first),
@@ -477,11 +496,19 @@ function renderMonth(events, holidays) {
         holiday && 'month__day--holiday',
         d === selected && 'month__day--selected'].filter(Boolean).join(' ');
       const more = hiddenCount[i] ? `<span class="month__more">+ ${hiddenCount[i]} další</span>` : '';
-      const dots = list.length ? `<span class="month__dots">${list.slice(0, 6).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>` : '';
+      const single = list.filter((e) => !e.recurring);
+      const regular = list.filter((e) => e.recurring);
+      const dots = single.length ? `<span class="month__dots">${single.slice(0, 6).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>` : '';
+      const regularMarks = regular.length
+        ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
+          + `${regular.slice(0, 3).map((e) => sourceIcon(sourcesById[e.source] || { icon: 'nezarazene.svg' }, true)).join('')}`
+          + `${regular.length > 3 ? `<small>+${regular.length - 3}</small>` : ''}</span>`
+        : '';
       const label = `${formatDay(d, { weekday: 'long', day: 'numeric', month: 'long' })}: ${list.length} akcí`;
       cells += `<button type="button" class="${classes}" data-day="${d}" aria-label="${escapeHtml(label)}" style="grid-column:${i + 1}">
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
+            ${regularMarks}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml(holiday.join(' · '))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
           </span>
           ${dots}${more}
@@ -496,7 +523,7 @@ function renderMonth(events, holidays) {
   if (selected) {
     const list = (byDay.get(selected) || []).sort(compareEvents);
     selectedHtml = `<section class="day month__selected" id="selected-day">${dayHeading(selected, holidays)}`
-      + (list.length ? list.map((e) => eventCard(e, selected)).join('') : '<p class="empty">Tento den žádné akce nejsou.</p>')
+      + (list.length ? dayEvents(list, selected) : '<p class="empty">Tento den žádné akce nejsou.</p>')
       + `<div class="more"><button type="button" class="button button--ghost" data-action="whole-month">Zobrazit celý ${escapeHtml(formatDay(firstOfMonth, { month: 'long' }))}</button></div>`
       + '</section>';
   } else {
@@ -560,8 +587,12 @@ function update({ keepHash = false } = {}) {
   renderFilters();
   const events = data.events.filter(matchesFilters);
   const holidays = holidayLabels();
-  const upcoming = events.filter((e) => e._last >= today).length;
-  document.getElementById('result-count').textContent = `${upcoming} nadcházejících akcí`;
+  const upcomingAll = events.filter((e) => e._last >= today);
+  const upcoming = upcomingAll.length; // i s pravidelnými (pro stažení výběru)
+  const upcomingSingle = upcomingAll.filter((e) => !e.recurring).length;
+  const regularCount = upcoming - upcomingSingle;
+  document.getElementById('result-count').textContent = `${upcomingSingle} nadcházejících akcí`
+    + (regularCount ? ` a ${regularCount} termínů pravidelných` : '');
   const downloadButton = document.getElementById('download-filtered');
   downloadButton.hidden = !isFilterActive() || !upcoming;
   refreshSubscribePanel?.();

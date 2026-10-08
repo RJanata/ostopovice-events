@@ -76,6 +76,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
     image: raw.image || '',
   };
   if (raw.extra) event.extra = raw.extra;
+  if (raw.recurring) event.recurring = true;
   if (tagged.categories.length) event.tagCategories = tagged.categories;
   if (raw.cancelled || /^\W*zruseno\b/.test(normalize(raw.title))) event.cancelled = true;
   return applySourceRules(event, source, rules);
@@ -108,6 +109,7 @@ const OVERRIDABLE = {
   start: 'originalStart',
   end: 'originalEnd',
   allDay: 'originalAllDay',
+  recurring: 'originalRecurring',
 };
 // pole, která vznikají jen z ručních úprav (ze zdroje nikdy nepřijdou)
 const OVERRIDE_ONLY = ['note', 'hidden'];

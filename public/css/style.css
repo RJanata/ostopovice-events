@@ -214,6 +214,15 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event--cancelled .event__title { text-decoration: line-through; color: var(--muted); }
 .event--cancelled .event__time::after { content: "Zrušeno"; display: block; font-size: 0.75rem; color: #b3261e; font-weight: 600; }
 .event--past { opacity: 0.7; }
+
+/* pravidelné akce: sbalené do jednoho řádku na konci dne */
+.day__regular { margin: 0 0 8px; font-size: 0.9rem; }
+.day__regular > summary {
+  cursor: pointer; padding: 6px 12px; border: 1px dashed var(--border); border-radius: 8px;
+  color: var(--muted); list-style-position: inside; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.day__regular[open] > summary { margin-bottom: 8px; }
+.day__regular .event { box-shadow: none; }
 .day--empty { margin-bottom: 10px; }
 .day--empty .day__heading { position: static; color: var(--muted); font-weight: 600; }
 
@@ -253,8 +262,12 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__day--today { background: var(--today); }
 .month__day--selected { box-shadow: inset 0 0 0 2px var(--accent); }
 .month__day-head { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
-.month__day-number { font-size: 0.85rem; font-weight: 600; flex: none; }
+.month__day-number { font-size: 0.85rem; font-weight: 600; flex: none; position: relative; top: -1px; }
 .month__day--holiday .month__day-number { color: var(--holiday); }
+/* pravidelné akce v měsíci: jen malé ikony zdrojů u čísla dne */
+.month__regular { display: inline-flex; gap: 2px; align-items: center; flex: none; }
+.month__regular .source-icon { width: 15px; height: 15px; opacity: 0.85; }
+.month__regular small { font-size: 0.65rem; color: var(--muted); margin-left: 1px; }
 .month__day-holiday { min-width: 0; font-size: 0.7rem; color: var(--holiday); line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .month__pill {

@@ -43,6 +43,7 @@ function makeEvent(source, { id, seriesId, title, slug, start, end, locationName
     url: source.options.detailBaseUrl + slug,
     description: String(description || '').trim(),
     image: image || '',
+    recurring: Boolean(seriesId), // řada termínů (kurzy, cvičení)
   };
 }
 
