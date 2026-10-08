@@ -249,6 +249,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
    buňky dne leží pod nimi přes celou výšku (klik na pruh propadne na den pod ním) */
 .month__week {
   display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));
+  /* hlavička dne (i s čarami dlouhodobých akcí), 4 řádky akcí, zbytek */
   grid-template-rows: 28px repeat(4, 22px) minmax(4px, 1fr);
   min-height: 122px; border-top: 1px solid var(--border);
 }
@@ -283,6 +284,19 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__pill .source-icon { width: 14px; height: 14px; }
 .month__pill span { overflow: hidden; text-overflow: ellipsis; }
 .month__pill--cancelled span { text-decoration: line-through; opacity: 0.7; }
+/* dlouhodobá akce (výstava…) = tenká čára přes všechny její dny, v řádku s čísly dnů;
+   číslo, ikony a svátek jsou nad ní s podkladem v barvě buňky, aby nesplývaly */
+.month__long {
+  position: relative; z-index: 1; align-self: start; height: 2px; margin: 5px 6px 0;
+  border-radius: 2px; background: color-mix(in srgb, var(--icon-color) 45%, var(--surface)); pointer-events: none;
+}
+.month__day-head {
+  position: relative; z-index: 2; align-self: flex-start; max-width: 100%;
+  margin: -4px 0 0 -3px; padding: 4px 5px 0 3px; border-radius: 4px; background: inherit; /* podklad i nad číslem, aby čára nevykukovala */
+}
+.month__long--before { margin-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.month__long--after { margin-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.day__long { margin-bottom: 14px; }
 .month__more { position: relative; z-index: 1; pointer-events: none; align-self: center; margin: 0 6px; font-size: 0.72rem; color: var(--muted); }
 .month__dots { display: none; flex-wrap: wrap; gap: 3px; }
 .month__dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--icon-color); }
@@ -299,7 +313,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .search { max-width: none; }
   .event { grid-template-columns: 1fr; }
   .event__time small { display: inline; margin-left: 6px; }
-  .month__week { grid-template-rows: auto; min-height: 58px; }
+  .month__week { grid-template-rows: auto 1fr; min-height: 58px; }
   .month__day { padding: 4px; }
   .month__pill, .month__more, .month__day-holiday { display: none; }
   .month__dots { display: flex; }

@@ -9,6 +9,7 @@ const LIST_DAYS_STEP = 45; // kolik dní seznam ukáže najednou
 const PAST_DAYS_STEP = 60; // o kolik dní zpět posune „Zobrazit proběhlé“
 const MONTH_PILLS = 4; // počet řádků s akcemi v buňce měsíce (při víc akcích 3 + „+ N další“)
 const MULTI_DAY_LIST_LIMIT = 7; // delší akce se v seznamu neopakují u každého dne
+const LONG_EVENT_DAYS = 8; // od této délky je akce „dlouhodobá“ (výstavy): v měsíci tenká čára, ve výpisu zvlášť
 
 const state = {
   view: 'list', // nastaví readHash podle URL, jinak podle zařízení
@@ -79,6 +80,7 @@ function prepareEvent(e) {
   e._first = first;
   e._last = last;
   e._search = normalize(`${e.title} ${e.location} ${e.description}`);
+  e._long = !e.recurring && eventDays(e).length >= LONG_EVENT_DAYS;
   return e;
 }
 
@@ -342,7 +344,7 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
     byDay.get(day).push(e);
   };
   for (const e of events) {
-    if (e._last < from || e._first > to) continue;
+    if (e._long || e._last < from || e._first > to) continue;
     const days = eventDays(e).filter((d) => d >= from && d <= to);
     if (days.length <= MULTI_DAY_LIST_LIMIT) {
       // vícedenní akce (např. volby v pátek a sobotu) se ukáže u každého dne
@@ -380,6 +382,16 @@ function dayEvents(list, day) {
   return html;
 }
 
+/** Sbalený řádek s dlouhodobými akcemi (výstavy…), které v období from–to probíhají. */
+function longEventsBlock(events, from, to) {
+  const list = events.filter((e) => e._long && e._last >= from && e._first <= to).sort(compareEvents);
+  if (!list.length) return '';
+  return `<details class="day__regular day__long"${state.query ? ' open' : ''}>
+      <summary>Dlouhodobé (${list.length}): ${escapeHtml(list.map((e) => e.title).join(', '))}</summary>
+      ${list.map((e) => eventCard(e, e._first < from ? from : e._first)).join('')}
+    </details>`;
+}
+
 function renderDays(byDay, holidays) {
   return [...byDay.keys()].sort().map((day) => {
     const list = byDay.get(day);
@@ -403,7 +415,9 @@ function renderList(events, holidays) {
   if (hasPast) {
     html += `<div class="more"><button type="button" class="button button--ghost" data-action="past">Zobrazit proběhlé akce</button></div>`;
   }
-  if (!days.some((d) => byDay.get(d).length)) {
+  const longBlock = longEventsBlock(events, from, to);
+  html += longBlock;
+  if (!longBlock && !days.some((d) => byDay.get(d).length)) {
     html += `<p class="empty">${events.length ? 'V tomto období žádné akce nejsou.' : 'Filtrům neodpovídá žádná akce.'}</p>`;
   }
   html += renderDays(byDay, holidays);
@@ -441,14 +455,35 @@ function renderMonth(events, holidays) {
 
   const weekdayNames = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
   let weeksHtml = '';
+  // dlouhodobé akce: každá dostane jednu výšku čáry pro celý měsíc (aby mezi týdny „neskákala“)
+  const longLane = new Map();
+  const laneEnds = [];
+  for (const e of inGrid.filter((x) => x._long).sort((a, b) => a._first.localeCompare(b._first) || compareEvents(a, b))) {
+    let lane = laneEnds.findIndex((end) => end < e._first);
+    if (lane === -1) lane = laneEnds.length;
+    laneEnds[lane] = e._last;
+    longLane.set(e, lane);
+  }
+
   for (let w = 0; w < weeks; w++) {
     const weekStart = addDays(gridStart, w * 7);
     const weekEnd = addDays(weekStart, 6);
     const colOf = (d) => Math.round((keyToDate(d) - keyToDate(weekStart)) / 864e5);
 
     // akce v týdnu jako pruhy: začátek, konec (sloupce 0–6), pokračování z/do jiného týdne
+    // dlouhodobé akce = tenké čáry v řádku s čísly dnů (za čísly); víc souběžných nad sebou
+    const longItems = inGrid.filter((e) => e._long && e._last >= weekStart && e._first <= weekEnd).sort(compareEvents);
+    let longLines = '';
+    longItems.forEach((e) => {
+      const from = colOf(e._first < weekStart ? weekStart : e._first);
+      const to = colOf(e._last > weekEnd ? weekEnd : e._last);
+      const classes = ['month__long', e._first < weekStart && 'month__long--before', e._last > weekEnd && 'month__long--after'].filter(Boolean).join(' ');
+      const offset = longLane.get(e) * 4; // víc souběžných pod sebou
+      longLines += `<span class="${classes}" style="grid-column:${from + 1} / ${to + 2};grid-row:1;top:${offset}px;--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}" title="${escapeHtml(`${e.title} (${formatShortDate(e._first)} – ${formatShortDate(e._last)})`)}"></span>`;
+    });
+
     const items = inGrid
-      .filter((e) => !e.recurring && e._last >= weekStart && e._first <= weekEnd)
+      .filter((e) => !e.recurring && !e._long && e._last >= weekStart && e._first <= weekEnd)
       .map((e) => ({
         e,
         from: colOf(e._first < weekStart ? weekStart : e._first),
@@ -509,7 +544,7 @@ function renderMonth(events, holidays) {
       if (hiddenCount[i]) {
         bars += `<span class="month__more" style="grid-column:${i + 1};grid-row:${MONTH_PILLS + 1}">+ ${hiddenCount[i]} další</span>`;
       }
-      const single = list.filter((e) => !e.recurring);
+      const single = list.filter((e) => !e.recurring && !e._long);
       const regular = list.filter((e) => e.recurring);
       const dots = single.length ? `<span class="month__dots">${single.slice(0, 6).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>` : '';
       const regularMarks = regular.length
@@ -527,7 +562,7 @@ function renderMonth(events, holidays) {
           ${dots}
         </button>`;
     }
-    weeksHtml += `<div class="month__week">${cells}${bars}</div>`;
+    weeksHtml += `<div class="month__week">${cells}${longLines}${bars}</div>`;
   }
   const weekdaysHtml = `<div class="month__weekdays">${weekdayNames.map((n) => `<div class="month__weekday">${n}</div>`).join('')}</div>`;
 
@@ -535,16 +570,20 @@ function renderMonth(events, holidays) {
   let selectedHtml;
   if (selected) {
     const list = (byDay.get(selected) || []).sort(compareEvents);
+    const longBlock = longEventsBlock(events, selected, selected);
+    const dayList = list.filter((e) => !e._long);
     selectedHtml = `<section class="day month__selected" id="selected-day">${dayHeading(selected, holidays)}`
-      + (list.length ? dayEvents(list, selected) : '<p class="empty">Tento den žádné akce nejsou.</p>')
+      + longBlock
+      + (dayList.length ? dayEvents(dayList, selected) : (longBlock ? '' : '<p class="empty">Tento den žádné akce nejsou.</p>'))
       + `<div class="more"><button type="button" class="button button--ghost" data-action="whole-month">Zobrazit celý ${escapeHtml(formatDay(firstOfMonth, { month: 'long' }))}</button></div>`
       + '</section>';
   } else {
     const lastOfMonth = addDays(firstOfMonth, daysInMonth - 1);
     const monthDays = groupByDay(events, firstOfMonth, lastOfMonth, holidays);
     const hasEvents = [...monthDays.values()].some((list) => list.length);
-    selectedHtml = `<div class="month__selected" id="selected-day">`
-      + (hasEvents ? renderDays(monthDays, holidays) : '<p class="empty">V tomto měsíci žádné akce nejsou.</p>')
+    const longBlock = longEventsBlock(events, firstOfMonth, lastOfMonth);
+    selectedHtml = `<div class="month__selected" id="selected-day">${longBlock}`
+      + (hasEvents ? renderDays(monthDays, holidays) : (longBlock ? '' : '<p class="empty">V tomto měsíci žádné akce nejsou.</p>'))
       + '</div>';
   }
 
