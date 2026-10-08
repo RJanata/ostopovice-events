@@ -117,9 +117,11 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* zhuštění podle místa (fitFilters v app.js) */
 .filters--top .filters__row { flex-direction: column; gap: 6px; }
 .filters--top .filters__label { flex: none; }
-.filters--short .chip__label { display: none; }
+.filters--short .chip:not(.chip--all) .chip__label { display: none; }
 .filters--short .chip__label-short { display: inline; }
-.filters--icons .chip:not(.chip--all):not(.chip--plain) { padding: 5px 7px; }
+.filters--icons .chip:not(.chip--all):not(.chip--plain) { padding: 4px 5px; }
+/* v úrovni „jen ikony“ se Vše skryje (šetří místo); zpět na vše = druhý klik na vybranou položku */
+.filters--icons .chip--all { display: none; }
 .filters--icons .chip:not(.chip--all):not(.chip--plain) :is(.chip__label, .chip__label-short) { display: none; }
 .filters--icons .chip .cat-icon { width: 18px; height: 18px; }
 .filters--icons .chips__selected { display: block; margin-top: -2px; }

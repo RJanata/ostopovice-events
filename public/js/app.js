@@ -172,7 +172,8 @@ function categoryIcon(category) {
 /**
  * Výběr ve filtru:
  *   - výchozí je „Vše“ (null) — prochází všechno
- *   - klik na položku → vybere se jen ona (přepíná se mezi položkami)
+ *   - klik na položku → vybere se jen ona (přepíná se mezi položkami);
+ *     druhý klik na jedinou vybranou položku → zpět na „Vše“ (když je tlačítko Vše skryté)
  *   - Ctrl/⌘ + klik → položka se k výběru přidá, nebo z něj odebere;
  *     při „Vše“ se tak vybere všechno kromě této položky
  *   - klik na „Vše“ → zpět na všechno
@@ -182,14 +183,14 @@ const ALL = '__all__';
 
 function toggleSelection(current, id, multi, allIds) {
   if (id === ALL) return null;
-  if (!multi) return new Set([id]);
+  if (!multi) return current?.size === 1 && current.has(id) ? null : new Set([id]);
   const set = new Set(current ?? allIds);
   if (set.has(id)) set.delete(id); else set.add(id);
   return set.size && set.size < allIds.length ? set : null;
 }
 
 function renderChips(container, items, selected, render, onToggle) {
-  const allChip = `<button type="button" class="chip chip--all" data-id="${ALL}" aria-pressed="${selected === null}">Vše</button>`;
+  const allChip = `<button type="button" class="chip chip--all" data-id="${ALL}" aria-pressed="${selected === null}"><span class="chip__label">Vše</span></button>`;
   container.innerHTML = allChip + items.map((item) => `
     <button type="button" class="chip${item.plain ? ' chip--plain' : ''}" data-id="${escapeHtml(item.id)}"
       aria-pressed="${selected !== null && selected.has(item.id)}" style="--chip-color:${escapeHtml(item.color)}"
@@ -208,7 +209,7 @@ function renderChips(container, items, selected, render, onToggle) {
 }
 
 const wrapsToMoreLines = (container) => {
-  const chips = container.children;
+  const chips = [...container.children].filter((chip) => chip.offsetParent); // skryté (Vše) nepočítat
   return chips.length > 1 && chips[chips.length - 1].offsetTop > chips[0].offsetTop + 2;
 };
 
