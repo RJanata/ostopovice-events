@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:01:52.755Z",
+ "generatedAt": "2026-10-08T02:05:34.907Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -87,10 +87,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "lastSuccess": "2026-10-08T02:05:34.907Z",
    "ok": true,
    "error": null,
-   "count": 3
+   "count": 172
   },
   {
    "id": "pripravovane",
@@ -3709,16 +3709,19 @@
   {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
-   "title": "Busy",
+   "title": "Cvičení ženy",
    "start": "2026-10-07T16:30:00.000Z",
    "end": "2026-10-07T17:30:00.000Z",
    "allDay": false,
-   "location": "",
-   "url": "",
-   "description": "",
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
-    "ostatni"
+    "sport"
    ]
   },
   {
@@ -3830,31 +3833,37 @@
   {
    "id": "nezarazene-17yrhm2",
    "source": "nezarazene",
-   "title": "Busy",
+   "title": "Malá kopaná",
    "start": "2026-10-11T15:00:00.000Z",
    "end": "2026-10-11T16:30:00.000Z",
    "allDay": false,
-   "location": "",
-   "url": "",
-   "description": "",
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
    "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
-    "ostatni"
+    "sport"
    ]
   },
   {
    "id": "nezarazene-1f0nfl",
    "source": "nezarazene",
-   "title": "Busy",
+   "title": "Cvičení ženy",
    "start": "2026-10-11T17:00:00.000Z",
    "end": "2026-10-11T18:00:00.000Z",
    "allDay": false,
-   "location": "",
-   "url": "",
-   "description": "",
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
-    "ostatni"
+    "sport"
    ]
   },
   {
@@ -3904,6 +3913,24 @@
     "obec"
    ],
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče"
+  },
+  {
+   "id": "nezarazene-1mncwcw",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-10-14T16:30:00.000Z",
+   "end": "2026-10-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "knihovna-t70nxm",
@@ -4031,6 +4058,42 @@
    ]
   },
   {
+   "id": "nezarazene-s7pjp",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-10-18T15:00:00.000Z",
+   "end": "2026-10-18T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1p9bqpu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-10-18T17:00:00.000Z",
+   "end": "2026-10-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-s0i3bz",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4059,6 +4122,24 @@
    "categories": [
     "deti",
     "kultura"
+   ]
+  },
+  {
+   "id": "nezarazene-1ld5nrc",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-10-21T16:30:00.000Z",
+   "end": "2026-10-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
    ]
   },
   {
@@ -4127,6 +4208,42 @@
    ]
   },
   {
+   "id": "nezarazene-17bzm8e",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-10-25T16:00:00.000Z",
+   "end": "2026-10-25T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hegyht",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-10-25T18:00:00.000Z",
+   "end": "2026-10-25T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-iknwj2",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4155,6 +4272,24 @@
    "categories": []
   },
   {
+   "id": "nezarazene-17arpiu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-10-28T17:30:00.000Z",
+   "end": "2026-10-28T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-ve7fdc",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -4165,6 +4300,42 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-10-30-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-18ijhrd",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-11-01T16:00:00.000Z",
+   "end": "2026-11-01T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1cv7bra",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-01T18:00:00.000Z",
+   "end": "2026-11-01T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4201,6 +4372,24 @@
    ]
   },
   {
+   "id": "nezarazene-z5i70h",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-04T17:30:00.000Z",
+   "end": "2026-11-04T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-16gbckf",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -4226,6 +4415,42 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-06-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-813om6",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-11-08T16:00:00.000Z",
+   "end": "2026-11-08T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xpp5tx",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-08T18:00:00.000Z",
+   "end": "2026-11-08T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4262,6 +4487,24 @@
    ]
   },
   {
+   "id": "nezarazene-172znxv",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-11T17:30:00.000Z",
+   "end": "2026-11-11T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-1mho3qn",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -4287,6 +4530,42 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-13-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-40if0o",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-11-15T16:00:00.000Z",
+   "end": "2026-11-15T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1849gn",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-15T18:00:00.000Z",
+   "end": "2026-11-15T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4321,6 +4600,24 @@
    ]
   },
   {
+   "id": "nezarazene-1bvi37w",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-18T17:30:00.000Z",
+   "end": "2026-11-18T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-8l3x3a",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -4351,6 +4648,42 @@
    ]
   },
   {
+   "id": "nezarazene-1qmi2ry",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-11-22T16:00:00.000Z",
+   "end": "2026-11-22T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10cpt7l",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-22T18:00:00.000Z",
+   "end": "2026-11-22T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-12uvg9g",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4361,6 +4694,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-11-23-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1p8xtg0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-25T17:30:00.000Z",
+   "end": "2026-11-25T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4431,6 +4782,42 @@
    ]
   },
   {
+   "id": "nezarazene-1ytvbob",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-11-29T16:00:00.000Z",
+   "end": "2026-11-29T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1b4q7w4",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-11-29T18:00:00.000Z",
+   "end": "2026-11-29T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-1jipog0",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4441,6 +4828,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-11-30-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-fhd90",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-02T17:30:00.000Z",
+   "end": "2026-12-02T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4506,6 +4911,42 @@
    ]
   },
   {
+   "id": "nezarazene-23kdjr",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-06T16:00:00.000Z",
+   "end": "2026-12-06T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-49umy8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-06T18:00:00.000Z",
+   "end": "2026-12-06T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-mrfa59",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)",
@@ -4532,6 +4973,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-07-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1tzallt",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-09T17:30:00.000Z",
+   "end": "2026-12-09T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4582,6 +5041,42 @@
    ]
   },
   {
+   "id": "nezarazene-124fe1l",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-13T16:00:00.000Z",
+   "end": "2026-12-13T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-yb9sgi",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-13T18:00:00.000Z",
+   "end": "2026-12-13T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-1ds5txp",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4592,6 +5087,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-14-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1jvsl19",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-16T17:30:00.000Z",
+   "end": "2026-12-16T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4612,6 +5125,42 @@
    ]
   },
   {
+   "id": "nezarazene-43lv2n",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-20T16:00:00.000Z",
+   "end": "2026-12-20T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1cavwt8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-20T18:00:00.000Z",
+   "end": "2026-12-20T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-l0efdh",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4622,6 +5171,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-21-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1k4cikh",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-23T17:30:00.000Z",
+   "end": "2026-12-23T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4666,6 +5233,42 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1lzp45a",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-27T16:00:00.000Z",
+   "end": "2026-12-27T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-9erqml",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-27T18:00:00.000Z",
+   "end": "2026-12-27T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-1hodbme",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -4676,6 +5279,24 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-28-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-6aq36l",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-30T17:30:00.000Z",
+   "end": "2026-12-30T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -4707,6 +5328,96 @@
    "categories": []
   },
   {
+   "id": "nezarazene-2qxy33",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-01-03T16:00:00.000Z",
+   "end": "2027-01-03T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1on61ys",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-03T18:00:00.000Z",
+   "end": "2027-01-03T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1rj80xj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-06T17:30:00.000Z",
+   "end": "2027-01-06T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-krt3mj",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-01-10T16:00:00.000Z",
+   "end": "2027-01-10T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8du8v4",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-10T18:00:00.000Z",
+   "end": "2027-01-10T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "knihovna-1ulvu99",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)",
@@ -4720,6 +5431,24 @@
    "categories": [
     "deti",
     "vzdelavani"
+   ]
+  },
+  {
+   "id": "nezarazene-9gn7ml",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-13T17:30:00.000Z",
+   "end": "2027-01-13T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
    ]
   },
   {
@@ -4738,6 +5467,546 @@
    ]
   },
   {
+   "id": "nezarazene-v1j4mq",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-01-17T16:00:00.000Z",
+   "end": "2027-01-17T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-19fr7wp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-17T18:00:00.000Z",
+   "end": "2027-01-17T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1uh1nmn",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-20T17:30:00.000Z",
+   "end": "2027-01-20T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-11czraw",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-01-24T16:00:00.000Z",
+   "end": "2027-01-24T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-e4xl2b",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-24T18:00:00.000Z",
+   "end": "2027-01-24T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1bo4td6",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-27T17:30:00.000Z",
+   "end": "2027-01-27T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hiqgsy",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-01-31T16:00:00.000Z",
+   "end": "2027-01-31T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-k0toct",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-31T18:00:00.000Z",
+   "end": "2027-01-31T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-3tj5lz",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-03T17:30:00.000Z",
+   "end": "2027-02-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-3yn1f4",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-02-07T16:00:00.000Z",
+   "end": "2027-02-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-llnf3v",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-07T18:00:00.000Z",
+   "end": "2027-02-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1l8o3qv",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-10T17:30:00.000Z",
+   "end": "2027-02-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1beldy8",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-02-14T16:00:00.000Z",
+   "end": "2027-02-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-s546vf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-14T18:00:00.000Z",
+   "end": "2027-02-14T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1crpztu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-17T17:30:00.000Z",
+   "end": "2027-02-17T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-eo4y34",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-02-21T16:00:00.000Z",
+   "end": "2027-02-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hxqrun",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-21T18:00:00.000Z",
+   "end": "2027-02-21T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1vavz18",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-24T17:30:00.000Z",
+   "end": "2027-02-24T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1ru1dfv",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-02-28T16:00:00.000Z",
+   "end": "2027-02-28T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10sciio",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-28T18:00:00.000Z",
+   "end": "2027-02-28T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-jpxjbu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-03T17:30:00.000Z",
+   "end": "2027-03-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-znoxlh",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-03-07T16:00:00.000Z",
+   "end": "2027-03-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1jtu5hi",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-07T18:00:00.000Z",
+   "end": "2027-03-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-rbbxsa",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-10T17:30:00.000Z",
+   "end": "2027-03-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1sdgj39",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-03-14T16:00:00.000Z",
+   "end": "2027-03-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1clzxkm",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-14T18:00:00.000Z",
+   "end": "2027-03-14T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1t6uccf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-17T17:30:00.000Z",
+   "end": "2027-03-17T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1j2nfrl",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-03-21T16:00:00.000Z",
+   "end": "2027-03-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-5sw9y",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-21T18:00:00.000Z",
+   "end": "2027-03-21T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-qoe3s1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-24T17:30:00.000Z",
+   "end": "2027-03-24T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-anz2ks",
    "source": "svatky",
    "title": "Velký pátek",
@@ -4751,6 +6020,42 @@
    "categories": []
   },
   {
+   "id": "nezarazene-u6eorl",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-03-28T15:00:00.000Z",
+   "end": "2027-03-28T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-13dpfr2",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-28T17:00:00.000Z",
+   "end": "2027-03-28T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1tqijoz",
    "source": "svatky",
    "title": "Velikonoční pondělí",
@@ -4762,6 +6067,78 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-1t1kk6",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-31T16:30:00.000Z",
+   "end": "2027-03-31T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-102fzts",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-04-04T15:00:00.000Z",
+   "end": "2027-04-04T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-o82t5r",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-04T17:00:00.000Z",
+   "end": "2027-04-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-ry9ilo",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-07T16:30:00.000Z",
+   "end": "2027-04-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "sokol-50muru",
@@ -4904,6 +6281,114 @@
    ]
   },
   {
+   "id": "nezarazene-1yd6jru",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-04-11T15:00:00.000Z",
+   "end": "2027-04-11T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-18ovs9t",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-11T17:00:00.000Z",
+   "end": "2027-04-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-9i23tc",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-14T16:30:00.000Z",
+   "end": "2027-04-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1961qx1",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-04-18T15:00:00.000Z",
+   "end": "2027-04-18T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xi516q",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-18T17:00:00.000Z",
+   "end": "2027-04-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-87uv7s",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-21T16:30:00.000Z",
+   "end": "2027-04-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "sokol-4ddw29",
    "source": "sokol",
    "title": "Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Krčín",
@@ -4924,6 +6409,60 @@
    ]
   },
   {
+   "id": "nezarazene-1kwrzt5",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-04-25T15:00:00.000Z",
+   "end": "2027-04-25T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1yyppya",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-25T17:00:00.000Z",
+   "end": "2027-04-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-18mbsj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-28T16:30:00.000Z",
+   "end": "2027-04-28T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1u7v05b",
    "source": "svatky",
    "title": "Svátek práce",
@@ -4937,6 +6476,60 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1ne57rr",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-05-02T15:00:00.000Z",
+   "end": "2027-05-02T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-mbmwl0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-02T17:00:00.000Z",
+   "end": "2027-05-02T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-jbvjon",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-05T16:30:00.000Z",
+   "end": "2027-05-05T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1jy7eop",
    "source": "svatky",
    "title": "Den osvobození",
@@ -4948,6 +6541,60 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-1n53txi",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-05-09T15:00:00.000Z",
+   "end": "2027-05-09T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-uzuhlx",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-09T17:00:00.000Z",
+   "end": "2027-05-09T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1w1yor3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-12T16:30:00.000Z",
+   "end": "2027-05-12T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "pripravovane-1ye5f12",
@@ -4980,6 +6627,114 @@
     "teams": "Sokol Ostopovice – SK Studénka A",
     "score": ""
    },
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-946vku",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-05-16T15:00:00.000Z",
+   "end": "2027-05-16T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-t29tfp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-16T17:00:00.000Z",
+   "end": "2027-05-16T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-c09kby",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-19T16:30:00.000Z",
+   "end": "2027-05-19T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-felqly",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-05-23T15:00:00.000Z",
+   "end": "2027-05-23T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10jcwu1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-23T17:00:00.000Z",
+   "end": "2027-05-23T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-qe28y0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-26T16:30:00.000Z",
+   "end": "2027-05-26T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -5025,6 +6780,312 @@
    ]
   },
   {
+   "id": "nezarazene-18f5ati",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-05-30T15:00:00.000Z",
+   "end": "2027-05-30T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-7n94kp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-30T17:00:00.000Z",
+   "end": "2027-05-30T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-nan8qp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-02T16:30:00.000Z",
+   "end": "2027-06-02T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1xblcwo",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-06-06T15:00:00.000Z",
+   "end": "2027-06-06T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-19mapcj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-06T17:00:00.000Z",
+   "end": "2027-06-06T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1h3w3ec",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-09T16:30:00.000Z",
+   "end": "2027-06-09T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-17un1fi",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-06-13T15:00:00.000Z",
+   "end": "2027-06-13T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1s0fedt",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-13T17:00:00.000Z",
+   "end": "2027-06-13T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-11l8l1c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-16T16:30:00.000Z",
+   "end": "2027-06-16T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1kaqu28",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-06-20T15:00:00.000Z",
+   "end": "2027-06-20T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1k00wo7",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-20T17:00:00.000Z",
+   "end": "2027-06-20T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-5zp3ys",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-23T16:30:00.000Z",
+   "end": "2027-06-23T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1qopgu1",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-06-27T15:00:00.000Z",
+   "end": "2027-06-27T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1lob4uu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-27T17:00:00.000Z",
+   "end": "2027-06-27T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-ro3gdc",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-30T16:30:00.000Z",
+   "end": "2027-06-30T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hggz0n",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-07-04T15:00:00.000Z",
+   "end": "2027-07-04T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1t2xs8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-04T17:00:00.000Z",
+   "end": "2027-07-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-wxpdhy",
    "source": "svatky",
    "title": "Den slovanských věrozvěstů Cyrila a Metoděje",
@@ -5051,6 +7112,654 @@
    "categories": []
   },
   {
+   "id": "nezarazene-6sr1un",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-07T16:30:00.000Z",
+   "end": "2027-07-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1b9x7rx",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-07-11T15:00:00.000Z",
+   "end": "2027-07-11T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1knc79a",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-11T17:00:00.000Z",
+   "end": "2027-07-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-v5syfj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-14T16:30:00.000Z",
+   "end": "2027-07-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-pc3z9e",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-07-18T15:00:00.000Z",
+   "end": "2027-07-18T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1yv44f1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-18T17:00:00.000Z",
+   "end": "2027-07-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1v862gn",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-21T16:30:00.000Z",
+   "end": "2027-07-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-pbqfo6",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-07-25T15:00:00.000Z",
+   "end": "2027-07-25T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1hp6ryl",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-25T17:00:00.000Z",
+   "end": "2027-07-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8rqfv0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-28T16:30:00.000Z",
+   "end": "2027-07-28T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-16fwtx7",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-08-01T15:00:00.000Z",
+   "end": "2027-08-01T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-eu8ze0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-01T17:00:00.000Z",
+   "end": "2027-08-01T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xvqerp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-04T16:30:00.000Z",
+   "end": "2027-08-04T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1gwcc20",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-08-08T15:00:00.000Z",
+   "end": "2027-08-08T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-wuffw7",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-08T17:00:00.000Z",
+   "end": "2027-08-08T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1lvgumz",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-11T16:30:00.000Z",
+   "end": "2027-08-11T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-pa4482",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-08-15T15:00:00.000Z",
+   "end": "2027-08-15T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1pxfs7d",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-15T17:00:00.000Z",
+   "end": "2027-08-15T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1hfrg1s",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-18T16:30:00.000Z",
+   "end": "2027-08-18T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-g3y8n0",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-08-22T15:00:00.000Z",
+   "end": "2027-08-22T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-b6q0mf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-22T17:00:00.000Z",
+   "end": "2027-08-22T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10ld7oo",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-25T16:30:00.000Z",
+   "end": "2027-08-25T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1kzst9l",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-08-29T15:00:00.000Z",
+   "end": "2027-08-29T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-13d4slm",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-29T17:00:00.000Z",
+   "end": "2027-08-29T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1x3xklj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-01T16:30:00.000Z",
+   "end": "2027-09-01T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-rnw6ni",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-09-05T15:00:00.000Z",
+   "end": "2027-09-05T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1g857j1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-05T17:00:00.000Z",
+   "end": "2027-09-05T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1rqvn8c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-08T16:30:00.000Z",
+   "end": "2027-09-08T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1py28g6",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-09-12T15:00:00.000Z",
+   "end": "2027-09-12T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-z27v2l",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-12T17:00:00.000Z",
+   "end": "2027-09-12T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8n9f4u",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-15T16:30:00.000Z",
+   "end": "2027-09-15T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1q73maf",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-09-19T15:00:00.000Z",
+   "end": "2027-09-19T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-q89evg",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-19T17:00:00.000Z",
+   "end": "2027-09-19T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-uh7w28",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-22T16:30:00.000Z",
+   "end": "2027-09-22T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-121jyjt",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-09-26T15:00:00.000Z",
+   "end": "2027-09-26T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1mbdnbe",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-26T17:00:00.000Z",
+   "end": "2027-09-26T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-179n2hh",
    "source": "svatky",
    "title": "Den české státnosti",
@@ -5064,6 +7773,240 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1qmbl4d",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-29T16:30:00.000Z",
+   "end": "2027-09-29T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xl4762",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-10-03T15:00:00.000Z",
+   "end": "2027-10-03T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-r2r0ix",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-03T17:00:00.000Z",
+   "end": "2027-10-03T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-dqlbqw",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-06T16:30:00.000Z",
+   "end": "2027-10-06T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1gvpmhm",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-10-10T15:00:00.000Z",
+   "end": "2027-10-10T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1g3m9nd",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-10T17:00:00.000Z",
+   "end": "2027-10-10T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-csh7ym",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-13T16:30:00.000Z",
+   "end": "2027-10-13T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-vytcxz",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-10-17T15:00:00.000Z",
+   "end": "2027-10-17T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-15r4sj8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-17T17:00:00.000Z",
+   "end": "2027-10-17T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-wk6e3c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-20T16:30:00.000Z",
+   "end": "2027-10-20T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-zw782h",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-10-24T15:00:00.000Z",
+   "end": "2027-10-24T16:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xdif8y",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-24T17:00:00.000Z",
+   "end": "2027-10-24T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-4meykp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-27T16:30:00.000Z",
+   "end": "2027-10-27T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-18dqlnv",
    "source": "svatky",
    "title": "Den vzniku samostatného československého státu",
@@ -5075,6 +8018,114 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-rat67s",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-10-31T16:00:00.000Z",
+   "end": "2027-10-31T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1pcqb5n",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-31T18:00:00.000Z",
+   "end": "2027-10-31T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-15ycgfr",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-03T17:30:00.000Z",
+   "end": "2027-11-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-w7kz4k",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2027-11-07T16:00:00.000Z",
+   "end": "2027-11-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-dmrsy3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-07T18:00:00.000Z",
+   "end": "2027-11-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-lcyuh3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-10T17:30:00.000Z",
+   "end": "2027-11-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   }
  ]
 }
