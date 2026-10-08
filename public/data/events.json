@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:05:34.907Z",
+ "generatedAt": "2026-10-08T02:14:01.638Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -13,8 +13,8 @@
    "display": "events",
    "adminRefresh": false,
    "lastSuccess": "2026-10-08T02:01:52.755Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed",
    "count": 3
   },
   {
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "lastSuccess": "2026-10-08T02:14:01.638Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -43,8 +43,8 @@
    "display": "events",
    "adminRefresh": false,
    "lastSuccess": "2026-10-08T02:01:52.755Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed",
    "count": 24
   },
   {
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "lastSuccess": "2026-10-08T02:14:01.638Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "lastSuccess": "2026-10-08T02:14:01.638Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,7 +87,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:05:34.907Z",
+   "lastSuccess": "2026-10-08T02:14:01.638Z",
    "ok": true,
    "error": null,
    "count": 172
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:01:52.755Z",
+   "lastSuccess": "2026-10-08T02:14:01.638Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -225,6 +225,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolaky-6-2025-09-11-16-00",
    "description": "Klub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -270,6 +271,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolcatka-3-6-2025-09-18-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 6 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -301,6 +303,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-09-22-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -346,6 +349,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolaky-6-2025-09-25-16-00",
    "description": "Klub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -389,6 +393,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-09-29-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -435,6 +440,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-06-19-30",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -481,6 +487,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolaky-6-2025-10-09-16-00",
    "description": "Klub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -527,6 +534,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2025-10-13-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -558,6 +566,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-15-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -573,6 +582,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolcatka-3-6-2025-10-16-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 6 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -667,6 +677,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolaky-6-2025-10-23-16-00",
    "description": "Klub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -682,6 +693,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-23-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -710,6 +722,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-29-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -740,6 +753,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolcatka-3-6-2025-10-30-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 6 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -770,6 +784,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-11-03-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -845,6 +860,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolaky-6-2025-11-06-16-00",
    "description": "Klub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -860,6 +876,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2025-11-10-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -876,6 +893,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-11-10-19-30",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -921,6 +939,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolcatka-3-6-2025-11-13-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 6 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -979,6 +998,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2025-11-20-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -994,6 +1014,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-11-24-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1024,6 +1045,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2025-11-27-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1055,6 +1077,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-12-01-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1070,6 +1093,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2025-12-04-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1146,6 +1170,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2025-12-08-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -1162,6 +1187,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-12-08-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1192,6 +1218,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2025-12-11-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1239,6 +1266,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-12-15-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1270,6 +1298,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2025-12-18-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1365,6 +1394,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-01-06-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1380,6 +1410,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-01-08-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1410,6 +1441,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2026-01-12-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -1426,6 +1458,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-01-12-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1441,6 +1474,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-01-13-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1456,6 +1490,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-01-15-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1486,6 +1521,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-01-19-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1501,6 +1537,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-01-20-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1531,6 +1568,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-01-22-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1561,6 +1599,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-01-26-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1607,6 +1646,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-01-29-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1652,6 +1692,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-2-pololeti-2026-02-02-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -1668,6 +1709,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-02-02-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1683,6 +1725,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-02-03-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1698,6 +1741,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-02-05-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1743,6 +1787,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-02-09-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1788,6 +1833,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-02-12-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1848,6 +1894,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-02-23-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1863,6 +1910,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-02-24-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1893,6 +1941,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-02-26-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1923,6 +1972,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-03-02-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -1938,6 +1988,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-03-03-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1968,6 +2019,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-03-05-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -1998,6 +2050,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-03-07-10-00",
    "description": "Březen je měsícem růstu, pružnosti a ohebnosti. Nejen fyzicky, ale i mentálně. Element dřeva, energie, která chce směřovat vzhůru. Proto se zaměříme na rostoucí energii v nás. Na to, co chceme, aby v nás klíčilo po zbytek roku.",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2013,6 +2066,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-2-pololeti-2026-03-09-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -2044,6 +2098,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-03-09-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2059,6 +2114,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/minicirk-hernicka-pro-deti-2026-03-10-09-00",
    "description": "Cirkusová hernička pod vedením Pavly Vladykové pro rodiče s dětmi od 1,5 roku do 3 let. Cirkusové hrátky zaměřené na koordinaci, posílení těla, radost z pohybu. Společně vyzkoušíme rozličné cirkusové disciplíny (akrobacii, žonglování atd.).",
    "image": "https://static.wixstatic.com/media/ee968065cea14115be8717a5007272f4.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2089,6 +2145,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-03-12-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2119,6 +2176,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-03-16-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2149,6 +2207,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-03-19-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2179,6 +2238,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-03-21-10-00",
    "description": "Březen je měsícem růstu, pružnosti a ohebnosti. Nejen fyzicky, ale i mentálně. Element dřeva, energie, která chce směřovat vzhůru. Proto se zaměříme na rostoucí energii v nás. Na to, co chceme, aby v nás klíčilo po zbytek roku.",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2194,6 +2254,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-03-23-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2239,6 +2300,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-03-26-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2310,6 +2372,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-04-06-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2355,6 +2418,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-04-09-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2385,6 +2449,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-04-11-10-00",
    "description": "Víte, že nerovnováha jater úzce souvisí s nedostatkem flexibility na úrovni těla i mysli? V systému TCM vládnou játra šlachám a vazivu, které krev jater vyživuje. Položme si otázky, jak moc jsme flexibilní v rozhodování? Jak dobře či špatně reagujeme na změny? Jak se cítíme flexibilní ve svém těle?",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2400,6 +2465,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-2-pololeti-2026-04-13-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -2431,6 +2497,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-04-13-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2462,6 +2529,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-04-16-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2492,6 +2560,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-04-20-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2522,6 +2591,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-04-23-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2552,6 +2622,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-04-25-10-00",
    "description": "Víte, že nerovnováha jater úzce souvisí s nedostatkem flexibility na úrovni těla i mysli? V systému TCM vládnou játra šlachám a vazivu, které krev jater vyživuje. Položme si otázky, jak moc jsme flexibilní v rozhodování? Jak dobře či špatně reagujeme na změny? Jak se cítíme flexibilní ve svém těle?",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2567,6 +2638,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-04-27-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2597,6 +2669,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-04-30-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2640,6 +2713,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-05-04-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2655,6 +2729,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-05-07-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2683,6 +2758,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-05-09-10-00",
    "description": "Květen je měsícem lásky a k němu patří náš nejdůležitější orgán, srdce. Srdci škodí hlavně nedostatek lásky k sobě. Protože když máme lásku k sobě, potom se láska projevuje všude kolem nás. Říká se, že v srdci sídlí naše “duše” Shen. Obsahuje všechny aspekty mysli, vědomí, myšlení, paměti, emocí.",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2698,6 +2774,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-2-pololeti-2026-05-11-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -2729,6 +2806,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-05-11-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2789,6 +2867,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-05-18-19-30",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2834,6 +2913,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-05-21-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2864,6 +2944,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-2026-05-23-10-00",
    "description": "Květen je měsícem lásky a k němu patří náš nejdůležitější orgán, srdce. Srdci škodí hlavně nedostatek lásky k sobě. Protože když máme lásku k sobě, potom se láska projevuje všude kolem nás. Říká se, že v srdci sídlí naše “duše” Shen. Obsahuje všechny aspekty mysli, vědomí, myšlení, paměti, emocí.",
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2924,6 +3005,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-05-28-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -2939,6 +3021,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-06-01-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -2954,6 +3037,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hernicka-mezi-knihami-2026-06-02-10-00",
    "description": "Dopolední hernička pro nejmenší děti. Setkání plné tvoření, hudby, leporel a knih pro děti, tance, hraní a radosti z pohybu.",
    "image": "https://static.wixstatic.com/media/11062b_d9f3f69faadf4b4dac51f6154cfb46e2~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3034,6 +3118,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-2-pololeti-2026-06-08-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -3065,6 +3150,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-deti-2026-06-18-16-00",
    "description": "Klub je určen pro každého ve věku od 3 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3196,6 +3282,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-08-31-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3227,6 +3314,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-09-03-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3262,6 +3350,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-09-07-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3292,6 +3381,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-09-10-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3307,6 +3397,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-09-14-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -3323,6 +3414,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-09-14-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3354,6 +3446,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-09-17-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3384,6 +3477,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-09-18-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3449,6 +3543,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-09-21-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3479,6 +3574,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-09-24-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3494,6 +3590,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-09-25-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3537,6 +3634,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-09-28-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3567,6 +3665,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-10-01-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3597,6 +3696,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-10-02-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -3717,6 +3817,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -3750,6 +3851,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-10-08-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3839,8 +3941,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -3859,6 +3962,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -3877,6 +3981,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-10-12-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -3925,6 +4030,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -3958,6 +4064,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-10-15-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -3973,6 +4080,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-10-16-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4066,8 +4174,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4086,6 +4195,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4104,6 +4214,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-10-19-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4135,6 +4246,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4153,6 +4265,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-10-22-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4183,6 +4296,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-10-23-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4216,8 +4330,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4236,6 +4351,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4254,6 +4370,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-10-26-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4282,6 +4399,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4300,6 +4418,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-10-30-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4313,8 +4432,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4333,6 +4453,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4351,6 +4472,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-11-02-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4382,6 +4504,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4400,6 +4523,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-11-05-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4415,6 +4539,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-06-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4428,8 +4553,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4448,6 +4574,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4466,6 +4593,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-11-09-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -4497,6 +4625,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4515,6 +4644,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-11-12-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4530,6 +4660,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-13-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4543,8 +4674,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4563,6 +4695,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4610,6 +4743,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4628,6 +4762,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-11-19-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4643,6 +4778,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-20-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4656,8 +4792,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4676,6 +4813,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4694,6 +4832,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-11-23-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4709,6 +4848,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4727,6 +4867,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-11-26-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4757,6 +4898,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-27-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4790,8 +4932,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4810,6 +4953,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4828,6 +4972,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-11-30-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4843,6 +4988,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4861,6 +5007,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-12-03-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -4876,6 +5023,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-04-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4919,8 +5067,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4939,6 +5088,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -4957,6 +5107,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-12-07-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -4973,6 +5124,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-07-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -4988,6 +5140,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5006,6 +5159,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-12-10-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -5021,6 +5175,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-11-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -5049,8 +5204,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5069,6 +5225,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5087,6 +5244,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-14-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -5102,6 +5260,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5120,6 +5279,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-12-17-15-00",
    "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
    "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti"
    ]
@@ -5133,8 +5293,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5153,6 +5314,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5171,6 +5333,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-21-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -5186,6 +5349,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5241,8 +5405,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5261,6 +5426,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5279,6 +5445,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2026-12-28-19-00",
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
+   "recurring": true,
    "categories": [
     "sport"
    ]
@@ -5294,6 +5461,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5336,8 +5504,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5356,6 +5525,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5374,6 +5544,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5390,8 +5561,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5410,6 +5582,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5428,6 +5601,7 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-01-11-10-00",
    "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
+   "recurring": true,
    "categories": [
     "deti",
     "vzdelavani"
@@ -5444,6 +5618,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5475,8 +5650,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5495,6 +5671,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5513,6 +5690,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5529,8 +5707,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5549,6 +5728,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5567,6 +5747,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5583,8 +5764,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5603,6 +5785,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5621,6 +5804,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5637,8 +5821,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5657,6 +5842,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5675,6 +5861,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5691,8 +5878,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5711,6 +5899,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5729,6 +5918,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5745,8 +5935,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5765,6 +5956,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5783,6 +5975,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5799,8 +5992,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5819,6 +6013,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5837,6 +6032,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5853,8 +6049,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5873,6 +6070,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5891,6 +6089,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5907,8 +6106,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5927,6 +6127,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5945,6 +6146,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5961,8 +6163,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5981,6 +6184,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -5999,6 +6203,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6028,8 +6233,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6048,6 +6254,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6079,6 +6286,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6095,8 +6303,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6115,6 +6324,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6133,6 +6343,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6289,8 +6500,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6309,6 +6521,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6327,6 +6540,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6343,8 +6557,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6363,6 +6578,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6381,6 +6597,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6417,8 +6634,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6437,6 +6655,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6455,6 +6674,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6484,8 +6704,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6504,6 +6725,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6522,6 +6744,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6551,8 +6774,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6571,6 +6795,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6589,6 +6814,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6640,8 +6866,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6660,6 +6887,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6678,6 +6906,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6694,8 +6923,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6714,6 +6944,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6732,6 +6963,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6788,8 +7020,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6808,6 +7041,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6826,6 +7060,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6842,8 +7077,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6862,6 +7098,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6880,6 +7117,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6896,8 +7134,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6916,6 +7155,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6934,6 +7174,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6950,8 +7191,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6970,6 +7212,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -6988,6 +7231,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7004,8 +7248,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7024,6 +7269,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7042,6 +7288,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7058,8 +7305,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7078,6 +7326,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7122,6 +7371,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7138,8 +7388,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7158,6 +7409,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7176,6 +7428,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7192,8 +7445,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7212,6 +7466,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7230,6 +7485,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7246,8 +7502,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7266,6 +7523,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7284,6 +7542,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7300,8 +7559,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7320,6 +7580,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7338,6 +7599,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7354,8 +7616,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7374,6 +7637,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7392,6 +7656,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7408,8 +7673,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7428,6 +7694,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7446,6 +7713,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7462,8 +7730,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7482,6 +7751,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7500,6 +7770,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7516,8 +7787,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7536,6 +7808,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7554,6 +7827,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7570,8 +7844,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7590,6 +7865,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7608,6 +7884,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7624,8 +7901,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7644,6 +7922,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7662,6 +7941,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7678,8 +7958,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7698,6 +7979,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7716,6 +7998,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7732,8 +8015,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7752,6 +8036,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7783,6 +8068,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7799,8 +8085,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7819,6 +8106,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7837,6 +8125,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7853,8 +8142,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7873,6 +8163,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7891,6 +8182,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7907,8 +8199,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7927,6 +8220,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7945,6 +8239,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7961,8 +8256,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7981,6 +8277,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -7999,6 +8296,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8028,8 +8326,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8048,6 +8347,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8066,6 +8366,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8082,8 +8383,9 @@
    "allDay": false,
    "location": "Sokolovna (venkovní hřiště)",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8102,6 +8404,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
@@ -8120,6 +8423,7 @@
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
    "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "recurring": true,
    "tagCategories": [
     "sport"
    ],
