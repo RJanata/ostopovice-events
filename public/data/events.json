@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T15:07:30.557Z",
+ "generatedAt": "2026-10-08T15:24:27.898Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T15:24:27.898Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -5115,11 +5115,11 @@
   {
    "id": "pripravovane-7nr8c",
    "source": "pripravovane",
-   "title": "Rozsvěcení stromečku (1. adventní neděle)",
+   "title": "Rozsvícení vánočního stromečku (1. adventní neděle)",
    "start": "2026-11-29",
    "end": "2026-11-29",
    "allDay": true,
-   "location": "",
+   "location": "U Kaple",
    "url": "",
    "description": "",
    "image": "",
@@ -6286,7 +6286,7 @@
    "allDay": true,
    "location": "Sokolovna",
    "url": "",
-   "description": "",
+   "description": "#hody #mladehody",
    "image": "",
    "tagCategories": [
     "kultura"
