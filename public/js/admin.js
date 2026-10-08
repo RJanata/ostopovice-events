@@ -23,7 +23,6 @@ let categories = [];
 let overrides = { series: {}, events: {} };
 let overridesSha = null;
 let editingId = null;
-const pending = new Set(); // ID akcí změněných od načtení (web je ještě nepřegeneroval)
 
 const $ = (id) => document.getElementById(id);
 
@@ -141,7 +140,8 @@ async function saveOverrides(next, message) {
   const response = await github(`/repos/${REPO}/contents/${OVERRIDES_PATH}`, {
     method: 'PUT',
     body: JSON.stringify({
-      message,
+      // [skip ci] = commit nespustí přegenerování webu; to se udělá najednou tlačítkem „Přegenerovat web“
+      message: `${message} [skip ci]`,
       content: encodeBase64(serializeOverrides(next)),
       branch: BRANCH,
       ...(overridesSha ? { sha: overridesSha } : {}),
@@ -156,6 +156,32 @@ async function saveOverrides(next, message) {
   const result = await response.json();
   overrides = { series: next.series, events: next.events };
   overridesSha = result.content.sha;
+}
+
+/**
+ * Kolik úprav ještě není na webu: commity do overrides.json novější než poslední vygenerování dat.
+ * Počítá se z GitHubu, takže to platí i po zavření prohlížeče nebo na jiném počítači.
+ */
+async function countUnpublishedChanges() {
+  const since = data.generatedAt;
+  const response = await github(`/repos/${REPO}/commits?path=${OVERRIDES_PATH}&sha=${BRANCH}&since=${since}&per_page=100`);
+  if (!response.ok) return 0;
+  const commits = await response.json();
+  return commits.filter((c) => new Date(c.commit.committer.date) > new Date(since)).length;
+}
+
+async function updateRegenerateButton() {
+  const button = $('regenerate');
+  let count = 0;
+  try {
+    count = await countUnpublishedChanges();
+  } catch {
+    // bez spojení s GitHubem tlačítko jen nezvýrazníme
+  }
+  button.classList.toggle('button--alert', count > 0);
+  button.textContent = count > 0
+    ? `Přegenerovat web (${count} ${count === 1 ? 'úprava čeká' : count < 5 ? 'úpravy čekají' : 'úprav čeká'})`
+    : 'Přegenerovat web';
 }
 
 // ---------- Model akce ----------
@@ -188,6 +214,17 @@ function effective(e) {
     hidden: Boolean(changes.hidden),
     changed: Object.keys(changes).length > 0,
   };
+}
+
+/** Liší se úpravy od toho, co je teď na webu (events.json)? */
+function isUnpublished(e, eff = effective(e)) {
+  const same = (a, b) => JSON.stringify(a ?? '') === JSON.stringify(b ?? '');
+  return !same(eff.title, e.title)
+    || !same(eff.location, e.location)
+    || !same(eff.note, e.note)
+    || eff.hidden !== Boolean(e.hidden)
+    || WHEN_FIELDS.some((f) => !same(eff.when[f], e[f]))
+    || (eff.changes.categories && !same(eff.changes.categories, e.categories));
 }
 
 function seriesCount(e) {
@@ -226,7 +263,7 @@ function renderList() {
     const badges = [
       eff.changed && '<span class="admin-badge admin-badge--changed">upraveno</span>',
       eff.hidden && '<span class="admin-badge admin-badge--hidden">skryto</span>',
-      pending.has(e.id) && '<span class="admin-badge admin-badge--pending">čeká na přegenerování webu</span>',
+      isUnpublished(e, eff) && '<span class="admin-badge admin-badge--pending">čeká na přegenerování webu</span>',
     ].filter(Boolean).join(' ');
     const renamed = eff.title !== baseTitle(e) ? `<span>původně: ${escapeHtml(baseTitle(e))}</span>` : '';
     const place = eff.location ? `<span>📍 ${escapeHtml(eff.location)}</span>` : '';
@@ -398,11 +435,10 @@ async function commit(next, e, message, scope) {
   setMessage(msg, 'Ukládám…');
   try {
     await saveOverrides(next, message);
-    const affected = scope === 'series' ? data.events.filter((x) => seriesKey(x) === seriesKey(e)) : [e];
-    affected.forEach((x) => pending.add(x.id));
     editingId = null;
-    setMessage(msg, 'Uloženo. Web se přegeneruje během pár minut (GitHub → Actions).', 'ok');
+    setMessage(msg, 'Uloženo. Na web se úprava dostane po kliknutí na „Přegenerovat web“ (nebo při další automatické aktualizaci).', 'ok');
     renderList();
+    updateRegenerateButton();
   } catch (err) {
     setMessage(msg, err.message, 'error');
   }
@@ -528,11 +564,11 @@ async function reloadEvents({ render = true } = {}) {
   data = await response.json();
   sourcesById = Object.fromEntries(data.sources.map((s) => [s.id, s]));
   categories = data.categories;
-  pending.clear();
   $('last-update').textContent = new Date(data.generatedAt).toLocaleString('cs-CZ', {
     timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit',
   });
   if (render) renderList();
+  updateRegenerateButton();
 }
 
 async function init() {

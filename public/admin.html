@@ -43,11 +43,12 @@
     </section>
 
     <section class="admin-box">
-      <h2>Aktualizace</h2>
-      <p class="admin-help">Kalendáře se načítají automaticky 3× denně. Když potřebujete změnu ze zdrojů hned
-        (třeba nově přidanou akci v Google kalendáři), spusťte načtení ručně – trvá zhruba 1–2 minuty.</p>
+      <h2>Aktualizace webu</h2>
+      <p class="admin-help">Úpravy akcí se ukládají hned, ale na web se dostanou až po přegenerování – můžete tedy
+        upravit víc akcí a pak přegenerovat jednou. Přegenerování zároveň načte všechny kalendáře
+        (jinak se načítají automaticky 3× denně, kdy se promítnou i neuložené úpravy). Trvá zhruba 1–2 minuty.</p>
       <div class="admin-actions">
-        <button type="button" class="button" data-refresh="">Znovu načíst všechny kalendáře</button>
+        <button type="button" class="button" data-refresh="" id="regenerate">Přegenerovat web</button>
         <span id="refresh-single"></span>
         <span class="admin-status" id="refresh-status"></span>
       </div>
@@ -79,7 +80,7 @@
       <label class="admin-field">
         <span>Poznámka</span>
         <textarea name="note" rows="2" placeholder="např. Změna místa – koná se v sokolovně"></textarea>
-        <small>Zobrazí se na webu vždy hned pod názvem akce.</small>
+        <small>Zobrazí se na webu vždy u akce, pod zdrojem, typem a adresou.</small>
       </label>
       <fieldset class="admin-field admin-when">
         <legend>Datum a čas</legend>

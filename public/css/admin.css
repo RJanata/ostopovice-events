@@ -74,3 +74,7 @@
 
 .admin-actions .admin-status { margin: 0; }
 .admin-last-update { margin: 10px 0 0; }
+
+/* tlačítko přegenerování, když na webu chybí uložené úpravy */
+.button--alert { background: #8b1a1a; border-color: #8b1a1a; color: #fff; box-shadow: 0 0 0 3px color-mix(in srgb, #8b1a1a 25%, transparent); }
+:root[data-theme="dark"] .button--alert { background: #b3261e; border-color: #b3261e; }
