@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T21:46:26.989Z",
+ "generatedAt": "2026-10-08T22:37:34.917Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 24
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-08T21:46:26.989Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 33
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:43:11.034Z",
+   "lastSuccess": "2026-10-08T22:37:34.917Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4127,22 +4127,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4162,6 +4146,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4194,10 +4194,10 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-07T22:43:36.000Z",
    "note": "Pá 14:00–22:00 | So 08:00–14:00",
    "originalTitle": "Oznámení o době a místě konání voleb do zastupitelstev obcí",
-   "originalLocation": ""
+   "originalLocation": "",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "obec-c0pv8v",
@@ -4213,10 +4213,10 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-07T22:43:36.000Z",
    "note": "14:30 na návsi | 15:30 průvod obcí | 17:00 sokolovna – vystoupení | 20:00 hodová zábava",
    "originalTitle": "Pozvánka na Babský hody 10. 10. 2026",
-   "originalLocation": ""
+   "originalLocation": "",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-3xp067",
@@ -4352,8 +4352,8 @@
     "deti",
     "obec"
    ],
-   "added": "2026-10-07T22:43:36.000Z",
-   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče"
+   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-a7wk58",
