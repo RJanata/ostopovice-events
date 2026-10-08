@@ -229,7 +229,7 @@ function renderChips(container, items, selected, render, onToggle) {
   const summary = container.nextElementSibling;
   if (summary?.classList.contains('chips__selected')) {
     summary.textContent = selected === null ? '' // „Vše“ je vidět přímo na tlačítku
-      : items.filter((item) => selected.has(item.id)).map((item) => item.label || item.name || item.id).join(', ');
+      : items.filter((item) => selected.has(item.id)).map((item) => item.fullName || item.label || item.name || item.id).join(', ');
   }
   container.onclick = (ev) => {
     const chip = ev.target.closest('.chip');
@@ -261,11 +261,20 @@ function fitFilters() {
   const filters = document.querySelector('.filters');
   const rows = [...filters.querySelectorAll('.chips')].filter((c) => c.offsetParent);
   if (!rows.length) return;
+  const fits = () => !rows.some(wrapsToMoreLines);
   for (const [index, level] of FILTER_LEVELS.entries()) {
     filters.classList.toggle('filters--top', level.includes('top'));
     filters.classList.toggle('filters--short', level.includes('short'));
     filters.classList.toggle('filters--icons', level.includes('icons'));
-    if (index === FILTER_LEVELS.length - 1 || !rows.some(wrapsToMoreLines)) return;
+    // „Pravidelné“ je na konci štítků; k nadpisu nahoru jde, jen když jsou nadpisy nahoře
+    // a na konec štítků se nevejde
+    filters.classList.remove('filters--regular-top');
+    if (fits()) return;
+    if (level.includes('top')) {
+      filters.classList.add('filters--regular-top');
+      if (fits()) return;
+    }
+    if (index === FILTER_LEVELS.length - 1) return;
   }
 }
 
@@ -285,7 +294,7 @@ function renderFilters() {
   // zaškrtávátko na konci řady kategorií (počítá se do zhuštění filtrů jako další štítek)
   document.getElementById('category-filter').insertAdjacentHTML('beforeend', `
     <label class="regular-toggle" title="Pravidelné akce (cvičení, kurzy, bohoslužby…)">
-      <input type="checkbox" id="regular-toggle"${state.regular ? ' checked' : ''}><span>Pravidelné</span>
+      <input type="checkbox" class="regular-input"${state.regular ? ' checked' : ''}><span>Pravidelné</span>
     </label>`);
 
   // filtr obcí se ukáže, až budou zdroje z víc obcí
@@ -299,6 +308,7 @@ function renderFilters() {
   }
   fitFilters();
 
+  document.querySelectorAll('.regular-input').forEach((input) => { input.checked = state.regular; });
   const search = document.getElementById('search');
   if (search.value !== state.query) search.value = state.query;
   document.getElementById('reset-filters').hidden = !isFilterActive();
@@ -943,7 +953,7 @@ function setupEvents() {
   document.getElementById('download-filtered').addEventListener('click', downloadFiltered);
 
   document.querySelector('.filters').addEventListener('change', (ev) => {
-    if (ev.target.id !== 'regular-toggle') return;
+    if (!ev.target.classList.contains('regular-input')) return;
     state.regular = ev.target.checked;
     update();
   });

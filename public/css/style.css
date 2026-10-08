@@ -116,7 +116,12 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .chip__label-short { display: none; }
 
 /* zhuštění podle místa (fitFilters v app.js) */
-.filters--top .filters__row { flex-direction: column; gap: 6px; }
+/* nadpisy nad štítky: nadpis (a u kategorií „Pravidelné“) na prvním řádku, štítky a souhrn pod ním */
+.filters--top .filters__row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; align-items: center; }
+.filters--top .filters__row > :not(.filters__label):not(.regular-toggle--top) { grid-column: 1 / -1; }
+.filters .regular-toggle--top { display: none; margin-left: 0; padding: 0; }
+.filters--regular-top .regular-toggle--top { display: inline-flex; justify-self: start; }
+.filters--regular-top .chips .regular-toggle { display: none; }
 .filters--top .filters__label { flex: none; }
 .filters--short .chip:not(.chip--all) .chip__label { display: none; }
 .filters--short .chip__label-short { display: inline; }
@@ -326,6 +331,11 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .site-footer__source { white-space: nowrap; }
 .site-footer__source .source-icon { width: 14px; height: 14px; margin-right: 3px; vertical-align: -2px; }
 .site-footer__copyright { margin-top: 12px !important; }
+.social { display: inline-flex; gap: 8px; margin-left: 10px; vertical-align: -4px; }
+.social a { display: inline-grid; place-items: center; color: var(--muted); }
+.social a:hover { color: var(--accent); }
+.social__icon { width: 18px; height: 18px; stroke-width: 2; }
+.social__icon--filled { fill: currentColor; stroke: none; }
 
 /* ---------- Mobil ---------- */
 
