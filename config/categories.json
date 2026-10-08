@@ -27,35 +27,6 @@
       "icon": "sport.svg"
     },
     {
-      "id": "deti",
-      "label": "Pro děti",
-      "color": "#b06b12",
-      "keywords": [
-        "pro deti",
-        "detem",
-        "detsk",
-        "den deti",
-        "pro nejmensi",
-        "little ones",
-        "pohad",
-        "karneval",
-        "mikulas",
-        "lampion",
-        "drakiad",
-        "vitani obcanku",
-        "\\bmaminky s detmi",
-        "kids",
-        "hernick",
-        "senza hrani",
-        "hravy klub",
-        "skolcat",
-        "pro skolaky",
-        "minicirk"
-      ],
-      "icon": "deti.svg",
-      "shortLabel": "Děti"
-    },
-    {
       "id": "kultura",
       "label": "Kultura",
       "color": "#8a3a66",
@@ -92,6 +63,46 @@
         "dostavenick"
       ],
       "icon": "kultura.svg"
+    },
+    {
+      "id": "deti",
+      "label": "Pro děti",
+      "color": "#b06b12",
+      "keywords": [
+        "pro deti",
+        "detem",
+        "detsk",
+        "den deti",
+        "pro nejmensi",
+        "little ones",
+        "pohad",
+        "karneval",
+        "mikulas",
+        "lampion",
+        "drakiad",
+        "vitani obcanku",
+        "\\bmaminky s detmi",
+        "kids",
+        "hernick",
+        "senza hrani",
+        "hravy klub",
+        "skolcat",
+        "pro skolaky",
+        "minicirk"
+      ],
+      "icon": "deti.svg",
+      "shortLabel": "Děti"
+    },
+    {
+      "id": "seniori",
+      "label": "Senioři",
+      "color": "#6b4ea0",
+      "keywords": [
+        "senior",
+        "klub duchodcu",
+        "pro duchodce"
+      ],
+      "icon": "seniori.svg"
     },
     {
       "id": "vzdelavani",
