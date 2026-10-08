@@ -83,22 +83,28 @@
 
   <template id="subscribe-help">
     <div class="subscribe-help">
-      <div class="subscribe-help__filtered" hidden>
-        <p><strong>Váš výběr</strong> – <span class="subscribe-help__filter-text"></span></p>
+      <section class="subscribe-help__option">
+        <p><strong>Všechny akce</strong> – odběr kalendáře: akce se vám budou samy objevovat a aktualizovat v telefonu nebo počítači.</p>
+        <p class="subscribe-help__row">
+          <a class="button button--small" data-subscribe-all>Přidat do kalendáře</a>
+          <button type="button" class="button button--small button--ghost" data-copy-all>Kopírovat odkaz</button>
+        </p>
+        <p class="subscribe-help__hint">
+          <strong>Přidat</strong> otevře kalendář v zařízení (iPhone, Mac, Outlook).
+          <strong>Google Kalendář:</strong> zkopírujte odkaz a vložte ho v Google Kalendáři do Další kalendáře → Přidat podle URL.
+        </p>
+      </section>
+      <section class="subscribe-help__option" data-custom-ics hidden>
+        <p><strong>Podle vašeho výběru</strong> – <span class="subscribe-help__filter-text"></span></p>
         <p class="subscribe-help__row">
           <button type="button" class="button button--small" data-download-filtered>Stáhnout .ics</button>
-          <span class="subscribe-help__hint">Jednorázový import nadcházejících akcí podle filtru. Pozdější změny se samy nepromítnou –
-            pro automatické aktualizace použijte odběr níže.</span>
         </p>
-      </div>
-      <p><strong>Odběr kalendáře</strong> – akce se vám budou samy objevovat v telefonu nebo počítači.
-        Můžete odebírat všechno, nebo jen typy akcí, které vás zajímají (třeba jen „Pro děti“).</p>
-      <ul class="subscribe-help__list"></ul>
-      <p class="subscribe-help__hint">
-        <strong>Přidat</strong> otevře kalendář v zařízení (iPhone, Mac, Outlook).
-        <strong>Google Kalendář:</strong> zkopírujte odkaz a vložte ho v Google Kalendáři do Další kalendáře → Přidat podle URL.
-        Akce s více typy (např. Pro děti i Vzdělávání) se při odběru více kalendářů objeví v každém z nich.
-      </p>
+        <p class="subscribe-help__hint">
+          Ve filtrech níže si vyberte zdroje a kategorie, které vás zajímají (třeba jen Knihovna a Pro děti),
+          a pak si je tady stáhněte a naimportujte do svého kalendáře. Jde o jednorázový import nadcházejících akcí –
+          pozdější změny se samy nepromítnou, pro ně je odběr všech akcí výše.
+        </p>
+      </section>
     </div>
   </template>
 </body>

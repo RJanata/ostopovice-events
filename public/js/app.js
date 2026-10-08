@@ -646,7 +646,7 @@ function update({ keepHash = false } = {}) {
   document.getElementById('result-count').textContent = `${upcomingSingle} nadcházejících akcí`
     + (regularCount ? ` a ${regularCount} termínů pravidelných` : '');
   const downloadButton = document.getElementById('download-filtered');
-  downloadButton.hidden = !isFilterActive() || !upcoming;
+  downloadButton.hidden = !CUSTOM_ICS_ENABLED || !isFilterActive() || !upcoming;
   refreshSubscribePanel?.();
   document.getElementById('view').innerHTML = state.view === 'month' ? renderMonth(events, holidays) : renderList(events, holidays);
 }
@@ -670,7 +670,14 @@ function renderFooter() {
     .join(', ');
 }
 
-/** Odběr kalendáře: celý, nebo jen vybrané kategorie (každá má vlastní .ics). */
+/**
+ * Vlastní výběr do kalendáře (stažení .ics podle filtru) je zatím vypnutý: statický web
+ * neumí odběr libovolné kombinace, jen jednorázový import. Vrátí se s dynamickým odběrem
+ * (Cloudflare Worker nebo služba na NASu).
+ */
+const CUSTOM_ICS_ENABLED = false;
+
+/** Panel kalendáře: odběr všech akcí, nebo jednorázové stažení podle filtru. */
 let refreshSubscribePanel = null;
 
 function setupSubscribe() {
@@ -681,45 +688,34 @@ function setupSubscribe() {
     if (panel) { panel.remove(); panel = null; refreshSubscribePanel = null; return; }
     panel = document.getElementById('subscribe-help').content.firstElementChild.cloneNode(true);
 
-    const usedCategories = new Set(data?.events.flatMap((e) => e.categories) || []);
-    const calendars = [{ label: 'Všechny akce', file: 'akce.ics', all: true }]
-      .concat((data?.categories || [])
-        .filter((c) => usedCategories.has(c.id) && c.id !== 'ostatni')
-        .map((c) => ({ label: c.label, file: `akce-${c.id}.ics`, category: c })));
+    const allUrl = new URL('data/akce.ics', location.href).href;
+    panel.querySelector('[data-custom-ics]').hidden = !CUSTOM_ICS_ENABLED;
+    panel.querySelector('[data-subscribe-all]').href = allUrl.replace(/^https?:/, 'webcal:');
 
     refreshSubscribePanel = () => {
       if (!panel) return;
-      const filtered = panel.querySelector('.subscribe-help__filtered');
-      filtered.hidden = !isFilterActive();
-      if (isFilterActive()) {
-        const count = filteredUpcoming().length;
-        panel.querySelector('.subscribe-help__filter-text').textContent = `${filterDescription()} (${count} nadcházejících akcí)`;
-        panel.querySelector('[data-download-filtered]').disabled = !count;
+      const text = panel.querySelector('.subscribe-help__filter-text');
+      const button = panel.querySelector('[data-download-filtered]');
+      if (!isFilterActive()) {
+        text.textContent = 'zatím není nic vybráno.';
+        button.disabled = true;
+        return;
       }
+      const count = filteredUpcoming().length;
+      text.textContent = `${filterDescription()} (${count} nadcházejících akcí)`;
+      button.disabled = !count;
     };
     refreshSubscribePanel();
 
-    panel.querySelector('.subscribe-help__list').innerHTML = calendars.map((cal) => {
-      const url = new URL(`data/${cal.file}`, location.href).href;
-      const icon = cal.category ? `<span class="tag" style="--chip-color:${escapeHtml(cal.category.color)}">${categoryIcon(cal.category)}${escapeHtml(cal.label)}</span>`
-        : `<strong>${escapeHtml(cal.label)}</strong>`;
-      const highlighted = cal.category && state.categories?.has(cal.category.id);
-      return `<li class="${highlighted ? 'is-highlighted' : ''}">
-          <span class="subscribe-help__name">${icon}</span>
-          <a class="button button--small" href="${escapeHtml(url.replace(/^https?:/, 'webcal:'))}">Přidat</a>
-          <button type="button" class="button button--small button--ghost" data-copy="${escapeHtml(url)}">Kopírovat odkaz</button>
-        </li>`;
-    }).join('');
-
     panel.addEventListener('click', async (e) => {
       if (e.target.closest('[data-download-filtered]')) { downloadFiltered(); return; }
-      const button = e.target.closest('[data-copy]');
+      const button = e.target.closest('[data-copy-all]');
       if (!button) return;
       try {
-        await navigator.clipboard.writeText(button.dataset.copy);
+        await navigator.clipboard.writeText(allUrl);
         button.textContent = 'Zkopírováno ✓';
       } catch {
-        window.prompt('Zkopírujte adresu kalendáře:', button.dataset.copy);
+        window.prompt('Zkopírujte adresu kalendáře:', allUrl);
       }
     });
     document.querySelector('.site-header .wrap').append(panel);
