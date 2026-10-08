@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T00:09:02.585Z",
+ "generatedAt": "2026-10-08T00:13:11.388Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:09:02.585Z",
+   "lastSuccess": "2026-10-08T00:13:11.388Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:09:02.585Z",
+   "lastSuccess": "2026-10-08T00:13:11.388Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:09:02.585Z",
+   "lastSuccess": "2026-10-08T00:13:11.388Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:09:02.585Z",
+   "lastSuccess": "2026-10-08T00:13:11.388Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T00:09:02.585Z",
+   "lastSuccess": "2026-10-08T00:13:11.388Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -535,6 +535,7 @@
    "description": "Oslava podzimu pro celou rodinu. Dýně, dýně a zase dýně. Přijďte dlabat, tvořit, hodovat, kochat se okrasnými kousky, zahřát se pumpkin spice latté a dalšími kávovými speciály, užít si hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě domů.",
    "image": "https://static.wixstatic.com/media/11062b_229adfdd1de74b3785697fa7fc4c7606~mv2.jpeg",
    "categories": [
+    "deti",
     "kultura"
    ]
   },
@@ -3638,6 +3639,7 @@
    "description": "Oslava podzimu pro celou rodinu. Dýně, dýně a zase dýně. Přijďte dlabat, tvořit, hodovat, kochat se okrasnými kousky, zahřát se pumpkin spice latté a dalšími kávovými speciály, užít si hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě domů.",
    "image": "https://static.wixstatic.com/media/11062b_4f513529e11f49b0adacef89fe9adbbf~mv2.jpg",
    "categories": [
+    "deti",
     "kultura"
    ]
   },
@@ -3747,21 +3749,6 @@
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "pripravovane-ym1yn6",
-   "source": "pripravovane",
-   "title": "Adventní vystoupení",
-   "start": "2026-11-01",
-   "end": "2026-11-01",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "",
-   "image": "",
-   "categories": [
-    "kultura"
    ]
   },
   {
@@ -3911,7 +3898,8 @@
    "description": "",
    "image": "",
    "categories": [
-    "kultura"
+    "kultura",
+    "obec"
    ]
   },
   {
@@ -4002,6 +3990,24 @@
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "pripravovane-7nr8c",
+   "source": "pripravovane",
+   "title": "Adventní vystoupení",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "#pro deti",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
    ]
   },
   {
