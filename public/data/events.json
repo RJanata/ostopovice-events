@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:31:28.744Z",
+ "generatedAt": "2026-10-08T02:33:01.833Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:31:28.744Z",
+   "lastSuccess": "2026-10-08T02:33:01.833Z",
    "ok": true,
    "error": null,
    "count": 6
@@ -4747,8 +4747,8 @@
     "kultura"
    ],
    "categories": [
-    "kultura",
-    "obec"
+    "deti",
+    "kultura"
    ]
   },
   {
