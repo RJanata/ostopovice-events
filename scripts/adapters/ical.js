@@ -45,8 +45,13 @@ export async function fetchEvents(source, { from, to }) {
         location: item.location ? String(item.location).trim() : '',
         url: typeof item.url === 'string' ? item.url : item.url?.val || '',
         description: htmlToText(description),
+        recurring: Boolean(item.rrule), // opakovaná událost (cvičení, tréninky…)
       });
     }
+  }
+  // kalendář sdílený jen jako „volno/obsazeno“ posílá místo názvů „Busy“ a žádné podrobnosti
+  if (events.length && events.every((e) => /^(busy|zaneprázdněn[ýa]?|obsazeno)$/i.test(e.title))) {
+    throw new Error('Kalendář je veřejně sdílený jen jako „volno/obsazeno“ – v Google Kalendáři je potřeba zpřístupnit všechny podrobnosti událostí');
   }
   return events;
 }
