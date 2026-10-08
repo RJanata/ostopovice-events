@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T01:35:53.851Z",
+ "generatedAt": "2026-10-08T01:45:57.949Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -12,7 +12,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:35:53.851Z",
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:35:53.851Z",
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -42,10 +42,10 @@
    "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": null,
-   "ok": false,
-   "error": "fetch failed",
-   "count": 0
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
+   "ok": true,
+   "error": null,
+   "count": 24
   },
   {
    "id": "sokol",
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:35:53.851Z",
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T01:35:53.851Z",
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,7 +87,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T01:35:53.851Z",
+   "lastSuccess": "2026-10-08T01:45:57.949Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -138,6 +138,21 @@
   }
  ],
  "events": [
+  {
+   "id": "seniori-jjewpe",
+   "source": "seniori",
+   "title": "Čtyřdenní zájezd ... Jižní Čechy, Novohradsko",
+   "start": "2025-09-02",
+   "end": "2025-09-05",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
   {
    "id": "knihovna-sqr6zv",
    "source": "knihovna",
@@ -212,6 +227,21 @@
    "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
    "categories": [
     "deti"
+   ]
+  },
+  {
+   "id": "seniori-vg9xo3",
+   "source": "seniori",
+   "title": "Exkurze do JE Dukovany",
+   "start": "2025-09-18",
+   "end": "2025-09-18",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
@@ -670,6 +700,21 @@
    ]
   },
   {
+   "id": "seniori-155rrnq",
+   "source": "seniori",
+   "title": "Zájezd ... Cesta za vínem - Olbramovice",
+   "start": "2025-10-30",
+   "end": "2025-10-30",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-9so8pp",
    "source": "knihovna",
    "title": "Hravý klub pro školčátka (3-6)",
@@ -745,6 +790,21 @@
    ]
   },
   {
+   "id": "seniori-7moacj",
+   "source": "seniori",
+   "title": "Vila Tugendhat",
+   "start": "2025-11-05",
+   "end": "2025-11-05",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "knihovna-75ln0h",
    "source": "knihovna",
    "title": "Semper Fidelis / výstava",
@@ -803,6 +863,21 @@
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "seniori-le9v0z",
+   "source": "seniori",
+   "title": "Martinská zábava U Volejníků",
+   "start": "2025-11-11",
+   "end": "2025-11-11",
+   "allDay": true,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
@@ -982,6 +1057,21 @@
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
    "categories": [
     "deti"
+   ]
+  },
+  {
+   "id": "seniori-10pr2rv",
+   "source": "seniori",
+   "title": "Mikulášská nadílka u Volejníků",
+   "start": "2025-12-05",
+   "end": "2025-12-05",
+   "allDay": true,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -1207,6 +1297,21 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "seniori-1wglu5n",
+   "source": "seniori",
+   "title": "Novoroční procházka",
+   "start": "2026-01-01",
+   "end": "2026-01-01",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "turistika, pořádá a zve OÚ",
+   "image": "",
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "svatky-228dsr",
@@ -1507,6 +1612,21 @@
    ]
   },
   {
+   "id": "seniori-1vxpvuf",
+   "source": "seniori",
+   "title": "Ples seniorů",
+   "start": "2026-01-31",
+   "end": "2026-01-31",
+   "allDay": true,
+   "location": "Sokolovna",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "na Sokolovně",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-7x8m5z",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 2. pololetí)",
@@ -1623,6 +1743,21 @@
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/co-je-noveho-o-mesici-prednaska-pavla-gabzdyla",
    "description": "Náš kosmický soused je mnohem komplikovanější a zajímavější, než jsme si ještě nedávno mysleli. Jaká tajemství nám skrývá? Přednáší popularizátor krás Sluneční soustavy Pavel Gabzdyl.",
    "image": "https://static.wixstatic.com/media/6e4a73_9738f7881e6044599d8bb8bce6128170~mv2.jpg",
+   "categories": [
+    "vzdelavani"
+   ]
+  },
+  {
+   "id": "seniori-1gcj35x",
+   "source": "seniori",
+   "title": "Vzdělávací seminář",
+   "start": "2026-02-11",
+   "end": "2026-02-11",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "\"Jak na chytrý mobil\"\nzáklady + foto a video",
+   "image": "",
    "categories": [
     "vzdelavani"
    ]
@@ -1820,6 +1955,21 @@
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
    "categories": [
     "deti"
+   ]
+  },
+  {
+   "id": "seniori-i3vicg",
+   "source": "seniori",
+   "title": "Oslava MDŽ s hudbou a tancem",
+   "start": "2026-03-06T15:00:00.000Z",
+   "end": "2026-03-06T15:00:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "v Restauraci u Volejníků, od 16:00",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
@@ -2049,6 +2199,21 @@
    ]
   },
   {
+   "id": "seniori-5tjfr2",
+   "source": "seniori",
+   "title": "Poznávací procházka brnem",
+   "start": "2026-03-25",
+   "end": "2026-03-25",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "komentovaná prohlídka Židovského hřbitova",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-1aqy7aq",
    "source": "knihovna",
    "title": "Hravý klub pro děti",
@@ -2132,6 +2297,36 @@
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "seniori-32w72o",
+   "source": "seniori",
+   "title": "Poznávací procházka brnem",
+   "start": "2026-04-08",
+   "end": "2026-04-08",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "komentovaná prohlídka vily Tugendhat",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
+   "id": "seniori-gjfjbw",
+   "source": "seniori",
+   "title": "Deskové hry se školáky ODLOŽENO",
+   "start": "2026-04-08",
+   "end": "2026-04-08",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "ze zdravotních důvodů paní učitelky,\ntermín termín dohodnut později",
+   "image": "",
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -2287,6 +2482,21 @@
    ]
   },
   {
+   "id": "seniori-tq8odq",
+   "source": "seniori",
+   "title": "Jednodenní poznávací zájezd",
+   "start": "2026-04-23",
+   "end": "2026-04-23",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Flora Olomouc s nákupem produktů\nKrásná Kroměříž",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-1uh989v",
    "source": "knihovna",
    "title": "Hravý klub pro děti",
@@ -2374,6 +2584,21 @@
    "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
    "categories": [
     "deti"
+   ]
+  },
+  {
+   "id": "seniori-q9nki2",
+   "source": "seniori",
+   "title": "Prvomájový turistický výlet",
+   "start": "2026-05-01",
+   "end": "2026-05-01",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Z Bílovic do Obřan",
+   "image": "",
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -2509,6 +2734,21 @@
    ]
   },
   {
+   "id": "seniori-18ipwp1",
+   "source": "seniori",
+   "title": "Prohlídka MŠ a ZŠ OSTOPOVICE",
+   "start": "2026-05-14",
+   "end": "2026-05-14",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "nově otevřená budova i pro seniory",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-1j1wedn",
    "source": "knihovna",
    "title": "Zpívárium / hlasový workshop",
@@ -2536,6 +2776,21 @@
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "seniori-difyhl",
+   "source": "seniori",
+   "title": "Beseda, setkání starších seniorů",
+   "start": "2026-05-19",
+   "end": "2026-05-19",
+   "allDay": true,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "v Restauraci u Volejník",
+   "image": "",
+   "categories": [
+    "vzdelavani"
    ]
   },
   {
@@ -2626,6 +2881,21 @@
    "image": "https://static.wixstatic.com/media/6e4a73_382d2a58a4ed4d6e9b4d05fa04cd5a13~mv2.jpg",
    "categories": [
     "vzdelavani"
+   ]
+  },
+  {
+   "id": "seniori-5z48iy",
+   "source": "seniori",
+   "title": "Jednodenní poznávací zájezd",
+   "start": "2026-05-28",
+   "end": "2026-05-28",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Exotická zahrada Přibice\nArcheopark Pavlov\nVinařství Na kopečku Dambořice",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
@@ -2856,6 +3126,36 @@
    ]
   },
   {
+   "id": "seniori-ltaspy",
+   "source": "seniori",
+   "title": "Poznávací procházka Brnem, Hvězdárna",
+   "start": "2026-08-06",
+   "end": "2026-08-06",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Festival planet, Megalon-Jupiter",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
+   "id": "seniori-1tjtobz",
+   "source": "seniori",
+   "title": "Poznávací, plavba na dračích lodích",
+   "start": "2026-08-15",
+   "end": "2026-08-15",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "z Lodních sportů do Komína\noběd v restauraci Holiday",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-1u1hvva",
    "source": "knihovna",
    "title": "Senza hraní: Od základů po zahradu",
@@ -2883,6 +3183,22 @@
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "seniori-s31w59",
+   "source": "seniori",
+   "title": "Čtyřdenní zájezd „Jizerské hory“, ubytování v Amantis Vital Sport Hotel",
+   "start": "2026-09-01",
+   "end": "2026-09-04",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Náročnější turistika s poznávacím, relaxačním programem,",
+   "image": "",
+   "categories": [
+    "sport",
+    "kultura"
    ]
   },
   {
@@ -3120,6 +3436,21 @@
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "seniori-qedjwj",
+   "source": "seniori",
+   "title": "Poznávací procházka Brnem",
+   "start": "2026-09-24",
+   "end": "2026-09-24",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "Náplavkou Od Ronda k Anthroposu",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
@@ -3856,6 +4187,21 @@
    ]
   },
   {
+   "id": "seniori-fyvofl",
+   "source": "seniori",
+   "title": "Zábava, Martinské dostaveníčko",
+   "start": "2026-11-11T15:00:00.000Z",
+   "end": "2026-11-11T15:00:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "knihovna-1mho3qn",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -4082,6 +4428,21 @@
    "image": "",
    "categories": [
     "deti"
+   ]
+  },
+  {
+   "id": "seniori-18n6yud",
+   "source": "seniori",
+   "title": "Zábava, Mikulášské nadělování",
+   "start": "2026-12-05T15:00:00.000Z",
+   "end": "2026-12-05T15:00:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "description": "",
+   "image": "",
+   "categories": [
+    "kultura"
    ]
   },
   {
