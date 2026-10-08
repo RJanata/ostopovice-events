@@ -1,9 +1,10 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné). extraFeeds = doplňkové zdroje, jejichž akce se přidají k tomuto zdroji (např. bohoslužby v kapli pod Nezařazené).",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné). extraFeeds = doplňkové zdroje, jejichž akce se přidají k tomuto zdroji (např. bohoslužby v kapli pod Nezařazené). fullName = plný název do patičky. options.recurringMonths (iCal) = opakované události jen na tento a další měsíce (2 = tento a příští měsíc).",
   "sources": [
     {
       "id": "obec",
       "name": "Obec",
+      "fullName": "Obec Ostopovice",
       "shortName": "Obec",
       "village": "Ostopovice",
       "icon": "obec.png",
@@ -19,6 +20,7 @@
     {
       "id": "knihovna",
       "name": "Knihovna",
+      "fullName": "Knihovna Ostopovice",
       "shortName": "Knihovna",
       "village": "Ostopovice",
       "icon": "knihovna.png",
@@ -40,8 +42,31 @@
       ]
     },
     {
+      "id": "sokol",
+      "name": "TJ Sokol",
+      "fullName": "TJ Sokol Ostopovice (NH JMOP)",
+      "shortName": "Sokol",
+      "village": "Ostopovice",
+      "icon": "sokol.png",
+      "color": "#2f6b47",
+      "type": "nhjmop",
+      "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice&obdobi=vse",
+      "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
+      "categories": [
+        "sport"
+      ],
+      "skipRules": true,
+      "options": {
+        "location": ""
+      },
+      "hideLocations": [
+        "."
+      ]
+    },
+    {
       "id": "seniori",
       "name": "Klub seniorů",
+      "fullName": "Klub seniorů",
       "shortName": "Senioři",
       "village": "Ostopovice",
       "icon": "seniori.svg",
@@ -49,7 +74,9 @@
       "type": "text-program",
       "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
       "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
-      "categories": [],
+      "categories": [
+        "seniori"
+      ],
       "fallbackCategories": [],
       "options": {
         "selector": "#document",
@@ -71,27 +98,6 @@
       "$comment": "Program je prostý text (datum | den, pod tím položky s pomlčkou). Při změně roku je potřeba upravit url na program-<rok>.html.",
       "excludeCategories": [
         "deti"
-      ]
-    },
-    {
-      "id": "sokol",
-      "name": "TJ Sokol",
-      "shortName": "Sokol",
-      "village": "Ostopovice",
-      "icon": "sokol.png",
-      "color": "#2f6b47",
-      "type": "nhjmop",
-      "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice&obdobi=vse",
-      "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-      "categories": [
-        "sport"
-      ],
-      "skipRules": true,
-      "options": {
-        "location": ""
-      },
-      "hideLocations": [
-        "."
       ]
     },
     {
@@ -141,9 +147,15 @@
               "cirkev"
             ]
           },
-          "$comment": "Pořad bohoslužeb farnosti — jen bohoslužby v kapli Ostopovice; vlastní zdroj by se nevyplatil (max. 1 týdně)."
+          "$comment": "Pořad bohoslužeb farnosti — jen bohoslužby v kapli Ostopovice; vlastní zdroj by se nevyplatil (max. 1 týdně).",
+          "fullName": "Farnost Troubsko",
+          "icon": "farnost-troubsko.png",
+          "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
         }
-      ]
+      ],
+      "options": {
+        "recurringMonths": 2
+      }
     },
     {
       "id": "pripravovane",
@@ -159,7 +171,10 @@
       "link": null,
       "$comment": "Zástupné akce pro budoucí události. Je poslední v pořadí, takže když stejnou akci (stejný název a den) vypíše skutečný zdroj, zobrazí se ta skutečná.",
       "adminRefresh": true,
-      "allowEmpty": true
+      "allowEmpty": true,
+      "options": {
+        "recurringMonths": 2
+      }
     }
   ]
 }

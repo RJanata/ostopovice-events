@@ -6,11 +6,12 @@
 //   - zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažené akce
 //   - proběhlé akce si držíme sami (zdroje je obvykle ze seznamu mažou)
 //   - kategorie se počítají při každém běhu znovu, takže změna pravidel platí i zpětně
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 import { buildRules, buildTagMap, categorize, extractTags } from './lib/categorize.js';
+import { fetchText } from './lib/http.js';
 import { buildIcs } from './lib/ics.js';
 import { normalize, shortHash, truncate } from './lib/text.js';
 import { addDays, eventLastDay, fromPragueTime, pragueDay } from './lib/time.js';
@@ -34,6 +35,13 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
 const EVENTS_FILE = path.join(DATA_DIR, 'events.json');
 const ICS_FILE = path.join(DATA_DIR, 'akce.ics');
+// seznam nově přidaných akcí pro upozornění (workflow ho pošle jako komentář do issue → e-mail)
+const ADDED_FILE = path.join(ROOT, 'added-events.md');
+const SITE_URL = 'https://kalendar.prolidiostopovice.cz/';
+// vlastní ikony akcí (#icon:ball-football) z knihovny Tabler Icons (https://tabler.io/icons, MIT);
+// stažené se ukládají do public/icons/tabler a commitují s daty
+const ICON_DIR = path.join(ROOT, 'public', 'icons', 'tabler');
+const ICON_URL = (name) => `https://cdn.jsdelivr.net/npm/@tabler/icons@3.49.0/icons/outline/${name}.svg`;
 
 const CALENDAR_NAME = 'Akce v Ostopovicích';
 const PAST_DAYS = 400; // jak dlouho držet proběhlé akce
@@ -62,8 +70,42 @@ function extractLink(description) {
   return { url, description: text };
 }
 
+/** „#icon:ball-football“ v popisu = vlastní ikona akce (název z Tabler Icons). */
+function extractIcon(description) {
+  let icon = '';
+  const text = String(description || '').replace(/(^|\s)#icon[^\S\n]*:[^\S\n]*([a-z0-9-]+)/gi, (match, space, name) => {
+    if (!icon) icon = name.toLowerCase();
+    return space;
+  });
+  return { icon, description: text };
+}
+
+/** Stáhne chybějící ikony akcí; neexistující ikonu (překlep v názvu) z akce odebere. */
+async function ensureIcons(events) {
+  await mkdir(ICON_DIR, { recursive: true });
+  const missing = new Set();
+  for (const name of new Set(events.map((e) => e.icon).filter(Boolean))) {
+    const file = path.join(ICON_DIR, `${name}.svg`);
+    try {
+      await access(file);
+    } catch {
+      try {
+        const svg = await fetchText(ICON_URL(name));
+        if (!svg.includes('<svg')) throw new Error('není SVG');
+        await writeFile(file, svg);
+        log(`  ikona ${name}: stažena`);
+      } catch (err) {
+        missing.add(name);
+        log(`✗ ikona ${name}: ${err.message}`);
+      }
+    }
+  }
+  for (const e of events) if (missing.has(e.icon)) delete e.icon;
+}
+
 function finalizeEvent(raw, source, rules, tagMap) {
-  const linked = extractLink(raw.description);
+  const iconed = extractIcon(raw.description);
+  const linked = extractLink(iconed.description);
   const tagged = extractTags(linked.description, tagMap);
   const event = {
     id: `${source.id}-${shortHash(raw.uid)}`,
@@ -77,6 +119,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
     description: truncate(tagged.description),
     image: raw.image || '',
   };
+  if (iconed.icon) event.icon = iconed.icon;
   if (raw.extra) event.extra = raw.extra;
   if (raw.recurring) event.recurring = true;
   if (raw.shortTitle) event.shortTitle = raw.shortTitle;
@@ -160,6 +203,57 @@ function dedupe(events, sourceOrder) {
     result.push(e);
   }
   return result;
+}
+
+/**
+ * Kdy se akce u nás poprvé objevila (pole `added`). Nový termín už známé opakované akce
+ * (rozbalení řady o další měsíc) není nová akce — dostane čas, kdy přibyla celá řada.
+ * Vrací akce, které jsou opravdu nové.
+ */
+function markAdded(events, previousEvents, now) {
+  const prevById = new Map(previousEvents.map((e) => [e.id, e]));
+  const seriesKey = (e) => `${e.source}|${e.originalTitle || e.title}`;
+  const seriesAdded = new Map();
+  for (const e of previousEvents) {
+    if (!(e.originalRecurring ?? e.recurring) || !e.added) continue;
+    const key = seriesKey(e);
+    if (!seriesAdded.has(key) || e.added < seriesAdded.get(key)) seriesAdded.set(key, e.added);
+  }
+  const added = [];
+  for (const e of events) {
+    const prev = prevById.get(e.id);
+    if (prev) {
+      if (prev.added) e.added = prev.added;
+    } else if ((e.originalRecurring ?? e.recurring) && seriesAdded.has(seriesKey(e))) {
+      e.added = seriesAdded.get(seriesKey(e));
+    } else {
+      e.added = now.toISOString();
+      added.push(e);
+    }
+  }
+  return added;
+}
+
+const dayFormat = new Intl.DateTimeFormat('cs-CZ', { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'numeric', year: 'numeric' });
+const timeFormat = new Intl.DateTimeFormat('cs-CZ', { timeZone: 'Europe/Prague', hour: 'numeric', minute: '2-digit' });
+
+/** Text upozornění na nové akce (Markdown pro komentář v GitHub issue). */
+function addedReport(events, sourcesById) {
+  const when = (e) => {
+    if (e.allDay) {
+      const [y, m, d] = e.start.split('-').map(Number);
+      return dayFormat.format(new Date(Date.UTC(y, m - 1, d, 12)));
+    }
+    const start = new Date(e.start);
+    const day = pragueDay(start).split('-').map(Number);
+    return `${dayFormat.format(new Date(Date.UTC(day[0], day[1] - 1, day[2], 12)))} ${timeFormat.format(start)}`;
+  };
+  const lines = events.map((e) => {
+    const title = e.url ? `[${e.title}](${e.url})` : e.title;
+    const source = sourcesById[e.source]?.fullName || sourcesById[e.source]?.name || e.source;
+    return `- **${when(e)}** – ${title} (${source}${e.recurring ? ', pravidelná' : ''})`;
+  });
+  return `Nově přidané akce (${events.length}):\n\n${lines.join('\n')}\n\n${SITE_URL}\n`;
 }
 
 const sortKey = (e) => {
@@ -259,11 +353,15 @@ async function main() {
 
   const sourceOrder = Object.fromEntries(sources.map((s, i) => [s.id, i]));
   const events = dedupe(allEvents, sourceOrder).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+  const newlyAdded = markAdded(events, previous.events, now);
+  await ensureIcons(events);
 
   const publicSources = sources
     .filter((s) => s.enabled !== false)
-    .map(({ id, name, shortName, village, icon, color, link, display, adminRefresh }) => ({
-      id, name, shortName: shortName || name, village, icon, color, link: link || null, display: display || 'events', adminRefresh: Boolean(adminRefresh),
+    .map(({ id, name, fullName, shortName, village, icon, color, link, type, display, adminRefresh, extraFeeds }) => ({
+      id, name, fullName: fullName || name, shortName: shortName || name, village, icon, color, link: link || null, type, display: display || 'events', adminRefresh: Boolean(adminRefresh),
+      // doplňkové zdroje (jen pro patičku webu)
+      feeds: (extraFeeds || []).map((f) => ({ id: f.id, fullName: f.fullName || f.name, icon: f.icon || null, link: f.link || f.url || null })),
       ...sourceStatus.find((st) => st.id === id),
     }));
 
@@ -289,6 +387,14 @@ async function main() {
     const list = icsEvents.filter((e) => e.categories.includes(category.id));
     await writeFile(path.join(DATA_DIR, `akce-${category.id}.ics`),
       buildIcs(list, { name: `${CALENDAR_NAME} – ${category.label}`, sourcesById, categoryLabels }));
+  }
+
+  // upozornění jen na viditelné nadcházející akce; při prvním běhu (bez předchozích dat) nic
+  const notify = newlyAdded.filter((e) => !e.hidden && sourcesById[e.source]?.display !== 'dayLabel' && eventLastDay(e) >= today);
+  await rm(ADDED_FILE, { force: true });
+  if (notify.length && previous.events.length) {
+    await writeFile(ADDED_FILE, addedReport(notify, sourcesById));
+    log(`Nové akce: ${notify.length} (${path.basename(ADDED_FILE)})`);
   }
 
   log(`Hotovo: ${events.length} akcí, ${failures} zdrojů selhalo.`);

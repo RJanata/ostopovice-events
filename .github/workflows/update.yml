@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -57,7 +58,7 @@ jobs:
           old=$(git show HEAD:public/data/events.json 2>/dev/null | jq -S '.events' || echo null)
           new=$(jq -S '.events' public/data/events.json)
           if [ "$old" != "$new" ]; then
-            git add public/data
+            git add public/data public/icons  # icons/tabler = stažené vlastní ikony akcí
             git commit -m "Aktualizace akcí $(date -u +%Y-%m-%dT%H:%MZ)"
           elif [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 45 * 86400 )) ]; then
             # GitHub vypíná plánované workflow po 60 dnech bez aktivity v repu
@@ -68,6 +69,23 @@ jobs:
           fi
           git pull --rebase --autostash
           git push
+
+      # Upozornění na nově přidané akce: komentář do issue → GitHub pošle e-mail
+      # (zmínka @vlastníka repa zaručí notifikaci, i když repo nesleduje).
+      - name: Upozornění na nové akce
+        if: hashFiles('added-events.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Nově přidané akce (upozornění)
+        run: |
+          number=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title \
+            --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+          if [ -z "$number" ]; then
+            number=$(gh issue create --title "$TITLE" \
+              --body "Sem robot přidává komentář pokaždé, když se ve zdrojích objeví nová akce. Issue nezavírej." | grep -o '[0-9]*$')
+          fi
+          { echo "@${{ github.repository_owner }}"; echo; cat added-events.md; } > comment.md
+          gh issue comment "$number" --body-file comment.md
 
       # verze u CSS/JS: po nasazení si prohlížeče stáhnou nové soubory místo starých z mezipaměti
       - name: Verze souborů
