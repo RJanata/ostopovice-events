@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:28:25.630Z",
+ "generatedAt": "2026-10-08T02:31:28.744Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -102,10 +102,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:24:14.659Z",
+   "lastSuccess": "2026-10-08T02:31:28.744Z",
    "ok": true,
    "error": null,
-   "count": 7
+   "count": 6
   }
  ],
  "categories": [
@@ -4734,7 +4734,7 @@
   {
    "id": "pripravovane-1ixvp6o",
    "source": "pripravovane",
-   "title": "Oslavy 17. listopadu",
+   "title": "Lampionový průvod a oslavy 17. listopadu",
    "start": "2026-11-17",
    "end": "2026-11-17",
    "allDay": true,
@@ -4742,6 +4742,10 @@
    "url": "",
    "description": "",
    "image": "",
+   "tagCategories": [
+    "deti",
+    "kultura"
+   ],
    "categories": [
     "kultura",
     "obec"
