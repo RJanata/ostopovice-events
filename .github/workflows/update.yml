@@ -69,6 +69,10 @@ jobs:
           git pull --rebase --autostash
           git push
 
+      # verze u CSS/JS: po nasazení si prohlížeče stáhnou nové soubory místo starých z mezipaměti
+      - name: Verze souborů
+        run: sed -i "s/?v=dev/?v=${GITHUB_SHA::7}/g" public/*.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
