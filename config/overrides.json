@@ -1,6 +1,13 @@
 {
   "$comment": "Ruční úpravy akcí (spravuje je i admin.html). series: klíč \"zdroj|Původní název\" = platí pro všechny termíny akce s tímto názvem, i budoucí. events: klíč = id jednoho termínu (má přednost). Hodnoty: title, categories, location, hidden (true = nezobrazovat).",
-  "series": {},
+  "series": {
+    "knihovna|Dýňobraní": {
+      "categories": [
+        "deti",
+        "kultura"
+      ]
+    }
+  },
   "events": {
     "obec-fjsj2r": {
       "title": "Komunální volby 2026",
