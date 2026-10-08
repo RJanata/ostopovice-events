@@ -1,5 +1,5 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné).",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné). extraFeeds = doplňkové zdroje, jejichž akce se přidají k tomuto zdroji (např. bohoslužby v kapli pod Nezařazené).",
   "sources": [
     {
       "id": "obec",
@@ -126,7 +126,24 @@
       "fallbackCategories": [],
       "allowEmpty": true,
       "adminRefresh": true,
-      "$comment": "Vlastní Google kalendář pro akce v obci, které nepatří pod žádný jiný zdroj."
+      "$comment": "Vlastní Google kalendář pro akce v obci, které nepatří pod žádný jiný zdroj.",
+      "extraFeeds": [
+        {
+          "id": "farnost-troubsko",
+          "name": "Farnost Troubsko",
+          "type": "parish-schedule",
+          "url": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb",
+          "options": {
+            "placeMatch": "kaple Ostopovice",
+            "title": "Mše svatá",
+            "location": "Kaple Ostopovice",
+            "categories": [
+              "cirkev"
+            ]
+          },
+          "$comment": "Pořad bohoslužeb farnosti — jen bohoslužby v kapli Ostopovice; vlastní zdroj by se nevyplatil (max. 1 týdně)."
+        }
+      ]
     },
     {
       "id": "pripravovane",

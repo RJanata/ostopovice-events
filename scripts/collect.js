@@ -19,6 +19,7 @@ import * as ipoRssAdapter from './adapters/ipo-rss.js';
 import * as wixEventsAdapter from './adapters/wix-events.js';
 import * as nhjmopAdapter from './adapters/nhjmop.js';
 import * as textProgramAdapter from './adapters/text-program.js';
+import * as parishScheduleAdapter from './adapters/parish-schedule.js';
 
 const ADAPTERS = {
   ical: icalAdapter,
@@ -26,6 +27,7 @@ const ADAPTERS = {
   'wix-events': wixEventsAdapter,
   nhjmop: nhjmopAdapter,
   'text-program': textProgramAdapter,
+  'parish-schedule': parishScheduleAdapter,
 };
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -78,7 +80,9 @@ function finalizeEvent(raw, source, rules, tagMap) {
   if (raw.extra) event.extra = raw.extra;
   if (raw.recurring) event.recurring = true;
   if (raw.shortTitle) event.shortTitle = raw.shortTitle;
-  if (tagged.categories.length) event.tagCategories = tagged.categories;
+  // pevné kategorie z adaptéru (např. bohoslužby → Církev) mají stejnou váhu jako #štítky
+  const fixed = [...(raw.categories || []), ...tagged.categories];
+  if (fixed.length) event.tagCategories = [...new Set(fixed)];
   if (raw.cancelled || /^\W*zruseno\b/.test(normalize(raw.title))) event.cancelled = true;
   return applySourceRules(event, source, rules);
 }
@@ -208,6 +212,25 @@ async function main() {
         status.ok = false;
         status.error = err.message;
         log(`✗ ${source.id}: ${err.message}`);
+      }
+
+      // doplňkové zdroje, jejichž akce patří pod tento zdroj (např. bohoslužby v kapli pod „Nezařazené“)
+      if (fresh) {
+        for (const feed of source.extraFeeds || []) {
+          try {
+            const adapter = ADAPTERS[feed.type];
+            if (!adapter) throw new Error(`Neznámý typ zdroje: ${feed.type}`);
+            const raw = await adapter.fetchEvents(feed, { ...window, log });
+            fresh.push(...raw.map((r) => ({ ...finalizeEvent(r, source, rules, tagMap), feed: feed.id })));
+            log(`  + ${feed.id}: ${raw.length}`);
+          } catch (err) {
+            // selhání doplňku nesmí smazat jeho akce: necháme poslední stažené (proběhlé řeší archiv níž)
+            fresh.push(...prevEvents.filter((e) => e.feed === feed.id && eventLastDay(e) >= today));
+            status.ok = false;
+            status.error = `${feed.name || feed.id}: ${err.message}`;
+            log(`✗ ${source.id} / ${feed.id}: ${err.message}`);
+          }
+        }
       }
     } else {
       status.ok = prevStatus.ok ?? true;
