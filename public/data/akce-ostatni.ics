@@ -9,15 +9,15 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:pripravovane-qi21ye@ostopovice-events
-DTSTAMP:20261008T002925Z
+DTSTAMP:20261008T005807Z
 DTSTART:20261007T163000Z
 DTEND:20261007T163000Z
 SUMMARY:Společně pro Ostopovice: Společně na pivo (nebo limo)
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat 
  nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! T
- ěšíme se na viděnou!\n#link: https://www.facebook.com/events/14542313
- 53296252\n\nZdroj: Připravované události
+ ěšíme se na viděnou!\n\nZdroj: Připravované události
+URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
 END:VEVENT
 END:VCALENDAR

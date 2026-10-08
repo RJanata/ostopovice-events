@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T00:29:18.499Z",
+ "generatedAt": "2026-10-08T00:57:59.547Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:29:18.499Z",
+   "lastSuccess": "2026-10-08T00:57:59.547Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:29:18.499Z",
+   "lastSuccess": "2026-10-08T00:57:59.547Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:29:18.499Z",
+   "lastSuccess": "2026-10-08T00:57:59.547Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:29:18.499Z",
+   "lastSuccess": "2026-10-08T00:57:59.547Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T00:29:18.499Z",
+   "lastSuccess": "2026-10-08T00:57:59.547Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3341,8 +3341,8 @@
    "end": "2026-10-07T16:30:00.000Z",
    "allDay": false,
    "location": "Restaurace U Volejníků",
-   "url": "",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!\n#link: https://www.facebook.com/events/1454231353296252",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
    "image": "",
    "categories": [
     "ostatni"
@@ -3986,13 +3986,15 @@
    "allDay": true,
    "location": "",
    "url": "",
-   "description": "#pro deti",
+   "description": "",
    "image": "",
    "tagCategories": [
-    "kultura"
+    "kultura",
+    "deti"
    ],
    "categories": [
-    "kultura"
+    "kultura",
+    "deti"
    ]
   },
   {
@@ -4279,7 +4281,7 @@
    "start": "2027-01-16",
    "end": "2027-01-16",
    "allDay": true,
-   "location": "",
+   "location": "Sokolovna",
    "url": "",
    "description": "",
    "image": "",
