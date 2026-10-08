@@ -30,8 +30,8 @@ export async function fetchEvents(source) {
         title: `Národní házená: ${competition} · ${teams}`,
         location: source.options?.location || '',
         url: pageUrl,
-        description: [score && `Výsledek: ${score}`, number && `Číslo utkání: ${number}`]
-          .filter(Boolean).join('\n'),
+        // číslo utkání je jen interní údaj soutěže; ukazujeme jen výsledek odehraných zápasů
+        description: score ? `Výsledek: ${score}` : '',
         extra: { competition, teams, score },
       };
 
