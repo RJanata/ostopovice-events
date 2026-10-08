@@ -100,6 +100,13 @@ i stránky ostatních projektů na stejné doméně — používej jen na svém 
 - „Zobrazit proběhlé akce (N)“ je jen v aktuálním měsíci a ukáže proběhlé akce od 1. dne měsíce.
 - Seznam pod kalendářem ukazuje jen akce vybraného měsíce (aktuální měsíc od dneška); „Zobrazit další akce – <měsíc> (N)“ přidá vždy jeden další měsíc; když za seznamem zbývá méně než 30 akcí (bez pravidelných), je místo něj „Zobrazit všechny další akce (N)“ a ukáže je naráz. Při hledání se ukážou všechny nalezené akce.
 
+## Návštěvnost
+
+Stránka při otevření pošle jeden požadavek na `https://stats.craz.cz/hit/ostopovice-events`
+(cesta stránky a odkud návštěvník přišel; bez cookies, jen na ostrém webu — `countVisit()`
+v `js/app.js`). Zapisuje ho projekt **hit-counter** na NASu, report GoAccess je v **nas-stats**
+(`http://nas:3102`, jen z domácí sítě).
+
 ## Lokálně
 
 ```bash

@@ -1004,7 +1004,20 @@ function setupEvents() {
   window.addEventListener('hashchange', () => { readHash(); update({ keepHash: true }); });
 }
 
+/**
+ * Počítadlo návštěv (projekt hit-counter na NASu, report v nas-stats): jeden požadavek
+ * při otevření s cestou stránky a tím, odkud návštěvník přišel. Bez cookies; jen na ostrém webu.
+ */
+function countVisit() {
+  if (location.hostname !== 'kalendar.prolidiostopovice.cz') return;
+  const url = new URL('https://stats.craz.cz/hit/ostopovice-events');
+  url.searchParams.set('p', location.pathname + location.hash);
+  if (document.referrer) url.searchParams.set('r', document.referrer);
+  fetch(url, { mode: 'no-cors', keepalive: true, credentials: 'omit', referrerPolicy: 'no-referrer' }).catch(() => {});
+}
+
 async function init() {
+  countVisit();
   today = dayKey(new Date());
   readHash();
   setupEvents();
