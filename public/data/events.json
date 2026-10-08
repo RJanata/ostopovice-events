@@ -1,17 +1,18 @@
 {
- "generatedAt": "2026-10-08T00:57:59.547Z",
+ "generatedAt": "2026-10-08T01:35:53.851Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
    "id": "obec",
    "name": "Obec Ostopovice",
+   "shortName": "Obec",
    "village": "Ostopovice",
    "icon": "obec.png",
    "color": "#c8102e",
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:57:59.547Z",
+   "lastSuccess": "2026-10-08T01:35:53.851Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -19,27 +20,44 @@
   {
    "id": "knihovna",
    "name": "Knihovna Ostopovice",
+   "shortName": "Knihovna",
    "village": "Ostopovice",
    "icon": "knihovna.png",
    "color": "#e8490f",
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:57:59.547Z",
+   "lastSuccess": "2026-10-08T01:35:53.851Z",
    "ok": true,
    "error": null,
    "count": 231
   },
   {
+   "id": "seniori",
+   "name": "Klub seniorů Ostopovice",
+   "shortName": "Senioři",
+   "village": "Ostopovice",
+   "icon": "seniori.svg",
+   "color": "#6b4ea0",
+   "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "display": "events",
+   "adminRefresh": false,
+   "lastSuccess": null,
+   "ok": false,
+   "error": "fetch failed",
+   "count": 0
+  },
+  {
    "id": "sokol",
    "name": "TJ Sokol Ostopovice",
+   "shortName": "Sokol",
    "village": "Ostopovice",
    "icon": "sokol.png",
    "color": "#2f6b47",
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:57:59.547Z",
+   "lastSuccess": "2026-10-08T01:35:53.851Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -47,13 +65,14 @@
   {
    "id": "svatky",
    "name": "Státní svátky",
+   "shortName": "Svátky",
    "village": null,
    "icon": "svatky.svg",
    "color": "#8a3a66",
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:57:59.547Z",
+   "lastSuccess": "2026-10-08T01:35:53.851Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -61,13 +80,14 @@
   {
    "id": "pripravovane",
    "name": "Připravované události",
+   "shortName": "Připravované",
    "village": "Ostopovice",
    "icon": "pripravovane.svg",
    "color": "#b06b12",
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T00:57:59.547Z",
+   "lastSuccess": "2026-10-08T01:35:53.851Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -77,36 +97,42 @@
   {
    "id": "sport",
    "label": "Sport",
+   "shortLabel": "Sport",
    "color": "#2f6b47",
    "icon": "sport.svg"
   },
   {
    "id": "deti",
    "label": "Pro děti",
+   "shortLabel": "Děti",
    "color": "#b06b12",
    "icon": "deti.svg"
   },
   {
    "id": "kultura",
    "label": "Kultura",
+   "shortLabel": "Kultura",
    "color": "#8a3a66",
    "icon": "kultura.svg"
   },
   {
    "id": "vzdelavani",
    "label": "Vzdělávání",
+   "shortLabel": "Vzdělávání",
    "color": "#0f6e8c",
    "icon": "vzdelavani.svg"
   },
   {
    "id": "obec",
    "label": "Obec",
+   "shortLabel": "Obec",
    "color": "#1f5c99",
    "icon": "obec.svg"
   },
   {
    "id": "ostatni",
    "label": "Ostatní",
+   "shortLabel": "Ostatní",
    "color": "#6b6b6b",
    "icon": "ostatni.svg"
   }
@@ -2692,6 +2718,7 @@
    "image": "https://static.wixstatic.com/media/6e4a73_3e00883ed6e846dda41be87b27f7f102~mv2.jpg",
    "categories": [
     "deti",
+    "kultura",
     "vzdelavani"
    ]
   },
