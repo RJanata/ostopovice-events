@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T08:14:11.450Z",
+ "generatedAt": "2026-10-08T08:24:06.139Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -12,7 +12,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,7 +87,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T08:14:11.450Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:24:06.139Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3814,7 +3814,7 @@
   {
    "id": "nezarazene-ubr66k",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-10-07T16:00:00.000Z",
    "end": "2026-10-07T17:00:00.000Z",
    "allDay": false,
@@ -3823,6 +3823,21 @@
    "description": "#cirkev",
    "image": "",
    "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
    "categories": [
     "ostatni"
    ]
@@ -3844,21 +3859,6 @@
    ],
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
    ]
   },
   {
@@ -3887,7 +3887,7 @@
    "location": "Knihovna Ostopovice",
    "url": "https://www.ostopovice.cz/kalendar-akci/oznameni-o-dobe-a-miste-konani-voleb-do-zastupitelstev-obci",
    "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13903426",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13941690",
    "categories": [
     "obec"
    ],
@@ -4045,7 +4045,7 @@
   {
    "id": "nezarazene-a7wk58",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-10-14T16:00:00.000Z",
    "end": "2026-10-14T17:00:00.000Z",
    "allDay": false,
@@ -4281,7 +4281,7 @@
   {
    "id": "nezarazene-1jf6wtg",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-10-21T16:00:00.000Z",
    "end": "2026-10-21T17:00:00.000Z",
    "allDay": false,
@@ -4451,7 +4451,7 @@
   {
    "id": "nezarazene-lne1qq",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-10-28T17:00:00.000Z",
    "end": "2026-10-28T18:00:00.000Z",
    "allDay": false,
@@ -4572,7 +4572,7 @@
   {
    "id": "nezarazene-1j4sg4t",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-11-04T17:00:00.000Z",
    "end": "2026-11-04T18:00:00.000Z",
    "allDay": false,
@@ -4709,7 +4709,7 @@
   {
    "id": "nezarazene-tdf4vb",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-11-11T17:00:00.000Z",
    "end": "2026-11-11T18:00:00.000Z",
    "allDay": false,
@@ -4847,7 +4847,7 @@
   {
    "id": "nezarazene-1ukocgo",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-11-18T17:00:00.000Z",
    "end": "2026-11-18T18:00:00.000Z",
    "allDay": false,
@@ -4968,7 +4968,7 @@
   {
    "id": "nezarazene-1lcdi2k",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-11-25T17:00:00.000Z",
    "end": "2026-11-25T18:00:00.000Z",
    "allDay": false,
@@ -5142,7 +5142,7 @@
   {
    "id": "nezarazene-t6lsf0",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-12-02T17:00:00.000Z",
    "end": "2026-12-02T18:00:00.000Z",
    "allDay": false,
@@ -5310,7 +5310,7 @@
   {
    "id": "nezarazene-1fepbq5",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-12-09T17:00:00.000Z",
    "end": "2026-12-09T18:00:00.000Z",
    "allDay": false,
@@ -5446,7 +5446,7 @@
   {
    "id": "nezarazene-y8rz9p",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-12-16T17:00:00.000Z",
    "end": "2026-12-16T18:00:00.000Z",
    "allDay": false,
@@ -5551,7 +5551,7 @@
   {
    "id": "nezarazene-18rc5up",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-12-23T17:00:00.000Z",
    "end": "2026-12-23T18:00:00.000Z",
    "allDay": false,
@@ -5679,7 +5679,7 @@
   {
    "id": "nezarazene-13no6kx",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2026-12-30T17:00:00.000Z",
    "end": "2026-12-30T18:00:00.000Z",
    "allDay": false,
@@ -5778,7 +5778,7 @@
   {
    "id": "nezarazene-8m958v",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-01-06T17:00:00.000Z",
    "end": "2027-01-06T18:00:00.000Z",
    "allDay": false,
@@ -5868,7 +5868,7 @@
   {
    "id": "nezarazene-5pnutx",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-01-13T17:00:00.000Z",
    "end": "2027-01-13T18:00:00.000Z",
    "allDay": false,
@@ -5956,7 +5956,7 @@
   {
    "id": "nezarazene-1d1kstn",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-01-20T17:00:00.000Z",
    "end": "2027-01-20T18:00:00.000Z",
    "allDay": false,
@@ -6029,7 +6029,7 @@
   {
    "id": "nezarazene-65gp4y",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-01-27T17:00:00.000Z",
    "end": "2027-01-27T18:00:00.000Z",
    "allDay": false,
@@ -6102,7 +6102,7 @@
   {
    "id": "nezarazene-13uy9lr",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-02-03T17:00:00.000Z",
    "end": "2027-02-03T18:00:00.000Z",
    "allDay": false,
@@ -6175,7 +6175,7 @@
   {
    "id": "nezarazene-10u0s0j",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-02-10T17:00:00.000Z",
    "end": "2027-02-10T18:00:00.000Z",
    "allDay": false,
@@ -6248,7 +6248,7 @@
   {
    "id": "nezarazene-11ac8a",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-02-17T17:00:00.000Z",
    "end": "2027-02-17T18:00:00.000Z",
    "allDay": false,
@@ -6321,7 +6321,7 @@
   {
    "id": "nezarazene-zq6uvk",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-02-24T17:00:00.000Z",
    "end": "2027-02-24T18:00:00.000Z",
    "allDay": false,
@@ -6394,7 +6394,7 @@
   {
    "id": "nezarazene-17vby42",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-03-03T17:00:00.000Z",
    "end": "2027-03-03T18:00:00.000Z",
    "allDay": false,
@@ -6467,7 +6467,7 @@
   {
    "id": "nezarazene-1kto3j2",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-03-10T17:00:00.000Z",
    "end": "2027-03-10T18:00:00.000Z",
    "allDay": false,
@@ -6540,7 +6540,7 @@
   {
    "id": "nezarazene-16sje7j",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-03-17T17:00:00.000Z",
    "end": "2027-03-17T18:00:00.000Z",
    "allDay": false,
@@ -6613,7 +6613,7 @@
   {
    "id": "nezarazene-11q84z9",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-03-24T17:00:00.000Z",
    "end": "2027-03-24T18:00:00.000Z",
    "allDay": false,
@@ -6712,7 +6712,7 @@
   {
    "id": "nezarazene-1bacf0i",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-03-31T16:00:00.000Z",
    "end": "2027-03-31T17:00:00.000Z",
    "allDay": false,
@@ -6785,7 +6785,7 @@
   {
    "id": "nezarazene-1dtk7is",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-04-07T16:00:00.000Z",
    "end": "2027-04-07T17:00:00.000Z",
    "allDay": false,
@@ -7005,7 +7005,7 @@
   {
    "id": "nezarazene-18189l0",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-04-14T16:00:00.000Z",
    "end": "2027-04-14T17:00:00.000Z",
    "allDay": false,
@@ -7078,7 +7078,7 @@
   {
    "id": "nezarazene-1sr6qb0",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-04-21T16:00:00.000Z",
    "end": "2027-04-21T17:00:00.000Z",
    "allDay": false,
@@ -7172,7 +7172,7 @@
   {
    "id": "nezarazene-1772is7",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-04-28T16:00:00.000Z",
    "end": "2027-04-28T17:00:00.000Z",
    "allDay": false,
@@ -7258,7 +7258,7 @@
   {
    "id": "nezarazene-x30k8r",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-05-05T16:00:00.000Z",
    "end": "2027-05-05T17:00:00.000Z",
    "allDay": false,
@@ -7344,7 +7344,7 @@
   {
    "id": "nezarazene-o2yr3r",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-05-12T16:00:00.000Z",
    "end": "2027-05-12T17:00:00.000Z",
    "allDay": false,
@@ -7453,7 +7453,7 @@
   {
    "id": "nezarazene-11bx7qy",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-05-19T16:00:00.000Z",
    "end": "2027-05-19T17:00:00.000Z",
    "allDay": false,
@@ -7526,7 +7526,7 @@
   {
    "id": "nezarazene-1b8msgw",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-05-26T16:00:00.000Z",
    "end": "2027-05-26T17:00:00.000Z",
    "allDay": false,
@@ -7641,7 +7641,7 @@
   {
    "id": "nezarazene-kzi7pt",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-06-02T16:00:00.000Z",
    "end": "2027-06-02T17:00:00.000Z",
    "allDay": false,
@@ -7714,7 +7714,7 @@
   {
    "id": "nezarazene-z2q10o",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-06-09T16:00:00.000Z",
    "end": "2027-06-09T17:00:00.000Z",
    "allDay": false,
@@ -7787,7 +7787,7 @@
   {
    "id": "nezarazene-iktgeg",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-06-16T16:00:00.000Z",
    "end": "2027-06-16T17:00:00.000Z",
    "allDay": false,
@@ -7860,7 +7860,7 @@
   {
    "id": "nezarazene-1usarb0",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-06-23T16:00:00.000Z",
    "end": "2027-06-23T17:00:00.000Z",
    "allDay": false,
@@ -7933,7 +7933,7 @@
   {
    "id": "nezarazene-1bwpkh8",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-06-30T16:00:00.000Z",
    "end": "2027-06-30T17:00:00.000Z",
    "allDay": false,
@@ -8032,7 +8032,7 @@
   {
    "id": "nezarazene-1yoxfav",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-07-07T16:00:00.000Z",
    "end": "2027-07-07T17:00:00.000Z",
    "allDay": false,
@@ -8105,7 +8105,7 @@
   {
    "id": "nezarazene-8l2r4r",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-07-14T16:00:00.000Z",
    "end": "2027-07-14T17:00:00.000Z",
    "allDay": false,
@@ -8178,7 +8178,7 @@
   {
    "id": "nezarazene-w12j1v",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-07-21T16:00:00.000Z",
    "end": "2027-07-21T17:00:00.000Z",
    "allDay": false,
@@ -8251,7 +8251,7 @@
   {
    "id": "nezarazene-hp10w8",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-07-28T16:00:00.000Z",
    "end": "2027-07-28T17:00:00.000Z",
    "allDay": false,
@@ -8324,7 +8324,7 @@
   {
    "id": "nezarazene-1dozcw9",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-08-04T16:00:00.000Z",
    "end": "2027-08-04T17:00:00.000Z",
    "allDay": false,
@@ -8397,7 +8397,7 @@
   {
    "id": "nezarazene-j21e3r",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-08-11T16:00:00.000Z",
    "end": "2027-08-11T17:00:00.000Z",
    "allDay": false,
@@ -8470,7 +8470,7 @@
   {
    "id": "nezarazene-1z96f0",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-08-18T16:00:00.000Z",
    "end": "2027-08-18T17:00:00.000Z",
    "allDay": false,
@@ -8543,7 +8543,7 @@
   {
    "id": "nezarazene-1m6slis",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-08-25T16:00:00.000Z",
    "end": "2027-08-25T17:00:00.000Z",
    "allDay": false,
@@ -8616,7 +8616,7 @@
   {
    "id": "nezarazene-14t0rc3",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-09-01T16:00:00.000Z",
    "end": "2027-09-01T17:00:00.000Z",
    "allDay": false,
@@ -8689,7 +8689,7 @@
   {
    "id": "nezarazene-fpdbso",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-09-08T16:00:00.000Z",
    "end": "2027-09-08T17:00:00.000Z",
    "allDay": false,
@@ -8762,7 +8762,7 @@
   {
    "id": "nezarazene-7mvp62",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-09-15T16:00:00.000Z",
    "end": "2027-09-15T17:00:00.000Z",
    "allDay": false,
@@ -8835,7 +8835,7 @@
   {
    "id": "nezarazene-16cm6h4",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-09-22T16:00:00.000Z",
    "end": "2027-09-22T17:00:00.000Z",
    "allDay": false,
@@ -8921,7 +8921,7 @@
   {
    "id": "nezarazene-1x5ltd",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-09-29T16:00:00.000Z",
    "end": "2027-09-29T17:00:00.000Z",
    "allDay": false,
@@ -8994,7 +8994,7 @@
   {
    "id": "nezarazene-e77u9c",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-10-06T16:00:00.000Z",
    "end": "2027-10-06T17:00:00.000Z",
    "allDay": false,
@@ -9067,7 +9067,7 @@
   {
    "id": "nezarazene-93xunq",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-10-13T16:00:00.000Z",
    "end": "2027-10-13T17:00:00.000Z",
    "allDay": false,
@@ -9140,7 +9140,7 @@
   {
    "id": "nezarazene-wc3a8k",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-10-20T16:00:00.000Z",
    "end": "2027-10-20T17:00:00.000Z",
    "allDay": false,
@@ -9213,7 +9213,7 @@
   {
    "id": "nezarazene-16tx4cp",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-10-27T16:00:00.000Z",
    "end": "2027-10-27T17:00:00.000Z",
    "allDay": false,
@@ -9299,7 +9299,7 @@
   {
    "id": "nezarazene-1qzhggf",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-11-03T17:00:00.000Z",
    "end": "2027-11-03T18:00:00.000Z",
    "allDay": false,
@@ -9372,7 +9372,7 @@
   {
    "id": "nezarazene-1hdbipv",
    "source": "nezarazene",
-   "title": "Mše svatá",
+   "title": "Bohuslužba: Mše svatá",
    "start": "2027-11-10T17:00:00.000Z",
    "end": "2027-11-10T18:00:00.000Z",
    "allDay": false,
