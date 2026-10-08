@@ -52,9 +52,11 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 
 Stránka `admin.html` (na webu není odkaz, adresa `…/ostopovice-events/admin.html`) umí u akce
 změnit název, místo/adresu, datum a čas (jen u jednoho termínu), přidat poznámku
-(na webu se zobrazí vždy pod názvem), nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
-nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API;
-commit spustí workflow a web se do pár minut přegeneruje.
+(na webu se zobrazí vždy u akce pod zdrojem, typem a adresou), nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
+nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API
+s `[skip ci]`, takže jednotlivé úpravy web nepřegenerují. Úpravy se posbírají a na web je
+pošle tlačítko „Přegenerovat web“, které zčervená, jakmile v repu jsou úpravy novější než
+data na webu (případně je promítne nejbližší automatická aktualizace).
 
 Tlačítkem „Znovu načíst“ spustí workflow ručně — buď pro všechny zdroje, nebo jen pro
 zdroje s `adminRefresh: true` (workflow má vstup `only`, který předá `--only=<id>`).

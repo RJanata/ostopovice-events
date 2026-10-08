@@ -257,12 +257,12 @@ function eventCard(e, day) {
       <div class="event__time">${timeLabel(e, day)}</div>
       <div class="event__body">
         <h3 class="event__title">${title}</h3>
-        ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         <div class="event__meta">
           <span class="event__source">${sourceIcon(source, true)}${escapeHtml(source.name)}${alsoIn.length ? ` (i ${escapeHtml(alsoIn.join(', '))})` : ''}</span>
           ${e.location ? `<span>${escapeHtml(e.location)}</span>` : ''}
           <span class="event__tags">${tags}</span>
         </div>
+        ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         ${description}
       </div>
     </article>`;
