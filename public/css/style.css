@@ -47,7 +47,7 @@ a { color: var(--accent); }
 
 svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 
-.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
 
 /* ---------- Hlavička ---------- */
 
@@ -109,6 +109,21 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .filters__summary { margin: 10px 0 0; font-size: 0.85rem; color: var(--muted); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips__selected { display: none; font-size: 0.78rem; color: var(--muted); }
+.chip__label-short { display: none; }
+
+/* zhuštění podle místa (fitFilters v app.js) */
+.filters--top .filters__row { flex-direction: column; gap: 6px; }
+.filters--top .filters__label { flex: none; }
+.filters--short .chip__label { display: none; }
+.filters--short .chip__label-short { display: inline; }
+.filters--icons .chip:not(.chip--all):not(.chip--plain) { padding: 5px 7px; }
+.filters--icons .chip:not(.chip--all):not(.chip--plain) :is(.chip__label, .chip__label-short) { display: none; }
+.filters--icons .chip .cat-icon { width: 18px; height: 18px; }
+.filters--icons .chips__selected { display: block; margin-top: -2px; }
+.filters--icons .chips__selected:empty { display: none; }
+.filters--icons:not(.filters--top) .chips__selected { flex-basis: 100%; padding-left: 84px; margin-top: -6px; }
+.filters--icons:not(.filters--top) .filters__row { flex-wrap: wrap; }
 
 .chip {
   --chip-color: var(--accent);
@@ -268,8 +283,6 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* ---------- Mobil ---------- */
 
 @media (max-width: 640px) {
-  .filters__row { flex-direction: column; gap: 6px; }
-  .filters__label { flex: none; }
   .search { max-width: none; }
   .event { grid-template-columns: 1fr; }
   .event__time small { display: inline; margin-left: 6px; }

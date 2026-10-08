@@ -11,7 +11,7 @@ const MONTH_PILLS = 3; // počet řádků s akcemi v buňce měsíce
 const MULTI_DAY_LIST_LIMIT = 7; // delší akce se v seznamu neopakují u každého dne
 
 const state = {
-  view: 'list',
+  view: 'list', // nastaví readHash podle URL, jinak podle zařízení
   sources: null, // Set povolených zdrojů; null = všechny
   categories: null,
   villages: null,
@@ -125,10 +125,16 @@ function compareEvents(a, b) {
 
 // ---------- URL stav ----------
 
+const MOBILE_QUERY = '(max-width: 640px)';
+
+
+/** Výchozí zobrazení: na počítači měsíc, na mobilu seznam. */
+const defaultView = () => (window.matchMedia(MOBILE_QUERY).matches ? 'list' : 'month');
+
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   const set = (key) => (p.has(key) ? new Set(p.get(key).split(',').filter(Boolean)) : null);
-  state.view = p.get('v') === 'month' ? 'month' : 'list';
+  state.view = ['list', 'month'].includes(p.get('v')) ? p.get('v') : defaultView();
   state.sources = set('z');
   state.categories = set('t');
   state.villages = set('o');
@@ -138,7 +144,7 @@ function readHash() {
 
 function writeHash() {
   const p = new URLSearchParams();
-  if (state.view !== 'list') p.set('v', state.view);
+  if (state.view !== defaultView()) p.set('v', state.view);
   if (state.sources) p.set('z', [...state.sources].join(','));
   if (state.categories) p.set('t', [...state.categories].join(','));
   if (state.villages) p.set('o', [...state.villages].join(','));
@@ -185,23 +191,62 @@ function renderChips(container, items, selected, render, onToggle) {
   container.innerHTML = allChip + items.map((item) => `
     <button type="button" class="chip${item.plain ? ' chip--plain' : ''}" data-id="${escapeHtml(item.id)}"
       aria-pressed="${selected !== null && selected.has(item.id)}" style="--chip-color:${escapeHtml(item.color)}"
-      title="Ctrl + klik: přidat k výběru / odebrat z výběru">${render(item)}</button>`).join('');
+      aria-label="${escapeHtml(item.label || item.name || item.id)}"
+      title="${escapeHtml(item.label || item.name || item.id)} – Ctrl + klik: přidat k výběru / odebrat z výběru">${render(item)}</button>`).join('');
+  // souhrn výběru pod štítky (vidět jen v úrovni „jen ikony“, viz fitFilters)
+  const summary = container.nextElementSibling;
+  if (summary?.classList.contains('chips__selected')) {
+    summary.textContent = selected === null ? '' // „Vše“ je vidět přímo na tlačítku
+      : items.filter((item) => selected.has(item.id)).map((item) => item.label || item.name || item.id).join(', ');
+  }
   container.onclick = (ev) => {
     const chip = ev.target.closest('.chip');
     if (chip) onToggle(chip.dataset.id, ev.ctrlKey || ev.metaKey);
   };
 }
 
+const wrapsToMoreLines = (container) => {
+  const chips = container.children;
+  return chips.length > 1 && chips[chips.length - 1].offsetTop > chips[0].offsetTop + 2;
+};
+
+/**
+ * Úrovně zhuštění filtrů, od nejvolnější. Použije se první, při které se všechny řady
+ * štítků vejdou na jeden řádek (pro všechny řady stejná, aby nadpisy vypadaly jednotně).
+ *   top   — nadpisy (Zdroj, Kategorie) nad štítky místo vlevo
+ *   short — krátké názvy (Obec, Knihovna, Děti…)
+ *   icons — jen ikony, pod řadou malý souhrn výběru
+ */
+const FILTER_LEVELS = [
+  [],
+  ['short'],
+  ['top', 'short'],
+  ['icons'],
+  ['top', 'icons'],
+];
+
+function fitFilters() {
+  const filters = document.querySelector('.filters');
+  const rows = [...filters.querySelectorAll('.chips')].filter((c) => c.offsetParent);
+  if (!rows.length) return;
+  for (const [index, level] of FILTER_LEVELS.entries()) {
+    filters.classList.toggle('filters--top', level.includes('top'));
+    filters.classList.toggle('filters--short', level.includes('short'));
+    filters.classList.toggle('filters--icons', level.includes('icons'));
+    if (index === FILTER_LEVELS.length - 1 || !rows.some(wrapsToMoreLines)) return;
+  }
+}
+
 function renderFilters() {
   const sources = data.sources.filter((s) => s.display !== 'dayLabel');
   renderChips(document.getElementById('source-filter'), sources, state.sources,
-    (s) => `${sourceIcon(s)}<span>${escapeHtml(s.name)}</span>`,
+    (s) => `${sourceIcon(s)}<span class="chip__label">${escapeHtml(s.name)}</span><span class="chip__label-short">${escapeHtml(s.shortName || s.name)}</span>`,
     (id, multi) => { state.sources = toggleSelection(state.sources, id, multi, sources.map((s) => s.id)); update(); });
 
   const usedCategories = new Set(data.events.flatMap((e) => e.categories));
   const categories = data.categories.filter((c) => usedCategories.has(c.id));
   renderChips(document.getElementById('category-filter'), categories, state.categories,
-    (c) => `${categoryIcon(c)}<span>${escapeHtml(c.label)}</span>`,
+    (c) => `${categoryIcon(c)}<span class="chip__label">${escapeHtml(c.label)}</span><span class="chip__label-short">${escapeHtml(c.shortLabel || c.label)}</span>`,
     (id, multi) => { state.categories = toggleSelection(state.categories, id, multi, categories.map((c) => c.id)); update(); });
 
   // filtr obcí se ukáže, až budou zdroje z víc obcí
@@ -213,6 +258,7 @@ function renderFilters() {
       (v) => `<span>${escapeHtml(v.id)}</span>`,
       (id, multi) => { state.villages = toggleSelection(state.villages, id, multi, villages); update(); });
   }
+  fitFilters();
 
   document.querySelectorAll('.view-switch button').forEach((b) => {
     b.setAttribute('aria-selected', String(b.dataset.view === state.view));
@@ -491,7 +537,7 @@ const isFilterActive = () => Boolean(state.sources || state.categories || state.
 function filterDescription() {
   const parts = [];
   if (state.sources) parts.push(`zdroje: ${[...state.sources].map((id) => sourcesById[id]?.name || id).join(', ')}`);
-  if (state.categories) parts.push(`typ: ${[...state.categories].map((id) => categoriesById[id]?.label || id).join(', ')}`);
+  if (state.categories) parts.push(`kategorie: ${[...state.categories].map((id) => categoriesById[id]?.label || id).join(', ')}`);
   if (state.villages) parts.push(`obec: ${[...state.villages].join(', ')}`);
   if (state.query) parts.push(`hledání: „${state.query}“`);
   return parts.join(' · ');
@@ -665,6 +711,16 @@ async function init() {
   setupEvents();
   setupSubscribe();
   setupThemeToggle();
+  // přepočet zhuštění filtrů při změně šířky (okno, posuvník, otočení telefonu)
+  let fitFrame = 0;
+  let fitWidth = 0;
+  new ResizeObserver(([entry]) => {
+    const width = Math.round(entry.contentRect.width);
+    if (width === fitWidth) return; // změna výšky (např. nadpisy nad štítky) nic nemění
+    fitWidth = width;
+    cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitFilters);
+  }).observe(document.querySelector('.filters'));
   try {
     const response = await fetch('data/events.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
