@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T21:28:02.493Z",
+ "generatedAt": "2026-10-08T21:38:02.160Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 24
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 33
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-08T21:28:02.493Z",
+   "lastSuccess": "2026-10-08T21:38:02.160Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4127,6 +4127,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4146,22 +4162,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
