@@ -80,7 +80,8 @@ function prepareEvent(e) {
   e._first = first;
   e._last = last;
   e._search = normalize(`${e.title} ${e.location} ${e.description}`);
-  e._long = !e.recurring && eventDays(e).length >= LONG_EVENT_DAYS;
+  e._span = eventDays(e).length;
+  e._long = !e.recurring && e._span >= LONG_EVENT_DAYS;
   return e;
 }
 
@@ -127,11 +128,14 @@ function compareEvents(a, b) {
 
 // ---------- URL stav ----------
 
-const MOBILE_QUERY = '(max-width: 640px)';
 
+/** Výchozí zobrazení: kalendář (měsíc), na počítači i na mobilu. */
+const defaultView = () => 'month';
 
-/** Výchozí zobrazení: na počítači měsíc, na mobilu seznam. */
-const defaultView = () => (window.matchMedia(MOBILE_QUERY).matches ? 'list' : 'month');
+/** Na mobilu (úzký kalendář s tečkami) se jako čára kreslí už akce od 2 dnů. */
+const MOBILE_LINE_DAYS = 2;
+const narrowScreen = window.matchMedia('(max-width: 640px)');
+const isMonthLine = (e) => !e.recurring && e._span >= (narrowScreen.matches ? MOBILE_LINE_DAYS : LONG_EVENT_DAYS);
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -459,7 +463,7 @@ function renderMonth(events, holidays) {
   // dlouhodobé akce: každá dostane jednu výšku čáry pro celý měsíc (aby mezi týdny „neskákala“)
   const longLane = new Map();
   const laneEnds = [];
-  for (const e of inGrid.filter((x) => x._long).sort((a, b) => a._first.localeCompare(b._first) || compareEvents(a, b))) {
+  for (const e of inGrid.filter(isMonthLine).sort((a, b) => a._first.localeCompare(b._first) || compareEvents(a, b))) {
     let lane = laneEnds.findIndex((end) => end < e._first);
     if (lane === -1) lane = laneEnds.length;
     laneEnds[lane] = e._last;
@@ -473,7 +477,7 @@ function renderMonth(events, holidays) {
 
     // akce v týdnu jako pruhy: začátek, konec (sloupce 0–6), pokračování z/do jiného týdne
     // dlouhodobé akce = tenké čáry v řádku s čísly dnů (za čísly); víc souběžných nad sebou
-    const longItems = inGrid.filter((e) => e._long && e._last >= weekStart && e._first <= weekEnd).sort(compareEvents);
+    const longItems = inGrid.filter((e) => isMonthLine(e) && e._last >= weekStart && e._first <= weekEnd).sort(compareEvents);
     let longLines = '';
     longItems.forEach((e) => {
       const from = colOf(e._first < weekStart ? weekStart : e._first);
@@ -484,7 +488,7 @@ function renderMonth(events, holidays) {
     });
 
     const items = inGrid
-      .filter((e) => !e.recurring && !e._long && e._last >= weekStart && e._first <= weekEnd)
+      .filter((e) => !e.recurring && !isMonthLine(e) && e._last >= weekStart && e._first <= weekEnd)
       .map((e) => ({
         e,
         from: colOf(e._first < weekStart ? weekStart : e._first),
@@ -527,7 +531,7 @@ function renderMonth(events, holidays) {
         item.after && 'month__pill--after',
         e.cancelled && 'month__pill--cancelled'].filter(Boolean).join(' ');
       // v buňce kalendáře krátký název (bez společného prefixu zdroje), v bublině plný
-      bars += `<span class="${classes}" style="grid-column:${item.from + 1} / ${item.to + 2};grid-row:${lane + 2};--icon-color:${escapeHtml(src.color)}" title="${escapeHtml(time + e.title)}">`
+      bars += `<span class="${classes}" data-event-id="${escapeHtml(e.id)}" style="grid-column:${item.from + 1} / ${item.to + 2};grid-row:${lane + 2};--icon-color:${escapeHtml(src.color)}">`
         + `${sourceIcon(src)}<span>${escapeHtml(time + (e.shortTitle || e.title))}</span></span>`;
     }
 
@@ -545,7 +549,7 @@ function renderMonth(events, holidays) {
       if (hiddenCount[i]) {
         bars += `<span class="month__more" style="grid-column:${i + 1};grid-row:${MONTH_PILLS + 1}">+ ${hiddenCount[i]} další</span>`;
       }
-      const single = list.filter((e) => !e.recurring && !e._long);
+      const single = list.filter((e) => !e.recurring && !isMonthLine(e));
       const regular = list.filter((e) => e.recurring);
       // tečky (jen na mobilu): plné = jednorázové akce, obrysové = pravidelné
       const dotFor = (e, cls = '') => `<i${cls ? ` class="${cls}"` : ''} style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`;
@@ -572,6 +576,8 @@ function renderMonth(events, holidays) {
   const weekdaysHtml = `<div class="month__weekdays">${weekdayNames.map((n) => `<div class="month__weekday">${n}</div>`).join('')}</div>`;
 
   const title = formatDay(firstOfMonth, { month: 'long', year: 'numeric' });
+  const slideClass = monthSlide ? ` month__grid--from-${monthSlide}` : '';
+  monthSlide = null;
   let selectedHtml;
   if (selected) {
     const list = (byDay.get(selected) || []).sort(compareEvents);
@@ -602,7 +608,7 @@ function renderMonth(events, holidays) {
           <button type="button" class="icon-button" data-action="next-month" aria-label="Další měsíc">›</button>
         </div>
       </div>
-      <div class="month__grid">${weekdaysHtml}${weeksHtml}</div>
+      <div class="month__grid${slideClass}">${weekdaysHtml}${weeksHtml}</div>
       ${selectedHtml}
     </div>`;
 }
@@ -612,6 +618,32 @@ function shiftMonth(delta) {
   const date = new Date(Date.UTC(y, m - 1 + delta, 1));
   state.month = date.toISOString().slice(0, 7);
   state.selectedDay = null;
+  monthSlide = delta > 0 ? 'next' : 'prev';
+}
+
+let monthSlide = null; // směr animace při přechodu na jiný měsíc
+
+/** Přejetí prstem po kalendáři doleva/doprava = další/předchozí měsíc. */
+function setupMonthSwipe() {
+  narrowScreen.addEventListener('change', () => { if (data && state.view === 'month') update({ keepHash: true }); });
+  const view = document.getElementById('view');
+  let start = null;
+  view.addEventListener('touchstart', (ev) => {
+    start = ev.target.closest('.month__grid') && ev.touches.length === 1
+      ? { x: ev.touches[0].clientX, y: ev.touches[0].clientY, time: Date.now() }
+      : null;
+  }, { passive: true });
+  view.addEventListener('touchend', (ev) => {
+    if (!start) return;
+    const dx = ev.changedTouches[0].clientX - start.x;
+    const dy = ev.changedTouches[0].clientY - start.y;
+    const quick = Date.now() - start.time < 800;
+    start = null;
+    // vodorovně, dost daleko a výrazně víc než svisle (svislé posouvání stránky nerušit)
+    if (!quick || Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    shiftMonth(dx < 0 ? 1 : -1);
+    update();
+  });
 }
 
 // ---------- Stažení výběru jako .ics ----------
@@ -727,6 +759,55 @@ function setupSubscribe() {
   });
 }
 
+// ---------- Bublina nad akcí v měsíci ----------
+
+function tooltipTime(e) {
+  if (e.allDay) {
+    return e._first === e._last ? 'celý den' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
+  }
+  const start = new Date(e.start);
+  const end = new Date(e.end || e.start);
+  const from = timeFormatter.format(start);
+  if (e._first !== e._last) return `${formatShortDate(e._first)} ${from} – ${formatShortDate(e._last)} ${timeFormatter.format(end)}`;
+  return end > start ? `${from} – ${timeFormatter.format(end)}` : from;
+}
+
+function setupEventTooltip() {
+  const tip = document.createElement('div');
+  tip.className = 'event-tooltip';
+  tip.hidden = true;
+  tip.setAttribute('role', 'tooltip');
+  document.body.append(tip);
+  const view = document.getElementById('view');
+
+  view.addEventListener('mouseover', (ev) => {
+    const pill = ev.target.closest('.month__pill');
+    if (!pill) return;
+    const e = data?.events.find((x) => x.id === pill.dataset.eventId);
+    if (!e) return;
+    const source = sourcesById[e.source] || { name: e.source };
+    tip.innerHTML = `
+      <div class="event-tooltip__time">${escapeHtml(tooltipTime(e))}${e.cancelled ? ' · <strong>zrušeno</strong>' : ''}</div>
+      <div class="event-tooltip__title">${escapeHtml(e.title)}</div>
+      ${e.location ? `<div>📍 ${escapeHtml(e.location)}</div>` : ''}
+      ${e.note ? `<div class="event-tooltip__note">${escapeHtml(e.note)}</div>` : ''}
+      <div class="event-tooltip__source">${source.icon ? sourceIcon(source, true) : ''}${escapeHtml(source.name)}</div>`;
+    tip.hidden = false;
+    // nad pruhem, případně pod ním; vždy uvnitř okna
+    const r = pill.getBoundingClientRect();
+    const t = tip.getBoundingClientRect();
+    let top = r.top - t.height - 8;
+    if (top < 8) top = r.bottom + 8;
+    const left = Math.min(Math.max(8, r.left), window.innerWidth - t.width - 8);
+    tip.style.top = `${top + window.scrollY}px`;
+    tip.style.left = `${left + window.scrollX}px`;
+  });
+  view.addEventListener('mouseout', (ev) => {
+    if (ev.target.closest('.month__pill') && !ev.relatedTarget?.closest?.('.month__pill')) tip.hidden = true;
+  });
+  window.addEventListener('scroll', () => { tip.hidden = true; }, { passive: true });
+}
+
 function setupThemeToggle() {
   const button = document.getElementById('theme-toggle');
   const sync = () => button.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
@@ -760,7 +841,9 @@ function setupEvents() {
 
   document.getElementById('view').addEventListener('click', (ev) => {
     const action = ev.target.closest('[data-action]')?.dataset.action;
-    const dayButton = ev.target.closest('[data-day]');
+    // pruh akce leží nad buňkami dnů → vybrat den, na který se kliklo
+    const dayButton = ev.target.closest('[data-day]') || (ev.target.closest('.month__pill')
+      && document.elementsFromPoint(ev.clientX, ev.clientY).find((el) => el.matches('.month__day')));
     if (action === 'past') {
       state.listFrom = addDays(state.listFrom || today, -PAST_DAYS_STEP);
       state.listDays += PAST_DAYS_STEP;
@@ -795,6 +878,8 @@ async function init() {
   setupEvents();
   setupSubscribe();
   setupThemeToggle();
+  setupEventTooltip();
+  setupMonthSwipe();
   // přepočet zhuštění filtrů při změně šířky (okno, posuvník, otočení telefonu)
   let fitFrame = 0;
   let fitWidth = 0;

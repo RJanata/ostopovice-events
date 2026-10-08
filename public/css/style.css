@@ -279,7 +279,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__day-holiday { min-width: 0; font-size: 0.7rem; color: var(--holiday); line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; align-self: center; position: relative; top: -1px; }
 
 .month__pill {
-  position: relative; z-index: 1; pointer-events: none; align-self: center;
+  position: relative; z-index: 1; cursor: pointer; align-self: center;
   display: flex; align-items: center; gap: 4px; min-width: 0; margin: 0 4px;
   font-size: 0.75rem; line-height: 1.35; padding: 1px 6px 1px 2px; border-radius: 6px;
   background: color-mix(in srgb, var(--icon-color) 14%, var(--surface));
@@ -288,6 +288,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__pill--multi { background: color-mix(in srgb, var(--icon-color) 24%, var(--surface)); font-weight: 600; }
 .month__pill--before { margin-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
 .month__pill--after { margin-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.month__pill:hover { filter: brightness(0.96); box-shadow: 0 0 0 1px var(--icon-color); }
 .month__pill .source-icon { width: 14px; height: 14px; }
 .month__pill span { overflow: hidden; text-overflow: ellipsis; }
 .month__pill--cancelled span { text-decoration: line-through; opacity: 0.7; }
@@ -307,7 +308,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__more { position: relative; z-index: 1; pointer-events: none; align-self: center; margin: 0 6px; font-size: 0.72rem; color: var(--muted); }
 .month__dots { display: none; flex-wrap: wrap; gap: 3px; }
 .month__dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--icon-color); }
-.month__dots i.is-regular { width: 6px; height: 6px; background: none; border: 1.5px solid var(--icon-color); opacity: 0.8; }
+.month__dots i.is-regular { box-sizing: border-box; background: none; border: 1.5px solid var(--icon-color); } /* stejná velikost jako plná tečka */
 .month__selected { margin-top: 18px; }
 
 /* ---------- Patička ---------- */
@@ -327,3 +328,22 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .month__dots { display: flex; }
   .month__weekday { padding: 4px; text-align: center; }
 }
+
+/* bublina nad akcí v měsíci */
+.event-tooltip {
+  position: absolute; z-index: 50; max-width: 320px; padding: 10px 12px; pointer-events: none;
+  background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.16); font-size: 0.9rem; line-height: 1.4;
+}
+.event-tooltip[hidden] { display: none; }
+.event-tooltip__time { color: var(--muted); font-size: 0.82rem; }
+.event-tooltip__title { font-weight: 700; margin: 2px 0 4px; }
+.event-tooltip__note { margin-top: 4px; white-space: pre-line; }
+.event-tooltip__source { display: flex; align-items: center; gap: 6px; margin-top: 6px; color: var(--muted); font-size: 0.82rem; }
+
+/* přechod na jiný měsíc (šipky, přejetí prstem) */
+.month__grid--from-next { animation: month-from-right 0.22s ease-out; }
+.month__grid--from-prev { animation: month-from-left 0.22s ease-out; }
+@keyframes month-from-right { from { transform: translateX(24px); opacity: 0.4; } }
+@keyframes month-from-left { from { transform: translateX(-24px); opacity: 0.4; } }
+@media (prefers-reduced-motion: reduce) { .month__grid--from-next, .month__grid--from-prev { animation: none; } }
