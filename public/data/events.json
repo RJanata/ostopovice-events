@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T00:08:26.839Z",
+ "generatedAt": "2026-10-08T00:09:02.585Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:08:26.839Z",
+   "lastSuccess": "2026-10-08T00:09:02.585Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:08:26.839Z",
+   "lastSuccess": "2026-10-08T00:09:02.585Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:08:26.839Z",
+   "lastSuccess": "2026-10-08T00:09:02.585Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:08:26.839Z",
+   "lastSuccess": "2026-10-08T00:09:02.585Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T00:08:26.839Z",
+   "lastSuccess": "2026-10-08T00:09:02.585Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3369,15 +3369,16 @@
    "start": "2026-10-09",
    "end": "2026-10-10",
    "allDay": true,
-   "location": "",
+   "location": "Knihovna Ostopovice",
    "url": "https://www.ostopovice.cz/kalendar-akci/oznameni-o-dobe-a-miste-konani-voleb-do-zastupitelstev-obci",
    "description": "",
    "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13903426",
    "categories": [
     "obec"
    ],
-   "note": "Knihovna Ostopovice",
-   "originalTitle": "Oznámení o době a místě konání voleb do zastupitelstev obcí"
+   "note": "Pá 14:00–22:00 | So 08:00–14:00",
+   "originalTitle": "Oznámení o době a místě konání voleb do zastupitelstev obcí",
+   "originalLocation": ""
   },
   {
    "id": "obec-c0pv8v",
