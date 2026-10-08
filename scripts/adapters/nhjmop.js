@@ -28,6 +28,7 @@ export async function fetchEvents(source) {
       const base = {
         uid: `nhjmop-${number || `${isoDay(date.year, date.month, date.day)}-${teams}`}`,
         title: `Národní házená: ${competition} · ${teams}`,
+        shortTitle: `${competition} · ${teams}`, // do měsíčního kalendáře (prefix je u Sokola všude stejný)
         location: source.options?.location || '',
         url: pageUrl,
         // číslo utkání je jen interní údaj soutěže; ukazujeme jen výsledek odehraných zápasů

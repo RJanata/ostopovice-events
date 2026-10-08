@@ -77,6 +77,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
   };
   if (raw.extra) event.extra = raw.extra;
   if (raw.recurring) event.recurring = true;
+  if (raw.shortTitle) event.shortTitle = raw.shortTitle;
   if (tagged.categories.length) event.tagCategories = tagged.categories;
   if (raw.cancelled || /^\W*zruseno\b/.test(normalize(raw.title))) event.cancelled = true;
   return applySourceRules(event, source, rules);
@@ -130,6 +131,8 @@ function applyOverrides(event, overrides) {
     if (field in changes && changes[field] !== event[field]) result[originalField] = event[field];
   }
   if (!result.note) delete result.note;
+  // ručně přejmenovaná akce: krátký název ze zdroje by v kalendáři ukazoval ten starý
+  if (changes.title && !changes.shortTitle) delete result.shortTitle;
   return result;
 }
 

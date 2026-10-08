@@ -249,8 +249,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
    buňky dne leží pod nimi přes celou výšku (klik na pruh propadne na den pod ním) */
 .month__week {
   display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));
-  grid-template-rows: 28px repeat(3, 22px) minmax(22px, 1fr);
-  min-height: 118px; border-top: 1px solid var(--border);
+  grid-template-rows: 28px repeat(4, 22px) minmax(4px, 1fr);
+  min-height: 122px; border-top: 1px solid var(--border);
 }
 .month__day {
   grid-row: 1 / -1; background: var(--surface); padding: 5px 6px; display: flex; flex-direction: column; gap: 3px;
@@ -283,7 +283,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__pill .source-icon { width: 14px; height: 14px; }
 .month__pill span { overflow: hidden; text-overflow: ellipsis; }
 .month__pill--cancelled span { text-decoration: line-through; opacity: 0.7; }
-.month__more { margin-top: auto; font-size: 0.72rem; color: var(--muted); padding-left: 2px; }
+.month__more { position: relative; z-index: 1; pointer-events: none; align-self: center; margin: 0 6px; font-size: 0.72rem; color: var(--muted); }
 .month__dots { display: none; flex-wrap: wrap; gap: 3px; }
 .month__dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--icon-color); }
 .month__selected { margin-top: 18px; }

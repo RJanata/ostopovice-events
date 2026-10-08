@@ -7,7 +7,7 @@
 const TIME_ZONE = 'Europe/Prague';
 const LIST_DAYS_STEP = 45; // kolik dní seznam ukáže najednou
 const PAST_DAYS_STEP = 60; // o kolik dní zpět posune „Zobrazit proběhlé“
-const MONTH_PILLS = 3; // počet řádků s akcemi v buňce měsíce
+const MONTH_PILLS = 4; // počet řádků s akcemi v buňce měsíce (při víc akcích 3 + „+ N další“)
 const MULTI_DAY_LIST_LIMIT = 7; // delší akce se v seznamu neopakují u každého dne
 
 const state = {
@@ -458,21 +458,30 @@ function renderMonth(events, holidays) {
       }))
       .sort((a, b) => a.from - b.from || (b.to - b.from) - (a.to - a.from) || compareEvents(a.e, b.e));
 
-    // rozdělení do řádků (pruhů) tak, aby se nepřekrývaly; co se nevejde → „+ N další“
+    // rozdělení do řádků (pruhů) tak, aby se nepřekrývaly
     const lanes = [];
-    const hiddenCount = Array(7).fill(0);
-    let bars = '';
     for (const item of items) {
       let lane = lanes.findIndex((used) => used.slice(item.from, item.to + 1).every((x) => !x));
       if (lane === -1) {
         lane = lanes.length;
         lanes.push(Array(7).fill(false));
       }
-      if (lane >= MONTH_PILLS) {
+      for (let c = item.from; c <= item.to; c++) lanes[lane][c] = true;
+      item.lane = lane;
+    }
+    // den s víc akcemi, než je řádků: poslední řádek uvolnit pro „+ N další“;
+    // když se akce vejdou přesně, ukážou se všechny (4 akce = 4 řádky, žádné „+1“)
+    const overflowCol = Array.from({ length: 7 }, (_, c) => lanes.filter((used) => used[c]).length > MONTH_PILLS);
+    const isVisible = (item) => item.lane < MONTH_PILLS - 1
+      || (item.lane === MONTH_PILLS - 1 && !overflowCol.slice(item.from, item.to + 1).some(Boolean));
+    const hiddenCount = Array(7).fill(0);
+    let bars = '';
+    for (const item of items) {
+      if (!isVisible(item)) {
         for (let c = item.from; c <= item.to; c++) hiddenCount[c] += 1;
         continue;
       }
-      for (let c = item.from; c <= item.to; c++) lanes[lane][c] = true;
+      const { lane } = item;
       const { e } = item;
       const src = sourcesById[e.source] || {};
       const time = e.allDay || item.before ? '' : `${timeFormatter.format(new Date(e.start))} `;
@@ -481,8 +490,9 @@ function renderMonth(events, holidays) {
         item.before && 'month__pill--before',
         item.after && 'month__pill--after',
         e.cancelled && 'month__pill--cancelled'].filter(Boolean).join(' ');
+      // v buňce kalendáře krátký název (bez společného prefixu zdroje), v bublině plný
       bars += `<span class="${classes}" style="grid-column:${item.from + 1} / ${item.to + 2};grid-row:${lane + 2};--icon-color:${escapeHtml(src.color)}" title="${escapeHtml(time + e.title)}">`
-        + `${sourceIcon(src)}<span>${escapeHtml(time + e.title)}</span></span>`;
+        + `${sourceIcon(src)}<span>${escapeHtml(time + (e.shortTitle || e.title))}</span></span>`;
     }
 
     let cells = '';
@@ -495,7 +505,10 @@ function renderMonth(events, holidays) {
         d === today && 'month__day--today',
         holiday && 'month__day--holiday',
         d === selected && 'month__day--selected'].filter(Boolean).join(' ');
-      const more = hiddenCount[i] ? `<span class="month__more">+ ${hiddenCount[i]} další</span>` : '';
+      // „+ N další“ na místě posledního řádku akcí (pod buňkou je klikací den)
+      if (hiddenCount[i]) {
+        bars += `<span class="month__more" style="grid-column:${i + 1};grid-row:${MONTH_PILLS + 1}">+ ${hiddenCount[i]} další</span>`;
+      }
       const single = list.filter((e) => !e.recurring);
       const regular = list.filter((e) => e.recurring);
       const dots = single.length ? `<span class="month__dots">${single.slice(0, 6).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>` : '';
@@ -511,7 +524,7 @@ function renderMonth(events, holidays) {
             ${regularMarks}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml(holiday.join(' · '))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
           </span>
-          ${dots}${more}
+          ${dots}
         </button>`;
     }
     weeksHtml += `<div class="month__week">${cells}${bars}</div>`;
