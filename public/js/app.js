@@ -12,14 +12,14 @@ const MULTI_DAY_LIST_LIMIT = 7; // delší akce se v seznamu neopakují u každ�
 const LONG_EVENT_DAYS = 8; // od této délky je akce „dlouhodobá“ (výstavy): v měsíci tenká čára, ve výpisu zvlášť
 
 const state = {
-  view: 'list', // nastaví readHash podle URL, jinak podle zařízení
+  showCalendar: true, // kalendář nad seznamem (seznam je vždy)
   sources: null, // Set povolených zdrojů; null = všechny
   categories: null,
   villages: null,
   query: '',
   month: null, // 'YYYY-MM'
   selectedDay: null,
-  listFrom: null, // seznam začíná tímto dnem
+  pastDays: 0, // o kolik dní před začátkem seznamu ukázat proběhlé akce („Zobrazit proběhlé“)
   listDays: LIST_DAYS_STEP,
 };
 
@@ -129,9 +129,6 @@ function compareEvents(a, b) {
 // ---------- URL stav ----------
 
 
-/** Výchozí zobrazení: kalendář (měsíc), na počítači i na mobilu. */
-const defaultView = () => 'month';
-
 /** Na mobilu (úzký kalendář s tečkami) se jako čára kreslí už akce od 2 dnů. */
 const MOBILE_LINE_DAYS = 2;
 const narrowScreen = window.matchMedia('(max-width: 640px)');
@@ -140,7 +137,8 @@ const isMonthLine = (e) => !e.recurring && e._span >= (narrowScreen.matches ? MO
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   const set = (key) => (p.has(key) ? new Set(p.get(key).split(',').filter(Boolean)) : null);
-  state.view = ['list', 'month'].includes(p.get('v')) ? p.get('v') : defaultView();
+  // k=0 = kalendář skrytý (v=list = starší odkazy na seznam)
+  state.showCalendar = p.get('k') !== '0' && p.get('v') !== 'list';
   state.sources = set('z');
   state.categories = set('t');
   state.villages = set('o');
@@ -150,12 +148,12 @@ function readHash() {
 
 function writeHash() {
   const p = new URLSearchParams();
-  if (state.view !== defaultView()) p.set('v', state.view);
+  if (!state.showCalendar) p.set('k', '0');
   if (state.sources) p.set('z', [...state.sources].join(','));
   if (state.categories) p.set('t', [...state.categories].join(','));
   if (state.villages) p.set('o', [...state.villages].join(','));
   if (state.query) p.set('q', state.query);
-  if (state.view === 'month' && state.month && state.month !== today.slice(0, 7)) p.set('m', state.month);
+  if (state.showCalendar && state.month && state.month !== today.slice(0, 7)) p.set('m', state.month);
   const hash = p.toString().replace(/%2C/g, ',');
   history.replaceState(null, '', hash ? `#${hash}` : location.pathname + location.search);
 }
@@ -267,8 +265,8 @@ function renderFilters() {
   }
   fitFilters();
 
-  document.querySelectorAll('.view-switch button').forEach((b) => {
-    b.setAttribute('aria-selected', String(b.dataset.view === state.view));
+  document.querySelectorAll('#calendar-toggle').forEach((b) => {
+    b.setAttribute('aria-pressed', String(state.showCalendar));
   });
   const search = document.getElementById('search');
   if (search.value !== state.query) search.value = state.query;
@@ -400,12 +398,34 @@ function longEventsBlock(events, from, to) {
 function renderDays(byDay, holidays) {
   return [...byDay.keys()].sort().map((day) => {
     const list = byDay.get(day);
-    return `<section class="day${list.length ? '' : ' day--empty'}">${dayHeading(day, holidays)}${dayEvents(list, day)}</section>`;
+    const classes = ['day', !list.length && 'day--empty', day === state.selectedDay && 'day--selected'].filter(Boolean).join(' ');
+    const empty = !list.length && day === state.selectedDay ? '<p class="empty">Tento den žádné akce nejsou.</p>' : '';
+    return `<section class="${classes}" id="day-${day}">${dayHeading(day, holidays)}${dayEvents(list, day)}${empty}</section>`;
   }).join('');
 }
 
+/**
+ * Začátek seznamu podle kalendáře: aktuální měsíc (nebo skrytý kalendář) → od dneška,
+ * jiný zobrazený měsíc (dopředu i dozadu) → od jeho prvního dne.
+ */
+function listStart() {
+  const month = state.showCalendar && state.month;
+  return month && month !== today.slice(0, 7) ? `${month}-01` : today;
+}
+
+/** Seznam jediného dne vybraného v kalendáři. */
+function renderSelectedDay(events, holidays) {
+  const day = state.selectedDay;
+  const byDay = groupByDay(events, day, day, holidays);
+  if (!byDay.has(day)) byDay.set(day, []);
+  return longEventsBlock(events, day, day)
+    + renderDays(byDay, holidays)
+    + `<div class="more"><button type="button" class="button button--ghost" data-action="clear-day">Zobrazit všechny akce</button></div>`;
+}
+
 function renderList(events, holidays) {
-  const from = state.listFrom || today;
+  if (state.selectedDay) return renderSelectedDay(events, holidays);
+  const from = addDays(listStart(), -state.pastDays);
   // při hledání ukázat všechny nalezené akce, i ty za mnoho měsíců
   const to = state.query
     ? events.reduce((max, e) => (e._last > max ? e._last : max), from)
@@ -578,26 +598,6 @@ function renderMonth(events, holidays) {
   const title = formatDay(firstOfMonth, { month: 'long', year: 'numeric' });
   const slideClass = monthSlide ? ` month__grid--from-${monthSlide}` : '';
   monthSlide = null;
-  let selectedHtml;
-  if (selected) {
-    const list = (byDay.get(selected) || []).sort(compareEvents);
-    const longBlock = longEventsBlock(events, selected, selected);
-    const dayList = list.filter((e) => !e._long);
-    selectedHtml = `<section class="day month__selected" id="selected-day">${dayHeading(selected, holidays)}`
-      + longBlock
-      + (dayList.length ? dayEvents(dayList, selected) : (longBlock ? '' : '<p class="empty">Tento den žádné akce nejsou.</p>'))
-      + `<div class="more"><button type="button" class="button button--ghost" data-action="whole-month">Zobrazit celý ${escapeHtml(formatDay(firstOfMonth, { month: 'long' }))}</button></div>`
-      + '</section>';
-  } else {
-    const lastOfMonth = addDays(firstOfMonth, daysInMonth - 1);
-    const monthDays = groupByDay(events, firstOfMonth, lastOfMonth, holidays);
-    const hasEvents = [...monthDays.values()].some((list) => list.length);
-    const longBlock = longEventsBlock(events, firstOfMonth, lastOfMonth);
-    selectedHtml = `<div class="month__selected" id="selected-day">${longBlock}`
-      + (hasEvents ? renderDays(monthDays, holidays) : (longBlock ? '' : '<p class="empty">V tomto měsíci žádné akce nejsou.</p>'))
-      + '</div>';
-  }
-
   return `
     <div class="month">
       <div class="month__nav">
@@ -609,7 +609,6 @@ function renderMonth(events, holidays) {
         </div>
       </div>
       <div class="month__grid${slideClass}">${weekdaysHtml}${weeksHtml}</div>
-      ${selectedHtml}
     </div>`;
 }
 
@@ -617,15 +616,22 @@ function shiftMonth(delta) {
   const [y, m] = (state.month || today.slice(0, 7)).split('-').map(Number);
   const date = new Date(Date.UTC(y, m - 1 + delta, 1));
   state.month = date.toISOString().slice(0, 7);
-  state.selectedDay = null;
+  resetListRange();
   monthSlide = delta > 0 ? 'next' : 'prev';
 }
 
 let monthSlide = null; // směr animace při přechodu na jiný měsíc
 
+/** Seznam znovu od začátku (vybraný den, proběhlé a „další akce“ pryč). */
+function resetListRange() {
+  state.selectedDay = null;
+  state.pastDays = 0;
+  state.listDays = LIST_DAYS_STEP;
+}
+
 /** Přejetí prstem po kalendáři doleva/doprava = další/předchozí měsíc. */
 function setupMonthSwipe() {
-  narrowScreen.addEventListener('change', () => { if (data && state.view === 'month') update({ keepHash: true }); });
+  narrowScreen.addEventListener('change', () => { if (data && state.showCalendar) update({ keepHash: true }); });
   const view = document.getElementById('view');
   let start = null;
   view.addEventListener('touchstart', (ev) => {
@@ -685,7 +691,8 @@ function update({ keepHash = false } = {}) {
   const downloadButton = document.getElementById('download-filtered');
   downloadButton.hidden = !CUSTOM_ICS_ENABLED || !isFilterActive() || !upcoming;
   refreshSubscribePanel?.();
-  document.getElementById('view').innerHTML = state.view === 'month' ? renderMonth(events, holidays) : renderList(events, holidays);
+  document.getElementById('view').innerHTML = (state.showCalendar ? renderMonth(events, holidays) : '')
+    + `<div class="event-list">${renderList(events, holidays)}</div>`;
 }
 
 function renderStatus() {
@@ -816,10 +823,9 @@ function setupThemeToggle() {
 }
 
 function setupEvents() {
-  document.querySelector('.view-switch').addEventListener('click', (ev) => {
-    const button = ev.target.closest('button[data-view]');
-    if (!button) return;
-    state.view = button.dataset.view;
+  document.getElementById('calendar-toggle').addEventListener('click', () => {
+    state.showCalendar = !state.showCalendar;
+    if (!state.showCalendar) resetListRange(); // bez kalendáře seznam vždy od dneška
     update();
   });
 
@@ -845,7 +851,7 @@ function setupEvents() {
     const dayButton = ev.target.closest('[data-day]') || (ev.target.closest('.month__pill')
       && document.elementsFromPoint(ev.clientX, ev.clientY).find((el) => el.matches('.month__day')));
     if (action === 'past') {
-      state.listFrom = addDays(state.listFrom || today, -PAST_DAYS_STEP);
+      state.pastDays += PAST_DAYS_STEP;
       state.listDays += PAST_DAYS_STEP;
       update({ keepHash: true });
     } else if (action === 'later') {
@@ -856,16 +862,15 @@ function setupEvents() {
       update();
     } else if (action === 'this-month') {
       state.month = null;
-      state.selectedDay = null;
+      resetListRange();
       update();
-    } else if (action === 'whole-month') {
+    } else if (action === 'clear-day') {
       state.selectedDay = null;
       update({ keepHash: true });
     } else if (dayButton) {
+      // vybraný den = seznam jen s tímto dnem; druhý klik = zpět na celý seznam
       state.selectedDay = state.selectedDay === dayButton.dataset.day ? null : dayButton.dataset.day;
       update({ keepHash: true });
-      // posouvat jen při výběru dne; po zrušení výběru zůstat u kalendáře
-      if (state.selectedDay) document.getElementById('selected-day')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   });
 

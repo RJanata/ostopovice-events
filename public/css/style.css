@@ -147,7 +147,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   background: color-mix(in srgb, var(--chip-color) 12%, var(--surface));
   border-color: var(--chip-color); box-shadow: inset 0 0 0 1px var(--chip-color);
 }
-.chip:focus-visible, .view-switch button:focus-visible, .button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chip:focus-visible, .button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--chip-color); flex: none; }
 
@@ -167,13 +167,6 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 }
 .search input { flex: 1; min-width: 0; border: 0; background: none; color: var(--text); font: inherit; outline: none; }
 
-.view-switch { display: inline-flex; padding: 3px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); }
-.view-switch button {
-  display: inline-flex; align-items: center; gap: 6px;
-  border: 0; background: none; color: var(--muted); font: inherit; font-size: 0.9rem;
-  padding: 5px 14px; border-radius: 6px; cursor: pointer;
-}
-.view-switch button[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); font-weight: 600; }
 
 /* ---------- Stav zdrojů ---------- */
 
@@ -347,3 +340,20 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 @keyframes month-from-right { from { transform: translateX(24px); opacity: 0.4; } }
 @keyframes month-from-left { from { transform: translateX(-24px); opacity: 0.4; } }
 @media (prefers-reduced-motion: reduce) { .month__grid--from-next, .month__grid--from-prev { animation: none; } }
+
+/* přepínač kalendáře nad seznamem */
+.calendar-toggle {
+  display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 8px;
+  border: 1px solid var(--border); background: transparent; color: var(--muted); font: inherit; font-size: 0.9rem; cursor: pointer;
+}
+.calendar-toggle[aria-pressed="true"] {
+  color: var(--text); border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+}
+.calendar-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.month + .event-list { margin-top: 20px; }
+
+/* den vybraný v kalendáři */
+.day--selected > .day__heading { color: var(--accent); }
+.day--selected > .day__heading::before { content: ""; width: 4px; align-self: stretch; border-radius: 2px; background: var(--accent); }
+.day { scroll-margin-top: 12px; }
