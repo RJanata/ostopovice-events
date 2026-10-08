@@ -2,25 +2,27 @@
 
 // Souhrnný kalendář akcí — vykreslení dat z data/events.json (generuje scripts/collect.js).
 // Stav filtrů se drží v URL za # (dá se sdílet odkazem), např.
-//   #v=month&z=knihovna,sokol&t=deti&q=jóga&m=2026-11
+//   #z=knihovna,sokol&t=deti&q=jóga&m=2026-11
 
 const TIME_ZONE = 'Europe/Prague';
-const LIST_DAYS_STEP = 45; // kolik dní seznam ukáže najednou
-const PAST_DAYS_STEP = 60; // o kolik dní zpět posune „Zobrazit proběhlé“
+const SHOW_ALL_BELOW = 30; // když za seznamem zbývá míň akcí, „Zobrazit další“ ukáže všechny naráz
+const RECENT_DAYS = 7; // „Nedávno přidané“ = akce přidané za posledních N dní…
+const RECENT_SINCE = Date.parse('2026-10-08T12:00:00+02:00'); // …ale ne dřív (do té doby se plnily zdroje)
 const MONTH_PILLS = 4; // počet řádků s akcemi v buňce měsíce (při víc akcích 3 + „+ N další“)
 const MULTI_DAY_LIST_LIMIT = 7; // delší akce se v seznamu neopakují u každého dne
 const LONG_EVENT_DAYS = 8; // od této délky je akce „dlouhodobá“ (výstavy): v měsíci tenká čára, ve výpisu zvlášť
 
 const state = {
-  showCalendar: true, // kalendář nad seznamem (seznam je vždy)
   sources: null, // Set povolených zdrojů; null = všechny
   categories: null,
   villages: null,
+  regular: true, // zobrazovat pravidelné akce (zaškrtávátko „Pravidelné“)
   query: '',
   month: null, // 'YYYY-MM'
   selectedDay: null,
-  pastDays: 0, // o kolik dní před začátkem seznamu ukázat proběhlé akce („Zobrazit proběhlé“)
-  listDays: LIST_DAYS_STEP,
+  showPast: false, // v aktuálním měsíci i proběhlé akce od 1. dne („Zobrazit proběhlé“)
+  showRecent: false, // místo seznamu jen nedávno přidané akce
+  extraMonths: 0, // kolik dalších měsíců za vybraným seznam ukazuje („Zobrazit další akce“); Infinity = všechny
 };
 
 let data = null;
@@ -97,6 +99,7 @@ const isEnabled = (set, id) => set === null || set.has(id);
 function matchesFilters(e) {
   const source = sourcesById[e.source];
   if (e.hidden) return false;
+  if (!state.regular && e.recurring) return false;
   if (!isEnabled(state.sources, e.source)) return false;
   if (source?.display === 'dayLabel') return false;
   if (state.villages && source?.village && !state.villages.has(source.village)) return false;
@@ -137,23 +140,22 @@ const isMonthLine = (e) => !e.recurring && e._span >= (narrowScreen.matches ? MO
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   const set = (key) => (p.has(key) ? new Set(p.get(key).split(',').filter(Boolean)) : null);
-  // k=0 = kalendář skrytý (v=list = starší odkazy na seznam)
-  state.showCalendar = p.get('k') !== '0' && p.get('v') !== 'list';
   state.sources = set('z');
   state.categories = set('t');
   state.villages = set('o');
+  state.regular = p.get('r') !== '0';
   state.query = p.get('q') || '';
   state.month = /^\d{4}-\d{2}$/.test(p.get('m') || '') ? p.get('m') : null;
 }
 
 function writeHash() {
   const p = new URLSearchParams();
-  if (!state.showCalendar) p.set('k', '0');
   if (state.sources) p.set('z', [...state.sources].join(','));
   if (state.categories) p.set('t', [...state.categories].join(','));
   if (state.villages) p.set('o', [...state.villages].join(','));
+  if (!state.regular) p.set('r', '0');
   if (state.query) p.set('q', state.query);
-  if (state.showCalendar && state.month && state.month !== today.slice(0, 7)) p.set('m', state.month);
+  if (state.month && state.month !== today.slice(0, 7)) p.set('m', state.month);
   const hash = p.toString().replace(/%2C/g, ',');
   history.replaceState(null, '', hash ? `#${hash}` : location.pathname + location.search);
 }
@@ -162,6 +164,31 @@ function writeHash() {
 
 function sourceIcon(source, small = false) {
   return `<span class="source-icon${small ? ' source-icon--small' : ''}"><img src="icons/${escapeHtml(source.icon)}" alt=""></span>`;
+}
+
+/**
+ * Ikona pravidelné akce v měsíci: u vlastních Google kalendářů (Nezařazené) ikona kategorie
+ * (cvičení, bohoslužba…), jinak ikona zdroje.
+ */
+function regularIcon(e) {
+  const source = sourcesById[e.source];
+  if (e.icon) return `<span class="regular-cat">${eventIcon(e)}</span>`;
+  const category = source?.type === 'ical' && categoriesById[e.categories.find((id) => id !== 'ostatni')];
+  if (category?.icon) return `<span class="regular-cat" style="--chip-color:${escapeHtml(category.color)}">${categoryIcon(category)}</span>`;
+  return sourceIcon(source || { icon: 'nezarazene.svg' }, true);
+}
+
+/** Barva akce = barva první kategorie (kromě Ostatní), jinak zdroje. */
+function eventColor(e) {
+  const category = categoriesById[e.categories.find((id) => id !== 'ostatni')];
+  return category?.color || sourcesById[e.source]?.color || '#888';
+}
+
+/** Vlastní ikona akce z popisu (#icon:ball-football → icons/tabler/ball-football.svg). */
+function eventIcon(e) {
+  if (!e.icon) return '';
+  const url = new URL(`icons/tabler/${e.icon}.svg`, document.baseURI).href;
+  return `<span class="cat-icon event-icon" style="--chip-color:${escapeHtml(eventColor(e))};--icon:url('${escapeHtml(url)}')"></span>`;
 }
 
 function categoryIcon(category) {
@@ -248,11 +275,18 @@ function renderFilters() {
     (s) => `${sourceIcon(s)}<span class="chip__label">${escapeHtml(s.name)}</span><span class="chip__label-short">${escapeHtml(s.shortName || s.name)}</span>`,
     (id, multi) => { state.sources = toggleSelection(state.sources, id, multi, sources.map((s) => s.id)); update(); });
 
-  const usedCategories = new Set(data.events.flatMap((e) => e.categories));
+  // jen kategorie s nadcházejícími akcemi (např. „Ostatní“ se ukáže, až nějakou akci bude mít)
+  const usedCategories = new Set(data.events.filter((e) => !e.hidden && e._last >= today).flatMap((e) => e.categories));
+  state.categories?.forEach((id) => usedCategories.add(id)); // vybranou kategorii z odkazu neschovávat
   const categories = data.categories.filter((c) => usedCategories.has(c.id));
   renderChips(document.getElementById('category-filter'), categories, state.categories,
     (c) => `${categoryIcon(c)}<span class="chip__label">${escapeHtml(c.label)}</span><span class="chip__label-short">${escapeHtml(c.shortLabel || c.label)}</span>`,
     (id, multi) => { state.categories = toggleSelection(state.categories, id, multi, categories.map((c) => c.id)); update(); });
+  // zaškrtávátko na konci řady kategorií (počítá se do zhuštění filtrů jako další štítek)
+  document.getElementById('category-filter').insertAdjacentHTML('beforeend', `
+    <label class="regular-toggle" title="Pravidelné akce (cvičení, kurzy, bohoslužby…)">
+      <input type="checkbox" id="regular-toggle"${state.regular ? ' checked' : ''}><span>Pravidelné</span>
+    </label>`);
 
   // filtr obcí se ukáže, až budou zdroje z víc obcí
   const villages = [...new Set(sources.map((s) => s.village).filter(Boolean))];
@@ -265,12 +299,9 @@ function renderFilters() {
   }
   fitFilters();
 
-  document.querySelectorAll('#calendar-toggle').forEach((b) => {
-    b.setAttribute('aria-pressed', String(state.showCalendar));
-  });
   const search = document.getElementById('search');
   if (search.value !== state.query) search.value = state.query;
-  document.getElementById('reset-filters').hidden = !(state.sources || state.categories || state.villages || state.query);
+  document.getElementById('reset-filters').hidden = !isFilterActive();
 }
 
 // ---------- Karta akce ----------
@@ -309,7 +340,7 @@ function eventCard(e, day) {
     <article class="${classes}" style="--icon-color:${escapeHtml(source.color)}">
       <div class="event__time">${timeLabel(e, day)}</div>
       <div class="event__body">
-        <h3 class="event__title">${title}</h3>
+        <h3 class="event__title">${eventIcon(e)}${title}</h3>
         <div class="event__meta">
           <span class="event__source">${sourceIcon(source, true)}${escapeHtml(source.name)}${alsoIn.length ? ` (i ${escapeHtml(alsoIn.join(', '))})` : ''}</span>
           ${e.location ? `<span>📍 ${escapeHtml(e.location)}</span>` : ''}
@@ -404,13 +435,63 @@ function renderDays(byDay, holidays) {
   }).join('');
 }
 
+const isCurrentMonth = () => !state.month || state.month === today.slice(0, 7);
+
 /**
- * Začátek seznamu podle kalendáře: aktuální měsíc (nebo skrytý kalendář) → od dneška,
- * jiný zobrazený měsíc (dopředu i dozadu) → od jeho prvního dne.
+ * Začátek seznamu podle kalendáře: aktuální měsíc → od dneška (s „Zobrazit proběhlé“
+ * od 1. dne měsíce), jiný zobrazený měsíc (dopředu i dozadu) → od jeho prvního dne.
  */
 function listStart() {
-  const month = state.showCalendar && state.month;
-  return month && month !== today.slice(0, 7) ? `${month}-01` : today;
+  if (!isCurrentMonth()) return `${state.month}-01`;
+  return state.showPast ? `${today.slice(0, 7)}-01` : today;
+}
+
+/** Proběhlé akce aktuálního měsíce (od 1. dne do včerejška), které seznam od dneška neukazuje. */
+const pastThisMonth = (events) => events.filter((e) => !e.recurring && e._last < today && e._last >= `${today.slice(0, 7)}-01`);
+
+/** Nedávno přidané nadcházející akce; z opakované akce jen nejbližší termín. */
+function recentlyAdded(events) {
+  const since = Math.max(Date.now() - RECENT_DAYS * 864e5, RECENT_SINCE);
+  const seen = new Set();
+  return events
+    .filter((e) => e.added && Date.parse(e.added) >= since && e._last >= today)
+    .sort((a, b) => a._first.localeCompare(b._first) || compareEvents(a, b))
+    .filter((e) => {
+      if (!e.recurring) return true;
+      const key = `${e.source}|${e.title}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+/** Seznam nedávno přidaných akcí (místo běžného seznamu). */
+function renderRecent(events, holidays) {
+  const list = recentlyAdded(events);
+  const byDay = new Map();
+  for (const e of list) {
+    const day = e._first < today ? today : e._first;
+    if (!byDay.has(day)) byDay.set(day, []);
+    byDay.get(day).push(e);
+  }
+  return listButtons(events)
+    + (list.length ? renderDays(byDay, holidays) : '<p class="empty">Za poslední dny nepřibyla žádná akce.</p>');
+}
+
+/** Řádek tlačítek nad seznamem: proběhlé akce tohoto měsíce a nedávno přidané. */
+function listButtons(events) {
+  const buttons = [];
+  const past = pastThisMonth(events).length;
+  if (isCurrentMonth() && past && !state.showRecent) {
+    buttons.push(`<button type="button" class="link-button" data-action="past" aria-pressed="${state.showPast}">`
+      + `${state.showPast ? 'Skrýt' : 'Zobrazit'} proběhlé akce (${past})</button>`);
+  }
+  const recent = recentlyAdded(events).length;
+  if (recent || state.showRecent) {
+    buttons.push(`<button type="button" class="link-button" data-action="recent" aria-pressed="${state.showRecent}">`
+      + `${state.showRecent ? 'Zobrazit všechny akce' : `Nedávno přidané události (${recent})`}</button>`);
+  }
+  return buttons.length ? `<div class="more">${buttons.join('')}</div>` : '';
 }
 
 /** Seznam jediného dne vybraného v kalendáři. */
@@ -420,34 +501,52 @@ function renderSelectedDay(events, holidays) {
   if (!byDay.has(day)) byDay.set(day, []);
   return longEventsBlock(events, day, day)
     + renderDays(byDay, holidays)
-    + `<div class="more"><button type="button" class="button button--ghost" data-action="clear-day">Zobrazit všechny akce</button></div>`;
+    + `<div class="more"><button type="button" class="link-button" data-action="clear-day">Zobrazit všechny akce</button></div>`;
 }
 
+/** 'YYYY-MM' posunutý o n měsíců. */
+function shiftMonthKey(month, n) {
+  const [y, m] = month.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1 + n, 1)).toISOString().slice(0, 7);
+}
+
+const lastDayOfMonth = (month) => addDays(`${shiftMonthKey(month, 1)}-01`, -1);
+
+/**
+ * Seznam pod kalendářem: jen akce vybraného měsíce (aktuální měsíc od dneška),
+ * „Zobrazit další akce“ přidá vždy jeden další měsíc. Při hledání všechny nalezené akce.
+ */
 function renderList(events, holidays) {
   if (state.selectedDay) return renderSelectedDay(events, holidays);
-  const from = addDays(listStart(), -state.pastDays);
+  if (state.showRecent) return renderRecent(events, holidays);
+  const from = listStart();
+  const lastEventDay = events.reduce((max, e) => (e._last > max ? e._last : max), from);
   // při hledání ukázat všechny nalezené akce, i ty za mnoho měsíců
-  const to = state.query
-    ? events.reduce((max, e) => (e._last > max ? e._last : max), from)
-    : addDays(from, state.listDays);
+  const to = state.query || state.extraMonths === Infinity
+    ? lastEventDay
+    : lastDayOfMonth(shiftMonthKey(state.month || today.slice(0, 7), state.extraMonths));
   const byDay = groupByDay(events, from, to, holidays, { holidayDays: !state.query });
 
   const days = [...byDay.keys()].sort();
-  const later = events.filter((e) => e._first > to).length;
-  const hasPast = events.some((e) => e._first < from);
+  // „Zobrazit další akce“ přidá jeden měsíc (odkaz je, i když je měsíc prázdný);
+  // když už za seznamem zbývá málo akcí, ukáže všechny zbývající naráz
+  const nextMonth = shiftMonthKey(to.slice(0, 7), 1);
+  const nextCount = events.filter((e) => !e.recurring && e._first <= lastDayOfMonth(nextMonth) && e._last >= `${nextMonth}-01`).length;
+  const remaining = events.filter((e) => !e.recurring && e._first > to).length;
+  const remainingAll = events.some((e) => e._first > to);
+  const showAllNext = remaining < SHOW_ALL_BELOW;
 
-  let html = '';
-  if (hasPast) {
-    html += `<div class="more"><button type="button" class="button button--ghost" data-action="past">Zobrazit proběhlé akce</button></div>`;
-  }
+  let html = listButtons(events);
   const longBlock = longEventsBlock(events, from, to);
   html += longBlock;
   if (!longBlock && !days.some((d) => byDay.get(d).length)) {
     html += `<p class="empty">${events.length ? 'V tomto období žádné akce nejsou.' : 'Filtrům neodpovídá žádná akce.'}</p>`;
   }
   html += renderDays(byDay, holidays);
-  if (later) {
-    html += `<div class="more"><button type="button" class="button button--ghost" data-action="later">Zobrazit další akce (${later})</button></div>`;
+  if (!state.query && remainingAll) {
+    const monthName = formatDay(`${nextMonth}-01`, { month: 'long', ...(nextMonth.slice(0, 4) === today.slice(0, 4) ? {} : { year: 'numeric' }) });
+    const label = showAllNext ? `Zobrazit všechny další akce (${remaining})` : `Zobrazit další akce – ${escapeHtml(monthName)} (${nextCount})`;
+    html += `<div class="more"><button type="button" class="link-button" data-action="${showAllNext ? 'all-later' : 'later'}">${label}</button></div>`;
   }
   return html;
 }
@@ -552,7 +651,7 @@ function renderMonth(events, holidays) {
         e.cancelled && 'month__pill--cancelled'].filter(Boolean).join(' ');
       // v buňce kalendáře krátký název (bez společného prefixu zdroje), v bublině plný
       bars += `<span class="${classes}" data-event-id="${escapeHtml(e.id)}" style="grid-column:${item.from + 1} / ${item.to + 2};grid-row:${lane + 2};--icon-color:${escapeHtml(src.color)}">`
-        + `${sourceIcon(src)}<span>${escapeHtml(time + (e.shortTitle || e.title))}</span></span>`;
+        + `${e.icon ? eventIcon(e) : sourceIcon(src)}<span>${escapeHtml(time + (e.shortTitle || e.title))}</span></span>`;
     }
 
     let cells = '';
@@ -578,7 +677,7 @@ function renderMonth(events, holidays) {
         : '';
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
-          + `${regular.slice(0, 3).map((e) => sourceIcon(sourcesById[e.source] || { icon: 'nezarazene.svg' }, true)).join('')}`
+          + `${regular.slice(0, 3).map(regularIcon).join('')}`
           + `${regular.length > 3 ? `<small>+${regular.length - 3}</small>` : ''}</span>`
         : '';
       const label = `${formatDay(d, { weekday: 'long', day: 'numeric', month: 'long' })}: ${list.length} akcí`;
@@ -625,13 +724,14 @@ let monthSlide = null; // směr animace při přechodu na jiný měsíc
 /** Seznam znovu od začátku (vybraný den, proběhlé a „další akce“ pryč). */
 function resetListRange() {
   state.selectedDay = null;
-  state.pastDays = 0;
-  state.listDays = LIST_DAYS_STEP;
+  state.showPast = false;
+  state.showRecent = false;
+  state.extraMonths = 0;
 }
 
 /** Přejetí prstem po kalendáři doleva/doprava = další/předchozí měsíc. */
 function setupMonthSwipe() {
-  narrowScreen.addEventListener('change', () => { if (data && state.showCalendar) update({ keepHash: true }); });
+  narrowScreen.addEventListener('change', () => { if (data) update({ keepHash: true }); });
   const view = document.getElementById('view');
   let start = null;
   view.addEventListener('touchstart', (ev) => {
@@ -654,7 +754,7 @@ function setupMonthSwipe() {
 
 // ---------- Stažení výběru jako .ics ----------
 
-const isFilterActive = () => Boolean(state.sources || state.categories || state.villages || state.query);
+const isFilterActive = () => Boolean(state.sources || state.categories || state.villages || state.query || !state.regular);
 
 function filterDescription() {
   const parts = [];
@@ -662,6 +762,7 @@ function filterDescription() {
   if (state.categories) parts.push(`kategorie: ${[...state.categories].map((id) => categoriesById[id]?.label || id).join(', ')}`);
   if (state.villages) parts.push(`obec: ${[...state.villages].join(', ')}`);
   if (state.query) parts.push(`hledání: „${state.query}“`);
+  if (!state.regular) parts.push('bez pravidelných');
   return parts.join(' · ');
 }
 
@@ -691,7 +792,7 @@ function update({ keepHash = false } = {}) {
   const downloadButton = document.getElementById('download-filtered');
   downloadButton.hidden = !CUSTOM_ICS_ENABLED || !isFilterActive() || !upcoming;
   refreshSubscribePanel?.();
-  document.getElementById('view').innerHTML = (state.showCalendar ? renderMonth(events, holidays) : '')
+  document.getElementById('view').innerHTML = renderMonth(events, holidays)
     + `<div class="event-list">${renderList(events, holidays)}</div>`;
 }
 
@@ -709,9 +810,19 @@ function renderStatus() {
 function renderFooter() {
   document.getElementById('generated-at').textContent = new Date(data.generatedAt)
     .toLocaleString('cs-CZ', { timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
-  document.getElementById('source-links').innerHTML = data.sources
-    .map((s) => (s.link ? `<a href="${escapeHtml(s.link)}" target="_blank" rel="noopener">${escapeHtml(s.name)}</a>` : escapeHtml(s.name)))
-    .join(', ');
+  // svátky se nevypisují; vlastní Google kalendáře souhrnně jednou položkou, jejich doplňkové zdroje (farnost) zvlášť
+  const credit = (name, icon, link) => {
+    const label = link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(name)}</a>` : escapeHtml(name);
+    return `<span class="site-footer__source">${icon ? sourceIcon({ icon }, true) : ''}${label}</span>`;
+  };
+  const sources = data.sources.filter((s) => s.display !== 'dayLabel');
+  const google = sources.filter((s) => s.type === 'ical');
+  const items = [
+    ...sources.filter((s) => s.type !== 'ical').map((s) => credit(s.fullName || s.name, s.icon, s.link)),
+    ...sources.flatMap((s) => s.feeds || []).map((f) => credit(f.fullName, f.icon, f.link)),
+    ...(google.length ? [credit('Google kalendáře', google[0].icon, null)] : []),
+  ];
+  document.getElementById('source-links').innerHTML = items.join(', ');
 }
 
 /**
@@ -762,7 +873,7 @@ function setupSubscribe() {
         window.prompt('Zkopírujte adresu kalendáře:', allUrl);
       }
     });
-    document.querySelector('.site-header .wrap').append(panel);
+    document.querySelector('.filters__tools').after(panel);
   });
 }
 
@@ -823,12 +934,6 @@ function setupThemeToggle() {
 }
 
 function setupEvents() {
-  document.getElementById('calendar-toggle').addEventListener('click', () => {
-    state.showCalendar = !state.showCalendar;
-    if (!state.showCalendar) resetListRange(); // bez kalendáře seznam vždy od dneška
-    update();
-  });
-
   let searchTimer;
   document.getElementById('search').addEventListener('input', (ev) => {
     clearTimeout(searchTimer);
@@ -837,10 +942,17 @@ function setupEvents() {
 
   document.getElementById('download-filtered').addEventListener('click', downloadFiltered);
 
+  document.querySelector('.filters').addEventListener('change', (ev) => {
+    if (ev.target.id !== 'regular-toggle') return;
+    state.regular = ev.target.checked;
+    update();
+  });
+
   document.getElementById('reset-filters').addEventListener('click', () => {
     state.sources = null;
     state.categories = null;
     state.villages = null;
+    state.regular = true;
     state.query = '';
     update();
   });
@@ -851,11 +963,16 @@ function setupEvents() {
     const dayButton = ev.target.closest('[data-day]') || (ev.target.closest('.month__pill')
       && document.elementsFromPoint(ev.clientX, ev.clientY).find((el) => el.matches('.month__day')));
     if (action === 'past') {
-      state.pastDays += PAST_DAYS_STEP;
-      state.listDays += PAST_DAYS_STEP;
+      state.showPast = !state.showPast;
+      update({ keepHash: true });
+    } else if (action === 'recent') {
+      state.showRecent = !state.showRecent;
       update({ keepHash: true });
     } else if (action === 'later') {
-      state.listDays += LIST_DAYS_STEP;
+      state.extraMonths += 1;
+      update({ keepHash: true });
+    } else if (action === 'all-later') {
+      state.extraMonths = Infinity;
       update({ keepHash: true });
     } else if (action === 'prev-month' || action === 'next-month') {
       shiftMonth(action === 'prev-month' ? -1 : 1);

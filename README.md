@@ -2,6 +2,7 @@
 
 Souhrnný kalendář obecních, kulturních a sportovních akcí z více zdrojů na jednom místě.
 Statický web (HTML + CSS + JS) na GitHub Pages, data přegeneruje GitHub Action třikrát denně.
+Běží na https://kalendar.prolidiostopovice.cz.
 
 ```
 zdroje (RSS, Wix, rozpis hřiště, Google iCal)
@@ -16,10 +17,10 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 |---|---|---|
 | Obec Ostopovice | `ipo-rss` | RSS kalendáře akcí (redakční systém IPO). Jen datum, bez času → celodenní akce. Feed má jen nadcházející akce, proběhlé drží náš archiv. |
 | Knihovna Ostopovice | `wix-events` | Veřejné Wix Events API (token návštěvníka z `/_api/v1/access-tokens`). Vrací i všechny termíny opakovaných akcí a proběhlé akce. Záloha: seznam vložený ve stránce (omezený). |
-| Klub seniorů Ostopovice | `text-program` | Program jako prostý text: řádek s datem („31. ledna 2026 \| sobota“, i rozsahy) a pod ním položky s pomlčkou. Čas („od 16:00“) a známá místa (`options.places`) se vytáhnou zvlášť. Položky bez data se přeskočí. **Každý rok je potřeba přepsat `url` na `program-<rok>.html`.** |
+| Klub seniorů | `text-program` | Program jako prostý text: řádek s datem („31. ledna 2026 \| sobota“, i rozsahy) a pod ním položky s pomlčkou. Čas („od 16:00“) a známá místa (`options.places`) se vytáhnou zvlášť. Položky bez data se přeskočí. **Každý rok je potřeba přepsat `url` na `program-<rok>.html`.** |
 | TJ Sokol Ostopovice | `nhjmop` | Rozpis hřiště z nhjmop.cz (domácí utkání národní házené, celá sezóna). |
 | Státní svátky | `ical` | Google iCal; jen „Státní svátek“, zobrazují se jako popisek dne (`display: dayLabel`). |
-| Nezařazené | `ical` | Vlastní Google kalendář pro akce v obci, které nepatří pod žádný jiný zdroj (`allowEmpty`, `adminRefresh`). Navíc doplňkový zdroj (`extraFeeds`) **Farnost Troubsko** (`parish-schedule`): z týdenního pořadu bohoslužeb jen ty v kapli Ostopovice, kategorie Církev. Selhání doplňku nesmaže jeho poslední akce. |
+| Nezařazené | `ical` | Vlastní Google kalendář (opakované události jen na tento a příští měsíc, `recurringMonths`) pro akce v obci, které nepatří pod žádný jiný zdroj (`allowEmpty`, `adminRefresh`). Navíc doplňkový zdroj (`extraFeeds`) **Farnost Troubsko** (`parish-schedule`): z týdenního pořadu bohoslužeb jen ty v kapli Ostopovice, kategorie Církev. Selhání doplňku nesmaže jeho poslední akce. |
 | Připravované události | `ical` | Vlastní Google kalendář se zástupnými akcemi; skutečný zdroj se stejnou akcí má přednost. |
 
 ## Konfigurace
@@ -33,6 +34,11 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   - `hideLocations` — regexy „domácích“ adres zdroje (knihovna, hřiště); ty se nezobrazují,
     adresa se ukáže jen u akcí, které jsou jinde
   - `enabled: false` — zdroj dočasně vypnout
+  - `fullName` — plný název do patičky webu (Obec Ostopovice…); doplňkové zdroje (`extraFeeds`)
+    mají v patičce vlastní položku s `fullName`, `icon` a `link`. Svátky se v patičce
+    nevypisují, vlastní Google kalendáře souhrnně jako „vlastní Google kalendáře“.
+  - `options.recurringMonths` (iCal) — opakované události jen do konce (n-1). dalšího měsíce
+    (2 = tento a příští), ať pravidelné akce nezahltí kalendář na rok dopředu
 - **`config/categories.json`** — kategorie a klíčová slova (regulární výrazy bez diakritiky,
   porovnávají se s názvem a popisem akce).
 - **Kategorie přímo v popisu akce** (hlavně pro vlastní Google kalendáře): do popisu události
@@ -40,7 +46,11 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   Platí id i název kategorie, bez ohledu na diakritiku (`#vzdelavani` = `#Vzdělávání`).
   Štítky mají přednost před pravidly a z popisu na webu zmizí.
   Odkaz na akci jde zapsat samostatným řádkem `#link: https://…` — stane se z něj odkaz
-  v názvu akce a v popisu se nezobrazí. Další aliasy jdou přidat
+  v názvu akce a v popisu se nezobrazí.
+  Vlastní ikona akce: `#icon:ball-football` (kdekoli v popisu, hlavně u pravidelných akcí
+  z Google kalendáře). Název je z [Tabler Icons](https://tabler.io/icons); sběr ikonu stáhne
+  do `public/icons/tabler/` (commituje se s daty), neexistující název jen zaloguje a ignoruje.
+  Ikona se ukáže v kalendáři (místo ikony zdroje) i před názvem akce, v barvě její kategorie. Další aliasy jdou přidat
   do kategorie jako `"tags": ["deticky"]`.
 - **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho
   v `public/data/events.json`), např.:
@@ -81,6 +91,14 @@ i stránky ostatních projektů na stejné doméně — používej jen na svém 
   v .ics jsou akce od 60 dní zpět. Pro libovolnou kombinaci filtrů nabízí web jednorázové
   stažení .ics vytvořeného přímo v prohlížeči (`js/ics-export.js`).
 - Stejná akce ve dvou zdrojích (stejný název a den) se zobrazí jen jednou.
+- Každá akce má `added` = kdy se u nás poprvé objevila. Nový termín už známé opakované akce
+  (řada se rozbalí o další měsíc) novou akcí není. Web z toho ukazuje „Nedávno přidané události“
+  (posledních 7 dní, ne dřív než 8. 10. 2026 12:00 — do té doby se zdroje teprve plnily).
+- **Upozornění e-mailem:** když běh najde nové nadcházející akce, zapíše je do `added-events.md`
+  a workflow je přidá jako komentář do issue „Nově přidané akce (upozornění)“ se zmínkou vlastníka
+  repa → GitHub pošle e-mail. Issue workflow založí sám; nezavírat.
+- „Zobrazit proběhlé akce (N)“ je jen v aktuálním měsíci a ukáže proběhlé akce od 1. dne měsíce.
+- Seznam pod kalendářem ukazuje jen akce vybraného měsíce (aktuální měsíc od dneška); „Zobrazit další akce – <měsíc> (N)“ přidá vždy jeden další měsíc; když za seznamem zbývá méně než 30 akcí (bez pravidelných), je místo něj „Zobrazit všechny další akce (N)“ a ukáže je naráz. Při hledání se ukážou všechny nalezené akce.
 
 ## Lokálně
 
@@ -102,11 +120,14 @@ npm run serve            # náhled na http://localhost:4173
 
 ### Vlastní doména (volitelně)
 
-Např. `ostopovice.craz.cz`: v DNS přidat `CNAME ostopovice → <účet>.github.io`,
+Teď `kalendar.prolidiostopovice.cz` (soubor `CNAME`). Postup: v DNS přidat `CNAME kalendar → <účet>.github.io`,
 pak Settings → Pages → Custom domain a zaškrtnout Enforce HTTPS. Hosting zůstává na GitHubu.
 
 ## Filtry v URL
 
 Stav filtrů je v adrese za `#`, takže jde poslat odkaz, např.
-`#t=deti` (jen akce pro děti), `#v=month&z=sokol` (měsíc, jen Sokol), `#q=jóga`.
+`#t=deti` (jen akce pro děti), `#m=2026-11&z=sokol` (listopad, jen Sokol), `#q=jóga`.
 Dvojklik na štítek filtru vybere jen tuto položku.
+Zaškrtávátko „Pravidelné“ (vedle kategorií) skryje pravidelné akce, v adrese `#r=0`.
+Ve filtru kategorií jsou jen kategorie, které mají nějakou nadcházející akci
+(„Ostatní“ se tak ukáže, až do ní něco spadne).

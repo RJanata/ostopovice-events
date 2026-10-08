@@ -52,7 +52,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* ---------- Hlavička ---------- */
 
 .site-header { padding: 28px 0 8px; }
-.site-header .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; }
+/* přepínač režimu vpravo nahoře, zarovnaný s nadpisem */
+.site-header .wrap { display: flex; gap: 12px 16px; align-items: flex-start; justify-content: space-between; }
 .site-header h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.15; letter-spacing: -0.01em; }
 .site-header__lead { margin: 4px 0 0; color: var(--muted); }
 
@@ -161,6 +162,16 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat;
 }
 
+/* zaškrtávátko „Pravidelné“ na konci řady kategorií */
+.regular-toggle {
+  display: inline-flex; align-items: center; gap: 6px; margin-left: 6px; padding: 4px 2px;
+  font-size: 0.9rem; color: var(--text); cursor: pointer; user-select: none;
+}
+.regular-toggle input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+/* pravidelná akce z vlastního kalendáře v měsíci: ikona kategorie */
+.regular-cat { display: inline-grid; place-items: center; width: 15px; height: 15px; }
+.regular-cat .cat-icon { width: 14px; height: 14px; }
+
 .search {
   display: flex; align-items: center; gap: 8px; flex: 1 1 220px; max-width: 360px;
   padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--muted);
@@ -226,7 +237,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .day--empty { margin-bottom: 10px; }
 .day--empty .day__heading { position: static; color: var(--muted); font-weight: 600; }
 
-.more { display: flex; justify-content: center; margin: 8px 0 24px; }
+/* odkazy nad a pod seznamem (proběhlé, nedávno přidané, další akce) */
+.more { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; margin: 0 0 12px; font-size: 0.9rem; }
+.more .link-button[aria-pressed="true"] { font-weight: 600; }
+.month + .event-list > .more:first-child { margin-top: -6px; }
 
 .empty { padding: 40px 16px; text-align: center; color: var(--muted); }
 
@@ -254,7 +268,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   min-height: 122px; border-top: 1px solid var(--border);
 }
 .month__day {
-  grid-row: 1 / -1; background: var(--surface); padding: 5px 6px; display: flex; flex-direction: column; gap: 3px;
+  grid-row: 1 / -1; background: var(--surface); padding: 4px 5px; display: flex; flex-direction: column; gap: 3px;
   border: 0; border-left: 1px solid var(--border); font: inherit; color: inherit; text-align: left; cursor: pointer; min-width: 0;
 }
 .month__day:first-child { border-left: 0; }
@@ -293,7 +307,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 }
 .month__day-head {
   position: relative; z-index: 2; align-self: flex-start; max-width: 100%;
-  margin: -4px 0 0 -3px; padding: 4px 5px 0 3px; border-radius: 4px; background: inherit; /* podklad i nad číslem, aby čára nevykukovala */
+  margin: -1px 0 0 -1px; padding: 1px 4px 0 1px; border-radius: 3px; background: inherit; /* podklad i nad číslem, aby čára nevykukovala; mimo rámeček vybraného dne (2px) */
 }
 .month__long--before { margin-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
 .month__long--after { margin-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
@@ -308,6 +322,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 
 .site-footer { margin-top: 40px; padding: 20px 0 32px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
 .site-footer p { margin: 0 0 6px; }
+/* zdroje jako běžný text (účaří sedí s okolní větou), ikona jen podsazená k písmu */
+.site-footer__source { white-space: nowrap; }
+.site-footer__source .source-icon { width: 14px; height: 14px; margin-right: 3px; vertical-align: -2px; }
+.site-footer__copyright { margin-top: 12px !important; }
 
 /* ---------- Mobil ---------- */
 
@@ -341,19 +359,15 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 @keyframes month-from-left { from { transform: translateX(-24px); opacity: 0.4; } }
 @media (prefers-reduced-motion: reduce) { .month__grid--from-next, .month__grid--from-prev { animation: none; } }
 
-/* přepínač kalendáře nad seznamem */
-.calendar-toggle {
-  display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 8px;
-  border: 1px solid var(--border); background: transparent; color: var(--muted); font: inherit; font-size: 0.9rem; cursor: pointer;
-}
-.calendar-toggle[aria-pressed="true"] {
-  color: var(--text); border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent);
-  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
-}
-.calendar-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.month + .event-list { margin-top: 20px; }
+/* odkaz „Přidat do mého kalendáře“ vedle hledání */
+.subscribe-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+.month + .event-list { margin-top: 14px; }
 
 /* den vybraný v kalendáři */
 .day--selected > .day__heading { color: var(--accent); }
 .day--selected > .day__heading::before { content: ""; width: 4px; align-self: stretch; border-radius: 2px; background: var(--accent); }
 .day { scroll-margin-top: 12px; }
+
+/* vlastní ikona akce (#icon:… v popisu) */
+.event__title .event-icon { width: 17px; height: 17px; margin-right: 6px; vertical-align: -2px; }
+.month__pill .event-icon { width: 14px; height: 14px; margin-left: 2px; }
