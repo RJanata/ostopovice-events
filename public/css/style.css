@@ -268,7 +268,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__regular { display: inline-flex; gap: 2px; align-items: center; flex: none; }
 .month__regular .source-icon { width: 15px; height: 15px; opacity: 0.85; }
 .month__regular small { font-size: 0.65rem; color: var(--muted); margin-left: 1px; }
-.month__day-holiday { min-width: 0; font-size: 0.7rem; color: var(--holiday); line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.month__day-holiday { min-width: 0; font-size: 0.7rem; color: var(--holiday); line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; align-self: center; position: relative; top: -1px; }
 
 .month__pill {
   position: relative; z-index: 1; pointer-events: none; align-self: center;
