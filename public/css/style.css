@@ -304,6 +304,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__more { position: relative; z-index: 1; pointer-events: none; align-self: center; margin: 0 6px; font-size: 0.72rem; color: var(--muted); }
 .month__dots { display: none; flex-wrap: wrap; gap: 3px; }
 .month__dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--icon-color); }
+.month__dots i.is-regular { width: 6px; height: 6px; background: none; border: 1.5px solid var(--icon-color); opacity: 0.8; }
 .month__selected { margin-top: 18px; }
 
 /* ---------- Patička ---------- */
@@ -319,7 +320,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .event__time small { display: inline; margin-left: 6px; }
   .month__week { grid-template-rows: auto 1fr; min-height: 58px; }
   .month__day { padding: 4px; }
-  .month__pill, .month__more, .month__day-holiday { display: none; }
+  .month__pill, .month__more, .month__day-holiday, .month__regular { display: none; }
   .month__dots { display: flex; }
   .month__weekday { padding: 4px; text-align: center; }
 }

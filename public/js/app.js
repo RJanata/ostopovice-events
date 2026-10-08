@@ -547,7 +547,11 @@ function renderMonth(events, holidays) {
       }
       const single = list.filter((e) => !e.recurring && !e._long);
       const regular = list.filter((e) => e.recurring);
-      const dots = single.length ? `<span class="month__dots">${single.slice(0, 6).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>` : '';
+      // tečky (jen na mobilu): plné = jednorázové akce, obrysové = pravidelné
+      const dotFor = (e, cls = '') => `<i${cls ? ` class="${cls}"` : ''} style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`;
+      const dots = single.length || regular.length
+        ? `<span class="month__dots">${single.slice(0, 6).map((e) => dotFor(e)).join('')}${regular.slice(0, 3).map((e) => dotFor(e, 'is-regular')).join('')}</span>`
+        : '';
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
           + `${regular.slice(0, 3).map((e) => sourceIcon(sourcesById[e.source] || { icon: 'nezarazene.svg' }, true)).join('')}`
