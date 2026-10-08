@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T03:09:36.846Z",
+ "generatedAt": "2026-10-08T08:14:11.450Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -87,10 +87,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T03:09:36.846Z",
+   "lastSuccess": "2026-10-08T08:14:11.450Z",
    "ok": true,
    "error": null,
-   "count": 173
+   "count": 231
   },
   {
    "id": "pripravovane",
@@ -3812,6 +3812,22 @@
    ]
   },
   {
+   "id": "nezarazene-ubr66k",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-10-07T16:00:00.000Z",
+   "end": "2026-10-07T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4025,6 +4041,22 @@
     "obec"
    ],
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče"
+  },
+  {
+   "id": "nezarazene-a7wk58",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-10-14T16:00:00.000Z",
+   "end": "2026-10-14T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
   },
   {
    "id": "nezarazene-1mncwcw",
@@ -4247,6 +4279,22 @@
    ]
   },
   {
+   "id": "nezarazene-1jf6wtg",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-10-21T16:00:00.000Z",
+   "end": "2026-10-21T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1ld5nrc",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4401,6 +4449,22 @@
    "categories": []
   },
   {
+   "id": "nezarazene-lne1qq",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-10-28T17:00:00.000Z",
+   "end": "2026-10-28T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-17arpiu",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4503,6 +4567,22 @@
    "categories": [
     "kultura",
     "vzdelavani"
+   ]
+  },
+  {
+   "id": "nezarazene-1j4sg4t",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-04T17:00:00.000Z",
+   "end": "2026-11-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -4624,6 +4704,22 @@
    "image": "",
    "categories": [
     "kultura"
+   ]
+  },
+  {
+   "id": "nezarazene-tdf4vb",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-11T17:00:00.000Z",
+   "end": "2026-11-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -4749,6 +4845,22 @@
    ]
   },
   {
+   "id": "nezarazene-1ukocgo",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-18T17:00:00.000Z",
+   "end": "2026-11-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1bvi37w",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4851,6 +4963,22 @@
    "recurring": true,
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -5012,6 +5140,22 @@
    ]
   },
   {
+   "id": "nezarazene-t6lsf0",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-12-02T17:00:00.000Z",
+   "end": "2026-12-02T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-fhd90",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5164,6 +5308,22 @@
    ]
   },
   {
+   "id": "nezarazene-1fepbq5",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-12-09T17:00:00.000Z",
+   "end": "2026-12-09T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1tzallt",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5284,6 +5444,22 @@
    ]
   },
   {
+   "id": "nezarazene-y8rz9p",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-12-16T17:00:00.000Z",
+   "end": "2026-12-16T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1jvsl19",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5370,6 +5546,22 @@
    "recurring": true,
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-18rc5up",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-12-23T17:00:00.000Z",
+   "end": "2026-12-23T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -5485,6 +5677,22 @@
    ]
   },
   {
+   "id": "nezarazene-13no6kx",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-12-30T17:00:00.000Z",
+   "end": "2026-12-30T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-6aq36l",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5568,6 +5776,22 @@
    ]
   },
   {
+   "id": "nezarazene-8m958v",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-01-06T17:00:00.000Z",
+   "end": "2027-01-06T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1rj80xj",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5639,6 +5863,22 @@
    "categories": [
     "deti",
     "vzdelavani"
+   ]
+  },
+  {
+   "id": "nezarazene-5pnutx",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-01-13T17:00:00.000Z",
+   "end": "2027-01-13T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -5714,6 +5954,22 @@
    ]
   },
   {
+   "id": "nezarazene-1d1kstn",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-01-20T17:00:00.000Z",
+   "end": "2027-01-20T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1uh1nmn",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5768,6 +6024,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-65gp4y",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-01-27T17:00:00.000Z",
+   "end": "2027-01-27T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -5828,6 +6100,22 @@
    ]
   },
   {
+   "id": "nezarazene-13uy9lr",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-02-03T17:00:00.000Z",
+   "end": "2027-02-03T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-3tj5lz",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5882,6 +6170,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10u0s0j",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-02-10T17:00:00.000Z",
+   "end": "2027-02-10T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -5942,6 +6246,22 @@
    ]
   },
   {
+   "id": "nezarazene-11ac8a",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-02-17T17:00:00.000Z",
+   "end": "2027-02-17T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1crpztu",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -5996,6 +6316,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-zq6uvk",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-02-24T17:00:00.000Z",
+   "end": "2027-02-24T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6056,6 +6392,22 @@
    ]
   },
   {
+   "id": "nezarazene-17vby42",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-03-03T17:00:00.000Z",
+   "end": "2027-03-03T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-jpxjbu",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6110,6 +6462,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1kto3j2",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-03-10T17:00:00.000Z",
+   "end": "2027-03-10T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6170,6 +6538,22 @@
    ]
   },
   {
+   "id": "nezarazene-16sje7j",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-03-17T17:00:00.000Z",
+   "end": "2027-03-17T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1t6uccf",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6224,6 +6608,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-11q84z9",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-03-24T17:00:00.000Z",
+   "end": "2027-03-24T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6310,6 +6710,22 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1bacf0i",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-03-31T16:00:00.000Z",
+   "end": "2027-03-31T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1t1kk6",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6364,6 +6780,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1dtk7is",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-04-07T16:00:00.000Z",
+   "end": "2027-04-07T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6571,6 +7003,22 @@
    ]
   },
   {
+   "id": "nezarazene-18189l0",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-04-14T16:00:00.000Z",
+   "end": "2027-04-14T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-9i23tc",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6625,6 +7073,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1sr6qb0",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-04-21T16:00:00.000Z",
+   "end": "2027-04-21T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6706,6 +7170,22 @@
    ]
   },
   {
+   "id": "nezarazene-1772is7",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-04-28T16:00:00.000Z",
+   "end": "2027-04-28T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-18mbsj",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6776,6 +7256,22 @@
    ]
   },
   {
+   "id": "nezarazene-x30k8r",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-05-05T16:00:00.000Z",
+   "end": "2027-05-05T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-jbvjon",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6843,6 +7339,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-o2yr3r",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-05-12T16:00:00.000Z",
+   "end": "2027-05-12T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -6939,6 +7451,22 @@
    ]
   },
   {
+   "id": "nezarazene-11bx7qy",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-05-19T16:00:00.000Z",
+   "end": "2027-05-19T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-c09kby",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6993,6 +7521,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1b8msgw",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-05-26T16:00:00.000Z",
+   "end": "2027-05-26T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7095,6 +7639,22 @@
    ]
   },
   {
+   "id": "nezarazene-kzi7pt",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-06-02T16:00:00.000Z",
+   "end": "2027-06-02T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-nan8qp",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7149,6 +7709,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-z2q10o",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-06-09T16:00:00.000Z",
+   "end": "2027-06-09T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7209,6 +7785,22 @@
    ]
   },
   {
+   "id": "nezarazene-iktgeg",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-06-16T16:00:00.000Z",
+   "end": "2027-06-16T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-11l8l1c",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7266,6 +7858,22 @@
    ]
   },
   {
+   "id": "nezarazene-1usarb0",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-06-23T16:00:00.000Z",
+   "end": "2027-06-23T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-5zp3ys",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7320,6 +7928,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1bwpkh8",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-06-30T16:00:00.000Z",
+   "end": "2027-06-30T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7406,6 +8030,22 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1yoxfav",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-07-07T16:00:00.000Z",
+   "end": "2027-07-07T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-6sr1un",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7460,6 +8100,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8l2r4r",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-07-14T16:00:00.000Z",
+   "end": "2027-07-14T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7520,6 +8176,22 @@
    ]
   },
   {
+   "id": "nezarazene-w12j1v",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-07-21T16:00:00.000Z",
+   "end": "2027-07-21T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1v862gn",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7574,6 +8246,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hp10w8",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-07-28T16:00:00.000Z",
+   "end": "2027-07-28T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7634,6 +8322,22 @@
    ]
   },
   {
+   "id": "nezarazene-1dozcw9",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-08-04T16:00:00.000Z",
+   "end": "2027-08-04T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-xvqerp",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7688,6 +8392,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-j21e3r",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-08-11T16:00:00.000Z",
+   "end": "2027-08-11T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7748,6 +8468,22 @@
    ]
   },
   {
+   "id": "nezarazene-1z96f0",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-08-18T16:00:00.000Z",
+   "end": "2027-08-18T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1hfrg1s",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7802,6 +8538,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1m6slis",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-08-25T16:00:00.000Z",
+   "end": "2027-08-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7862,6 +8614,22 @@
    ]
   },
   {
+   "id": "nezarazene-14t0rc3",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-09-01T16:00:00.000Z",
+   "end": "2027-09-01T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1x3xklj",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -7916,6 +8684,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-fpdbso",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-09-08T16:00:00.000Z",
+   "end": "2027-09-08T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -7976,6 +8760,22 @@
    ]
   },
   {
+   "id": "nezarazene-7mvp62",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-09-15T16:00:00.000Z",
+   "end": "2027-09-15T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-8n9f4u",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -8030,6 +8830,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-16cm6h4",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-09-22T16:00:00.000Z",
+   "end": "2027-09-22T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -8103,6 +8919,22 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1x5ltd",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-09-29T16:00:00.000Z",
+   "end": "2027-09-29T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-1qmbl4d",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -8157,6 +8989,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-e77u9c",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-10-06T16:00:00.000Z",
+   "end": "2027-10-06T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -8217,6 +9065,22 @@
    ]
   },
   {
+   "id": "nezarazene-93xunq",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-10-13T16:00:00.000Z",
+   "end": "2027-10-13T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-csh7ym",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -8274,6 +9138,22 @@
    ]
   },
   {
+   "id": "nezarazene-wc3a8k",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-10-20T16:00:00.000Z",
+   "end": "2027-10-20T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-wk6e3c",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -8328,6 +9208,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-16tx4cp",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-10-27T16:00:00.000Z",
+   "end": "2027-10-27T17:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
@@ -8401,6 +9297,22 @@
    ]
   },
   {
+   "id": "nezarazene-1qzhggf",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-11-03T17:00:00.000Z",
+   "end": "2027-11-03T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
+   ]
+  },
+  {
    "id": "nezarazene-15ycgfr",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -8455,6 +9367,22 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1hdbipv",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2027-11-10T17:00:00.000Z",
+   "end": "2027-11-10T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "#cirkev",
+   "image": "",
+   "recurring": true,
+   "categories": [
+    "ostatni"
    ]
   },
   {
