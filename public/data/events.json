@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T14:26:32.071Z",
+ "generatedAt": "2026-10-08T14:33:05.375Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -102,10 +102,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T14:26:32.071Z",
+   "lastSuccess": "2026-10-08T14:33:05.375Z",
    "ok": true,
    "error": null,
-   "count": 14
+   "count": 17
   }
  ],
  "categories": [
@@ -6279,6 +6279,42 @@
    ]
   },
   {
+   "id": "pripravovane-1xl367q",
+   "source": "pripravovane",
+   "title": "Předhodová zábava",
+   "start": "2027-06-11",
+   "end": "2027-06-11",
+   "allDay": true,
+   "location": "Sokolovna",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
+   "id": "pripravovane-tkl77e",
+   "source": "pripravovane",
+   "title": "Mladé hody",
+   "start": "2027-06-19",
+   "end": "2027-06-19",
+   "allDay": true,
+   "location": "Sokolovna",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "svatky-wxpdhy",
    "source": "svatky",
    "title": "Den slovanských věrozvěstů Cyrila a Metoděje",
@@ -6303,6 +6339,24 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "pripravovane-1dkhbnn",
+   "source": "pripravovane",
+   "title": "Velká letní noc",
+   "start": "2027-07-17",
+   "end": "2027-07-17",
+   "allDay": true,
+   "location": "U Tří Bříz",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ]
   },
   {
    "id": "svatky-179n2hh",
