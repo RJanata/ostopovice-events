@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T03:07:52.722Z",
+ "generatedAt": "2026-10-08T03:09:36.846Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -12,7 +12,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -43,8 +43,8 @@
    "display": "events",
    "adminRefresh": false,
    "lastSuccess": "2026-10-08T03:07:52.722Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed",
    "count": 24
   },
   {
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,7 +87,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 173
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T03:07:52.722Z",
+   "lastSuccess": "2026-10-08T03:09:36.846Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3812,21 +3812,6 @@
    ]
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ]
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -3843,6 +3828,21 @@
    ],
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
    ]
   },
   {
