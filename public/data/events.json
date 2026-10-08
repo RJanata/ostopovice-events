@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T02:24:14.659Z",
+ "generatedAt": "2026-10-08T02:28:25.630Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -87,10 +87,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T02:24:14.659Z",
+   "lastSuccess": "2026-10-08T02:28:25.630Z",
    "ok": true,
    "error": null,
-   "count": 172
+   "count": 173
   },
   {
    "id": "pripravovane",
@@ -3831,8 +3831,8 @@
    ]
   },
   {
-   "id": "pripravovane-qi21ye",
-   "source": "pripravovane",
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
    "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
    "start": "2026-10-07T16:30:00.000Z",
    "end": "2026-10-07T16:30:00.000Z",
@@ -3843,6 +3843,9 @@
    "image": "",
    "categories": [
     "ostatni"
+   ],
+   "alsoIn": [
+    "pripravovane"
    ]
   },
   {
