@@ -1,9 +1,10 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje.",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane.",
   "sources": [
     {
       "id": "obec",
       "name": "Obec Ostopovice",
+      "shortName": "Obec",
       "village": "Ostopovice",
       "icon": "obec.png",
       "color": "#c8102e",
@@ -18,6 +19,7 @@
     {
       "id": "knihovna",
       "name": "Knihovna Ostopovice",
+      "shortName": "Knihovna",
       "village": "Ostopovice",
       "icon": "knihovna.png",
       "color": "#e8490f",
@@ -38,8 +40,43 @@
       ]
     },
     {
+      "id": "seniori",
+      "name": "Klub seniorů Ostopovice",
+      "shortName": "Senioři",
+      "village": "Ostopovice",
+      "icon": "seniori.svg",
+      "color": "#6b4ea0",
+      "type": "text-program",
+      "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+      "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+      "categories": [],
+      "fallbackCategories": [],
+      "options": {
+        "selector": "#document",
+        "places": [
+          {
+            "match": "volejnik",
+            "name": "Restaurace U Volejníků"
+          },
+          {
+            "match": "sokolovn",
+            "name": "Sokolovna"
+          },
+          {
+            "match": "knihovn",
+            "name": "Knihovna Ostopovice"
+          }
+        ]
+      },
+      "$comment": "Program je prostý text (datum | den, pod tím položky s pomlčkou). Při změně roku je potřeba upravit url na program-<rok>.html.",
+      "excludeCategories": [
+        "deti"
+      ]
+    },
+    {
       "id": "sokol",
       "name": "TJ Sokol Ostopovice",
+      "shortName": "Sokol",
       "village": "Ostopovice",
       "icon": "sokol.png",
       "color": "#2f6b47",
@@ -60,6 +97,7 @@
     {
       "id": "svatky",
       "name": "Státní svátky",
+      "shortName": "Svátky",
       "village": null,
       "icon": "svatky.svg",
       "color": "#8a3a66",
@@ -77,6 +115,7 @@
     {
       "id": "pripravovane",
       "name": "Připravované události",
+      "shortName": "Připravované",
       "village": "Ostopovice",
       "icon": "pripravovane.svg",
       "color": "#b06b12",

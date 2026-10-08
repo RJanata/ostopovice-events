@@ -16,6 +16,7 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 |---|---|---|
 | Obec Ostopovice | `ipo-rss` | RSS kalendáře akcí (redakční systém IPO). Jen datum, bez času → celodenní akce. Feed má jen nadcházející akce, proběhlé drží náš archiv. |
 | Knihovna Ostopovice | `wix-events` | Veřejné Wix Events API (token návštěvníka z `/_api/v1/access-tokens`). Vrací i všechny termíny opakovaných akcí a proběhlé akce. Záloha: seznam vložený ve stránce (omezený). |
+| Klub seniorů Ostopovice | `text-program` | Program jako prostý text: řádek s datem („31. ledna 2026 \| sobota“, i rozsahy) a pod ním položky s pomlčkou. Čas („od 16:00“) a známá místa (`options.places`) se vytáhnou zvlášť. Položky bez data se přeskočí. **Každý rok je potřeba přepsat `url` na `program-<rok>.html`.** |
 | TJ Sokol Ostopovice | `nhjmop` | Rozpis hřiště z nhjmop.cz (domácí utkání národní házené, celá sezóna). |
 | Státní svátky | `ical` | Google iCal; jen „Státní svátek“, zobrazují se jako popisek dne (`display: dayLabel`). |
 | Obecní kalendář (test) | `ical` | Google iCal. |

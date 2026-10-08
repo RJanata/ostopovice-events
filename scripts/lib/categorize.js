@@ -27,6 +27,8 @@ export function categorize(event, source, rules) {
       if (rule.patterns.some((p) => p.test(text))) result.add(rule.id);
     }
   }
+  // kategorie, které u zdroje nedávají smysl (Mikulášská zábava u seniorů není „Pro děti“)
+  for (const c of source.excludeCategories || []) result.delete(c);
   if (!result.size) for (const c of source.fallbackCategories || []) result.add(c);
   if (!result.size) result.add(FALLBACK_CATEGORY);
   return [...result];

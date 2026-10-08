@@ -58,7 +58,7 @@ export function parseCzechDate(text) {
   return isoDay(Number(m[3]), Number(m[2]), Number(m[1]));
 }
 
-const CZECH_MONTHS = {
+export const CZECH_MONTHS = {
   ledna: 1, února: 2, března: 3, dubna: 4, května: 5, června: 6,
   července: 7, srpna: 8, září: 9, října: 10, listopadu: 11, prosince: 12,
 };

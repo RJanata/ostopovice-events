@@ -18,12 +18,14 @@ import * as icalAdapter from './adapters/ical.js';
 import * as ipoRssAdapter from './adapters/ipo-rss.js';
 import * as wixEventsAdapter from './adapters/wix-events.js';
 import * as nhjmopAdapter from './adapters/nhjmop.js';
+import * as textProgramAdapter from './adapters/text-program.js';
 
 const ADAPTERS = {
   ical: icalAdapter,
   'ipo-rss': ipoRssAdapter,
   'wix-events': wixEventsAdapter,
   nhjmop: nhjmopAdapter,
+  'text-program': textProgramAdapter,
 };
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -232,8 +234,8 @@ async function main() {
 
   const publicSources = sources
     .filter((s) => s.enabled !== false)
-    .map(({ id, name, village, icon, color, link, display, adminRefresh }) => ({
-      id, name, village, icon, color, link: link || null, display: display || 'events', adminRefresh: Boolean(adminRefresh),
+    .map(({ id, name, shortName, village, icon, color, link, display, adminRefresh }) => ({
+      id, name, shortName: shortName || name, village, icon, color, link: link || null, display: display || 'events', adminRefresh: Boolean(adminRefresh),
       ...sourceStatus.find((st) => st.id === id),
     }));
 
@@ -241,7 +243,7 @@ async function main() {
     generatedAt: now.toISOString(),
     calendarName: CALENDAR_NAME,
     sources: publicSources,
-    categories: categoriesConfig.categories.map(({ id, label, color, icon }) => ({ id, label, color, icon })),
+    categories: categoriesConfig.categories.map(({ id, label, shortLabel, color, icon }) => ({ id, label, shortLabel: shortLabel || label, color, icon })),
     events,
   };
 
