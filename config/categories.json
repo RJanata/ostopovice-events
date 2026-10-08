@@ -141,6 +141,20 @@
       "icon": "obec.svg"
     },
     {
+      "id": "cirkev",
+      "label": "Církev",
+      "color": "#8a6d1f",
+      "keywords": [
+        "\\bmse\\b",
+        "bohosluzb",
+        "farnost",
+        "farni",
+        "adorac",
+        "ruzenec"
+      ],
+      "icon": "cirkev.svg"
+    },
+    {
       "id": "ostatni",
       "label": "Ostatní",
       "color": "#6b6b6b",
