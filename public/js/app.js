@@ -163,30 +163,32 @@ function categoryIcon(category) {
 
 /**
  * Výběr ve filtru:
- *   - výchozí je „Vše“ (null) — položky nejsou označené, prochází všechno
- *   - klik na položku při „Vše“ → vybere se jen ona; další kliky položky přidávají/odebírají
- *   - klik na „Vše“, když je označené → „Vše“ se odznačí a označí se všechny položky
- *   - klik na „Vše“, když není označené → zpět na „Vše“
- *   - odznačení poslední položky → zpět na „Vše“
+ *   - výchozí je „Vše“ (null) — prochází všechno
+ *   - klik na položku → vybere se jen ona (přepíná se mezi položkami)
+ *   - Ctrl/⌘ + klik → položka se k výběru přidá, nebo z něj odebere;
+ *     při „Vše“ se tak vybere všechno kromě této položky
+ *   - klik na „Vše“ → zpět na všechno
+ *   - když přes Ctrl zůstane vybráno nic, nebo zase všechno → zpět na „Vše“
  */
 const ALL = '__all__';
 
-function toggleSelection(current, id, allIds) {
-  if (id === ALL) return current === null ? new Set(allIds) : null;
-  if (current === null) return new Set([id]);
-  const set = new Set(current);
+function toggleSelection(current, id, multi, allIds) {
+  if (id === ALL) return null;
+  if (!multi) return new Set([id]);
+  const set = new Set(current ?? allIds);
   if (set.has(id)) set.delete(id); else set.add(id);
-  return set.size ? set : null;
+  return set.size && set.size < allIds.length ? set : null;
 }
 
 function renderChips(container, items, selected, render, onToggle) {
   const allChip = `<button type="button" class="chip chip--all" data-id="${ALL}" aria-pressed="${selected === null}">Vše</button>`;
   container.innerHTML = allChip + items.map((item) => `
     <button type="button" class="chip${item.plain ? ' chip--plain' : ''}" data-id="${escapeHtml(item.id)}"
-      aria-pressed="${selected !== null && selected.has(item.id)}" style="--chip-color:${escapeHtml(item.color)}">${render(item)}</button>`).join('');
+      aria-pressed="${selected !== null && selected.has(item.id)}" style="--chip-color:${escapeHtml(item.color)}"
+      title="Ctrl + klik: přidat k výběru / odebrat z výběru">${render(item)}</button>`).join('');
   container.onclick = (ev) => {
     const chip = ev.target.closest('.chip');
-    if (chip) onToggle(chip.dataset.id);
+    if (chip) onToggle(chip.dataset.id, ev.ctrlKey || ev.metaKey);
   };
 }
 
@@ -194,13 +196,13 @@ function renderFilters() {
   const sources = data.sources.filter((s) => s.display !== 'dayLabel');
   renderChips(document.getElementById('source-filter'), sources, state.sources,
     (s) => `${sourceIcon(s)}<span>${escapeHtml(s.name)}</span>`,
-    (id) => { state.sources = toggleSelection(state.sources, id, sources.map((s) => s.id)); update(); });
+    (id, multi) => { state.sources = toggleSelection(state.sources, id, multi, sources.map((s) => s.id)); update(); });
 
   const usedCategories = new Set(data.events.flatMap((e) => e.categories));
   const categories = data.categories.filter((c) => usedCategories.has(c.id));
   renderChips(document.getElementById('category-filter'), categories, state.categories,
     (c) => `${categoryIcon(c)}<span>${escapeHtml(c.label)}</span>`,
-    (id) => { state.categories = toggleSelection(state.categories, id, categories.map((c) => c.id)); update(); });
+    (id, multi) => { state.categories = toggleSelection(state.categories, id, multi, categories.map((c) => c.id)); update(); });
 
   // filtr obcí se ukáže, až budou zdroje z víc obcí
   const villages = [...new Set(sources.map((s) => s.village).filter(Boolean))];
@@ -209,7 +211,7 @@ function renderFilters() {
   if (villages.length >= 2) {
     renderChips(document.getElementById('village-filter'), villages.map((v) => ({ id: v, color: 'var(--accent)', plain: true })), state.villages,
       (v) => `<span>${escapeHtml(v.id)}</span>`,
-      (id) => { state.villages = toggleSelection(state.villages, id, villages); update(); });
+      (id, multi) => { state.villages = toggleSelection(state.villages, id, multi, villages); update(); });
   }
 
   document.querySelectorAll('.view-switch button').forEach((b) => {
