@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T15:24:27.898Z",
+ "generatedAt": "2026-10-08T21:21:26.332Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -13,8 +13,8 @@
    "display": "events",
    "adminRefresh": false,
    "lastSuccess": "2026-10-08T15:07:30.557Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed (ETIMEDOUT) – https://www.ostopovice.cz/kalendar-akci?action=atom (3 pokusy)",
    "count": 3
   },
   {
@@ -27,7 +27,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -42,7 +42,7 @@
    "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
    "count": 24
@@ -57,7 +57,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -72,7 +72,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -87,10 +87,10 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
-   "count": 53
+   "count": 142
   },
   {
    "id": "pripravovane",
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T15:24:27.898Z",
+   "lastSuccess": "2026-10-08T21:21:26.332Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -3861,7 +3861,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -3993,7 +3993,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4080,7 +4080,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4249,7 +4249,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4319,7 +4319,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4425,7 +4425,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4492,7 +4492,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4546,7 +4546,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4616,7 +4616,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4686,7 +4686,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4722,8 +4722,11 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "Pořádá obecní úřad\n#seniori",
+   "description": "Pořádá obecní úřad\n#seniori\n#icon:old",
    "image": "",
+   "tagCategories": [
+    "obec"
+   ],
    "categories": [
     "obec"
    ]
@@ -4771,7 +4774,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4841,7 +4844,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4873,7 +4876,7 @@
    "allDay": true,
    "location": "",
    "url": "",
-   "description": "",
+   "description": "#icon:candle",
    "image": "",
    "tagCategories": [
     "deti",
@@ -4913,7 +4916,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -4983,7 +4986,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5018,7 +5021,7 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "",
+   "description": "#icon:christmas-tree",
    "image": "",
    "tagCategories": [
     "deti"
@@ -5055,7 +5058,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5121,7 +5124,7 @@
    "allDay": true,
    "location": "U Kaple",
    "url": "",
-   "description": "",
+   "description": "#icon:christmas-tree",
    "image": "",
    "tagCategories": [
     "kultura",
@@ -5160,7 +5163,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5232,7 +5235,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5285,6 +5288,9 @@
    "url": "",
    "description": "",
    "image": "",
+   "tagCategories": [
+    "deti"
+   ],
    "categories": [
     "deti"
    ]
@@ -5332,7 +5338,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5403,7 +5409,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5438,7 +5444,7 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "",
+   "description": "#icon:clef",
    "image": "",
    "tagCategories": [
     "kultura"
@@ -5491,7 +5497,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5545,7 +5551,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5614,7 +5620,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5668,7 +5674,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5765,7 +5771,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5819,7 +5825,7 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5883,7 +5889,45 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1rj80xj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-06T17:30:00.000Z",
+   "end": "2027-01-06T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8du8v4",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-10T18:00:00.000Z",
+   "end": "2027-01-10T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
    "image": "",
    "recurring": true,
    "tagCategories": [
@@ -5911,6 +5955,25 @@
    ]
   },
   {
+   "id": "nezarazene-9gn7ml",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-13T17:30:00.000Z",
+   "end": "2027-01-13T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "pripravovane-133uvg",
    "source": "pripravovane",
    "title": "Obecní ples",
@@ -5923,6 +5986,44 @@
    "image": "",
    "categories": [
     "kultura"
+   ]
+  },
+  {
+   "id": "nezarazene-19fr7wp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-17T18:00:00.000Z",
+   "end": "2027-01-17T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1uh1nmn",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-20T17:30:00.000Z",
+   "end": "2027-01-20T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
    ]
   },
   {
@@ -5944,6 +6045,82 @@
    ]
   },
   {
+   "id": "nezarazene-e4xl2b",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-24T18:00:00.000Z",
+   "end": "2027-01-24T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1bo4td6",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-27T17:30:00.000Z",
+   "end": "2027-01-27T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-k0toct",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-01-31T18:00:00.000Z",
+   "end": "2027-01-31T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-3tj5lz",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-03T17:30:00.000Z",
+   "end": "2027-02-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "pripravovane-151pfly",
    "source": "pripravovane",
    "title": "Poleskavský ples",
@@ -5959,6 +6136,158 @@
    ],
    "categories": [
     "kultura"
+   ]
+  },
+  {
+   "id": "nezarazene-llnf3v",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-07T18:00:00.000Z",
+   "end": "2027-02-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1l8o3qv",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-10T17:30:00.000Z",
+   "end": "2027-02-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-s546vf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-14T18:00:00.000Z",
+   "end": "2027-02-14T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1crpztu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-17T17:30:00.000Z",
+   "end": "2027-02-17T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-hxqrun",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-21T18:00:00.000Z",
+   "end": "2027-02-21T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1vavz18",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-24T17:30:00.000Z",
+   "end": "2027-02-24T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10sciio",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-02-28T18:00:00.000Z",
+   "end": "2027-02-28T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-jpxjbu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-03T17:30:00.000Z",
+   "end": "2027-03-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
    ]
   },
   {
@@ -5980,6 +6309,120 @@
    ]
   },
   {
+   "id": "nezarazene-1jtu5hi",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-07T18:00:00.000Z",
+   "end": "2027-03-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-rbbxsa",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-10T17:30:00.000Z",
+   "end": "2027-03-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1clzxkm",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-14T18:00:00.000Z",
+   "end": "2027-03-14T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1t6uccf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-17T17:30:00.000Z",
+   "end": "2027-03-17T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-5sw9y",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-21T18:00:00.000Z",
+   "end": "2027-03-21T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-qoe3s1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-24T17:30:00.000Z",
+   "end": "2027-03-24T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-anz2ks",
    "source": "svatky",
    "title": "Velký pátek",
@@ -5993,6 +6436,25 @@
    "categories": []
   },
   {
+   "id": "nezarazene-13dpfr2",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-28T17:00:00.000Z",
+   "end": "2027-03-28T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1tqijoz",
    "source": "svatky",
    "title": "Velikonoční pondělí",
@@ -6004,6 +6466,63 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-1t1kk6",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-03-31T16:30:00.000Z",
+   "end": "2027-03-31T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-o82t5r",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-04T17:00:00.000Z",
+   "end": "2027-04-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-ry9ilo",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-07T16:30:00.000Z",
+   "end": "2027-04-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "sokol-50muru",
@@ -6153,6 +6672,82 @@
    ]
   },
   {
+   "id": "nezarazene-18ovs9t",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-11T17:00:00.000Z",
+   "end": "2027-04-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-9i23tc",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-14T16:30:00.000Z",
+   "end": "2027-04-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xi516q",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-18T17:00:00.000Z",
+   "end": "2027-04-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-87uv7s",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-21T16:30:00.000Z",
+   "end": "2027-04-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "sokol-4ddw29",
    "source": "sokol",
    "title": "Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Krčín",
@@ -6174,6 +6769,44 @@
    ]
   },
   {
+   "id": "nezarazene-1yyppya",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-25T17:00:00.000Z",
+   "end": "2027-04-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-18mbsj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-04-28T16:30:00.000Z",
+   "end": "2027-04-28T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1u7v05b",
    "source": "svatky",
    "title": "Svátek práce",
@@ -6187,6 +6820,44 @@
    "categories": []
   },
   {
+   "id": "nezarazene-mbmwl0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-02T17:00:00.000Z",
+   "end": "2027-05-02T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-jbvjon",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-05T16:30:00.000Z",
+   "end": "2027-05-05T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-1jy7eop",
    "source": "svatky",
    "title": "Den osvobození",
@@ -6198,6 +6869,44 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-uzuhlx",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-09T17:00:00.000Z",
+   "end": "2027-05-09T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1w1yor3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-12T16:30:00.000Z",
+   "end": "2027-05-12T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   },
   {
    "id": "pripravovane-1ye5f12",
@@ -6231,6 +6940,82 @@
     "score": ""
    },
    "shortTitle": "1. liga muži · Sokol Ostopovice – SK Studénka A",
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-t29tfp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-16T17:00:00.000Z",
+   "end": "2027-05-16T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-c09kby",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-19T16:30:00.000Z",
+   "end": "2027-05-19T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10jcwu1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-23T17:00:00.000Z",
+   "end": "2027-05-23T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-qe28y0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-26T16:30:00.000Z",
+   "end": "2027-05-26T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ]
@@ -6278,6 +7063,82 @@
    ]
   },
   {
+   "id": "nezarazene-7n94kp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-05-30T17:00:00.000Z",
+   "end": "2027-05-30T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-nan8qp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-02T16:30:00.000Z",
+   "end": "2027-06-02T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-19mapcj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-06T17:00:00.000Z",
+   "end": "2027-06-06T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1h3w3ec",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-09T16:30:00.000Z",
+   "end": "2027-06-09T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "pripravovane-1xl367q",
    "source": "pripravovane",
    "title": "Předhodová zábava",
@@ -6296,6 +7157,44 @@
    ]
   },
   {
+   "id": "nezarazene-1s0fedt",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-13T17:00:00.000Z",
+   "end": "2027-06-13T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-11l8l1c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-16T16:30:00.000Z",
+   "end": "2027-06-16T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "pripravovane-tkl77e",
    "source": "pripravovane",
    "title": "Mladé hody",
@@ -6311,6 +7210,101 @@
    ],
    "categories": [
     "kultura"
+   ]
+  },
+  {
+   "id": "nezarazene-1k00wo7",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-20T17:00:00.000Z",
+   "end": "2027-06-20T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-5zp3ys",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-23T16:30:00.000Z",
+   "end": "2027-06-23T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1lob4uu",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-27T17:00:00.000Z",
+   "end": "2027-06-27T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-ro3gdc",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-06-30T16:30:00.000Z",
+   "end": "2027-06-30T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1t2xs8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-04T17:00:00.000Z",
+   "end": "2027-07-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
    ]
   },
   {
@@ -6340,6 +7334,63 @@
    "categories": []
   },
   {
+   "id": "nezarazene-6sr1un",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-07T16:30:00.000Z",
+   "end": "2027-07-07T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1knc79a",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-11T17:00:00.000Z",
+   "end": "2027-07-11T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-v5syfj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-14T16:30:00.000Z",
+   "end": "2027-07-14T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "pripravovane-1dkhbnn",
    "source": "pripravovane",
    "title": "Velká letní noc",
@@ -6358,6 +7409,405 @@
    ]
   },
   {
+   "id": "nezarazene-1yv44f1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-18T17:00:00.000Z",
+   "end": "2027-07-18T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1v862gn",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-21T16:30:00.000Z",
+   "end": "2027-07-21T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1hp6ryl",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-25T17:00:00.000Z",
+   "end": "2027-07-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8rqfv0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-07-28T16:30:00.000Z",
+   "end": "2027-07-28T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-eu8ze0",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-01T17:00:00.000Z",
+   "end": "2027-08-01T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xvqerp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-04T16:30:00.000Z",
+   "end": "2027-08-04T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-wuffw7",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-08T17:00:00.000Z",
+   "end": "2027-08-08T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1lvgumz",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-11T16:30:00.000Z",
+   "end": "2027-08-11T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1pxfs7d",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-15T17:00:00.000Z",
+   "end": "2027-08-15T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1hfrg1s",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-18T16:30:00.000Z",
+   "end": "2027-08-18T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-b6q0mf",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-22T17:00:00.000Z",
+   "end": "2027-08-22T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-10ld7oo",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-25T16:30:00.000Z",
+   "end": "2027-08-25T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-13d4slm",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-08-29T17:00:00.000Z",
+   "end": "2027-08-29T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1x3xklj",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-01T16:30:00.000Z",
+   "end": "2027-09-01T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1g857j1",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-05T17:00:00.000Z",
+   "end": "2027-09-05T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1rqvn8c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-08T16:30:00.000Z",
+   "end": "2027-09-08T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-z27v2l",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-12T17:00:00.000Z",
+   "end": "2027-09-12T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-8n9f4u",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-15T16:30:00.000Z",
+   "end": "2027-09-15T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-q89evg",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-19T17:00:00.000Z",
+   "end": "2027-09-19T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-uh7w28",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-22T16:30:00.000Z",
+   "end": "2027-09-22T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1mbdnbe",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-26T17:00:00.000Z",
+   "end": "2027-09-26T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-179n2hh",
    "source": "svatky",
    "title": "Den české státnosti",
@@ -6371,6 +7821,177 @@
    "categories": []
   },
   {
+   "id": "nezarazene-1qmbl4d",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-09-29T16:30:00.000Z",
+   "end": "2027-09-29T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-r2r0ix",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-03T17:00:00.000Z",
+   "end": "2027-10-03T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-dqlbqw",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-06T16:30:00.000Z",
+   "end": "2027-10-06T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-1g3m9nd",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-10T17:00:00.000Z",
+   "end": "2027-10-10T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-csh7ym",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-13T16:30:00.000Z",
+   "end": "2027-10-13T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-15r4sj8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-17T17:00:00.000Z",
+   "end": "2027-10-17T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-wk6e3c",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-20T16:30:00.000Z",
+   "end": "2027-10-20T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-xdif8y",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-24T17:00:00.000Z",
+   "end": "2027-10-24T18:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-4meykp",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-27T16:30:00.000Z",
+   "end": "2027-10-27T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
    "id": "svatky-18dqlnv",
    "source": "svatky",
    "title": "Den vzniku samostatného československého státu",
@@ -6382,6 +8003,82 @@
    "description": "Státní svátek",
    "image": "",
    "categories": []
+  },
+  {
+   "id": "nezarazene-1pcqb5n",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-10-31T18:00:00.000Z",
+   "end": "2027-10-31T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-15ycgfr",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-03T17:30:00.000Z",
+   "end": "2027-11-03T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-dmrsy3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-07T18:00:00.000Z",
+   "end": "2027-11-07T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
+  },
+  {
+   "id": "nezarazene-lcyuh3",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2027-11-10T17:30:00.000Z",
+   "end": "2027-11-10T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ]
   }
  ]
 }
