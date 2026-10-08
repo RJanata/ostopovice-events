@@ -1,9 +1,9 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane.",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné).",
   "sources": [
     {
       "id": "obec",
-      "name": "Obec Ostopovice",
+      "name": "Obec",
       "shortName": "Obec",
       "village": "Ostopovice",
       "icon": "obec.png",
@@ -18,7 +18,7 @@
     },
     {
       "id": "knihovna",
-      "name": "Knihovna Ostopovice",
+      "name": "Knihovna",
       "shortName": "Knihovna",
       "village": "Ostopovice",
       "icon": "knihovna.png",
@@ -41,7 +41,7 @@
     },
     {
       "id": "seniori",
-      "name": "Klub seniorů Ostopovice",
+      "name": "Klub seniorů",
       "shortName": "Senioři",
       "village": "Ostopovice",
       "icon": "seniori.svg",
@@ -75,7 +75,7 @@
     },
     {
       "id": "sokol",
-      "name": "TJ Sokol Ostopovice",
+      "name": "TJ Sokol",
       "shortName": "Sokol",
       "village": "Ostopovice",
       "icon": "sokol.png",
@@ -113,6 +113,22 @@
       }
     },
     {
+      "id": "nezarazene",
+      "name": "Nezařazené",
+      "shortName": "Nezařazené",
+      "village": "Ostopovice",
+      "icon": "nezarazene.svg",
+      "color": "#4a6b7c",
+      "type": "ical",
+      "url": "https://calendar.google.com/calendar/ical/bc09af0ac356f4ddee78c95501b3d2e9a075415aaa9172d0504a6051aca675d2%40group.calendar.google.com/public/basic.ics",
+      "link": null,
+      "categories": [],
+      "fallbackCategories": [],
+      "allowEmpty": true,
+      "adminRefresh": true,
+      "$comment": "Vlastní Google kalendář pro akce v obci, které nepatří pod žádný jiný zdroj."
+    },
+    {
       "id": "pripravovane",
       "name": "Připravované události",
       "shortName": "Připravované",
@@ -125,7 +141,8 @@
       "fallbackCategories": [],
       "link": null,
       "$comment": "Zástupné akce pro budoucí události. Je poslední v pořadí, takže když stejnou akci (stejný název a den) vypíše skutečný zdroj, zobrazí se ta skutečná.",
-      "adminRefresh": true
+      "adminRefresh": true,
+      "allowEmpty": true
     }
   ]
 }
