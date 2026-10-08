@@ -1,0 +1,648 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Akce v Ostopovicích – Církev
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:nezarazene-ubr66k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261007T160000Z
+DTEND:20261007T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-a7wk58@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261014T160000Z
+DTEND:20261014T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1jf6wtg@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261021T160000Z
+DTEND:20261021T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-lne1qq@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261028T170000Z
+DTEND:20261028T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1j4sg4t@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261104T170000Z
+DTEND:20261104T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-tdf4vb@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261111T170000Z
+DTEND:20261111T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1ukocgo@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261118T170000Z
+DTEND:20261118T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-t6lsf0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261202T170000Z
+DTEND:20261202T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1fepbq5@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261209T170000Z
+DTEND:20261209T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-y8rz9p@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261216T170000Z
+DTEND:20261216T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-18rc5up@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261223T170000Z
+DTEND:20261223T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-13no6kx@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261230T170000Z
+DTEND:20261230T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-8m958v@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270106T170000Z
+DTEND:20270106T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-5pnutx@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270113T170000Z
+DTEND:20270113T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1d1kstn@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270120T170000Z
+DTEND:20270120T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-65gp4y@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270127T170000Z
+DTEND:20270127T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-13uy9lr@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270203T170000Z
+DTEND:20270203T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-10u0s0j@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270210T170000Z
+DTEND:20270210T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-11ac8a@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270217T170000Z
+DTEND:20270217T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-zq6uvk@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270224T170000Z
+DTEND:20270224T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-17vby42@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270303T170000Z
+DTEND:20270303T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1kto3j2@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270310T170000Z
+DTEND:20270310T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-16sje7j@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270317T170000Z
+DTEND:20270317T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-11q84z9@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270324T170000Z
+DTEND:20270324T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1bacf0i@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270331T160000Z
+DTEND:20270331T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1dtk7is@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270407T160000Z
+DTEND:20270407T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-18189l0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270414T160000Z
+DTEND:20270414T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1sr6qb0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270421T160000Z
+DTEND:20270421T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1772is7@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270428T160000Z
+DTEND:20270428T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-x30k8r@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270505T160000Z
+DTEND:20270505T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-o2yr3r@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270512T160000Z
+DTEND:20270512T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-11bx7qy@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270519T160000Z
+DTEND:20270519T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1b8msgw@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270526T160000Z
+DTEND:20270526T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-kzi7pt@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270602T160000Z
+DTEND:20270602T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-z2q10o@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270609T160000Z
+DTEND:20270609T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-iktgeg@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270616T160000Z
+DTEND:20270616T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1usarb0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270623T160000Z
+DTEND:20270623T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1bwpkh8@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270630T160000Z
+DTEND:20270630T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1yoxfav@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270707T160000Z
+DTEND:20270707T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-8l2r4r@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270714T160000Z
+DTEND:20270714T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-w12j1v@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270721T160000Z
+DTEND:20270721T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-hp10w8@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270728T160000Z
+DTEND:20270728T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1dozcw9@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270804T160000Z
+DTEND:20270804T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-j21e3r@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270811T160000Z
+DTEND:20270811T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1z96f0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270818T160000Z
+DTEND:20270818T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1m6slis@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270825T160000Z
+DTEND:20270825T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-14t0rc3@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270901T160000Z
+DTEND:20270901T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-fpdbso@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270908T160000Z
+DTEND:20270908T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-7mvp62@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270915T160000Z
+DTEND:20270915T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-16cm6h4@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270922T160000Z
+DTEND:20270922T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1x5ltd@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20270929T160000Z
+DTEND:20270929T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-e77u9c@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271006T160000Z
+DTEND:20271006T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-93xunq@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271013T160000Z
+DTEND:20271013T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-wc3a8k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271020T160000Z
+DTEND:20271020T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-16tx4cp@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271027T160000Z
+DTEND:20271027T170000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1qzhggf@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271103T170000Z
+DTEND:20271103T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1hdbipv@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20271110T170000Z
+DTEND:20271110T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+END:VCALENDAR
