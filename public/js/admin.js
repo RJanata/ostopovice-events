@@ -184,6 +184,13 @@ async function updateRegenerateButton() {
     : 'Přegenerovat web';
 }
 
+/** Ikona kategorie jako na hlavní stránce (jednobarevné SVG jako maska). */
+function categoryIcon(category) {
+  if (!category.icon) return '';
+  const url = new URL(`icons/categories/${category.icon}`, document.baseURI).href;
+  return `<span class="cat-icon" style="--icon:url('${escapeHtml(url)}')"></span>`;
+}
+
 // ---------- Model akce ----------
 
 const baseTitle = (e) => e.originalTitle || e.title;
@@ -259,7 +266,11 @@ function renderList() {
   $('admin-list').innerHTML = rows.map((e) => {
     const eff = effective(e);
     const src = sourcesById[e.source] || { name: e.source };
-    const cats = eff.categories.map((id) => categories.find((c) => c.id === id)?.label || id).join(', ');
+    const tags = eff.categories
+      .map((id) => categories.find((c) => c.id === id))
+      .filter(Boolean)
+      .map((c) => `<span class="tag" style="--chip-color:${escapeHtml(c.color)}">${categoryIcon(c)}${escapeHtml(c.label)}</span>`)
+      .join('');
     const badges = [
       eff.changed && '<span class="admin-badge admin-badge--changed">upraveno</span>',
       eff.hidden && '<span class="admin-badge admin-badge--hidden">skryto</span>',
@@ -273,10 +284,10 @@ function renderList() {
         <div class="admin-row__date">${escapeHtml(formatWhen(eff.when))}</div>
         <div>
           <div class="admin-row__title">${escapeHtml(eff.title)}</div>
-          ${eff.note ? `<div class="admin-row__note">${escapeHtml(eff.note)}</div>` : ''}
           <div class="admin-row__meta">
-            <span>${escapeHtml(src.name)}</span><span>${escapeHtml(cats)}</span>${place}${renamed}${moved}${link}${badges}
+            <span>${escapeHtml(src.name)}</span>${place}<span class="event__tags">${tags}</span>${renamed}${moved}${link}${badges}
           </div>
+          ${eff.note ? `<div class="admin-row__note">${escapeHtml(eff.note)}</div>` : ''}
         </div>
         <button type="button" class="button button--small button--ghost" data-action="edit">Upravit</button>
         ${editingId === e.id ? '<div class="admin-edit-slot"></div>' : ''}

@@ -59,7 +59,7 @@
 .admin-when__row { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
 .admin-when__row label { display: inline-flex; align-items: center; gap: 6px; }
 .admin-when input:disabled { opacity: 0.5; }
-.admin-row__note { margin-top: 2px; font-size: 0.85rem; padding-left: 6px; border-left: 3px solid var(--accent); }
+.admin-row__note { margin-top: 4px; font-size: 0.85rem; white-space: pre-line; }
 .admin-categories { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 4px 0; }
 .admin-categories[aria-disabled="true"] { opacity: 0.5; }
 .admin-scope { display: flex; flex-wrap: wrap; gap: 6px 16px; }
