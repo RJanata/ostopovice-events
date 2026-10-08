@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T00:18:36.332Z",
+ "generatedAt": "2026-10-08T00:29:18.499Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -11,7 +11,7 @@
    "link": "https://www.ostopovice.cz/kalendar-akci",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:18:36.332Z",
+   "lastSuccess": "2026-10-08T00:29:18.499Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -25,7 +25,7 @@
    "link": "https://www.knihovnaostopovice.cz/program",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:18:36.332Z",
+   "lastSuccess": "2026-10-08T00:29:18.499Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -39,7 +39,7 @@
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:18:36.332Z",
+   "lastSuccess": "2026-10-08T00:29:18.499Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -53,7 +53,7 @@
    "link": null,
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T00:18:36.332Z",
+   "lastSuccess": "2026-10-08T00:29:18.499Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -67,7 +67,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T00:18:36.332Z",
+   "lastSuccess": "2026-10-08T00:29:18.499Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -3783,21 +3783,6 @@
    ]
   },
   {
-   "id": "pripravovane-143zn8r",
-   "source": "pripravovane",
-   "title": "Mikulášská nadílka",
-   "start": "2026-11-05",
-   "end": "2026-11-05",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "",
-   "image": "",
-   "categories": [
-    "deti"
-   ]
-  },
-  {
    "id": "knihovna-16gbckf",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -4053,6 +4038,21 @@
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
    "categories": [
     "sport"
+   ]
+  },
+  {
+   "id": "pripravovane-1tyoqhk",
+   "source": "pripravovane",
+   "title": "Mikulášská nadílka",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "allDay": true,
+   "location": "park na Osvobození",
+   "url": "",
+   "description": "",
+   "image": "",
+   "categories": [
+    "deti"
    ]
   },
   {
