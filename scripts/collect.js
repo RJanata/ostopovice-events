@@ -50,7 +50,8 @@ const log = (...args) => console.log(...args);
 /** Řádek „#link: https://…“ v popisu = odkaz na akci (hlavně pro vlastní Google kalendáře). */
 function extractLink(description) {
   let url = '';
-  const text = String(description || '').replace(/^[ \t]*#link[ \t]*:[ \t]*(\S+)[ \t]*$/gim, (line, link) => {
+  // [^\S\n] = jakákoli mezera kromě konce řádku (Google Kalendář vkládá i nezlomitelné mezery)
+  const text = String(description || '').replace(/^[^\S\n]*#link[^\S\n]*:[^\S\n]*(\S+)[^\S\n]*$/gim, (line, link) => {
     if (!url && /^https?:\/\//i.test(link)) url = link;
     return '';
   });
