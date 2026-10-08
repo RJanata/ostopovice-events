@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T22:37:34.917Z",
+ "generatedAt": "2026-10-08T23:51:50.131Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 24
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 33
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-08T22:37:34.917Z",
+   "lastSuccess": "2026-10-08T23:51:50.131Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -689,7 +689,6 @@
    "description": "Oslava podzimu pro celou rodinu. Dýně, dýně a zase dýně. Přijďte dlabat, tvořit, hodovat, kochat se okrasnými kousky, zahřát se pumpkin spice latté a dalšími kávovými speciály, užít si hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě domů.",
    "image": "https://static.wixstatic.com/media/11062b_229adfdd1de74b3785697fa7fc4c7606~mv2.jpeg",
    "categories": [
-    "deti",
     "kultura"
    ],
    "added": "2026-10-07T22:43:36.000Z"
@@ -4127,6 +4126,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4146,22 +4161,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4604,7 +4603,6 @@
    "description": "Oslava podzimu pro celou rodinu. Dýně, dýně a zase dýně. Přijďte dlabat, tvořit, hodovat, kochat se okrasnými kousky, zahřát se pumpkin spice latté a dalšími kávovými speciály, užít si hřejivou hygge atmosféru a možná si z ní kousek odnést i k sobě domů.",
    "image": "https://static.wixstatic.com/media/11062b_4f513529e11f49b0adacef89fe9adbbf~mv2.jpg",
    "categories": [
-    "deti",
     "kultura"
    ],
    "added": "2026-10-07T22:43:36.000Z"
@@ -5078,6 +5076,7 @@
     "obec"
    ],
    "categories": [
+    "seniori",
     "obec"
    ],
    "added": "2026-10-08T14:26:43.000Z"
@@ -5247,8 +5246,7 @@
    ],
    "categories": [
     "deti",
-    "kultura",
-    "obec"
+    "kultura"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
