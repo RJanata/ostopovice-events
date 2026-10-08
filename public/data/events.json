@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T14:33:05.375Z",
+ "generatedAt": "2026-10-08T14:37:51.917Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
@@ -102,7 +102,7 @@
    "link": null,
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T14:33:05.375Z",
+   "lastSuccess": "2026-10-08T14:37:51.917Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -5927,6 +5927,24 @@
    ]
   },
   {
+   "id": "pripravovane-oqbsqh",
+   "source": "pripravovane",
+   "title": "Ples seniorů",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "allDay": true,
+   "location": "Sokolovna",
+   "url": "",
+   "description": "#seniori",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ]
+  },
+  {
    "id": "pripravovane-151pfly",
    "source": "pripravovane",
    "title": "Poleskavský ples",
@@ -5954,24 +5972,6 @@
    "location": "Sokolovna",
    "url": "",
    "description": "",
-   "image": "",
-   "tagCategories": [
-    "kultura"
-   ],
-   "categories": [
-    "kultura"
-   ]
-  },
-  {
-   "id": "pripravovane-1c9br0i",
-   "source": "pripravovane",
-   "title": "Ples seniorů",
-   "start": "2027-03-19",
-   "end": "2027-03-19",
-   "allDay": true,
-   "location": "Sokolovna",
-   "url": "",
-   "description": "#seniori",
    "image": "",
    "tagCategories": [
     "kultura"
