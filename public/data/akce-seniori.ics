@@ -1,0 +1,75 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Akce v Ostopovicích – Senioři
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:seniori-1tjtobz@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Poznávací\, plavba na dračích lodích
+DESCRIPTION:z Lodních sportů do Komína\noběd v restauraci Holiday\n\nZd
+ roj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
+CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-s31w59@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260905
+SUMMARY:Čtyřdenní zájezd „Jizerské hory“\, ubytování v Amantis V
+ ital Sport Hotel
+DESCRIPTION:Náročnější turistika s poznávacím\, relaxačním program
+ em\,\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
+CATEGORIES:Senioři,Sport,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-qedjwj@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Poznávací procházka Brnem
+DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
+CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-fyvofl@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART:20261111T150000Z
+DTEND:20261111T150000Z
+SUMMARY:Zábava\, Martinské dostaveníčko
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
+CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-18n6yud@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART:20261205T150000Z
+DTEND:20261205T150000Z
+SUMMARY:Zábava\, Mikulášské nadělování
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
+CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-oqbsqh@ostopovice-events
+DTSTAMP:20261008T212732Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Ples seniorů
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované události
+CATEGORIES:Kultura,Senioři
+END:VEVENT
+END:VCALENDAR

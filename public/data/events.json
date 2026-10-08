@@ -1,78 +1,93 @@
 {
- "generatedAt": "2026-10-08T21:21:26.332Z",
+ "generatedAt": "2026-10-08T21:27:25.373Z",
  "calendarName": "Akce v Ostopovicích",
  "sources": [
   {
    "id": "obec",
    "name": "Obec",
+   "fullName": "Obec Ostopovice",
    "shortName": "Obec",
    "village": "Ostopovice",
    "icon": "obec.png",
    "color": "#c8102e",
    "link": "https://www.ostopovice.cz/kalendar-akci",
+   "type": "ipo-rss",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T15:07:30.557Z",
-   "ok": false,
-   "error": "fetch failed (ETIMEDOUT) – https://www.ostopovice.cz/kalendar-akci?action=atom (3 pokusy)",
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
+   "ok": true,
+   "error": null,
    "count": 3
   },
   {
    "id": "knihovna",
    "name": "Knihovna",
+   "fullName": "Knihovna Ostopovice",
    "shortName": "Knihovna",
    "village": "Ostopovice",
    "icon": "knihovna.png",
    "color": "#e8490f",
    "link": "https://www.knihovnaostopovice.cz/program",
+   "type": "wix-events",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
    "ok": true,
    "error": null,
    "count": 231
   },
   {
-   "id": "seniori",
-   "name": "Klub seniorů",
-   "shortName": "Senioři",
-   "village": "Ostopovice",
-   "icon": "seniori.svg",
-   "color": "#6b4ea0",
-   "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
-   "display": "events",
-   "adminRefresh": false,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
-   "ok": true,
-   "error": null,
-   "count": 24
-  },
-  {
    "id": "sokol",
    "name": "TJ Sokol",
+   "fullName": "TJ Sokol Ostopovice (NH JMOP)",
    "shortName": "Sokol",
    "village": "Ostopovice",
    "icon": "sokol.png",
    "color": "#2f6b47",
    "link": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
+   "type": "nhjmop",
    "display": "events",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
    "ok": true,
    "error": null,
    "count": 23
   },
   {
+   "id": "seniori",
+   "name": "Klub seniorů",
+   "fullName": "Klub seniorů",
+   "shortName": "Senioři",
+   "village": "Ostopovice",
+   "icon": "seniori.svg",
+   "color": "#6b4ea0",
+   "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+   "type": "text-program",
+   "display": "events",
+   "adminRefresh": false,
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
+   "ok": true,
+   "error": null,
+   "count": 24
+  },
+  {
    "id": "svatky",
    "name": "Státní svátky",
+   "fullName": "Státní svátky",
    "shortName": "Svátky",
    "village": null,
    "icon": "svatky.svg",
    "color": "#8a3a66",
    "link": null,
+   "type": "ical",
    "display": "dayLabel",
    "adminRefresh": false,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -80,29 +95,42 @@
   {
    "id": "nezarazene",
    "name": "Nezařazené",
+   "fullName": "Nezařazené",
    "shortName": "Nezařazené",
    "village": "Ostopovice",
    "icon": "nezarazene.svg",
    "color": "#2a6fb5",
    "link": null,
+   "type": "ical",
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
+   "feeds": [
+    {
+     "id": "farnost-troubsko",
+     "fullName": "Farnost Troubsko",
+     "icon": "farnost-troubsko.png",
+     "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
+    }
+   ],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
    "ok": true,
    "error": null,
-   "count": 142
+   "count": 33
   },
   {
    "id": "pripravovane",
    "name": "Připravované události",
+   "fullName": "Připravované události",
    "shortName": "Připravované",
    "village": "Ostopovice",
    "icon": "pripravovane.svg",
    "color": "#7a7f87",
    "link": null,
+   "type": "ical",
    "display": "events",
    "adminRefresh": true,
-   "lastSuccess": "2026-10-08T21:21:26.332Z",
+   "feeds": [],
+   "lastSuccess": "2026-10-08T21:27:25.373Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -117,6 +145,13 @@
    "icon": "sport.svg"
   },
   {
+   "id": "kultura",
+   "label": "Kultura",
+   "shortLabel": "Kultura",
+   "color": "#8a3a66",
+   "icon": "kultura.svg"
+  },
+  {
    "id": "deti",
    "label": "Pro děti",
    "shortLabel": "Děti",
@@ -124,11 +159,11 @@
    "icon": "deti.svg"
   },
   {
-   "id": "kultura",
-   "label": "Kultura",
-   "shortLabel": "Kultura",
-   "color": "#8a3a66",
-   "icon": "kultura.svg"
+   "id": "seniori",
+   "label": "Senioři",
+   "shortLabel": "Senioři",
+   "color": "#6b4ea0",
+   "icon": "seniori.svg"
   },
   {
    "id": "vzdelavani",
@@ -172,8 +207,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-sqr6zv",
@@ -188,7 +225,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_2a825b57c9d44f2ca0dd1d1b8d86eeca~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-l7k64q",
@@ -204,7 +242,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-xek1fj",
@@ -219,7 +258,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d460035fa78d4aab8194396f71686f65~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-vcz2ny",
@@ -235,7 +275,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-ob1dvd",
@@ -250,7 +291,8 @@
    "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-vg9xo3",
@@ -264,8 +306,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1rm2978",
@@ -281,7 +325,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-57gtkb",
@@ -297,7 +342,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-tij9c8",
@@ -313,7 +359,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-d31poa",
@@ -328,7 +375,8 @@
    "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-16ce4wd",
@@ -343,7 +391,8 @@
    "image": "https://static.wixstatic.com/media/11062b_f58acb44b9804d3db227197cb5c97c61~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-m1hutx",
@@ -359,7 +408,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1dbp0wo",
@@ -374,7 +424,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_76fbe4b00ffd42d58fd4540293a43073~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-c8feze",
@@ -387,7 +438,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1k6zte1",
@@ -403,7 +455,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-4rhw5z",
@@ -418,7 +471,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_6b36785e074a4aa38304e15a85ffb434~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-13rw3ml",
@@ -434,7 +488,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-5j4j7r",
@@ -450,7 +505,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1sxf54z",
@@ -466,7 +522,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1itf9fp",
@@ -481,7 +538,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_9738f7881e6044599d8bb8bce6128170~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1e8px0p",
@@ -497,7 +555,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-c3r02n",
@@ -513,7 +572,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1jtxom6",
@@ -528,7 +588,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-eisw0c",
@@ -545,7 +606,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-ilaa21",
@@ -560,7 +622,8 @@
    "image": "https://static.wixstatic.com/media/949c5aef51724256b31ea56be6b3690c.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-bepbig",
@@ -576,7 +639,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-vvag70",
@@ -592,7 +656,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1j074ty",
@@ -606,10 +671,11 @@
    "description": "Na jaře ze semínka vyrostla rostlina, v létě nám darovala plody a na podzim pomalu ztrácí svou krásu a sílu. Věrka už ví, že je to přirozený koloběh přírody. Zorka však dělá všechno pro to, aby rostlinu zachránila. Zorka se nemůže smířit s tím, že přichází podzim a příroda se ukládá ke spánku.",
    "image": "https://static.wixstatic.com/media/6e4a73_ed428f14c74e4541a57cc893289454bd~mv2.jpg",
    "categories": [
-    "deti",
     "kultura",
+    "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1pf109y",
@@ -625,7 +691,8 @@
    "categories": [
     "deti",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-yy8g0v",
@@ -640,7 +707,8 @@
    "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-8ebr9c",
@@ -655,7 +723,8 @@
    "image": "https://static.wixstatic.com/media/11062b_f58acb44b9804d3db227197cb5c97c61~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-v742w6",
@@ -671,7 +740,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-hoi055",
@@ -687,7 +757,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1xf15pp",
@@ -703,7 +774,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-aajr37",
@@ -716,7 +788,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1e8eruo",
@@ -732,7 +805,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-155rrnq",
@@ -746,8 +820,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-9so8pp",
@@ -763,7 +839,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1x6tq6",
@@ -778,7 +855,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1tx4uf5",
@@ -794,7 +872,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-kzw075",
@@ -809,7 +888,8 @@
    "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-5y0k56",
@@ -824,7 +904,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_4ddadbc3a99b4cdcba3b27769706920f~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-7moacj",
@@ -838,8 +919,9 @@
    "description": "",
    "image": "",
    "categories": [
-    "ostatni"
-   ]
+    "seniori"
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-75ln0h",
@@ -854,7 +936,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_8108538b22cb4315aedfbe01669d6497~mv2.png",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1p7v8vw",
@@ -870,7 +953,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-ayvvr1",
@@ -887,7 +971,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1x27n92",
@@ -903,7 +988,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-le9v0z",
@@ -917,8 +1003,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-f2tcha",
@@ -933,7 +1021,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_28068b1748e54cb7a11e506f7936ec96~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1akozhz",
@@ -949,7 +1038,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1b7rg97",
@@ -964,7 +1054,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1rpm9il",
@@ -977,7 +1068,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-jw24v2",
@@ -992,7 +1084,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_a2367ae01cc6434f9a66a08d255b14ad~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-we7330",
@@ -1008,7 +1101,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-6vxi5a",
@@ -1024,7 +1118,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-88fknx",
@@ -1039,7 +1134,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_382d2a58a4ed4d6e9b4d05fa04cd5a13~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1jlew74",
@@ -1055,7 +1151,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1xzdrt8",
@@ -1069,9 +1166,10 @@
    "description": "Předvánoční (nejen) knižní festival pro malé i velké děti, rodiče, prarodiče, tety i strejdy. Tentokrát věnovaný tvorbě přední české ilustrátorky, výtvarnice a grafičky Andrey Tachezy.\n\nZuzana Pospíšilová (autorské čtení) Česká spisovatelka, která po absolvování gymnázia vystudovala na Filozofické fakultě v Brně obor psychologii. Pracovala jako klinická psycholožka v Dětské rehabilitačním stacionáři v Ostravě, kde pracovala s dětmi s pohybový postižením. Pohádky a říkanky zpočátku vymýšlela pro své dvě dcery. První pohádky byly otištěny v časopise Sluníčko, a následně začaly vycházet první…",
    "image": "https://static.wixstatic.com/media/6e4a73_a2c142cb266e49aca0b46b176ac37ed7~mv2.jpg",
    "categories": [
-    "deti",
-    "kultura"
-   ]
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1hvwy9o",
@@ -1087,7 +1185,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1m3qq4x",
@@ -1103,7 +1202,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-10pr2rv",
@@ -1117,8 +1217,9 @@
    "description": "",
    "image": "",
    "categories": [
-    "ostatni"
-   ]
+    "seniori"
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1ee9ll0",
@@ -1133,7 +1234,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-t76yyx",
@@ -1148,7 +1250,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78d31346db27448ebcfabf0e0f703531~mv2.jpeg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1e51uf1",
@@ -1164,7 +1267,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-12v4yfj",
@@ -1181,7 +1285,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-d29w23",
@@ -1197,7 +1302,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1a3wr9k",
@@ -1212,7 +1318,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_402aeb2970bb463291a5d908bf5d0d4f~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-kocpum",
@@ -1228,7 +1335,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1h265oc",
@@ -1244,7 +1352,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-32tp45",
@@ -1258,9 +1367,10 @@
    "description": "Příběhem o narození Ježíška vás provede veselý andělíček a nezbedný čert. Představení je plné koled a taškařic s pastýři, nechybí ani tři králové a Herodes, jež je nakonec potrestán a Ježíšek zachráněn.",
    "image": "https://static.wixstatic.com/media/6e4a73_8b57aca469f64534b1224b1ce3c9b056~mv2.jpg",
    "categories": [
-    "deti",
-    "kultura"
-   ]
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-zznov1",
@@ -1276,7 +1386,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1izwnq1",
@@ -1292,7 +1403,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-ks1we4",
@@ -1308,7 +1420,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-ytbf55",
@@ -1321,7 +1434,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1soldpn",
@@ -1334,7 +1448,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-e2rmm8",
@@ -1347,7 +1462,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-1wglu5n",
@@ -1361,8 +1477,10 @@
    "description": "turistika, pořádá a zve OÚ",
    "image": "",
    "categories": [
+    "seniori",
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "svatky-228dsr",
@@ -1375,7 +1493,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1qa1ho1",
@@ -1388,7 +1507,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1ermk0y",
@@ -1404,7 +1524,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1vbftvk",
@@ -1420,7 +1541,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1nkowmh",
@@ -1435,7 +1557,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_1e44354a02d142549c5ec004641d6e99~mv2.jpeg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-9kt6m5",
@@ -1452,7 +1575,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1iz1l89",
@@ -1468,7 +1592,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-18u68qg",
@@ -1484,7 +1609,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-a38juy",
@@ -1500,7 +1626,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-5gj35c",
@@ -1515,7 +1642,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-gb66sc",
@@ -1531,7 +1659,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-kg7bxm",
@@ -1547,7 +1676,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1iib6xv",
@@ -1562,7 +1692,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_684908599538494b9b010b86b9d39007~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1p034sk",
@@ -1578,7 +1709,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-u2g67r",
@@ -1593,7 +1725,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1io21zq",
@@ -1609,7 +1742,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-bq2v6y",
@@ -1624,7 +1758,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_f6a5da6b23fb491da27aad2d8a5cbcd6~mv2.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1syei5h",
@@ -1640,7 +1775,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-s1r2pt",
@@ -1656,7 +1792,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-9166so",
@@ -1671,7 +1808,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_311ffaa7c61e4288847e79f184e34622~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-1vxpvuf",
@@ -1685,8 +1823,10 @@
    "description": "na Sokolovně",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-7x8m5z",
@@ -1703,7 +1843,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1d7tmlb",
@@ -1719,7 +1860,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-fljl3i",
@@ -1735,7 +1877,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1n9mabc",
@@ -1751,7 +1894,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1ek2534",
@@ -1766,7 +1910,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_13a67ef27ba8476681a50d633c6cda39~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-uumr6e",
@@ -1781,7 +1926,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-k0k1hq",
@@ -1797,7 +1943,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-eeq4la",
@@ -1812,7 +1959,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_9738f7881e6044599d8bb8bce6128170~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-1gcj35x",
@@ -1826,8 +1974,10 @@
    "description": "\"Jak na chytrý mobil\"\nzáklady + foto a video",
    "image": "",
    "categories": [
+    "seniori",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-kxmgd8",
@@ -1843,7 +1993,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-9u3kll",
@@ -1858,7 +2009,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-cnfyla",
@@ -1873,7 +2025,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_025ea61bdad04d1aa26c1bc069ce920c~mv2.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-10old9z",
@@ -1888,7 +2041,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_afa463f942be48029ded8975507b2fd4~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-s8h3oa",
@@ -1904,7 +2058,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1liojf5",
@@ -1920,7 +2075,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-zfuazt",
@@ -1935,7 +2091,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_620a1d761320436bb0d060563a8001d5~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-19xnwaz",
@@ -1951,7 +2108,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-13pm8vf",
@@ -1966,7 +2124,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1h5znpa",
@@ -1982,7 +2141,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-kexnc7",
@@ -1998,7 +2158,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-13o1m7t",
@@ -2013,7 +2174,8 @@
    "image": "https://static.wixstatic.com/media/11062b_a0ce3c2ba5d3433ea78136f9bf71dc0f~mv2.jpeg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-8zfj55",
@@ -2029,7 +2191,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-i3vicg",
@@ -2043,8 +2206,10 @@
    "description": "v Restauraci u Volejníků, od 16:00",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-19p7h7m",
@@ -2060,7 +2225,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1mku11v",
@@ -2077,7 +2243,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-hfznjs",
@@ -2092,7 +2259,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-tzvh1r",
@@ -2108,7 +2276,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1k4jtoj",
@@ -2124,7 +2293,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-9fw1k",
@@ -2139,7 +2309,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_2385bb4ecfdb49868385673dd5468953~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-p8ost1",
@@ -2155,7 +2326,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-82t9mm",
@@ -2170,7 +2342,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_aaf247f731f1431daa3fc4eb4e85cde9~mv2.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1ac2s7r",
@@ -2186,7 +2359,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-17ogrzl",
@@ -2201,7 +2375,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e146e37871514a8da25667338f12d2bf~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-2o95w8",
@@ -2217,7 +2392,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-3i48nv",
@@ -2232,7 +2408,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_60c5335aadf94723a60e436961200c96~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-j9onru",
@@ -2248,7 +2425,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-wcyuyn",
@@ -2264,7 +2442,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-w43o9q",
@@ -2279,7 +2458,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_aaeba87820f8469cbd4252289cce02a7~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-5tjfr2",
@@ -2293,8 +2473,10 @@
    "description": "komentovaná prohlídka Židovského hřbitova",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1aqy7aq",
@@ -2310,7 +2492,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-175x5h7",
@@ -2325,7 +2508,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_222ac8b507af45d18a7c97f98d966d4b~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-wtl2lr",
@@ -2340,7 +2524,8 @@
    "image": "https://static.wixstatic.com/media/11062b_a2009724872c45308c8c93d2af30db87~mv2.jpeg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1sknln",
@@ -2353,7 +2538,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-fx2o7e",
@@ -2366,7 +2552,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1p1jtra",
@@ -2382,7 +2569,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-32w72o",
@@ -2396,8 +2584,10 @@
    "description": "komentovaná prohlídka vily Tugendhat",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "seniori-gjfjbw",
@@ -2411,8 +2601,9 @@
    "description": "ze zdravotních důvodů paní učitelky,\ntermín termín dohodnut později",
    "image": "",
    "categories": [
-    "ostatni"
-   ]
+    "seniori"
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-bbub77",
@@ -2428,7 +2619,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-szcezf",
@@ -2443,7 +2635,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_f6c863ea026045e5b84c015a96a1825d~mv2.png",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-4k3w83",
@@ -2459,7 +2652,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1aj9he",
@@ -2476,7 +2670,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1apdllj",
@@ -2491,7 +2686,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1fb2ek0",
@@ -2507,7 +2703,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-un3k2w",
@@ -2523,7 +2720,8 @@
    "cancelled": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1yz8j63",
@@ -2539,7 +2737,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-rmdlvx",
@@ -2554,7 +2753,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78d31346db27448ebcfabf0e0f703531~mv2.jpeg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1x5otty",
@@ -2570,7 +2770,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-tq8odq",
@@ -2584,8 +2785,10 @@
    "description": "Flora Olomouc s nákupem produktů\nKrásná Kroměříž",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1uh989v",
@@ -2601,7 +2804,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-5o1a8m",
@@ -2616,7 +2820,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_37fbbad3c94749b080ae7cd91ee2040d~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1urq98w",
@@ -2632,7 +2837,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1xeq7o7",
@@ -2648,7 +2854,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-e6008s",
@@ -2663,7 +2870,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_8eb80433604f4c0b971024f3b0288ab3~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-sm99f7",
@@ -2679,7 +2887,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-q9nki2",
@@ -2693,8 +2902,9 @@
    "description": "Z Bílovic do Obřan",
    "image": "",
    "categories": [
-    "ostatni"
-   ]
+    "seniori"
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "svatky-19q09aq",
@@ -2707,7 +2917,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1kb0oe9",
@@ -2723,7 +2934,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1ymtp20",
@@ -2739,7 +2951,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-19mw8cu",
@@ -2752,7 +2965,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-6fvj6v",
@@ -2768,7 +2982,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1ukadfd",
@@ -2785,7 +3000,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-7in4kh",
@@ -2800,7 +3016,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-lq39wj",
@@ -2816,7 +3033,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-l24yun",
@@ -2831,7 +3049,8 @@
    "image": "https://static.wixstatic.com/media/11062b_4bec81346a3945bb8c5f3f460f804f62~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-18ipwp1",
@@ -2845,8 +3064,10 @@
    "description": "nově otevřená budova i pro seniory",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1j1wedn",
@@ -2861,7 +3082,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78d31346db27448ebcfabf0e0f703531~mv2.jpeg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-ol4pyn",
@@ -2877,7 +3099,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-difyhl",
@@ -2891,8 +3114,10 @@
    "description": "v Restauraci u Volejník",
    "image": "",
    "categories": [
+    "seniori",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-wxxklg",
@@ -2907,7 +3132,8 @@
    "image": "https://static.wixstatic.com/media/11062b_9ca1647ccf014a4f939ab480cc4c97ba~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1i3kmpk",
@@ -2923,7 +3149,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-14p79em",
@@ -2938,7 +3165,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_855ac0107da4419b86e28c33d3051b09~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1exirwr",
@@ -2954,7 +3182,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-eue7g5",
@@ -2969,7 +3198,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_08527698e22349d6bb67404f7413b15d~mv2.jpg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1jndyye",
@@ -2984,7 +3214,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_382d2a58a4ed4d6e9b4d05fa04cd5a13~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-5z48iy",
@@ -2998,8 +3229,10 @@
    "description": "Exotická zahrada Přibice\nArcheopark Pavlov\nVinařství Na kopečku Dambořice",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-17dyl53",
@@ -3015,7 +3248,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-17doqmp",
@@ -3031,7 +3265,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1b2lpqp",
@@ -3047,7 +3282,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-dediqp",
@@ -3062,7 +3298,8 @@
    "image": "https://static.wixstatic.com/media/489a2c8c728e4d4786747253c728fd65.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1y24hc6",
@@ -3076,10 +3313,11 @@
    "description": "Oslavte Den dětí v přírodě a objevte s námi to nejlepší ze světa smyslového hraní. Hravé objevování s prvky sensory play rozvíjí jemnou a hrubou motoriku, fantazii, kreativitu a zapojuje všechny smysly.",
    "image": "https://static.wixstatic.com/media/6e4a73_7694d905a1dc483f84a76cf91dc90f7f~mv2.jpg",
    "categories": [
-    "deti",
     "kultura",
+    "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-16g8i6m",
@@ -3093,10 +3331,11 @@
    "description": "Choo Choo. Už nám to jede! Co a kam? No, přece dobrodružný vlak na trase Brno – moře s knížkou Petra Horáčka Choo Choo. Cestou budou mosty a tunely, hory i les. A u moře, tam bude teprve zábava – vlny, rybičky, i nějaké překvapení... Tak si pobalte kufříky a rezervujte si místenku v knihovně!",
    "image": "https://static.wixstatic.com/media/6e4a73_3e00883ed6e846dda41be87b27f7f102~mv2.jpg",
    "categories": [
-    "deti",
     "kultura",
+    "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-iq8aek",
@@ -3110,9 +3349,10 @@
    "description": "Inscenace Čerešničky rozehrává příběh dvou sester Zorky a Věrky, které společně prožívají jednotlivá roční období, tradice a zvyky, které jsou s nimi spojené a pozorují cyklus života na růstu malého semínka, z kterého vyklíčila na jaře křehká rostlinka, s příchodem letního období roste (...)",
    "image": "https://static.wixstatic.com/media/6e4a73_4ce888bcfab94f06bd2f6d9019e45d02~mv2.jpg",
    "categories": [
-    "deti",
-    "kultura"
-   ]
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-ti1gdc",
@@ -3129,7 +3369,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-d4kmvl",
@@ -3144,7 +3385,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_d874ce6c377a4cdb98fd4f61d74a8821~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-rod66n",
@@ -3160,7 +3402,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1xvfi9q",
@@ -3175,7 +3418,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_bd4ca5ce444c483a9b1f1edb0616fa43~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-5c3r09",
@@ -3190,7 +3434,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_eb952b0590e44ef7ad16fe38b684a8ab~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-123lbch",
@@ -3203,7 +3448,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1r0vbm0",
@@ -3216,7 +3462,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-cwkhvi",
@@ -3231,7 +3478,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_81c7f0128bb8420a9cb3439dd33df04b~mv2.jpeg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "seniori-ltaspy",
@@ -3245,8 +3493,10 @@
    "description": "Festival planet, Megalon-Jupiter",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "seniori-1tjtobz",
@@ -3260,8 +3510,10 @@
    "description": "z Lodních sportů do Komína\noběd v restauraci Holiday",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1u1hvva",
@@ -3276,7 +3528,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_457c309e0eb247f08adfaef11a41841c~mv2.jpeg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-2751c6",
@@ -3292,7 +3545,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-s31w59",
@@ -3306,9 +3560,11 @@
    "description": "Náročnější turistika s poznávacím, relaxačním programem,",
    "image": "",
    "categories": [
+    "seniori",
     "sport",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-1in2bsl",
@@ -3324,7 +3580,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "sokol-1mw20ur",
@@ -3345,7 +3602,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Podlázky",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3361,7 +3619,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-hzf2nk",
@@ -3376,7 +3635,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_46a0b29589f14134807e360a50700c82~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1eyss6d",
@@ -3392,7 +3652,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-sio3ig",
@@ -3409,7 +3670,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3425,7 +3687,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-5wtuq2",
@@ -3441,7 +3704,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-szvdeo",
@@ -3457,7 +3721,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-11nudir",
@@ -3472,7 +3737,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_844158cb120744f1adca110551034ed7~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-57htld",
@@ -3488,7 +3754,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "sokol-r9judn",
@@ -3509,7 +3776,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Avia Čakovice",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1cms3ic",
@@ -3524,7 +3792,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_5a9c575b0cb340aa8f7e79557dbd1fa4~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-18abbrb",
@@ -3539,7 +3808,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78d31346db27448ebcfabf0e0f703531~mv2.jpeg",
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -3555,7 +3825,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "seniori-qedjwj",
@@ -3569,8 +3840,10 @@
    "description": "Náplavkou Od Ronda k Anthroposu",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-wwawfq",
@@ -3586,7 +3859,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-etqh79",
@@ -3602,7 +3876,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1xbiz8z",
@@ -3617,7 +3892,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_4d2d3b8816954a23bb240841b8ab23c9~mv2.jpg",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-15rzf8e",
@@ -3630,7 +3906,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-61m6q1",
@@ -3646,7 +3923,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-5l594u",
@@ -3661,7 +3939,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_9738f7881e6044599d8bb8bce6128170~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-9ylsch",
@@ -3677,7 +3956,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-lg1p1d",
@@ -3692,7 +3972,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_48707225275f4cc2b4dc8125f45a763b~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1sc0v88",
@@ -3708,7 +3989,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1b2vb6l",
@@ -3723,7 +4005,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_ae35a89f54ad4a628738ff1f8104ec6a~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-yb369y",
@@ -3744,7 +4027,8 @@
    "shortTitle": "Přípravky · turnaj",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-p1n0tv",
@@ -3765,7 +4049,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Nýřany",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1nuh5w8",
@@ -3780,7 +4065,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_b014234099674b8686f36a2abd10e1ce~mv2.png",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-rtm79k",
@@ -3801,7 +4087,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Příchovice",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1uv165i",
@@ -3816,7 +4103,8 @@
    "image": "https://static.wixstatic.com/media/nsplsh_2b4cfc1e9f1149009f927640aa363fd7~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-ubr66k",
@@ -3835,7 +4123,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-qi21ye",
@@ -3850,7 +4139,8 @@
    "image": "",
    "categories": [
     "ostatni"
-   ]
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "nezarazene-62g964",
@@ -3861,15 +4151,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -3885,7 +4177,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "obec-fjsj2r",
@@ -3903,7 +4196,8 @@
    ],
    "note": "Pá 14:00–22:00 | So 08:00–14:00",
    "originalTitle": "Oznámení o době a místě konání voleb do zastupitelstev obcí",
-   "originalLocation": ""
+   "originalLocation": "",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "obec-c0pv8v",
@@ -3921,7 +4215,8 @@
    ],
    "note": "14:30 na návsi | 15:30 průvod obcí | 17:00 sokolovna – vystoupení | 20:00 hodová zábava",
    "originalTitle": "Pozvánka na Babský hody 10. 10. 2026",
-   "originalLocation": ""
+   "originalLocation": "",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-3xp067",
@@ -3942,7 +4237,8 @@
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-ashlf7",
@@ -3963,7 +4259,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-17yrhm2",
@@ -3982,7 +4279,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1f0nfl",
@@ -3993,15 +4291,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-u5if78",
@@ -4018,7 +4318,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-4fxfej",
@@ -4033,7 +4334,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_1f2eb1d435b5413087e59dae7263a0a9~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "obec-kbdo4r",
@@ -4050,7 +4352,8 @@
     "deti",
     "obec"
    ],
-   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče"
+   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-a7wk58",
@@ -4069,7 +4372,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1mncwcw",
@@ -4080,15 +4384,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-t70nxm",
@@ -4103,7 +4409,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_418284843f93481cb27132528bbf2900~mv2.jpg",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-r4oeo8",
@@ -4119,7 +4426,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-136fyqt",
@@ -4135,7 +4443,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "sokol-4gkhvx",
@@ -4156,7 +4465,8 @@
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-5hg2on",
@@ -4177,7 +4487,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1mwjzye",
@@ -4198,7 +4509,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Tymákov",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1ngj7cc",
@@ -4219,7 +4531,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Nezvěstice",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-s7pjp",
@@ -4238,7 +4551,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1p9bqpu",
@@ -4249,15 +4563,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-s0i3bz",
@@ -4273,7 +4589,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-xe95hj",
@@ -4289,7 +4606,8 @@
    "categories": [
     "deti",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-1jf6wtg",
@@ -4308,7 +4626,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1ld5nrc",
@@ -4319,15 +4638,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-zvngm",
@@ -4343,7 +4664,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1dbi5jj",
@@ -4358,7 +4680,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e6e41967148446cd8dc528f794b42e89~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-178aiil",
@@ -4374,7 +4697,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "sokol-1okkrm7",
@@ -4395,7 +4719,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Svinov",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-17bzm8e",
@@ -4414,7 +4739,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-hegyht",
@@ -4425,15 +4751,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-iknwj2",
@@ -4449,7 +4777,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-6x6w3i",
@@ -4462,7 +4791,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-lne1qq",
@@ -4481,7 +4811,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-17arpiu",
@@ -4492,15 +4823,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-ve7fdc",
@@ -4516,7 +4849,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-18ijhrd",
@@ -4535,7 +4869,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1cv7bra",
@@ -4546,15 +4881,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-4al37h",
@@ -4570,7 +4907,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-12f8nmf",
@@ -4586,7 +4924,8 @@
    "categories": [
     "kultura",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-1j4sg4t",
@@ -4605,7 +4944,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-z5i70h",
@@ -4616,15 +4956,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-16gbckf",
@@ -4640,7 +4982,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1n2hyqk",
@@ -4656,7 +4999,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-813om6",
@@ -4675,7 +5019,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-xpp5tx",
@@ -4686,15 +5031,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1oj78n4",
@@ -4711,7 +5058,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-1ug0pvk",
@@ -4722,14 +5070,17 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "Pořádá obecní úřad\n#seniori\n#icon:old",
+   "description": "Pořádá obecní úřad",
    "image": "",
+   "icon": "old",
    "tagCategories": [
+    "seniori",
     "obec"
    ],
    "categories": [
     "obec"
-   ]
+   ],
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-fyvofl",
@@ -4743,8 +5094,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "nezarazene-tdf4vb",
@@ -4763,7 +5116,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-172znxv",
@@ -4774,15 +5128,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1mho3qn",
@@ -4798,7 +5154,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-oqt64q",
@@ -4814,7 +5171,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-40if0o",
@@ -4833,7 +5191,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1849gn",
@@ -4844,15 +5203,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-1nmjbe3",
@@ -4865,7 +5226,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-1ixvp6o",
@@ -4876,8 +5238,9 @@
    "allDay": true,
    "location": "",
    "url": "",
-   "description": "#icon:candle",
+   "description": "",
    "image": "",
+   "icon": "candle",
    "tagCategories": [
     "deti",
     "kultura"
@@ -4886,7 +5249,8 @@
     "deti",
     "kultura",
     "obec"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-1ukocgo",
@@ -4905,7 +5269,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1bvi37w",
@@ -4916,15 +5281,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-8l3x3a",
@@ -4940,7 +5307,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1j8i6t8",
@@ -4956,7 +5324,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1qmi2ry",
@@ -4975,7 +5344,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-10cpt7l",
@@ -4986,15 +5356,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-12uvg9g",
@@ -5010,7 +5382,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-1y0eeei",
@@ -5021,14 +5394,16 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "#icon:christmas-tree",
+   "description": "",
    "image": "",
+   "icon": "christmas-tree",
    "tagCategories": [
     "deti"
    ],
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "nezarazene-1lcdi2k",
@@ -5047,7 +5422,8 @@
    ],
    "categories": [
     "cirkev"
-   ]
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -5058,15 +5434,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1lwh7mo",
@@ -5082,7 +5460,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-11719fd",
@@ -5097,7 +5476,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_844158cb120744f1adca110551034ed7~mv2.jpg",
    "categories": [
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-sqim65",
@@ -5113,7 +5493,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-7nr8c",
@@ -5124,8 +5505,9 @@
    "allDay": true,
    "location": "U Kaple",
    "url": "",
-   "description": "#icon:christmas-tree",
+   "description": "",
    "image": "",
+   "icon": "christmas-tree",
    "tagCategories": [
     "kultura",
     "deti"
@@ -5133,7 +5515,8 @@
    "categories": [
     "kultura",
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T00:13:17.000Z"
   },
   {
    "id": "nezarazene-1ytvbob",
@@ -5152,7 +5535,8 @@
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1b4q7w4",
@@ -5163,15 +5547,17 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
+   "description": "cvičitelka Ivana Budíková",
    "image": "",
+   "icon": "stretching-2",
    "recurring": true,
    "tagCategories": [
     "sport"
    ],
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1jipog0",
@@ -5187,7 +5573,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-1gi8z6o",
@@ -5205,45 +5592,8 @@
    ],
    "categories": [
     "deti"
-   ]
-  },
-  {
-   "id": "nezarazene-t6lsf0",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-12-02T17:00:00.000Z",
-   "end": "2026-12-02T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
    ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-fhd90",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-02T17:30:00.000Z",
-   "end": "2026-12-02T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:44:23.000Z"
   },
   {
    "id": "knihovna-ah6n8y",
@@ -5259,7 +5609,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-19oir1h",
@@ -5275,7 +5626,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-1tyoqhk",
@@ -5293,7 +5645,8 @@
    ],
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T00:29:25.000Z"
   },
   {
    "id": "seniori-18n6yud",
@@ -5307,46 +5660,10 @@
    "description": "",
    "image": "",
    "categories": [
+    "seniori",
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-23kdjr",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2026-12-06T16:00:00.000Z",
-   "end": "2026-12-06T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-49umy8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-06T18:00:00.000Z",
-   "end": "2026-12-06T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T01:46:05.000Z"
   },
   {
    "id": "knihovna-mrfa59",
@@ -5363,7 +5680,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-e508kx",
@@ -5379,45 +5697,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1fepbq5",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-12-09T17:00:00.000Z",
-   "end": "2026-12-09T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
    ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1tzallt",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-09T17:30:00.000Z",
-   "end": "2026-12-09T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-68gb6q",
@@ -5433,7 +5714,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-14ym9v0",
@@ -5444,14 +5726,16 @@
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
-   "description": "#icon:clef",
+   "description": "",
    "image": "",
+   "icon": "clef",
    "tagCategories": [
     "kultura"
    ],
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "knihovna-142hbcz",
@@ -5467,45 +5751,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-124fe1l",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2026-12-13T16:00:00.000Z",
-   "end": "2026-12-13T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-yb9sgi",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-13T18:00:00.000Z",
-   "end": "2026-12-13T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-1ds5txp",
@@ -5521,45 +5768,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-y8rz9p",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-12-16T17:00:00.000Z",
-   "end": "2026-12-16T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
    ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1jvsl19",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-16T17:30:00.000Z",
-   "end": "2026-12-16T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-6trsjz",
@@ -5575,7 +5785,8 @@
    "recurring": true,
    "categories": [
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-rm7wor",
@@ -5588,47 +5799,15 @@
    "url": "",
    "description": "Vystoupení dětí a ostopovických žen.",
    "image": "",
-   "categories": [
-    "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-43lv2n",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2026-12-20T16:00:00.000Z",
-   "end": "2026-12-20T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
    "tagCategories": [
-    "sport"
+    "kultura",
+    "deti"
    ],
    "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1cavwt8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-20T18:00:00.000Z",
-   "end": "2026-12-20T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
+    "kultura",
+    "deti"
    ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "knihovna-l0efdh",
@@ -5644,45 +5823,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-18rc5up",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-12-23T17:00:00.000Z",
-   "end": "2026-12-23T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
    ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-1k4cikh",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-23T17:30:00.000Z",
-   "end": "2026-12-23T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-1e99sf9",
@@ -5695,7 +5837,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-vdnv5i",
@@ -5708,6 +5851,7 @@
    "url": "",
    "description": "",
    "image": "",
+   "icon": "candle",
    "tagCategories": [
     "cirkev",
     "deti"
@@ -5715,7 +5859,8 @@
    "categories": [
     "cirkev",
     "deti"
-   ]
+   ],
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "svatky-1seqtp3",
@@ -5728,7 +5873,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-118xuan",
@@ -5741,45 +5887,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-1lzp45a",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2026-12-27T16:00:00.000Z",
-   "end": "2026-12-27T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-9erqml",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-27T18:00:00.000Z",
-   "end": "2026-12-27T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1hodbme",
@@ -5795,45 +5904,8 @@
    "recurring": true,
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-13no6kx",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-12-30T17:00:00.000Z",
-   "end": "2026-12-30T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
    ],
-   "categories": [
-    "cirkev"
-   ]
-  },
-  {
-   "id": "nezarazene-6aq36l",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2026-12-30T17:30:00.000Z",
-   "end": "2026-12-30T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "svatky-1czmhhu",
@@ -5846,7 +5918,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-14rwgfa",
@@ -5859,83 +5932,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-2qxy33",
-   "source": "nezarazene",
-   "title": "Malá kopaná",
-   "start": "2027-01-03T16:00:00.000Z",
-   "end": "2027-01-03T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna (venkovní hřiště)",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1on61ys",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-03T18:00:00.000Z",
-   "end": "2027-01-03T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1rj80xj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-06T17:30:00.000Z",
-   "end": "2027-01-06T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-8du8v4",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-10T18:00:00.000Z",
-   "end": "2027-01-10T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "knihovna-1ulvu99",
@@ -5952,26 +5950,8 @@
    "categories": [
     "deti",
     "vzdelavani"
-   ]
-  },
-  {
-   "id": "nezarazene-9gn7ml",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-13T17:30:00.000Z",
-   "end": "2027-01-13T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-133uvg",
@@ -5986,45 +5966,8 @@
    "image": "",
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-19fr7wp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-17T18:00:00.000Z",
-   "end": "2027-01-17T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1uh1nmn",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-20T17:30:00.000Z",
-   "end": "2027-01-20T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-oqbsqh",
@@ -6035,90 +5978,17 @@
    "allDay": true,
    "location": "Sokolovna",
    "url": "",
-   "description": "#seniori",
+   "description": "",
    "image": "",
    "tagCategories": [
-    "kultura"
+    "kultura",
+    "seniori"
    ],
    "categories": [
-    "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-e4xl2b",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-24T18:00:00.000Z",
-   "end": "2027-01-24T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
+    "kultura",
+    "seniori"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1bo4td6",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-27T17:30:00.000Z",
-   "end": "2027-01-27T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-k0toct",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-01-31T18:00:00.000Z",
-   "end": "2027-01-31T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-3tj5lz",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-03T17:30:00.000Z",
-   "end": "2027-02-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:37:53.000Z"
   },
   {
    "id": "pripravovane-151pfly",
@@ -6136,159 +6006,8 @@
    ],
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-llnf3v",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-07T18:00:00.000Z",
-   "end": "2027-02-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1l8o3qv",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-10T17:30:00.000Z",
-   "end": "2027-02-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-s546vf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-14T18:00:00.000Z",
-   "end": "2027-02-14T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1crpztu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-17T17:30:00.000Z",
-   "end": "2027-02-17T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-hxqrun",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-21T18:00:00.000Z",
-   "end": "2027-02-21T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1vavz18",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-24T17:30:00.000Z",
-   "end": "2027-02-24T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10sciio",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-02-28T18:00:00.000Z",
-   "end": "2027-02-28T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-jpxjbu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-03T17:30:00.000Z",
-   "end": "2027-03-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "pripravovane-o73ikv",
@@ -6306,121 +6025,8 @@
    ],
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-1jtu5hi",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-07T18:00:00.000Z",
-   "end": "2027-03-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-rbbxsa",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-10T17:30:00.000Z",
-   "end": "2027-03-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1clzxkm",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-14T18:00:00.000Z",
-   "end": "2027-03-14T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1t6uccf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-17T17:30:00.000Z",
-   "end": "2027-03-17T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-5sw9y",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-21T18:00:00.000Z",
-   "end": "2027-03-21T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-qoe3s1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-24T17:30:00.000Z",
-   "end": "2027-03-24T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "svatky-anz2ks",
@@ -6433,26 +6039,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-13dpfr2",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-28T17:00:00.000Z",
-   "end": "2027-03-28T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1tqijoz",
@@ -6465,64 +6053,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-1t1kk6",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-03-31T16:30:00.000Z",
-   "end": "2027-03-31T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-o82t5r",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-04T17:00:00.000Z",
-   "end": "2027-04-04T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-ry9ilo",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-07T16:30:00.000Z",
-   "end": "2027-04-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-50muru",
@@ -6543,7 +6075,8 @@
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1d38y02",
@@ -6564,7 +6097,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1qskqny",
@@ -6585,7 +6119,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ S. Kyšice",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-3mlot0",
@@ -6606,7 +6141,8 @@
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – Draken Brno",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-18ctu95",
@@ -6627,7 +6163,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno A",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1tq34ir",
@@ -6648,7 +6185,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno B",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-1s6ir4t",
@@ -6669,83 +6207,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – TJ Plzeň-Újezd",
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-18ovs9t",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-11T17:00:00.000Z",
-   "end": "2027-04-11T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-9i23tc",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-14T16:30:00.000Z",
-   "end": "2027-04-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xi516q",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-18T17:00:00.000Z",
-   "end": "2027-04-18T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-87uv7s",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-21T16:30:00.000Z",
-   "end": "2027-04-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-4ddw29",
@@ -6766,45 +6229,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Krčín",
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1yyppya",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-25T17:00:00.000Z",
-   "end": "2027-04-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-18mbsj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-04-28T16:30:00.000Z",
-   "end": "2027-04-28T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1u7v05b",
@@ -6817,45 +6243,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-mbmwl0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-02T17:00:00.000Z",
-   "end": "2027-05-02T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-jbvjon",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-05T16:30:00.000Z",
-   "end": "2027-05-05T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-1jy7eop",
@@ -6868,45 +6257,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-uzuhlx",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-09T17:00:00.000Z",
-   "end": "2027-05-09T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1w1yor3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-12T16:30:00.000Z",
-   "end": "2027-05-12T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-1ye5f12",
@@ -6921,7 +6273,8 @@
    "image": "",
    "categories": [
     "kultura"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-4nac99",
@@ -6942,83 +6295,8 @@
    "shortTitle": "1. liga muži · Sokol Ostopovice – SK Studénka A",
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-t29tfp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-16T17:00:00.000Z",
-   "end": "2027-05-16T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-c09kby",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-19T16:30:00.000Z",
-   "end": "2027-05-19T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10jcwu1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-23T17:00:00.000Z",
-   "end": "2027-05-23T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-qe28y0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-26T16:30:00.000Z",
-   "end": "2027-05-26T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-4qn92v",
@@ -7039,7 +6317,8 @@
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
     "sport"
-   ]
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "sokol-18cwzr4",
@@ -7060,83 +6339,8 @@
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
     "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-7n94kp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-05-30T17:00:00.000Z",
-   "end": "2027-05-30T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-nan8qp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-02T16:30:00.000Z",
-   "end": "2027-06-02T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-19mapcj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-06T17:00:00.000Z",
-   "end": "2027-06-06T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1h3w3ec",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-09T16:30:00.000Z",
-   "end": "2027-06-09T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-1xl367q",
@@ -7154,45 +6358,8 @@
    ],
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-1s0fedt",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-13T17:00:00.000Z",
-   "end": "2027-06-13T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-11l8l1c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-16T16:30:00.000Z",
-   "end": "2027-06-16T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:33:06.000Z"
   },
   {
    "id": "pripravovane-tkl77e",
@@ -7210,102 +6377,8 @@
    ],
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-1k00wo7",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-20T17:00:00.000Z",
-   "end": "2027-06-20T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-5zp3ys",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-23T16:30:00.000Z",
-   "end": "2027-06-23T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1lob4uu",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-27T17:00:00.000Z",
-   "end": "2027-06-27T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-ro3gdc",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-06-30T16:30:00.000Z",
-   "end": "2027-06-30T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1t2xs8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-04T17:00:00.000Z",
-   "end": "2027-07-04T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:33:06.000Z"
   },
   {
    "id": "svatky-wxpdhy",
@@ -7318,7 +6391,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-97nrwx",
@@ -7331,64 +6405,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-6sr1un",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-07T16:30:00.000Z",
-   "end": "2027-07-07T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1knc79a",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-11T17:00:00.000Z",
-   "end": "2027-07-11T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-v5syfj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-14T16:30:00.000Z",
-   "end": "2027-07-14T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -7406,406 +6424,8 @@
    ],
    "categories": [
     "kultura"
-   ]
-  },
-  {
-   "id": "nezarazene-1yv44f1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-18T17:00:00.000Z",
-   "end": "2027-07-18T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
    ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1v862gn",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-21T16:30:00.000Z",
-   "end": "2027-07-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1hp6ryl",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-25T17:00:00.000Z",
-   "end": "2027-07-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-8rqfv0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-07-28T16:30:00.000Z",
-   "end": "2027-07-28T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-eu8ze0",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-01T17:00:00.000Z",
-   "end": "2027-08-01T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xvqerp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-04T16:30:00.000Z",
-   "end": "2027-08-04T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-wuffw7",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-08T17:00:00.000Z",
-   "end": "2027-08-08T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1lvgumz",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-11T16:30:00.000Z",
-   "end": "2027-08-11T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1pxfs7d",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-15T17:00:00.000Z",
-   "end": "2027-08-15T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1hfrg1s",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-18T16:30:00.000Z",
-   "end": "2027-08-18T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-b6q0mf",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-22T17:00:00.000Z",
-   "end": "2027-08-22T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-10ld7oo",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-25T16:30:00.000Z",
-   "end": "2027-08-25T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-13d4slm",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-08-29T17:00:00.000Z",
-   "end": "2027-08-29T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1x3xklj",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-01T16:30:00.000Z",
-   "end": "2027-09-01T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1g857j1",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-05T17:00:00.000Z",
-   "end": "2027-09-05T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1rqvn8c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-08T16:30:00.000Z",
-   "end": "2027-09-08T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-z27v2l",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-12T17:00:00.000Z",
-   "end": "2027-09-12T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-8n9f4u",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-15T16:30:00.000Z",
-   "end": "2027-09-15T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-q89evg",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-19T17:00:00.000Z",
-   "end": "2027-09-19T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-uh7w28",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-22T16:30:00.000Z",
-   "end": "2027-09-22T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1mbdnbe",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-26T17:00:00.000Z",
-   "end": "2027-09-26T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "added": "2026-10-08T14:33:06.000Z"
   },
   {
    "id": "svatky-179n2hh",
@@ -7818,178 +6438,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-1qmbl4d",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-09-29T16:30:00.000Z",
-   "end": "2027-09-29T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-r2r0ix",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-03T17:00:00.000Z",
-   "end": "2027-10-03T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-dqlbqw",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-06T16:30:00.000Z",
-   "end": "2027-10-06T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-1g3m9nd",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-10T17:00:00.000Z",
-   "end": "2027-10-10T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-csh7ym",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-13T16:30:00.000Z",
-   "end": "2027-10-13T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-15r4sj8",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-17T17:00:00.000Z",
-   "end": "2027-10-17T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-wk6e3c",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-20T16:30:00.000Z",
-   "end": "2027-10-20T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-xdif8y",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-24T17:00:00.000Z",
-   "end": "2027-10-24T18:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-4meykp",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-27T16:30:00.000Z",
-   "end": "2027-10-27T17:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "svatky-18dqlnv",
@@ -8002,83 +6452,8 @@
    "url": "",
    "description": "Státní svátek",
    "image": "",
-   "categories": []
-  },
-  {
-   "id": "nezarazene-1pcqb5n",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-10-31T18:00:00.000Z",
-   "end": "2027-10-31T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-15ycgfr",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-03T17:30:00.000Z",
-   "end": "2027-11-03T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-dmrsy3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-07T18:00:00.000Z",
-   "end": "2027-11-07T19:00:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "cvičitelka Ivana Budíková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
-  },
-  {
-   "id": "nezarazene-lcyuh3",
-   "source": "nezarazene",
-   "title": "Cvičení ženy",
-   "start": "2027-11-10T17:30:00.000Z",
-   "end": "2027-11-10T18:30:00.000Z",
-   "allDay": false,
-   "location": "Sokolovna",
-   "url": "https://www.ostopovice.cz/spolky-a-kluby",
-   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková\n\n#icon:stretching-2",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "sport"
-   ],
-   "categories": [
-    "sport"
-   ]
+   "categories": [],
+   "added": "2026-10-07T22:43:36.000Z"
   }
  ]
 }
