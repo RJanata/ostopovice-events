@@ -22,6 +22,8 @@ const state = {
   selectedDay: null,
   showPast: false, // v aktuálním měsíci i proběhlé akce od 1. dne („Zobrazit proběhlé“)
   showRecent: false, // místo seznamu jen nedávno přidané akce
+  calendarCollapsed: false, // mřížka měsíce sbalená („Skrýt“); při hledání se sbalí sama
+  collapsedBySearch: false, // sbalilo ji hledání → po smazání hledání se zase rozbalí
   extraMonths: 0, // kolik dalších měsíců za vybraným seznam ukazuje („Zobrazit další akce“); Infinity = všechny
 };
 
@@ -311,6 +313,7 @@ function renderFilters() {
   document.querySelectorAll('.regular-input').forEach((input) => { input.checked = state.regular; });
   const search = document.getElementById('search');
   if (search.value !== state.query) search.value = state.query;
+  document.getElementById('search-clear').hidden = !search.value;
   document.getElementById('reset-filters').hidden = !isFilterActive();
 }
 
@@ -451,13 +454,22 @@ const isCurrentMonth = () => !state.month || state.month === today.slice(0, 7);
  * Začátek seznamu podle kalendáře: aktuální měsíc → od dneška (s „Zobrazit proběhlé“
  * od 1. dne měsíce), jiný zobrazený měsíc (dopředu i dozadu) → od jeho prvního dne.
  */
-function listStart() {
+function listStart(events) {
+  // hledání: nalezené akce od dneška bez ohledu na zobrazený měsíc, proběhlé jen přes odkaz
+  if (state.query) {
+    return state.showPast ? events.reduce((min, e) => (e._first < min ? e._first : min), today) : today;
+  }
   if (!isCurrentMonth()) return `${state.month}-01`;
   return state.showPast ? `${today.slice(0, 7)}-01` : today;
 }
 
-/** Proběhlé akce aktuálního měsíce (od 1. dne do včerejška), které seznam od dneška neukazuje. */
-const pastThisMonth = (events) => events.filter((e) => !e.recurring && e._last < today && e._last >= `${today.slice(0, 7)}-01`);
+/**
+ * Proběhlé akce, které seznam od dneška neukazuje: aktuální měsíc od 1. dne do včerejška
+ * (bez pravidelných), při hledání všechny nalezené proběhlé akce.
+ */
+const pastHidden = (events) => (state.query
+  ? events.filter((e) => e._last < today)
+  : events.filter((e) => !e.recurring && e._last < today && e._last >= `${today.slice(0, 7)}-01`));
 
 /** Nedávno přidané nadcházející akce; z opakované akce jen nejbližší termín. */
 function recentlyAdded(events) {
@@ -491,8 +503,8 @@ function renderRecent(events, holidays) {
 /** Řádek tlačítek nad seznamem: proběhlé akce tohoto měsíce a nedávno přidané. */
 function listButtons(events) {
   const buttons = [];
-  const past = pastThisMonth(events).length;
-  if (isCurrentMonth() && past && !state.showRecent) {
+  const past = pastHidden(events).length;
+  if ((isCurrentMonth() || state.query) && past && !state.showRecent) {
     buttons.push(`<button type="button" class="link-button" data-action="past" aria-pressed="${state.showPast}">`
       + `${state.showPast ? 'Skrýt' : 'Zobrazit'} proběhlé akce (${past})</button>`);
   }
@@ -529,7 +541,7 @@ const lastDayOfMonth = (month) => addDays(`${shiftMonthKey(month, 1)}-01`, -1);
 function renderList(events, holidays) {
   if (state.selectedDay) return renderSelectedDay(events, holidays);
   if (state.showRecent) return renderRecent(events, holidays);
-  const from = listStart();
+  const from = listStart(events);
   const lastEventDay = events.reduce((max, e) => (e._last > max ? e._last : max), from);
   // při hledání ukázat všechny nalezené akce, i ty za mnoho měsíců
   const to = state.query || state.extraMonths === Infinity
@@ -550,7 +562,10 @@ function renderList(events, holidays) {
   const longBlock = longEventsBlock(events, from, to);
   html += longBlock;
   if (!longBlock && !days.some((d) => byDay.get(d).length)) {
-    html += `<p class="empty">${events.length ? 'V tomto období žádné akce nejsou.' : 'Filtrům neodpovídá žádná akce.'}</p>`;
+    const message = !events.length ? 'Filtrům neodpovídá žádná akce.'
+      : state.query ? 'Hledání neodpovídá žádná nadcházející akce.'
+        : 'V tomto období žádné akce nejsou.';
+    html += `<p class="empty">${message}</p>`;
   }
   html += renderDays(byDay, holidays);
   if (!state.query && remainingAll) {
@@ -707,18 +722,43 @@ function renderMonth(events, holidays) {
   const title = formatDay(firstOfMonth, { month: 'long', year: 'numeric' });
   const slideClass = monthSlide ? ` month__grid--from-${monthSlide}` : '';
   monthSlide = null;
+  // vykreslí se ve stavu, v jakém byl kalendář naposledy; změnu (s animací) dodělá syncCalendarCollapse
   return `
-    <div class="month">
+    <div class="month${renderedCollapsed ? ' month--collapsed' : ''}">
       <div class="month__nav">
         <h2>${escapeHtml(title)}</h2>
         <div class="month__nav-buttons">
+          ${collapseButton(renderedCollapsed)}
           <button type="button" class="icon-button" data-action="prev-month" aria-label="Předchozí měsíc">‹</button>
           <button type="button" class="icon-button icon-button--text" data-action="this-month">Dnes</button>
           <button type="button" class="icon-button" data-action="next-month" aria-label="Další měsíc">›</button>
         </div>
       </div>
-      <div class="month__grid${slideClass}">${weekdaysHtml}${weeksHtml}</div>
+      <div class="month__body"><div class="month__body-inner">
+        <div class="month__grid${slideClass}">${weekdaysHtml}${weeksHtml}</div>
+      </div></div>
     </div>`;
+}
+
+let renderedCollapsed = false; // stav sbalení, ve kterém je kalendář právě na stránce
+
+function collapseButton(collapsed) {
+  const arrow = collapsed
+    ? '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>'
+    : '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>';
+  const calendar = '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>';
+  return `<button type="button" class="icon-button icon-button--text month__toggle" data-action="toggle-calendar" aria-expanded="${!collapsed}">`
+    + `${calendar}${collapsed ? 'Zobrazit' : 'Skrýt'}${arrow}</button>`;
+}
+
+/** Sbalí / rozbalí mřížku měsíce podle stavu — přepnutím třídy na stránce, aby proběhla animace. */
+function syncCalendarCollapse() {
+  const month = document.querySelector('.month');
+  if (!month || renderedCollapsed === state.calendarCollapsed) return;
+  renderedCollapsed = state.calendarCollapsed;
+  void month.offsetHeight; // čerstvě vložený kalendář: nejdřív spočítat výchozí stav, ať přechod proběhne
+  month.classList.toggle('month--collapsed', renderedCollapsed);
+  month.querySelector('.month__toggle').outerHTML = collapseButton(renderedCollapsed);
 }
 
 function shiftMonth(delta) {
@@ -804,6 +844,7 @@ function update({ keepHash = false } = {}) {
   refreshSubscribePanel?.();
   document.getElementById('view').innerHTML = renderMonth(events, holidays)
     + `<div class="event-list">${renderList(events, holidays)}</div>`;
+  syncCalendarCollapse();
 }
 
 function renderStatus() {
@@ -945,9 +986,32 @@ function setupThemeToggle() {
 
 function setupEvents() {
   let searchTimer;
+  // vlastní křížek místo prohlížečového (ten je vidět jen při najetí myší / v Chrome)
+  document.getElementById('search-clear').addEventListener('click', () => {
+    const search = document.getElementById('search');
+    search.value = '';
+    search.dispatchEvent(new Event('input'));
+    search.focus();
+  });
   document.getElementById('search').addEventListener('input', (ev) => {
+    document.getElementById('search-clear').hidden = !ev.target.value;
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(() => { state.query = ev.target.value.trim(); update(); }, 150);
+    searchTimer = setTimeout(() => {
+      const query = ev.target.value.trim();
+      // při hledání kalendář překáží → sbalit; po smazání hledání vrátit, pokud ho sbalilo hledání
+      if (query && !state.query && !state.calendarCollapsed) {
+        state.calendarCollapsed = true;
+        state.collapsedBySearch = true;
+      } else if (!query && state.collapsedBySearch) {
+        state.calendarCollapsed = false;
+        state.collapsedBySearch = false;
+      }
+      // hledání v jednom vybraném dni nedává smysl → začátek i konec hledání vrací seznam do výchozího
+      // stavu (bez vybraného dne, proběhlých, nedávno přidaných a dalších měsíců)
+      if (Boolean(query) !== Boolean(state.query)) resetListRange();
+      state.query = query;
+      update();
+    }, 150);
   });
 
   document.getElementById('download-filtered').addEventListener('click', downloadFiltered);
@@ -964,6 +1028,10 @@ function setupEvents() {
     state.villages = null;
     state.regular = true;
     state.query = '';
+    if (state.collapsedBySearch) {
+      state.calendarCollapsed = false;
+      state.collapsedBySearch = false;
+    }
     update();
   });
 
@@ -981,6 +1049,10 @@ function setupEvents() {
     } else if (action === 'later') {
       state.extraMonths += 1;
       update({ keepHash: true });
+    } else if (action === 'toggle-calendar') {
+      state.calendarCollapsed = !state.calendarCollapsed;
+      state.collapsedBySearch = false;
+      syncCalendarCollapse();
     } else if (action === 'all-later') {
       state.extraMonths = Infinity;
       update({ keepHash: true });
@@ -1020,6 +1092,7 @@ async function init() {
   countVisit();
   today = dayKey(new Date());
   readHash();
+  if (state.query) state.calendarCollapsed = state.collapsedBySearch = true; // odkaz s hledáním
   setupEvents();
   setupSubscribe();
   setupThemeToggle();
