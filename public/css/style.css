@@ -120,7 +120,11 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .filters--top .filters__row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; align-items: center; }
 .filters--top .filters__row > :not(.filters__label):not(.regular-toggle--top) { grid-column: 1 / -1; }
 .filters .regular-toggle--top { display: none; margin-left: 0; padding: 0; }
-.filters--regular-top .regular-toggle--top { display: inline-flex; justify-self: start; }
+/* nahoře zarovnané vpravo k poslední ikoně: řádek kategorií je jen tak široký jako štítky
+   (souhrn výběru pod nimi šířku neurčuje) */
+.filters--regular-top .regular-toggle--top { display: inline-flex; justify-self: end; }
+.filters--regular-top .filters__row:has(.regular-toggle--top) { width: fit-content; max-width: 100%; grid-template-columns: auto auto; }
+.filters--regular-top .filters__row:has(.regular-toggle--top) .chips__selected { width: 0; min-width: 100%; }
 .filters--regular-top .chips .regular-toggle { display: none; }
 .filters--top .filters__label { flex: none; }
 .filters--short .chip:not(.chip--all) .chip__label { display: none; }
