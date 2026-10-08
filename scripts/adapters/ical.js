@@ -2,18 +2,26 @@
 import ical from 'node-ical';
 import { fetchText } from '../lib/http.js';
 import { htmlToText } from '../lib/text.js';
-import { addDays, pragueDay } from '../lib/time.js';
+import { addDays, fromPragueTime, pragueDay } from '../lib/time.js';
 
 /**
  * source.options:
  *   includeDescriptions: [..] — vezme jen události, jejichž DESCRIPTION je v seznamu
  *                              (u státních svátků tak vyřadíme „Významný den“)
+ *   recurringMonths: 2      — opakované události jen do konce (n-1). dalšího měsíce
+ *                              (2 = tento + příští); jednorázové akce bez omezení
  */
 export async function fetchEvents(source, { from, to }) {
   const text = await fetchText(source.url);
   if (!text.includes('BEGIN:VCALENDAR')) throw new Error('Odpověď není iCal (není kalendář veřejný?)');
   const data = ical.sync.parseICS(text);
   const include = source.options?.includeDescriptions;
+  const months = source.options?.recurringMonths;
+  // 1. den měsíce za posledním povoleným (v pražském čase), opakování od něj dál se nerozbalí
+  const today = pragueDay(new Date());
+  const recurringTo = months
+    ? fromPragueTime(Number(today.slice(0, 4)), Number(today.slice(5, 7)) + months, 1)
+    : to;
 
   const events = [];
   for (const item of Object.values(data)) {
@@ -21,7 +29,8 @@ export async function fetchEvents(source, { from, to }) {
     const description = typeof item.description === 'string' ? item.description : item.description?.val;
     if (include && !include.includes(String(description || '').trim())) continue;
 
-    const instances = ical.expandRecurringEvent(item, { from, to, expandOngoing: true });
+    const instances = ical.expandRecurringEvent(item, { from, to: item.rrule && recurringTo < to ? recurringTo : to, expandOngoing: true })
+      .filter((inst) => !item.rrule || inst.start < recurringTo);
     for (const inst of instances) {
       const allDay = Boolean(inst.isFullDay);
       let start;
