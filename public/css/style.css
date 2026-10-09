@@ -64,8 +64,15 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* ---------- Hlavička ---------- */
 
 .site-header { padding: 28px 0 8px; }
-/* přepínač režimu vpravo nahoře, zarovnaný s nadpisem */
-.site-header .wrap { display: flex; gap: 12px 16px; align-items: flex-start; justify-content: space-between; }
+/* nadpis a podnadpis vlevo, přepínač režimu vpravo v úrovni nadpisu; když se nadpis
+   nevejde na jeden řádek (mobil), jde přes celou šířku a přepínač k podnadpisu (setupHeaderFit) */
+.site-header .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: start; }
+.site-header__title { display: contents; }
+.site-header h1 { grid-column: 1; grid-row: 1; }
+.site-header__lead { grid-column: 1; grid-row: 2; }
+.site-header__actions { grid-column: 2; grid-row: 1; }
+.site-header--stacked h1 { grid-column: 1 / -1; }
+.site-header--stacked .site-header__actions { grid-row: 2; align-self: center; margin-top: 4px; }
 .site-header h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.15; letter-spacing: -0.02em; color: var(--heading); }
 .site-header__lead { margin: 4px 0 0; color: var(--muted); }
 

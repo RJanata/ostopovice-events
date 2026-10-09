@@ -21,7 +21,7 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 | TJ Sokol Ostopovice | `nhjmop` | Rozpis hřiště z nhjmop.cz (domácí utkání národní házené, celá sezóna). |
 | Státní svátky | `ical` | Google iCal; jen „Státní svátek“, zobrazují se jako popisek dne (`display: dayLabel`). |
 | Nezařazené | `ical` | Vlastní Google kalendář (opakované události jen na tento a příští měsíc, `recurringMonths`) pro akce v obci, které nepatří pod žádný jiný zdroj (`allowEmpty`, `adminRefresh`). Navíc doplňkový zdroj (`extraFeeds`) **Farnost Troubsko** (`parish-schedule`): z týdenního pořadu bohoslužeb jen ty v kapli Ostopovice, kategorie Církev. Selhání doplňku nesmaže jeho poslední akce. |
-| Připravované události | `ical` | Vlastní Google kalendář se zástupnými akcemi; skutečný zdroj se stejnou akcí má přednost. |
+| Připravované akce | `ical` | Vlastní Google kalendář se zástupnými akcemi; skutečný zdroj se stejnou akcí má přednost. |
 
 ## Konfigurace
 

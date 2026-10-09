@@ -43,7 +43,7 @@ const SITE_URL = 'https://kalendar.prolidiostopovice.cz/';
 const ICON_DIR = path.join(ROOT, 'public', 'icons', 'tabler');
 const ICON_URL = (name) => `https://cdn.jsdelivr.net/npm/@tabler/icons@3.49.0/icons/outline/${name}.svg`;
 
-const CALENDAR_NAME = 'Akce v Ostopovicích';
+const CALENDAR_NAME = 'Kalendář akcí v Ostopovicích';
 const PAST_DAYS = 400; // jak dlouho držet proběhlé akce
 const FUTURE_DAYS = 400; // jak daleko rozbalovat opakované akce
 const ICS_PAST_DAYS = 60; // kolik proběhlých dní dávat do .ics kalendářů

@@ -977,6 +977,24 @@ function setupEventTooltip() {
   window.addEventListener('scroll', () => { tip.hidden = true; }, { passive: true });
 }
 
+/** Nadpis na víc řádků → přepínač režimu se přesune z úrovně nadpisu k podnadpisu. */
+function setupHeaderFit() {
+  const header = document.querySelector('.site-header');
+  const title = header.querySelector('h1');
+  const fit = () => {
+    header.classList.remove('site-header--stacked');
+    const lineHeight = parseFloat(getComputedStyle(title).lineHeight);
+    if (title.getBoundingClientRect().height > lineHeight * 1.5) header.classList.add('site-header--stacked');
+  };
+  fit();
+  let width = 0;
+  new ResizeObserver(([entry]) => {
+    if (Math.round(entry.contentRect.width) === width) return; // reaguje jen na šířku
+    width = Math.round(entry.contentRect.width);
+    requestAnimationFrame(fit);
+  }).observe(header);
+}
+
 function setupThemeToggle() {
   const button = document.getElementById('theme-toggle');
   const sync = () => button.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
@@ -1096,6 +1114,7 @@ async function init() {
   setupEvents();
   setupSubscribe();
   setupThemeToggle();
+  setupHeaderFit();
   setupEventTooltip();
   setupMonthSwipe();
   // přepočet zhuštění filtrů při změně šířky (okno, posuvník, otočení telefonu)
