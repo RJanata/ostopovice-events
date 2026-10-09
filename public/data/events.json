@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-09T11:20:44.980Z",
+ "generatedAt": "2026-10-09T13:48:00.148Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,9 +69,9 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T00:17:54.525Z",
-   "ok": false,
-   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (3 pokusy)",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
+   "ok": true,
+   "error": null,
    "count": 24
   },
   {
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 33
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-09T11:20:44.980Z",
+   "lastSuccess": "2026-10-09T13:48:00.148Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4025,7 +4025,8 @@
    },
    "shortTitle": "Přípravky · turnaj",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -4126,6 +4127,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4145,22 +4162,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4235,7 +4236,8 @@
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -4257,7 +4259,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -4463,7 +4466,8 @@
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -4485,7 +4489,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6072,7 +6077,8 @@
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6094,7 +6100,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Sokol Vracov",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6138,7 +6145,8 @@
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – Draken Brno",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6160,7 +6168,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno A",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6182,7 +6191,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – Draken Brno B",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6314,7 +6324,8 @@
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -6336,7 +6347,8 @@
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – SK Autonot Jihlava",
    "categories": [
-    "sport"
+    "sport",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
