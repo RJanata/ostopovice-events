@@ -1,8 +1,9 @@
 const USER_AGENT = 'Mozilla/5.0 (compatible; ostopovice-events/0.1; +https://github.com/)';
 
-// Menší hostingy (např. web Klubu seniorů) občas z GitHub Actions nepřijmou spojení,
-// o chvíli později to projde → při chybě sítě zkusit znovu.
-const RETRY_DELAYS_MS = [2000, 5000];
+// Menší hostingy (např. web Klubu seniorů) občas z GitHub Actions nepřijmou spojení
+// (z českých adres jde vše hned) a projde to až po chvíli → při chybě sítě zkusit
+// znovu, s rostoucí pauzou (celkem až ~50 s navíc, jen když zdroj zlobí).
+const RETRY_DELAYS_MS = [5000, 15000, 30000];
 
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 

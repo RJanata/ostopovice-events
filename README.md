@@ -80,7 +80,7 @@ i stránky ostatních projektů na stejné doméně — používej jen na svém 
 
 ## Chování sběru
 
-- Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená a web ukáže upozornění.
+- Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená. Web ukáže upozornění, až když se zdroj nedaří načíst déle než 24 hodin (`STALE_HOURS` v `js/app.js`); chybu vždy vidíš v `events.json` (`ok`, `error`). Při chybě sítě se stahování zkouší znovu po 5, 15 a 30 s (`scripts/lib/http.js`).
 - Zdroj, který najednou vrátí 0 akcí, i když dřív nějaké měl, se bere jako chyba (nejspíš se změnil web).
 - Proběhlé akce se drží 400 dní.
 - Kategorie se počítají při každém běhu znovu, takže úprava pravidel platí i zpětně.

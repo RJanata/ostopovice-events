@@ -847,8 +847,13 @@ function update({ keepHash = false } = {}) {
   syncCalendarCollapse();
 }
 
+// Krátký výpadek zdroje návštěvníky neruší (data jsou pár hodin stará, ale platná);
+// upozornění až když se zdroj nepodařilo načíst déle než STALE_HOURS.
+const STALE_HOURS = 24;
+
 function renderStatus() {
-  const failed = data.sources.filter((s) => s.ok === false);
+  const staleBefore = Date.now() - STALE_HOURS * 3600e3;
+  const failed = data.sources.filter((s) => s.ok === false && (!s.lastSuccess || Date.parse(s.lastSuccess) < staleBefore));
   const box = document.getElementById('status');
   if (!failed.length) { box.hidden = true; return; }
   box.hidden = false;
