@@ -43,6 +43,13 @@
 
   <main class="wrap">
     <section class="filters" aria-label="Filtry">
+      <button type="button" class="filters__toggle" id="filters-toggle" aria-expanded="true" aria-controls="filters-body">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <span class="filters__toggle-label">Hledání a filtry</span>
+        <span class="filters__toggle-summary" id="filters-summary"></span>
+        <svg class="filters__toggle-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="filters__body" id="filters-body"><div class="filters__body-inner">
       <div class="filters__row">
         <h2 class="filters__label">Zdroj</h2>
         <div class="chips" id="source-filter"></div>
@@ -76,6 +83,7 @@
       </div>
       <p class="filters__summary"><span id="result-count"></span> <button type="button" class="link-button" id="download-filtered" hidden>Stáhnout výběr do kalendáře (.ics)</button>
         <button type="button" class="link-button" id="reset-filters" hidden>Zrušit filtry</button></p>
+      </div></div>
     </section>
 
     <div id="status" class="status" hidden></div>

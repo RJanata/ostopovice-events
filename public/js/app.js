@@ -134,10 +134,9 @@ function compareEvents(a, b) {
 // ---------- URL stav ----------
 
 
-/** Na mobilu (úzký kalendář s tečkami) se jako čára kreslí už akce od 2 dnů. */
-const MOBILE_LINE_DAYS = 2;
 const narrowScreen = window.matchMedia('(max-width: 640px)');
-const isMonthLine = (e) => !e.recurring && e._span >= (narrowScreen.matches ? MOBILE_LINE_DAYS : LONG_EVENT_DAYS);
+/** Dlouhodobá akce (výstava…) = tenká čára v řádku s čísly dnů; kratší vícedenní je pruh přes dny. */
+const isMonthLine = (e) => !e.recurring && e._span >= LONG_EVENT_DAYS;
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -506,14 +505,14 @@ function listButtons(events) {
   const past = pastHidden(events).length;
   if ((isCurrentMonth() || state.query) && past && !state.showRecent) {
     buttons.push(`<button type="button" class="link-button" data-action="past" aria-pressed="${state.showPast}">`
-      + `${state.showPast ? 'Skrýt' : 'Zobrazit'} proběhlé akce (${past})</button>`);
+      + `${state.showPast ? 'Skrýt proběhlé' : 'Již proběhlé'} (${past})</button>`);
   }
   const recent = recentlyAdded(events).length;
   if (recent || state.showRecent) {
     buttons.push(`<button type="button" class="link-button" data-action="recent" aria-pressed="${state.showRecent}">`
-      + `${state.showRecent ? 'Zobrazit všechny akce' : `Nedávno přidané události (${recent})`}</button>`);
+      + `${state.showRecent ? 'Všechny akce' : `Nově přidané (${recent})`}</button>`);
   }
-  return buttons.length ? `<div class="more">${buttons.join('')}</div>` : '';
+  return buttons.length ? `<div class="more more--compact">${buttons.join('')}</div>` : '';
 }
 
 /** Seznam jediného dne vybraného v kalendáři. */
@@ -656,8 +655,9 @@ function renderMonth(events, holidays) {
     // den s víc akcemi, než je řádků: poslední řádek uvolnit pro „+ N další“;
     // když se akce vejdou přesně, ukážou se všechny (4 akce = 4 řádky, žádné „+1“)
     const overflowCol = Array.from({ length: 7 }, (_, c) => lanes.filter((used) => used[c]).length > MONTH_PILLS);
+    // na mobilu je „+N“ v rohu dne, takže všechny 4 řádky zůstávají pro pruhy
     const isVisible = (item) => item.lane < MONTH_PILLS - 1
-      || (item.lane === MONTH_PILLS - 1 && !overflowCol.slice(item.from, item.to + 1).some(Boolean));
+      || (item.lane === MONTH_PILLS - 1 && (narrowScreen.matches || !overflowCol.slice(item.from, item.to + 1).some(Boolean)));
     const hiddenCount = Array(7).fill(0);
     let bars = '';
     for (const item of items) {
@@ -691,14 +691,16 @@ function renderMonth(events, holidays) {
         d === selected && 'month__day--selected'].filter(Boolean).join(' ');
       // „+ N další“ na místě posledního řádku akcí (pod buňkou je klikací den)
       if (hiddenCount[i]) {
-        bars += `<span class="month__more" style="grid-column:${i + 1};grid-row:${MONTH_PILLS + 1}">+ ${hiddenCount[i]} další</span>`;
+        bars += `<span class="month__more" data-more-day="${addDays(weekStart, i)}" style="grid-column:${i + 1};grid-row:${MONTH_PILLS + 1}">`
+          + `<span class="month__more-long">+ ${hiddenCount[i]} další</span><span class="month__more-short">+${hiddenCount[i]}</span></span>`;
       }
       const single = list.filter((e) => !e.recurring && !isMonthLine(e));
       const regular = list.filter((e) => e.recurring);
       // tečky (jen na mobilu): plné = jednorázové akce, obrysové = pravidelné
-      const dotFor = (e, cls = '') => `<i${cls ? ` class="${cls}"` : ''} style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`;
-      const dots = single.length || regular.length
-        ? `<span class="month__dots">${single.slice(0, 6).map((e) => dotFor(e)).join('')}${regular.slice(0, 3).map((e) => dotFor(e, 'is-regular')).join('')}</span>`
+      // pravidelné akce na mobilu: plná kolečka vpravo od čísla dne (místo ikon);
+      // kolik se jich vejde vedle „+N“ v rohu, dořeší fitRegularDots
+      const regularDots = regular.length
+        ? `<span class="month__regular-dots">${regular.slice(0, 3).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>`
         : '';
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
@@ -709,10 +711,9 @@ function renderMonth(events, holidays) {
       cells += `<button type="button" class="${classes}" data-day="${d}" aria-label="${escapeHtml(label)}" style="grid-column:${i + 1}">
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
-            ${regularMarks}
+            ${regularMarks}${regularDots}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml(holiday.join(' · '))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
           </span>
-          ${dots}
         </button>`;
     }
     weeksHtml += `<div class="month__week">${cells}${longLines}${bars}</div>`;
@@ -729,9 +730,9 @@ function renderMonth(events, holidays) {
         <h2>${escapeHtml(title)}</h2>
         <div class="month__nav-buttons">
           ${collapseButton(renderedCollapsed)}
-          <button type="button" class="icon-button" data-action="prev-month" aria-label="Předchozí měsíc">‹</button>
+          <button type="button" class="icon-button" data-action="prev-month" aria-label="Předchozí měsíc"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></svg></button>
           <button type="button" class="icon-button icon-button--text" data-action="this-month">Dnes</button>
-          <button type="button" class="icon-button" data-action="next-month" aria-label="Další měsíc">›</button>
+          <button type="button" class="icon-button" data-action="next-month" aria-label="Další měsíc"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
         </div>
       </div>
       <div class="month__body"><div class="month__body-inner">
@@ -747,8 +748,9 @@ function collapseButton(collapsed) {
     ? '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>'
     : '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>';
   const calendar = '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>';
-  return `<button type="button" class="icon-button icon-button--text month__toggle" data-action="toggle-calendar" aria-expanded="${!collapsed}">`
-    + `${calendar}${collapsed ? 'Zobrazit' : 'Skrýt'}${arrow}</button>`;
+  const label = collapsed ? 'Zobrazit kalendář' : 'Skrýt kalendář';
+  return `<button type="button" class="icon-button icon-button--text month__toggle" data-action="toggle-calendar" aria-expanded="${!collapsed}" aria-label="${label}" title="${label}">`
+    + `${calendar}${arrow}</button>`;
 }
 
 /** Sbalí / rozbalí mřížku měsíce podle stavu — přepnutím třídy na stránce, aby proběhla animace. */
@@ -781,7 +783,11 @@ function resetListRange() {
 
 /** Přejetí prstem po kalendáři doleva/doprava = další/předchozí měsíc. */
 function setupMonthSwipe() {
+  // mobil a počítač mají jiné rozložení „+N“ v měsíci → po změně šířky překreslit
   narrowScreen.addEventListener('change', () => { if (data) update({ keepHash: true }); });
+  // otočení telefonu apod.: dny jsou širší / užší → znovu spočítat, kolik koleček se vejde
+  let dotsFrame = 0;
+  window.addEventListener('resize', () => { cancelAnimationFrame(dotsFrame); dotsFrame = requestAnimationFrame(fitRegularDots); });
   const view = document.getElementById('view');
   let start = null;
   view.addEventListener('touchstart', (ev) => {
@@ -842,9 +848,22 @@ function update({ keepHash = false } = {}) {
   const downloadButton = document.getElementById('download-filtered');
   downloadButton.hidden = !CUSTOM_ICS_ENABLED || !isFilterActive() || !upcoming;
   refreshSubscribePanel?.();
+  renderFiltersSummary();
   document.getElementById('view').innerHTML = renderMonth(events, holidays)
     + `<div class="event-list">${renderList(events, holidays)}</div>`;
   syncCalendarCollapse();
+  fitRegularDots();
+}
+
+/** Mobil: kolečka pravidelných akcí, která by se překrývala s „+N“ v rohu dne, skrýt. */
+function fitRegularDots() {
+  document.querySelectorAll('.month__regular-dots i').forEach((dot) => { dot.hidden = false; });
+  if (!narrowScreen.matches) return;
+  for (const more of document.querySelectorAll('.month__more[data-more-day]')) {
+    const dots = [...document.querySelectorAll(`[data-day="${more.dataset.moreDay}"] .month__regular-dots i`)];
+    const limit = (more.querySelector('.month__more-short') || more).getBoundingClientRect().left - 2;
+    while (dots.length && dots[dots.length - 1].getBoundingClientRect().right > limit) dots.pop().hidden = true;
+  }
 }
 
 // Krátký výpadek zdroje návštěvníky neruší (data jsou pár hodin stará, ale platná);
@@ -1000,6 +1019,29 @@ function setupHeaderFit() {
   }).observe(header);
 }
 
+/**
+ * Panel s hledáním a filtry jde sbalit (na mobilu je sbalený výchozí, ať kalendář nezabere
+ * celou obrazovku). Ve sbaleném stavu je v záhlaví panelu souhrn aktivních filtrů.
+ */
+function setupFiltersToggle() {
+  const filters = document.querySelector('.filters');
+  const button = document.getElementById('filters-toggle');
+  const set = (collapsed) => {
+    filters.classList.toggle('filters--collapsed', collapsed);
+    button.setAttribute('aria-expanded', String(!collapsed));
+    if (!collapsed) requestAnimationFrame(fitFilters);
+  };
+  set(narrowScreen.matches);
+  button.addEventListener('click', () => set(!filters.classList.contains('filters--collapsed')));
+  // změna šířky okna (roztažení, otočení tabletu): na šířku počítače rozbalit, na mobil sbalit
+  narrowScreen.addEventListener('change', () => set(narrowScreen.matches));
+}
+
+/** Souhrn v záhlaví panelu filtrů: co je vybráno (vidět hlavně ve sbaleném stavu). */
+function renderFiltersSummary() {
+  document.getElementById('filters-summary').textContent = isFilterActive() ? filterDescription() : '';
+}
+
 function setupThemeToggle() {
   const button = document.getElementById('theme-toggle');
   const sync = () => button.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
@@ -1120,6 +1162,7 @@ async function init() {
   setupSubscribe();
   setupThemeToggle();
   setupHeaderFit();
+  setupFiltersToggle();
   setupEventTooltip();
   setupMonthSwipe();
   // přepočet zhuštění filtrů při změně šířky (okno, posuvník, otočení telefonu)
