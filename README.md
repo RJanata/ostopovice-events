@@ -1,4 +1,4 @@
-# Akce v Ostopovicích
+# Kalendář akcí v Ostopovicích
 
 Souhrnný kalendář obecních, kulturních a sportovních akcí z více zdrojů na jednom místě.
 Statický web (HTML + CSS + JS) na GitHub Pages, data přegeneruje GitHub Action třikrát denně.
