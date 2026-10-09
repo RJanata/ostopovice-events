@@ -113,7 +113,15 @@ v `js/app.js`). Zapisuje ho projekt **hit-counter** na NASu, report GoAccess je 
 npm install
 npm run collect          # stáhne data do public/data
 npm run collect -- --only=knihovna
-npm run serve            # náhled na http://localhost:4173
+npm run serve            # náhled na http://localhost:4173 (vypíše i adresy v síti)
+```
+
+Náhled poslouchá na všech rozhraních, z jiného PC v síti tedy `http://<IP tohoto PC>:4173`.
+Firewall (na Radkově PC ESET) ale příchozí spojení blokuje — jednou povolit příchozí TCP
+na port 4173 z místní sítě. Pro samotný firewall Windows (PowerShell jako správce):
+
+```powershell
+New-NetFirewallRule -DisplayName "Dev náhled 4173 (ostopovice-events)" -Direction Inbound -Protocol TCP -LocalPort 4173 -Profile Private -RemoteAddress LocalSubnet -Action Allow
 ```
 
 ## Nasazení (GitHub Pages)
