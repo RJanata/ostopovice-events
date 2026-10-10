@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-09T20:56:03.791Z",
+ "generatedAt": "2026-10-10T10:38:00.088Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,9 +69,9 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T13:48:00.148Z",
-   "ok": false,
-   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (4 pokusy)",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
+   "ok": true,
+   "error": null,
    "count": 24
   },
   {
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 33
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-09T20:56:03.791Z",
+   "lastSuccess": "2026-10-10T10:38:00.088Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4227,12 +4227,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 7:6",
    "image": "",
    "extra": {
     "competition": "Mladší žáci",
     "teams": "TJ Sokol Ostopovice – 1. NH BRNO",
-    "score": ""
+    "score": "7:6"
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
@@ -4250,12 +4250,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 19:10",
    "image": "",
    "extra": {
     "competition": "Starší žáci",
     "teams": "TJ Sokol Ostopovice – 1. NH BRNO",
-    "score": ""
+    "score": "19:10"
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – 1. NH BRNO",
    "categories": [
