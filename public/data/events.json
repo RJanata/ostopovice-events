@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-10T20:04:56.040Z",
+ "generatedAt": "2026-10-11T10:50:35.631Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 3
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 231
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,10 +69,10 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
-   "count": 24
+   "count": 23
   },
   {
    "id": "svatky",
@@ -87,7 +87,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +112,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 34
@@ -130,7 +130,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-10T20:04:56.040Z",
+   "lastSuccess": "2026-10-11T10:50:35.631Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -195,23 +195,6 @@
   }
  ],
  "events": [
-  {
-   "id": "seniori-jjewpe",
-   "source": "seniori",
-   "title": "Čtyřdenní zájezd ... Jižní Čechy, Novohradsko",
-   "start": "2025-09-02",
-   "end": "2025-09-05",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
-   "description": "",
-   "image": "",
-   "categories": [
-    "seniori",
-    "kultura"
-   ],
-   "added": "2026-10-08T01:46:05.000Z"
-  },
   {
    "id": "knihovna-sqr6zv",
    "source": "knihovna",
@@ -4127,22 +4110,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4162,6 +4129,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4194,10 +4177,10 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "note": "Pá 14:00–22:00 | So 08:00–14:00",
    "originalTitle": "Oznámení o době a místě konání voleb do zastupitelstev obcí",
-   "originalLocation": "",
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalLocation": ""
   },
   {
    "id": "obec-c0pv8v",
@@ -4213,10 +4196,10 @@
    "categories": [
     "kultura"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "note": "14:30 na návsi | 15:30 průvod obcí | 17:00 sokolovna – vystoupení | 20:00 hodová zábava",
    "originalTitle": "Pozvánka na Babský hody 10. 10. 2026",
-   "originalLocation": "",
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalLocation": ""
   },
   {
    "id": "sokol-3xp067",
