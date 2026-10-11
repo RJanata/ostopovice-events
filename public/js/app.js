@@ -512,7 +512,11 @@ function listButtons(events) {
     buttons.push(`<button type="button" class="link-button" data-action="recent" aria-pressed="${state.showRecent}">`
       + `${state.showRecent ? 'Všechny akce' : `Nově přidané (${recent})`}</button>`);
   }
-  return buttons.length ? `<div class="more more--compact">${buttons.join('')}</div>` : '';
+  // odkaz pro návštěvníky, kteří o nějaké akci vědí a v kalendáři ji nenašli
+  const subject = encodeURIComponent('[Kalendář] Chybějící akce');
+  buttons.push(`<a class="link-button more__mail" href="mailto:info@craz.cz?subject=${subject}" title="Pokud tu chybí nějaká akce a víte o ní, dejte mi vědět">`
+    + '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg>Chybějící akce?</a>');
+  return `<div class="more more--compact">${buttons.join('')}</div>`;
 }
 
 /** Seznam jediného dne vybraného v kalendáři. */

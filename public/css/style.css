@@ -288,6 +288,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* odkazy nad a pod seznamem (proběhlé, nově přidané, další akce) */
 .more--compact { gap: 4px 16px; font-size: 0.85rem; }
 .more--compact .link-button { white-space: nowrap; }
+.more__mail { display: inline-flex; align-items: center; gap: 4px; }
+.more__mail svg { width: 15px; height: 15px; }
 .more { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; margin: 0 0 12px; font-size: 0.9rem; }
 .more .link-button[aria-pressed="true"] { font-weight: 600; }
 .month + .event-list > .more:first-child { margin-top: -6px; }
@@ -428,6 +430,9 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .month__more { grid-row: 1 !important; align-self: start; justify-self: end; margin: 3px 3px 0 0; padding: 0 1px; border-radius: 3px; background: var(--surface); font-size: 0.68rem; line-height: 1.1; font-weight: 600; color: var(--muted); z-index: 3; }
   .month__nav h2 { font-size: 1.1rem; white-space: nowrap; }
   .month__nav-buttons { gap: 4px; }
+  .more--compact { gap: 4px 12px; font-size: 0.78rem; }
+  .more__mail { gap: 3px; }
+  .more__mail svg { width: 13px; height: 13px; }
   .icon-button--text { padding: 0 10px; }
   .month__more-long { display: none; }
   .month__day-holiday, .month__regular { display: none; }
