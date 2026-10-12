@@ -172,6 +172,8 @@ async function countUnpublishedChanges() {
   return (await api(`/pending?since=${encodeURIComponent(data.generatedAt)}`)).count;
 }
 
+let pendingCount = 0; // úpravy, které ještě nejsou na webu
+
 async function updateRegenerateButton() {
   const button = $('regenerate');
   let count = 0;
@@ -184,6 +186,28 @@ async function updateRegenerateButton() {
   button.textContent = count > 0
     ? `Přegenerovat web (${count} ${count === 1 ? 'úprava čeká' : count < 5 ? 'úpravy čekají' : 'úprav čeká'})`
     : 'Přegenerovat web';
+  $('discard-changes').hidden = !(count > 0 && editor);
+  pendingCount = count;
+}
+
+/** Zahodí úpravy, které ještě nejsou na webu: overrides.json zpět do stavu, ze kterého je web vygenerovaný. */
+async function discardChanges() {
+  const msg = $('admin-message');
+  const what = `${pendingCount} ${pendingCount === 1 ? 'neuplatněnou úpravu' : pendingCount < 5 ? 'neuplatněné úpravy' : 'neuplatněných úprav'}`;
+  if (!window.confirm(`Zahodit ${what}? Úpravy se vrátí do stavu, který je teď na webu.`)) return;
+  setMessage(msg, 'Zahazuji změny…');
+  try {
+    const result = await api('/discard', { method: 'POST', body: { since: data.generatedAt, sha: overridesSha } });
+    overrides = result.overrides;
+    overridesSha = result.sha;
+    editingId = null;
+    setMessage(msg, 'Změny jsou zahozené, úpravy odpovídají webu.', 'ok');
+  } catch (err) {
+    if (err.status === 409) await loadOverrides().catch(() => {});
+    setMessage(msg, err.message, 'error');
+  }
+  renderList();
+  updateRegenerateButton();
 }
 
 /** Ikona kategorie jako na hlavní stránce (jednobarevné SVG jako maska). */
@@ -726,6 +750,7 @@ async function init() {
   ['admin-search', 'admin-source', 'admin-upcoming', 'admin-changed'].forEach((id) => {
     $(id).addEventListener(id === 'admin-search' ? 'input' : 'change', renderList);
   });
+  $('discard-changes').addEventListener('click', discardChanges);
   $('admin-list').addEventListener('click', (ev) => {
     const button = ev.target.closest('[data-action="edit"]');
     if (!button) return;
