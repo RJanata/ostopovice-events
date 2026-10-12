@@ -30,7 +30,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Vždy aktuální stav main, ne commit, který běh spustil: běhy čekají ve frontě (concurrency)
+      # a předchozí běh mezitím mohl uložit nová data → jinak konflikt v public/data při pushi.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
