@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T12:37:25.544Z",
+ "generatedAt": "2026-10-12T20:49:02.880Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,10 +15,10 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
-   "count": 3
+   "count": 4
   },
   {
    "id": "knihovna",
@@ -33,10 +33,28 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 230
+  },
+  {
+   "id": "skola",
+   "name": "Škola",
+   "fullName": "MŠ/ZŠ Ostopovice",
+   "shortName": "Škola",
+   "village": "Ostopovice",
+   "icon": "skola.png",
+   "color": "#af8500",
+   "link": "https://www.zsostopovice.cz/aktuality",
+   "type": "canva-poster",
+   "display": "events",
+   "adminRefresh": false,
+   "feeds": [],
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
+   "ok": true,
+   "error": null,
+   "count": 7
   },
   {
    "id": "sokol",
@@ -51,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -69,7 +87,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -87,7 +105,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -112,7 +130,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T12:37:25.544Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 44
@@ -130,7 +148,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T20:49:02.880Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -3533,6 +3551,22 @@
    "added": "2026-10-08T01:46:05.000Z"
   },
   {
+   "id": "skola-6qb8qd",
+   "source": "skola",
+   "title": "Slavnostní zahájení školního roku",
+   "start": "2026-09-01T06:00:00.000Z",
+   "end": "2026-09-01T06:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "Od 8.00 zahájení školního roku pro rodiče, děti i žáky u stodoly.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
+  },
+  {
    "id": "knihovna-1in2bsl",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -3570,6 +3604,22 @@
     "sport"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "skola-rgzo5z",
+   "source": "skola",
+   "title": "Třídní schůzky",
+   "start": "2026-09-07T15:00:00.000Z",
+   "end": "2026-09-07T15:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "4. ročník\nTřídní schůzka, od 17.00, učebna 4. ročníku.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3638,6 +3688,38 @@
     "vzdelavani"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "skola-18e66pg",
+   "source": "skola",
+   "title": "Třídní schůzky",
+   "start": "2026-09-14T14:00:00.000Z",
+   "end": "2026-09-14T14:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "3. ročník\nOd 16.00 v učebně 3. ročníku.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
+  },
+  {
+   "id": "skola-7r5spe",
+   "source": "skola",
+   "title": "Třídní schůzky",
+   "start": "2026-09-14T15:00:00.000Z",
+   "end": "2026-09-14T15:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "1. ročník, třídy A i B\nTřídní schůzka, od 17.00, učebny 1. tříd.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3776,6 +3858,38 @@
     "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "skola-1dyojgm",
+   "source": "skola",
+   "title": "Třídní schůzky",
+   "start": "2026-09-21T14:30:00.000Z",
+   "end": "2026-09-21T14:30:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "5. ročník\nOd 16.30 v učebně 5. ročníku.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
+  },
+  {
+   "id": "skola-18rk5l9",
+   "source": "skola",
+   "title": "Třídní schůzky",
+   "start": "2026-09-21T15:00:00.000Z",
+   "end": "2026-09-21T15:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "2. ročník\nTřídní schůzka, od 17.00, s možností přítomnosti dětí.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -4093,6 +4207,22 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "skola-j0wy1x",
+   "source": "skola",
+   "title": "Dožínky ve stodole",
+   "start": "2026-10-06",
+   "end": "2026-10-06",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve stodole.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
+  },
+  {
    "id": "nezarazene-ubr66k",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -4111,6 +4241,22 @@
     "cirkev"
    ],
    "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "nezarazene-62g964",
@@ -4132,22 +4278,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4380,13 +4510,13 @@
     "deti",
     "obec"
    ],
-   "added": "2026-10-07T22:43:36.000Z",
    "note": "jen pro pozvané",
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
    "originalLocation": "",
    "originalStart": "2026-10-13",
    "originalEnd": "2026-10-13",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-1yes2rf",
@@ -4650,6 +4780,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "obec-9vrr4f",
+   "source": "obec",
+   "title": "Oznámení o změně otevírací doby pošty",
+   "start": "2026-10-19",
+   "end": "2026-10-23",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/oznameni-o-zmene-oteviraci-doby-posty",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13958547",
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s0i3bz",
