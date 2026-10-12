@@ -11,7 +11,12 @@
       "hidden": true
     },
     "obec-kbdo4r": {
-      "title": "Vítání občánků"
+      "title": "Vítání občánků",
+      "location": "Knihovna",
+      "note": "jen pro pozvané",
+      "start": "2026-10-13T14:00:00.000Z",
+      "end": "2026-10-13T14:00:00.000Z",
+      "allDay": false
     },
     "obec-c0pv8v": {
       "title": "Babský hody",
