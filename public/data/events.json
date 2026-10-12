@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T22:00:38.903Z",
+ "generatedAt": "2026-10-12T22:12:09.827Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 230
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -87,7 +87,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -105,7 +105,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -130,9 +130,9 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
-   "ok": false,
-   "error": "Farnost Troubsko: fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://farnost.troubsko.cz/?q=content/porad-bohosluzeb (4 pokusy)",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
+   "ok": true,
+   "error": null,
    "count": 44
   },
   {
@@ -148,7 +148,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-12T22:00:38.903Z",
+   "lastSuccess": "2026-10-12T22:12:09.827Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4248,22 +4248,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4283,6 +4267,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4480,6 +4480,23 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "obec-kbdo4r",
+   "source": "obec",
+   "title": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
+   "start": "2026-10-13",
+   "end": "2026-10-13",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13826918",
+   "categories": [
+    "deti",
+    "obec"
+   ],
+   "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
    "id": "nezarazene-1qbzrko",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -4499,29 +4516,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "obec-kbdo4r",
-   "source": "obec",
-   "title": "Vítání občánků",
-   "start": "2026-10-13T14:00:00.000Z",
-   "end": "2026-10-13T14:00:00.000Z",
-   "allDay": false,
-   "location": "Knihovna",
-   "url": "https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13826918",
-   "categories": [
-    "deti",
-    "obec"
-   ],
-   "note": "jen pro pozvané",
-   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
-   "originalLocation": "",
-   "originalStart": "2026-10-13",
-   "originalEnd": "2026-10-13",
-   "originalAllDay": true,
-   "added": "2026-10-07T22:43:36.000Z"
   },
   {
    "id": "nezarazene-1yes2rf",
