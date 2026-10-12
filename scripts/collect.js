@@ -1,6 +1,7 @@
 // Sběr akcí ze všech zdrojů → public/data/events.json + public/data/akce.ics
 //
-// Spuštění: npm run collect  (volitelně --only=knihovna pro jeden zdroj)
+// Spuštění: npm run collect  (volitelně --only=knihovna pro jeden zdroj,
+//          --no-fetch = nic nestahovat, jen znovu promítnout úpravy a pravidla do uložených akcí)
 //
 // Zásady:
 //   - zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažené akce
@@ -286,6 +287,7 @@ const sortKey = (e) => {
 
 async function main() {
   const only = process.argv.find((a) => a.startsWith('--only='))?.slice(7);
+  const noFetch = process.argv.includes('--no-fetch');
   const { sources } = await readJson(path.join(ROOT, 'config', 'sources.json'));
   const categoriesConfig = await readJson(path.join(ROOT, 'config', 'categories.json'));
   const overrides = await readJson(path.join(ROOT, 'config', 'overrides.json'), { events: {}, series: {} });
@@ -312,7 +314,7 @@ async function main() {
     const status = { id: source.id, lastSuccess: prevStatus.lastSuccess || null, ok: true, error: null, count: 0 };
     let fresh = null;
 
-    if (!only || only === source.id) {
+    if (!noFetch && (!only || only === source.id)) {
       const adapter = ADAPTERS[source.type];
       try {
         if (!adapter) throw new Error(`Neznámý typ zdroje: ${source.type}`);

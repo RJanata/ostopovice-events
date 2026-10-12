@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: 'Načíst jen jeden zdroj (id ze config/sources.json, prázdné = všechny)'
+        description: 'Načíst jen jeden zdroj (id ze config/sources.json, prázdné = všechny, none = nic nestahovat, jen promítnout úpravy)'
         required: false
         default: ''
   push:
@@ -47,7 +47,9 @@ jobs:
         env:
           ONLY_SOURCE: ${{ github.event.inputs.only }}
         run: |
-          if [ -n "$ONLY_SOURCE" ]; then
+          if [ "$ONLY_SOURCE" = "none" ]; then
+            npm run collect -- --no-fetch
+          elif [ -n "$ONLY_SOURCE" ]; then
             npm run collect -- "--only=$ONLY_SOURCE"
           else
             npm run collect

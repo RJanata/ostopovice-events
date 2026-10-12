@@ -547,7 +547,7 @@ async function followRun(initial, only = '') {
         setMessage(status, 'Načítání trvá déle než obvykle – stav najdete na GitHubu v záložce Actions.');
         return;
       }
-      setMessage(status, `Načítám kalendáře (${runLabel(run)})… ${Math.max(0, Math.round(elapsed / 1000))} s`);
+      setMessage(status, `${only === 'none' ? 'Přegenerovávám web' : 'Načítám kalendáře'} (${runLabel(run)})… ${Math.max(0, Math.round(elapsed / 1000))} s`);
       await sleep(1000);
       if (Date.now() - lastPoll >= POLL_MS) {
         lastPoll = Date.now();
@@ -556,7 +556,8 @@ async function followRun(initial, only = '') {
       }
     }
     if (run.conclusion === 'success') {
-      const what = only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
+      const what = only === 'none' ? 'úpravy jsou promítnuté'
+        : only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
       // web se nasazuje v témže běhu, ale pojistka: hotovo až když web opravdu vrací nová data
       // (CDN GitHub Pages); lokální náhled (localhost) nová data nikdy nedostane → tam nečekat
       const before = data.generatedAt;
@@ -593,7 +594,7 @@ async function showRunningRun() {
   }
 }
 
-/** Spustí načtení kalendářů; only = id jednoho zdroje, prázdné = všechny. */
+/** Spustí načtení kalendářů; only = id jednoho zdroje, prázdné = všechny, 'none' = nic nestahovat (jen úpravy). */
 async function refreshSources(only = '') {
   const status = $('refresh-status');
   if (!editor) {

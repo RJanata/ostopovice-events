@@ -45,10 +45,12 @@
     <section class="admin-box">
       <h2>Aktualizace webu</h2>
       <p class="admin-help">Úpravy akcí se ukládají hned, ale na web se dostanou až po přegenerování – můžete tedy
-        upravit víc akcí a pak přegenerovat jednou. Přegenerování zároveň načte všechny kalendáře
-        (jinak se načítají automaticky 3× denně, kdy se promítnou i neuložené úpravy). Trvá zhruba 1–2 minuty.</p>
+        upravit víc akcí a pak přegenerovat jednou. <strong>Přegenerovat web</strong> jen promítne úpravy (nic nestahuje),
+        <strong>Přegenerovat vše</strong> navíc znovu načte všechny kalendáře (jinak se načítají automaticky 3× denně
+        a promítnou se při tom i úpravy). Trvá zhruba 1–2 minuty.</p>
       <div class="admin-actions">
-        <button type="button" class="button" data-refresh="" id="regenerate">Přegenerovat web</button>
+        <button type="button" class="button" data-refresh="none" id="regenerate">Přegenerovat web</button>
+        <button type="button" class="button button--ghost" data-refresh="" id="regenerate-all">Přegenerovat vše</button>
         <span id="refresh-single"></span>
         <span class="admin-status" id="refresh-status"></span>
       </div>
