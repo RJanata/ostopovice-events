@@ -1,5 +1,5 @@
 {
-  "$comment": "Ruční úpravy akcí (spravuje je i admin.html). series: klíč \"zdroj|Původní název\" = platí pro všechny termíny akce s tímto názvem, i budoucí. events: klíč = id jednoho termínu (má přednost). Hodnoty: title, categories, location, hidden (true = nezobrazovat).",
+  "$comment": "Ruční úpravy akcí (spravuje je i admin.html). series: klíč \"zdroj|Původní název\" = platí pro všechny termíny akce s tímto názvem, i budoucí. events: klíč = id jednoho termínu (má přednost). Hodnoty: title, categories, location, hidden (true = nezobrazovat). editedBy/editedAt = kdo a kdy úpravu udělal (zapisuje api-server).",
   "series": {},
   "events": {
     "obec-fjsj2r": {

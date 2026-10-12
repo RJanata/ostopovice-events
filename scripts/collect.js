@@ -163,6 +163,8 @@ const OVERRIDABLE = {
 };
 // pole, která vznikají jen z ručních úprav (ze zdroje nikdy nepřijdou)
 const OVERRIDE_ONLY = ['note', 'hidden'];
+// razítko úpravy z adminu (zapisuje ho api-server)
+const EDIT_STAMP = ['editedBy', 'editedAt'];
 
 /**
  * Ruční úpravy z config/overrides.json:
@@ -174,6 +176,8 @@ function applyOverrides(event, overrides) {
     ...overrides.series?.[`${event.source}|${event.title}`],
     ...overrides.events?.[event.id],
   };
+  // kdo a kdy úpravu udělal (editedBy/editedAt) patří jen do adminu, ne k akci
+  for (const field of EDIT_STAMP) delete changes[field];
   if (!Object.keys(changes).length) return event;
   const result = { ...event, ...changes };
   for (const [field, originalField] of Object.entries(OVERRIDABLE)) {

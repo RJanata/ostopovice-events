@@ -28,21 +28,18 @@
   </header>
 
   <main class="wrap">
-    <section class="admin-box" id="token-box">
+    <section class="admin-box" id="login-box">
       <h2>Přístup</h2>
-      <p class="admin-help">
-        Ukládání potřebuje GitHub token s právem zápisu do repozitáře <code id="repo-name"></code>.
-        Vytvoříte ho na GitHubu: Settings → Developer settings → Fine-grained tokens → Generate new token,
-        <em>Repository access</em>: jen tento repozitář, <em>Permissions</em>: <strong>Contents</strong> a <strong>Actions</strong> – obojí Read and write
-        (Actions je potřeba jen pro tlačítko „Znovu načíst kalendáře“).
-        Token se uloží jen v tomto prohlížeči.
-      </p>
-      <form class="admin-token" id="token-form">
-        <input type="password" id="token-input" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
-        <button type="submit" class="button">Uložit token</button>
-        <button type="button" class="button button--ghost" id="token-forget" hidden>Zapomenout token</button>
+      <form class="admin-token" id="login-form">
+        <p class="admin-help">Úpravy může ukládat jen přihlášený editor. Přihlášení vydrží v tomto prohlížeči půl roku.</p>
+        <input type="password" id="login-password" placeholder="Heslo" autocomplete="current-password">
+        <button type="submit" class="button">Přihlásit</button>
       </form>
-      <p class="admin-status" id="token-status"></p>
+      <div class="admin-token" id="login-info" hidden>
+        <span>Přihlášen(a): <strong id="login-name"></strong></span>
+        <button type="button" class="button button--ghost button--small" id="logout">Odhlásit</button>
+      </div>
+      <p class="admin-status" id="login-status"></p>
     </section>
 
     <section class="admin-box">

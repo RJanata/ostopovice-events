@@ -8,7 +8,8 @@
 .admin-help { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
 .admin-help code { font-size: 0.85rem; }
 
-.admin-token { display: flex; flex-wrap: wrap; gap: 8px; }
+.admin-token { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.admin-token .admin-help { flex: 1 1 100%; }
 .admin-token input {
   flex: 1 1 260px; min-width: 0; padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px;
   background: var(--surface-2); color: var(--text); font: inherit;

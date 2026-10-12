@@ -1,7 +1,9 @@
 'use strict';
 
-// Správa akcí: úpravy se ukládají do config/overrides.json v repozitáři přes GitHub API.
-// Commit spustí GitHub Action, která web přegeneruje (scripts/collect.js úpravy aplikuje).
+// Správa akcí: úpravy se ukládají do config/overrides.json v repozitáři přes náš server
+// api.craz.cz (projekt api-server): editor se přihlásí heslem, server zapíše soubor pod
+// GitHub App s editorem jako autorem a k úpravě připíše editedBy/editedAt.
+// Přegenerování webu (GitHub Action) spouští tlačítko, scripts/collect.js úpravy aplikuje.
 //
 // overrides.json:
 //   series["zdroj|Původní název"] — všechny termíny akce (i budoucí)
@@ -10,12 +12,12 @@
 const REPO = 'RJanata/ostopovice-events';
 const BRANCH = 'main';
 const OVERRIDES_PATH = 'config/overrides.json';
-const TOKEN_KEY = 'adminGithubToken';
+// při vývoji (stránka z localhostu) jde server přepnout: admin.html?api=http://localhost:3999/ostopovice-events
+const API = (location.hostname === 'localhost' && new URLSearchParams(location.search).get('api'))
+  || 'https://api.craz.cz/ostopovice-events';
+const SESSION_KEY = 'adminSession';
+const OLD_TOKEN_KEY = 'adminGithubToken'; // dřívější přístup osobním GitHub tokenem — při startu se smaže
 const TIME_ZONE = 'Europe/Prague';
-
-const OVERRIDES_COMMENT = 'Ruční úpravy akcí (spravuje je i admin.html). series: klíč "zdroj|Původní název" = platí pro '
-  + 'všechny termíny akce s tímto názvem, i budoucí. events: klíč = id jednoho termínu (má přednost). '
-  + 'Hodnoty: title, categories, location, hidden (true = nezobrazovat).';
 
 let data = null;
 let sourcesById = {};
@@ -23,6 +25,7 @@ let categories = [];
 let overrides = { series: {}, events: {} };
 let overridesSha = null;
 let editingId = null;
+let editor = null; // přihlášený editor { id, firstName, name }
 
 const $ = (id) => document.getElementById(id);
 
@@ -84,31 +87,42 @@ function setMessage(element, text, kind = '') {
   element.className = `admin-status${kind ? ` is-${kind}` : ''}`;
 }
 
-// ---------- GitHub API ----------
+// ---------- Server (api.craz.cz) ----------
 
-function getToken() {
-  try { return localStorage.getItem(TOKEN_KEY) || ''; } catch { return ''; }
+function getSession() {
+  try { return localStorage.getItem(SESSION_KEY) || ''; } catch { return ''; }
 }
 
-async function github(path, options = {}) {
-  const token = getToken();
-  const response = await fetch(`https://api.github.com${path}`, {
-    ...options,
-    headers: {
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(options.body ? { 'Content-Type': 'application/json' } : {}),
-    },
-  });
-  return response;
+function setSession(token) {
+  try {
+    if (token) localStorage.setItem(SESSION_KEY, token);
+    else localStorage.removeItem(SESSION_KEY);
+  } catch { /* soukromý režim apod. */ }
 }
 
-function encodeBase64(text) {
-  const bytes = new TextEncoder().encode(text);
-  let binary = '';
-  for (const b of bytes) binary += String.fromCharCode(b);
-  return btoa(binary);
+/** Volání serveru; vrací JSON, chyby vyhazuje s českou zprávou ze serveru. */
+async function api(path, { method = 'GET', body } = {}) {
+  const session = getSession();
+  let response;
+  try {
+    response = await fetch(`${API}${path}`, {
+      method,
+      headers: {
+        ...(session ? { Authorization: `Bearer ${session}` } : {}),
+        ...(body ? { 'Content-Type': 'application/json' } : {}),
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+  } catch {
+    throw new Error('Server správy (api.craz.cz) neodpovídá.');
+  }
+  const result = await response.json().catch(() => ({}));
+  if (response.status === 401 && path !== '/login') {
+    setSession('');
+    showEditor(null);
+  }
+  if (!response.ok) throw Object.assign(new Error(result.error || `Server: HTTP ${response.status}`), { status: response.status });
+  return result;
 }
 
 function decodeBase64(b64) {
@@ -116,46 +130,37 @@ function decodeBase64(b64) {
   return new TextDecoder().decode(Uint8Array.from(binary, (ch) => ch.charCodeAt(0)));
 }
 
+/** Úpravy: přihlášený je čte přes server, nepřihlášený jen pro prohlížení z veřejného repozitáře. */
 async function loadOverrides() {
-  const response = await github(`/repos/${REPO}/contents/${OVERRIDES_PATH}?ref=${BRANCH}`);
+  if (editor) {
+    const result = await api('/overrides');
+    overrides = result.overrides;
+    overridesSha = result.sha;
+    return;
+  }
+  const response = await fetch(`https://api.github.com/repos/${REPO}/contents/${OVERRIDES_PATH}?ref=${BRANCH}`);
   if (response.status === 404) {
     overrides = { series: {}, events: {} };
-    overridesSha = null;
     return;
   }
   if (!response.ok) throw new Error(`GitHub: HTTP ${response.status}`);
-  const file = await response.json();
-  const parsed = JSON.parse(decodeBase64(file.content));
+  const parsed = JSON.parse(decodeBase64((await response.json()).content));
   overrides = { series: parsed.series || {}, events: parsed.events || {} };
-  overridesSha = file.sha;
-}
-
-function serializeOverrides(o) {
-  const clean = (obj) => Object.fromEntries(Object.entries(obj).filter(([, v]) => v && Object.keys(v).length));
-  return `${JSON.stringify({ $comment: OVERRIDES_COMMENT, series: clean(o.series), events: clean(o.events) }, null, 2)}\n`;
 }
 
 async function saveOverrides(next, message) {
-  if (!getToken()) throw new Error('Nejdřív uložte GitHub token (nahoře).');
-  const response = await github(`/repos/${REPO}/contents/${OVERRIDES_PATH}`, {
-    method: 'PUT',
-    body: JSON.stringify({
-      // [skip ci] = commit nespustí přegenerování webu; to se udělá najednou tlačítkem „Přegenerovat web“
-      message: `${message} [skip ci]`,
-      content: encodeBase64(serializeOverrides(next)),
-      branch: BRANCH,
-      ...(overridesSha ? { sha: overridesSha } : {}),
-    }),
-  });
-  if (response.status === 409 || response.status === 422) {
-    await loadOverrides();
-    throw new Error('Soubor mezitím změnil někdo jiný. Úpravy jsem znovu načetl, zkuste uložit ještě jednou.');
+  if (!editor) throw new Error('Nejdřív se přihlaste (nahoře).');
+  try {
+    const result = await api('/overrides', { method: 'PUT', body: { overrides: next, sha: overridesSha, message } });
+    overrides = result.overrides;
+    overridesSha = result.sha;
+  } catch (err) {
+    if (err.status === 409) {
+      await loadOverrides();
+      throw new Error('Soubor mezitím změnil někdo jiný. Úpravy jsem znovu načetl, zkuste uložit ještě jednou.');
+    }
+    throw err;
   }
-  if (response.status === 401 || response.status === 403) throw new Error('Token nemá oprávnění zapisovat do repozitáře.');
-  if (!response.ok) throw new Error(`GitHub: HTTP ${response.status}`);
-  const result = await response.json();
-  overrides = { series: next.series, events: next.events };
-  overridesSha = result.content.sha;
 }
 
 /**
@@ -163,11 +168,8 @@ async function saveOverrides(next, message) {
  * Počítá se z GitHubu, takže to platí i po zavření prohlížeče nebo na jiném počítači.
  */
 async function countUnpublishedChanges() {
-  const since = data.generatedAt;
-  const response = await github(`/repos/${REPO}/commits?path=${OVERRIDES_PATH}&sha=${BRANCH}&since=${since}&per_page=100`);
-  if (!response.ok) return 0;
-  const commits = await response.json();
-  return commits.filter((c) => new Date(c.commit.committer.date) > new Date(since)).length;
+  if (!editor) return 0;
+  return (await api(`/pending?since=${encodeURIComponent(data.generatedAt)}`)).count;
 }
 
 async function updateRegenerateButton() {
@@ -176,7 +178,7 @@ async function updateRegenerateButton() {
   try {
     count = await countUnpublishedChanges();
   } catch {
-    // bez spojení s GitHubem tlačítko jen nezvýrazníme
+    // bez spojení se serverem tlačítko jen nezvýrazníme
   }
   button.classList.toggle('button--alert', count > 0);
   button.textContent = count > 0
@@ -204,8 +206,22 @@ const baseWhen = (e) => ({
 });
 const WHEN_FIELDS = ['start', 'end', 'allDay'];
 
+/** Kdo a kdy akci naposledy upravil (u hromadné i jednotlivé úpravy platí ta novější). */
+function lastEdit(e) {
+  const stamps = [overrides.series[seriesKey(e)], overrides.events[e.id]].filter((o) => o?.editedBy);
+  if (!stamps.length) return '';
+  const latest = stamps.reduce((a, b) => ((b.editedAt || '') > (a.editedAt || '') ? b : a));
+  const date = latest.editedAt
+    ? new Date(latest.editedAt).toLocaleDateString('cs-CZ', { timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric' })
+    : '';
+  return `${latest.editedBy}${date ? `, ${date}` : ''}`;
+}
+
+const STAMP_FIELDS = ['editedBy', 'editedAt'];
+const withoutStamp = (o) => Object.fromEntries(Object.entries(o || {}).filter(([k]) => !STAMP_FIELDS.includes(k)));
+
 function effective(e) {
-  const changes = { ...overrides.series[seriesKey(e)], ...overrides.events[e.id] };
+  const changes = { ...withoutStamp(overrides.series[seriesKey(e)]), ...withoutStamp(overrides.events[e.id]) };
   const base = baseWhen(e);
   return {
     changes,
@@ -272,7 +288,7 @@ function renderList() {
       .map((c) => `<span class="tag" style="--chip-color:${escapeHtml(c.color)}">${categoryIcon(c)}${escapeHtml(c.label)}</span>`)
       .join('');
     const badges = [
-      eff.changed && '<span class="admin-badge admin-badge--changed">upraveno</span>',
+      eff.changed && `<span class="admin-badge admin-badge--changed">upraveno${lastEdit(e) ? `: ${escapeHtml(lastEdit(e))}` : ''}</span>`,
       eff.hidden && '<span class="admin-badge admin-badge--hidden">skryto</span>',
       isUnpublished(e, eff) && '<span class="admin-badge admin-badge--pending">čeká na přegenerování webu</span>',
     ].filter(Boolean).join(' ');
@@ -289,7 +305,7 @@ function renderList() {
           </div>
           ${eff.note ? `<div class="admin-row__note">${escapeHtml(eff.note)}</div>` : ''}
         </div>
-        <button type="button" class="button button--small button--ghost" data-action="edit">Upravit</button>
+        <button type="button" class="button button--small button--ghost" data-action="edit"${editor ? '' : ' disabled title="Nejdřív se přihlaste"'}>Upravit</button>
         ${editingId === e.id ? '<div class="admin-edit-slot"></div>' : ''}
       </div>`;
   }).join('');
@@ -457,37 +473,27 @@ async function commit(next, e, message, scope) {
 
 // ---------- Ruční načtení kalendářů (spuštění GitHub Action) ----------
 
-const WORKFLOW_FILE = 'update.yml';
 const POLL_MS = 8000;
 const POLL_LIMIT_MS = 6 * 60 * 1000;
 
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
 async function latestDispatchRun() {
-  const response = await github(`/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?event=workflow_dispatch&per_page=1`);
-  if (!response.ok) return null;
-  return (await response.json()).workflow_runs?.[0] || null;
+  return (await api('/runs/latest')).run;
 }
 
 /** Spustí načtení kalendářů; only = id jednoho zdroje, prázdné = všechny. */
 async function refreshSources(only = '') {
   const buttons = document.querySelectorAll('[data-refresh]');
   const status = $('refresh-status');
-  if (!getToken()) {
-    setMessage(status, 'Nejdřív uložte GitHub token (nahoře).', 'error');
+  if (!editor) {
+    setMessage(status, 'Nejdřív se přihlaste (nahoře).', 'error');
     return;
   }
   buttons.forEach((b) => { b.disabled = true; });
   try {
     const before = await latestDispatchRun();
-    const response = await github(`/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`, {
-      method: 'POST',
-      body: JSON.stringify({ ref: BRANCH, inputs: { only } }),
-    });
-    if (response.status === 403 || response.status === 404) {
-      throw new Error('Token nemá oprávnění spouštět Actions (Permissions → Actions: Read and write).');
-    }
-    if (!response.ok) throw new Error(`GitHub: HTTP ${response.status}`);
+    await api('/refresh', { method: 'POST', body: { only } });
     setMessage(status, 'Spuštěno, čekám na start…');
 
     // počkat na nový běh a sledovat ho do konce
@@ -515,47 +521,66 @@ async function refreshSources(only = '') {
   } catch (err) {
     setMessage(status, err.message, 'error');
   } finally {
-    buttons.forEach((b) => { b.disabled = false; });
+    buttons.forEach((b) => { b.disabled = !editor; });
   }
 }
 
-// ---------- Token ----------
+// ---------- Přihlášení ----------
 
-async function checkToken() {
-  const status = $('token-status');
-  const token = getToken();
-  $('token-forget').hidden = !token;
-  if (!token) {
-    setMessage(status, 'Bez tokenu lze úpravy jen prohlížet.');
-    return;
-  }
-  const response = await github(`/repos/${REPO}`);
-  if (!response.ok) {
-    setMessage(status, `Token nefunguje (HTTP ${response.status}).`, 'error');
-    return;
-  }
-  const repo = await response.json();
-  if (repo.permissions && !repo.permissions.push) {
-    setMessage(status, 'Token repozitář vidí, ale nemá právo zápisu (Contents: Read and write).', 'error');
-    return;
-  }
-  setMessage(status, 'Token je uložený a funguje.', 'ok');
-}
-
-function setupToken() {
-  $('repo-name').textContent = REPO;
-  $('token-form').addEventListener('submit', async (ev) => {
-    ev.preventDefault();
-    const value = $('token-input').value.trim();
-    if (!value) return;
-    try { localStorage.setItem(TOKEN_KEY, value); } catch { /* nic */ }
-    $('token-input').value = '';
-    await checkToken();
-    await reloadOverrides();
+function showEditor(next) {
+  editor = next;
+  $('login-form').hidden = Boolean(editor);
+  $('login-info').hidden = !editor;
+  $('login-name').textContent = editor ? editor.name : '';
+  // bez přihlášení jde admin jen prohlížet: tlačítka úprav a načítání jsou neaktivní
+  document.querySelectorAll('[data-refresh]').forEach((b) => {
+    b.disabled = !editor;
+    b.title = editor ? '' : 'Nejdřív se přihlaste';
   });
-  $('token-forget').addEventListener('click', () => {
-    try { localStorage.removeItem(TOKEN_KEY); } catch { /* nic */ }
-    checkToken();
+  if (!editor) editingId = null;
+  if (data) renderList();
+}
+
+async function checkSession() {
+  const status = $('login-status');
+  if (!getSession()) {
+    showEditor(null);
+    setMessage(status, 'Bez přihlášení lze úpravy jen prohlížet.');
+    return;
+  }
+  try {
+    showEditor((await api('/me')).editor);
+    setMessage(status, '');
+  } catch (err) {
+    setMessage(status, err.message, 'error');
+  }
+}
+
+function setupLogin() {
+  try { localStorage.removeItem(OLD_TOKEN_KEY); } catch { /* nic */ }
+  $('login-form').addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const status = $('login-status');
+    const password = $('login-password').value;
+    if (!password) return;
+    setMessage(status, 'Přihlašuji…');
+    try {
+      const result = await api('/login', { method: 'POST', body: { password } });
+      setSession(result.token);
+      showEditor(result.editor);
+      $('login-password').value = '';
+      setMessage(status, '');
+      await reloadOverrides();
+      updateRegenerateButton();
+    } catch (err) {
+      setMessage(status, err.message, 'error');
+    }
+  });
+  $('logout').addEventListener('click', () => {
+    setSession('');
+    showEditor(null);
+    setMessage($('login-status'), 'Odhlášeno. Bez přihlášení lze úpravy jen prohlížet.');
+    updateRegenerateButton();
   });
 }
 
@@ -563,7 +588,7 @@ async function reloadOverrides() {
   try {
     await loadOverrides();
   } catch (err) {
-    setMessage($('admin-message'), `Úpravy se nepodařilo načíst z GitHubu (${err.message}). Zobrazuji stav z webu.`, 'error');
+    setMessage($('admin-message'), `Úpravy se nepodařilo načíst (${err.message}). Zobrazuji stav z webu.`, 'error');
   }
   renderList();
 }
@@ -583,8 +608,8 @@ async function reloadEvents({ render = true } = {}) {
 }
 
 async function init() {
-  setupToken();
-  checkToken();
+  setupLogin();
+  await checkSession();
 
   await reloadEvents({ render: false });
   $('refresh-single').innerHTML = data.sources
@@ -594,6 +619,7 @@ async function init() {
   document.querySelectorAll('[data-refresh]').forEach((b) => {
     b.addEventListener('click', () => refreshSources(b.dataset.refresh));
   });
+  showEditor(editor); // tlačítka „Načíst jen…“ vznikla až teď → nastavit jim stav podle přihlášení
   $('admin-source').innerHTML += data.sources
     .filter((s) => s.display !== 'dayLabel')
     .map((s) => `<option value="${escapeHtml(s.id)}">${escapeHtml(s.name)}</option>`).join('');

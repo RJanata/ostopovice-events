@@ -63,7 +63,7 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 
 ## Správa akcí (admin.html)
 
-Stránka `admin.html` (na webu není odkaz, adresa `…/ostopovice-events/admin.html`) umí u akce
+Stránka `admin.html` (odkaz je jen u toho, kdo ji už otevřel) umí u akce
 změnit název, místo/adresu, datum a čas (jen u jednoho termínu), přidat poznámku
 (na webu se zobrazí vždy u akce pod zdrojem, typem a adresou), nastavit vlastní kategorie nebo ji skrýt — u opakovaných akcí buď jeden termín,
 nebo všechny termíny naráz (i budoucí). Ukládá do `config/overrides.json` přes GitHub API
@@ -74,10 +74,15 @@ data na webu (případně je promítne nejbližší automatická aktualizace).
 Tlačítkem „Znovu načíst“ spustí workflow ručně — buď pro všechny zdroje, nebo jen pro
 zdroje s `adminRefresh: true` (workflow má vstup `only`, který předá `--only=<id>`).
 
-Potřebuje GitHub token: Settings → Developer settings → Fine-grained tokens, přístup jen
-k tomuto repozitáři, *Contents* a *Actions*: Read and write. Token se uloží v `localStorage` prohlížeče.
-Pozor: všechny GitHub Pages jednoho účtu sdílí doménu `<účet>.github.io`, takže token vidí
-i stránky ostatních projektů na stejné doméně — používej jen na svém počítači.
+Přihlášení je jen heslem přes náš server **api.craz.cz** (projekt [api-server](../api-server)):
+editoři jsou dva (Radek, Michaela), server podle hesla pozná, kdo to je, a přihlášení vydrží
+v prohlížeči půl roku. Do repozitáře zapisuje server jako GitHub App (nic nevyprší) s editorem
+jako autorem commitu a ke každé změněné úpravě v `overrides.json` připíše `editedBy` (křestní jméno)
+a `editedAt`; admin to ukazuje u akce („upraveno: Michaela, 12. 10. 2026“), do dat webu se to nedostane.
+Bez přihlášení jde admin jen prohlížet. Kdo jednou otevřel `admin.html`, má v kalendáři vpravo
+nahoře ikonku správy (`localStorage`, `adminLink`).
+
+Lokálně proti lokálnímu serveru: `admin.html?api=http://localhost:3999/ostopovice-events` (jen z localhostu).
 
 ## Chování sběru
 
