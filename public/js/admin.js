@@ -545,8 +545,8 @@ async function followRun(initial, only = '') {
     }
     if (run.conclusion === 'success') {
       const what = only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
-      // data jsou v repozitáři, ale GitHub Pages web zveřejní až zhruba o minutu později;
-      // lokální náhled (localhost) nová data nikdy nedostane → tam nečekat
+      // web se nasazuje v témže běhu, ale pojistka: hotovo až když web opravdu vrací nová data
+      // (CDN GitHub Pages); lokální náhled (localhost) nová data nikdy nedostane → tam nečekat
       const before = data.generatedAt;
       const done = Date.now();
       while (location.hostname !== 'localhost' && Date.now() - done < PUBLISH_LIMIT_MS) {
