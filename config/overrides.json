@@ -1,6 +1,12 @@
 {
   "$comment": "Ruční úpravy akcí (spravuje je i admin.html). series: klíč \"zdroj|Původní název\" = platí pro všechny termíny akce s tímto názvem, i budoucí. events: klíč = id jednoho termínu (má přednost). Hodnoty: title, categories, location, hidden (true = nezobrazovat). editedBy/editedAt = kdo a kdy úpravu udělal (zapisuje api-server).",
-  "series": {},
+  "series": {
+    "skola|Třídní schůzky": {
+      "hidden": true,
+      "editedBy": "Radek",
+      "editedAt": "2026-10-12T20:57:04.943Z"
+    }
+  },
   "events": {
     "obec-fjsj2r": {
       "title": "Komunální volby 2026",
