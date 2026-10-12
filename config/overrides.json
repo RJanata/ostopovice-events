@@ -31,6 +31,15 @@
       "long": true,
       "editedBy": "Radek",
       "editedAt": "2026-10-12T21:14:27.295Z"
+    },
+    "obec-kbdo4r": {
+      "title": "Vítání občánků",
+      "location": "Knihovna",
+      "start": "2026-10-13T14:00:00.000Z",
+      "end": "2026-10-13T14:00:00.000Z",
+      "allDay": false,
+      "editedBy": "Radek",
+      "editedAt": "2026-10-12T22:15:12.066Z"
     }
   }
 }
