@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:obec-fjsj2r@ostopovice-events
-DTSTAMP:20261011T203553Z
+DTSTAMP:20261012T101032Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261011
 SUMMARY:Komunální volby 2026
@@ -21,7 +21,7 @@ CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:obec-kbdo4r@ostopovice-events
-DTSTAMP:20261011T203553Z
+DTSTAMP:20261012T101032Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Vítání občánků
@@ -30,13 +30,93 @@ URL:https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice
 CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1qbzrko@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1yes2rf@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-rxienv@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-x7zvb8@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-pklxjw@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-1ug0pvk@ostopovice-events
-DTSTAMP:20261011T203553Z
+DTSTAMP:20261012T101032Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Beseda\, setkání a oslava významných jubileí seniorů
 LOCATION:Knihovna Ostopovice
 DESCRIPTION:Pořádá obecní úřad\n\nZdroj: Připravované akce
 CATEGORIES:Senioři,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-19lvikt@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-tgptrf@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-18htyay@ostopovice-events
+DTSTAMP:20261012T101032Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
 END:VEVENT
 END:VCALENDAR

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-11T20:34:13.930Z",
+ "generatedAt": "2026-10-12T10:10:29.283Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -36,7 +36,7 @@
    "lastSuccess": "2026-10-11T20:34:13.930Z",
    "ok": true,
    "error": null,
-   "count": 231
+   "count": 230
   },
   {
    "id": "sokol",
@@ -112,10 +112,10 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-11T20:34:13.930Z",
-   "ok": false,
-   "error": "Farnost Troubsko: fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://farnost.troubsko.cz/?q=content/porad-bohosluzeb (4 pokusy)",
-   "count": 34
+   "lastSuccess": "2026-10-12T10:10:29.283Z",
+   "ok": true,
+   "error": null,
+   "count": 42
   },
   {
    "id": "pripravovane",
@@ -195,22 +195,6 @@
   }
  ],
  "events": [
-  {
-   "id": "knihovna-sqr6zv",
-   "source": "knihovna",
-   "title": "Husa na dálnici 2025",
-   "start": "2025-09-06T13:00:00.000Z",
-   "end": "2025-09-06T19:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/husa-na-dalnici-2025",
-   "description": "divadlo, hudba, ptačí zpěv a širé nebe",
-   "image": "https://static.wixstatic.com/media/6e4a73_2a825b57c9d44f2ca0dd1d1b8d86eeca~mv2.jpg",
-   "categories": [
-    "kultura"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
   {
    "id": "knihovna-l7k64q",
    "source": "knihovna",
@@ -4337,8 +4321,50 @@
     "deti",
     "obec"
    ],
-   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
-   "added": "2026-10-07T22:43:36.000Z"
+   "added": "2026-10-07T22:43:36.000Z",
+   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče"
+  },
+  {
+   "id": "nezarazene-1qbzrko",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-10-13",
+   "end": "2026-10-13",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-1yes2rf",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-10-14",
+   "end": "2026-10-14",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
   },
   {
    "id": "nezarazene-a7wk58",
@@ -4787,6 +4813,27 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-rxienv",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
    "id": "svatky-6x6w3i",
    "source": "svatky",
    "title": "Den vzniku samostatného československého státu",
@@ -4799,6 +4846,27 @@
    "image": "",
    "categories": [],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "nezarazene-x7zvb8",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
   },
   {
    "id": "nezarazene-lne1qq",
@@ -5068,6 +5136,27 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-pklxjw",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
    "id": "pripravovane-1ug0pvk",
    "source": "pripravovane",
    "title": "Beseda, setkání a oslava významných jubileí seniorů",
@@ -5088,6 +5177,27 @@
     "obec"
    ],
    "added": "2026-10-08T14:26:43.000Z"
+  },
+  {
+   "id": "nezarazene-19lvikt",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
   },
   {
    "id": "seniori-fyvofl",
@@ -5390,6 +5500,48 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-tgptrf",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-18htyay",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
   },
   {
    "id": "pripravovane-1y0eeei",
