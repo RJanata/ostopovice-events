@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T10:49:33.400Z",
+ "generatedAt": "2026-10-12T12:37:25.544Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -112,10 +112,10 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T10:49:33.400Z",
+   "lastSuccess": "2026-10-12T12:37:25.544Z",
    "ok": true,
    "error": null,
-   "count": 42
+   "count": 44
   },
   {
    "id": "pripravovane",
@@ -4058,6 +4058,25 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "nezarazene-1a51pdz",
+   "source": "nezarazene",
+   "title": "Den architektury ve škole",
+   "start": "2026-10-04T14:00:00.000Z",
+   "end": "2026-10-04T14:00:00.000Z",
+   "allDay": false,
+   "location": "ZŠ a MŠ Ostopovice",
+   "url": "",
+   "description": "Veřejná komentovaná prohlídka areálu, průvodci - manželé Eichlerovi, architekti celé školy.",
+   "image": "",
+   "tagCategories": [
+    "vzdelavani"
+   ],
+   "categories": [
+    "vzdelavani"
+   ],
+   "added": "2026-10-12T12:37:25.544Z"
+  },
+  {
    "id": "knihovna-1uv165i",
    "source": "knihovna",
    "title": "Divadlo Feste: Osmdesátdevět aneb trenažér jedné revoluce",
@@ -4094,22 +4113,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4129,6 +4132,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4230,6 +4249,25 @@
     "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "nezarazene-k999au",
+   "source": "nezarazene",
+   "title": "Bwindi Orphans slaví 20 let činnosti",
+   "start": "2026-10-10T08:00:00.000Z",
+   "end": "2026-10-10T15:00:00.000Z",
+   "allDay": false,
+   "location": "Stodola ZŠ a MŠ Ostopovice",
+   "url": "",
+   "description": "Akce je určena dárcům a podporovatelům. Tedy také všem nám kolem školy, která má adoptivního bratra z Ugandy Dawise.",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-12T12:37:25.544Z"
   },
   {
    "id": "nezarazene-17yrhm2",
@@ -4342,13 +4380,13 @@
     "deti",
     "obec"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "note": "jen pro pozvané",
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
    "originalLocation": "",
    "originalStart": "2026-10-13",
    "originalEnd": "2026-10-13",
-   "originalAllDay": true,
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1yes2rf",
