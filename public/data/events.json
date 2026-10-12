@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T20:53:05.981Z",
+ "generatedAt": "2026-10-12T20:57:39.668Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,8 +16,8 @@
    "adminRefresh": false,
    "feeds": [],
    "lastSuccess": "2026-10-12T20:53:05.981Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed (ETIMEDOUT) – https://www.ostopovice.cz/kalendar-akci?action=atom (4 pokusy)",
    "count": 4
   },
   {
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 230
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -87,7 +87,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -105,7 +105,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -130,7 +130,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 44
@@ -148,7 +148,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-12T20:53:05.981Z",
+   "lastSuccess": "2026-10-12T20:57:39.668Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -3619,6 +3619,7 @@
    "categories": [
     "deti"
    ],
+   "hidden": true,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
@@ -3703,6 +3704,7 @@
    "categories": [
     "deti"
    ],
+   "hidden": true,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
@@ -3719,6 +3721,7 @@
    "categories": [
     "deti"
    ],
+   "hidden": true,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
@@ -3873,6 +3876,7 @@
    "categories": [
     "deti"
    ],
+   "hidden": true,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
@@ -3889,6 +3893,7 @@
    "categories": [
     "deti"
    ],
+   "hidden": true,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
@@ -4510,13 +4515,13 @@
     "deti",
     "obec"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "note": "jen pro pozvané",
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
    "originalLocation": "",
    "originalStart": "2026-10-13",
    "originalEnd": "2026-10-13",
-   "originalAllDay": true,
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1yes2rf",
@@ -4795,7 +4800,8 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s0i3bz",
