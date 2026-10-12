@@ -475,54 +475,130 @@ async function commit(next, e, message, scope) {
 
 const POLL_MS = 8000;
 const POLL_LIMIT_MS = 6 * 60 * 1000;
+const START_LIMIT_MS = 60 * 1000;
+const PUBLISH_POLL_MS = 5000;
+const PUBLISH_LIMIT_MS = 4 * 60 * 1000;
 
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
-async function latestDispatchRun() {
+let following = false; // právě sledujeme běžící načítání → tlačítka zůstávají neaktivní
+
+/** Poslední běh workflow (ruční i automatický): { id, status, conclusion, event, createdAt, startedBy } */
+async function latestRun() {
   return (await api('/runs/latest')).run;
+}
+
+function runLabel(run) {
+  if (run.startedBy) return `spustil(a) ${run.startedBy}`;
+  if (run.event === 'schedule') return 'automatická aktualizace';
+  if (run.event === 'workflow_dispatch') return 'spuštěno ručně';
+  return run.event;
+}
+
+function syncRefreshButtons() {
+  document.querySelectorAll('[data-refresh]').forEach((b) => {
+    b.disabled = !editor || following;
+    b.title = !editor ? 'Nejdřív se přihlaste' : following ? 'Načítání právě běží' : '';
+  });
+}
+
+/**
+ * Sleduje běžící načítání až do konce. Čas se počítá od založení běhu na GitHubu,
+ * takže po odchodu z adminu a návratu se ukáže správně. only = jen pro text hlášky.
+ */
+async function followRun(initial, only = '') {
+  if (following) return;
+  following = true;
+  syncRefreshButtons();
+  const status = $('refresh-status');
+  let run = initial;
+  let lastPoll = Date.now();
+  // starší server čas založení běhu neposílá → počítat od chvíle, kdy jsme ho uviděli
+  const seenAt = Date.now();
+  const startOf = (r) => (r.createdAt ? new Date(r.createdAt).getTime() : seenAt);
+  try {
+    while (run.status !== 'completed') {
+      const elapsed = Date.now() - startOf(run);
+      if (elapsed > POLL_LIMIT_MS) {
+        setMessage(status, 'Načítání trvá déle než obvykle – stav najdete na GitHubu v záložce Actions.');
+        return;
+      }
+      setMessage(status, `Načítám kalendáře (${runLabel(run)})… ${Math.max(0, Math.round(elapsed / 1000))} s`);
+      await sleep(1000);
+      if (Date.now() - lastPoll >= POLL_MS) {
+        lastPoll = Date.now();
+        const latest = await latestRun();
+        if (latest && (latest.id === run.id || startOf(latest) > startOf(run))) run = latest;
+      }
+    }
+    if (run.conclusion === 'success') {
+      const what = only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
+      // data jsou v repozitáři, ale GitHub Pages web zveřejní až zhruba o minutu později;
+      // lokální náhled (localhost) nová data nikdy nedostane → tam nečekat
+      const before = data.generatedAt;
+      const done = Date.now();
+      while (location.hostname !== 'localhost' && Date.now() - done < PUBLISH_LIMIT_MS) {
+        setMessage(status, `Hotovo – ${what}, čekám na zveřejnění webu… ${Math.round((Date.now() - done) / 1000)} s`);
+        await sleep(PUBLISH_POLL_MS);
+        await reloadEvents({ render: false });
+        if (data.generatedAt !== before) break;
+      }
+      renderList();
+      if (data.generatedAt !== before) setMessage(status, `Hotovo – ${what} a web je aktualizovaný.`, 'ok');
+      else if (location.hostname === 'localhost') setMessage(status, `Hotovo – ${what}. Ostrý web se zveřejní zhruba do minuty (lokální náhled má svá data).`, 'ok');
+      else setMessage(status, `Hotovo – ${what}. Web se ještě zveřejňuje, za chvíli obnovte stránku.`, 'ok');
+    } else {
+      setMessage(status, `Načtení skončilo chybou (${run.conclusion}). Podrobnosti: GitHub → Actions.`, 'error');
+    }
+  } catch (err) {
+    setMessage(status, err.message, 'error');
+  } finally {
+    following = false;
+    syncRefreshButtons();
+  }
+}
+
+/** Při otevření adminu: když se zrovna načítá (ručně i automaticky), ukázat to a sledovat. */
+async function showRunningRun() {
+  if (!editor || following) return;
+  try {
+    const run = await latestRun();
+    if (run && run.status !== 'completed') followRun(run);
+  } catch {
+    // stav běhu je jen informace navíc
+  }
 }
 
 /** Spustí načtení kalendářů; only = id jednoho zdroje, prázdné = všechny. */
 async function refreshSources(only = '') {
-  const buttons = document.querySelectorAll('[data-refresh]');
   const status = $('refresh-status');
   if (!editor) {
     setMessage(status, 'Nejdřív se přihlaste (nahoře).', 'error');
     return;
   }
-  buttons.forEach((b) => { b.disabled = true; });
+  if (following) return;
+  following = true;
+  syncRefreshButtons();
+  let run = null;
   try {
-    const before = await latestDispatchRun();
+    const before = await latestRun();
     await api('/refresh', { method: 'POST', body: { only } });
     setMessage(status, 'Spuštěno, čekám na start…');
-
-    // počkat na nový běh a sledovat ho do konce
-    const started = Date.now();
-    let run = null;
-    while (Date.now() - started < POLL_LIMIT_MS) {
-      await sleep(POLL_MS);
-      const latest = await latestDispatchRun();
+    // GitHub běh založí až za pár sekund
+    const asked = Date.now();
+    while (!run && Date.now() - asked < START_LIMIT_MS) {
+      await sleep(3000);
+      const latest = await latestRun();
       if (latest && latest.id !== before?.id) run = latest;
-      if (!run) continue;
-      if (run.status !== 'completed') {
-        setMessage(status, `Načítám kalendáře… (${Math.round((Date.now() - started) / 1000)} s)`);
-        continue;
-      }
-      if (run.conclusion === 'success') {
-        const what = only ? `„${sourcesById[only]?.name || only}“ je načtený` : 'kalendáře jsou načtené';
-        setMessage(status, `Hotovo – ${what} a web je aktualizovaný.`, 'ok');
-        await reloadEvents();
-      } else {
-        setMessage(status, `Načtení skončilo chybou (${run.conclusion}). Podrobnosti: GitHub → Actions.`, 'error');
-      }
-      return;
     }
-    setMessage(status, 'Načítání trvá déle než obvykle – stav najdete na GitHubu v záložce Actions.');
+    if (!run) setMessage(status, 'Načítání se zatím nespustilo – stav najdete na GitHubu v záložce Actions.');
   } catch (err) {
     setMessage(status, err.message, 'error');
   } finally {
-    buttons.forEach((b) => { b.disabled = !editor; });
+    following = false;
+    syncRefreshButtons();
   }
+  if (run) await followRun(run, only);
 }
 
 // ---------- Přihlášení ----------
@@ -533,10 +609,7 @@ function showEditor(next) {
   $('login-info').hidden = !editor;
   $('login-name').textContent = editor ? editor.name : '';
   // bez přihlášení jde admin jen prohlížet: tlačítka úprav a načítání jsou neaktivní
-  document.querySelectorAll('[data-refresh]').forEach((b) => {
-    b.disabled = !editor;
-    b.title = editor ? '' : 'Nejdřív se přihlaste';
-  });
+  syncRefreshButtons();
   if (!editor) editingId = null;
   if (data) renderList();
 }
@@ -572,6 +645,7 @@ function setupLogin() {
       setMessage(status, '');
       await reloadOverrides();
       updateRegenerateButton();
+      showRunningRun();
     } catch (err) {
       setMessage(status, err.message, 'error');
     }
@@ -636,6 +710,7 @@ async function init() {
   });
 
   await reloadOverrides();
+  showRunningRun();
 }
 
 init();
