@@ -21,6 +21,7 @@ import * as wixEventsAdapter from './adapters/wix-events.js';
 import * as nhjmopAdapter from './adapters/nhjmop.js';
 import * as textProgramAdapter from './adapters/text-program.js';
 import * as parishScheduleAdapter from './adapters/parish-schedule.js';
+import * as canvaPosterAdapter from './adapters/canva-poster.js';
 
 const ADAPTERS = {
   ical: icalAdapter,
@@ -29,6 +30,7 @@ const ADAPTERS = {
   nhjmop: nhjmopAdapter,
   'text-program': textProgramAdapter,
   'parish-schedule': parishScheduleAdapter,
+  'canva-poster': canvaPosterAdapter,
 };
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');

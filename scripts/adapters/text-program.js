@@ -9,7 +9,7 @@
 // místa (source.options.places) se z textu vytáhnou zvlášť.
 import * as cheerio from 'cheerio';
 import { fetchText } from '../lib/http.js';
-import { normalize } from '../lib/text.js';
+import { normalize, tidyTitle } from '../lib/text.js';
 import { CZECH_MONTHS, fromPragueTime, isoDay } from '../lib/time.js';
 
 const MONTH_NAMES = Object.keys(CZECH_MONTHS).join('|');
@@ -32,30 +32,6 @@ function htmlToLines(html, selector) {
     .split('\n')
     .map((line) => line.replace(/\s+/g, ' ').trim())
     .filter(Boolean);
-}
-
-/**
- * Úvodní slova psaná VERZÁLKAMI → běžný text: „PLES SENIORŮ“ → „Ples seniorů“,
- * „OSLAVA MDŽ S HUDBOU“ → „Oslava MDŽ s hudbou“ (krátké zkratky 2–3 písmena zůstávají).
- */
-function tidyTitle(text) {
-  const title = text.replace(/^[-–]\s*/, '').replace(/[,;]\s*$/, '').trim();
-  const words = title.split(/\s+/);
-  let index = 0;
-  const out = [];
-  for (const word of words) {
-    const letters = word.replace(/[^\p{L}]/gu, '');
-    const isUpper = letters && letters === letters.toLocaleUpperCase('cs') && letters !== letters.toLocaleLowerCase('cs');
-    if (!isUpper || index !== out.length) {
-      out.push(word);
-      continue;
-    }
-    index += 1;
-    const keepAcronym = letters.length >= 2 && letters.length <= 3;
-    out.push(keepAcronym ? word : word.toLocaleLowerCase('cs'));
-  }
-  const result = out.join(' ');
-  return result.charAt(0).toLocaleUpperCase('cs') + result.slice(1);
 }
 
 export async function fetchEvents(source) {

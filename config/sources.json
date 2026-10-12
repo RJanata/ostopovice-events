@@ -42,6 +42,28 @@
       ]
     },
     {
+      "id": "skola",
+      "name": "Škola",
+      "fullName": "MŠ/ZŠ Ostopovice",
+      "shortName": "Škola",
+      "village": "Ostopovice",
+      "icon": "skola.png",
+      "color": "#af8500",
+      "type": "canva-poster",
+      "url": "https://www.zsostopovice.cz/aktuality",
+      "link": "https://www.zsostopovice.cz/aktuality",
+      "categories": [
+        "deti"
+      ],
+      "fallbackCategories": [],
+      "options": {
+        "linkText": "akce ZŠ",
+        "markerImage": "hGkOm-6AsLXcRaG719-q_rI0iG_OOgHZA_lArOeXsSw",
+        "latestPageOnly": false
+      },
+      "$comment": "Měsíční plakát akcí ZŠ v Canvě; odkaz se hledá na stránce Aktuality podle textu „akce ZŠ“. Jen akce s ikonkou „pro veřejnost“ (markerImage). latestPageOnly: true = jen nejnovější měsíc plakátu (starší stránky už jsou v archivu)."
+    },
+    {
       "id": "sokol",
       "name": "TJ Sokol",
       "fullName": "TJ Sokol Ostopovice (NH JMOP)",

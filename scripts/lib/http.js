@@ -1,4 +1,6 @@
 const USER_AGENT = 'Mozilla/5.0 (compatible; ostopovice-events/0.1; +https://github.com/)';
+// Některé weby (Canva) robotům vrátí jen „Unsupported client“ → tam se posílá UA prohlížeče
+export const BROWSER_USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36';
 
 // Menší hostingy (např. web Klubu seniorů) občas z GitHub Actions nepřijmou spojení
 // (z českých adres jde vše hned) a projde to až po chvíli → při chybě sítě zkusit
@@ -16,14 +18,14 @@ function describe(err) {
 }
 
 /** Stáhne URL jako text; při chybě sítě to zkusí znovu, pak vyhodí výjimku s čitelnou zprávou. */
-export async function fetchText(url, { timeoutMs = 30000 } = {}) {
+export async function fetchText(url, { timeoutMs = 30000, userAgent = USER_AGENT } = {}) {
   let lastError;
   for (let attempt = 0; attempt <= RETRY_DELAYS_MS.length; attempt++) {
     if (attempt) await sleep(RETRY_DELAYS_MS[attempt - 1]);
     let response;
     try {
       response = await fetch(url, {
-        headers: { 'User-Agent': USER_AGENT, 'Accept-Language': 'cs,en;q=0.5' },
+        headers: { 'User-Agent': userAgent, 'Accept-Language': 'cs,en;q=0.5' },
         signal: AbortSignal.timeout(timeoutMs),
         redirect: 'follow',
       });
