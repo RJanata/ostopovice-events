@@ -817,11 +817,18 @@ function setupMonthSwipe() {
 
 const isFilterActive = () => Boolean(state.sources || state.categories || state.villages || state.query || !state.regular);
 
-function filterDescription() {
+/** Vybrané zdroje, kategorie a obce (bez popisků) — souhrn v záhlaví filtrů. */
+function selectionParts() {
   const parts = [];
-  if (state.sources) parts.push(`zdroje: ${[...state.sources].map((id) => sourcesById[id]?.name || id).join(', ')}`);
-  if (state.categories) parts.push(`kategorie: ${[...state.categories].map((id) => categoriesById[id]?.label || id).join(', ')}`);
-  if (state.villages) parts.push(`obec: ${[...state.villages].join(', ')}`);
+  if (state.sources) parts.push([...state.sources].map((id) => sourcesById[id]?.name || id).join(', '));
+  if (state.categories) parts.push([...state.categories].map((id) => categoriesById[id]?.label || id).join(', '));
+  if (state.villages) parts.push([...state.villages].join(', '));
+  return parts;
+}
+
+/** Celý popis filtru (i hledání a pravidelné akce) — název exportovaného kalendáře. */
+function filterDescription() {
+  const parts = selectionParts();
   if (state.query) parts.push(`hledání: „${state.query}“`);
   if (!state.regular) parts.push('bez pravidelných');
   return parts.join(' · ');
@@ -1044,7 +1051,8 @@ function setupFiltersToggle() {
 
 /** Souhrn v záhlaví panelu filtrů: co je vybráno (vidět hlavně ve sbaleném stavu). */
 function renderFiltersSummary() {
-  document.getElementById('filters-summary').textContent = isFilterActive() ? filterDescription() : '';
+  // hledaný text a „Pravidelné“ jsou vidět přímo v panelu, souhrn ukazuje jen výběr
+  document.getElementById('filters-summary').textContent = selectionParts().join(' · ');
 }
 
 function setupThemeToggle() {
