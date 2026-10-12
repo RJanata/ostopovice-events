@@ -85,8 +85,8 @@ function prepareEvent(e) {
   e._last = last;
   e._search = normalize(`${e.title} ${e.location} ${e.description}`);
   e._span = eventDays(e).length;
-  // long z úprav v adminu nebo #long v popisu; jinak rozhoduje délka. Jednodenní akce čárou nikdy.
-  e._long = !e.recurring && e._span > 1 && (typeof e.long === 'boolean' ? e.long : e._span >= LONG_EVENT_DAYS);
+  // long z úprav v adminu nebo #long v popisu (i u jednodenní akce); jinak rozhoduje délka
+  e._long = !e.recurring && (typeof e.long === 'boolean' ? e.long : e._span >= LONG_EVENT_DAYS);
   return e;
 }
 
@@ -632,7 +632,7 @@ function renderMonth(events, holidays) {
       const to = colOf(e._last > weekEnd ? weekEnd : e._last);
       const classes = ['month__long', e._first < weekStart && 'month__long--before', e._last > weekEnd && 'month__long--after'].filter(Boolean).join(' ');
       const offset = longLane.get(e) * 4; // víc souběžných pod sebou
-      longLines += `<span class="${classes}" style="grid-column:${from + 1} / ${to + 2};grid-row:1;top:${offset}px;--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}" title="${escapeHtml(`${e.title} (${formatShortDate(e._first)} – ${formatShortDate(e._last)})`)}"></span>`;
+      longLines += `<span class="${classes}" style="grid-column:${from + 1} / ${to + 2};grid-row:1;top:${offset}px;--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}" title="${escapeHtml(`${e.title} (${formatShortDate(e._first)}${e._last !== e._first ? ` – ${formatShortDate(e._last)}` : ''})`)}"></span>`;
     });
 
     const items = inGrid

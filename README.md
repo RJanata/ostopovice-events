@@ -53,16 +53,16 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   do `public/icons/tabler/` (commituje se s daty), neexistující název jen zaloguje a ignoruje.
   Ikona se ukáže v kalendáři (místo ikony zdroje) i před názvem akce, v barvě její kategorie. Další aliasy jdou přidat
   do kategorie jako `"tags": ["deticky"]`.
-  Dlouhodobá akce: `#long` v popisu = vícedenní akce se v měsíci zobrazí jako tenká čára u čísel dnů
-  a v seznamu mezi dlouhodobými, i když je kratší než 8 dní (bez štítku rozhoduje délka 8+ dní).
+  Dlouhodobá akce: `#long` v popisu = akce se v měsíci zobrazí jako tenká čára u čísel dnů
+  a v seznamu mezi dlouhodobými, i když je kratší než 8 dní (i jednodenní) (bez štítku rozhoduje délka 8+ dní).
 - **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho
   v `public/data/events.json`), např.:
   ```json
   { "events": { "obec-fjsj2r": { "title": "Komunální volby 2026" }, "obec-xyz": { "hidden": true } } }
   ```
   Původní název zdroje zůstává v datech jako `originalTitle`.
-  `long: true` / `false` = vícedenní akce vždy jako tenká čára / vždy jako plný pruh (v adminu
-  „Zobrazení vícedenní akce“); `long: null` vrací automatiku i proti `#long` ze zdroje.
+  `long: true` / `false` = akce vždy jako tenká čára (i jednodenní) / vždy jako pruh (v adminu
+  „Zobrazení akce“); `long: null` vrací automatiku i proti `#long` ze zdroje.
 - Ikony zdrojů: `public/icons/` (loga a favicony organizací, PNG/SVG). Ikony kategorií: `public/icons/categories/` (jednobarevné SVG, obarví se barvou kategorie).
 
 ## Správa akcí (admin.html)

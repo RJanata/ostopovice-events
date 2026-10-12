@@ -364,7 +364,7 @@ function mountEditForm(slot, e) {
   form.elements.display.value = displayOf(eff.long);
   form.querySelector('.admin-original-display').textContent = baseLong(e) === true
     ? 'Ze zdroje: tenká čára (#long v popisu).'
-    : 'Platí jen pro vícedenní akce; jednodenní se zobrazí vždy normálně.';
+    : 'Tenká čára = dlouhodobá akce (výstava, uzavírka…): v měsíci čára u čísel dnů, v seznamu zvlášť.';
   form.elements.note.value = eff.note;
 
   // datum a čas (prázdný čas = celodenní akce)
