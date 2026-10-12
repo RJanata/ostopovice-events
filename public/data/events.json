@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T21:15:01.469Z",
+ "generatedAt": "2026-10-12T21:24:53.998Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -15,7 +15,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -33,7 +33,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 230
@@ -51,7 +51,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -69,7 +69,7 @@
    "display": "events",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -88,8 +88,8 @@
    "adminRefresh": false,
    "feeds": [],
    "lastSuccess": "2026-10-12T21:15:01.469Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (4 pokusy)",
    "count": 23
   },
   {
@@ -105,7 +105,7 @@
    "display": "dayLabel",
    "adminRefresh": false,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 30
@@ -130,7 +130,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 44
@@ -148,7 +148,7 @@
    "display": "events",
    "adminRefresh": true,
    "feeds": [],
-   "lastSuccess": "2026-10-12T21:15:01.469Z",
+   "lastSuccess": "2026-10-12T21:24:53.998Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4478,6 +4478,7 @@
     "vzdelavani"
    ],
    "long": true,
+   "originalLong": null,
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
@@ -4802,6 +4803,7 @@
     "obec"
    ],
    "long": true,
+   "originalLong": null,
    "added": "2026-10-12T20:49:02.880Z"
   },
   {
