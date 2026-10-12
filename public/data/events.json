@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T22:12:09.827Z",
+ "generatedAt": "2026-10-12T22:15:35.051Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -3619,8 +3619,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3704,8 +3704,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3721,8 +3721,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3876,8 +3876,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3893,8 +3893,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -4480,23 +4480,6 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
-   "id": "obec-kbdo4r",
-   "source": "obec",
-   "title": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
-   "start": "2026-10-13",
-   "end": "2026-10-13",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13826918",
-   "categories": [
-    "deti",
-    "obec"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "nezarazene-1qbzrko",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -4516,6 +4499,28 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "obec-kbdo4r",
+   "source": "obec",
+   "title": "Vítání občánků",
+   "start": "2026-10-13T14:00:00.000Z",
+   "end": "2026-10-13T14:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna",
+   "url": "https://www.ostopovice.cz/kalendar-akci/vitani-obcanku-vyzva-pro-rodice",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13826918",
+   "categories": [
+    "deti",
+    "obec"
+   ],
+   "added": "2026-10-07T22:43:36.000Z",
+   "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
+   "originalLocation": "",
+   "originalStart": "2026-10-13",
+   "originalEnd": "2026-10-13",
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1yes2rf",
@@ -4794,9 +4799,9 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null,
-   "added": "2026-10-12T20:49:02.880Z"
+   "originalLong": null
   },
   {
    "id": "knihovna-s0i3bz",
