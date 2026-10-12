@@ -82,6 +82,16 @@ function extractIcon(description) {
   return { icon, description: text };
 }
 
+/** „#long“ v popisu = vícedenní akce se zobrazí jako dlouhodobá (tenká čára), i když je kratší než 8 dní. */
+function extractLong(description) {
+  let long = false;
+  const text = String(description || '').replace(/(^|\s)#long\b/gi, (match, space) => {
+    long = true;
+    return space;
+  });
+  return { long, description: text };
+}
+
 /** Stáhne chybějící ikony akcí; neexistující ikonu (překlep v názvu) z akce odebere. */
 async function ensureIcons(events) {
   await mkdir(ICON_DIR, { recursive: true });
@@ -106,7 +116,8 @@ async function ensureIcons(events) {
 }
 
 function finalizeEvent(raw, source, rules, tagMap) {
-  const iconed = extractIcon(raw.description);
+  const longTagged = extractLong(raw.description);
+  const iconed = extractIcon(longTagged.description);
   const linked = extractLink(iconed.description);
   const tagged = extractTags(linked.description, tagMap);
   const event = {
@@ -122,6 +133,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
     image: raw.image || '',
   };
   if (iconed.icon) event.icon = iconed.icon;
+  if (longTagged.long) event.long = true;
   if (raw.extra) event.extra = raw.extra;
   if (raw.recurring) event.recurring = true;
   if (raw.shortTitle) event.shortTitle = raw.shortTitle;
@@ -141,7 +153,9 @@ function applySourceRules(event, source, rules) {
   // archiv obsahuje akce už s ručními úpravami → vrátit původní hodnoty, úpravy se aplikují znovu
   for (const [field, originalField] of Object.entries(OVERRIDABLE)) {
     if (originalField in e) {
-      e[field] = e[originalField];
+      // null = zdroj pole vůbec neměl (např. long)
+      if (e[originalField] === null) delete e[field];
+      else e[field] = e[originalField];
       delete e[originalField];
     }
   }
@@ -160,6 +174,8 @@ const OVERRIDABLE = {
   end: 'originalEnd',
   allDay: 'originalAllDay',
   recurring: 'originalRecurring',
+  // true = dlouhodobá akce (tenká čára), false = vždy plný pruh; bez pole rozhoduje délka (8+ dní)
+  long: 'originalLong',
 };
 // pole, která vznikají jen z ručních úprav (ze zdroje nikdy nepřijdou)
 const OVERRIDE_ONLY = ['note', 'hidden'];
@@ -181,7 +197,7 @@ function applyOverrides(event, overrides) {
   if (!Object.keys(changes).length) return event;
   const result = { ...event, ...changes };
   for (const [field, originalField] of Object.entries(OVERRIDABLE)) {
-    if (field in changes && changes[field] !== event[field]) result[originalField] = event[field];
+    if (field in changes && changes[field] !== event[field]) result[originalField] = event[field] ?? null;
   }
   if (!result.note) delete result.note;
   // ručně přejmenovaná akce: krátký název ze zdroje by v kalendáři ukazoval ten starý

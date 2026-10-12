@@ -205,6 +205,10 @@ const baseWhen = (e) => ({
   allDay: pick(e, 'allDay', 'originalAllDay'),
 });
 const WHEN_FIELDS = ['start', 'end', 'allDay'];
+// long ze zdroje (#long v popisu); undefined = rozhoduje délka akce
+const baseLong = (e) => ('originalLong' in e ? (e.originalLong ?? undefined) : e.long);
+const DISPLAY_VALUES = { auto: undefined, long: true, bar: false };
+const displayOf = (long) => (long === true ? 'long' : long === false ? 'bar' : 'auto');
 
 /** Kdo a kdy akci naposledy upravil (u hromadné i jednotlivé úpravy platí ta novější). */
 function lastEdit(e) {
@@ -235,6 +239,7 @@ function effective(e) {
     location: 'location' in changes ? changes.location : baseLocation(e),
     categories: changes.categories || e.categories,
     hidden: Boolean(changes.hidden),
+    long: 'long' in changes ? changes.long : baseLong(e),
     changed: Object.keys(changes).length > 0,
   };
 }
@@ -246,6 +251,7 @@ function isUnpublished(e, eff = effective(e)) {
     || !same(eff.location, e.location)
     || !same(eff.note, e.note)
     || eff.hidden !== Boolean(e.hidden)
+    || eff.long !== e.long
     || WHEN_FIELDS.some((f) => !same(eff.when[f], e[f]))
     || (eff.changes.categories && !same(eff.changes.categories, e.categories));
 }
@@ -343,6 +349,10 @@ function mountEditForm(slot, e) {
   syncCats();
 
   form.elements.hidden.checked = eff.hidden;
+  form.elements.display.value = displayOf(eff.long);
+  form.querySelector('.admin-original-display').textContent = baseLong(e) === true
+    ? 'Ze zdroje: tenká čára (#long v popisu).'
+    : 'Platí jen pro vícedenní akce; jednodenní se zobrazí vždy normálně.';
   form.elements.note.value = eff.note;
 
   // datum a čas (prázdný čas = celodenní akce)
@@ -391,6 +401,8 @@ function mountEditForm(slot, e) {
       changes.categories = picked;
     }
     if (form.elements.hidden.checked) changes.hidden = true;
+    const long = DISPLAY_VALUES[form.elements.display.value];
+    if (long !== baseLong(e)) changes.long = long ?? null;
     const note = form.elements.note.value.trim();
     if (note) changes.note = note;
 

@@ -85,7 +85,8 @@ function prepareEvent(e) {
   e._last = last;
   e._search = normalize(`${e.title} ${e.location} ${e.description}`);
   e._span = eventDays(e).length;
-  e._long = !e.recurring && e._span >= LONG_EVENT_DAYS;
+  // long z úprav v adminu nebo #long v popisu; jinak rozhoduje délka. Jednodenní akce čárou nikdy.
+  e._long = !e.recurring && e._span > 1 && (typeof e.long === 'boolean' ? e.long : e._span >= LONG_EVENT_DAYS);
   return e;
 }
 
@@ -136,7 +137,7 @@ function compareEvents(a, b) {
 
 const narrowScreen = window.matchMedia('(max-width: 640px)');
 /** Dlouhodobá akce (výstava…) = tenká čára v řádku s čísly dnů; kratší vícedenní je pruh přes dny. */
-const isMonthLine = (e) => !e.recurring && e._span >= LONG_EVENT_DAYS;
+const isMonthLine = (e) => e._long;
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
