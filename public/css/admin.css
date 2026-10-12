@@ -36,6 +36,13 @@
 .admin-row__title { font-weight: 600; }
 .admin-row__meta { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; margin-top: 3px; font-size: 0.8rem; color: var(--muted); }
 .admin-row--hidden .admin-row__title { text-decoration: line-through; color: var(--muted); }
+
+/* ručně upravené části akce */
+:root { --edited: #b45309; }
+:root[data-theme="dark"] { --edited: #f0a24b; }
+.admin-row .is-edited { color: var(--edited); }
+.admin-row .event__tags.is-edited .tag { box-shadow: 0 0 0 1.5px var(--edited); }
+.admin-row--hidden .admin-row__title .is-edited { color: var(--muted); }
 .admin-badge { padding: 0 6px; border-radius: 4px; font-size: 0.72rem; line-height: 1.6; background: var(--surface-2); color: var(--text); }
 .admin-badge--changed { background: color-mix(in srgb, var(--accent) 16%, transparent); }
 .admin-badge--hidden { background: color-mix(in srgb, #b3261e 16%, transparent); }

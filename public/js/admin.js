@@ -263,6 +263,12 @@ function seriesCount(e) {
 
 // ---------- Seznam ----------
 
+/** Ručně změněná část akce: oranžově, v bublině původní hodnota ze zdroje. */
+const edited = (changed, original) => (changed
+  ? ` class="is-edited" title="${escapeHtml(original ? `Upraveno ručně, původně: ${original}` : 'Upraveno ručně')}"`
+  : '');
+const LONG_LABELS = { true: 'tenká čára', false: 'plný pruh', null: 'zobrazení automaticky' };
+
 function renderList() {
   const query = normalize($('admin-search').value.trim());
   const source = $('admin-source').value;
@@ -298,18 +304,24 @@ function renderList() {
       eff.hidden && '<span class="admin-badge admin-badge--hidden">skryto</span>',
       isUnpublished(e, eff) && '<span class="admin-badge admin-badge--pending">čeká na přegenerování webu</span>',
     ].filter(Boolean).join(' ');
+    const ch = eff.changes;
     const renamed = eff.title !== baseTitle(e) ? `<span>původně: ${escapeHtml(baseTitle(e))}</span>` : '';
-    const place = eff.location ? `<span>📍 ${escapeHtml(eff.location)}</span>` : '';
+    const placeEdited = 'location' in ch && ch.location !== baseLocation(e);
+    const placeText = eff.location || (placeEdited ? 'místo odebráno' : '');
+    const place = placeText
+      ? `<span${edited(placeEdited, baseLocation(e) || 'bez místa')}>📍 ${escapeHtml(placeText)}</span>`
+      : '';
+    const display = 'long' in ch ? `<span${edited(true)}>${LONG_LABELS[ch.long]}</span>` : '';
     const link = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">původní akce ↗</a>` : '';
     const moved = formatWhen(eff.when) !== formatWhen(baseWhen(e)) ? `<span>původně: ${escapeHtml(formatWhen(baseWhen(e)))}</span>` : '';
     return `<div class="admin-row${eff.hidden ? ' admin-row--hidden' : ''}" data-id="${escapeHtml(e.id)}">
-        <div class="admin-row__date">${escapeHtml(formatWhen(eff.when))}</div>
+        <div class="admin-row__date"><span${edited(moved, formatWhen(baseWhen(e)))}>${escapeHtml(formatWhen(eff.when))}</span></div>
         <div>
-          <div class="admin-row__title">${escapeHtml(eff.title)}</div>
+          <div class="admin-row__title"><span${edited(renamed, baseTitle(e))}>${escapeHtml(eff.title)}</span></div>
           <div class="admin-row__meta">
-            <span>${escapeHtml(src.name)}</span>${place}<span class="event__tags">${tags}</span>${renamed}${moved}${link}${badges}
+            <span>${escapeHtml(src.name)}</span>${place}<span class="event__tags${ch.categories ? ' is-edited' : ''}"${ch.categories ? ' title="Kategorie upravené ručně"' : ''}>${tags}</span>${display}${renamed}${moved}${link}${badges}
           </div>
-          ${eff.note ? `<div class="admin-row__note">${escapeHtml(eff.note)}</div>` : ''}
+          ${eff.note ? `<div class="admin-row__note"><span${edited(true)}>${escapeHtml(eff.note)}</span></div>` : ''}
         </div>
         <button type="button" class="button button--small button--ghost" data-action="edit"${editor ? '' : ' disabled title="Nejdřív se přihlaste"'}>Upravit</button>
         ${editingId === e.id ? '<div class="admin-edit-slot"></div>' : ''}
