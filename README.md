@@ -100,6 +100,10 @@ Lokálně proti lokálnímu serveru: `admin.html?api=http://localhost:3999/ostop
 - Kromě `akce.ics` vzniká i `akce-<kategorie>.ics` pro každou kategorii (odběr jen „Pro děti“ apod.);
   v .ics jsou akce od 60 dní zpět. Pro libovolnou kombinaci filtrů nabízí web jednorázové
   stažení .ics vytvořeného přímo v prohlížeči (`js/ics-export.js`).
+- Odkaz na odběr na webu vede přes náš server: `https://api.craz.cz/ostopovice-events/ics/akce.ics`
+  (projekt api-server soubor jen přepošle z `data/` a zapíše stažení do logu, protože GitHub Pages
+  logy nemá). Kalendář v telefonu se stahuje znovu každých pár hodin, takže z logu je vidět,
+  kolik zařízení ho odebírá. Stará adresa `data/akce.ics` dál funguje.
 - Stejná akce ve dvou zdrojích (stejný název a den) se zobrazí jen jednou.
 - Každá akce má `added` = kdy se u nás poprvé objevila. Nový termín už známé opakované akce
   (řada se rozbalí o další měsíc) novou akcí není. Web z toho ukazuje „Nedávno přidané události“

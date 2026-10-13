@@ -919,6 +919,11 @@ function renderFooter() {
  */
 const CUSTOM_ICS_ENABLED = false;
 
+// Odběr jde přes náš server (api-server na NASu), který soubor jen přepošle z webu:
+// GitHub Pages nemá logy, takže jinak nejde zjistit, kolik zařízení kalendář odebírá.
+// Stará adresa data/akce.ics dál funguje (dřívější odběratelé).
+const ICS_URL = 'https://api.craz.cz/ostopovice-events/ics/akce.ics';
+
 /** Panel kalendáře: odběr všech akcí, nebo jednorázové stažení podle filtru. */
 let refreshSubscribePanel = null;
 
@@ -930,7 +935,7 @@ function setupSubscribe() {
     if (panel) { panel.remove(); panel = null; refreshSubscribePanel = null; return; }
     panel = document.getElementById('subscribe-help').content.firstElementChild.cloneNode(true);
 
-    const allUrl = new URL('data/akce.ics', location.href).href;
+    const allUrl = ICS_URL;
     panel.querySelector('[data-custom-ics]').hidden = !CUSTOM_ICS_ENABLED;
     panel.querySelector('[data-subscribe-all]').href = allUrl.replace(/^https?:/, 'webcal:');
 
