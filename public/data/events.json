@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T07:11:31.371Z",
+ "generatedAt": "2026-10-13T11:22:57.727Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -3627,8 +3627,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3712,8 +3712,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3729,8 +3729,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3884,8 +3884,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3901,8 +3901,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -4523,12 +4523,12 @@
     "deti",
     "obec"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
    "originalLocation": "",
    "originalStart": "2026-10-13",
    "originalEnd": "2026-10-13",
-   "originalAllDay": true,
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1yes2rf",
@@ -4807,9 +4807,9 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null,
-   "added": "2026-10-12T20:49:02.880Z"
+   "originalLong": null
   },
   {
    "id": "knihovna-s0i3bz",
@@ -5414,8 +5414,7 @@
    "description": "",
    "image": "",
    "categories": [
-    "seniori",
-    "kultura"
+    "seniori"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -6021,8 +6020,7 @@
    "description": "",
    "image": "",
    "categories": [
-    "seniori",
-    "kultura"
+    "seniori"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
