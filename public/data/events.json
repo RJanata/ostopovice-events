@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T23:00:29.347Z",
+ "generatedAt": "2026-10-13T07:11:31.371Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -14,8 +14,9 @@
    "type": "ipo-rss",
    "display": "events",
    "adminRefresh": false,
+   "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -32,8 +33,9 @@
    "type": "wix-events",
    "display": "events",
    "adminRefresh": false,
+   "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 230
@@ -50,8 +52,9 @@
    "type": "canva-poster",
    "display": "events",
    "adminRefresh": false,
+   "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -68,8 +71,9 @@
    "type": "nhjmop",
    "display": "events",
    "adminRefresh": false,
+   "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -86,8 +90,9 @@
    "type": "text-program",
    "display": "events",
    "adminRefresh": false,
+   "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -104,11 +109,12 @@
    "type": "ical",
    "display": "dayLabel",
    "adminRefresh": false,
+   "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
-   "count": 30
+   "count": 31
   },
   {
    "id": "nezarazene",
@@ -122,6 +128,7 @@
    "type": "ical",
    "display": "events",
    "adminRefresh": true,
+   "icsLocation": null,
    "feeds": [
     {
      "id": "farnost-troubsko",
@@ -130,9 +137,9 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
-   "ok": true,
-   "error": null,
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
+   "ok": false,
+   "error": "Farnost Troubsko: fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://farnost.troubsko.cz/?q=content/porad-bohosluzeb (4 pokusy)",
    "count": 44
   },
   {
@@ -147,8 +154,9 @@
    "type": "ical",
    "display": "events",
    "adminRefresh": true,
+   "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-12T23:00:29.347Z",
+   "lastSuccess": "2026-10-13T07:11:31.371Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4248,22 +4256,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4283,6 +4275,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -6814,6 +6822,20 @@
    "image": "",
    "categories": [],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "svatky-uagba9",
+   "source": "svatky",
+   "title": "Den boje za svobodu a demokracii",
+   "start": "2027-11-17",
+   "end": "2027-11-17",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-10-13T07:11:31.371Z"
   }
  ]
 }

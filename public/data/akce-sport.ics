@@ -9,10 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:knihovna-2751c6@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260831T170000Z
 DTEND:20260831T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -24,7 +25,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-s31w59@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260905
 SUMMARY:Čtyřdenní zájezd „Jizerské hory“\, ubytování v Amantis V
@@ -36,21 +37,23 @@ CATEGORIES:Senioři,Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1mw20ur@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260906T130000Z
 DTEND:20260906T141500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Pod
  lázky
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 13:13\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-s3etba@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260907T170000Z
 DTEND:20260907T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -62,10 +65,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1hielbe@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260914T170000Z
 DTEND:20260914T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -77,10 +81,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-57htld@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260918T063000Z
 DTEND:20260918T074000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -90,21 +95,23 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-r9judn@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260920T090000Z
 DTEND:20260920T101500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Avia 
  Čakovice
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 22:17\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-99mghm@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260921T170000Z
 DTEND:20260921T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -116,10 +123,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-etqh79@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260925T063000Z
 DTEND:20260925T074000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -129,10 +137,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1xbiz8z@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260926T080000Z
 DTEND:20260926T100000Z
 SUMMARY:Terapeutická jóga s Klárou / workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Téma solar\, moje hodnota (slinivka\, slezina). Skrze jógovou
   praxi a různých vědomých technik si uvědomíme vlastní sílu a hodn
  otu. Orgány slinivka a slezina jsou úzce propojené se solárním energe
@@ -144,10 +153,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-61m6q1@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260928T170000Z
 DTEND:20260928T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -159,10 +169,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1sc0v88@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261002T063000Z
 DTEND:20261002T074000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -172,39 +183,42 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-yb369y@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261003T070000Z
 DTEND:20261003T081500Z
 SUMMARY:Národní házená: Přípravky · turnaj
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-p1n0tv@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261003T140000Z
 DTEND:20261003T151500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Nýřa
  ny
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 16:15\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-rtm79k@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261004T083000Z
 DTEND:20261004T094500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Příc
  hovice
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 14:16\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261007T163000Z
 DTEND:20261007T173000Z
 SUMMARY:Cvičení ženy
@@ -216,29 +230,31 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3xp067@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261010T063000Z
 DTEND:20261010T074500Z
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – 1. N
  H BRNO
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 7:6\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-ashlf7@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261010T080000Z
 DTEND:20261010T091500Z
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – 1. N
  H BRNO
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 19:10\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17yrhm2@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261011T150000Z
 DTEND:20261011T163000Z
 SUMMARY:Malá kopaná
@@ -250,7 +266,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1f0nfl@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261011T170000Z
 DTEND:20261011T180000Z
 SUMMARY:Cvičení ženy
@@ -261,7 +277,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1mncwcw@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261014T163000Z
 DTEND:20261014T173000Z
 SUMMARY:Cvičení ženy
@@ -273,10 +289,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-136fyqt@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261016T063000Z
 DTEND:20261016T074000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -286,51 +303,55 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4gkhvx@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261017T100000Z
 DTEND:20261017T111500Z
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ J
  iskra Humpolec
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-5hg2on@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261017T113000Z
 DTEND:20261017T124500Z
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ J
  iskra Humpolec
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1mwjzye@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261017T130000Z
 DTEND:20261017T141500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Tym
  ákov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1ngj7cc@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261018T083000Z
 DTEND:20261018T094500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Nez
  věstice
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-s7pjp@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261018T150000Z
 DTEND:20261018T163000Z
 SUMMARY:Malá kopaná
@@ -342,7 +363,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p9bqpu@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261018T170000Z
 DTEND:20261018T180000Z
 SUMMARY:Cvičení ženy
@@ -353,10 +374,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-s0i3bz@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261019T170000Z
 DTEND:20261019T180000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -368,7 +390,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1ld5nrc@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261021T163000Z
 DTEND:20261021T173000Z
 SUMMARY:Cvičení ženy
@@ -380,10 +402,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-178aiil@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261023T063000Z
 DTEND:20261023T074000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -393,18 +416,19 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1okkrm7@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261025T093000Z
 DTEND:20261025T104500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Svi
  nov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17bzm8e@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261025T160000Z
 DTEND:20261025T173000Z
 SUMMARY:Malá kopaná
@@ -416,7 +440,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-hegyht@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261025T180000Z
 DTEND:20261025T190000Z
 SUMMARY:Cvičení ženy
@@ -427,10 +451,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-iknwj2@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261026T180000Z
 DTEND:20261026T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -442,7 +467,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17arpiu@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261028T173000Z
 DTEND:20261028T183000Z
 SUMMARY:Cvičení ženy
@@ -454,10 +479,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-ve7fdc@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261030T073000Z
 DTEND:20261030T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -467,7 +493,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-18ijhrd@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261101T160000Z
 DTEND:20261101T173000Z
 SUMMARY:Malá kopaná
@@ -479,7 +505,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1cv7bra@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261101T180000Z
 DTEND:20261101T190000Z
 SUMMARY:Cvičení ženy
@@ -490,10 +516,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-4al37h@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261102T180000Z
 DTEND:20261102T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -505,7 +532,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-z5i70h@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261104T173000Z
 DTEND:20261104T183000Z
 SUMMARY:Cvičení ženy
@@ -517,10 +544,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1n2hyqk@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261106T073000Z
 DTEND:20261106T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -530,7 +558,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-813om6@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261108T160000Z
 DTEND:20261108T173000Z
 SUMMARY:Malá kopaná
@@ -542,7 +570,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-xpp5tx@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261108T180000Z
 DTEND:20261108T190000Z
 SUMMARY:Cvičení ženy
@@ -553,7 +581,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-172znxv@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261111T173000Z
 DTEND:20261111T183000Z
 SUMMARY:Cvičení ženy
@@ -565,10 +593,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-oqt64q@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261113T073000Z
 DTEND:20261113T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -578,7 +607,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-40if0o@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261115T160000Z
 DTEND:20261115T173000Z
 SUMMARY:Malá kopaná
@@ -590,7 +619,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1849gn@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261115T180000Z
 DTEND:20261115T190000Z
 SUMMARY:Cvičení ženy
@@ -601,7 +630,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1bvi37w@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261118T173000Z
 DTEND:20261118T183000Z
 SUMMARY:Cvičení ženy
@@ -613,10 +642,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1j8i6t8@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261120T073000Z
 DTEND:20261120T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -626,7 +656,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1qmi2ry@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261122T160000Z
 DTEND:20261122T173000Z
 SUMMARY:Malá kopaná
@@ -638,7 +668,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-10cpt7l@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261122T180000Z
 DTEND:20261122T190000Z
 SUMMARY:Cvičení ženy
@@ -649,10 +679,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-12uvg9g@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261123T180000Z
 DTEND:20261123T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -664,7 +695,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261125T173000Z
 DTEND:20261125T183000Z
 SUMMARY:Cvičení ženy
@@ -676,10 +707,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-sqim65@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261127T073000Z
 DTEND:20261127T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -689,7 +721,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1ytvbob@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261129T160000Z
 DTEND:20261129T173000Z
 SUMMARY:Malá kopaná
@@ -701,7 +733,7 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1b4q7w4@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261129T180000Z
 DTEND:20261129T190000Z
 SUMMARY:Cvičení ženy
@@ -712,10 +744,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1jipog0@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261130T180000Z
 DTEND:20261130T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -727,10 +760,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-19oir1h@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261204T073000Z
 DTEND:20261204T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -740,10 +774,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-e508kx@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261207T180000Z
 DTEND:20261207T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -755,10 +790,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-142hbcz@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261211T073000Z
 DTEND:20261211T084000Z
 SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
  \n\nZdroj: Knihovna
@@ -768,10 +804,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1ds5txp@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261214T180000Z
 DTEND:20261214T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -783,10 +820,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-l0efdh@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261221T180000Z
 DTEND:20261221T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -798,10 +836,11 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1hodbme@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261228T180000Z
 DTEND:20261228T190000Z
 SUMMARY:Pilates & zdravá záda
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
  ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
@@ -813,121 +852,132 @@ CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ S
  okol Vracov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1d38y02@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ S
  okol Vracov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1qskqny@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20270410T140000Z
 DTEND:20270410T151500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Ky
  šice
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3mlot0@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – Drak
  en Brno
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18ctu95@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
  en Brno A
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1tq34ir@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
  en Brno B
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1s6ir4t@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20270411T083000Z
 DTEND:20270411T094500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Plzeň
  -Újezd
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4ddw29@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20270425T083000Z
 DTEND:20270425T094500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Kr
  čín
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4nac99@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20270516T083000Z
 DTEND:20270516T094500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – SK Studé
  nka A
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – SK A
  utonot Jihlava
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18cwzr4@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – SK A
  utonot Jihlava
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti

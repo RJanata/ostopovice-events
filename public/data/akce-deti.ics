@@ -9,10 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:knihovna-1u1hvva@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260827T140000Z
 DTEND:20260827T153000Z
 SUMMARY:Senza hraní: Od základů po zahradu
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravé objevování s prvky sensory play rozvíjí jemnou a hru
  bou motoriku\, fantazii\, kreativitu a zapojuje všechny smysly. Postavím
  e dům\, zasadíme strom a můžeme začít sklízet i zahrádku. Cihly\, 
@@ -23,10 +24,12 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-6qb8qd@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260901T060000Z
 DTEND:20260901T060000Z
 SUMMARY:Slavnostní zahájení školního roku
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
 DESCRIPTION:Od 8.00 zahájení školního roku pro rodiče\, děti i žáky
   u stodoly.\n\nZdroj: Škola
 URL:https://www.zsostopovice.cz/aktuality
@@ -34,10 +37,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1in2bsl@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260903T130000Z
 DTEND:20260903T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -49,10 +53,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1eyss6d@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260910T130000Z
 DTEND:20260910T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -64,11 +69,12 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-sio3ig@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260914T080000Z
 DTEND:20260914T090000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
  pololetí)
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
@@ -80,10 +86,11 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-szvdeo@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260917T130000Z
 DTEND:20260917T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -95,10 +102,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-18abbrb@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260921T140000Z
 DTEND:20260921T153000Z
 SUMMARY:Zpívárium / hlasový workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Účastníci workshopu s Evou Kratochvílovou se dotknou zákla
  dů pěvecké techniky\, cesty k autentickému hlasovému projevu a improv
  izace. Zpívárium je prostor pro lidi. Jeden z nejcennějších darů\, 
@@ -110,10 +118,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-wwawfq@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20260924T130000Z
 DTEND:20260924T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -125,10 +134,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-9ylsch@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261001T130000Z
 DTEND:20261001T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -140,20 +150,23 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-yb369y@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261003T070000Z
 DTEND:20261003T081500Z
 SUMMARY:Národní házená: Přípravky · turnaj
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-j0wy1x@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Dožínky ve stodole
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
 DESCRIPTION:všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve st
  odole.\n\nZdroj: Škola
 URL:https://www.zsostopovice.cz/aktuality
@@ -161,10 +174,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261008T130000Z
 DTEND:20261008T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -176,33 +190,36 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3xp067@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261010T063000Z
 DTEND:20261010T074500Z
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – 1. N
  H BRNO
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 7:6\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-ashlf7@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261010T080000Z
 DTEND:20261010T091500Z
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – 1. N
  H BRNO
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 19:10\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-u5if78@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261012T080000Z
 DTEND:20261012T090000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
  pololetí)
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
@@ -214,7 +231,7 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:obec-kbdo4r@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261013T140000Z
 DTEND:20261013T140000Z
 SUMMARY:Vítání občánků
@@ -225,10 +242,11 @@ CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-r4oeo8@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261015T130000Z
 DTEND:20261015T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -240,32 +258,35 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4gkhvx@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261017T100000Z
 DTEND:20261017T111500Z
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ J
  iskra Humpolec
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-5hg2on@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261017T113000Z
 DTEND:20261017T124500Z
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ J
  iskra Humpolec
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-zvngm@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261022T130000Z
 DTEND:20261022T150000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -277,10 +298,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-16gbckf@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261105T140000Z
 DTEND:20261105T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -292,11 +314,12 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1oj78n4@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261109T090000Z
 DTEND:20261109T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
  pololetí)
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
@@ -308,10 +331,11 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1mho3qn@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261112T140000Z
 DTEND:20261112T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -323,7 +347,7 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1ixvp6o@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Lampionový průvod a oslavy 17. listopadu
@@ -332,10 +356,11 @@ CATEGORIES:Pro děti,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8l3x3a@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261119T140000Z
 DTEND:20261119T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -347,7 +372,7 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1y0eeei@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Adventní dílna
@@ -357,10 +382,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1lwh7mo@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261126T140000Z
 DTEND:20261126T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -372,7 +398,7 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Rozsvícení vánočního stromečku (1. adventní neděle)
@@ -382,7 +408,7 @@ CATEGORIES:Kultura,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1gi8z6o@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261225
 SUMMARY:Adventní světýlka
@@ -391,10 +417,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-ah6n8y@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261203T140000Z
 DTEND:20261203T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -406,7 +433,7 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1tyoqhk@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Mikulášská nadílka
@@ -416,11 +443,12 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-mrfa59@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261207T090000Z
 DTEND:20261207T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
  pololetí)
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
@@ -432,10 +460,11 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-68gb6q@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261210T140000Z
 DTEND:20261210T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -447,10 +476,11 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-6trsjz@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20261217T140000Z
 DTEND:20261217T160000Z
 SUMMARY:Knihovna dětem
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
  jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
@@ -462,7 +492,7 @@ CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-rm7wor@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Folklórní soubor Háječek a Glonárky: Koledníci idú
@@ -472,7 +502,7 @@ CATEGORIES:Kultura,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-vdnv5i@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:Betlémské světlo
@@ -482,11 +512,12 @@ CATEGORIES:Církev,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1ulvu99@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART:20270111T090000Z
 DTEND:20270111T100000Z
 SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
  pololetí)
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
  ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
  , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
@@ -498,77 +529,84 @@ CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ S
  okol Vracov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1d38y02@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ S
  okol Vracov
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3mlot0@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – Drak
  en Brno
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18ctu95@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
  en Brno A
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1tq34ir@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
  en Brno B
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – SK A
  utonot Jihlava
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18cwzr4@ostopovice-events
-DTSTAMP:20261012T230042Z
+DTSTAMP:20261013T071313Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – SK A
  utonot Jihlava
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
