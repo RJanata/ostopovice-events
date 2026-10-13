@@ -1034,17 +1034,12 @@ function setupEventTooltip() {
     tip.style.top = `${top + window.scrollY}px`;
     tip.style.left = `${left + window.scrollX}px`;
   };
-  // pointer události místo mouseover: na telefonu s připojenou myší chodí spolehlivěji;
-  // pointermove jako záloha, kdyby prohlížeč „over“ při najetí neposlal
-  const onPointer = (ev) => {
-    const pill = ev.target.closest?.('.month__pill');
-    if (pill && (tip.hidden || tipEventId !== pill.dataset.eventId)) show(pill);
-  };
-  view.addEventListener('pointerover', onPointer);
-  view.addEventListener('pointermove', (ev) => { if (ev.pointerType === 'mouse') onPointer(ev); });
-  view.addEventListener('pointerout', (ev) => {
-    // dotyk: „out“ přijde hned po zvednutí prstu → bublina zůstane, skryje ji dotyk jinam
-    if (ev.pointerType !== 'mouse' && ev.pointerType !== 'pen') return;
+  // jen v plném kalendáři (počítač, tablet); v kompaktním na mobilu bublina na malých pruzích překáží
+  view.addEventListener('mouseover', (ev) => {
+    const pill = ev.target.closest('.month__pill');
+    if (pill && !narrowScreen.matches) show(pill);
+  });
+  view.addEventListener('mouseout', (ev) => {
     if (ev.target.closest('.month__pill') && !ev.relatedTarget?.closest?.('.month__pill')) tip.hidden = true;
   });
   window.addEventListener('scroll', () => { tip.hidden = true; }, { passive: true });
@@ -1052,6 +1047,7 @@ function setupEventTooltip() {
   document.addEventListener('pointerdown', (ev) => {
     if (!ev.target.closest?.('.month__pill')) tip.hidden = true;
   });
+  narrowScreen.addEventListener('change', () => { tip.hidden = true; });
   hideEventTooltip = () => { tip.hidden = true; };
 }
 
