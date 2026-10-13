@@ -34,6 +34,8 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   - `village` — obec; až budou zdroje z víc obcí, objeví se na webu filtr „Obec“
   - `hideLocations` — regexy „domácích“ adres zdroje (knihovna, hřiště); ty se nezobrazují,
     adresa se ukáže jen u akcí, které jsou jinde
+  - `icsLocation` — místo, které se do .ics (odběr i stažení akce) doplní u akcí bez zobrazeného
+    místa: skrytá domácí adresa (knihovna), nebo zdroj místo vůbec neuvádí (škola, Sokol)
   - `enabled: false` — zdroj dočasně vypnout
   - `fullName` — plný název do patičky webu (Obec Ostopovice…); doplňkové zdroje (`extraFeeds`)
     mají v patičce vlastní položku s `fullName`, `icon` a `link`. Svátky se v patičce

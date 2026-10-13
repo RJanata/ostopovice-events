@@ -54,7 +54,9 @@ export function buildIcs(events, { name, sourcesById, categoryLabels = {} }) {
     }
     lines.push(`SUMMARY:${escapeText(e.title)}`);
     if (e.cancelled) lines.push('STATUS:CANCELLED');
-    if (e.location) lines.push(`LOCATION:${escapeText(e.location)}`);
+    // domácí místo zdroje (knihovna, škola…) se na webu skrývá, do kalendáře ale patří
+    const location = e.location || source?.icsLocation;
+    if (location) lines.push(`LOCATION:${escapeText(location)}`);
     const description = [e.note, e.description, source && `Zdroj: ${source.name}`].filter(Boolean).join('\n\n');
     if (description) lines.push(`DESCRIPTION:${escapeText(description)}`);
     if (e.url) lines.push(`URL:${e.url}`);

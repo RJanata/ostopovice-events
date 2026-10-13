@@ -382,8 +382,8 @@ async function main() {
 
   const publicSources = sources
     .filter((s) => s.enabled !== false)
-    .map(({ id, name, fullName, shortName, village, icon, color, link, type, display, adminRefresh, extraFeeds }) => ({
-      id, name, fullName: fullName || name, shortName: shortName || name, village, icon, color, link: link || null, type, display: display || 'events', adminRefresh: Boolean(adminRefresh),
+    .map(({ id, name, fullName, shortName, village, icon, color, link, type, display, adminRefresh, extraFeeds, icsLocation }) => ({
+      id, name, fullName: fullName || name, shortName: shortName || name, village, icon, color, link: link || null, type, display: display || 'events', adminRefresh: Boolean(adminRefresh), icsLocation: icsLocation || null,
       // doplňkové zdroje (jen pro patičku webu)
       feeds: (extraFeeds || []).map((f) => ({ id: f.id, fullName: f.fullName || f.name, icon: f.icon || null, link: f.link || f.url || null })),
       ...sourceStatus.find((st) => st.id === id),

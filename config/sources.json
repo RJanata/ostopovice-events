@@ -1,5 +1,5 @@
 {
-  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné). extraFeeds = doplňkové zdroje, jejichž akce se přidají k tomuto zdroji (např. bohoslužby v kapli pod Nezařazené). fullName = plný název do patičky. options.recurringMonths (iCal) = opakované události jen na tento a další měsíce (2 = tento a příští měsíc).",
+  "$comment": "Zdroje akcí. type = adaptér ve scripts/adapters. categories = vždy přidané kategorie, fallbackCategories = jen když pravidla nic nenajdou. display: events | dayLabel (svátky jen jako popisek dne). village = obec (pro budoucí filtr okolních obcí). hideLocations = regexy adres „domácích“ míst zdroje, které se nezobrazují (adresa se ukáže jen u akcí jinde). icsLocation = místo do .ics u akcí bez zobrazeného místa (skrytá domácí adresa, nebo ji zdroj vůbec neuvádí). adminRefresh: true = v adminu je tlačítko pro načtení jen tohoto zdroje. shortName = krátký název do filtru na mobilu. excludeCategories = kategorie, které zdroj nikdy nedostane. allowEmpty: true = prázdný zdroj není chyba (vlastní kalendáře mohou být prázdné). extraFeeds = doplňkové zdroje, jejichž akce se přidají k tomuto zdroji (např. bohoslužby v kapli pod Nezařazené). fullName = plný název do patičky. options.recurringMonths (iCal) = opakované události jen na tento a další měsíce (2 = tento a příští měsíc).",
   "sources": [
     {
       "id": "obec",
@@ -39,7 +39,8 @@
         "Lípová 67",
         "^Ostopovice$",
         "^Knihovna Ostopovice$"
-      ]
+      ],
+      "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice"
     },
     {
       "id": "skola",
@@ -61,6 +62,10 @@
         "markerImage": "hGkOm-6AsLXcRaG719-q_rI0iG_OOgHZA_lArOeXsSw",
         "latestPageOnly": false
       },
+      "hideLocations": [
+        "."
+      ],
+      "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
       "$comment": "Měsíční plakát akcí ZŠ v Canvě; odkaz se hledá na stránce Aktuality podle textu „akce ZŠ“. Jen akce s ikonkou „pro veřejnost“ (markerImage). latestPageOnly: true = jen nejnovější měsíc plakátu (starší stránky už jsou v archivu)."
     },
     {
@@ -82,7 +87,8 @@
       },
       "hideLocations": [
         "."
-      ]
+      ],
+      "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice"
     },
     {
       "id": "seniori",
