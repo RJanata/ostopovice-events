@@ -249,7 +249,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .day__holiday { font-size: 0.85rem; font-weight: 500; color: var(--holiday); }
 
 .event {
-  display: grid; grid-template-columns: 92px 1fr; gap: 4px 14px;
+  display: grid; grid-template-columns: 92px 1fr auto; gap: 4px 14px;
   padding: 12px 14px; margin-bottom: 8px;
   background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--icon-color, var(--accent));
   border-radius: var(--radius); box-shadow: var(--shadow);
@@ -257,6 +257,15 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event__time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.95rem; }
 .event__time small { display: block; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
 .event__body { min-width: 0; }
+/* stažení akce do kalendáře (.ics) — ikona vpravo na kartě */
+.event__ics {
+  grid-column: -2; grid-row: 1; align-self: start; display: inline-grid; place-items: center;
+  width: 34px; height: 34px; margin: -6px -6px 0 0; border: 0; border-radius: 8px;
+  background: none; color: var(--muted); cursor: pointer;
+}
+.event__ics:hover { color: var(--accent); background: var(--surface-2); }
+.event__ics:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.event__ics svg { width: 20px; height: 20px; }
 .event__title { margin: 0; font-size: 1.02rem; line-height: 1.35; }
 .event__title a { color: inherit; text-decoration: none; }
 .event__title a:hover { text-decoration: underline; }
@@ -415,7 +424,9 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .site-header__actions { display: none; }
   .filters { margin: 8px 0 12px; }
   .search { max-width: none; }
-  .event { grid-template-columns: 1fr; }
+  .event { grid-template-columns: 1fr auto; }
+  .event__time, .event__body { grid-column: 1; }
+  .event__ics { grid-row: 1 / 3; }
   .event__time small { display: inline; margin-left: 6px; }
   /* měsíc: akce jako barevné pruhy přes celou šířku dne (bez textu), vícedenní přes víc dnů */
   .month__week { grid-template-rows: 21px repeat(4, 9px) minmax(4px, 1fr); min-height: 64px; }

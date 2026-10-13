@@ -362,6 +362,9 @@ function eventCard(e, day) {
         ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         ${description}
       </div>
+      <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15l2.5 2.5 2.5-2.5"/></svg>
+      </button>
     </article>`;
 }
 
@@ -391,7 +394,12 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
     byDay.get(day).push(e);
   };
   for (const e of events) {
-    if (e._long || e._last < from || e._first > to) continue;
+    if (e._last < from || e._first > to) continue;
+    if (e._long) {
+      // dlouhodobá akce, která začíná až v seznamu: jen u dne začátku (probíhající jsou v longEventsBlock)
+      if (e._first > from) addTo(e._first, e);
+      continue;
+    }
     const days = eventDays(e).filter((d) => d >= from && d <= to);
     if (days.length <= MULTI_DAY_LIST_LIMIT) {
       // vícedenní akce (např. volby v pátek a sobotu) se ukáže u každého dne
@@ -429,13 +437,16 @@ function dayEvents(list, day) {
   return html;
 }
 
-/** Sbalený řádek s dlouhodobými akcemi (výstavy…), které v období from–to probíhají. */
-function longEventsBlock(events, from, to) {
-  const list = events.filter((e) => e._long && e._last >= from && e._first <= to).sort(compareEvents);
+/**
+ * Sbalený řádek s dlouhodobými akcemi (výstavy…), které probíhají už na začátku seznamu
+ * (běžně dnes). Ty, které začnou později, jsou v seznamu u dne, kdy začínají (groupByDay).
+ */
+function longEventsBlock(events, from) {
+  const list = events.filter((e) => e._long && e._first <= from && e._last >= from).sort(compareEvents);
   if (!list.length) return '';
   return `<details class="day__regular day__long"${state.query ? ' open' : ''}>
       <summary>Dlouhodobé (${list.length}): ${escapeHtml(list.map((e) => e.title).join(', '))}</summary>
-      ${list.map((e) => eventCard(e, e._first < from ? from : e._first)).join('')}
+      ${list.map((e) => eventCard(e, from)).join('')}
     </details>`;
 }
 
@@ -525,7 +536,7 @@ function renderSelectedDay(events, holidays) {
   const day = state.selectedDay;
   const byDay = groupByDay(events, day, day, holidays);
   if (!byDay.has(day)) byDay.set(day, []);
-  return longEventsBlock(events, day, day)
+  return longEventsBlock(events, day)
     + renderDays(byDay, holidays)
     + `<div class="more"><button type="button" class="link-button" data-action="clear-day">Zobrazit všechny akce</button></div>`;
 }
@@ -563,7 +574,7 @@ function renderList(events, holidays) {
   const showAllNext = remaining < SHOW_ALL_BELOW;
 
   let html = listButtons(events);
-  const longBlock = longEventsBlock(events, from, to);
+  const longBlock = longEventsBlock(events, from);
   html += longBlock;
   if (!longBlock && !days.some((d) => byDay.get(d).length)) {
     const message = !events.length ? 'Filtrům neodpovídá žádná akce.'
@@ -844,6 +855,15 @@ function downloadFiltered() {
   window.IcsExport.downloadIcs('akce-ostopovice-vyber.ics', ics);
 }
 
+/** Jednorázové stažení jedné akce (u opakované jen tento termín) jako .ics. */
+function downloadEvent(id) {
+  const e = data.events.find((x) => x.id === id);
+  if (!e) return;
+  const ics = window.IcsExport.buildIcs([e], { name: data.calendarName, sourcesById, categoriesById });
+  const slug = normalize(e.title).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50) || 'akce';
+  window.IcsExport.downloadIcs(`${slug}-${e._first}.ics`, ics);
+}
+
 // ---------- Hlavní vykreslení ----------
 
 function update({ keepHash = false } = {}) {
@@ -865,6 +885,9 @@ function update({ keepHash = false } = {}) {
     + `<div class="event-list">${renderList(events, holidays)}</div>`;
   syncCalendarCollapse();
   fitRegularDots();
+  // bublina zůstává jen u akce ve vybraném dni (klepnutí na pruh na mobilu den zároveň vybere)
+  const tipEvent = data.events.find((e) => e.id === tipEventId);
+  if (!state.selectedDay || !tipEvent || tipEvent._first > state.selectedDay || tipEvent._last < state.selectedDay) hideEventTooltip();
 }
 
 /** Mobil: kolečka pravidelných akcí, která by se překrývala s „+N“ v rohu dne, skrýt. */
@@ -990,9 +1013,8 @@ function setupEventTooltip() {
   document.body.append(tip);
   const view = document.getElementById('view');
 
-  view.addEventListener('mouseover', (ev) => {
-    const pill = ev.target.closest('.month__pill');
-    if (!pill) return;
+  const show = (pill) => {
+    tipEventId = pill.dataset.eventId;
     const e = data?.events.find((x) => x.id === pill.dataset.eventId);
     if (!e) return;
     const source = sourcesById[e.source] || { name: e.source };
@@ -1011,12 +1033,30 @@ function setupEventTooltip() {
     const left = Math.min(Math.max(8, r.left), window.innerWidth - t.width - 8);
     tip.style.top = `${top + window.scrollY}px`;
     tip.style.left = `${left + window.scrollX}px`;
-  });
-  view.addEventListener('mouseout', (ev) => {
+  };
+  // pointer události místo mouseover: na telefonu s připojenou myší chodí spolehlivěji;
+  // pointermove jako záloha, kdyby prohlížeč „over“ při najetí neposlal
+  const onPointer = (ev) => {
+    const pill = ev.target.closest?.('.month__pill');
+    if (pill && (tip.hidden || tipEventId !== pill.dataset.eventId)) show(pill);
+  };
+  view.addEventListener('pointerover', onPointer);
+  view.addEventListener('pointermove', (ev) => { if (ev.pointerType === 'mouse') onPointer(ev); });
+  view.addEventListener('pointerout', (ev) => {
+    // dotyk: „out“ přijde hned po zvednutí prstu → bublina zůstane, skryje ji dotyk jinam
+    if (ev.pointerType !== 'mouse' && ev.pointerType !== 'pen') return;
     if (ev.target.closest('.month__pill') && !ev.relatedTarget?.closest?.('.month__pill')) tip.hidden = true;
   });
   window.addEventListener('scroll', () => { tip.hidden = true; }, { passive: true });
+  // dotyk / klik kamkoli mimo akci bublinu skryje
+  document.addEventListener('pointerdown', (ev) => {
+    if (!ev.target.closest?.('.month__pill')) tip.hidden = true;
+  });
+  hideEventTooltip = () => { tip.hidden = true; };
 }
+
+let tipEventId = null; // akce, ke které je bublina (po překreslení měsíce už pruh na stránce není)
+let hideEventTooltip = () => {};
 
 /** Nadpis na víc řádků → přepínač režimu se přesune z úrovně nadpisu k podnadpisu. */
 function setupHeaderFit() {
@@ -1119,6 +1159,8 @@ function setupEvents() {
   });
 
   document.getElementById('view').addEventListener('click', (ev) => {
+    const icsButton = ev.target.closest('[data-ics-event]');
+    if (icsButton) { downloadEvent(icsButton.dataset.icsEvent); return; }
     const action = ev.target.closest('[data-action]')?.dataset.action;
     // pruh akce leží nad buňkami dnů → vybrat den, na který se kliklo
     const dayButton = ev.target.closest('[data-day]') || (ev.target.closest('.month__pill')
