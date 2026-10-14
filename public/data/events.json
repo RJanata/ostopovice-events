@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-14T09:32:49.833Z",
+ "generatedAt": "2026-10-14T20:12:52.748Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,7 +16,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -35,10 +35,10 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
-   "count": 229
+   "count": 230
   },
   {
    "id": "skola",
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -92,7 +92,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,9 +137,9 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
-   "ok": true,
-   "error": null,
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "ok": false,
+   "error": "Farnost Troubsko: fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://farnost.troubsko.cz/?q=content/porad-bohosluzeb (4 pokusy)",
    "count": 44
   },
   {
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T09:32:49.833Z",
+   "lastSuccess": "2026-10-14T20:12:52.748Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -5627,6 +5627,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "knihovna-5a999r",
+   "source": "knihovna",
+   "title": "Radost je biologická nutnost",
+   "start": "2026-11-21T17:00:00.000Z",
+   "end": "2026-11-21T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/radost-je-biologicka-nutnost",
+   "description": "Hudba má blahodárný vliv na náš nervový systém. Pomáhá nám pocítit bezpečí. V tomto stavu může tělo regenerovat a samo léčit to, co jej trápí. Pokud hudbu sami aktivně hrajeme - zpíváme nebo hrajeme na nástroj, přidávají se k tomu ještě další skoro zázračné efekty pro naše zdraví a náš mozek.",
+   "image": "https://static.wixstatic.com/media/6e4a73_4404004834cc4a61a711880180e3220a~mv2.jpg",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-14T20:12:52.748Z"
   },
   {
    "id": "nezarazene-1qmi2ry",
