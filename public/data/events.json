@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T21:17:32.151Z",
+ "generatedAt": "2026-10-14T09:32:49.833Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,7 +16,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -35,10 +35,10 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
-   "count": 230
+   "count": 229
   },
   {
    "id": "skola",
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -92,7 +92,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,7 +137,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 44
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-13T21:17:32.151Z",
+   "lastSuccess": "2026-10-14T09:32:49.833Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -221,23 +221,6 @@
   }
  ],
  "events": [
-  {
-   "id": "knihovna-l7k64q",
-   "source": "knihovna",
-   "title": "English Time for Little Ones / angličtina pro nejmenší s rodiči",
-   "start": "2025-09-08T08:00:00.000Z",
-   "end": "2025-09-08T09:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2",
-   "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
-   "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
-   "categories": [
-    "deti",
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
   {
    "id": "knihovna-xek1fj",
    "source": "knihovna",
@@ -4523,12 +4506,12 @@
     "deti",
     "obec"
    ],
+   "added": "2026-10-07T22:43:36.000Z",
    "originalTitle": "VÍTÁNÍ OBČÁNKŮ - výzva pro rodiče",
    "originalLocation": "",
    "originalStart": "2026-10-13",
    "originalEnd": "2026-10-13",
-   "originalAllDay": true,
-   "added": "2026-10-07T22:43:36.000Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1yes2rf",
