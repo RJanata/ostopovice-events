@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15T19:54:29.178Z",
+ "generatedAt": "2026-10-15T20:22:35.004Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-15T19:54:29.178Z",
+   "lastSuccess": "2026-10-15T20:22:35.004Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -3594,8 +3594,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3679,8 +3679,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3696,8 +3696,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3851,8 +3851,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3868,8 +3868,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -4774,9 +4774,9 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null,
-   "added": "2026-10-12T20:49:02.880Z"
+   "originalLong": null
   },
   {
    "id": "knihovna-s0i3bz",
@@ -6097,6 +6097,27 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "pripravovane-poaoty",
+   "source": "pripravovane",
+   "title": "Folklórní soubor Háječek a Glonárky: Vánoční koledy",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Vystoupení dětí a ostopovických žen.",
+   "image": "",
+   "tagCategories": [
+    "kultura",
+    "deti"
+   ],
+   "categories": [
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-10-15T20:22:35.004Z"
+  },
+  {
    "id": "knihovna-1ds5txp",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -6129,27 +6150,6 @@
     "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "pripravovane-rm7wor",
-   "source": "pripravovane",
-   "title": "Folklórní soubor Háječek a Glonárky: Koledníci idú",
-   "start": "2026-12-19",
-   "end": "2026-12-19",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "Vystoupení dětí a ostopovických žen.",
-   "image": "",
-   "tagCategories": [
-    "kultura",
-    "deti"
-   ],
-   "categories": [
-    "kultura",
-    "deti"
-   ],
-   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "knihovna-l0efdh",
