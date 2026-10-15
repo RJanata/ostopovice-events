@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-14T20:12:52.748Z",
+ "generatedAt": "2026-10-15T09:09:51.301Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,7 +16,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -35,10 +35,10 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
-   "count": 230
+   "count": 229
   },
   {
    "id": "skola",
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -93,8 +93,8 @@
    "icsLocation": null,
    "feeds": [],
    "lastSuccess": "2026-10-14T20:12:52.748Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (4 pokusy)",
    "count": 23
   },
   {
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,9 +137,9 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
-   "ok": false,
-   "error": "Farnost Troubsko: fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://farnost.troubsko.cz/?q=content/porad-bohosluzeb (4 pokusy)",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "ok": true,
+   "error": null,
    "count": 44
   },
   {
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
+   "lastSuccess": "2026-10-15T09:09:51.301Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -221,22 +221,6 @@
   }
  ],
  "events": [
-  {
-   "id": "knihovna-xek1fj",
-   "source": "knihovna",
-   "title": "Suchý a Šlitr. Příběh Semaforu 60. let / přednáška",
-   "start": "2025-09-09T16:30:00.000Z",
-   "end": "2025-09-09T18:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/suchy-a-slitr-pribeh-semaforu-60-let-prednaska",
-   "description": "Audiovizuální pořad hudebního publicisty Pavla Klusáka se vrací k velkolepému fenoménu radostných, chytrých a jedinečných poetických písniček, jimiž Jiří Suchý a Jiří Šlitr spojili snad celé Československo a dokonce se jim podařilo přenést svou oblibu i na pozdější generace.",
-   "image": "https://static.wixstatic.com/media/6e4a73_d460035fa78d4aab8194396f71686f65~mv2.jpg",
-   "categories": [
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
   {
    "id": "knihovna-vcz2ny",
    "source": "knihovna",
