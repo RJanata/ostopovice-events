@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15T09:09:51.301Z",
+ "generatedAt": "2026-10-15T19:54:29.178Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,7 +16,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -35,7 +35,7 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 229
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -92,9 +92,9 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-14T20:12:52.748Z",
-   "ok": false,
-   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (4 pokusy)",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
+   "ok": true,
+   "error": null,
    "count": 23
   },
   {
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,7 +137,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 44
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-15T09:09:51.301Z",
+   "lastSuccess": "2026-10-15T19:54:29.178Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4223,22 +4223,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4258,6 +4242,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
