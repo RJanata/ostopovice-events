@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15T20:22:35.004Z",
+ "generatedAt": "2026-10-16T07:41:07.059Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -137,10 +137,10 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-15T19:54:29.178Z",
+   "lastSuccess": "2026-10-16T07:41:07.059Z",
    "ok": true,
    "error": null,
-   "count": 44
+   "count": 45
   },
   {
    "id": "pripravovane",
@@ -4718,6 +4718,25 @@
     "sport"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "nezarazene-jcyx06",
+   "source": "nezarazene",
+   "title": "Lukáš Urban: Komentovaná prohlídka výstavy",
+   "start": "2026-10-18T14:00:00.000Z",
+   "end": "2026-10-18T14:00:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků, Školní 1/20, 664 49 Ostopovice, Česko",
+   "url": "https://www.facebook.com/share/p/19QbbPjXak/",
+   "description": "Jmenuji se Lukáš Urban a vystavuji u Vás v Ostopovicích své obrazy. Rád bych Vás touto cestou pozval na komentovanou prohlídku obrazu v restauraci U Volejníků. Budu se na Vás těšit už tuto neděli od 16hod.\n\nS pozdravem,\nLukáš Urban",
+   "image": "",
+   "tagCategories": [
+    "kultura"
+   ],
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-16T07:41:07.059Z"
   },
   {
    "id": "nezarazene-s7pjp",
