@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-16T07:41:07.059Z",
+ "generatedAt": "2026-10-16T07:44:23.084Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -137,7 +137,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-16T07:41:07.059Z",
+   "lastSuccess": "2026-10-16T07:44:23.084Z",
    "ok": true,
    "error": null,
    "count": 45
@@ -4223,6 +4223,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4242,22 +4258,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4726,10 +4726,11 @@
    "start": "2026-10-18T14:00:00.000Z",
    "end": "2026-10-18T14:00:00.000Z",
    "allDay": false,
-   "location": "Restaurace U Volejníků, Školní 1/20, 664 49 Ostopovice, Česko",
+   "location": "Restaurace U Volejníků",
    "url": "https://www.facebook.com/share/p/19QbbPjXak/",
    "description": "Jmenuji se Lukáš Urban a vystavuji u Vás v Ostopovicích své obrazy. Rád bych Vás touto cestou pozval na komentovanou prohlídku obrazu v restauraci U Volejníků. Budu se na Vás těšit už tuto neděli od 16hod.\n\nS pozdravem,\nLukáš Urban",
    "image": "",
+   "icon": "photo",
    "tagCategories": [
     "kultura"
    ],
