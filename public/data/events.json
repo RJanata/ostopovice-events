@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-17T08:35:22.273Z",
+ "generatedAt": "2026-10-17T13:44:38.772Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,7 +16,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 4
@@ -35,7 +35,7 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 228
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -93,8 +93,8 @@
    "icsLocation": null,
    "feeds": [],
    "lastSuccess": "2026-10-17T08:35:22.273Z",
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT) – https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html (4 pokusy)",
    "count": 23
   },
   {
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,7 +137,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 46
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-17T08:35:22.273Z",
+   "lastSuccess": "2026-10-17T13:44:38.772Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4621,12 +4621,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 13:7",
    "image": "",
    "extra": {
     "competition": "Mladší žáci",
     "teams": "TJ Sokol Ostopovice – TJ Jiskra Humpolec",
-    "score": ""
+    "score": "13:7"
    },
    "shortTitle": "Mladší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
@@ -4644,12 +4644,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 30:7",
    "image": "",
    "extra": {
     "competition": "Starší žáci",
     "teams": "TJ Sokol Ostopovice – TJ Jiskra Humpolec",
-    "score": ""
+    "score": "30:7"
    },
    "shortTitle": "Starší žáci · TJ Sokol Ostopovice – TJ Jiskra Humpolec",
    "categories": [
