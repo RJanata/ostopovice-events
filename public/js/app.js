@@ -901,6 +901,21 @@ function fitRegularDots() {
   }
 }
 
+/**
+ * Čas aktualizace a stav zdrojů jsou v data/status.json (mění se každým během, proto ne
+ * v events.json) → doplnit do dat; bez něj (starší nasazení) zůstanou hodnoty z events.json.
+ */
+async function withStatus(events, url) {
+  const status = await fetch(url, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  if (!status) return events;
+  const byId = Object.fromEntries((status.sources || []).map((s) => [s.id, s]));
+  return {
+    ...events,
+    generatedAt: status.generatedAt,
+    sources: events.sources.map((s) => ({ ...s, ...byId[s.id] })),
+  };
+}
+
 // Krátký výpadek zdroje návštěvníky neruší (data jsou pár hodin stará, ale platná);
 // upozornění až když se zdroj nepodařilo načíst déle než STALE_HOURS.
 const STALE_HOURS = 24;
@@ -1234,7 +1249,7 @@ async function init() {
   try {
     const response = await fetch('data/events.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    data = await response.json();
+    data = await withStatus(await response.json(), 'data/status.json');
   } catch (err) {
     document.getElementById('view').innerHTML = `<p class="empty">Akce se nepodařilo načíst (${escapeHtml(err.message)}).</p>`;
     return;

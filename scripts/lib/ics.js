@@ -46,7 +46,8 @@ export function buildIcs(events, { name, sourcesById, categoryLabels = {} }) {
   ];
   for (const e of events) {
     const source = sourcesById[e.source];
-    lines.push('BEGIN:VEVENT', `UID:${e.id}@ostopovice-events`, `DTSTAMP:${now}`);
+    // pevné razítko (první výskyt akce), ne čas běhu — jinak se soubor změní při každém sběru
+    lines.push('BEGIN:VEVENT', `UID:${e.id}@ostopovice-events`, `DTSTAMP:${e.added ? utcStamp(e.added) : now}`);
     if (e.allDay) {
       lines.push(`DTSTART;VALUE=DATE:${dateStamp(e.start)}`, `DTEND;VALUE=DATE:${dateStamp(addDays(e.end || e.start, 1))}`);
     } else {

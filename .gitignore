@@ -1,3 +1,5 @@
 node_modules/
 .DS_Store
 added-events.md
+source-problems.md
+public/data/status.json

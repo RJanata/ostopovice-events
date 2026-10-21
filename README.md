@@ -92,7 +92,8 @@ Lokálně proti lokálnímu serveru: `admin.html?api=http://localhost:3999/ostop
 
 ## Chování sběru
 
-- Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená. Web ukáže upozornění, až když se zdroj nedaří načíst déle než 24 hodin (`STALE_HOURS` v `js/app.js`); chybu vždy vidíš v `events.json` (`ok`, `error`). Při chybě sítě se stahování zkouší znovu po 5, 15 a 30 s (`scripts/lib/http.js`).
+- Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená. Web ukáže upozornění, až když se zdroj nedaří načíst déle než 24 hodin (`STALE_HOURS` v `js/app.js`); chybu vždy vidíš v `data/status.json` (`ok`, `error`, `failingSince`). Při chybě sítě se stahování zkouší znovu po 5, 15 a 30 s a nakonec přes náš server na NASu (`api.craz.cz/ostopovice-events/fetch`, stáhne jen weby ze `config/sources.json`; `FETCH_RELAY=off` zálohu vypne) — malé české hostingy občas celé hodiny nepustí GitHub. Když zdroj nejde stáhnout déle než 12 h, robot napíše komentář do issue „Nefunkční zdroje (upozornění)“ (a znovu, až zase funguje).
+- Čas běhu a stav zdrojů jsou v `public/data/status.json`, který není v gitu (workflow si ho před sběrem stáhne z webu) — diff `events.json` a `.ics` tak ukazuje jen skutečné změny akcí.
 - Zdroj, který najednou vrátí 0 akcí, i když dřív nějaké měl, se bere jako chyba (nejspíš se změnil web).
 - Proběhlé akce se drží 400 dní.
 - Kategorie se počítají při každém běhu znovu, takže úprava pravidel platí i zpětně.

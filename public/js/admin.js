@@ -718,9 +718,24 @@ async function reloadOverrides() {
 
 // ---------- Start ----------
 
+/**
+ * Čas aktualizace a stav zdrojů jsou v data/status.json (mění se každým během, proto ne
+ * v events.json) → doplnit do dat; bez něj (starší nasazení) zůstanou hodnoty z events.json.
+ */
+async function withStatus(events, url) {
+  const status = await fetch(url, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  if (!status) return events;
+  const byId = Object.fromEntries((status.sources || []).map((s) => [s.id, s]));
+  return {
+    ...events,
+    generatedAt: status.generatedAt,
+    sources: events.sources.map((s) => ({ ...s, ...byId[s.id] })),
+  };
+}
+
 async function reloadEvents({ render = true } = {}) {
   const response = await fetch(`data/events.json?t=${Date.now()}`, { cache: 'no-store' });
-  data = await response.json();
+  data = await withStatus(await response.json(), `data/status.json?t=${Date.now()}`);
   sourcesById = Object.fromEntries(data.sources.map((s) => [s.id, s]));
   categories = data.categories;
   $('last-update').textContent = new Date(data.generatedAt).toLocaleString('cs-CZ', {

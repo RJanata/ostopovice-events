@@ -1,4 +1,5 @@
 // Sběr akcí ze všech zdrojů → public/data/events.json + public/data/akce.ics
+//                            + public/data/status.json (stav běhu, jen na webu, ne v gitu)
 //
 // Spuštění: npm run collect  (volitelně --only=knihovna pro jeden zdroj,
 //          --no-fetch = nic nestahovat, jen znovu promítnout úpravy a pravidla do uložených akcí)
@@ -38,6 +39,12 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
 const EVENTS_FILE = path.join(DATA_DIR, 'events.json');
 const ICS_FILE = path.join(DATA_DIR, 'akce.ics');
+// Čas běhu a stav zdrojů se mění při každém běhu → zvlášť, ať diff events.json ukazuje jen
+// skutečné změny akcí. Do gitu nejde; workflow si ho před sběrem stáhne z webu.
+const STATUS_FILE = path.join(DATA_DIR, 'status.json');
+// zdroje, které se dlouho nedaří stáhnout (a zase fungují) → komentář do issue jako u nových akcí
+const PROBLEMS_FILE = path.join(ROOT, 'source-problems.md');
+const REPORT_AFTER_HOURS = 12;
 // seznam nově přidaných akcí pro upozornění (workflow ho pošle jako komentář do issue → e-mail)
 const ADDED_FILE = path.join(ROOT, 'added-events.md');
 const SITE_URL = 'https://kalendar.prolidiostopovice.cz/';
@@ -279,6 +286,18 @@ function addedReport(events, sourcesById) {
   return `Nově přidané akce (${events.length}):\n\n${lines.join('\n')}\n\n${SITE_URL}\n`;
 }
 
+function problemsReport(failing, recovered, sourcesById) {
+  const name = (st) => sourcesById[st.id]?.fullName || sourcesById[st.id]?.name || st.id;
+  const time = (iso) => new Date(iso).toLocaleString('cs-CZ', { timeZone: 'Europe/Prague' });
+  const parts = [];
+  if (failing.length) {
+    parts.push(`Zdroje, které se nedaří stáhnout déle než ${REPORT_AFTER_HOURS} h:`, '',
+      ...failing.map((st) => `- **${name(st)}** – od ${time(st.failingSince)}${st.lastSuccess ? `, naposledy staženo ${time(st.lastSuccess)}` : ''}: ${st.error}`), '');
+  }
+  if (recovered.length) parts.push('Zase funguje:', '', ...recovered.map((st) => `- **${name(st)}**`), '');
+  return `${parts.join('\n')}\n${SITE_URL}\n`;
+}
+
 const sortKey = (e) => {
   if (!e.allDay) return new Date(e.start).toISOString();
   const [y, m, d] = e.start.split('-').map(Number);
@@ -292,6 +311,8 @@ async function main() {
   const categoriesConfig = await readJson(path.join(ROOT, 'config', 'categories.json'));
   const overrides = await readJson(path.join(ROOT, 'config', 'overrides.json'), { events: {}, series: {} });
   const previous = await readJson(EVENTS_FILE, { events: [], sources: [] });
+  // stav zdrojů z minulého běhu; dřív byl přímo v events.json (fallback pro první běh)
+  const previousStatus = (await readJson(STATUS_FILE, null))?.sources || previous.sources || [];
   const rules = buildRules(categoriesConfig);
   const tagMap = buildTagMap(categoriesConfig);
 
@@ -310,7 +331,7 @@ async function main() {
   for (const source of sources) {
     if (source.enabled === false) continue;
     const prevEvents = previous.events.filter((e) => e.source === source.id);
-    const prevStatus = previous.sources?.find((s) => s.id === source.id) || {};
+    const prevStatus = previousStatus.find((s) => s.id === source.id) || {};
     const status = { id: source.id, lastSuccess: prevStatus.lastSuccess || null, ok: true, error: null, count: 0 };
     let fresh = null;
 
@@ -354,6 +375,12 @@ async function main() {
       status.ok = prevStatus.ok ?? true;
       status.error = prevStatus.error ?? null;
     }
+    // od kdy zdroj nepřetržitě selhává a jestli už o tom šlo upozornění
+    if (!status.ok) {
+      status.failingSince = prevStatus.failingSince || now.toISOString();
+      status.reported = Boolean(prevStatus.reported);
+    }
+    if (status.ok && prevStatus.reported) status.recovered = true;
 
     let events;
     if (fresh) {
@@ -386,11 +413,9 @@ async function main() {
       id, name, fullName: fullName || name, shortName: shortName || name, village, icon, color, link: link || null, type, display: display || 'events', adminRefresh: Boolean(adminRefresh), icsLocation: icsLocation || null,
       // doplňkové zdroje (jen pro patičku webu)
       feeds: (extraFeeds || []).map((f) => ({ id: f.id, fullName: f.fullName || f.name, icon: f.icon || null, link: f.link || f.url || null })),
-      ...sourceStatus.find((st) => st.id === id),
     }));
 
   const output = {
-    generatedAt: now.toISOString(),
     calendarName: CALENDAR_NAME,
     sources: publicSources,
     categories: categoriesConfig.categories.map(({ id, label, shortLabel, color, icon }) => ({ id, label, shortLabel: shortLabel || label, color, icon })),
@@ -401,6 +426,19 @@ async function main() {
   await writeFile(EVENTS_FILE, JSON.stringify(output, null, 1) + '\n');
 
   const sourcesById = Object.fromEntries(sources.map((s) => [s.id, s]));
+  const reportBefore = now.getTime() - REPORT_AFTER_HOURS * 3600e3;
+  const failing = sourceStatus.filter((st) => !st.ok && !st.reported && Date.parse(st.failingSince) < reportBefore);
+  const recovered = sourceStatus.filter((st) => st.recovered);
+  failing.forEach((st) => { st.reported = true; });
+  await rm(PROBLEMS_FILE, { force: true });
+  if (failing.length || recovered.length) {
+    await writeFile(PROBLEMS_FILE, problemsReport(failing, recovered, sourcesById));
+    log(`Upozornění na zdroje: ${failing.length} nefunkčních, ${recovered.length} zase funguje (${path.basename(PROBLEMS_FILE)})`);
+  }
+  await writeFile(STATUS_FILE, JSON.stringify({
+    generatedAt: now.toISOString(),
+    sources: sourceStatus.map(({ recovered: _, ...st }) => st),
+  }, null, 1) + '\n');
   const categoryLabels = Object.fromEntries(categoriesConfig.categories.map((c) => [c.id, c.label]));
   // do .ics jen akce (ne svátky) a jen nedávné a budoucí — kalendáře v telefonu nepotřebují rok historie
   const icsFrom = addDays(today, -ICS_PAST_DAYS);

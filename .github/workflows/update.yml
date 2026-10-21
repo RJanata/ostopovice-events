@@ -43,6 +43,12 @@ jobs:
 
       - run: npm ci
 
+      # Stav zdrojů (od kdy který selhává, zda už šlo upozornění) není v gitu, žije na webu
+      - name: Stav zdrojů z minulého běhu
+        run: |
+          curl -fsS "https://$(cat CNAME)/data/status.json?t=$(date +%s)" -o public/data/status.json \
+            || { rm -f public/data/status.json; echo "Stav zdrojů na webu zatím není."; }
+
       - name: Stažení akcí ze zdrojů
         env:
           ONLY_SOURCE: ${{ github.event.inputs.only }}
@@ -55,16 +61,14 @@ jobs:
             npm run collect
           fi
 
-      # Commit jen když se změnily samotné akce (ne jen čas aktualizace) —
-      # v repu je tak i archiv proběhlých akcí, které zdroje už nevypisují.
+      # Commit jen když se data změnila — čas běhu a stav zdrojů jsou ve status.json mimo git,
+      # takže diff ukazuje jen skutečné změny akcí. V repu je i archiv proběhlých akcí.
       - name: Uložení dat do repozitáře
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
-          old=$(git show HEAD:public/data/events.json 2>/dev/null | jq -S '.events' || echo null)
-          new=$(jq -S '.events' public/data/events.json)
-          if [ "$old" != "$new" ]; then
-            git add public/data public/icons  # icons/tabler = stažené vlastní ikony akcí
+          git add public/data public/icons  # icons/tabler = stažené vlastní ikony akcí
+          if ! git diff --cached --quiet; then
             git commit -m "Aktualizace akcí $(date -u +%Y-%m-%dT%H:%MZ)"
           elif [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 45 * 86400 )) ]; then
             # GitHub vypíná plánované workflow po 60 dnech bez aktivity v repu
@@ -91,6 +95,21 @@ jobs:
               --body "Sem robot přidává komentář pokaždé, když se ve zdrojích objeví nová akce. Issue nezavírej." | grep -o '[0-9]*$')
           fi
           { echo "@${{ github.repository_owner }}"; echo; cat added-events.md; } > comment.md
+          gh issue comment "$number" --body-file comment.md
+
+      - name: Upozornění na nefunkční zdroje
+        if: hashFiles('source-problems.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Nefunkční zdroje (upozornění)
+        run: |
+          number=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title \
+            --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+          if [ -z "$number" ]; then
+            number=$(gh issue create --title "$TITLE" \
+              --body "Sem robot přidává komentář, když se některý zdroj nedaří stáhnout déle než 12 hodin (i přes zálohu přes NAS) a když zase funguje. Issue nezavírej." | grep -o '[0-9]*$')
+          fi
+          { echo "@${{ github.repository_owner }}"; echo; cat source-problems.md; } > comment.md
           gh issue comment "$number" --body-file comment.md
 
       # verze u CSS/JS: po nasazení si prohlížeče stáhnou nové soubory místo starých z mezipaměti
