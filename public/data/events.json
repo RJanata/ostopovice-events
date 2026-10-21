@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21T15:17:39.676Z",
+ "generatedAt": "2026-10-21T20:11:20.860Z",
  "calendarName": "Kalendář akcí v Ostopovicích",
  "sources": [
   {
@@ -16,10 +16,10 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-20T20:00:28.632Z",
-   "ok": false,
-   "error": "fetch failed (ETIMEDOUT) – https://www.ostopovice.cz/kalendar-akci?action=atom (4 pokusy)",
-   "count": 4
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
+   "ok": true,
+   "error": null,
+   "count": 5
   },
   {
    "id": "knihovna",
@@ -35,7 +35,7 @@
    "adminRefresh": false,
    "icsLocation": "Obecní knihovna Ostopovice, Lípová 67/15, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 227
@@ -54,7 +54,7 @@
    "adminRefresh": false,
    "icsLocation": "Mateřská škola a Základní škola Ostopovice, Školní 2/18, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 7
@@ -73,7 +73,7 @@
    "adminRefresh": false,
    "icsLocation": "TJ Sokol Ostopovice, Osvobození 17/4, Ostopovice",
    "feeds": [],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 23
@@ -111,7 +111,7 @@
    "adminRefresh": false,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 31
@@ -137,7 +137,7 @@
      "link": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb"
     }
    ],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 46
@@ -156,7 +156,7 @@
    "adminRefresh": true,
    "icsLocation": null,
    "feeds": [],
-   "lastSuccess": "2026-10-21T15:17:39.676Z",
+   "lastSuccess": "2026-10-21T20:11:20.860Z",
    "ok": true,
    "error": null,
    "count": 17
@@ -4206,22 +4206,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4241,6 +4225,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4777,9 +4777,9 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null
+   "originalLong": null,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s0i3bz",
@@ -5251,6 +5251,22 @@
     "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "obec-1x1dzuh",
+   "source": "obec",
+   "title": "Pozvánka na Pohádky v hantecu",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13989395",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-21T20:11:20.860Z"
   },
   {
    "id": "nezarazene-813om6",
