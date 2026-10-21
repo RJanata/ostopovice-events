@@ -54,6 +54,18 @@
       ],
       "editedBy": "Radek",
       "editedAt": "2026-10-13T11:22:39.515Z"
+    },
+    "obec-1x1dzuh": {
+      "location": "Sokolovna",
+      "categories": [
+        "kultura"
+      ],
+      "note": "Nevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
+      "start": "2026-11-08T17:00:00.000Z",
+      "end": "2026-11-08T17:00:00.000Z",
+      "allDay": false,
+      "editedBy": "Radek",
+      "editedAt": "2026-10-21T23:48:09.787Z"
     }
   }
 }
