@@ -313,16 +313,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-1x1dzuh@ostopovice-events
-DTSTAMP:20261021T201120Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-SUMMARY:Pozvánka na Pohádky v hantecu
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-1oj78n4@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261109T090000Z

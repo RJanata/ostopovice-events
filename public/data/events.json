@@ -3528,8 +3528,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3613,8 +3613,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3630,8 +3630,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3785,8 +3785,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3802,8 +3802,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -4728,9 +4728,9 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null,
-   "added": "2026-10-12T20:49:02.880Z"
+   "originalLong": null
   },
   {
    "id": "knihovna-s0i3bz",
@@ -5204,22 +5204,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "obec-1x1dzuh",
-   "source": "obec",
-   "title": "Pozvánka na Pohádky v hantecu",
-   "start": "2026-11-08",
-   "end": "2026-11-08",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13989395",
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-21T20:11:20.860Z"
-  },
-  {
    "id": "nezarazene-813om6",
    "source": "nezarazene",
    "title": "Malá kopaná",
@@ -5238,6 +5222,27 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "obec-1x1dzuh",
+   "source": "obec",
+   "title": "Pozvánka na Pohádky v hantecu",
+   "start": "2026-11-08T17:00:00.000Z",
+   "end": "2026-11-08T17:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=13989395",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-21T20:11:20.860Z",
+   "note": "Nevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
+   "originalLocation": "",
+   "originalStart": "2026-11-08",
+   "originalEnd": "2026-11-08",
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-xpp5tx",

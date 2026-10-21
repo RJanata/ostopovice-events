@@ -181,6 +181,18 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1x1dzuh@ostopovice-events
+DTSTAMP:20261021T201120Z
+DTSTART:20261108T170000Z
+DTEND:20261108T170000Z
+SUMMARY:Pozvánka na Pohádky v hantecu
+LOCATION:Sokolovna
+DESCRIPTION:Nevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky
+ -v-hantecu/szuvvny/\n\nZdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-1ixvp6o@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20261117

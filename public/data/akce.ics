@@ -1229,16 +1229,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-1x1dzuh@ostopovice-events
-DTSTAMP:20261021T201120Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-SUMMARY:Pozvánka na Pohádky v hantecu
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-813om6@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261108T160000Z
@@ -1249,6 +1239,18 @@ DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-1x1dzuh@ostopovice-events
+DTSTAMP:20261021T201120Z
+DTSTART:20261108T170000Z
+DTEND:20261108T170000Z
+SUMMARY:Pozvánka na Pohádky v hantecu
+LOCATION:Sokolovna
+DESCRIPTION:Nevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky
+ -v-hantecu/szuvvny/\n\nZdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-xpp5tx@ostopovice-events
