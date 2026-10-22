@@ -3528,8 +3528,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3613,8 +3613,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3630,8 +3630,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3785,8 +3785,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3802,8 +3802,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -4728,9 +4728,9 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null
+   "originalLong": null,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s0i3bz",
@@ -5237,13 +5237,13 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-21T20:11:20.860Z"
   },
   {
    "id": "nezarazene-xpp5tx",
