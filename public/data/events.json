@@ -189,40 +189,6 @@
  ],
  "events": [
   {
-   "id": "seniori-vg9xo3",
-   "source": "seniori",
-   "title": "Exkurze do JE Dukovany",
-   "start": "2025-09-18",
-   "end": "2025-09-18",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
-   "description": "",
-   "image": "",
-   "categories": [
-    "seniori",
-    "kultura"
-   ],
-   "added": "2026-10-08T01:46:05.000Z"
-  },
-  {
-   "id": "knihovna-1rm2978",
-   "source": "knihovna",
-   "title": "Hravý klub pro školčátka (3-6)",
-   "start": "2025-09-18T14:00:00.000Z",
-   "end": "2025-09-18T15:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hravy-klub-pro-skolcatka-3-6-2025-09-18-16-00",
-   "description": "Klub je určen pro každého ve věku od 3 do 6 let, kdo se chce zábavnou a hravou formou\nseznámit s knihovnou a různými literárními žánry.\n\nKlub je určen pro každého ve věku od 6 do 15 let, kdo se chce zábavnou a hravou formou seznámit s knihovnou a různými literárními žánry. V každé hodině budeme číst něco jiného, a proto na sobě hodiny nebudou závislé. Budeme si číst knížky, které nás baví, povídat si o nich, hrát a něco malého si vyrobíme. Scházet se budeme každý čtvrtek odpoledne, kdy bude knihovna jen a jen naše.\n\nKlub je zdarma. Kapacita je omezená na 10 dětí ve věku od 6 do 15 let.…",
-   "image": "https://static.wixstatic.com/media/11062b_34a2fde861eb4f0cbe0cccd8faca563c~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "knihovna-57gtkb",
    "source": "knihovna",
    "title": "ZDrSEM Mama / kurz první pomoci dětem",
@@ -4728,9 +4694,9 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-12T20:49:02.880Z",
    "long": true,
-   "originalLong": null,
-   "added": "2026-10-12T20:49:02.880Z"
+   "originalLong": null
   },
   {
    "id": "knihovna-s0i3bz",
