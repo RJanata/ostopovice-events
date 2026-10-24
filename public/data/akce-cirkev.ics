@@ -101,6 +101,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-1clu6op@ostopovice-events
+DTSTAMP:20261023T150627Z
+DTSTART:20261107T130000Z
+DTEND:20261107T163000Z
+SUMMARY:Den věnovaný památce MUDr. Alfonse Sovadiny
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:12:30 mše svatá v kapli | 14:00 přednáška\n\nMUDr. Alfons 
+ Sovadina (1882–1964) zasvětil celý svůj život medicíně. Přestože
+  pocházel z chudé rodiny a byl nejmladším ze šestnácti dětí\, vyst
+ udoval medicínu v Praze a za první světové války působil jako vojens
+ ký lékař.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-venovany-pamatce-mudr-alfonse-sovadiny
+CATEGORIES:Kultura,Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-tdf4vb@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261111T170000Z
