@@ -6808,6 +6808,48 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "pripravovane-s79oyy",
+   "source": "pripravovane",
+   "title": "Zvaní na babské hody",
+   "start": "2027-10-02",
+   "end": "2027-10-02",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "obec",
+    "kultura"
+   ],
+   "categories": [
+    "obec",
+    "kultura"
+   ],
+   "added": "2026-10-25T18:29:09.859Z"
+  },
+  {
+   "id": "pripravovane-8mppx6",
+   "source": "pripravovane",
+   "title": "Babské hody",
+   "start": "2027-10-09",
+   "end": "2027-10-09",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "obec",
+    "kultura"
+   ],
+   "categories": [
+    "obec",
+    "kultura"
+   ],
+   "added": "2026-10-25T18:29:09.859Z"
+  },
+  {
    "id": "svatky-18dqlnv",
    "source": "svatky",
    "title": "Den vzniku samostatného československého státu",
