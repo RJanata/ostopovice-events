@@ -51,6 +51,22 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-5hhxij@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261124T090000Z
+DTEND:20261124T103000Z
+SUMMARY:Chytře internetem / workshop pro seniory
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Podvodný e-mail\, podezřelá SMS nebo telefonát\, který zn
+ í až příliš přesvědčivě – workshop Chytře internetem ukazuje p
+ raktiky\, které používají podvodníci a proč jim to tak často vychá
+ zí. Senioři a seniorky se seznámí s konkrétními příklady z praxe a
+  získají praktické tipy\, jak se chránit.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
+ hytre-internetem-workshop-pro-seniory
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-18n6yud@ostopovice-events
 DTSTAMP:20261008T014605Z
 DTSTART:20261205T150000Z

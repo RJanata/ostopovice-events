@@ -1035,7 +1035,7 @@ DTEND:20261025T104500Z
 SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Svi
  nov
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
+DESCRIPTION:Výsledek: 13:20\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
@@ -1425,6 +1425,23 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-xruv7p@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261117T180000Z
+DTEND:20261117T190000Z
+SUMMARY:Charta 77: Souhlasím s Prohlášením / Měsíc Příběhů bezpr
+ áví
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Film Karla Strachoty přibližuje občanskou iniciativu Charta 
+ 77\, zasazuje ji do dobového kontextu\, a připomíná klíčové milník
+ y její existence\, důležité aspekty a souvislosti. Příběhem Charty 
+ 77 diváky provází Václav Havel\, filmem se prolínají jeho autentick
+ é vzpomínky a komentáře.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
+ harta-77-souhlasim-s-prohlasenim-mesic-pribehu-bezpravi
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1ukocgo@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261118T170000Z
@@ -1543,6 +1560,22 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-5hhxij@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261124T090000Z
+DTEND:20261124T103000Z
+SUMMARY:Chytře internetem / workshop pro seniory
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Podvodný e-mail\, podezřelá SMS nebo telefonát\, který zn
+ í až příliš přesvědčivě – workshop Chytře internetem ukazuje p
+ raktiky\, které používají podvodníci a proč jim to tak často vychá
+ zí. Senioři a seniorky se seznámí s konkrétními příklady z praxe a
+  získají praktické tipy\, jak se chránit.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
+ hytre-internetem-workshop-pro-seniory
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261125
@@ -1631,6 +1664,21 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-11-27-08-30
 CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-7mr33r@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261128T130000Z
+DTEND:20261128T170000Z
+SUMMARY:Den pro dětskou knihu 2026
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
+ ěti\, rodiče\, prarodiče\, tety i strejdy. Tentokrát věnovaný tvorb
+ ě spisovatelky\, logopedky a speciální pedagožky Ester Staré.\n\nZdro
+ j: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-pro-detskou-knihu-2026
+CATEGORIES:Kultura,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events

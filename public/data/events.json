@@ -4852,12 +4852,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 13:20",
    "image": "",
    "extra": {
     "competition": "1. liga muži",
     "teams": "Sokol Ostopovice – Sokol Svinov",
-    "score": ""
+    "score": "13:20"
    },
    "shortTitle": "1. liga muži · Sokol Ostopovice – Sokol Svinov",
    "categories": [
@@ -5504,6 +5504,22 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "knihovna-xruv7p",
+   "source": "knihovna",
+   "title": "Charta 77: Souhlasím s Prohlášením / Měsíc Příběhů bezpráví",
+   "start": "2026-11-17T18:00:00.000Z",
+   "end": "2026-11-17T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/charta-77-souhlasim-s-prohlasenim-mesic-pribehu-bezpravi",
+   "description": "Film Karla Strachoty přibližuje občanskou iniciativu Charta 77, zasazuje ji do dobového kontextu, a připomíná klíčové milníky její existence, důležité aspekty a souvislosti. Příběhem Charty 77 diváky provází Václav Havel, filmem se prolínají jeho autentické vzpomínky a komentáře.",
+   "image": "https://static.wixstatic.com/media/6e4a73_71617d6e86c64a6d915fbdf29a8c5665~mv2.jpg",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-25T14:23:35.477Z"
+  },
+  {
    "id": "nezarazene-1ukocgo",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -5674,6 +5690,22 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
+   "id": "knihovna-5hhxij",
+   "source": "knihovna",
+   "title": "Chytře internetem / workshop pro seniory",
+   "start": "2026-11-24T09:00:00.000Z",
+   "end": "2026-11-24T10:30:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/chytre-internetem-workshop-pro-seniory",
+   "description": "Podvodný e-mail, podezřelá SMS nebo telefonát, který zní až příliš přesvědčivě – workshop Chytře internetem ukazuje praktiky, které používají podvodníci a proč jim to tak často vychází. Senioři a seniorky se seznámí s konkrétními příklady z praxe a získají praktické tipy, jak se chránit.",
+   "image": "https://static.wixstatic.com/media/6e4a73_b3fc27055c64446d93ad30fb0b3dbf60~mv2.jpg",
+   "categories": [
+    "seniori"
+   ],
+   "added": "2026-10-25T14:23:35.477Z"
+  },
+  {
    "id": "nezarazene-18htyay",
    "source": "nezarazene",
    "title": "Svoz komunálního odpadu",
@@ -5804,6 +5836,23 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "knihovna-7mr33r",
+   "source": "knihovna",
+   "title": "Den pro dětskou knihu 2026",
+   "start": "2026-11-28T13:00:00.000Z",
+   "end": "2026-11-28T17:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/den-pro-detskou-knihu-2026",
+   "description": "Předvánoční (nejen) knižní festival pro malé i velké děti, rodiče, prarodiče, tety i strejdy. Tentokrát věnovaný tvorbě spisovatelky, logopedky a speciální pedagožky Ester Staré.",
+   "image": "https://static.wixstatic.com/media/6e4a73_8e79fc4039d2441aa7e5d4761d39be42~mv2.png",
+   "categories": [
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-10-25T14:23:35.477Z"
   },
   {
    "id": "pripravovane-7nr8c",

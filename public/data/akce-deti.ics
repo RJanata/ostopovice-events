@@ -397,6 +397,21 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-7mr33r@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261128T130000Z
+DTEND:20261128T170000Z
+SUMMARY:Den pro dětskou knihu 2026
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
+ ěti\, rodiče\, prarodiče\, tety i strejdy. Tentokrát věnovaný tvorb
+ ě spisovatelky\, logopedky a speciální pedagožky Ester Staré.\n\nZdro
+ j: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-pro-detskou-knihu-2026
+CATEGORIES:Kultura,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
 DTSTAMP:20261008T001317Z
 DTSTART;VALUE=DATE:20261129

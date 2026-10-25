@@ -220,6 +220,23 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-xruv7p@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261117T180000Z
+DTEND:20261117T190000Z
+SUMMARY:Charta 77: Souhlasím s Prohlášením / Měsíc Příběhů bezpr
+ áví
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Film Karla Strachoty přibližuje občanskou iniciativu Charta 
+ 77\, zasazuje ji do dobového kontextu\, a připomíná klíčové milník
+ y její existence\, důležité aspekty a souvislosti. Příběhem Charty 
+ 77 diváky provází Václav Havel\, filmem se prolínají jeho autentick
+ é vzpomínky a komentáře.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
+ harta-77-souhlasim-s-prohlasenim-mesic-pribehu-bezpravi
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-5a999r@ostopovice-events
 DTSTAMP:20261014T201252Z
 DTSTART:20261121T170000Z
@@ -234,6 +251,21 @@ DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/r
  adost-je-biologicka-nutnost
 CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-7mr33r@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261128T130000Z
+DTEND:20261128T170000Z
+SUMMARY:Den pro dětskou knihu 2026
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
+ ěti\, rodiče\, prarodiče\, tety i strejdy. Tentokrát věnovaný tvorb
+ ě spisovatelky\, logopedky a speciální pedagožky Ester Staré.\n\nZdro
+ j: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-pro-detskou-knihu-2026
+CATEGORIES:Kultura,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
