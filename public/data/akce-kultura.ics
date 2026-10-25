@@ -381,7 +381,7 @@ UID:pripravovane-s79oyy@ostopovice-events
 DTSTAMP:20261025T182909Z
 DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271003
-SUMMARY:Zvaní na babské hody
+SUMMARY:Zvaní na babský hody
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Obec,Kultura
 END:VEVENT
@@ -390,7 +390,7 @@ UID:pripravovane-8mppx6@ostopovice-events
 DTSTAMP:20261025T182909Z
 DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
-SUMMARY:Babské hody
+SUMMARY:Babský hody
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Obec,Kultura
 END:VEVENT
