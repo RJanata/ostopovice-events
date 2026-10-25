@@ -3494,8 +3494,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3579,8 +3579,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3596,8 +3596,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3751,8 +3751,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3768,8 +3768,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -5187,8 +5187,8 @@
     "kultura",
     "cirkev"
    ],
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
-   "added": "2026-10-23T15:06:27.836Z"
+   "added": "2026-10-23T15:06:27.836Z",
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
   },
   {
    "id": "nezarazene-813om6",
@@ -5224,13 +5224,13 @@
    "categories": [
     "kultura"
    ],
+   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true,
-   "added": "2026-10-21T20:11:20.860Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-xpp5tx",
@@ -5701,7 +5701,8 @@
    "description": "Podvodný e-mail, podezřelá SMS nebo telefonát, který zní až příliš přesvědčivě – workshop Chytře internetem ukazuje praktiky, které používají podvodníci a proč jim to tak často vychází. Senioři a seniorky se seznámí s konkrétními příklady z praxe a získají praktické tipy, jak se chránit.",
    "image": "https://static.wixstatic.com/media/6e4a73_b3fc27055c64446d93ad30fb0b3dbf60~mv2.jpg",
    "categories": [
-    "seniori"
+    "seniori",
+    "vzdelavani"
    ],
    "added": "2026-10-25T14:23:35.477Z"
   },
@@ -5850,7 +5851,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_8e79fc4039d2441aa7e5d4761d39be42~mv2.png",
    "categories": [
     "kultura",
-    "deti"
+    "deti",
+    "vzdelavani"
    ],
    "added": "2026-10-25T14:23:35.477Z"
   },

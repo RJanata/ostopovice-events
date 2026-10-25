@@ -214,6 +214,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-5hhxij@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261124T090000Z
+DTEND:20261124T103000Z
+SUMMARY:Chytře internetem / workshop pro seniory
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Podvodný e-mail\, podezřelá SMS nebo telefonát\, který zn
+ í až příliš přesvědčivě – workshop Chytře internetem ukazuje p
+ raktiky\, které používají podvodníci a proč jim to tak často vychá
+ zí. Senioři a seniorky se seznámí s konkrétními příklady z praxe a
+  získají praktické tipy\, jak se chránit.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
+ hytre-internetem-workshop-pro-seniory
+CATEGORIES:Senioři,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-11719fd@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20261126T170000Z
@@ -229,6 +245,21 @@ DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
 CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-7mr33r@ostopovice-events
+DTSTAMP:20261025T142335Z
+DTSTART:20261128T130000Z
+DTEND:20261128T170000Z
+SUMMARY:Den pro dětskou knihu 2026
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
+ ěti\, rodiče\, prarodiče\, tety i strejdy. Tentokrát věnovaný tvorb
+ ě spisovatelky\, logopedky a speciální pedagožky Ester Staré.\n\nZdro
+ j: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
+ en-pro-detskou-knihu-2026
+CATEGORIES:Kultura,Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-mrfa59@ostopovice-events
