@@ -189,23 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-57gtkb",
-   "source": "knihovna",
-   "title": "ZDrSEM Mama / kurz první pomoci dětem",
-   "start": "2025-09-20T07:00:00.000Z",
-   "end": "2025-09-20T16:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/zdrsem-mama-kurz-prvni-pomoci-detem",
-   "description": "Dětské úrazy, nehody či onemocnění – noční můra všech dospělých. Kurz ZDrSEM Mama vás prakticky připraví na zvládnutí stavů, při nichž zavolání záchranky nestačí. Naučte se zachránit život dítěti!",
-   "image": "https://static.wixstatic.com/media/6e4a73_d72e27321d9c493e8ae823442a22a1bb~mv2.jpg",
-   "categories": [
-    "deti",
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-tij9c8",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
