@@ -72,6 +72,16 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-19w2sk2@ostopovice-events
+DTSTAMP:20261027T095021Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Státní svátek
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/statni-svatek
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-x7zvb8@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261028

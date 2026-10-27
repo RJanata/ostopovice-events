@@ -4106,6 +4106,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4125,22 +4141,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -4926,6 +4926,22 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "obec-19w2sk2",
+   "source": "obec",
+   "title": "Státní svátek",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/statni-svatek",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14010821",
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-27T09:50:21.483Z"
   },
   {
    "id": "svatky-6x6w3i",
