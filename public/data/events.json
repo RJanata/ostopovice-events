@@ -5426,6 +5426,22 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "skola-mdel6n",
+   "source": "skola",
+   "title": "Pohádková knihovna",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "ŠD 1, 2, 4\nProgram v Knihovně Ostopovice.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-27T20:43:48.297Z"
+  },
+  {
    "id": "knihovna-oqt64q",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -5592,6 +5608,23 @@
     "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "skola-12aeqy8",
+   "source": "skola",
+   "title": "Chleba s máslem - o škole po škole",
+   "start": "2026-11-19T17:00:00.000Z",
+   "end": "2026-11-19T17:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "Dílna, 18.00 až 20.00, školní jídlena, pro přihlášené.",
+   "image": "",
+   "categories": [
+    "deti",
+    "vzdelavani"
+   ],
+   "added": "2026-10-27T20:43:48.297Z"
   },
   {
    "id": "knihovna-1j8i6t8",
@@ -5836,6 +5869,22 @@
     "vzdelavani"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "skola-dujk87",
+   "source": "skola",
+   "title": "Návštěva knihovny ostopovice",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.zsostopovice.cz/aktuality",
+   "description": "1. B",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-27T20:43:48.297Z"
   },
   {
    "id": "knihovna-sqim65",

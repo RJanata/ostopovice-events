@@ -1386,6 +1386,18 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:skola-mdel6n@ostopovice-events
+DTSTAMP:20261027T204348Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Pohádková knihovna
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:ŠD 1\, 2\, 4\nProgram v Knihovně Ostopovice.\n\nZdroj: Škola
+URL:https://www.zsostopovice.cz/aktuality
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-oqt64q@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261113T073000Z
@@ -1486,6 +1498,19 @@ DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  nihovna-detem-2026-11-19-15-00
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:skola-12aeqy8@ostopovice-events
+DTSTAMP:20261027T204348Z
+DTSTART:20261119T170000Z
+DTEND:20261119T170000Z
+SUMMARY:Chleba s máslem - o škole po škole
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
+ é.\n\nZdroj: Škola
+URL:https://www.zsostopovice.cz/aktuality
+CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1j8i6t8@ostopovice-events
@@ -1657,6 +1682,18 @@ DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
 CATEGORIES:Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:skola-dujk87@ostopovice-events
+DTSTAMP:20261027T204348Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Návštěva knihovny ostopovice
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:1. B\n\nZdroj: Škola
+URL:https://www.zsostopovice.cz/aktuality
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-sqim65@ostopovice-events
