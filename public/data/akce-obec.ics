@@ -77,7 +77,8 @@ DTSTAMP:20261027T095021Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Státní svátek
-DESCRIPTION:Zdroj: Obec
+DESCRIPTION:Svoz odpadu bude probíhat jako obvykl. Sběrný dvůr bude uza
+ vřen.\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/statni-svatek
 CATEGORIES:Obec
 END:VEVENT
@@ -89,6 +90,17 @@ DTEND;VALUE=DATE:20261029
 SUMMARY:Svoz komunálního odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-grt4yg@ostopovice-events
+DTSTAMP:20261027T105844Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Pozvánka na Ustavující zasedání zastupitelstva obce
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-ustavujici-zasedani
+ -zastupitelstva-obce
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
