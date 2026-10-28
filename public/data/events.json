@@ -4924,8 +4924,8 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-27T09:50:21.483Z",
-   "note": "Svoz odpadu bude probíhat jako obvykle. Sběrný dvůr bude uzavřen."
+   "note": "Svoz odpadu bude probíhat jako obvykle. Sběrný dvůr bude uzavřen.",
+   "added": "2026-10-27T09:50:21.483Z"
   },
   {
    "id": "svatky-6x6w3i",
@@ -5092,10 +5092,10 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-27T10:58:44.629Z",
    "originalStart": "2026-11-04",
    "originalEnd": "2026-11-04",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-27T10:58:44.629Z"
   },
   {
    "id": "nezarazene-1j4sg4t",
@@ -5189,8 +5189,8 @@
     "kultura",
     "cirkev"
    ],
-   "added": "2026-10-23T15:06:27.836Z",
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
+   "added": "2026-10-23T15:06:27.836Z"
   },
   {
    "id": "nezarazene-813om6",
@@ -5226,13 +5226,13 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-21T20:11:20.860Z"
   },
   {
    "id": "nezarazene-xpp5tx",
