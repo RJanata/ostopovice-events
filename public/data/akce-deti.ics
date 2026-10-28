@@ -331,18 +331,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
-UID:skola-mdel6n@ostopovice-events
-DTSTAMP:20261027T204348Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:Pohádková knihovna
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:ŠD 1\, 2\, 4\nProgram v Knihovně Ostopovice.\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:pripravovane-1ixvp6o@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20261117
@@ -404,18 +392,6 @@ DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  st.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  nihovna-detem-2026-11-26-15-00
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:skola-dujk87@ostopovice-events
-DTSTAMP:20261027T204348Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:Návštěva knihovny ostopovice
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:1. B\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT

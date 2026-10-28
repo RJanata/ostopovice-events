@@ -1175,8 +1175,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:obec-grt4yg@ostopovice-events
 DTSTAMP:20261027T105844Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
+DTSTART:20261104T170000Z
+DTEND:20261104T170000Z
 SUMMARY:Pozvánka na Ustavující zasedání zastupitelstva obce
 DESCRIPTION:Zdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-ustavujici-zasedani
@@ -1383,18 +1383,6 @@ DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
  st.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  nihovna-detem-2026-11-12-15-00
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:skola-mdel6n@ostopovice-events
-DTSTAMP:20261027T204348Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:Pohádková knihovna
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:ŠD 1\, 2\, 4\nProgram v Knihovně Ostopovice.\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
@@ -1682,18 +1670,6 @@ DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
 CATEGORIES:Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
-UID:skola-dujk87@ostopovice-events
-DTSTAMP:20261027T204348Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:Návštěva knihovny ostopovice
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:1. B\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
-CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-sqim65@ostopovice-events
