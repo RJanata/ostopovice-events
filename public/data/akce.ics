@@ -517,7 +517,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve st
  odole.\n\nZdroj: Škola
-URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
@@ -532,18 +532,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -555,6 +543,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1401,6 +1401,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-dn14b9@ostopovice-events
+DTSTAMP:20261028T210714Z
+DTSTART:20261114T090000Z
+DTEND:20261114T110000Z
+SUMMARY:Terapeutická jóga s Klárou / workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Pravidelná dávka terapeutické jógy\, tentokrát zaměřená
+  na plíce a tlusté střevo. Téma nadechnutí se do života a puštění
+  toho\, co již neslouží. Právě to mají tyto orgány na starost dle T
+ ČM. Rozproudíme energii v těchto meridiánech a také v celém našem t
+ ěle. Zaměříme se na hrudní koš a paže.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ erapeuticka-joga-s-klarou-workshop-2
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-40if0o@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261115T160000Z
@@ -1433,7 +1449,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:2. ročník\nŠtědrost a laskavost v jednom hrnku.\n\nZdroj: 
  Škola
-URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
@@ -1511,7 +1527,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
  é.\n\nZdroj: Škola
-URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
@@ -1723,7 +1739,7 @@ SUMMARY:Adventní jarmark
 LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:Zdroj: Škola
-URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti,Kultura
 END:VEVENT
 BEGIN:VEVENT

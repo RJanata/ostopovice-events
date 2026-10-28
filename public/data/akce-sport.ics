@@ -579,6 +579,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-dn14b9@ostopovice-events
+DTSTAMP:20261028T210714Z
+DTSTART:20261114T090000Z
+DTEND:20261114T110000Z
+SUMMARY:Terapeutická jóga s Klárou / workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Pravidelná dávka terapeutické jógy\, tentokrát zaměřená
+  na plíce a tlusté střevo. Téma nadechnutí se do života a puštění
+  toho\, co již neslouží. Právě to mají tyto orgány na starost dle T
+ ČM. Rozproudíme energii v těchto meridiánech a také v celém našem t
+ ěle. Zaměříme se na hrudní koš a paže.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ erapeuticka-joga-s-klarou-workshop-2
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-40if0o@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261115T160000Z

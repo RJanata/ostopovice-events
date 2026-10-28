@@ -4060,7 +4060,7 @@
    "end": "2026-10-06",
    "allDay": true,
    "location": "",
-   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
    "description": "všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve stodole.",
    "image": "",
    "categories": [
@@ -4089,6 +4089,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4108,22 +4124,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5431,6 +5431,22 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "knihovna-dn14b9",
+   "source": "knihovna",
+   "title": "Terapeutická jóga s Klárou / workshop",
+   "start": "2026-11-14T09:00:00.000Z",
+   "end": "2026-11-14T11:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-workshop-2",
+   "description": "Pravidelná dávka terapeutické jógy, tentokrát zaměřená na plíce a tlusté střevo. Téma nadechnutí se do života a puštění toho, co již neslouží. Právě to mají tyto orgány na starost dle TČM. Rozproudíme energii v těchto meridiánech a také v celém našem těle. Zaměříme se na hrudní koš a paže.",
+   "image": "https://static.wixstatic.com/media/6e4a73_4d2d3b8816954a23bb240841b8ab23c9~mv2.jpg",
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-28T21:07:14.514Z"
+  },
+  {
    "id": "nezarazene-40if0o",
    "source": "nezarazene",
    "title": "Malá kopaná",
@@ -5479,7 +5495,7 @@
    "end": "2026-11-16",
    "allDay": true,
    "location": "",
-   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "2. ročník\nŠtědrost a laskavost v jednom hrnku.",
    "image": "",
    "categories": [
@@ -5605,7 +5621,7 @@
    "end": "2026-11-19T17:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "Dílna, 18.00 až 20.00, školní jídlena, pro přihlášené.",
    "image": "",
    "categories": [
@@ -5901,7 +5917,7 @@
    "end": "2026-11-29",
    "allDay": true,
    "location": "",
-   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "",
    "image": "",
    "categories": [
