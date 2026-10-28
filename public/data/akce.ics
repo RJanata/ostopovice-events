@@ -1177,7 +1177,8 @@ UID:obec-grt4yg@ostopovice-events
 DTSTAMP:20261027T105844Z
 DTSTART:20261104T170000Z
 DTEND:20261104T170000Z
-SUMMARY:Pozvánka na Ustavující zasedání zastupitelstva obce
+SUMMARY:Ustavující zasedání zastupitelstva obce
+LOCATION:Knihovna
 DESCRIPTION:Zdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-ustavujici-zasedani
  -zastupitelstva-obce
