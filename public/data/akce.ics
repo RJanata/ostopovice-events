@@ -45,7 +45,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:Od 8.00 zahájení školního roku pro rodiče\, děti i žáky
   u stodoly.\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
@@ -517,7 +517,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve st
  odole.\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
@@ -1423,6 +1423,19 @@ URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:skola-1hropan@ostopovice-events
+DTSTAMP:20261028T093845Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Polévka ve stodole
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:2. ročník\nŠtědrost a laskavost v jednom hrnku.\n\nZdroj: 
+ Škola
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-1ixvp6o@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20261117
@@ -1497,7 +1510,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
  é.\n\nZdroj: Škola
-URL:https://www.zsostopovice.cz/aktuality
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
@@ -1699,6 +1712,18 @@ DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-pro-detskou-knihu-2026
 CATEGORIES:Kultura,Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:skola-ulrkua@ostopovice-events
+DTSTAMP:20261028T093845Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Adventní jarmark
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:Zdroj: Škola
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+CATEGORIES:Pro děti,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events

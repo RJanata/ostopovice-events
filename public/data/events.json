@@ -3399,7 +3399,7 @@
    "end": "2026-09-01T06:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "Od 8.00 zahájení školního roku pro rodiče, děti i žáky u stodoly.",
    "image": "",
    "categories": [
@@ -3454,14 +3454,14 @@
    "end": "2026-09-07T15:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "4. ročník\nTřídní schůzka, od 17.00, učebna 4. ročníku.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3539,14 +3539,14 @@
    "end": "2026-09-14T14:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "3. ročník\nOd 16.00 v učebně 3. ročníku.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3556,14 +3556,14 @@
    "end": "2026-09-14T15:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "1. ročník, třídy A i B\nTřídní schůzka, od 17.00, učebny 1. tříd.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3711,14 +3711,14 @@
    "end": "2026-09-21T14:30:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "5. ročník\nOd 16.30 v učebně 5. ročníku.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3728,14 +3728,14 @@
    "end": "2026-09-21T15:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#3",
    "description": "2. ročník\nTřídní schůzka, od 17.00, s možností přítomnosti dětí.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -4060,7 +4060,7 @@
    "end": "2026-10-06",
    "allDay": true,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "všechny třídy MŠ a ZŠ\nDopolední tématická výuka ve stodole.",
    "image": "",
    "categories": [
@@ -5412,23 +5412,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "skola-mdel6n",
-   "source": "skola",
-   "title": "Pohádková knihovna",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
-   "description": "ŠD 1, 2, 4\nProgram v Knihovně Ostopovice.",
-   "image": "",
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-27T20:43:48.297Z",
-   "hidden": true
-  },
-  {
    "id": "knihovna-oqt64q",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -5485,6 +5468,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "skola-1hropan",
+   "source": "skola",
+   "title": "Polévka ve stodole",
+   "start": "2026-11-16",
+   "end": "2026-11-16",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
+   "description": "2. ročník\nŠtědrost a laskavost v jednom hrnku.",
+   "image": "",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-10-28T09:38:45.482Z"
   },
   {
    "id": "svatky-1nmjbe3",
@@ -5604,7 +5603,7 @@
    "end": "2026-11-19T17:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
    "description": "Dílna, 18.00 až 20.00, školní jídlena, pro přihlášené.",
    "image": "",
    "categories": [
@@ -5858,23 +5857,6 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
-   "id": "skola-dujk87",
-   "source": "skola",
-   "title": "Návštěva knihovny ostopovice",
-   "start": "2026-11-27",
-   "end": "2026-11-27",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.zsostopovice.cz/aktuality",
-   "description": "1. B",
-   "image": "",
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-27T20:43:48.297Z",
-   "hidden": true
-  },
-  {
    "id": "knihovna-sqim65",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -5908,6 +5890,23 @@
     "vzdelavani"
    ],
    "added": "2026-10-25T14:23:35.477Z"
+  },
+  {
+   "id": "skola-ulrkua",
+   "source": "skola",
+   "title": "Adventní jarmark",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2",
+   "description": "",
+   "image": "",
+   "categories": [
+    "deti",
+    "kultura"
+   ],
+   "added": "2026-10-28T09:38:45.482Z"
   },
   {
    "id": "pripravovane-7nr8c",

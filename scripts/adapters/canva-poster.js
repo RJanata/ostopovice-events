@@ -7,7 +7,7 @@
 //   dokument:  I = obrázky [{ id, files: [{ url }] }], D.A.A = stránky, O = čas poslední úpravy
 //   stránka:   E = prvky
 //   prvek:     A? = typ (K text, I obrázek), A = shora, B = zleva, D = šířka, C = výška
-//   text:      a.C.A = řádky, a.C.C[0].G = velikost písma („12.1px“), a.C.C[0].Y = řádkování („1.13em“)
+//   text:      a.C.A = řádky
 //   obrázek:   a.B.A.A = id obrázku
 //
 // Na plakátu jsou sloupce textu; akce = skupina řádků oddělená prázdným řádkem:
@@ -60,12 +60,9 @@ async function findPosterUrl(source) {
 const slug = (text) => normalize(text).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 const textOf = (el) => el.a.C.A.join('');
 
-/** Řádky textového bloku s jejich výškou (řádkování z velikosti písma, jinak výška bloku / počet řádků). */
+/** Výška řádku textového bloku = výška bloku / počet řádků. Ne velikost písma × řádkování ze stylu:
+ *  Canva text zmenšuje, aby se vešel do rámečku (listopad 2026: styl 13,7, skutečně 11,5). */
 function lineHeight(el) {
-  const style = el.a.C.C?.[0] || {};
-  const size = parseFloat(style.G);
-  const spacing = parseFloat(style.Y);
-  if (size && spacing) return size * spacing;
   return el.C / el.a.C.A.length;
 }
 
@@ -115,7 +112,7 @@ function joinWrapped(lines) {
 }
 
 /** Akce označené ikonkou na jedné stránce plakátu. */
-function pageEvents(page, markerIds, source) {
+function pageEvents(page, markerIds, source, posterUrl) {
   const elements = page.E || [];
   const texts = elements.filter((e) => e['A?'] === 'K' && Array.isArray(e.a?.C?.A));
   const headingMatch = texts.map((e) => normalize(textOf(e)).trim().match(MONTH_HEADING)).find(Boolean);
@@ -150,7 +147,7 @@ function pageEvents(page, markerIds, source) {
       audience: details[0] || '',
       title,
       location: '',
-      url: source.link || source.url,
+      url: posterUrl,
       description: details.join('\n'),
       cancelled: /\bzrusen/i.test(normalize(group.lines.join('\n'))),
     };
@@ -181,12 +178,14 @@ export async function fetchEvents(source, { log } = {}) {
   if (!match) throw new Error('Stránka Canvy nemá vložená data plakátu (změnila se Canva, nebo vrátila „Unsupported client“?)');
   const doc = findDocument(JSON.parse(decodeJsString(match[1])));
   if (!doc) throw new Error('V datech Canvy chybí dokument se stránkami');
+  // akce odkazují přímo na svůj list plakátu (…/view#2 = 2. list), bez sledovacích parametrů utm_… / utlId
+  const posterLink = new URL(posterUrl).origin + new URL(posterUrl).pathname;
 
   const marker = source.options.markerImage;
   const markerIds = new Set(doc.I.filter((m) => (m.files || []).some((f) => String(f.url).includes(marker))).map((m) => m.id));
   if (!markerIds.size) throw new Error(`Na plakátu chybí ikonka akcí pro veřejnost (${marker})`);
 
-  let pages = doc.D.A.A.map((page) => pageEvents(page, markerIds, source)).filter((p) => p.heading);
+  let pages = doc.D.A.A.map((page, index) => pageEvents(page, markerIds, source, `${posterLink}#${index + 1}`)).filter((p) => p.heading);
   if (source.options.latestPageOnly && pages.length) {
     const key = (p) => p.heading.year * 12 + p.heading.month;
     const latest = Math.max(...pages.map(key));

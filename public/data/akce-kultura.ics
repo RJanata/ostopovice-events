@@ -268,6 +268,18 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Kultura,Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:skola-ulrkua@ostopovice-events
+DTSTAMP:20261028T093845Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Adventní jarmark
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:Zdroj: Škola
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#2
+CATEGORIES:Pro děti,Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
 DTSTAMP:20261008T001317Z
 DTSTART;VALUE=DATE:20261129
