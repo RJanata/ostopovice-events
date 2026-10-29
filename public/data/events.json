@@ -189,38 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-d31poa",
-   "source": "knihovna",
-   "title": "Hernička mezi knihami / smyslohraní",
-   "start": "2025-09-23T07:00:00.000Z",
-   "end": "2025-09-23T09:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hernicka-mezi-knihami-smyslohrani",
-   "description": "Pravidelné dopolední herničky pro nejmenší děti. Setkávání plné tvoření, hudby, tance, hraní a radosti z pohybu.\n\nProgram je určený pro děti od 0 do 3 let v doprovodu dospělého. Dospělý zodpovídá za doprovázené dítě.\n\nS sebou: přezůvky, deku nebo podložku na sezení a válení na zemi, svačinu pro děti.\n\nMinimální doporučený příspěvek: 50,-\n\nAktivity připravuje Anna Juklová.",
-   "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
-   "id": "knihovna-16ce4wd",
-   "source": "knihovna",
-   "title": "Historie Ostopovic: Krajinou Ostopovicka",
-   "start": "2025-09-23T16:00:00.000Z",
-   "end": "2025-09-23T17:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/historie-ostopovic-krajinou-ostopovicka",
-   "description": "Tématem přednášky budou Ostopovice od chvíle, kdy se začal formovat moderní svět, tedy od 19. století. Zajímat nás bude, v čem šla obec s dobou, kdy si s ní úplně nerozuměla a jak se dějiny vepsaly do tváře sídla i jeho okolí.",
-   "image": "https://static.wixstatic.com/media/11062b_f58acb44b9804d3db227197cb5c97c61~mv2.jpg",
-   "categories": [
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-m1hutx",
    "source": "knihovna",
    "title": "Hravý klub pro školáky (6+)",
@@ -4924,8 +4892,8 @@
    "categories": [
     "obec"
    ],
-   "note": "Svoz odpadu bude probíhat jako obvykle. Sběrný dvůr bude uzavřen.",
-   "added": "2026-10-27T09:50:21.483Z"
+   "added": "2026-10-27T09:50:21.483Z",
+   "note": "Svoz odpadu bude probíhat jako obvykle. Sběrný dvůr bude uzavřen."
   },
   {
    "id": "svatky-6x6w3i",
