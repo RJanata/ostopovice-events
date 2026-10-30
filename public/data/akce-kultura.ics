@@ -184,7 +184,7 @@ BEGIN:VEVENT
 UID:knihovna-1clu6op@ostopovice-events
 DTSTAMP:20261023T150627Z
 DTSTART:20261107T130000Z
-DTEND:20261107T163000Z
+DTEND:20261107T150000Z
 SUMMARY:Den věnovaný památce MUDr. Alfonse Sovadiny
 LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:12:30 mše svatá v kapli | 14:00 přednáška\n\nMUDr. Alfons 
@@ -240,7 +240,7 @@ BEGIN:VEVENT
 UID:knihovna-5a999r@ostopovice-events
 DTSTAMP:20261014T201252Z
 DTSTART:20261121T170000Z
-DTEND:20261121T190000Z
+DTEND:20261121T183000Z
 SUMMARY:Radost je biologická nutnost
 LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
@@ -250,6 +250,22 @@ DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
  ázračné efekty pro naše zdraví a náš mozek.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/r
  adost-je-biologicka-nutnost
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-86zh07@ostopovice-events
+DTSTAMP:20261030T204918Z
+DTSTART:20261124T170000Z
+DTEND:20261124T190000Z
+SUMMARY:Jaká veřejnoprávní média chceme mít? / debata
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vláda chce zrušit poplatky a financovat ČT a ČRo ze státn
+ ího rozpočtu. Co to znamená pro jejich nezávislost? A jaká veřejnopr
+ ávní média vlastně potřebujeme? Debatují socioložka médií Klára 
+ Smejkal\, datový novinář Českého rozhlasu Jan Boček a šéfredaktor 
+ Deníku Alarm Jan Bělíček.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ aka-verejnopravni-media-chceme-mit-debata
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT

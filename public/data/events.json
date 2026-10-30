@@ -3428,8 +3428,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3513,8 +3513,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3530,8 +3530,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3685,8 +3685,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3702,8 +3702,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -4057,22 +4057,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4092,6 +4076,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5047,6 +5047,23 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "knihovna-77zcpu",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-11-04T07:30:00.000Z",
+   "end": "2026-11-04T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-04-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "obec-grt4yg",
    "source": "obec",
    "title": "Ustavující zasedání zastupitelstva obce",
@@ -5060,12 +5077,12 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-10-27T10:58:44.629Z",
    "originalTitle": "Pozvánka na Ustavující zasedání zastupitelstva obce",
    "originalLocation": "",
    "originalStart": "2026-11-04",
    "originalEnd": "2026-11-04",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-27T10:58:44.629Z"
   },
   {
    "id": "nezarazene-1j4sg4t",
@@ -5149,7 +5166,7 @@
    "source": "knihovna",
    "title": "Den věnovaný památce MUDr. Alfonse Sovadiny",
    "start": "2026-11-07T13:00:00.000Z",
-   "end": "2026-11-07T16:30:00.000Z",
+   "end": "2026-11-07T15:00:00.000Z",
    "allDay": false,
    "location": "",
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/den-venovany-pamatce-mudr-alfonse-sovadiny",
@@ -5159,8 +5176,8 @@
     "kultura",
     "cirkev"
    ],
-   "added": "2026-10-23T15:06:27.836Z",
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
+   "added": "2026-10-23T15:06:27.836Z"
   },
   {
    "id": "nezarazene-813om6",
@@ -5196,13 +5213,13 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-21T20:11:20.860Z"
   },
   {
    "id": "nezarazene-xpp5tx",
@@ -5308,6 +5325,23 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
+   "id": "knihovna-smt9ac",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-11-11T07:30:00.000Z",
+   "end": "2026-11-11T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-11-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "seniori-fyvofl",
    "source": "seniori",
    "title": "Zábava, Martinské dostaveníčko",
@@ -5399,23 +5433,6 @@
     "obec"
    ],
    "added": "2026-10-30T17:05:23.958Z"
-  },
-  {
-   "id": "knihovna-oqt64q",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-11-13T07:30:00.000Z",
-   "end": "2026-11-13T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-13-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-dn14b9",
@@ -5543,6 +5560,23 @@
    "added": "2026-10-25T14:23:35.477Z"
   },
   {
+   "id": "knihovna-305viz",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-11-18T07:30:00.000Z",
+   "end": "2026-11-18T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-18-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "nezarazene-1ukocgo",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -5618,28 +5652,11 @@
    "added": "2026-10-27T20:43:48.297Z"
   },
   {
-   "id": "knihovna-1j8i6t8",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-11-20T07:30:00.000Z",
-   "end": "2026-11-20T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-20-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "knihovna-5a999r",
    "source": "knihovna",
    "title": "Radost je biologická nutnost",
    "start": "2026-11-21T17:00:00.000Z",
-   "end": "2026-11-21T19:00:00.000Z",
+   "end": "2026-11-21T18:30:00.000Z",
    "allDay": false,
    "location": "",
    "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/radost-je-biologicka-nutnost",
@@ -5747,6 +5764,22 @@
    "added": "2026-10-25T14:23:35.477Z"
   },
   {
+   "id": "knihovna-86zh07",
+   "source": "knihovna",
+   "title": "Jaká veřejnoprávní média chceme mít? / debata",
+   "start": "2026-11-24T17:00:00.000Z",
+   "end": "2026-11-24T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/jaka-verejnopravni-media-chceme-mit-debata",
+   "description": "Vláda chce zrušit poplatky a financovat ČT a ČRo ze státního rozpočtu. Co to znamená pro jejich nezávislost? A jaká veřejnoprávní média vlastně potřebujeme? Debatují socioložka médií Klára Smejkal, datový novinář Českého rozhlasu Jan Boček a šéfredaktor Deníku Alarm Jan Bělíček.",
+   "image": "https://static.wixstatic.com/media/6e4a73_15a6e8c51c834d71990f69e38ca5890a~mv2.png",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-10-30T20:49:18.688Z"
+  },
+  {
    "id": "nezarazene-18htyay",
    "source": "nezarazene",
    "title": "Svoz komunálního odpadu",
@@ -5786,6 +5819,23 @@
     "deti"
    ],
    "added": "2026-10-08T14:26:43.000Z"
+  },
+  {
+   "id": "knihovna-1quan1r",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-11-25T07:30:00.000Z",
+   "end": "2026-11-25T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-25-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1lcdi2k",
@@ -5860,23 +5910,6 @@
     "vzdelavani"
    ],
    "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
-   "id": "knihovna-sqim65",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-11-27T07:30:00.000Z",
-   "end": "2026-11-27T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-27-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "knihovna-7mr33r",
@@ -6013,6 +6046,23 @@
    "added": "2026-10-08T02:44:23.000Z"
   },
   {
+   "id": "knihovna-z5c1kj",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-12-02T07:30:00.000Z",
+   "end": "2026-12-02T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-02-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-ah6n8y",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -6026,23 +6076,6 @@
    "recurring": true,
    "categories": [
     "deti"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "knihovna-19oir1h",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-12-04T07:30:00.000Z",
-   "end": "2026-12-04T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-04-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -6117,6 +6150,23 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "knihovna-1b9o4oi",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2026-12-09T07:30:00.000Z",
+   "end": "2026-12-09T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-09-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-68gb6q",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -6152,23 +6202,6 @@
     "kultura"
    ],
    "added": "2026-10-08T14:26:43.000Z"
-  },
-  {
-   "id": "knihovna-142hbcz",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-12-11T07:30:00.000Z",
-   "end": "2026-12-11T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-12-11-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-poaoty",
@@ -6352,6 +6385,23 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "knihovna-z4wk20",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2027-01-06T07:30:00.000Z",
+   "end": "2027-01-06T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2027-01-06-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-1ulvu99",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)",
@@ -6370,6 +6420,23 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "knihovna-1sj379a",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2027-01-13T07:30:00.000Z",
+   "end": "2027-01-13T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2027-01-13-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "pripravovane-133uvg",
    "source": "pripravovane",
    "title": "Obecní ples",
@@ -6384,6 +6451,23 @@
     "kultura"
    ],
    "added": "2026-10-07T22:43:36.000Z"
+  },
+  {
+   "id": "knihovna-8n0zo0",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2027-01-20T07:30:00.000Z",
+   "end": "2027-01-20T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2027-01-20-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-oqbsqh",
@@ -6405,6 +6489,23 @@
     "seniori"
    ],
    "added": "2026-10-08T14:37:53.000Z"
+  },
+  {
+   "id": "knihovna-6ivxg9",
+   "source": "knihovna",
+   "title": "Lit jóga",
+   "start": "2027-01-27T07:30:00.000Z",
+   "end": "2027-01-27T08:40:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2027-01-27-08-30",
+   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
+   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
+   "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "pripravovane-151pfly",

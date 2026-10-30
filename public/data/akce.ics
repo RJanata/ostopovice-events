@@ -532,6 +532,18 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -543,18 +555,6 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1173,6 +1173,20 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-77zcpu@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261104T073000Z
+DTEND:20261104T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-04-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:obec-grt4yg@ostopovice-events
 DTSTAMP:20261027T105844Z
 DTSTART:20261104T170000Z
@@ -1240,7 +1254,7 @@ BEGIN:VEVENT
 UID:knihovna-1clu6op@ostopovice-events
 DTSTAMP:20261023T150627Z
 DTSTART:20261107T130000Z
-DTEND:20261107T163000Z
+DTEND:20261107T150000Z
 SUMMARY:Den věnovaný památce MUDr. Alfonse Sovadiny
 LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:12:30 mše svatá v kapli | 14:00 přednáška\n\nMUDr. Alfons 
@@ -1337,6 +1351,20 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-smt9ac@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261111T073000Z
+DTEND:20261111T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-11-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-fyvofl@ostopovice-events
 DTSTAMP:20261008T014605Z
 DTSTART:20261111T150000Z
@@ -1394,20 +1422,6 @@ DTEND;VALUE=DATE:20261114
 SUMMARY:Uzávěrka příspěvků do Zpravodaje 26/4
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-oqt64q@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261113T073000Z
-DTEND:20261113T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-11-13-08-30
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-dn14b9@ostopovice-events
@@ -1488,6 +1502,20 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-305viz@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261118T073000Z
+DTEND:20261118T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-18-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1ukocgo@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261118T170000Z
@@ -1540,24 +1568,10 @@ URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:knihovna-1j8i6t8@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261120T073000Z
-DTEND:20261120T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-11-20-08-30
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-5a999r@ostopovice-events
 DTSTAMP:20261014T201252Z
 DTSTART:20261121T170000Z
-DTEND:20261121T190000Z
+DTEND:20261121T183000Z
 SUMMARY:Radost je biologická nutnost
 LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
 DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
@@ -1635,6 +1649,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Senioři,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-86zh07@ostopovice-events
+DTSTAMP:20261030T204918Z
+DTSTART:20261124T170000Z
+DTEND:20261124T190000Z
+SUMMARY:Jaká veřejnoprávní média chceme mít? / debata
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vláda chce zrušit poplatky a financovat ČT a ČRo ze státn
+ ího rozpočtu. Co to znamená pro jejich nezávislost? A jaká veřejnopr
+ ávní média vlastně potřebujeme? Debatují socioložka médií Klára 
+ Smejkal\, datový novinář Českého rozhlasu Jan Boček a šéfredaktor 
+ Deníku Alarm Jan Bělíček.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ aka-verejnopravni-media-chceme-mit-debata
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261125
@@ -1653,6 +1683,20 @@ SUMMARY:Adventní dílna
 LOCATION:Knihovna Ostopovice
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1quan1r@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261125T073000Z
+DTEND:20261125T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-11-25-08-30
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lcdi2k@ostopovice-events
@@ -1709,20 +1753,6 @@ DESCRIPTION:Druhá část přednášky Aleše Svobody o nejbizarnějším n
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-ii
 CATEGORIES:Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-sqim65@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261127T073000Z
-DTEND:20261127T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-11-27-08-30
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-7mr33r@ostopovice-events
@@ -1810,6 +1840,20 @@ DESCRIPTION:Vánoční hra pro děti.\n\nZdroj: Připravované akce
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-z5c1kj@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261202T073000Z
+DTEND:20261202T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-12-02-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-ah6n8y@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261203T140000Z
@@ -1824,20 +1868,6 @@ DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  nihovna-detem-2026-12-03-15-00
 CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-19oir1h@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261204T073000Z
-DTEND:20261204T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-12-04-08-30
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1tyoqhk@ostopovice-events
@@ -1894,6 +1924,20 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-1b9o4oi@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261209T073000Z
+DTEND:20261209T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2026-12-09-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-68gb6q@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261210T140000Z
@@ -1918,20 +1962,6 @@ SUMMARY:Vánoce s Karlem: Karel Hegner & Fashion Strings
 LOCATION:Knihovna Ostopovice
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-142hbcz@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261211T073000Z
-DTEND:20261211T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-12-11-08-30
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-poaoty@ostopovice-events
@@ -2018,6 +2048,20 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-z4wk20@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20270106T073000Z
+DTEND:20270106T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2027-01-06-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-1ulvu99@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20270111T090000Z
@@ -2035,6 +2079,20 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-1sj379a@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20270113T073000Z
+DTEND:20270113T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2027-01-13-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-133uvg@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270116
@@ -2045,6 +2103,20 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-8n0zo0@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20270120T073000Z
+DTEND:20270120T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2027-01-20-08-30
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-oqbsqh@ostopovice-events
 DTSTAMP:20261008T143753Z
 DTSTART;VALUE=DATE:20270123
@@ -2053,6 +2125,20 @@ SUMMARY:Ples seniorů
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura,Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-6ivxg9@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20270127T073000Z
+DTEND:20270127T084000Z
+SUMMARY:Lit jóga
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
+ lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
+ \n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
+ it-joga-2027-01-27-08-30
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-151pfly@ostopovice-events
