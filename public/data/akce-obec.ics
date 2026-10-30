@@ -135,6 +135,15 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-18791jk@ostopovice-events
+DTSTAMP:20261030T170523Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Uzávěrka příspěvků do Zpravodaje 26/4
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-tgptrf@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261124

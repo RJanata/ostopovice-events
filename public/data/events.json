@@ -3428,8 +3428,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3513,8 +3513,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3530,8 +3530,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3685,8 +3685,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3702,8 +3702,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -4057,6 +4057,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4076,22 +4092,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5060,12 +5060,12 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-10-27T10:58:44.629Z",
    "originalTitle": "Pozvánka na Ustavující zasedání zastupitelstva obce",
    "originalLocation": "",
    "originalStart": "2026-11-04",
    "originalEnd": "2026-11-04",
-   "originalAllDay": true,
-   "added": "2026-10-27T10:58:44.629Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1j4sg4t",
@@ -5159,8 +5159,8 @@
     "kultura",
     "cirkev"
    ],
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
-   "added": "2026-10-23T15:06:27.836Z"
+   "added": "2026-10-23T15:06:27.836Z",
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
   },
   {
    "id": "nezarazene-813om6",
@@ -5196,13 +5196,13 @@
    "categories": [
     "kultura"
    ],
+   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true,
-   "added": "2026-10-21T20:11:20.860Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-xpp5tx",
@@ -5380,6 +5380,25 @@
     "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-18791jk",
+   "source": "nezarazene",
+   "title": "Uzávěrka příspěvků do Zpravodaje 26/4",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-30T17:05:23.958Z"
   },
   {
    "id": "knihovna-oqt64q",
