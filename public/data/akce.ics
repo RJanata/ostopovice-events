@@ -8,22 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-2751c6@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260831T170000Z
-DTEND:20260831T180000Z
-SUMMARY:Pilates & zdravá záda
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
- kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
- ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
- á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
- zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
- ilates-zdrava-zada-2026-08-31-19-00
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:seniori-s31w59@ostopovice-events
 DTSTAMP:20261008T014605Z
 DTSTART;VALUE=DATE:20260901
