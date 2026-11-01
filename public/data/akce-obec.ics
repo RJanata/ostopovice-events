@@ -164,6 +164,46 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1lwap3v@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1pqulka@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mxxab3@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Svoz komunálního odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-s79oyy@ostopovice-events
 DTSTAMP:20261025T182909Z
 DTSTART;VALUE=DATE:20271002

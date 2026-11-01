@@ -4040,22 +4040,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4075,6 +4059,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5088,6 +5088,26 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-18sbb0f",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-04T17:00:00.000Z",
+   "end": "2026-11-04T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple Ostopovice",
+   "url": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb",
+   "description": "Památka sv. Karla Boromejského, biskupa\nÚmysl: za Marii Kiliánovu, rodiče a duše v očistci",
+   "image": "",
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "feed": "farnost-troubsko",
+   "added": "2026-11-01T11:17:11.170Z"
+  },
+  {
    "id": "nezarazene-z5i70h",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -6046,6 +6066,47 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-t6lsf0",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-12-02T17:00:00.000Z",
+   "end": "2026-12-02T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-fhd90",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-02T17:30:00.000Z",
+   "end": "2026-12-02T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-ah6n8y",
    "source": "knihovna",
    "title": "Knihovna dětem",
@@ -6098,6 +6159,47 @@
    "added": "2026-10-08T01:46:05.000Z"
   },
   {
+   "id": "nezarazene-23kdjr",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-06T16:00:00.000Z",
+   "end": "2026-12-06T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-49umy8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-06T18:00:00.000Z",
+   "end": "2026-12-06T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-mrfa59",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)",
@@ -6133,6 +6235,48 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-mcnjny",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-1lwap3v",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
    "id": "knihovna-1b9o4oi",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -6144,6 +6288,47 @@
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
    "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-1fepbq5",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-12-09T17:00:00.000Z",
+   "end": "2026-12-09T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1tzallt",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-09T17:30:00.000Z",
+   "end": "2026-12-09T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ],
@@ -6208,6 +6393,47 @@
    "added": "2026-10-15T20:22:35.004Z"
   },
   {
+   "id": "nezarazene-124fe1l",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-13T16:00:00.000Z",
+   "end": "2026-12-13T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-yb9sgi",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-13T18:00:00.000Z",
+   "end": "2026-12-13T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-1ds5txp",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -6219,6 +6445,47 @@
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-y8rz9p",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-12-16T17:00:00.000Z",
+   "end": "2026-12-16T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1jvsl19",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-16T17:30:00.000Z",
+   "end": "2026-12-16T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ],
@@ -6242,6 +6509,47 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-43lv2n",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-20T16:00:00.000Z",
+   "end": "2026-12-20T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-1cavwt8",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-20T18:00:00.000Z",
+   "end": "2026-12-20T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-l0efdh",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -6253,6 +6561,89 @@
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-1pqulka",
+   "source": "nezarazene",
+   "title": "Svoz pytlového odpadu",
+   "start": "2026-12-22",
+   "end": "2026-12-22",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu",
+   "description": "",
+   "image": "",
+   "icon": "moneybag",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-mxxab3",
+   "source": "nezarazene",
+   "title": "Svoz komunálního odpadu",
+   "start": "2026-12-23",
+   "end": "2026-12-23",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/odpadove-hospodarstvi",
+   "description": "",
+   "image": "",
+   "icon": "trash",
+   "recurring": true,
+   "tagCategories": [
+    "obec"
+   ],
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-18rc5up",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-12-23T17:00:00.000Z",
+   "end": "2026-12-23T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1k4cikh",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-23T17:30:00.000Z",
+   "end": "2026-12-23T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ],
@@ -6323,6 +6714,47 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "nezarazene-1lzp45a",
+   "source": "nezarazene",
+   "title": "Malá kopaná",
+   "start": "2026-12-27T16:00:00.000Z",
+   "end": "2026-12-27T17:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna (venkovní hřiště)",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "Marek Vašák tel. +420 724 063 294 - muži všech věkových kategorií.\n\n #fotbal",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-9erqml",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-27T18:00:00.000Z",
+   "end": "2026-12-27T19:00:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "cvičitelka Ivana Budíková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
    "id": "knihovna-1hodbme",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -6334,6 +6766,47 @@
    "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
    "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
    "recurring": true,
+   "categories": [
+    "sport"
+   ],
+   "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-13no6kx",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-12-30T17:00:00.000Z",
+   "end": "2026-12-30T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-6aq36l",
+   "source": "nezarazene",
+   "title": "Cvičení ženy",
+   "start": "2026-12-30T17:30:00.000Z",
+   "end": "2026-12-30T18:30:00.000Z",
+   "allDay": false,
+   "location": "Sokolovna",
+   "url": "https://www.ostopovice.cz/spolky-a-kluby",
+   "description": "rehabilitační cvičení, cvičitelka Jana Spiříková",
+   "image": "",
+   "icon": "stretching-2",
+   "recurring": true,
+   "tagCategories": [
+    "sport"
+   ],
    "categories": [
     "sport"
    ],

@@ -88,6 +88,18 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-18sbb0f@ostopovice-events
+DTSTAMP:20261101T111711Z
+DTSTART:20261104T170000Z
+DTEND:20261104T180000Z
+SUMMARY:Mše svatá
+LOCATION:Kaple Ostopovice
+DESCRIPTION:Památka sv. Karla Boromejského\, biskupa\nÚmysl: za Marii Ki
+ liánovu\, rodiče a duše v očistci\n\nZdroj: Nezařazené
+URL:https://farnost.troubsko.cz/?q=content/porad-bohosluzeb
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-12cm5u@ostopovice-events
 DTSTAMP:20261024T113431Z
 DTSTART:20261107T113000Z
@@ -150,6 +162,50 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-t6lsf0@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261202T170000Z
+DTEND:20261202T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1fepbq5@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261209T170000Z
+DTEND:20261209T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-y8rz9p@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261216T170000Z
+DTEND:20261216T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-18rc5up@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261223T170000Z
+DTEND:20261223T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-vdnv5i@ostopovice-events
 DTSTAMP:20261008T142643Z
 DTSTART;VALUE=DATE:20261224
@@ -158,5 +214,16 @@ SUMMARY:Betlémské světlo
 LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Církev,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-13no6kx@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261230T170000Z
+DTEND:20261230T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
 END:VEVENT
 END:VCALENDAR
