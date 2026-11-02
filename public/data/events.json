@@ -189,22 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-1dbp0wo",
-   "source": "knihovna",
-   "title": "Velký vlastenecký výlet / projekce a debata s tvůrci",
-   "start": "2025-09-27T16:00:00.000Z",
-   "end": "2025-09-27T18:15:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/velky-vlastenecky-vylet-projekce-a-debata-s-tvurci",
-   "description": "Do války a zase zpět. Na počátku byla zveřejněna výzva: Myslíte si, že válka na Ukrajině je podvod? Že média lžou o počtech mrtvých a dopadech „speciální vojenské operace na Ukrajině“? Přijďte na konkurz a staňte se hrdiny nového filmu.",
-   "image": "https://static.wixstatic.com/media/6e4a73_76fbe4b00ffd42d58fd4540293a43073~mv2.jpg",
-   "categories": [
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "svatky-c8feze",
    "source": "svatky",
    "title": "Den české státnosti",
@@ -4040,22 +4024,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4075,6 +4043,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
