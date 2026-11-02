@@ -189,20 +189,6 @@
  ],
  "events": [
   {
-   "id": "svatky-c8feze",
-   "source": "svatky",
-   "title": "Den české státnosti",
-   "start": "2025-09-28",
-   "end": "2025-09-28",
-   "allDay": true,
-   "location": "",
-   "url": "",
-   "description": "Státní svátek",
-   "image": "",
-   "categories": [],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-1k6zte1",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
