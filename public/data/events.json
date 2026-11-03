@@ -5002,15 +5002,16 @@
   {
    "id": "knihovna-77zcpu",
    "source": "knihovna",
-   "title": "Lit jóga",
+   "title": "ZRUŠENO Lit jóga",
    "start": "2026-11-04T07:30:00.000Z",
    "end": "2026-11-04T08:40:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-04-08-30",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/zruseno-lit-joga-2026-11-04-08-30",
    "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
    "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
    "recurring": true,
+   "cancelled": true,
    "categories": [
     "sport"
    ],
