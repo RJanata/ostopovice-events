@@ -5,7 +5,11 @@
 //   - PLES SENIORŮ                  ← položka = akce (víc položek pod jedním datem = víc akcí)
 //   na Sokolovně                    ← další řádky = popis akce
 //
-// Položky bez konkrétního data („... října 2026“) se přeskočí. Čas („od 16:00“) a známá
+// Novější zápis má název akce rovnou za datem (bez pomlčky), místo za pomlčkou:
+//   6. ledna 2027 | středa Výborová schůze – Knihovna
+//   od 18:00
+//
+// Položky bez konkrétního data („... října 2026“, „_. dubna 2027 | _ …“) se přeskočí. Čas („od 16:00“) a známá
 // místa (source.options.places) se z textu vytáhnou zvlášť.
 import * as cheerio from 'cheerio';
 import { fetchText } from '../lib/http.js';
@@ -14,10 +18,15 @@ import { CZECH_MONTHS, fromPragueTime, isoDay } from '../lib/time.js';
 
 const MONTH_NAMES = Object.keys(CZECH_MONTHS).join('|');
 const DATE_LINE = new RegExp(
-  `^(\\d{1,2})\\.\\s*(?:(?:-|–|až)\\s*(\\d{1,2})\\.\\s*)?(${MONTH_NAMES})\\s+(\\d{4})`, 'i',
+  `^(\\d{1,2})\\.?\\s*(?:(?:-|–|až)\\s*(\\d{1,2})\\.\\s*)?(${MONTH_NAMES})\\s*(\\d{4})`, 'i',
 );
+// termín ještě neurčený: „_. dubna 2027 | _ Seminář…“, „_ srpna 2027 Vycházka…“
+const UNDATED_LINE = new RegExp(`^_+\\.?\\s*(${MONTH_NAMES})\\s*\\d{4}`, 'i');
+// zbytek řádku s datem: „| středa, Výborová schůze – Knihovna“ → oddělovač a malá slova před názvem
+// (den v týdnu i s překlepem, „úterý-pátek“, zbloudilé „v“) pryč
+const AFTER_DATE = /^\s*\|?[\s,]*(?:\p{Ll}+(?:\s*[-–]\s*\p{Ll}+)?(?:[\s,]+|$))*/u;
 const MONTH_HEADING = /^(leden|únor|březen|duben|květen|červen|červenec|srpen|září|říjen|listopad|prosinec)\s+\d{4}\s*$/i;
-const SECTION_BREAK = /^(\*[\s*]*|program na rok.*|průběžně.*)$/i;
+const SECTION_BREAK = /^(\*[\s*]*|_{3,}|program na rok.*|průběžně.*)$/i;
 const TIME = /\bod\s+(\d{1,2})[:.](\d{2})/i;
 
 /** HTML → řádky textu (br a blokové prvky = nový řádek). */
@@ -30,7 +39,7 @@ function htmlToLines(html, selector) {
   return root.text()
     .replace(/ /g, ' ')
     .split('\n')
-    .map((line) => line.replace(/\s+/g, ' ').trim())
+    .map((line) => line.replace(/[​﻿]/g, '').replace(/\s+/g, ' ').trim())
     .filter(Boolean);
 }
 
@@ -51,9 +60,14 @@ export async function fetchEvents(source) {
       const last = dateMatch[2] ? Number(dateMatch[2]) : first;
       date = { start: isoDay(year, month, first), end: isoDay(year, month, last), line };
       current = null;
+      const rest = line.slice(dateMatch[0].length).replace(AFTER_DATE, '');
+      if (/^[\p{Lu}"„]/u.test(rest)) {
+        current = { date, title: rest, details: [] };
+        items.push(current);
+      }
       continue;
     }
-    if (MONTH_HEADING.test(line) || SECTION_BREAK.test(line) || /^\.\.\./.test(line)) {
+    if (MONTH_HEADING.test(line) || SECTION_BREAK.test(line) || UNDATED_LINE.test(line) || /^\.\.\./.test(line)) {
       date = null;
       current = null;
       continue;
@@ -71,10 +85,12 @@ export async function fetchEvents(source) {
     const fullText = [d.line, title, ...details].join('\n');
     const time = fullText.match(TIME);
     const place = places.find((p) => new RegExp(p.match, 'i').test(normalize(fullText)));
-    // z názvu vypustit části, které jsou zvlášť jako místo a čas („…, v Restauraci u Volejníků, od 16:00“)
-    const cleanTitle = tidyTitle(title)
+    const isPlace = (part) => place && new RegExp(place.match, 'i').test(normalize(part));
+    // z názvu vypustit části, které jsou zvlášť jako místo a čas („…, v Restauraci u Volejníků, od 16:00“,
+    // „Ples seniorů – Sokolovna“)
+    const cleanTitle = tidyTitle(tidyTitle(title).replace(/\s+[–-]\s+([^–-]+)$/, (m, tail) => (isPlace(tail) ? '' : m)))
       .split(/,\s*/)
-      .filter((part, i) => i === 0 || !(TIME.test(part) || (place && new RegExp(place.match, 'i').test(normalize(part)))))
+      .filter((part, i) => i === 0 || !(TIME.test(part) || isPlace(part)))
       .join(', ');
     const base = {
       uid: `${source.id}-${d.start}-${normalize(cleanTitle).replace(/[^a-z0-9]+/g, '-').slice(0, 60)}`,

@@ -99,8 +99,8 @@
       "icon": "seniori.svg",
       "color": "#6b4ea0",
       "type": "text-program",
-      "url": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
-      "link": "https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html",
+      "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
+      "link": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
       "categories": [
         "seniori"
       ],
@@ -122,7 +122,7 @@
           }
         ]
       },
-      "$comment": "Program je prostý text (datum | den, pod tím položky s pomlčkou). Při změně roku je potřeba upravit url na program-<rok>.html.",
+      "$comment": "Program je prostý text (datum | den, pod tím položky s pomlčkou). Stránka obsahuje program na víc let (nový rok nahoře, starší pod ním).",
       "excludeCategories": [
         "deti"
       ]
