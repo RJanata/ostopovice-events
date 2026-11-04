@@ -8,18 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:seniori-s31w59@ostopovice-events
-DTSTAMP:20261008T014605Z
-DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20260905
-SUMMARY:Čtyřdenní zájezd „Jizerské hory“\, ubytování v Amantis V
- ital Sport Hotel
-DESCRIPTION:Náročnější turistika s poznávacím\, relaxačním program
- em\,\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program-2026.html
-CATEGORIES:Senioři,Sport,Kultura
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-5wtuq2@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20260915T160000Z
