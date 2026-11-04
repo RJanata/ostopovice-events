@@ -1143,6 +1143,18 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-1vbx2le@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Jednodenní zájezd – Jesenicko
+DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
+ ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
+ Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Sport,Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270530
@@ -1165,5 +1177,19 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-nb1gk6@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270911
+SUMMARY:Čtyřdenní zájezd – Karlovarsko
+DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
+ raďoch"\, nebo "Soos"\nBečov nad Teplou – zámek\, relikviář\, botan
+ ická zahrada\; hrad Loket\nCheb: podzemní vřídelní kolonády\; Karlov
+ y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
+ ázně\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Sport,Kultura,Vzdělávání
 END:VEVENT
 END:VCALENDAR
