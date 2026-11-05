@@ -3364,8 +3364,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3449,8 +3449,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3466,8 +3466,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3621,8 +3621,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3638,8 +3638,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -3993,6 +3993,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4012,22 +4028,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5133,8 +5133,8 @@
     "kultura",
     "cirkev"
    ],
-   "added": "2026-10-23T15:06:27.836Z",
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
+   "added": "2026-10-23T15:06:27.836Z"
   },
   {
    "id": "nezarazene-813om6",
@@ -5170,13 +5170,13 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-21T20:11:20.860Z",
    "note": "Kerak prčiška vykóřili s vlčmenem; Kaizrova novodurová šolna; Baldo, z pytloša aus!; Šípkatá Růža; Vo dvanácti moncnech.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-hantecu/szuvvny/",
    "originalTitle": "Pozvánka na Pohádky v hantecu",
    "originalLocation": "",
    "originalStart": "2026-11-08",
    "originalEnd": "2026-11-08",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-21T20:11:20.860Z"
   },
   {
    "id": "nezarazene-xpp5tx",
@@ -5258,8 +5258,8 @@
     "seniori",
     "obec"
    ],
-   "added": "2026-10-08T14:26:43.000Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-6n99bx",
@@ -6860,8 +6860,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "knihovna-1ulvu99",
@@ -6982,8 +6982,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-151pfly",
@@ -7071,8 +7071,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "svatky-anz2ks",
@@ -7116,8 +7116,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-1vg2pxf",
@@ -7361,8 +7361,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "svatky-1jy7eop",
@@ -7493,8 +7493,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1xl367q",
@@ -7608,8 +7608,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -7644,8 +7644,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-nb1gk6",
@@ -7678,8 +7678,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "svatky-179n2hh",
@@ -7730,8 +7730,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-8mppx6",
@@ -7782,8 +7782,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-13wrk4h",
@@ -7846,8 +7846,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-ucaasa",
