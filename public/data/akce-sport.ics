@@ -1152,7 +1152,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura
+CATEGORIES:Sport,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
@@ -1190,6 +1190,6 @@ DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
  y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
  ázně\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura,Vzdělávání
+CATEGORIES:Sport,Senioři
 END:VEVENT
 END:VCALENDAR

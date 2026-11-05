@@ -199,17 +199,6 @@ URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-6n99bx@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART:20261110T150000Z
-DTEND:20261110T150000Z
-SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 16:00\, pořádá OÚ\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:seniori-1gew74x@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20261111T150000Z
@@ -419,18 +408,6 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-1vbx2le@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART;VALUE=DATE:20270527
-DTEND;VALUE=DATE:20270528
-SUMMARY:Jednodenní zájezd – Jesenicko
-DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
- ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
- Zdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura
-END:VEVENT
-BEGIN:VEVENT
 UID:pripravovane-1xl367q@ostopovice-events
 DTSTAMP:20261008T143306Z
 DTSTART;VALUE=DATE:20270611
@@ -459,20 +436,6 @@ SUMMARY:Velká letní noc
 LOCATION:U Tří Bříz
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura
-END:VEVENT
-BEGIN:VEVENT
-UID:seniori-nb1gk6@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART;VALUE=DATE:20270907
-DTEND;VALUE=DATE:20270911
-SUMMARY:Čtyřdenní zájezd – Karlovarsko
-DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
- raďoch"\, nebo "Soos"\nBečov nad Teplou – zámek\, relikviář\, botan
- ická zahrada\; hrad Loket\nCheb: podzemní vřídelní kolonády\; Karlov
- y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
- ázně\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-s79oyy@ostopovice-events

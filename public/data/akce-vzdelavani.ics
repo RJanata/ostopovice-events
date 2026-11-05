@@ -214,17 +214,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-6n99bx@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART:20261110T150000Z
-DTEND:20261110T150000Z
-SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 16:00\, pořádá OÚ\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:skola-12aeqy8@ostopovice-events
 DTSTAMP:20261027T204348Z
 DTSTART:20261119T170000Z
@@ -318,19 +307,5 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
  1-11-10-00
 CATEGORIES:Pro děti,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
-UID:seniori-nb1gk6@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART;VALUE=DATE:20270907
-DTEND;VALUE=DATE:20270911
-SUMMARY:Čtyřdenní zájezd – Karlovarsko
-DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
- raďoch"\, nebo "Soos"\nBečov nad Teplou – zámek\, relikviář\, botan
- ická zahrada\; hrad Loket\nCheb: podzemní vřídelní kolonády\; Karlov
- y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
- ázně\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura,Vzdělávání
 END:VEVENT
 END:VCALENDAR

@@ -18,16 +18,6 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
 BEGIN:VEVENT
-UID:pripravovane-1ug0pvk@ostopovice-events
-DTSTAMP:20261008T142643Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
-SUMMARY:Beseda\, setkání a oslava významných jubileí seniorů
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Pořádá obecní úřad\n\nZdroj: Připravované akce
-CATEGORIES:Senioři,Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:seniori-6n99bx@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20261110T150000Z
@@ -36,7 +26,7 @@ SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
 LOCATION:Knihovna Ostopovice
 DESCRIPTION:od 16:00\, pořádá OÚ\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Vzdělávání
+CATEGORIES:Senioři,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1gew74x@ostopovice-events
@@ -151,7 +141,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura
+CATEGORIES:Sport,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-yzooia@ostopovice-events
@@ -186,7 +176,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
  y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
  ázně\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura,Vzdělávání
+CATEGORIES:Sport,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-13wrk4h@ostopovice-events
