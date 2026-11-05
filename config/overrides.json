@@ -30,7 +30,10 @@
       "categories": [
         "seniori",
         "obec"
-      ]
+      ],
+      "hidden": true,
+      "editedBy": "Radek",
+      "editedAt": "2026-11-05T01:04:08.616Z"
     },
     "obec-9vrr4f": {
       "long": true,
