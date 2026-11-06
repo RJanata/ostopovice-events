@@ -3993,6 +3993,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4012,22 +4028,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5118,6 +5118,22 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "obec-1nlzqnq",
+   "source": "obec",
+   "title": "Den věnovaný památce MUDr. Alfonce Sovadiny",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/den-venovany-pamatce-mudr-alfonce-sovadiny",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047067",
+   "categories": [
+    "obec"
+   ],
+   "added": "2026-11-06T17:25:51.053Z"
+  },
+  {
    "id": "nezarazene-12cm5u",
    "source": "nezarazene",
    "title": "Mše svatá",
@@ -5502,6 +5518,23 @@
    "added": "2026-10-28T09:38:45.482Z"
   },
   {
+   "id": "obec-3uu75f",
+   "source": "obec",
+   "title": "Oslavy 17. listopadu - lampionový průvod",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-pruvod",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047079",
+   "categories": [
+    "kultura",
+    "deti"
+   ],
+   "added": "2026-11-06T17:25:51.053Z"
+  },
+  {
    "id": "svatky-1nmjbe3",
    "source": "svatky",
    "title": "Den boje za svobodu a demokracii",
@@ -5797,6 +5830,23 @@
    "added": "2026-10-30T20:49:18.688Z"
   },
   {
+   "id": "obec-1gjirkj",
+   "source": "obec",
+   "title": "Adventní dílna",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047075",
+   "categories": [
+    "kultura",
+    "vzdelavani"
+   ],
+   "added": "2026-11-06T17:25:51.053Z"
+  },
+  {
    "id": "nezarazene-18htyay",
    "source": "nezarazene",
    "title": "Svoz komunálního odpadu",
@@ -5816,26 +5866,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1uclek6",
@@ -5858,6 +5888,26 @@
     "obec"
    ],
    "added": "2026-11-06T10:48:43.168Z"
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -7427,21 +7477,22 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
-   "id": "seniori-1vbx2le",
+   "id": "seniori-1fcxmvf",
    "source": "seniori",
    "title": "Jednodenní zájezd – Jesenicko",
-   "start": "2027-05-27",
-   "end": "2027-05-27",
+   "start": "2027-05-20",
+   "end": "2027-05-20",
    "allDay": true,
    "location": "",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
    "description": "poznávací zájezd s turistikou\nLázně Lipová: Schrothovy lázně, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd",
    "image": "",
    "categories": [
+    "seniori",
     "sport",
-    "seniori"
+    "kultura"
    ],
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-06T17:25:51.053Z"
   },
   {
    "id": "sokol-4qn92v",

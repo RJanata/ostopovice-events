@@ -1117,16 +1117,16 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-1vbx2le@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART;VALUE=DATE:20270527
-DTEND;VALUE=DATE:20270528
+UID:seniori-1fcxmvf@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
 SUMMARY:Jednodenní zájezd – Jesenicko
 DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Sport,Senioři
+CATEGORIES:Senioři,Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events

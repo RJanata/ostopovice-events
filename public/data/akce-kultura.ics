@@ -210,6 +210,17 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-3uu75f@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Oslavy 17. listopadu - lampionový průvod
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
+ pruvod
+CATEGORIES:Kultura,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1ixvp6o@ostopovice-events
 DTSTAMP:20261106T110138Z
 DTSTART:20261117T160000Z
@@ -271,6 +282,16 @@ DESCRIPTION:Vláda chce zrušit poplatky a financovat ČT a ČRo ze státn
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  aka-verejnopravni-media-chceme-mit-debata
 CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-1gjirkj@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Adventní dílna
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
+CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-7mr33r@ostopovice-events
@@ -411,6 +432,18 @@ DTEND;VALUE=DATE:20270516
 SUMMARY:Folklórní soubor Háječek: Vystoupení v Židlochovicích
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1fcxmvf@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:Jednodenní zájezd – Jesenicko
+DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
+ ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
+ Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1xl367q@ostopovice-events

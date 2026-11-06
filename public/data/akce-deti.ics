@@ -315,6 +315,17 @@ URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-3uu75f@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Oslavy 17. listopadu - lampionový průvod
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
+ pruvod
+CATEGORIES:Kultura,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1ixvp6o@ostopovice-events
 DTSTAMP:20261106T110138Z
 DTSTART:20261117T160000Z

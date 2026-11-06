@@ -270,6 +270,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Senioři,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1gjirkj@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Adventní dílna
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-11719fd@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20261126T170000Z

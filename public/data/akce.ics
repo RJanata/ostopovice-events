@@ -463,18 +463,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -486,6 +474,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1192,6 +1192,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1nlzqnq@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Den věnovaný památce MUDr. Alfonce Sovadiny
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/den-venovany-pamatce-mudr-alfon
+ ce-sovadiny
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-12cm5u@ostopovice-events
 DTSTAMP:20261024T113431Z
 DTSTART:20261107T113000Z
@@ -1431,6 +1442,17 @@ URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-3uu75f@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Oslavy 17. listopadu - lampionový průvod
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
+ pruvod
+CATEGORIES:Kultura,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1ixvp6o@ostopovice-events
 DTSTAMP:20261106T110138Z
 DTSTART:20261117T160000Z
@@ -1636,6 +1658,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1gjirkj@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Adventní dílna
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261125
@@ -1644,17 +1676,6 @@ SUMMARY:Svoz komunálního odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
@@ -1668,6 +1689,17 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
@@ -2529,16 +2561,16 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-1vbx2le@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART;VALUE=DATE:20270527
-DTEND;VALUE=DATE:20270528
+UID:seniori-1fcxmvf@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
 SUMMARY:Jednodenní zájezd – Jesenicko
 DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Sport,Senioři
+CATEGORIES:Senioři,Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
