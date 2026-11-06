@@ -3993,6 +3993,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4012,22 +4028,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5793,43 +5793,6 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
-   "id": "pripravovane-1y0eeei",
-   "source": "pripravovane",
-   "title": "Adventní dílna",
-   "start": "2026-11-25",
-   "end": "2026-11-25",
-   "allDay": true,
-   "location": "Knihovna Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "icon": "christmas-tree",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-08T14:26:43.000Z"
-  },
-  {
-   "id": "knihovna-1quan1r",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-11-25T07:30:00.000Z",
-   "end": "2026-11-25T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-25-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "nezarazene-1lcdi2k",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -5848,6 +5811,27 @@
     "cirkev"
    ],
    "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1uclek6",
+   "source": "nezarazene",
+   "title": "Adventní dílna s Monikou Stoklasovou",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna Ostopovice",
+   "url": "https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqaenoPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l",
+   "description": "Výroiba adventních věnců a vánočních dekorací. Nutná rezervace. Více informací na odkaze.",
+   "image": "",
+   "tagCategories": [
+    "deti",
+    "obec"
+   ],
+   "categories": [
+    "deti",
+    "obec"
+   ],
+   "added": "2026-11-06T10:48:43.168Z"
   },
   {
    "id": "nezarazene-1p8xtg0",

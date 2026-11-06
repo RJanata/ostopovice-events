@@ -353,14 +353,17 @@ URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:pripravovane-1y0eeei@ostopovice-events
-DTSTAMP:20261008T142643Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Adventní dílna
+UID:nezarazene-1uclek6@ostopovice-events
+DTSTAMP:20261106T104843Z
+DTSTART:20261125T170000Z
+DTEND:20261125T170000Z
+SUMMARY:Adventní dílna s Monikou Stoklasovou
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti
+DESCRIPTION:Výroiba adventních věnců a vánočních dekorací. Nutná r
+ ezervace. Více informací na odkaze.\n\nZdroj: Nezařazené
+URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
+ noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
+CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1lwh7mo@ostopovice-events

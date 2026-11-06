@@ -8,18 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:sokol-1mw20ur@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260906T130000Z
-DTEND:20260906T141500Z
-SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Pod
- lázky
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Výsledek: 13:13\n\nZdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-s3etba@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260907T170000Z
@@ -475,18 +463,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -498,6 +474,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1643,30 +1631,6 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:pripravovane-1y0eeei@ostopovice-events
-DTSTAMP:20261008T142643Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Adventní dílna
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-1quan1r@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261125T073000Z
-DTEND:20261125T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-11-25-08-30
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-1lcdi2k@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261125T170000Z
@@ -1676,6 +1640,19 @@ LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1uclek6@ostopovice-events
+DTSTAMP:20261106T104843Z
+DTSTART:20261125T170000Z
+DTEND:20261125T170000Z
+SUMMARY:Adventní dílna s Monikou Stoklasovou
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:Výroiba adventních věnců a vánočních dekorací. Nutná r
+ ezervace. Více informací na odkaze.\n\nZdroj: Nezařazené
+URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
+ noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
+CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
