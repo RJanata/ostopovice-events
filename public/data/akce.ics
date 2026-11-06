@@ -463,18 +463,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -486,6 +474,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1302,7 +1302,8 @@ DTSTART:20261110T150000Z
 DTEND:20261110T150000Z
 SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 16:00\, pořádá OÚ\n\nZdroj: Klub seniorů
+DESCRIPTION:od 16:00\, pořádá OÚ\, jen pro předem přihlášené senio
+ ry s doprovodem\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Obec
 END:VEVENT
