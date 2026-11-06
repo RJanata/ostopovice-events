@@ -169,16 +169,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-4hqvxt@ostopovice-events
-DTSTAMP:20261106T105944Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261121
-SUMMARY:Výstava Charta 77
-LOCATION:Stodola ZŠ/MŠ Ostopovice
-DESCRIPTION:Zdroj: Nezařazené
-CATEGORIES:Kultura
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-1clu6op@ostopovice-events
 DTSTAMP:20261023T150627Z
 DTSTART:20261107T130000Z
@@ -248,7 +238,7 @@ DESCRIPTION:Film Karla Strachoty přibližuje občanskou iniciativu Charta
  é vzpomínky a komentáře.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
  harta-77-souhlasim-s-prohlasenim-mesic-pribehu-bezpravi
-CATEGORIES:Kultura
+CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-5a999r@ostopovice-events

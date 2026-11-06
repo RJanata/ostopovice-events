@@ -93,6 +93,16 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-4hqvxt@ostopovice-events
+DTSTAMP:20261106T105944Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261121
+SUMMARY:Výstava Charta 77
+LOCATION:Stodola ZŠ/MŠ Ostopovice
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Vzdělávání,Obec,Ostatní
+END:VEVENT
+BEGIN:VEVENT
 UID:obec-grt4yg@ostopovice-events
 DTSTAMP:20261027T105844Z
 DTSTART:20261104T170000Z

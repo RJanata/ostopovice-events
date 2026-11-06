@@ -20,4 +20,14 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
 END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-4hqvxt@ostopovice-events
+DTSTAMP:20261106T105944Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261121
+SUMMARY:Výstava Charta 77
+LOCATION:Stodola ZŠ/MŠ Ostopovice
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Vzdělávání,Obec,Ostatní
+END:VEVENT
 END:VCALENDAR
