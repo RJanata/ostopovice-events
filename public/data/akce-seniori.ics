@@ -78,6 +78,17 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-16gptxx@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270106T170000Z
+DTEND:20270106T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-ea44zn@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20270123T150000Z
@@ -87,6 +98,17 @@ LOCATION:Sokolovna
 DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1j75oo5@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270203T170000Z
+DTEND:20270203T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-bqtjo2@ostopovice-events
@@ -111,6 +133,28 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-1q4rwib@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270319T170000Z
+DTEND:20270319T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1qf2qen@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270407T170000Z
+DTEND:20270407T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-1vg2pxf@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART;VALUE=DATE:20270408
@@ -132,6 +176,17 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-g6tg2g@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270505T170000Z
+DTEND:20270505T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-1fcxmvf@ostopovice-events
 DTSTAMP:20261106T172551Z
 DTSTART;VALUE=DATE:20270520
@@ -142,6 +197,17 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Sport,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-cwa9ta@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270602T170000Z
+DTEND:20270602T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-yzooia@ostopovice-events
@@ -165,6 +231,28 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-1qudqt8@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270707T170000Z
+DTEND:20270707T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-dtpt1i@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270804T170000Z
+DTEND:20270804T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-nb1gk6@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART;VALUE=DATE:20270907
@@ -177,6 +265,39 @@ DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
  ázně\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Sport,Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1uwom65@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270915T170000Z
+DTEND:20270915T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-19rprkz@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20271006T160000Z
+DTEND:20271006T160000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-13xbtsl@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20271103T170000Z
+DTEND:20271103T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-13wrk4h@ostopovice-events
@@ -197,6 +318,17 @@ DTEND:20271112T150000Z
 SUMMARY:Martinské posezení
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1394qxk@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20271201T170000Z
+DTEND:20271201T170000Z
+SUMMARY:Výborová schůze
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT

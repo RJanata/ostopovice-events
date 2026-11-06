@@ -3993,22 +3993,6 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
-  },
-  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -4028,6 +4012,22 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -6920,7 +6920,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7042,7 +7042,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7131,7 +7131,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7176,7 +7176,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7421,7 +7421,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7554,7 +7554,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7669,7 +7669,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7705,7 +7705,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7739,7 +7739,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7791,7 +7791,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7843,7 +7843,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -7907,7 +7907,7 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
+   "hidden": false,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
