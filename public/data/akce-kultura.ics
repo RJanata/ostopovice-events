@@ -331,6 +331,53 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura,Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-ldca5v@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261203T170000Z
+DTEND:20261203T190000Z
+SUMMARY:Jaroslav Pulicar: V zimě
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vernisáž výstavy brněnského momentního fotografa Jaroslav
+ a Pulicara\, jednoho z nejvýraznějších českých dokumentaristů\, kte
+ rý v roce 2021 obdržel cenu Osobnost české fotografie Asociace profesi
+ onálních fotografů. Součástí večera je koncert Horňácké muziky P
+ etra Mičky.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ aroslav-pulicar-v-zime
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1yrslfp@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261206T150000Z
+DTEND:20261206T170000Z
+SUMMARY:Vánoční Zpívárium / hlasový workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Účastníci workshopu s Evou Kratochvílovou se dotknou zákla
+ dů pěvecké techniky\, cesty k autentickému hlasovému projevu a improv
+ izace. Zazpívají si několik vánočních koled\, a když budou mít ch
+ uť\, hned večer se s připojí ke koncertu za doprovodu cimbálu.\n\nZd
+ roj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
+ anocni-zpivarium-hlasovy-workshop-2
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-f6s4y4@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261206T173000Z
+DTEND:20261206T190000Z
+SUMMARY:Zpívárium: Koledy / adventní koncert
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
+ ších a současně méně známých českých\, moravských a slezských 
+ koled v originálních aranžích zazpívá Eva Kratochvílová a účastn
+ íci dílny Zpívárium.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
+ pivarium-koledy-adventni-koncert
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-14ym9v0@ostopovice-events
 DTSTAMP:20261008T142643Z
 DTSTART;VALUE=DATE:20261211
@@ -349,6 +396,37 @@ SUMMARY:Folklórní soubor Háječek a Glonárky: Vánoční koledy
 DESCRIPTION:Vystoupení dětí a ostopovických žen.\n\nZdroj: Připravova
  né akce
 CATEGORIES:Kultura,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-8ulhgu@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261215T170000Z
+DTEND:20261215T183000Z
+SUMMARY:Vánoce známé neznámé / přednáška
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Označení Vánoce se často používá pro širší čas zahrn
+ ující dobu adventu\, vánočních svátků i následujícího období a
+ ž do svátku Tří králů nebo dokonce Hromnice. Celé toto období v so
+ bě nese určité kouzlo spojené s narozením Ježíše Krista\, ať už 
+ jsme věřící či nikoliv.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
+ anoce-zname-nezname-prednaska
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-fb3yam@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261219T090000Z
+DTEND:20261219T110000Z
+SUMMARY:Terapeutická jóga s Klárou / workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Poslední jógový workshop roku 2026 v době zimního slunovra
+ tu\, čase ztišení\, oslav návratu světla a vnitřní reflexe. Pomalá
+  praxe a hluboké protažení zaměřené na močový měchýř\, pánev a
+  emoce.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ erapeuticka-joga-s-klarou-workshop-3
+CATEGORIES:Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-133uvg@ostopovice-events

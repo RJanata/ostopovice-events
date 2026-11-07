@@ -312,6 +312,21 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Kultura,Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-f6s4y4@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261206T173000Z
+DTEND:20261206T190000Z
+SUMMARY:Zpívárium: Koledy / adventní koncert
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
+ ších a současně méně známých českých\, moravských a slezských 
+ koled v originálních aranžích zazpívá Eva Kratochvílová a účastn
+ íci dílny Zpívárium.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
+ pivarium-koledy-adventni-koncert
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-mrfa59@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261207T090000Z
@@ -327,6 +342,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  2-07-10-00
 CATEGORIES:Pro děti,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-8ulhgu@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261215T170000Z
+DTEND:20261215T183000Z
+SUMMARY:Vánoce známé neznámé / přednáška
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Označení Vánoce se často používá pro širší čas zahrn
+ ující dobu adventu\, vánočních svátků i následujícího období a
+ ž do svátku Tří králů nebo dokonce Hromnice. Celé toto období v so
+ bě nese určité kouzlo spojené s narozením Ježíše Krista\, ať už 
+ jsme věřící či nikoliv.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
+ anoce-zname-nezname-prednaska
+CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1ulvu99@ostopovice-events

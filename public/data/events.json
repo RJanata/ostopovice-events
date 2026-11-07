@@ -189,22 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-4rhw5z",
-   "source": "knihovna",
-   "title": "Anna a Jordan Rathkopf: Sami spolu / vernisáž",
-   "start": "2025-10-02T15:00:00.000Z",
-   "end": "2025-10-02T18:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/anna-a-jordan-rathkopf-sami-spolu-vernisaz",
-   "description": "HER2: Spolu, a přece sami je autobiografický vizuální příběh Anny a Jordana Rathkopfových, který vznikl v reakci na Anninu diagnózu HER2-pozitivní rakoviny prsu ve věku 37 let. Během sedmi let dokumentovali svůj život prostřednictvím fotografií včetně kreseb a snímků jejich malého syna Jesseho (...)",
-   "image": "https://static.wixstatic.com/media/6e4a73_6b36785e074a4aa38304e15a85ffb434~mv2.jpg",
-   "categories": [
-    "kultura"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-13rw3ml",
    "source": "knihovna",
    "title": "Štěpán Javůrek / beseda se spisovatelem",
@@ -5868,6 +5852,26 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -5888,26 +5892,6 @@
     "obec"
    ],
    "added": "2026-11-06T10:48:43.168Z"
-  },
-  {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -6173,6 +6157,22 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "knihovna-ldca5v",
+   "source": "knihovna",
+   "title": "Jaroslav Pulicar: V zimě",
+   "start": "2026-12-03T17:00:00.000Z",
+   "end": "2026-12-03T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/jaroslav-pulicar-v-zime",
+   "description": "Vernisáž výstavy brněnského momentního fotografa Jaroslava Pulicara, jednoho z nejvýraznějších českých dokumentaristů, který v roce 2021 obdržel cenu Osobnost české fotografie Asociace profesionálních fotografů. Součástí večera je koncert Horňácké muziky Petra Mičky.",
+   "image": "https://static.wixstatic.com/media/6e4a73_545debd70c224cf59a260ab264ace6c6~mv2.jpg",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-11-07T11:05:25.278Z"
+  },
+  {
    "id": "pripravovane-1tyoqhk",
    "source": "pripravovane",
    "title": "Mikulášská nadílka",
@@ -6208,6 +6208,22 @@
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
+   "id": "knihovna-1yrslfp",
+   "source": "knihovna",
+   "title": "Vánoční Zpívárium / hlasový workshop",
+   "start": "2026-12-06T15:00:00.000Z",
+   "end": "2026-12-06T17:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/vanocni-zpivarium-hlasovy-workshop-2",
+   "description": "Účastníci workshopu s Evou Kratochvílovou se dotknou základů pěvecké techniky, cesty k autentickému hlasovému projevu a improvizace. Zazpívají si několik vánočních koled, a když budou mít chuť, hned večer se s připojí ke koncertu za doprovodu cimbálu.",
+   "image": "https://static.wixstatic.com/media/6e4a73_78d31346db27448ebcfabf0e0f703531~mv2.jpeg",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-11-07T11:05:25.278Z"
+  },
+  {
    "id": "nezarazene-23kdjr",
    "source": "nezarazene",
    "title": "Malá kopaná",
@@ -6226,6 +6242,23 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "knihovna-f6s4y4",
+   "source": "knihovna",
+   "title": "Zpívárium: Koledy / adventní koncert",
+   "start": "2026-12-06T17:30:00.000Z",
+   "end": "2026-12-06T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/zpivarium-koledy-adventni-koncert",
+   "description": "Vánoční koncert opřený o ojedinělý výběr nejkrásnějších a současně méně známých českých, moravských a slezských koled v originálních aranžích zazpívá Eva Kratochvílová a účastníci dílny Zpívárium.",
+   "image": "https://static.wixstatic.com/media/6e4a73_9aa3664a3daa442093ba079aca275ebc~mv2.jpeg",
+   "categories": [
+    "kultura",
+    "vzdelavani"
+   ],
+   "added": "2026-11-07T11:05:25.278Z"
   },
   {
    "id": "nezarazene-49umy8",
@@ -6500,6 +6533,23 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "knihovna-8ulhgu",
+   "source": "knihovna",
+   "title": "Vánoce známé neznámé / přednáška",
+   "start": "2026-12-15T17:00:00.000Z",
+   "end": "2026-12-15T18:30:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/vanoce-zname-nezname-prednaska",
+   "description": "Označení Vánoce se často používá pro širší čas zahrnující dobu adventu, vánočních svátků i následujícího období až do svátku Tří králů nebo dokonce Hromnice. Celé toto období v sobě nese určité kouzlo spojené s narozením Ježíše Krista, ať už jsme věřící či nikoliv.",
+   "image": "https://static.wixstatic.com/media/98260f9c1a464c28b2c4a55fd47b64da.jpg",
+   "categories": [
+    "kultura",
+    "vzdelavani"
+   ],
+   "added": "2026-11-07T11:05:25.278Z"
+  },
+  {
    "id": "nezarazene-y8rz9p",
    "source": "nezarazene",
    "title": "Bohoslužba: Mše svatá",
@@ -6556,6 +6606,23 @@
     "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
+  },
+  {
+   "id": "knihovna-fb3yam",
+   "source": "knihovna",
+   "title": "Terapeutická jóga s Klárou / workshop",
+   "start": "2026-12-19T09:00:00.000Z",
+   "end": "2026-12-19T11:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/terapeuticka-joga-s-klarou-workshop-3",
+   "description": "Poslední jógový workshop roku 2026 v době zimního slunovratu, čase ztišení, oslav návratu světla a vnitřní reflexe. Pomalá praxe a hluboké protažení zaměřené na močový měchýř, pánev a emoce.",
+   "image": "https://static.wixstatic.com/media/6e4a73_4d2d3b8816954a23bb240841b8ab23c9~mv2.jpg",
+   "categories": [
+    "sport",
+    "kultura"
+   ],
+   "added": "2026-11-07T11:05:25.278Z"
   },
   {
    "id": "nezarazene-43lv2n",

@@ -8,22 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-s3etba@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260907T170000Z
-DTEND:20260907T180000Z
-SUMMARY:Pilates & zdravá záda
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
- kou Marií Pražákovou. Cena za lekci je 100\,-\, prosíme o platbu v hot
- ovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezen
- á\, prosíme nejlépe o rezervaci místa předem vyplněním formuláře 
- zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
- ilates-zdrava-zada-2026-09-07-19-00
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-hzf2nk@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20260908T160000Z
@@ -1679,6 +1663,17 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
 DTSTAMP:20261106T104843Z
 DTSTART:20261125T170000Z
@@ -1690,17 +1685,6 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
@@ -1886,6 +1870,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-ldca5v@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261203T170000Z
+DTEND:20261203T190000Z
+SUMMARY:Jaroslav Pulicar: V zimě
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vernisáž výstavy brněnského momentního fotografa Jaroslav
+ a Pulicara\, jednoho z nejvýraznějších českých dokumentaristů\, kte
+ rý v roce 2021 obdržel cenu Osobnost české fotografie Asociace profesi
+ onálních fotografů. Součástí večera je koncert Horňácké muziky P
+ etra Mičky.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
+ aroslav-pulicar-v-zime
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-1tyoqhk@ostopovice-events
 DTSTAMP:20261008T002925Z
 DTSTART;VALUE=DATE:20261205
@@ -1907,6 +1907,22 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-1yrslfp@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261206T150000Z
+DTEND:20261206T170000Z
+SUMMARY:Vánoční Zpívárium / hlasový workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Účastníci workshopu s Evou Kratochvílovou se dotknou zákla
+ dů pěvecké techniky\, cesty k autentickému hlasovému projevu a improv
+ izace. Zazpívají si několik vánočních koled\, a když budou mít ch
+ uť\, hned večer se s připojí ke koncertu za doprovodu cimbálu.\n\nZd
+ roj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
+ anocni-zpivarium-hlasovy-workshop-2
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-23kdjr@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261206T160000Z
@@ -1917,6 +1933,21 @@ DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-f6s4y4@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261206T173000Z
+DTEND:20261206T190000Z
+SUMMARY:Zpívárium: Koledy / adventní koncert
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
+ ších a současně méně známých českých\, moravských a slezských 
+ koled v originálních aranžích zazpívá Eva Kratochvílová a účastn
+ íci dílny Zpívárium.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
+ pivarium-koledy-adventni-koncert
+CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-49umy8@ostopovice-events
@@ -2095,6 +2126,22 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-8ulhgu@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261215T170000Z
+DTEND:20261215T183000Z
+SUMMARY:Vánoce známé neznámé / přednáška
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Označení Vánoce se často používá pro širší čas zahrn
+ ující dobu adventu\, vánočních svátků i následujícího období a
+ ž do svátku Tří králů nebo dokonce Hromnice. Celé toto období v so
+ bě nese určité kouzlo spojené s narozením Ježíše Krista\, ať už 
+ jsme věřící či nikoliv.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
+ anoce-zname-nezname-prednaska
+CATEGORIES:Kultura,Vzdělávání
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-y8rz9p@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261216T170000Z
@@ -2132,6 +2179,21 @@ DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  nihovna-detem-2026-12-17-15-00
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-fb3yam@ostopovice-events
+DTSTAMP:20261107T110525Z
+DTSTART:20261219T090000Z
+DTEND:20261219T110000Z
+SUMMARY:Terapeutická jóga s Klárou / workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Poslední jógový workshop roku 2026 v době zimního slunovra
+ tu\, čase ztišení\, oslav návratu světla a vnitřní reflexe. Pomalá
+  praxe a hluboké protažení zaměřené na močový měchýř\, pánev a
+  emoce.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ erapeuticka-joga-s-klarou-workshop-3
+CATEGORIES:Sport,Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-43lv2n@ostopovice-events
