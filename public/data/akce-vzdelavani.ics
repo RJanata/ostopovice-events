@@ -8,23 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-hzf2nk@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260908T160000Z
-DTEND:20260908T173000Z
-SUMMARY:Exoti - Příběhy lidí\, kteří vyčnívali z řady / beseda s B
- arborou Šťastnou
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Jaké to je\, být jiný než ostatní ve světě\, kde konform
- ita je klíčem k úspěchu? Být jedinou svobodnou matkou ve městě\, ml
- uvit doma jinou řečí než ve škole\, milovat člověka stejného pohla
- ví\, chodit do kostela\, když ostatní jenom sedí u televize?\n\nZdroj:
-  Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
- xoti-pribehy-lidi-kteri-vycnivali-z-rady-beseda-s-barborou-stastnou
-CATEGORIES:Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-sio3ig@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260914T080000Z
