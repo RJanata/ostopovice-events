@@ -430,18 +430,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -453,6 +441,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1205,8 +1205,9 @@ DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20270101
 SUMMARY:Výstava obrazů: Pavel Pospíšil alias Baroch
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:link:https://www.facebook.com/groups/1140666252706973/posts/289
- 29338560079702/\n\nZdroj: Nezařazené
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.facebook.com/groups/1140666252706973/posts/2892933856007970
+ 2/
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
@@ -1668,17 +1669,6 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
 DTSTAMP:20261106T104843Z
 DTSTART:20261125T170000Z
@@ -1690,6 +1680,17 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events

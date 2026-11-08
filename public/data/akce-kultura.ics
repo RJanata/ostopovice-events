@@ -191,8 +191,9 @@ DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20270101
 SUMMARY:Výstava obrazů: Pavel Pospíšil alias Baroch
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:link:https://www.facebook.com/groups/1140666252706973/posts/289
- 29338560079702/\n\nZdroj: Nezařazené
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.facebook.com/groups/1140666252706973/posts/2892933856007970
+ 2/
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
