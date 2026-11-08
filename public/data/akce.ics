@@ -1199,6 +1199,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Kultura,Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1twvpnd@ostopovice-events
+DTSTAMP:20261108T214556Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20270101
+SUMMARY:Výstava obrazů: Pavel Pospíšil alias Baroch
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:link:https://www.facebook.com/groups/1140666252706973/posts/289
+ 29338560079702/\n\nZdroj: Nezařazené
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-813om6@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261108T160000Z
@@ -1368,6 +1379,16 @@ DTEND;VALUE=DATE:20261114
 SUMMARY:Uzávěrka příspěvků do Zpravodaje 26/4
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1q8gof4@ostopovice-events
+DTSTAMP:20261108T214556Z
+DTSTART:20261113T180000Z
+DTEND:20261113T180000Z
+SUMMARY:Vechtrovna: Hudební večer – BG JAM\, D.U.H.A Band
+DESCRIPTION:Folk\, bluegrass\, blues\, jazz.\nRezervace na 725 015 013\n\nZ
+ droj: Nezařazené
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-dn14b9@ostopovice-events
@@ -1647,6 +1668,17 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
 DTSTAMP:20261106T104843Z
 DTSTART:20261125T170000Z
@@ -1658,17 +1690,6 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events

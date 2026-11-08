@@ -185,6 +185,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Kultura,Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1twvpnd@ostopovice-events
+DTSTAMP:20261108T214556Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20270101
+SUMMARY:Výstava obrazů: Pavel Pospíšil alias Baroch
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:link:https://www.facebook.com/groups/1140666252706973/posts/289
+ 29338560079702/\n\nZdroj: Nezařazené
+CATEGORIES:Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:obec-1x1dzuh@ostopovice-events
 DTSTAMP:20261021T201120Z
 DTSTART:20261108T170000Z
@@ -208,6 +219,16 @@ LOCATION:Restaurace U Volejníků
 DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1q8gof4@ostopovice-events
+DTSTAMP:20261108T214556Z
+DTSTART:20261113T180000Z
+DTEND:20261113T180000Z
+SUMMARY:Vechtrovna: Hudební večer – BG JAM\, D.U.H.A Band
+DESCRIPTION:Folk\, bluegrass\, blues\, jazz.\nRezervace na 725 015 013\n\nZ
+ droj: Nezařazené
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:obec-3uu75f@ostopovice-events
