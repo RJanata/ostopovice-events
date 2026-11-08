@@ -167,18 +167,18 @@ DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-1ixvp6o@ostopovice-events
-DTSTAMP:20261106T110138Z
+UID:obec-3uu75f@ostopovice-events
+DTSTAMP:20261106T172551Z
 DTSTART:20261117T160000Z
 DTEND:20261117T160000Z
-SUMMARY:Lampionový průvod a oslavy 17. listopadu
+SUMMARY:Oslavy 17. listopadu - lampionový průvod
 DESCRIPTION:17:00 lampionový průvod (Kaple) | 17:30 pietní shromážděn
  í (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 proj
- ekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)\n\nOslavy 
- dne boje za svobodu a demokracii.\n\nZdroj: Nezařazené
-URL:https://www.facebook.com/Ostopovice/posts/pfbid02XZudsehCMVprtTNywVexVz
- CS54TSAuyj8FjRVDQhfbB3NsfqkfqJXG3PBqgcLUkRl
-CATEGORIES:Pro děti,Kultura,Obec
+ ekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)\n\nZdroj: 
+ Obec
+URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
+ pruvod
+CATEGORIES:Kultura,Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-tgptrf@ostopovice-events
