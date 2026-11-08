@@ -1321,6 +1321,18 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-ahplmp@ostopovice-events
+DTSTAMP:20261108T202955Z
+DTSTART:20261111T170000Z
+DTEND:20261111T180000Z
+SUMMARY:Mše svatá
+LOCATION:Kaple Ostopovice
+DESCRIPTION:Památka sv. Martina\, biskupa\nÚmysl: za Vlastu a Karla Pavl
+ áskovy a za zemřelou rodinu\n\nZdroj: Nezařazené
+URL:https://farnost.troubsko.cz/?q=content/porad-bohosluzeb
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-172znxv@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261111T173000Z
