@@ -1431,6 +1431,17 @@ URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-18d4zls@ostopovice-events
+DTSTAMP:20261109T125420Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:Oznámení o změně otevírací doby pošty Partner
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/oznameni-o-zmene-oteviraci-doby
+ -posty-partner
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:skola-1hropan@ostopovice-events
 DTSTAMP:20261028T093845Z
 DTSTART;VALUE=DATE:20261116
@@ -1669,6 +1680,17 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
 DTSTAMP:20261106T104843Z
 DTSTART:20261125T170000Z
@@ -1680,17 +1702,6 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
@@ -2803,6 +2814,16 @@ LOCATION:Knihovna Ostopovice
 DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-17vs6ua@ostopovice-events
+DTSTAMP:20261109T125420Z
+DTSTART:20270903T220000Z
+DTEND:20270903T230000Z
+SUMMARY:Husa na dálnici
+DESCRIPTION:Zdroj: Připravované akce
+URL:https://www.facebook.com/events/1068281589457456/
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-nb1gk6@ostopovice-events
