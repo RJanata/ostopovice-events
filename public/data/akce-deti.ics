@@ -8,22 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-1eyss6d@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260910T130000Z
-DTEND:20260910T150000Z
-SUMMARY:Knihovna dětem
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
- ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
- jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
- knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
- st.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
- nihovna-detem-2026-09-10-15-00
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-sio3ig@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260914T080000Z
