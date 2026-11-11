@@ -88,8 +88,17 @@ window.OpeningHours = (function () {
     return { closed: false, text: 'Prodejny nad 200 m² otevřeno' };
   }
 
+  /**
+   * Upozornění ke dni, který není státní svátek, ale prodejny mají jinou dobu (žlutě):
+   * Silvestr — obchody obvykle zavírají dříve. → { label, text } nebo null.
+   */
+  function dayNotice(day) {
+    if (day.slice(5) === '12-31') return { label: 'Silvestr', text: 'Prodejny mají zkrácenou otevírací dobu' };
+    return null;
+  }
+
   return {
-    bigShops, DAYS, DAY_SHORT, keyToDate, addDays, weekdayIndex, formatShort, toMinutes, formatTime,
+    bigShops, dayNotice, DAYS, DAY_SHORT, keyToDate, addDays, weekdayIndex, formatShort, toMinutes, formatTime,
     isoWeek, regularHours, regularIntervals, exceptionOn, exceptionIntervals, hoursOn, exceptionChanges,
   };
 })();

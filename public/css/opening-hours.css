@@ -61,10 +61,10 @@
 }
 .hours-status--open { background: #dcf3e3; color: #22663a; }
 .hours-status--closed { background: #fbe1e1; color: #9b2c2c; }
-.hours-status--soon { background: #fdecc8; color: #8a5300; }
+.hours-status--soon { background: #dcf3e3; color: #22663a; } /* zavírají do hodiny: pořád otevřeno → zeleně */
 :root[data-theme="dark"] .hours-status--open { background: #1f3d2a; color: #9fdcb2; }
 :root[data-theme="dark"] .hours-status--closed { background: #44262a; color: #f2a8a8; }
-:root[data-theme="dark"] .hours-status--soon { background: #45361a; color: #f5c97a; }
+:root[data-theme="dark"] .hours-status--soon { background: #1f3d2a; color: #9fdcb2; }
 
 /* dny v týdnu */
 .hours-days { list-style: none; margin: 0; padding: 0; font-size: 0.88rem; }
@@ -87,9 +87,11 @@
 .hours-day__date > span:first-child { width: 1.6em; }
 .hours-day__date > span:last-child { width: 1.75em; }
 /* akce v kalendáři ten den (knihovna, hospody): malá ikonka za datem, v bublině co a kdy */
-.hours-day__event { display: inline-grid; vertical-align: -2px; margin-left: 6px; color: var(--accent); }
+/* čas akce na stejném účaří jako dny a otevírací doby; ikona jen posazená k písmu */
+.hours-day__event { display: inline-flex; align-items: baseline; margin-left: 6px; color: var(--accent); }
 .hours-day__event:hover { color: var(--accent-2); }
-.hours-day__event { gap: 3px; grid-auto-flow: column; align-items: center; text-decoration: none; }
+.hours-day__event { gap: 3px; text-decoration: none; }
+.hours-day__event svg { align-self: center; position: relative; top: -1px; }
 .hours-day__event svg { width: 14px; height: 14px; }
 .hours-day__event span { font-size: 0.72rem; font-weight: 500; font-variant-numeric: tabular-nums; }
 
@@ -133,7 +135,7 @@
 .hours-day--exception .hours-day__closed { color: var(--exception); }
 /* ikonka „i“ vlevo od upravené doby (mimo tok, ať nerozhodí sloupce časů); bublina = běžná doba */
 .hours-day__interval, .hours-day__closed { position: relative; }
-.hours-day__info { position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 3px; display: inline-grid; cursor: help; color: var(--exception); }
+.hours-day__info { position: absolute; right: 100%; top: 55%; transform: translateY(-50%); margin-right: 3px; display: inline-grid; cursor: help; color: var(--exception); }
 .hours-day__info svg { width: 13px; height: 13px; stroke-width: 2; }
 
 /* plánované výjimky mimo zobrazený týden */
@@ -143,16 +145,13 @@
 }
 .hours-upcoming li + li { margin-top: 2px; }
 
+/* mobil: panely pod sebou (dva vedle sebe byly na telefonu moc úzké a text přetékal),
+   rozložení řádků stejné jako na počítači — i s daty u dnů */
 @media (max-width: 640px) {
   .hours-tools { margin: 10px 0 12px; }
-  .hours-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 8px; }
-  .hours-card { margin-bottom: 8px; padding: 10px 8px; row-gap: 5px; }
-  .hours-card__title { font-size: 0.9rem; }
-  .hours-days { font-size: 0.76rem; }
-  .hours-day { gap: 0 5px; padding: 2px 3px; margin: 0 -3px; }
-  .hours-day--two .hours-day__times { grid-template-columns: 1fr 1fr; gap: 0 4px; }
-  .hours-day__name small { display: none; }
-  .hours-card__contacts { font-size: 0.72rem; }
+  .hours-cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); column-gap: 10px; }
+  .hours-card { margin-bottom: 10px; }
+}
 }
 
 /* úzký panel (např. 3 vedle sebe v okně kolem 800 px): data u dnů se nevejdou vedle časů → jen den v týdnu */
@@ -175,3 +174,90 @@
 .hours-shops--closed { background: #fbe1e1; color: #9b2c2c; }
 :root[data-theme="dark"] .hours-shops { background: #1f3d2a; color: #9fdcb2; }
 :root[data-theme="dark"] .hours-shops--closed { background: #44262a; color: #f2a8a8; }
+
+/* ---------- Denní přehled (dnes / večer zítra) ---------- */
+.today { margin: 0 0 28px; }
+.today__holiday { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 0.9rem; color: var(--holiday); }
+/* skupiny (Obec, Pohostinství, Služby) jako panely, na počítači dvě vedle sebe */
+.today__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 12px; align-items: start; }
+.today__group { padding: 8px 14px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.today__group-title { margin: 2px 0 4px; font-size: 0.75rem; font-weight: 700; color: var(--chip-color); text-transform: uppercase; letter-spacing: 0.05em; }
+.today__rows { list-style: none; margin: 0; padding: 0; }
+.today-row {
+  /* pevný sloupec pro stav: fazolky jsou ve všech řádcích i panelech pod sebou */
+  display: grid; grid-template-columns: 22px minmax(0, 12em) 6.4em minmax(max-content, 1fr); column-gap: 10px; align-items: baseline;
+  padding: 6px 6px; margin: 0 -6px; border-radius: 6px; font-size: 0.92rem;
+}
+.today-row + .today-row { border-top: 1px solid var(--border); }
+.today-row__icon { align-self: center; display: inline-grid; }
+.today-row__icon .cat-icon { width: 20px; height: 20px; background: var(--heading); }
+.today-row__icon .source-icon { width: 20px; height: 20px; }
+.today-row__name { min-width: 0; font-weight: 600; color: var(--heading); overflow-wrap: anywhere; }
+.today-row__name a { color: inherit; text-decoration: none; }
+.today-row__name a:hover { color: var(--accent); text-decoration: underline; }
+.today-row__name small { font-weight: 400; color: var(--muted); }
+.today-row__status { justify-self: start; }
+.today-row__status .hours-status { margin: 0; }
+/* časy: čistě dopolední vlevo, čistě odpolední vpravo, celodenní uprostřed přes oba sloupce */
+.today-row.hours-day--two .hours-day__slot:first-child { text-align: left; }
+.today-row.hours-day--two .hours-day__slot--full { grid-column: 1 / -1; justify-self: center; text-align: center; }
+/* akce toho dne vždy pod řádkem, každá na svém řádku */
+.today-row__events { grid-column: 2 / -1; list-style: none; margin: 2px 0 0; padding: 0; font-size: 0.82rem; }
+.today-row__events li + li { margin-top: 1px; }
+.today-row__events a { display: inline-flex; gap: 5px; align-items: baseline; color: var(--accent); text-decoration: none; }
+.today-row__events a:hover { text-decoration: underline; }
+.today-row__events svg { width: 13px; height: 13px; flex: none; position: relative; top: 1px; }
+.today-row__event-time { font-weight: 600; font-variant-numeric: tabular-nums; }
+.today-row .hours-day__note, .today-row .hours-day__details { grid-column: 2 / -1; }
+.today-row.hours-day--expandable:hover { background: var(--surface-2); }
+.hours-tools--week { margin-top: 0; justify-content: flex-end; }
+
+@media (max-width: 640px) {
+  .today__list { grid-template-columns: 1fr; }
+  /* telefon: jedna doba na řádku s názvem, dvě doby (pošta, úřad) na druhém řádku pod nimi;
+     stav pořád ve stejném sloupci */
+  /* název nejvýš 12em (užší se zalomí), fazolka hned za ním, doba vpravo */
+  .today-row { grid-template-columns: 22px minmax(0, 12em) 6.4em minmax(max-content, 1fr); column-gap: 8px; }
+  .today-row__times { justify-self: end; }
+  /* bez pevných sloupců: jen tak široké jako doba */
+  .today-row.hours-day--two .hours-day__times { display: flex; gap: 0 10px; }
+  .today-row .hours-day__slot:empty { display: none; }
+}
+
+/* záložky Dnes / Zítra / Celý týden: každá přesně třetina šířky */
+.today__tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 12px; border-bottom: 2px solid var(--border); container-type: inline-size; }
+.today__tab {
+  padding: 8px 12px 9px; margin-bottom: -2px; border: 0; border-bottom: 3px solid transparent; background: none;
+  font: inherit; font-size: 1.1rem; font-weight: 700; color: var(--muted); cursor: pointer; text-align: center;
+}
+.today__tab { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.today__tab small { font-size: 0.85rem; font-weight: 500; margin-left: 4px; }
+/* datum podle místa: „čtvrtek 12. 11.“ → „čt 12.11.“ → „12.11.“ → nic */
+.today__tab .date--mid, .today__tab .date--short { display: none; }
+@container (max-width: 600px) {
+  .today__tab .date--long { display: none; }
+  .today__tab .date--mid { display: inline; }
+}
+@container (max-width: 430px) {
+  .today__tab .date--mid { display: none; }
+  .today__tab .date--short { display: inline; }
+  .today__tab { font-size: 1rem; padding-left: 4px; padding-right: 4px; }
+}
+@container (max-width: 330px) {
+  .today__tab .today__tab-date { display: none; }
+}
+.today__tab:hover { color: var(--accent); }
+.today__tab[aria-selected="true"] { color: var(--heading); border-bottom-color: var(--accent-2); }
+.today__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.today__holiday { margin: -4px 0 12px; }
+
+/* úzký telefon: dvě doby (pošta, úřad) se vedle názvu a stavu nevejdou → pod ně */
+@media (max-width: 500px) {
+  /* úzký telefon: název do zbytku místa, doba v pevném sloupci → fazolky pořád pod sebou */
+  .today-row { grid-template-columns: 22px minmax(0, 1fr) 6.4em 5.6em; }
+  .today-row--wide .today-row__times { grid-column: 2 / -1; grid-row: 2; justify-self: end; }
+}
+
+/* upozornění ke dni (Silvestr) — žlutá fazolka */
+.hours-shops--notice { background: #fdf0c4; color: #7a5200; }
+:root[data-theme="dark"] .hours-shops--notice { background: #45391a; color: #f5d27a; }

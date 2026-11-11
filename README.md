@@ -92,9 +92,10 @@ Lokálně proti lokálnímu serveru: `admin.html?api=http://localhost:3999/ostop
 
 ## Otevírací doby (oteviraci-doby.html)
 
-Samostatná stránka `/oteviraci-doby` (záložky „Kalendář akcí / Otevírací doby“ pod nadpisem obou stránek):
-karty institucí a obchodů s otevírací dobou na celý týden (šipkami i další týdny), filtr Obec /
-Pohostinství / Služby (v adrese `#k=pohostinstvi`), u aktuálního týdne „Otevřeno do… / Zavřeno · otevře…“.
+Samostatná stránka `/oteviraci-doby` (odkaz tlačítkem v záhlaví kalendáře). Záložky **Dnes / Zítra / Celý týden**:
+denní přehled má řádek na místo (stav otevřeno / zavřeno / „ještě 25 min“, doba, akce z kalendáře pod řádkem),
+celý týden ukazuje panely míst se šipkami týdnů. Filtr Obec / Pohostinství / Služby (v adrese `#k=…`) platí pro obojí;
+`#d=YYYY-MM-DD` (odkaz z kalendáře) otevře Dnes, Zítra, nebo týden toho dne.
 
 - **`config/opening-hours.json`** — místa a pravidelná otevírací doba (upravuje se v gitu).
   `hours` = dny `mon`–`sun`, interval `"08:00-12:00"` nebo `{ "time", "weeks": "even"|"odd", "note" }`

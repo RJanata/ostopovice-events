@@ -12,7 +12,7 @@
       "label": "Služby",
       "color": "#2f6b47",
       "icon": "tabler/tool.svg"
-    },    
+    },
     {
       "id": "pohostinstvi",
       "label": "Pohostinství",
@@ -95,10 +95,7 @@
           "15:00-19:00"
         ],
         "thu": [
-          {
-            "time": "15:00-17:00",
-            "note": "knihovna dětem"
-          }
+          "15:00-17:00"
         ]
       },
       "checked": "knihovnaostopovice.cz, 10. 11. 2026",

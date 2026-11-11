@@ -7,10 +7,11 @@
 const TIME_ZONE = 'Europe/Prague';
 const DAY_ON = ['v pondělí', 'v úterý', 've středu', 've čtvrtek', 'v pátek', 'v sobotu', 'v neděli'];
 const CLOSING_SOON_MINUTES = 60; // zavírají do hodiny → oranžově s počtem minut
+const OPENS_SOON_MINUTES = 60; // zavřeno a otevírají do hodiny → „ještě 25 min“ místo „Zavřeno“
 const NOON = 12 * 60; // dopolední intervaly v levém sloupci, odpolední v pravém
 
 let data = null;
-const state = { category: null, week: 0 };
+const state = { category: null, week: 0, view: 'today' }; // view: today / tomorrow / week (záložky)
 
 const $ = (id) => document.getElementById(id);
 
@@ -65,7 +66,9 @@ function openStatus(place, now) {
     else if (n === 1) when = `zítra v ${formatTime(next.from)}`;
     else if (n < 7) when = `${DAY_ON[weekdayIndex(day)]} v ${formatTime(next.from)}`;
     else when = `${formatShort(day)} v ${formatTime(next.from)}`;
-    return { kind: 'closed', text: `Zavřeno, otevře ${when}` };
+    // do otevření méně než 4 h → ve fazolce „< 2h“ místo „Zavřeno“
+    const until = n * 1440 + toMinutes(next.from) - now.minutes;
+    return { kind: 'closed', text: `Zavřeno, otevře ${when}`, opensIn: until < OPENS_SOON_MINUTES ? until : null };
   }
   return { kind: 'closed', text: 'Zavřeno' };
 }
@@ -78,12 +81,15 @@ const SOCIAL = {
   instagram: { label: 'Instagram', svg: '<svg class="hours-social__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>' },
 };
 
+const ICON_MAIL = '<svg class="hours-social__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+
 const STATUS_LABEL = { open: 'Otevřeno', closed: 'Zavřeno' };
 
 /** Fazolka se stavem teď; zavírají do hodiny → oranžová s počtem minut. Celý text v bublině. */
 function statusBadge(status) {
   if (!status) return '';
-  const label = STATUS_LABEL[status.kind] || `ještě ${status.minutes} min`;
+  const label = status.opensIn != null ? `ještě ${status.opensIn} min`
+    : STATUS_LABEL[status.kind] || `ještě ${status.minutes} min`;
   return `<span class="hours-status hours-status--${status.kind}" title="${escapeHtml(status.text)}">${escapeHtml(label)}</span>`;
 }
 
@@ -140,12 +146,16 @@ const intervalsText = (list) => (list === null ? 'neznámá' : list.length
  * Časy dne. V kartě, kde má některý den dopoledne i odpoledne, jsou dva sloupce:
  * dopolední intervaly vlevo, odpolední vpravo — ať jsou stejné časy pod sebou.
  */
-function timesHtml(intervals, twoColumns, info = '') {
+function timesHtml(intervals, twoColumns, info = '', { spanFullDay = false } = {}) {
   if (!intervals) return '<span class="hours-day__closed">?</span>';
   // info = text běžné doby u výjimky: ikonka „i“ vlevo od první (nebo jediné) hodnoty
   // zavřeno výjimkou = slovem „zavřeno“, běžně zavřený den = dlouhá pomlčka
   if (!intervals.length) return `<span class="hours-day__closed">${infoIcon(info)}${info ? 'zavřeno' : '—'}</span>`;
   if (!twoColumns || intervals.length > 2) return intervals.map((i, n) => intervalHtml(i, n ? '' : info)).join('');
+  // denní přehled: jedna doba přes poledne (od rána do odpoledne) uprostřed přes oba sloupce
+  if (spanFullDay && intervals.length === 1 && toMinutes(intervals[0].from) < NOON && toMinutes(intervals[0].to) > NOON + 60) {
+    return `<span class="hours-day__slot hours-day__slot--full">${intervalHtml(intervals[0], info)}</span>`;
+  }
   const slots = ['', ''];
   if (intervals.length === 2) intervals.forEach((i, n) => { slots[n] = intervalHtml(i, n ? '' : info); });
   else slots[toMinutes(intervals[0].from) < NOON ? 0 : 1] = intervalHtml(intervals[0], info);
@@ -216,7 +226,10 @@ function placeCard(place, weekStart, now, { labelRow }) {
   const webLink = place.web
     ? `<a href="${escapeHtml(place.web)}" target="_blank" rel="noopener">${escapeHtml(place.web.replace(/^https?:\/\/(www\.)?/, '').replace(/#.*$/, '').replace(/\/$/, ''))}</a>`
     : '';
-  const socialLinks = Object.entries(place.social || {})
+  // e-mail (obálka) vlevo od sociálních sítí
+  const emailLink = place.email
+    ? `<a href="mailto:${escapeHtml(place.email)}" title="${escapeHtml(place.email)}" aria-label="E-mail: ${escapeHtml(place.email)}">${ICON_MAIL}</a>` : '';
+  const socialLinks = emailLink + Object.entries(place.social || {})
     .filter(([network, url]) => SOCIAL[network] && url)
     .map(([network, url]) => `<a href="${escapeHtml(url)}" target="_blank" rel="noopener" title="${SOCIAL[network].label}" aria-label="${SOCIAL[network].label}: ${escapeHtml(place.name)}">${SOCIAL[network].svg}</a>`)
     .join('');
@@ -231,7 +244,6 @@ function placeCard(place, weekStart, now, { labelRow }) {
       <header class="hours-card__head">
         ${categoryIcon(place)}
         <h2 class="hours-card__title">${title}${place.village ? ` <span class="hours-card__village">(${escapeHtml(place.village)})</span>` : ''}</h2>
-        ${known ? statusBadge(openStatus(place, now)) : ''}
       </header>
       ${labelRow ? `<p class="hours-card__label">${escapeHtml(label) || '&nbsp;'}</p>` : '<div></div>'}
       ${known ? `<ul class="hours-days">${rows}</ul>` : '<p class="hours-card__unknown">Otevírací dobu zatím doplňujeme.</p>'}
@@ -262,6 +274,95 @@ function renderFilter() {
       ${c.id ? categoryIcon(c) : ''}${escapeHtml(c.label)}</button>`).join('');
 }
 
+// ---------- Denní přehled ----------
+
+const DAY_LONG = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek', 'sobota', 'neděle'];
+
+/** Svátek (název + prodejny nad 200 m²) nebo upozornění ke dni (Silvestr, žlutě); '' = nic. */
+function dayInfo(day) {
+  const holiday = data.holidays[day];
+  if (holiday) return `${escapeHtml(holiday.join(' · '))} ${shopsBadge(day, holiday)}`;
+  const notice = window.OpeningHours.dayNotice(day);
+  return notice ? `${escapeHtml(notice.label)} <span class="hours-shops hours-shops--notice">${escapeHtml(notice.text)}</span>` : '';
+}
+
+function shopsBadge(day, holiday) {
+  const shops = window.OpeningHours.bigShops(day, holiday);
+  return shops ? `<span class="hours-shops${shops.closed ? ' hours-shops--closed' : ''}" title="Zákon o prodejní době: obchody s prodejní plochou nad 200 m²">${escapeHtml(shops.text)}</span>` : '';
+}
+
+/** Řádek místa v denním přehledu: ikona, název, stav, doba, akce; klepnutí rozbalí akce a běžnou dobu u výjimky. */
+function todayRow(place, day, now, { showStatus, twoColumns }) {
+  const known = Boolean(place.hours || place.seasons);
+  const { exception, intervals } = hoursOn(place, day);
+  const regularInfo = exception ? `Běžně: ${intervalsText(regularIntervals(place, day))}` : '';
+  // rozbalení jen u výjimky (běžná doba); akce jsou vidět rovnou pod řádkem
+  const details = exception
+    ? `<li class="hours-detail hours-detail--exception">${escapeHtml(regularInfo)}${exception.note ? ` · ${escapeHtml(exception.note)}` : ''}</li>` : '';
+  const key = `today|${place.id}|${day}`;
+  const open = details && openDays.has(key);
+  const classes = ['today-row',
+    exception && 'hours-day--exception',
+    twoColumns && 'hours-day--two',
+    intervals?.length > 1 && 'today-row--wide', // dvě doby: na mobilu pod názvem
+    details && 'hours-day--expandable',
+    open && 'hours-day--open'].filter(Boolean).join(' ');
+  const expandable = details ? ` data-day-key="${escapeHtml(key)}" role="button" tabindex="0" aria-expanded="${open}"` : '';
+  const title = place.web
+    ? `<a href="${escapeHtml(place.web)}" target="_blank" rel="noopener">${escapeHtml(place.name)}</a>`
+    : escapeHtml(place.name);
+  const events = eventsOn(place, day);
+  return `<li class="${classes}"${expandable}>
+      <span class="today-row__icon">${categoryIcon(place)}</span>
+      <span class="today-row__name">${title}${place.village ? ` <small>(${escapeHtml(place.village)})</small>` : ''}</span>
+      <span class="today-row__status">${showStatus && known ? statusBadge(openStatus(place, now)) : ''}</span>
+      <span class="hours-day__times today-row__times"${regularInfo ? ` title="${escapeHtml(regularInfo)}"` : ''}>${known ? timesHtml(intervals, twoColumns, regularInfo, { spanFullDay: true }) : '<span class="hours-day__closed">neznámá</span>'}</span>
+      ${events.length ? `<ul class="today-row__events">${events.map((e) => `<li><a href="./#d=${day}">${ICON_EVENT}<span class="today-row__event-time">${escapeHtml(e.time || 'celý den')}</span> ${escapeHtml(e.title)}</a></li>`).join('')}</ul>` : ''}
+      ${exception?.note ? `<span class="hours-day__note">${escapeHtml(exception.note)}</span>` : ''}
+      ${details ? `<ul class="hours-day__details"${open ? '' : ' hidden'}>${details}</ul>` : ''}
+    </li>`;
+}
+
+const DAY_ABBR = ['po', 'út', 'st', 'čt', 'pá', 'so', 'ne'];
+
+/**
+ * Záložky Dnes / Zítra / Celý týden. Datum u dne ve třech délkách („čtvrtek 12. 11.“,
+ * „čt 12.11.“, „12.11.“); kterou ukázat, rozhoduje šířka záložek (@container v CSS).
+ */
+function renderTabs(now) {
+  document.querySelectorAll('[data-day-view]').forEach((tab) => {
+    const view = tab.dataset.dayView;
+    tab.setAttribute('aria-selected', String(view === state.view));
+    if (view === 'week') return;
+    const day = view === 'tomorrow' ? addDays(now.day, 1) : now.day;
+    const dm = `${Number(day.slice(8))}.${Number(day.slice(5, 7))}.`;
+    const wd = weekdayIndex(day);
+    tab.innerHTML = `${view === 'tomorrow' ? 'Zítra' : 'Dnes'} <small class="today__tab-date">`
+      + `<span class="date--long">${DAY_LONG[wd]} ${formatShort(day)}</span>`
+      + `<span class="date--mid">${DAY_ABBR[wd]} ${dm}</span>`
+      + `<span class="date--short">${dm}</span></small>`;
+  });
+  $('day-view').hidden = state.view === 'week';
+  $('week-view').hidden = state.view !== 'week';
+}
+
+function renderToday(now, places) {
+  // záložka Dnes / Zítra; u zítřka se stav (otevřeno / zavřeno) nezobrazuje
+  const tomorrow = state.view === 'tomorrow';
+  const day = tomorrow ? addDays(now.day, 1) : now.day;
+  $('today-holiday').innerHTML = dayInfo(day);
+  $('today-holiday').hidden = !$('today-holiday').innerHTML;
+  // dva sloupce časů (dopoledne | odpoledne) pro celý přehled, ať jsou časy pod sebou
+  const twoColumns = places.some((p) => hoursOn(p, day).intervals?.length === 2);
+  $('today').innerHTML = data.categories
+    .filter((c) => places.some((p) => p.category === c.id))
+    .map((c) => `<section class="today__group" aria-label="${escapeHtml(c.label)}">
+        ${state.category ? '' : `<h3 class="today__group-title" style="--chip-color:${escapeHtml(c.color)}">${escapeHtml(c.label)}</h3>`}
+        <ul class="today__rows">${places.filter((p) => p.category === c.id)
+          .map((p) => todayRow(p, day, now, { showStatus: !tomorrow, twoColumns })).join('')}</ul>
+      </section>`).join('') || '<p class="empty">Nic tu není.</p>';
+}
+
 function render() {
   const now = pragueNow();
   const weekStart = addDays(now.day, -weekdayIndex(now.day) + state.week * 7);
@@ -270,16 +371,14 @@ function render() {
   document.querySelector('[data-week="-1"]').disabled = state.week <= 0;
 
   // svátky v týdnu nad panely (vidět i na mobilu): název a prodejny nad 200 m² otevřeno / zavřeno
-  const holidays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i)).filter((d) => data.holidays[d]);
+  const holidays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i)).filter((d) => dayInfo(d));
   $('week-holidays').hidden = !holidays.length;
-  $('week-holidays').innerHTML = holidays.map((d) => {
-    const shops = window.OpeningHours.bigShops(d, data.holidays[d]);
-    return `<p><strong>${DAY_SHORT[weekdayIndex(d)]} ${formatShort(d)}</strong> ${escapeHtml(data.holidays[d].join(' · '))}`
-      + `${shops ? ` <span class="hours-shops${shops.closed ? ' hours-shops--closed' : ''}" title="Zákon o prodejní době: obchody s prodejní plochou nad 200 m²">${escapeHtml(shops.text)}</span>` : ''}</p>`;
-  }).join('');
+  $('week-holidays').innerHTML = holidays.map((d) => `<p><strong>${DAY_SHORT[weekdayIndex(d)]} ${formatShort(d)}</strong> ${dayInfo(d)}</p>`).join('');
 
   renderFilter();
   const places = data.places.filter((p) => !state.category || p.category === state.category);
+  renderTabs(now);
+  renderToday(now, places);
   // skupiny podle druhu (Obec, Pohostinství, Služby); při filtru jen jedna
   $('hours').innerHTML = data.categories
     .filter((c) => places.some((p) => p.category === c.id))
@@ -301,6 +400,21 @@ function readHash() {
   const params = new URLSearchParams(location.hash.slice(1));
   const k = params.get('k');
   state.category = data.categories.some((c) => c.id === k) ? k : null;
+  // #d=2026-11-17 (odkaz z kalendáře na změněné otevírací doby): dnes → Dnes, zítra → Zítra,
+  // jiný den → Celý týden s jeho týdnem; z adresy se pak smaže (writeHash ho nepíše)
+  const day = params.get('d') || '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(day)) {
+    const today = pragueNow().day;
+    if (day === today) state.view = 'today';
+    else if (day === addDays(today, 1)) state.view = 'tomorrow';
+    else {
+      state.view = 'week';
+      const monday = (d) => addDays(d, -weekdayIndex(d));
+      state.week = Math.round((Date.parse(monday(day)) - Date.parse(monday(today))) / (7 * 864e5));
+    }
+    return true;
+  }
+  return false;
 }
 
 function writeHash() {
@@ -317,13 +431,21 @@ function setup() {
     row.setAttribute('aria-expanded', String(open));
     row.querySelector('.hours-day__details').hidden = !open;
   };
-  $('hours').addEventListener('click', (ev) => {
+  // denní přehled i týdenní panely
+  const main = document.querySelector('main');
+  main.addEventListener('click', (ev) => {
     const row = ev.target.closest('.hours-day--expandable');
     if (row && !ev.target.closest('a')) toggleDay(row);
   });
-  $('hours').addEventListener('keydown', (ev) => {
+  main.addEventListener('keydown', (ev) => {
     const row = ev.target.closest?.('.hours-day--expandable');
     if (row && ev.target === row && (ev.key === 'Enter' || ev.key === ' ')) { ev.preventDefault(); toggleDay(row); }
+  });
+  document.querySelector('.today__tabs').addEventListener('click', (ev) => {
+    const button = ev.target.closest('[data-day-view]');
+    if (!button) return;
+    state.view = button.dataset.dayView;
+    render();
   });
   $('hours-filter').addEventListener('click', (ev) => {
     const chip = ev.target.closest('[data-category]');
@@ -341,7 +463,7 @@ function setup() {
     state.week = delta === 0 ? 0 : Math.max(0, state.week + delta);
     render();
   });
-  window.addEventListener('hashchange', () => { readHash(); render(); });
+  window.addEventListener('hashchange', () => { if (readHash()) writeHash(); render(); });
   const toggle = $('theme-toggle');
   const sync = () => toggle.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
   sync();
@@ -387,7 +509,7 @@ async function init() {
     $('hours').innerHTML = `<p class="empty">Otevírací doby se nepodařilo načíst (${escapeHtml(err.message)}).</p>`;
     return;
   }
-  readHash();
+  if (readHash()) writeHash(); // #d= z odkazu v adrese nenechávat
   setup();
   render();
 }

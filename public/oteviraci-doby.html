@@ -45,16 +45,35 @@
   <main class="wrap">
     <div class="hours-tools">
       <div class="chips hours-filter" id="hours-filter" role="group" aria-label="Filtr podle druhu"></div>
-      <div class="hours-week" role="group" aria-label="Týden">
-        <span class="hours-week__range" id="week-range"></span>
-        <button type="button" class="icon-button" data-week="-1" aria-label="Předchozí týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></svg></button>
-        <button type="button" class="icon-button icon-button--text" data-week="0" id="week-label" title="Zpět na tento týden">Tento týden</button>
-        <button type="button" class="icon-button" data-week="1" aria-label="Další týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
-      </div>
     </div>
-    <!-- státní svátky v zobrazeném týdnu: název a zda mají prodejny nad 200 m² otevřeno -->
-    <div id="week-holidays" class="hours-holidays" hidden></div>
-    <div id="hours" class="hours-grid" aria-live="polite"><p class="empty">Načítám otevírací doby…</p></div>
+
+    <!-- záložky Dnes / Zítra / Celý týden (každá třetina šířky) -->
+    <div class="today__tabs" role="tablist" aria-label="Zobrazení">
+      <button type="button" class="today__tab" role="tab" data-day-view="today" aria-selected="true"></button>
+      <button type="button" class="today__tab" role="tab" data-day-view="tomorrow" aria-selected="false"></button>
+      <button type="button" class="today__tab" role="tab" data-day-view="week" aria-selected="false">Celý týden</button>
+    </div>
+
+    <!-- denní přehled (dnes / zítra): jeden řádek na místo -->
+    <section class="today" id="day-view" aria-label="Denní přehled">
+      <div class="today__holiday" id="today-holiday" hidden></div>
+      <div class="today__list" id="today"></div>
+    </section>
+
+    <!-- celý týden: panely míst se šipkami týdnů -->
+    <section id="week-view" aria-label="Celý týden" hidden>
+      <div class="hours-tools hours-tools--week">
+        <div class="hours-week" role="group" aria-label="Týden">
+          <span class="hours-week__range" id="week-range"></span>
+          <button type="button" class="icon-button" data-week="-1" aria-label="Předchozí týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button type="button" class="icon-button icon-button--text" data-week="0" id="week-label" title="Zpět na tento týden">Tento týden</button>
+          <button type="button" class="icon-button" data-week="1" aria-label="Další týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <!-- státní svátky v zobrazeném týdnu: název a zda mají prodejny nad 200 m² otevřeno -->
+      <div id="week-holidays" class="hours-holidays" hidden></div>
+      <div id="hours" class="hours-grid" aria-live="polite"><p class="empty">Načítám otevírací doby…</p></div>
+    </section>
   </main>
 
   <footer class="site-footer">
