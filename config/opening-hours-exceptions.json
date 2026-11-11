@@ -78,6 +78,21 @@
       "note": "",
       "editedBy": "Radek",
       "editedAt": "2026-11-11T00:27:01.097Z"
+    },
+    {
+      "id": "xmwbg4lb4349",
+      "places": [
+        "obecni-urad",
+        "posta",
+        "sberny-dvur",
+        "knihovna"
+      ],
+      "from": "2026-12-24",
+      "to": "2026-12-26",
+      "hours": [],
+      "note": "",
+      "editedBy": "Radek",
+      "editedAt": "2026-11-11T01:34:21.372Z"
     }
   ]
 }
