@@ -340,6 +340,26 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .day__group-names { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .day__regular .event { box-shadow: none; }
 .day--empty { margin-bottom: 10px; }
+/* změněné otevírací doby u dne (výjimky ze stránky Otevírací doby) */
+:root { --hours-change: #b45309; }
+:root[data-theme="dark"] { --hours-change: #f0a24b; }
+/* jako karta akce (čára vlevo v barvě), podbarvená světle žlutě */
+:root { --hours-change-bg: #fff8e1; }
+:root[data-theme="dark"] { --hours-change-bg: #352d17; }
+.day__hours {
+  margin: 0 0 8px; padding: 8px 14px; font-size: 0.88rem;
+  background: var(--hours-change-bg); border: 1px solid var(--border); border-left: 4px solid var(--hours-change);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.day__hours-title { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--hours-change); text-decoration: none; }
+.day__hours-title:hover { text-decoration: underline; }
+.day__hours-title svg { width: 15px; height: 15px; }
+.day__hours ul { margin: 2px 0 0; padding-left: 21px; }
+.day__hours li { margin: 1px 0; }
+/* (i) jako další ikona za pravidelnými akcemi: stejná velikost, rozestup i výška jako ony */
+.month__day-hours { display: inline-grid; align-self: center; flex: none; position: relative; top: -1.5px; color: var(--hours-change); cursor: help; }
+.month__day-hours svg { width: 15px; height: 15px; stroke-width: 2.2; }
+.month__regular ~ .month__day-hours { margin-left: -4px; } /* rozestup hlavičky dne je 6 px, mezi ikonami 2 px */
 .day--empty .day__heading { position: static; color: var(--muted); font-weight: 600; }
 
 /* odkazy nad a pod seznamem (proběhlé, nově přidané, další akce) */
@@ -396,11 +416,9 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__day:first-child { border-left: 0; }
 .month__day:hover { background: var(--surface-2); }
 .month__day--other { background: var(--bg); color: var(--muted); }
-/* víkendy a svátky (dny volna): jemný podklad, svátek o něco výraznější */
-.month__day--weekend { background: color-mix(in srgb, var(--holiday) 5%, var(--surface)); }
+/* dny volna: svátek podbarvený, víkend jen barvou čísla dne */
 .month__day--holiday { background: color-mix(in srgb, var(--holiday) 11%, var(--surface)); }
-.month__day--other.month__day--weekend { background: color-mix(in srgb, var(--holiday) 5%, var(--bg)); }
-.month__day--weekend:hover, .month__day--holiday:hover { background: color-mix(in srgb, var(--holiday) 12%, var(--surface-2)); }
+.month__day--holiday:hover { background: color-mix(in srgb, var(--holiday) 12%, var(--surface-2)); }
 .month__day--weekend .month__day-number { color: var(--holiday); }
 .month__weekday--weekend { color: var(--holiday); }
 .day__heading--off > span:not(.day__relative):not(.day__holiday) { color: var(--holiday); }

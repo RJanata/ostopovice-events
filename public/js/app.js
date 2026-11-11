@@ -148,6 +148,14 @@ function readHash() {
   state.regular = p.get('r') !== '0';
   state.query = p.get('q') || '';
   state.month = /^\d{4}-\d{2}$/.test(p.get('m') || '') ? p.get('m') : null;
+  // #d=2026-11-12 (odkaz z otevíracích dob): vybraný den a jeho měsíc; z adresy se pak smaže (writeHash ho nepíše)
+  const day = p.get('d') || '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(day)) {
+    state.selectedDay = day;
+    state.month = day.slice(0, 7) === today.slice(0, 7) ? null : day.slice(0, 7);
+    return true;
+  }
+  return false;
 }
 
 function writeHash() {
@@ -412,7 +420,8 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
   }
 
   if (holidayDays) {
-    for (const day of holidays.keys()) {
+    // svátky a dny se změněnou otevírací dobou se ukážou i bez akcí
+    for (const day of [...holidays.keys(), ...hoursChanges.keys()]) {
       if (day >= from && day <= to && !byDay.has(day)) byDay.set(day, []);
     }
   }
@@ -456,12 +465,62 @@ function longEventsBlock(events, from) {
     </details>`;
 }
 
+// ---------- Změněné otevírací doby (výjimky ze stránky Otevírací doby) ----------
+
+/** den → [{ names: ['Pošta Partner', …], text: 'zavřeno (Dovolená)' }] — místa se stejnou změnou spojená */
+let hoursChanges = new Map();
+
+// „!“ v trojúhelníku (Tabler alert-triangle), stejně jako u výjimek na stránce otevíracích dob
+const ICON_INFO = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"/><path d="M12 16h.01"/></svg>';
+
+async function loadHoursChanges() {
+  const response = await fetch('data/opening-hours.json', { cache: 'no-cache' });
+  if (!response.ok) return;
+  const { places, exceptions } = await response.json();
+  const order = Object.fromEntries(places.map((p, i) => [p.id, i]));
+  const names = Object.fromEntries(places.map((p) => [p.id, p.name]));
+  const placesById = Object.fromEntries(places.map((p) => [p.id, p]));
+  const byDay = new Map(); // den → Map(text → [id míst])
+  for (const x of exceptions) {
+    const hours = x.hours.length ? x.hours.map((h) => h.split('-').map((t) => t.replace(/^0(?=\d)/, '')).join('–')).join(', ') : 'zavřeno';
+    const text = x.note ? `${hours} (${x.note})` : hours;
+    for (let day = x.from; day <= x.to; day = addDays(day, 1)) {
+      // jen místa, kterým výjimka ten den opravdu mění dobu (opening-hours-core.js); „zavřeno“ u místa,
+      // které má ten den zavřeno i běžně, se neukazuje
+      const changed = x.places.filter((id) => placesById[id]
+        && window.OpeningHours.hoursOn([x], placesById[id], day).exception);
+      if (!changed.length) continue;
+      if (!byDay.has(day)) byDay.set(day, new Map());
+      const groups = byDay.get(day);
+      groups.set(text, [...(groups.get(text) || []), ...changed]);
+    }
+  }
+  hoursChanges = new Map([...byDay].map(([day, groups]) => [day, [...groups].map(([text, ids]) => ({
+    names: [...new Set(ids)].sort((a, b) => order[a] - order[b]).map((id) => names[id]),
+    text,
+  })).sort((a, b) => order[places.find((p) => p.name === a.names[0])?.id] - order[places.find((p) => p.name === b.names[0])?.id])]));
+}
+
+const hoursChangesText = (day) => (hoursChanges.get(day) || []).map((g) => `${g.names.join(', ')}: ${g.text}`).join('\n');
+
+/** Souhrn u dne v seznamu: „Změněné otevírací doby“ a místa se změnou. */
+function hoursChangesBlock(day) {
+  const groups = hoursChanges.get(day);
+  if (!groups) return '';
+  return `<div class="day__hours">
+      <a class="day__hours-title" href="oteviraci-doby">${ICON_INFO}Změněné otevírací doby</a>
+      <ul>${groups.map((g) => `<li><strong>${escapeHtml(g.names.join(', '))}:</strong> ${escapeHtml(g.text)}</li>`).join('')}</ul>
+    </div>`;
+}
+
 function renderDays(byDay, holidays) {
   return [...byDay.keys()].sort().map((day) => {
     const list = byDay.get(day);
     const classes = ['day', !list.length && 'day--empty', day === state.selectedDay && 'day--selected'].filter(Boolean).join(' ');
     const empty = !list.length && day === state.selectedDay ? '<p class="empty">Tento den žádné akce nejsou.</p>' : '';
-    return `<section class="${classes}" id="day-${day}">${dayHeading(day, holidays)}${dayEvents(list, day)}${empty}</section>`;
+    const changes = hoursChangesBlock(day);
+    // den jen se změnou otevírací doby (bez akcí) nehlásí „žádné akce“
+    return `<section class="${classes}" id="day-${day}">${dayHeading(day, holidays)}${changes}${dayEvents(list, day)}${changes ? '' : empty}</section>`;
   }).join('');
 }
 
@@ -735,6 +794,7 @@ function renderMonth(events, holidays) {
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
             ${regularMarks}${regularDots}
+            ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změněné otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml(holiday.join(' · '))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
           </span>
         </button>`;
@@ -1216,7 +1276,7 @@ function setupEvents() {
     }
   });
 
-  window.addEventListener('hashchange', () => { readHash(); update({ keepHash: true }); });
+  window.addEventListener('hashchange', () => { if (readHash()) writeHash(); update({ keepHash: true }); });
 }
 
 /**
@@ -1234,7 +1294,7 @@ function countVisit() {
 async function init() {
   countVisit();
   today = dayKey(new Date());
-  readHash();
+  if (readHash()) writeHash(); // vybraný den z odkazu: v adrese už #d= nenechávat
   if (state.query) state.calendarCollapsed = state.collapsedBySearch = true; // odkaz s hledáním
   setupEvents();
   setupSubscribe();
@@ -1253,6 +1313,8 @@ async function init() {
     cancelAnimationFrame(fitFrame);
     fitFrame = requestAnimationFrame(fitFilters);
   }).observe(document.querySelector('.filters'));
+  // změny otevírací doby: když se nenačtou, kalendář funguje i bez nich
+  const hoursLoaded = loadHoursChanges().catch(() => {});
   try {
     const response = await fetch('data/events.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -1261,6 +1323,7 @@ async function init() {
     document.getElementById('view').innerHTML = `<p class="empty">Akce se nepodařilo načíst (${escapeHtml(err.message)}).</p>`;
     return;
   }
+  await hoursLoaded;
   sourcesById = Object.fromEntries(data.sources.map((s) => [s.id, s]));
   categoriesById = Object.fromEntries(data.categories.map((c) => [c.id, c]));
   data.events.forEach(prepareEvent);
