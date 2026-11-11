@@ -862,6 +862,20 @@
    "to": "2026-12-26",
    "hours": [],
    "note": ""
+  },
+  {
+   "id": "xmwbgmmzfuc6",
+   "places": [
+    "svareci-technika-krejcik",
+    "d-studio-fit",
+    "cistirna-peri",
+    "autoservis-suchy",
+    "richtmoto"
+   ],
+   "from": "2026-12-24",
+   "to": "2026-12-26",
+   "hours": [],
+   "note": ""
   }
  ],
  "holidays": {
