@@ -608,6 +608,19 @@
     "09:00-12:00"
    ],
    "note": ""
+  },
+  {
+   "id": "xmwbg4lb4349",
+   "places": [
+    "obecni-urad",
+    "posta",
+    "sberny-dvur",
+    "knihovna"
+   ],
+   "from": "2026-12-24",
+   "to": "2026-12-26",
+   "hours": [],
+   "note": ""
   }
  ],
  "holidays": {
