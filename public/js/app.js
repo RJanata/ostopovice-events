@@ -376,7 +376,8 @@ function dayHeading(day, holidays) {
   const sameYear = day.slice(0, 4) === today.slice(0, 4);
   const label = formatDay(day, { weekday: 'long', day: 'numeric', month: 'long', ...(sameYear ? {} : { year: 'numeric' }) });
   const holiday = holidays.get(day);
-  return `<h2 class="day__heading">
+  const weekend = keyToDate(day).getUTCDay() % 6 === 0;
+  return `<h2 class="day__heading${weekend || holiday ? ' day__heading--off' : ''}">
       ${relative ? `<span class="day__relative">${relative}</span>` : ''}
       <span>${escapeHtml(label.charAt(0).toUpperCase() + label.slice(1))}</span>
       ${holiday ? `<span class="day__holiday">${escapeHtml(holiday.join(' · '))}</span>` : ''}
@@ -418,6 +419,11 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
   return byDay;
 }
 
+/** Štítek sbalené skupiny akcí (Pravidelné, Dlouhodobé); počet jen když jich je víc než jedna. */
+function groupLabel(name, count) {
+  return `<span class="day__group-label">${name}${count > 1 ? `<span class="day__group-count">${count}</span>` : ''}</span>`;
+}
+
 /**
  * Karty akcí jednoho dne. Pravidelné akce (cvičení, kurzy…) jsou sbalené do jednoho
  * řádku na konci dne; při hledání se rozbalí, aby bylo vidět, co se našlo.
@@ -430,7 +436,7 @@ function dayEvents(list, day) {
   if (regular.length) {
     const names = [...new Set(regular.map((e) => e.title))].join(', ');
     html += `<details class="day__regular"${state.query ? ' open' : ''}>
-        <summary>Pravidelné (${regular.length}): ${escapeHtml(names)}</summary>
+        <summary>${groupLabel('Pravidelné', regular.length)}<span class="day__group-names">${escapeHtml(names)}</span></summary>
         ${regular.map((e) => eventCard(e, day)).join('')}
       </details>`;
   }
@@ -445,7 +451,7 @@ function longEventsBlock(events, from) {
   const list = events.filter((e) => e._long && e._first <= from && e._last >= from).sort(compareEvents);
   if (!list.length) return '';
   return `<details class="day__regular day__long"${state.query ? ' open' : ''}>
-      <summary>Dlouhodobé (${list.length}): ${escapeHtml(list.map((e) => e.title).join(', '))}</summary>
+      <summary>${groupLabel('Dlouhodobé', list.length)}<span class="day__group-names">${escapeHtml(list.map((e) => e.title).join(', '))}</span></summary>
       ${list.map((e) => eventCard(e, from)).join('')}
     </details>`;
 }
@@ -703,6 +709,7 @@ function renderMonth(events, holidays) {
       const classes = ['month__day',
         !d.startsWith(month) && 'month__day--other',
         d === today && 'month__day--today',
+        i >= 5 && 'month__day--weekend',
         holiday && 'month__day--holiday',
         d === selected && 'month__day--selected'].filter(Boolean).join(' ');
       // „+ N další“ na místě posledního řádku akcí (pod buňkou je klikací den)
@@ -734,7 +741,7 @@ function renderMonth(events, holidays) {
     }
     weeksHtml += `<div class="month__week">${cells}${longLines}${bars}</div>`;
   }
-  const weekdaysHtml = `<div class="month__weekdays">${weekdayNames.map((n) => `<div class="month__weekday">${n}</div>`).join('')}</div>`;
+  const weekdaysHtml = `<div class="month__weekdays">${weekdayNames.map((n, i) => `<div class="month__weekday${i >= 5 ? ' month__weekday--weekend' : ''}">${n}</div>`).join('')}</div>`;
 
   const title = formatDay(firstOfMonth, { month: 'long', year: 'numeric' });
   const slideClass = monthSlide ? ` month__grid--from-${monthSlide}` : '';

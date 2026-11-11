@@ -76,6 +76,30 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .site-header h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.15; letter-spacing: -0.02em; color: var(--heading); }
 .site-header__lead { margin: 4px 0 0; color: var(--muted); }
 
+/* tlačítko přepnutí Kalendář akcí ↔ Otevírací doby vpravo od nadpisu */
+.page-switch { height: 38px; padding: 0 12px; font-weight: 600; white-space: nowrap; }
+.page-switch:hover { background: var(--surface-2); filter: none; }
+/* „Nové“ u přepínače na otevírací doby, ať si ho lidé všimnou (časem odebrat z index.html) */
+.badge-new {
+  margin-left: -2px; padding: 0 6px; border-radius: 999px; background: #d9f2e1; color: #1f6b3a;
+  font-size: 0.66rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.04em; text-transform: uppercase;
+}
+:root[data-theme="dark"] .badge-new { background: #1f3d2a; color: #9fdcb2; }
+
+/* záložky (jen v administraci: Správa akcí ↔ Otevírací doby) */
+.site-nav { grid-column: 1 / -1; grid-row: 3; display: flex; gap: 4px; margin-top: 14px; border-bottom: 1px solid var(--border); }
+.site-nav__link {
+  display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px 8px; margin-bottom: -1px;
+  border: 1px solid transparent; border-radius: 8px 8px 0 0; color: var(--muted);
+  font-size: 0.95rem; font-weight: 600; text-decoration: none;
+}
+.site-nav__link:hover { color: var(--accent); background: var(--surface-2); }
+.site-nav__link[aria-current="page"] {
+  color: var(--heading); background: var(--surface); border-color: var(--border); border-bottom-color: var(--surface);
+}
+.site-nav__link[aria-current="page"] svg { color: var(--accent-2); }
+.site-nav__link:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
 .button {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 8px 14px; border-radius: 8px; border: 1px solid var(--accent);
@@ -288,10 +312,32 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* pravidelné akce: sbalené do jednoho řádku na konci dne */
 .day__regular { margin: 0 0 8px; font-size: 0.9rem; }
 .day__regular > summary {
-  cursor: pointer; padding: 6px 12px; border: 1px dashed var(--border); border-radius: 8px;
-  color: var(--muted); list-style-position: inside; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 6px 12px 6px 10px; list-style: none;
+  border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--muted);
 }
+.day__regular > summary::-webkit-details-marker { display: none; }
+/* vlastní šipka (u summary s flexem prohlížeč tu svoji nekreslí) */
+.day__regular > summary::before {
+  content: ""; flex: none; width: 6px; height: 6px; margin: 0 2px 0 2px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg); transition: transform 0.2s ease;
+}
+.day__regular[open] > summary::before { transform: rotate(45deg); }
+.day__regular > summary:hover { border-color: var(--accent); }
 .day__regular[open] > summary { margin-bottom: 8px; }
+/* „fazolka“ s názvem skupiny a počtem akcí */
+.day__group-label {
+  display: inline-flex; align-items: center; gap: 6px; flex: none; padding: 1px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 14%, var(--surface)); color: var(--heading);
+  font-size: 0.8rem; font-weight: 700; line-height: 1.6;
+}
+.day__group-count {
+  display: inline-grid; place-items: center; min-width: 18px; height: 18px; margin-right: -6px; padding: 0 5px;
+  border-radius: 999px; background: var(--accent); color: var(--accent-text); font-size: 0.72rem; line-height: 1;
+}
+.day__long .day__group-label { background: color-mix(in srgb, var(--holiday) 14%, var(--surface)); }
+.day__long .day__group-count { background: var(--holiday); }
+.day__group-names { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .day__regular .event { box-shadow: none; }
 .day--empty { margin-bottom: 10px; }
 .day--empty .day__heading { position: static; color: var(--muted); font-weight: 600; }
@@ -350,6 +396,14 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__day:first-child { border-left: 0; }
 .month__day:hover { background: var(--surface-2); }
 .month__day--other { background: var(--bg); color: var(--muted); }
+/* víkendy a svátky (dny volna): jemný podklad, svátek o něco výraznější */
+.month__day--weekend { background: color-mix(in srgb, var(--holiday) 5%, var(--surface)); }
+.month__day--holiday { background: color-mix(in srgb, var(--holiday) 11%, var(--surface)); }
+.month__day--other.month__day--weekend { background: color-mix(in srgb, var(--holiday) 5%, var(--bg)); }
+.month__day--weekend:hover, .month__day--holiday:hover { background: color-mix(in srgb, var(--holiday) 12%, var(--surface-2)); }
+.month__day--weekend .month__day-number { color: var(--holiday); }
+.month__weekday--weekend { color: var(--holiday); }
+.day__heading--off > span:not(.day__relative):not(.day__holiday) { color: var(--holiday); }
 .month__day--today { background: var(--today); box-shadow: inset 0 0 0 1px var(--accent-2); }
 .month__day--today .month__day-number { color: var(--accent-2); }
 .month__day--selected { box-shadow: inset 0 0 0 2px var(--accent); }
@@ -421,7 +475,9 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 @media (max-width: 640px) {
   /* úsporná hlavička: méně místa nahoře, bez přepínače tmavého režimu */
   .site-header { padding: 12px 0 2px; }
-  .site-header__actions { display: none; }
+  /* na mobilu bez přepínače tmavého režimu a správy, přepnutí stránek zůstává */
+  .site-header__actions .theme-toggle { display: none !important; }
+  .page-switch { height: 34px; padding: 0 10px; font-size: 0.88rem; }
   .filters { margin: 8px 0 12px; }
   .search { max-width: none; }
   .event { grid-template-columns: 1fr auto; }
