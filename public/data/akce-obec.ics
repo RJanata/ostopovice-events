@@ -167,17 +167,6 @@ DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-18d4zls@ostopovice-events
-DTSTAMP:20261109T125420Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261121
-SUMMARY:Oznámení o změně otevírací doby pošty Partner
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/oznameni-o-zmene-oteviraci-doby
- -posty-partner
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:obec-3uu75f@ostopovice-events
 DTSTAMP:20261106T172551Z
 DTSTART:20261117T160000Z
