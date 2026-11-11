@@ -1,4 +1,19 @@
 {
   "$comment": "Výjimky z otevírací doby (upravuje admin-hours.html přes api.craz.cz). places = id míst z opening-hours.json (jedna výjimka může platit pro víc míst), from/to = YYYY-MM-DD (včetně), hours: [] = zavřeno, [\"08:00-10:00\"] = jiná otevírací doba, note = důvod (na webu u výjimky). editedBy/editedAt doplňuje server.",
-  "exceptions": []
+  "exceptions": [
+    {
+      "id": "xmwbdos5t07i",
+      "places": [
+        "posta"
+      ],
+      "from": "2026-11-16",
+      "to": "2026-11-16",
+      "hours": [
+        "12:00-15:00"
+      ],
+      "note": "",
+      "editedBy": "Radek",
+      "editedAt": "2026-11-11T00:26:04.575Z"
+    }
+  ]
 }
