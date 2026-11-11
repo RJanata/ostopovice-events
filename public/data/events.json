@@ -5442,7 +5442,7 @@
    "end": "2026-11-13T18:00:00.000Z",
    "allDay": false,
    "location": "",
-   "url": "",
+   "url": "https://www.facebook.com/vechtrovna.official/posts/pfbid024jn1mibLjVgR3irEbmzUaTkskTFaTaNkLgbkoTBTQh9nH1SiKcZEUy3w3kVSmJ8wl",
    "description": "Folk, bluegrass, blues, jazz.\nRezervace na 725 015 013",
    "image": "",
    "tagCategories": [
@@ -5603,12 +5603,12 @@
     "kultura",
     "obec"
    ],
-   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T11:01:38.483Z"
   },
   {
    "id": "knihovna-xruv7p",
@@ -5902,26 +5902,6 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
-  },
-  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -5942,6 +5922,26 @@
     "obec"
    ],
    "added": "2026-11-06T10:48:43.168Z"
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",

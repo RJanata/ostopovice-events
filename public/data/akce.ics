@@ -1373,6 +1373,8 @@ DTEND:20261113T180000Z
 SUMMARY:Vechtrovna: Hudební večer – BG JAM\, D.U.H.A Band
 DESCRIPTION:Folk\, bluegrass\, blues\, jazz.\nRezervace na 725 015 013\n\nZ
  droj: Nezařazené
+URL:https://www.facebook.com/vechtrovna.official/posts/pfbid024jn1mibLjVgR3
+ irEbmzUaTkskTFaTaNkLgbkoTBTQh9nH1SiKcZEUy3w3kVSmJ8wl
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
@@ -1653,17 +1655,6 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-1lcdi2k@ostopovice-events
-DTSTAMP:20261008T085748Z
-DTSTART:20261125T170000Z
-DTEND:20261125T180000Z
-SUMMARY:Bohoslužba: Mše svatá
-LOCATION:Kaple sv. Jana Křtitele
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://farnost.troubsko.cz/
-CATEGORIES:Církev
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-1uclek6@ostopovice-events
 DTSTAMP:20261106T104843Z
 DTSTART:20261125T170000Z
@@ -1675,6 +1666,17 @@ DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
 URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
  noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
 CATEGORIES:Pro děti,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-1lcdi2k@ostopovice-events
+DTSTAMP:20261008T085748Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Bohoslužba: Mše svatá
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://farnost.troubsko.cz/
+CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
