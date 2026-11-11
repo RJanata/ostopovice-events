@@ -544,6 +544,16 @@
  ],
  "exceptions": [
   {
+   "id": "xmwbffajx1te",
+   "places": [
+    "vechtrovna"
+   ],
+   "from": "2026-11-14",
+   "to": "2026-11-14",
+   "hours": [],
+   "note": "soukromá akce"
+  },
+  {
    "id": "xmwbdos5t07i",
    "places": [
     "posta"
