@@ -142,7 +142,8 @@ const intervalsText = (list) => (list === null ? 'neznámá' : list.length
 function timesHtml(intervals, twoColumns, info = '') {
   if (!intervals) return '<span class="hours-day__closed">?</span>';
   // info = text běžné doby u výjimky: ikonka „i“ vlevo od první (nebo jediné) hodnoty
-  if (!intervals.length) return `<span class="hours-day__closed">${infoIcon(info)}—</span>`;
+  // zavřeno výjimkou = slovem „zavřeno“, běžně zavřený den = dlouhá pomlčka
+  if (!intervals.length) return `<span class="hours-day__closed">${infoIcon(info)}${info ? 'zavřeno' : '—'}</span>`;
   if (!twoColumns || intervals.length > 2) return intervals.map((i, n) => intervalHtml(i, n ? '' : info)).join('');
   const slots = ['', ''];
   if (intervals.length === 2) intervals.forEach((i, n) => { slots[n] = intervalHtml(i, n ? '' : info); });
