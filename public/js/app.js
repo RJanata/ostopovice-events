@@ -389,7 +389,7 @@ function dayHeading(day, holidays) {
       ${relative ? `<span class="day__relative">${relative}</span>` : ''}
       <span>${escapeHtml(label.charAt(0).toUpperCase() + label.slice(1))}</span>
       ${holiday ? `<span class="day__holiday">${escapeHtml(holiday.join(' · '))}</span>` : ''}
-      ${shopsBadge(day, holiday)}
+      ${shopsBadge(day, holiday)}${noticeBadge(day)}
     </h2>`;
 }
 
@@ -398,6 +398,13 @@ function shopsBadge(day, holiday) {
   const shops = window.OpeningHours?.bigShops(day, holiday);
   if (!shops) return '';
   return `<span class="day__shops${shops.closed ? ' day__shops--closed' : ''}" title="Zákon o prodejní době: obchody s prodejní plochou nad 200 m²">${escapeHtml(shops.text)}</span>`;
+}
+
+/** Žluté upozornění ke dni, který není svátek (Silvestr: prodejny mají zkrácenou otevírací dobu). */
+function noticeBadge(day) {
+  const notice = window.OpeningHours?.dayNotice(day);
+  if (!notice) return '';
+  return `<span class="day__holiday">${escapeHtml(notice.label)}</span><span class="day__shops day__shops--notice">${escapeHtml(notice.text)}</span>`;
 }
 
 // ---------- Zobrazení: seznam ----------
@@ -429,7 +436,13 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
 
   if (holidayDays) {
     // svátky a dny se změněnou otevírací dobou se ukážou i bez akcí
-    for (const day of [...holidays.keys(), ...hoursChanges.keys()]) {
+    // + den s upozorněním (Silvestr) ve zobrazeném rozsahu
+    const noticeDays = [];
+    for (let y = Number(from.slice(0, 4)); y <= Number(to.slice(0, 4)); y++) {
+      const d = `${y}-12-31`;
+      if (d >= from && d <= to && window.OpeningHours?.dayNotice(d)) noticeDays.push(d);
+    }
+    for (const day of [...holidays.keys(), ...hoursChanges.keys(), ...noticeDays]) {
       if (day >= from && day <= to && !byDay.has(day)) byDay.set(day, []);
     }
   }
@@ -516,7 +529,7 @@ function hoursChangesBlock(day) {
   const groups = hoursChanges.get(day);
   if (!groups) return '';
   return `<div class="day__hours">
-      <a class="day__hours-title" href="oteviraci-doby">${ICON_INFO}Změněné otevírací doby</a>
+      <a class="day__hours-title" href="oteviraci-doby#d=${day}">${ICON_INFO}Změněné otevírací doby</a>
       <ul>${groups.map((g) => `<li><strong>${escapeHtml(g.names.join(', '))}:</strong> ${escapeHtml(g.text)}</li>`).join('')}</ul>
     </div>`;
 }
@@ -789,8 +802,10 @@ function renderMonth(events, holidays) {
       // tečky (jen na mobilu): plné = jednorázové akce, obrysové = pravidelné
       // pravidelné akce na mobilu: plná kolečka vpravo od čísla dne (místo ikon);
       // kolik se jich vejde vedle „+N“ v rohu, dořeší fitRegularDots
-      const regularDots = regular.length
-        ? `<span class="month__regular-dots">${regular.slice(0, 3).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>`
+      // změněná otevírací doba = oranžová tečka jako první (ta se při nedostatku místa schová poslední)
+      const hoursDot = hoursChanges.has(d) ? '<i class="month__hours-dot"></i>' : '';
+      const regularDots = regular.length || hoursDot
+        ? `<span class="month__regular-dots">${hoursDot}${regular.slice(0, 3).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>`
         : '';
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
@@ -804,6 +819,7 @@ function renderMonth(events, holidays) {
             ${regularMarks}${regularDots}
             ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změněné otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml([holiday.join(' · '), window.OpeningHours?.bigShops(d, holiday)?.text].filter(Boolean).join('\n'))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
+            ${!holiday && window.OpeningHours?.dayNotice(d) ? `<span class="month__day-holiday" title="${escapeHtml(window.OpeningHours.dayNotice(d).text)}">${escapeHtml(window.OpeningHours.dayNotice(d).label)}</span>` : ''}
           </span>
         </button>`;
     }

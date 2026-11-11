@@ -566,3 +566,16 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* vlastní ikona akce (#icon:… v popisu) */
 .event__title .event-icon { width: 17px; height: 17px; margin-right: 6px; vertical-align: -2px; }
 .month__pill .event-icon { width: 14px; height: 14px; margin-left: 2px; }
+
+/* změněná otevírací doba v měsíci: na mobilu místo ikony „!“ oranžová tečka mezi tečkami pravidelných akcí */
+.month__regular-dots i.month__hours-dot {
+  /* trojúhelníček (jako ikona „!“), ať se neplete s oranžovou tečkou knihovny */
+  width: 8px; height: 7px; border-radius: 0; background: var(--hours-change); clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+@media (max-width: 640px) {
+  .month__day-hours { display: none; }
+}
+
+/* upozornění ke dni (Silvestr: zkrácená otevírací doba prodejen) — žlutě */
+.day__shops--notice { background: #fdf0c4; color: #7a5200; }
+:root[data-theme="dark"] .day__shops--notice { background: #45391a; color: #f5d27a; }
