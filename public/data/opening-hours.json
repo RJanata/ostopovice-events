@@ -7,16 +7,16 @@
    "icon": "obec.png"
   },
   {
-   "id": "pohostinstvi",
-   "label": "Pohostinství",
-   "color": "#b5651d",
-   "icon": "tabler/beer.svg"
-  },
-  {
    "id": "sluzby",
    "label": "Služby",
    "color": "#2f6b47",
    "icon": "tabler/tool.svg"
+  },
+  {
+   "id": "pohostinstvi",
+   "label": "Pohostinství",
+   "color": "#b5651d",
+   "icon": "tabler/beer.svg"
   }
  ],
  "places": [
@@ -49,7 +49,7 @@
    "id": "posta",
    "name": "Pošta Partner",
    "icon": "places/posta.png",
-   "category": "obec",
+   "category": "sluzby",
    "address": "U Kaple 260/5",
    "phone": "+420 547 219 028",
    "web": "https://www.ostopovice.cz/posta",
@@ -649,138 +649,6 @@
      "08:00-17:00"
     ]
    }
-  },
-  {
-   "id": "svareci-technika-krejcik",
-   "name": "Svářecí technika Krejčík",
-   "icon": "tabler/flame.svg",
-   "category": "sluzby",
-   "address": "Osvobození 150/6",
-   "phone": "+420 602 743 068",
-   "web": "https://svarovaci-technika-krejcik.cz/",
-   "map": "https://mapy.com/cs/?source=firm&id=445774",
-   "hours": {
-    "mon": [
-     "07:00-15:00"
-    ],
-    "tue": [
-     "07:00-15:00"
-    ],
-    "wed": [
-     "07:00-15:00"
-    ],
-    "thu": [
-     "07:00-15:00"
-    ],
-    "fri": [
-     "07:00-15:00"
-    ]
-   }
-  },
-  {
-   "id": "d-studio-fit",
-   "name": "D Studio Fit",
-   "icon": "tabler/massage.svg",
-   "category": "sluzby",
-   "address": "Družstevní 84/15",
-   "phone": "+420 603 215 785",
-   "map": "https://mapy.com/cs/?source=firm&id=12862576",
-   "hours": {
-    "mon": [
-     "08:00-12:00",
-     "14:00-20:00"
-    ],
-    "tue": [
-     "14:00-20:00"
-    ],
-    "wed": [
-     "08:00-12:00",
-     "14:00-20:00"
-    ],
-    "thu": [
-     "14:00-20:00"
-    ],
-    "fri": [
-     "08:00-14:00"
-    ],
-    "sat": [
-     "08:00-12:00"
-    ],
-    "sun": [
-     "16:00-20:00"
-    ]
-   }
-  },
-  {
-   "id": "cistirna-peri",
-   "name": "Čistírna peří S&D Hanušovi",
-   "icon": "tabler/feather.svg",
-   "category": "sluzby",
-   "address": "U Dráhy 175/2",
-   "phone": "+420 608 369 643",
-   "web": "https://cistirna-peri-brno-ostopovice.webnode.cz/",
-   "map": "https://mapy.com/cs/?source=firm&id=12913566",
-   "hours": {
-    "mon": [
-     "16:00-19:00"
-    ],
-    "tue": [
-     "16:00-19:00"
-    ],
-    "wed": [
-     "16:00-19:00"
-    ]
-   }
-  },
-  {
-   "id": "autoservis-suchy",
-   "name": "Jan Suchý – Autoservis",
-   "icon": "tabler/car.svg",
-   "category": "sluzby",
-   "address": "Polní 228/18",
-   "phone": "+420 603 307 387",
-   "map": "https://mapy.com/cs/?source=firm&id=1994074",
-   "hours": {
-    "mon": [
-     "08:00-17:00"
-    ],
-    "tue": [
-     "08:00-17:00"
-    ],
-    "wed": [
-     "08:00-17:00"
-    ],
-    "thu": [
-     "08:00-17:00"
-    ],
-    "fri": [
-     "08:00-17:00"
-    ]
-   }
-  },
-  {
-   "id": "richtmoto",
-   "name": "Motoservis Richtmoto",
-   "icon": "tabler/motorbike.svg",
-   "category": "sluzby",
-   "address": "Družstevní 404/14",
-   "phone": "+420 702 948 654",
-   "web": "https://www.richtmoto.cz/",
-   "map": "https://mapy.com/cs/?source=firm&id=13507986",
-   "hours": {
-    "mon": [
-     "08:00-16:00"
-    ],
-    "tue": [
-     "08:00-16:00"
-    ],
-    "wed": [
-     "08:00-16:00"
-    ],
-    "thu": [
-     "08:00-16:00"
-    ]
-   }
   }
  ],
  "exceptions": [
@@ -827,20 +695,6 @@
    "note": ""
   },
   {
-   "id": "xmwbi8vfu2yg",
-   "places": [
-    "svareci-technika-krejcik",
-    "d-studio-fit",
-    "cistirna-peri",
-    "autoservis-suchy",
-    "richtmoto"
-   ],
-   "from": "2026-11-17",
-   "to": "2026-11-17",
-   "hours": [],
-   "note": ""
-  },
-  {
    "id": "xmwbdpapbp2u",
    "places": [
     "posta"
@@ -871,20 +725,6 @@
     "posta",
     "sberny-dvur",
     "knihovna"
-   ],
-   "from": "2026-12-24",
-   "to": "2026-12-26",
-   "hours": [],
-   "note": ""
-  },
-  {
-   "id": "xmwbgmmzfuc6",
-   "places": [
-    "svareci-technika-krejcik",
-    "d-studio-fit",
-    "cistirna-peri",
-    "autoservis-suchy",
-    "richtmoto"
    ],
    "from": "2026-12-24",
    "to": "2026-12-26",
