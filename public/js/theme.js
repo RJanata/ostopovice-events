@@ -7,10 +7,10 @@
   try { saved = localStorage.getItem(KEY); } catch (e) { /* soukromý režim apod. */ }
   if (saved === 'dark') root.setAttribute('data-theme', 'dark');
 
-  // Kdo jednou otevřel admin.html, má od té doby v kalendáři vpravo nahoře odkaz na správu.
+  // Kdo jednou otevřel admin.html (nebo admin-hours.html), má od té doby v kalendáři vpravo nahoře odkaz na správu.
   var ADMIN_KEY = 'adminLink';
   try {
-    if (/\/admin(\.html)?$/.test(location.pathname)) localStorage.setItem(ADMIN_KEY, '1');
+    if (/\/admin(-hours)?(\.html)?$/.test(location.pathname)) localStorage.setItem(ADMIN_KEY, '1');
     if (localStorage.getItem(ADMIN_KEY)) root.setAttribute('data-admin', '');
   } catch (e) { /* soukromý režim apod. */ }
 

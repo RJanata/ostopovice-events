@@ -22,7 +22,8 @@ const TYPES = {
 
 createServer(async (req, res) => {
   const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-  const file = path.join(ROOT, urlPath.endsWith('/') ? `${urlPath}index.html` : urlPath);
+  // jako GitHub Pages: /oteviraci-doby → oteviraci-doby.html
+  const file = path.join(ROOT, urlPath.endsWith('/') ? `${urlPath}index.html` : path.extname(urlPath) ? urlPath : `${urlPath}.html`);
   if (!file.startsWith(ROOT)) {
     res.writeHead(403).end();
     return;

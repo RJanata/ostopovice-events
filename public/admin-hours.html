@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Správa otevíracích dob</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="icons/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=dev">
+  <link rel="stylesheet" href="css/admin.css?v=dev">
+  <link rel="stylesheet" href="css/opening-hours.css?v=dev">
+  <script src="js/theme.js?v=dev"></script>
+  <script src="js/date-picker.js?v=dev" defer></script>
+  <script src="js/admin-hours.js?v=dev" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="site-header__title">
+        <h1>Správa otevíracích dob</h1>
+        <p class="site-header__lead">Výjimky z otevírací doby – dovolená, svátky, zkrácený provoz. Po uložení se web sám přegeneruje (asi 2 minuty).</p>
+      </div>
+      <div class="site-header__actions">
+        <a class="button button--ghost" href="oteviraci-doby">← Otevírací doby</a>
+      </div>
+      <nav class="site-nav" aria-label="Správa">
+        <a class="site-nav__link" href="admin.html">Správa akcí</a>
+        <a class="site-nav__link" href="admin-hours.html" aria-current="page">Otevírací doby</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="admin-box" id="login-box">
+      <h2>Přístup</h2>
+      <form class="admin-token" id="login-form">
+        <p class="admin-help">Výjimky může ukládat jen přihlášený editor (stejné heslo jako ve správě akcí). Přihlášení vydrží v tomto prohlížeči půl roku.</p>
+        <input type="password" id="login-password" placeholder="Heslo" autocomplete="current-password">
+        <button type="submit" class="button">Přihlásit</button>
+      </form>
+      <div class="admin-token" id="login-info" hidden>
+        <span>Přihlášen(a): <strong id="login-name"></strong></span>
+        <button type="button" class="button button--ghost button--small" id="logout">Odhlásit</button>
+      </div>
+      <p class="admin-status" id="login-status"></p>
+    </section>
+
+    <section class="admin-box" id="editor-box" hidden>
+      <h2 id="form-title">Nová výjimka</h2>
+      <form class="admin-edit hours-form" id="exception-form">
+        <fieldset class="admin-field">
+          <legend>Místa <small>(výjimka může platit pro víc míst naráz, např. zavřeno ve svátek)</small></legend>
+          <p class="hours-places__tools">
+            <button type="button" class="link-button" id="x-all">Vybrat vše</button>
+            <button type="button" class="link-button" id="x-none">Zrušit výběr</button>
+            <span class="admin-help" id="x-count"></span>
+          </p>
+          <div class="hours-places" id="x-places"></div>
+        </fieldset>
+        <div class="admin-field admin-when">
+          <span>Kdy</span>
+          <div class="admin-when__row">
+            <label>od <input type="text" id="x-from"></label>
+            <label>do <input type="text" id="x-to"></label>
+            <small>(„do“ prázdné = jen jeden den)</small>
+          </div>
+        </div>
+        <fieldset class="admin-field">
+          <legend>Otevírací doba v těchto dnech</legend>
+          <div class="admin-scope">
+            <label class="admin-check"><input type="radio" name="x-mode" value="closed" checked> Zavřeno</label>
+            <label class="admin-check"><input type="radio" name="x-mode" value="hours"> Jiná otevírací doba</label>
+          </div>
+          <div class="hours-form__intervals" id="x-intervals" hidden>
+            <div class="admin-when__row"><input type="text" class="hours-form__time" data-from placeholder="8:00" inputmode="numeric"> – <input type="text" class="hours-form__time" data-to placeholder="12:00" inputmode="numeric"></div>
+            <div class="admin-when__row"><input type="text" class="hours-form__time" data-from placeholder="13:00" inputmode="numeric"> – <input type="text" class="hours-form__time" data-to placeholder="17:00" inputmode="numeric"> <small>(druhý interval nepovinný)</small></div>
+          </div>
+        </fieldset>
+        <label class="admin-field">
+          <span>Poznámka <small>(ukáže se u výjimky, např. „Dovolená“, „Inventura“)</small></span>
+          <input type="text" id="x-note" maxlength="200">
+        </label>
+        <div class="admin-actions">
+          <button type="submit" class="button" id="x-save">Uložit výjimku</button>
+          <button type="button" class="button button--ghost" id="x-cancel" hidden>Zrušit úpravu</button>
+          <span class="admin-status" id="save-status"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="admin-box" id="list-box" hidden>
+      <h2>Výjimky</h2>
+      <p class="admin-help">Nadcházející a probíhající výjimky. Proběhlé se na webu nezobrazují.</p>
+      <div id="exception-list"></div>
+      <details class="hours-past" id="past-box" hidden>
+        <summary>Proběhlé výjimky (<span id="past-count"></span>)</summary>
+        <div id="past-list"></div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

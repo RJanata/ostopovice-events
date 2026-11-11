@@ -1,4 +1,5 @@
 // Sběr akcí ze všech zdrojů → public/data/events.json + public/data/akce.ics
+//                            + public/data/opening-hours.json (otevírací doby, z configu)
 //                            + public/data/status.json (stav běhu, jen na webu, ne v gitu)
 //
 // Spuštění: npm run collect  (volitelně --only=knihovna pro jeden zdroj,
@@ -15,6 +16,7 @@ import path from 'node:path';
 import { buildRules, buildTagMap, categorize, extractTags } from './lib/categorize.js';
 import { fetchText } from './lib/http.js';
 import { buildIcs } from './lib/ics.js';
+import { buildOpeningHours } from './lib/opening-hours.js';
 import { normalize, shortHash, truncate } from './lib/text.js';
 import { addDays, eventLastDay, fromPragueTime, pragueDay } from './lib/time.js';
 import * as icalAdapter from './adapters/ical.js';
@@ -42,6 +44,8 @@ const ICS_FILE = path.join(DATA_DIR, 'akce.ics');
 // Čas běhu a stav zdrojů se mění při každém běhu → zvlášť, ať diff events.json ukazuje jen
 // skutečné změny akcí. Do gitu nejde; workflow si ho před sběrem stáhne z webu.
 const STATUS_FILE = path.join(DATA_DIR, 'status.json');
+// otevírací doby (stránka oteviraci-doby.html) z config/opening-hours*.json + svátky
+const OPENING_HOURS_FILE = path.join(DATA_DIR, 'opening-hours.json');
 // zdroje, které se dlouho nedaří stáhnout (a zase fungují) → komentář do issue jako u nových akcí
 const PROBLEMS_FILE = path.join(ROOT, 'source-problems.md');
 const REPORT_AFTER_HOURS = 12;
@@ -426,6 +430,7 @@ async function main() {
   await writeFile(EVENTS_FILE, JSON.stringify(output, null, 1) + '\n');
 
   const sourcesById = Object.fromEntries(sources.map((s) => [s.id, s]));
+  await buildOpeningHours({ root: ROOT, outFile: OPENING_HOURS_FILE, events, sourcesById, today, log });
   const reportBefore = now.getTime() - REPORT_AFTER_HOURS * 3600e3;
   const failing = sourceStatus.filter((st) => !st.ok && !st.reported && Date.parse(st.failingSince) < reportBefore);
   const recovered = sourceStatus.filter((st) => st.recovered);

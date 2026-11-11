@@ -1,0 +1,579 @@
+{
+ "categories": [
+  {
+   "id": "obec",
+   "label": "Obec",
+   "color": "#1f5c99",
+   "icon": "obec.png"
+  },
+  {
+   "id": "pohostinstvi",
+   "label": "Pohostinství",
+   "color": "#b5651d",
+   "icon": "tabler/beer.svg"
+  },
+  {
+   "id": "sluzby",
+   "label": "Služby",
+   "color": "#2f6b47",
+   "icon": "tabler/tool.svg"
+  }
+ ],
+ "places": [
+  {
+   "id": "obecni-urad",
+   "name": "Obecní úřad",
+   "icon": "obec.png",
+   "category": "obec",
+   "hoursLabel": "Úřední hodiny",
+   "address": "U Kaple 260/5",
+   "phone": "+420 547 211 381",
+   "email": "evidence@ostopovice.cz",
+   "web": "https://www.ostopovice.cz/obecni-urad",
+   "map": "https://mapy.com/cs/?source=firm&id=353025",
+   "hours": {
+    "mon": [
+     "08:00-12:00",
+     "14:00-17:00"
+    ],
+    "tue": [
+     "08:00-12:00"
+    ],
+    "wed": [
+     "08:00-12:00",
+     "14:00-17:00"
+    ]
+   }
+  },
+  {
+   "id": "posta",
+   "name": "Pošta Partner",
+   "icon": "places/posta.png",
+   "category": "obec",
+   "address": "U Kaple 260/5",
+   "phone": "+420 547 219 028",
+   "web": "https://www.ostopovice.cz/posta",
+   "hours": {
+    "mon": [
+     "07:00-11:00",
+     "14:00-18:00"
+    ],
+    "tue": [
+     "08:00-12:00"
+    ],
+    "wed": [
+     "07:00-11:00",
+     "14:00-18:00"
+    ],
+    "thu": [
+     "08:00-12:00",
+     "14:00-16:00"
+    ],
+    "fri": [
+     "08:00-12:00",
+     "14:00-16:00"
+    ]
+   }
+  },
+  {
+   "id": "sberny-dvur",
+   "name": "Sběrný dvůr",
+   "icon": "tabler/recycle.svg",
+   "category": "obec",
+   "address": "Družstevní (za mostem)",
+   "phone": "+420 775 539 230",
+   "email": "sbernydvur@ostopovice.cz",
+   "web": "https://www.ostopovice.cz/odpadove-hospodarstvi#sberny_dvur",
+   "map": "https://mapy.com/cs/?source=firm&id=2253088",
+   "note": "Odpad přijímají jen od plátců poplatku za odpady.",
+   "seasons": [
+    {
+     "label": "Letní provoz (duben–říjen)",
+     "from": "04-01",
+     "to": "10-31",
+     "hours": {
+      "mon": [
+       "13:00-17:00"
+      ],
+      "wed": [
+       "13:00-18:00"
+      ],
+      "sat": [
+       "08:00-12:00"
+      ]
+     }
+    },
+    {
+     "label": "Zimní provoz (listopad–březen)",
+     "from": "11-01",
+     "to": "03-31",
+     "hours": {
+      "wed": [
+       "13:00-17:00"
+      ],
+      "sat": [
+       {
+        "time": "08:00-11:00",
+        "weeks": "even",
+        "note": "jen v sudém týdnu"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "knihovna",
+   "name": "Obecní knihovna",
+   "icon": "knihovna.png",
+   "category": "obec",
+   "address": "Lípová 67/15",
+   "email": "knihovna@ostopovice.cz",
+   "web": "https://www.knihovnaostopovice.cz/",
+   "note": "Knihy jde vrátit kdykoli do knihoboxu u knihovny.",
+   "hours": {
+    "mon": [
+     "10:00-14:00"
+    ],
+    "wed": [
+     "15:00-19:00"
+    ],
+    "thu": [
+     {
+      "time": "15:00-17:00",
+      "note": "knihovna dětem"
+     }
+    ]
+   },
+   "social": {
+    "facebook": "https://www.facebook.com/knihovnaostopovice",
+    "instagram": "https://www.instagram.com/knihovna_ostopovice/"
+   }
+  },
+  {
+   "id": "posilovna",
+   "name": "Venkovní posilovna",
+   "icon": "tabler/barbell.svg",
+   "category": "obec",
+   "hours": {
+    "mon": [
+     "08:00-20:00"
+    ],
+    "tue": [
+     "08:00-20:00"
+    ],
+    "wed": [
+     "08:00-20:00"
+    ],
+    "thu": [
+     "08:00-20:00"
+    ],
+    "fri": [
+     "08:00-20:00"
+    ],
+    "sat": [
+     "08:00-20:00"
+    ],
+    "sun": [
+     "08:00-20:00"
+    ]
+   },
+   "address": "U Dráhy 330/30"
+  },
+  {
+   "id": "u-volejniku",
+   "name": "U Volejníků",
+   "icon": "tabler/tools-kitchen-2.svg",
+   "category": "pohostinstvi",
+   "address": "Školní 1/20",
+   "phone": "+420 547 351 881",
+   "web": "https://www.uvolejniku.cz/",
+   "map": "https://mapy.com/cs/?source=firm&id=2627102",
+   "hours": {
+    "mon": [
+     "11:00-14:00"
+    ],
+    "tue": [
+     "11:00-22:00"
+    ],
+    "wed": [
+     "11:00-22:00"
+    ],
+    "thu": [
+     "11:00-14:00"
+    ],
+    "fri": [
+     "11:00-22:00"
+    ],
+    "sat": [
+     "11:00-22:00"
+    ],
+    "sun": [
+     "11:00-21:00"
+    ]
+   },
+   "social": {
+    "instagram": "https://www.instagram.com/restauraceuvolejniku"
+   }
+  },
+  {
+   "id": "senk",
+   "name": "Sport Šenk",
+   "icon": "tabler/beer.svg",
+   "category": "pohostinstvi",
+   "address": "Osvobození 17/4",
+   "map": "https://mapy.com/cs/?source=firm&id=13117783",
+   "hours": {
+    "mon": [
+     "14:00-23:00"
+    ],
+    "tue": [
+     "15:00-23:00"
+    ],
+    "wed": [
+     "15:00-23:00"
+    ],
+    "thu": [
+     "15:00-23:00"
+    ],
+    "fri": [
+     "15:00-24:00"
+    ],
+    "sat": [
+     "15:00-24:00"
+    ],
+    "sun": [
+     "15:00-23:00"
+    ]
+   },
+   "phone": "+420 737 502 837",
+   "social": {
+    "facebook": "https://www.facebook.com/SportSenk"
+   }
+  },
+  {
+   "id": "vinoteka-za-plotem",
+   "name": "Vinotéka Za plotem",
+   "icon": "tabler/glass-full.svg",
+   "category": "pohostinstvi",
+   "address": "Lípová 75/4",
+   "phone": "+420 602 710 421",
+   "map": "https://mapy.com/cs/?source=firm&id=12899205",
+   "hours": {
+    "mon": [
+     "14:00-18:00"
+    ],
+    "tue": [
+     "14:00-18:00"
+    ],
+    "wed": [
+     "14:00-18:00"
+    ],
+    "thu": [
+     "14:00-18:00"
+    ],
+    "fri": [
+     "14:00-18:00"
+    ],
+    "sat": [
+     "14:00-18:00"
+    ],
+    "sun": [
+     "14:00-18:00"
+    ]
+   }
+  },
+  {
+   "id": "vinoteka-kratka",
+   "name": "Vinotéka Krátká",
+   "icon": "tabler/glass-full.svg",
+   "category": "pohostinstvi",
+   "address": "Zahradní 386/2 (z ul. Krátké)",
+   "phone": "+420 777 595 011",
+   "web": "https://www.vinoteka-ostopovice.cz/",
+   "map": "https://mapy.com/cs/?source=firm&id=12897725",
+   "hours": {
+    "mon": [
+     "14:00-18:00"
+    ],
+    "tue": [
+     "14:00-18:00"
+    ],
+    "wed": [
+     "14:00-18:00"
+    ],
+    "thu": [
+     "14:00-18:00"
+    ],
+    "fri": [
+     "14:00-18:00"
+    ]
+   }
+  },
+  {
+   "id": "vinoteka-pavel",
+   "name": "Vinotéka Pavel",
+   "icon": "tabler/glass-full.svg",
+   "category": "pohostinstvi",
+   "address": "Na Rybníčku 1",
+   "phone": "+420 733 557 217",
+   "map": "https://mapy.com/cs/?source=firm&id=12912859",
+   "hours": {
+    "mon": [
+     "14:00-19:30"
+    ],
+    "tue": [
+     "14:00-19:30"
+    ],
+    "wed": [
+     "14:00-19:30"
+    ],
+    "thu": [
+     "14:00-19:30"
+    ],
+    "fri": [
+     "14:00-19:30"
+    ],
+    "sat": [
+     "14:00-19:30"
+    ],
+    "sun": [
+     "14:00-19:30"
+    ]
+   }
+  },
+  {
+   "id": "vechtrovna",
+   "name": "Vechtrovna",
+   "icon": "tabler/beer.svg",
+   "category": "pohostinstvi",
+   "village": "Troubsko",
+   "address": "U Dráhy 128/5, Troubsko",
+   "phone": "+420 737 121 138",
+   "map": "https://mapy.com/cs/?source=firm&id=12999964",
+   "hours": {
+    "mon": [
+     "16:00-22:00"
+    ],
+    "tue": [
+     "16:00-22:00"
+    ],
+    "wed": [
+     "16:00-23:00"
+    ],
+    "thu": [
+     "16:00-23:00"
+    ],
+    "fri": [
+     "16:00-23:00"
+    ],
+    "sat": [
+     "14:00-23:00"
+    ],
+    "sun": [
+     "14:00-20:00"
+    ]
+   },
+   "social": {
+    "facebook": "https://www.facebook.com/people/Vechtrovna-n%C3%A1dra%C5%BEn%C3%AD-hosp%C5%AFdka/61556915914818/"
+   }
+  },
+  {
+   "id": "smisenka",
+   "name": "Minimarket Smíšenka",
+   "icon": "tabler/shopping-cart.svg",
+   "category": "sluzby",
+   "address": "Osvobození",
+   "map": "https://mapy.com/cs/?source=firm&id=13229732",
+   "hours": {
+    "mon": [
+     "07:00-18:00"
+    ],
+    "tue": [
+     "07:00-18:00"
+    ],
+    "wed": [
+     "07:00-18:00"
+    ],
+    "thu": [
+     "07:00-18:00"
+    ],
+    "fri": [
+     "07:00-18:00"
+    ],
+    "sat": [
+     "08:00-17:00"
+    ],
+    "sun": [
+     "08:00-17:00"
+    ]
+   }
+  },
+  {
+   "id": "svareci-technika-krejcik",
+   "name": "Svářecí technika Krejčík",
+   "icon": "tabler/flame.svg",
+   "category": "sluzby",
+   "address": "Osvobození 150/6",
+   "phone": "+420 602 743 068",
+   "web": "https://svarovaci-technika-krejcik.cz/",
+   "map": "https://mapy.com/cs/?source=firm&id=445774",
+   "hours": {
+    "mon": [
+     "07:00-15:00"
+    ],
+    "tue": [
+     "07:00-15:00"
+    ],
+    "wed": [
+     "07:00-15:00"
+    ],
+    "thu": [
+     "07:00-15:00"
+    ],
+    "fri": [
+     "07:00-15:00"
+    ]
+   }
+  },
+  {
+   "id": "d-studio-fit",
+   "name": "D Studio Fit",
+   "icon": "tabler/massage.svg",
+   "category": "sluzby",
+   "address": "Družstevní 84/15",
+   "phone": "+420 603 215 785",
+   "map": "https://mapy.com/cs/?source=firm&id=12862576",
+   "hours": {
+    "mon": [
+     "08:00-12:00",
+     "14:00-20:00"
+    ],
+    "tue": [
+     "14:00-20:00"
+    ],
+    "wed": [
+     "08:00-12:00",
+     "14:00-20:00"
+    ],
+    "thu": [
+     "14:00-20:00"
+    ],
+    "fri": [
+     "08:00-14:00"
+    ],
+    "sat": [
+     "08:00-12:00"
+    ],
+    "sun": [
+     "16:00-20:00"
+    ]
+   }
+  },
+  {
+   "id": "cistirna-peri",
+   "name": "Čistírna peří S&D Hanušovi",
+   "icon": "tabler/feather.svg",
+   "category": "sluzby",
+   "address": "U Dráhy 175/2",
+   "phone": "+420 608 369 643",
+   "web": "https://cistirna-peri-brno-ostopovice.webnode.cz/",
+   "map": "https://mapy.com/cs/?source=firm&id=12913566",
+   "hours": {
+    "mon": [
+     "16:00-19:00"
+    ],
+    "tue": [
+     "16:00-19:00"
+    ],
+    "wed": [
+     "16:00-19:00"
+    ]
+   }
+  },
+  {
+   "id": "autoservis-suchy",
+   "name": "Jan Suchý – Autoservis",
+   "icon": "tabler/car.svg",
+   "category": "sluzby",
+   "address": "Polní 228/18",
+   "phone": "+420 603 307 387",
+   "map": "https://mapy.com/cs/?source=firm&id=1994074",
+   "hours": {
+    "mon": [
+     "08:00-17:00"
+    ],
+    "tue": [
+     "08:00-17:00"
+    ],
+    "wed": [
+     "08:00-17:00"
+    ],
+    "thu": [
+     "08:00-17:00"
+    ],
+    "fri": [
+     "08:00-17:00"
+    ]
+   }
+  },
+  {
+   "id": "richtmoto",
+   "name": "Motoservis Richtmoto",
+   "icon": "tabler/motorbike.svg",
+   "category": "sluzby",
+   "address": "Družstevní 404/14",
+   "phone": "+420 702 948 654",
+   "web": "https://www.richtmoto.cz/",
+   "map": "https://mapy.com/cs/?source=firm&id=13507986",
+   "hours": {
+    "mon": [
+     "08:00-16:00"
+    ],
+    "tue": [
+     "08:00-16:00"
+    ],
+    "wed": [
+     "08:00-16:00"
+    ],
+    "thu": [
+     "08:00-16:00"
+    ]
+   }
+  }
+ ],
+ "exceptions": [],
+ "holidays": {
+  "2026-10-28": [
+   "Den vzniku samostatného československého státu"
+  ],
+  "2026-11-17": [
+   "Den boje za svobodu a demokracii"
+  ],
+  "2026-12-24": [
+   "Štědrý den"
+  ],
+  "2026-12-25": [
+   "1. svátek vánoční"
+  ],
+  "2026-12-26": [
+   "2. svátek vánoční"
+  ],
+  "2027-01-01": [
+   "Den obnovy samostatného českého státu",
+   "Nový rok"
+  ],
+  "2027-03-26": [
+   "Velký pátek"
+  ],
+  "2027-03-29": [
+   "Velikonoční pondělí"
+  ],
+  "2027-05-01": [
+   "Svátek práce"
+  ],
+  "2027-05-08": [
+   "Den osvobození"
+  ]
+ }
+}

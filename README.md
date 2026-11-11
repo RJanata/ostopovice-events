@@ -90,6 +90,27 @@ nahoře ikonku správy (`localStorage`, `adminLink`).
 
 Lokálně proti lokálnímu serveru: `admin.html?api=http://localhost:3999/ostopovice-events` (jen z localhostu).
 
+## Otevírací doby (oteviraci-doby.html)
+
+Samostatná stránka `/oteviraci-doby` (záložky „Kalendář akcí / Otevírací doby“ pod nadpisem obou stránek):
+karty institucí a obchodů s otevírací dobou na celý týden (šipkami i další týdny), filtr Obec /
+Pohostinství / Služby (v adrese `#k=pohostinstvi`), u aktuálního týdne „Otevřeno do… / Zavřeno · otevře…“.
+
+- **`config/opening-hours.json`** — místa a pravidelná otevírací doba (upravuje se v gitu).
+  `hours` = dny `mon`–`sun`, interval `"08:00-12:00"` nebo `{ "time", "weeks": "even"|"odd", "note" }`
+  (sudý/lichý ISO týden — sběrný dvůr v zimě); chybějící den = zavřeno, `hours: null` = zatím neznámé.
+  `seasons` = jiná doba podle části roku (`from`/`to` jako `MM-DD`). `checked` = odkud a kdy je údaj
+  převzatý (jen pro nás, na web nejde).
+  Dál u místa: `address` (na webu jen číslo orientační, odkaz na mapu s celou adresou), `phone`, `web`,
+  `map` (odkaz na Mapy.com), `social` (`facebook`, `instagram` → ikony v zápatí), `icon` (soubor v `public/icons`,
+  PNG jako obrázek, SVG jako jednobarevná ikona), `note`, `hoursLabel` (podřádek, např. Úřední hodiny).
+- **`config/opening-hours-exceptions.json`** — výjimky (dovolená, svátky, zkrácený provoz). Upravují se
+  v **`admin-hours.html`** (stejné přihlášení jako správa akcí; jedna výjimka může platit pro víc míst naráz, `places`); server po uložení sám spustí
+  přegenerování webu jen s promítnutím (`only=none`), takže výjimka je venku do pár minut.
+  Na webu je výjimka zvýrazněná oranžově u dne, budoucí výjimky (60 dní) jsou vidět pod týdnem.
+- Sběr z obou souborů a ze státních svátků skládá `public/data/opening-hours.json`
+  (`scripts/lib/opening-hours.js`, běží i při `--no-fetch`). Proběhlé výjimky starší 14 dní na web nejdou.
+
 ## Chování sběru
 
 - Zdroj, který selže, nesmaže svá data: zůstanou poslední úspěšně stažená. Web ukáže upozornění, až když se zdroj nedaří načíst déle než 24 hodin (`STALE_HOURS` v `js/app.js`); chybu vždy vidíš v `data/status.json` (`ok`, `error`, `failingSince`). Při chybě sítě se stahování zkouší znovu po 5, 15 a 30 s a nakonec přes náš server na NASu (`api.craz.cz/ostopovice-events/fetch`, stáhne jen weby ze `config/sources.json`; `FETCH_RELAY=off` zálohu vypne) — malé české hostingy občas celé hodiny nepustí GitHub. Když zdroj nejde stáhnout déle než 12 h, robot napíše komentář do issue „Nefunkční zdroje (upozornění)“ (a znovu, až zase funguje).
