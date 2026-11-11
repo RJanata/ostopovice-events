@@ -542,7 +542,20 @@
    }
   }
  ],
- "exceptions": [],
+ "exceptions": [
+  {
+   "id": "xmwbdos5t07i",
+   "places": [
+    "posta"
+   ],
+   "from": "2026-11-16",
+   "to": "2026-11-16",
+   "hours": [
+    "12:00-15:00"
+   ],
+   "note": ""
+  }
+ ],
  "holidays": {
   "2026-10-28": [
    "Den vzniku samostatného československého státu"
