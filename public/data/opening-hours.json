@@ -650,6 +650,19 @@
  ],
  "exceptions": [
   {
+   "id": "xmwc22lmkxrj",
+   "places": [
+    "posta"
+   ],
+   "from": "2026-11-11",
+   "to": "2026-11-11",
+   "hours": [
+    "09:00-12:00",
+    "14:00-18:00"
+   ],
+   "note": ""
+  },
+  {
    "id": "xmwbffajx1te",
    "places": [
     "vechtrovna"
