@@ -556,6 +556,16 @@
    "note": ""
   },
   {
+   "id": "xmwbdq8iakjh",
+   "places": [
+    "posta"
+   ],
+   "from": "2026-11-17",
+   "to": "2026-11-17",
+   "hours": [],
+   "note": ""
+  },
+  {
    "id": "xmwbdpapbp2u",
    "places": [
     "posta"
@@ -564,6 +574,18 @@
    "to": "2026-11-18",
    "hours": [
     "12:00-15:00"
+   ],
+   "note": ""
+  },
+  {
+   "id": "xmwbdpznsc1s",
+   "places": [
+    "posta"
+   ],
+   "from": "2026-11-19",
+   "to": "2026-11-20",
+   "hours": [
+    "09:00-12:00"
    ],
    "note": ""
   }
