@@ -189,40 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-13rw3ml",
-   "source": "knihovna",
-   "title": "Štěpán Javůrek / beseda se spisovatelem",
-   "start": "2025-10-06T15:00:00.000Z",
-   "end": "2025-10-06T16:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/stepan-javurek-beseda-se-spisovatelem-2",
-   "description": "Štěpán Javůrek je autorem úspěšné knižní série Sudetský dům, knih Chaloupky, Nebe nad Perninkem a dalších. Jeho besedy jsou provázané nejen s literaturou, ale i s historií a současností Krušných hor nebo problematikou regionu bývalých Sudet.",
-   "image": "https://static.wixstatic.com/media/6e4a73_6b8045d1b35b4bc1af7533d81905a28c~mv2.jpg",
-   "categories": [
-    "deti",
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
-   "id": "knihovna-5j4j7r",
-   "source": "knihovna",
-   "title": "Pilates & zdravá záda",
-   "start": "2025-10-06T17:30:00.000Z",
-   "end": "2025-10-06T18:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-06-19-30",
-   "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
-   "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "knihovna-1sxf54z",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro děti 3-8 let",
@@ -5934,26 +5900,6 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
-  },
-  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -5974,6 +5920,26 @@
     "obec"
    ],
    "added": "2026-11-06T10:48:43.168Z"
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
