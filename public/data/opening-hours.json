@@ -14,7 +14,7 @@
   },
   {
    "id": "pohostinstvi",
-   "label": "Pohostinství",
+   "label": "Obchody a pohostinství",
    "color": "#b5651d",
    "icon": "tabler/beer.svg"
   }
@@ -42,36 +42,6 @@
     "wed": [
      "08:00-12:00",
      "14:00-17:00"
-    ]
-   }
-  },
-  {
-   "id": "posta",
-   "name": "Pošta Partner",
-   "icon": "places/posta.png",
-   "category": "sluzby",
-   "address": "U Kaple 260/5",
-   "phone": "+420 547 219 028",
-   "web": "https://www.ostopovice.cz/posta",
-   "hours": {
-    "mon": [
-     "07:00-11:00",
-     "14:00-18:00"
-    ],
-    "tue": [
-     "08:00-12:00"
-    ],
-    "wed": [
-     "07:00-11:00",
-     "14:00-18:00"
-    ],
-    "thu": [
-     "08:00-12:00",
-     "14:00-16:00"
-    ],
-    "fri": [
-     "08:00-12:00",
-     "14:00-16:00"
     ]
    }
   },
@@ -323,6 +293,36 @@
    ]
   },
   {
+   "id": "posta",
+   "name": "Pošta Partner",
+   "icon": "places/posta.png",
+   "category": "obec",
+   "address": "U Kaple 260/5",
+   "phone": "+420 547 219 028",
+   "web": "https://www.ostopovice.cz/posta",
+   "hours": {
+    "mon": [
+     "07:00-11:00",
+     "14:00-18:00"
+    ],
+    "tue": [
+     "08:00-12:00"
+    ],
+    "wed": [
+     "07:00-11:00",
+     "14:00-18:00"
+    ],
+    "thu": [
+     "08:00-12:00",
+     "14:00-16:00"
+    ],
+    "fri": [
+     "08:00-12:00",
+     "14:00-16:00"
+    ]
+   }
+  },
+  {
    "id": "sberny-dvur",
    "name": "Sběrný dvůr",
    "icon": "tabler/recycle.svg",
@@ -398,6 +398,37 @@
     ]
    },
    "address": "U Dráhy 330/30"
+  },
+  {
+   "id": "smisenka",
+   "name": "Minimarket Smíšenka",
+   "icon": "tabler/shopping-cart.svg",
+   "category": "pohostinstvi",
+   "address": "Osvobození",
+   "map": "https://mapy.com/cs/?source=firm&id=13229732",
+   "hours": {
+    "mon": [
+     "07:00-18:00"
+    ],
+    "tue": [
+     "07:00-18:00"
+    ],
+    "wed": [
+     "07:00-18:00"
+    ],
+    "thu": [
+     "07:00-18:00"
+    ],
+    "fri": [
+     "07:00-18:00"
+    ],
+    "sat": [
+     "08:00-17:00"
+    ],
+    "sun": [
+     "08:00-17:00"
+    ]
+   }
   },
   {
    "id": "u-volejniku",
@@ -615,37 +646,6 @@
      "title": "Vechtrovna: Hudební večer – BG JAM, D.U.H.A Band"
     }
    ]
-  },
-  {
-   "id": "smisenka",
-   "name": "Minimarket Smíšenka",
-   "icon": "tabler/shopping-cart.svg",
-   "category": "sluzby",
-   "address": "Osvobození",
-   "map": "https://mapy.com/cs/?source=firm&id=13229732",
-   "hours": {
-    "mon": [
-     "07:00-18:00"
-    ],
-    "tue": [
-     "07:00-18:00"
-    ],
-    "wed": [
-     "07:00-18:00"
-    ],
-    "thu": [
-     "07:00-18:00"
-    ],
-    "fri": [
-     "07:00-18:00"
-    ],
-    "sat": [
-     "08:00-17:00"
-    ],
-    "sun": [
-     "08:00-17:00"
-    ]
-   }
   }
  ],
  "exceptions": [
