@@ -171,7 +171,8 @@ function setupLogin() {
 /** Zaškrtávací seznam míst po druzích; zaškrtávátko druhu vybere / zruší celý druh. */
 function renderPlaceSelect() {
   const checked = new Set(selectedPlaces());
-  $('x-places').innerHTML = categories.map((c) => `<div class="hours-places__group">
+  // druhy bez míst (Služby zatím prázdné) ve výběru nezobrazovat
+  $('x-places').innerHTML = categories.filter((c) => places.some((p) => p.category === c.id)).map((c) => `<div class="hours-places__group">
       <label class="admin-check hours-places__category"><input type="checkbox" data-category="${escapeHtml(c.id)}"> <strong>${escapeHtml(c.label)}</strong></label>
       ${places.filter((p) => p.category === c.id).map((p) => `<label class="admin-check"><input type="checkbox" value="${escapeHtml(p.id)}" data-in="${escapeHtml(c.id)}"${checked.has(p.id) ? ' checked' : ''}>
         ${escapeHtml(p.name)}${p.village ? ` (${escapeHtml(p.village)})` : ''}</label>`).join('')}
