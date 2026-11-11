@@ -85,7 +85,9 @@
 .hours-day__date { font-variant-numeric: tabular-nums; }
 .hours-day__date > span { display: inline-block; text-align: right; }
 .hours-day__date > span:first-child { width: 1.6em; }
-.hours-day__date > span:last-child { width: 1.75em; }
+/* „d.m.“ těsně: měsíc hned za dnem; jen v týdnu, kde se mění počet cifer měsíce (9→10, 12→1), zarovnaný doprava */
+.hours-day__date > span:last-child { text-align: left; }
+.hours-days--mixed-months .hours-day__date > span:last-child { min-width: 1.3em; text-align: right; }
 /* akce v kalendáři ten den (knihovna, hospody): malá ikonka za datem, v bublině co a kdy */
 /* čas akce na stejném účaří jako dny a otevírací doby; ikona jen posazená k písmu */
 .hours-day__event { display: inline-flex; align-items: baseline; margin-left: 6px; color: var(--accent); }

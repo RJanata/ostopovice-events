@@ -180,6 +180,8 @@ function placeCard(place, weekStart, now, { labelRow }) {
     return { day, i, ...hoursOn(place, day), holiday: data.holidays[day] };
   });
   const twoColumns = week.some((d) => d.intervals?.length === 2);
+  // týden přes konec září/prosince: měsíce s jedním i dvěma ciframi → měsíc zarovnat doprava (jinak „d.m.“ těsně)
+  const mixedMonths = new Set(week.map((d) => Number(d.day.slice(5, 7)) >= 10)).size > 1;
 
   const seasons = new Set(place.seasons ? week.map((d) => regularHours(place, d.day).season?.label).filter(Boolean) : []);
   const rows = week.map(({ day, i, exception, intervals, holiday }) => {
@@ -246,7 +248,7 @@ function placeCard(place, weekStart, now, { labelRow }) {
         <h2 class="hours-card__title">${title}${place.village ? ` <span class="hours-card__village">(${escapeHtml(place.village)})</span>` : ''}</h2>
       </header>
       ${labelRow ? `<p class="hours-card__label">${escapeHtml(label) || '&nbsp;'}</p>` : '<div></div>'}
-      ${known ? `<ul class="hours-days">${rows}</ul>` : '<p class="hours-card__unknown">Otevírací dobu zatím doplňujeme.</p>'}
+      ${known ? `<ul class="hours-days${mixedMonths ? ' hours-days--mixed-months' : ''}">${rows}</ul>` : '<p class="hours-card__unknown">Otevírací dobu zatím doplňujeme.</p>'}
       <div class="hours-card__extra">
         ${upcoming.length ? `<ul class="hours-upcoming">${upcoming.map((x) => `<li><strong>${exceptionRange(x)}</strong> ${escapeHtml(exceptionText(x))}</li>`).join('')}</ul>` : ''}
         ${place.note ? `<p class="hours-card__note">${escapeHtml(place.note)}</p>` : ''}
