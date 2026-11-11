@@ -47,16 +47,32 @@ window.OpeningHours = (function () {
 
   const exceptionIntervals = (exception) => exception.hours.map((t) => ({ from: t.split('-')[0], to: t.split('-')[1] }));
 
-  /** Intervaly v daný den včetně výjimky: { exception, intervals }. */
+  const sameIntervals = (a, b) => Boolean(a && b) && a.length === b.length
+    && a.every((i, n) => i.from === b[n].from && i.to === b[n].to);
+
+  /**
+   * Intervaly v daný den včetně výjimky: { exception, intervals }. Výjimka, která nic nemění
+   * (hromadné „zavřeno“ o Vánocích u místa, které má ten den zavřeno i běžně), se nepočítá.
+   */
   function hoursOn(exceptions, place, day) {
-    const exception = exceptionOn(exceptions, place, day);
+    const regular = regularIntervals(place, day);
+    const exception = exceptions.find((x) => (x.places || [x.place]).includes(place.id)
+      && day >= x.from && day <= (x.to || x.from) && !sameIntervals(exceptionIntervals(x), regular));
     return exception
       ? { exception, intervals: exceptionIntervals(exception) }
-      : { exception: null, intervals: regularIntervals(place, day) };
+      : { exception: null, intervals: regular };
+  }
+
+  /** Mění výjimka u místa v některém dni od–do (včetně) otevírací dobu? */
+  function exceptionChanges(exception, place, from = exception.from, to = exception.to || exception.from) {
+    for (let day = from; day <= to; day = addDays(day, 1)) {
+      if (hoursOn([exception], place, day).exception) return true;
+    }
+    return false;
   }
 
   return {
     DAYS, DAY_SHORT, keyToDate, addDays, weekdayIndex, formatShort, toMinutes, formatTime,
-    isoWeek, regularHours, regularIntervals, exceptionOn, exceptionIntervals, hoursOn,
+    isoWeek, regularHours, regularIntervals, exceptionOn, exceptionIntervals, hoursOn, exceptionChanges,
   };
 })();

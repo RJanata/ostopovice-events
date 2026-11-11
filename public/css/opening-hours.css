@@ -68,32 +68,73 @@
 
 /* dny v týdnu */
 .hours-days { list-style: none; margin: 0; padding: 0; font-size: 0.88rem; }
+/* úzký panel schová data u dnů (@container níž). Kontejnerem je seznam dnů, ne karta:
+   containment na kartě by vypnul subgrid a dny v řadě panelů by nezačínaly na stejné výšce */
+.hours-days { container-type: inline-size; }
+/* části karty nesmí kartu roztáhnout (dlouhý název svátku se zkrátí třemi tečkami) */
+.hours-card > * { min-width: 0; }
 .hours-day {
   display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: baseline;
   padding: 3px 6px; margin: 0 -6px; border-radius: 6px;
 }
+/* název svátku jen v bublině (title řádku), den je v barvě svátku */
 .hours-day__name { font-weight: 600; white-space: nowrap; }
 .hours-day__name small { font-weight: 400; color: var(--muted); font-size: 0.72rem; }
+/* den v týdnu a datum ve sloupcích: dny i měsíce pod sebou, zarovnané na tečky */
+.hours-day__weekday { display: inline-block; min-width: 1.55em; }
+.hours-day__date { font-variant-numeric: tabular-nums; }
+.hours-day__date > span { display: inline-block; text-align: right; }
+.hours-day__date > span:first-child { width: 1.6em; }
+.hours-day__date > span:last-child { width: 1.75em; }
+/* akce v kalendáři ten den (knihovna, hospody): malá ikonka za datem, v bublině co a kdy */
+.hours-day__event { display: inline-grid; vertical-align: -2px; margin-left: 6px; color: var(--accent); }
+.hours-day__event:hover { color: var(--accent-2); }
+.hours-day__event { gap: 3px; grid-auto-flow: column; align-items: center; text-decoration: none; }
+.hours-day__event svg { width: 14px; height: 14px; }
+.hours-day__event span { font-size: 0.72rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* řádek s podrobnostmi: klepnutím se rozbalí (svátek, výjimka s běžnou dobou, akce) */
+.hours-day--expandable { cursor: pointer; }
+.hours-day--expandable:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.hours-day__details {
+  grid-column: 1 / -1; list-style: none; margin: 3px 0 2px; padding: 4px 0 2px 8px;
+  border-left: 2px solid var(--border); font-size: 0.78rem; line-height: 1.35; cursor: auto;
+}
+.hours-detail + .hours-detail { margin-top: 2px; }
+.hours-detail--holiday { color: var(--holiday); }
+.hours-detail--exception { color: var(--exception); }
+.hours-detail a { display: inline-flex; gap: 4px; align-items: baseline; color: var(--accent); text-decoration: none; }
+.hours-detail a:hover { text-decoration: underline; }
+.hours-detail svg { width: 12px; height: 12px; flex: none; position: relative; top: 1px; }
 .hours-week__range small { font-weight: 400; color: var(--muted); font-size: 0.8rem; margin-left: 4px; }
 .hours-day__times { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0 8px; text-align: right; font-variant-numeric: tabular-nums; }
 /* dva sloupce: dopoledne | odpoledne, ať jsou stejné časy pod sebou */
 /* sloupce pevné šířky zarovnané doprava → menší mezera mezi dopolednem a odpolednem */
-.hours-day--two .hours-day__times { display: grid; grid-template-columns: repeat(2, minmax(0, 5.6em)); justify-content: end; gap: 0 0.5em; }
-.hours-day--two .hours-day__closed { grid-column: 1 / -1; }
+.hours-day--two .hours-day__times {
+  /* sloupce pevné šířky (časy pod sebou); mezera mezi dopolednem a odpolednem až 1.8em, v užším
+     panelu jen tolik, kolik zbývá (100 % − dva sloupce), ať odpolední časy nepřetékají */
+  display: grid; grid-template-columns: repeat(2, 5.3em); justify-content: end;
+  column-gap: clamp(0.5em, calc(100% - 10.6em), 1.8em);
+}
+.hours-day--two .hours-day__closed { grid-column: 1 / -1; justify-self: end; }
 .hours-day__interval { white-space: nowrap; }
 .hours-day__interval small { display: block; color: var(--muted); font-size: 0.72rem; line-height: 1.2; white-space: normal; }
 .hours-day__closed { color: var(--muted); }
 .hours-day__note { grid-column: 1 / -1; font-size: 0.75rem; line-height: 1.3; text-align: right; color: var(--exception); }
-.hours-day__note--holiday { color: var(--holiday); }
 .hours-day--closed .hours-day__name { color: var(--muted); font-weight: 500; }
 .hours-day--weekend .hours-day__name, .hours-day--holiday .hours-day__name { color: var(--holiday); }
-.hours-day--holiday { background: color-mix(in srgb, var(--holiday) 8%, transparent); }
+/* svátek podbarvený (kromě dnů s výjimkou); víc svátků za sebou = jeden pruh: zaoblený jen nahoře u prvního a dole u posledního */
+.hours-day--holiday-tint { background: color-mix(in srgb, var(--holiday) 8%, transparent); }
+.hours-day--holiday-tint + .hours-day--holiday-tint { border-top-left-radius: 0; border-top-right-radius: 0; }
+.hours-day--holiday-tint:has(+ .hours-day--holiday-tint) { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .hours-day--today { background: var(--today); }
-/* výjimka (dovolená, jiná doba): oranžově, má přednost před dnešním dnem i svátkem */
-.hours-day--exception { background: color-mix(in srgb, var(--exception) 13%, transparent); }
+/* výjimka (dovolená, jiná doba): jen oranžová otevírací doba, řádek se nepodbarvuje */
 .hours-day--exception .hours-day__times { color: var(--exception); font-weight: 600; }
 .hours-day--exception .hours-day__closed { color: var(--exception); }
-.hours-day--exception.hours-day--today { box-shadow: inset 0 0 0 1px var(--exception); }
+/* ikonka „i“ vlevo od upravené doby (mimo tok, ať nerozhodí sloupce časů); bublina = běžná doba */
+.hours-day__interval, .hours-day__closed { position: relative; }
+.hours-day__info { position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 3px; display: inline-grid; cursor: help; color: var(--exception); }
+.hours-day__info svg { width: 13px; height: 13px; stroke-width: 2; }
 
 /* plánované výjimky mimo zobrazený týden */
 .hours-upcoming {
@@ -113,3 +154,11 @@
   .hours-day__name small { display: none; }
   .hours-card__contacts { font-size: 0.72rem; }
 }
+
+/* úzký panel (např. 3 vedle sebe v okně kolem 800 px): data u dnů se nevejdou vedle časů → jen den v týdnu */
+@container (max-width: 230px) {
+  .hours-day__date { display: none; }
+}
+
+/* prázdný sloupec (jen odpolední doba) by neměl účaří a řádek by byl vyšší → neviditelná mezera */
+.hours-day__slot:empty::before { content: "\00a0"; }

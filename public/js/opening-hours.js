@@ -6,7 +6,6 @@
 
 const TIME_ZONE = 'Europe/Prague';
 const DAY_ON = ['v pondělí', 'v úterý', 've středu', 've čtvrtek', 'v pátek', 'v sobotu', 'v neděli'];
-const UPCOMING_DAYS = 60; // jak daleko dopředu ukazovat plánované výjimky
 const CLOSING_SOON_MINUTES = 60; // zavírají do hodiny → oranžově s počtem minut
 const NOON = 12 * 60; // dopolední intervaly v levém sloupci, odpolední v pravém
 
@@ -29,7 +28,7 @@ function pragueNow() {
 }
 
 const {
-  DAY_SHORT, addDays, weekdayIndex, formatShort, toMinutes, formatTime, isoWeek, regularHours,
+  DAY_SHORT, addDays, weekdayIndex, formatShort, toMinutes, formatTime, isoWeek, regularHours, regularIntervals,
 } = window.OpeningHours; // opening-hours-core.js
 
 /** „10.–16. 11.“, přes konec měsíce „30. 11. – 6. 12.“ */
@@ -88,21 +87,66 @@ function statusBadge(status) {
   return `<span class="hours-status hours-status--${status.kind}" title="${escapeHtml(status.text)}">${escapeHtml(label)}</span>`;
 }
 
-function intervalHtml(i) {
-  return `<span class="hours-day__interval">${formatTime(i.from)}–${formatTime(i.to)}${i.note ? `<small>${escapeHtml(i.note)}</small>` : ''}</span>`;
+// ikonka „i“ u upravené doby (výjimky); v bublině běžná otevírací doba
+// „!“ v trojúhelníku (Tabler alert-triangle)
+const ICON_INFO = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"/><path d="M12 16h.01"/></svg>';
+const infoIcon = (info) => (info ? `<span class="hours-day__info" title="${escapeHtml(info)}">${ICON_INFO}</span>` : '');
+
+function intervalHtml(i, info = '') {
+  return `<span class="hours-day__interval">${infoIcon(info)}${formatTime(i.from)}–${formatTime(i.to)}${i.note ? `<small>${escapeHtml(i.note)}</small>` : ''}</span>`;
 }
+
+// akce z kalendáře u místa v daný den: ikonka kalendáře u dne, v bublině čas a název, odkaz na měsíc v kalendáři
+const ICON_EVENT = '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h3v3H8z" fill="currentColor" stroke="none"/></svg>';
+const eventsOn = (place, day) => (place.events || []).filter((e) => e.day === day);
+const eventText = (e) => `${e.time ? `${e.time} ` : ''}${e.title}`;
+
+/** Ikonka akce s časem začátku první akce (víc akcí = „+N“). */
+function eventsIcon(place, day) {
+  const list = eventsOn(place, day);
+  if (!list.length) return '';
+  const text = list.map(eventText).join('\n');
+  const time = list[0].time || 'celý den';
+  // není odkaz: klepnutí rozbalí řádek s podrobnostmi (tam je odkaz do kalendáře)
+  return `<span class="hours-day__event" title="${escapeHtml(text)}" aria-label="${escapeHtml(`Akce: ${text}`)}">${ICON_EVENT}<span>${escapeHtml(time)}${list.length > 1 ? ` +${list.length - 1}` : ''}</span></span>`;
+}
+
+/**
+ * Podrobnosti dne po klepnutí na řádek (hlavně pro mobil, kde nejsou bubliny):
+ * svátek, výjimka s běžnou dobou a akce z kalendáře.
+ */
+function dayDetails(place, day, exception, holiday) {
+  const parts = [];
+  if (holiday) parts.push(`<li class="hours-detail hours-detail--holiday">${escapeHtml(holiday.join(' · '))}</li>`);
+  if (exception) {
+    // upravená doba je vidět v řádku; tady jen ta běžná (a důvod výjimky)
+    parts.push(`<li class="hours-detail hours-detail--exception">Běžně: ${escapeHtml(intervalsText(regularIntervals(place, day)))}`
+      + `${exception.note ? ` · ${escapeHtml(exception.note)}` : ''}</li>`);
+  }
+  for (const e of eventsOn(place, day)) {
+    // odkaz do kalendáře rovnou s vybraným dnem (#d=…)
+    parts.push(`<li class="hours-detail"><a href="./#d=${day}">${ICON_EVENT}${escapeHtml(eventText(e))}</a></li>`);
+  }
+  return parts.join('');
+}
+
+const openDays = new Set(); // rozbalené řádky „místo|den“ (přežijí překreslení každou minutu)
+
+const intervalsText = (list) => (list === null ? 'neznámá' : list.length
+  ? list.map((i) => `${formatTime(i.from)}–${formatTime(i.to)}`).join(', ') : 'zavřeno');
 
 /**
  * Časy dne. V kartě, kde má některý den dopoledne i odpoledne, jsou dva sloupce:
  * dopolední intervaly vlevo, odpolední vpravo — ať jsou stejné časy pod sebou.
  */
-function timesHtml(intervals, twoColumns) {
+function timesHtml(intervals, twoColumns, info = '') {
   if (!intervals) return '<span class="hours-day__closed">?</span>';
-  if (!intervals.length) return '<span class="hours-day__closed" title="zavřeno">—</span>';
-  if (!twoColumns || intervals.length > 2) return intervals.map(intervalHtml).join('');
+  // info = text běžné doby u výjimky: ikonka „i“ vlevo od první (nebo jediné) hodnoty
+  if (!intervals.length) return `<span class="hours-day__closed">${infoIcon(info)}—</span>`;
+  if (!twoColumns || intervals.length > 2) return intervals.map((i, n) => intervalHtml(i, n ? '' : info)).join('');
   const slots = ['', ''];
-  if (intervals.length === 2) intervals.forEach((i, n) => { slots[n] = intervalHtml(i); });
-  else slots[toMinutes(intervals[0].from) < NOON ? 0 : 1] = intervalHtml(intervals[0]);
+  if (intervals.length === 2) intervals.forEach((i, n) => { slots[n] = intervalHtml(i, n ? '' : info); });
+  else slots[toMinutes(intervals[0].from) < NOON ? 0 : 1] = intervalHtml(intervals[0], info);
   return slots.map((s) => `<span class="hours-day__slot">${s}</span>`).join('');
 }
 
@@ -127,26 +171,36 @@ function placeCard(place, weekStart, now, { labelRow }) {
 
   const seasons = new Set(place.seasons ? week.map((d) => regularHours(place, d.day).season?.label).filter(Boolean) : []);
   const rows = week.map(({ day, i, exception, intervals, holiday }) => {
+    const regularInfo = exception ? `Běžně: ${intervalsText(regularIntervals(place, day))}` : '';
     const classes = ['hours-day',
       day === now.day && 'hours-day--today',
       i >= 5 && 'hours-day--weekend',
       holiday && 'hours-day--holiday',
+      holiday && 'hours-day--holiday-tint', // svátek podbarvený i s výjimkou (výjimka jen barvou doby)
       exception && 'hours-day--exception',
       intervals && !intervals.length && 'hours-day--closed',
       twoColumns && 'hours-day--two'].filter(Boolean).join(' ');
     const title = [`${DAY_SHORT[i]} ${formatShort(day)}`, holiday?.join(' · '), exception && `Výjimka: ${exceptionText(exception)}`].filter(Boolean).join(' – ');
-    return `<li class="${classes}" title="${escapeHtml(title)}">
-        <span class="hours-day__name">${DAY_SHORT[i]} <small>${formatShort(day)}</small></span>
-        <span class="hours-day__times">${timesHtml(intervals, twoColumns)}</span>
-        ${exception?.note ? `<span class="hours-day__note">${escapeHtml(exception.note)}</span>`
-          : holiday ? `<span class="hours-day__note hours-day__note--holiday">${escapeHtml(holiday.join(' · '))}</span>` : ''}
+    const details = dayDetails(place, day, exception, holiday);
+    const key = `${place.id}|${day}`;
+    const open = details && openDays.has(key);
+    const expandable = details
+      ? ` data-day-key="${escapeHtml(key)}" role="button" tabindex="0" aria-expanded="${open}"` : '';
+    return `<li class="${classes}${details ? ' hours-day--expandable' : ''}${open ? ' hours-day--open' : ''}" title="${escapeHtml(title)}"${expandable}>
+        <span class="hours-day__name"><span class="hours-day__weekday">${DAY_SHORT[i]}</span><small class="hours-day__date"><span>${Number(day.slice(8))}.</span><span>${Number(day.slice(5, 7))}.</span></small>${eventsIcon(place, day)}</span>
+        <span class="hours-day__times"${regularInfo ? ` title="${escapeHtml(regularInfo)}"` : ''}>${timesHtml(intervals, twoColumns, regularInfo)}</span>
+        ${exception?.note ? `<span class="hours-day__note">${escapeHtml(exception.note)}</span>` : ''}
+        ${details ? `<ul class="hours-day__details"${open ? '' : ' hidden'}>${details}</ul>` : ''}
       </li>`;
   }).join('');
 
-  // výjimky mimo zobrazený týden (dopředu), ať je dovolená vidět včas
+  // výjimky jen z následujícího týdne (po zobrazeném), ať je dovolená vidět včas; vzdálenější ani proběhlé ne.
+  // Výjimka, která zasahuje i do zobrazeného týdne, je vidět přímo u dnů.
   const weekEnd = addDays(weekStart, 6);
+  const nextWeekEnd = addDays(weekStart, 13);
+  // jen výjimky, které u místa opravdu něco mění (ne „zavřeno“, když má běžně zavřeno)
   const upcoming = data.exceptions.filter((x) => x.places.includes(place.id)
-    && x.to >= now.day && x.from <= addDays(now.day, UPCOMING_DAYS) && (x.from > weekEnd || x.to < weekStart));
+    && x.from > weekEnd && x.from <= nextWeekEnd && window.OpeningHours.exceptionChanges(x, place));
 
   const label = [place.hoursLabel, [...seasons].join(' / ')].filter(Boolean).join(' · ');
   // adresa jen s číslem orientačním (U Kaple 5), odkaz na mapu ale s celou adresou (260/5)
@@ -244,6 +298,22 @@ function writeHash() {
 }
 
 function setup() {
+  // klepnutí na den s podrobnostmi (svátek, výjimka, akce) rozbalí / sbalí řádek; odkazy fungují normálně
+  const toggleDay = (row) => {
+    const open = !openDays.has(row.dataset.dayKey);
+    if (open) openDays.add(row.dataset.dayKey); else openDays.delete(row.dataset.dayKey);
+    row.classList.toggle('hours-day--open', open);
+    row.setAttribute('aria-expanded', String(open));
+    row.querySelector('.hours-day__details').hidden = !open;
+  };
+  $('hours').addEventListener('click', (ev) => {
+    const row = ev.target.closest('.hours-day--expandable');
+    if (row && !ev.target.closest('a')) toggleDay(row);
+  });
+  $('hours').addEventListener('keydown', (ev) => {
+    const row = ev.target.closest?.('.hours-day--expandable');
+    if (row && ev.target === row && (ev.key === 'Enter' || ev.key === ' ')) { ev.preventDefault(); toggleDay(row); }
+  });
   $('hours-filter').addEventListener('click', (ev) => {
     const chip = ev.target.closest('[data-category]');
     if (!chip) return;

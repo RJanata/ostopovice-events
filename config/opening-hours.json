@@ -1,5 +1,5 @@
 {
-  "$comment": "Otevírací doby institucí a obchodů (stránka oteviraci-doby.html). Výjimky (dovolená, svátky…) jsou zvlášť v opening-hours-exceptions.json a upravují se v admin-hours.html. hours: klíče mon–sun, hodnota = seznam intervalů \"HH:MM-HH:MM\" nebo { time, weeks: \"even\"|\"odd\" (sudý/lichý týden podle ISO), note }; chybějící den = zavřeno. hours: null = otevírací doba zatím neznámá. seasons = různá otevírací doba podle části roku (from/to = MM-DD, může přes Nový rok). categories[].icon a places[].icon = soubor v public/icons (PNG jako obrázek, SVG jako jednobarevná maska v barvě druhu). social = { facebook, instagram } (ikony v zápatí panelu). map = odkaz na Mapy.com. checked = odkud a kdy byla otevírací doba převzata (jen pro nás, na webu se nezobrazuje).",
+  "$comment": "Otevírací doby institucí a obchodů (stránka oteviraci-doby.html). Výjimky (dovolená, svátky…) jsou zvlášť v opening-hours-exceptions.json a upravují se v admin-hours.html. hours: klíče mon–sun, hodnota = seznam intervalů \"HH:MM-HH:MM\" nebo { time, weeks: \"even\"|\"odd\" (sudý/lichý týden podle ISO), note }; chybějící den = zavřeno. hours: null = otevírací doba zatím neznámá. seasons = různá otevírací doba podle části roku (from/to = MM-DD, může přes Nový rok). categories[].icon a places[].icon = soubor v public/icons (PNG jako obrázek, SVG jako jednobarevná maska v barvě druhu). social = { facebook, instagram } (ikony v zápatí panelu). eventMatch = které akce z kalendáře patří k místu (sources = akce zdroje bez místa, locations = místo akce, titles = název; regexy bez diakritiky) → ikonka u dne. map = odkaz na Mapy.com. checked = odkud a kdy byla otevírací doba převzata (jen pro nás, na webu se nezobrazuje).",
   "categories": [
     {
       "id": "obec",
@@ -153,6 +153,14 @@
       "social": {
         "facebook": "https://www.facebook.com/knihovnaostopovice",
         "instagram": "https://www.instagram.com/knihovna_ostopovice/"
+      },
+      "eventMatch": {
+        "sources": [
+          "knihovna"
+        ],
+        "locations": [
+          "knihovna ostopovice"
+        ]
       }
     },
     {
@@ -221,6 +229,11 @@
       "checked": "firmy.cz, 10. 11. 2026",
       "social": {
         "instagram": "https://www.instagram.com/restauraceuvolejniku"
+      },
+      "eventMatch": {
+        "locations": [
+          "u volejniku"
+        ]
       }
     },
     {
@@ -257,6 +270,14 @@
       "phone": "+420 737 502 837",
       "social": {
         "facebook": "https://www.facebook.com/SportSenk"
+      },
+      "eventMatch": {
+        "locations": [
+          "senk"
+        ],
+        "titles": [
+          "^(sport[ -]*)?senk[^a-z]"
+        ]
       }
     },
     {
@@ -388,6 +409,14 @@
       "checked": "firmy.cz, 10. 11. 2026",
       "social": {
         "facebook": "https://www.facebook.com/people/Vechtrovna-n%C3%A1dra%C5%BEn%C3%AD-hosp%C5%AFdka/61556915914818/"
+      },
+      "eventMatch": {
+        "locations": [
+          "vechtrovna"
+        ],
+        "titles": [
+          "^vechtrovna[^a-z]"
+        ]
       }
     },
     {

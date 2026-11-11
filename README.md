@@ -108,6 +108,10 @@ Pohostinství / Služby (v adrese `#k=pohostinstvi`), u aktuálního týdne „O
   v **`admin-hours.html`** (stejné přihlášení jako správa akcí; jedna výjimka může platit pro víc míst naráz, `places`); server po uložení sám spustí
   přegenerování webu jen s promítnutím (`only=none`), takže výjimka je venku do pár minut.
   Na webu je výjimka zvýrazněná oranžově u dne, budoucí výjimky (60 dní) jsou vidět pod týdnem.
+- **Propojení s kalendářem:** `eventMatch` u místa určí, které akce k němu patří (`sources` = akce zdroje bez
+  uvedeného místa, `locations` = místo akce, `titles` = název; regulární výrazy bez diakritiky). Takové akce
+  (kromě dlouhodobých) jsou v panelu jako ikonka kalendáře u dne. Naopak kalendář akcí ukazuje u dne se změněnou
+  otevírací dobou ikonku (i) a v seznamu souhrn „Změněné otevírací doby“ (čte `data/opening-hours.json`).
 - Sběr z obou souborů a ze státních svátků skládá `public/data/opening-hours.json`
   (`scripts/lib/opening-hours.js`, běží i při `--no-fetch`). Proběhlé výjimky starší 14 dní na web nejdou.
 
