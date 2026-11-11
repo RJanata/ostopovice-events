@@ -119,12 +119,10 @@ function eventsIcon(place, day) {
 
 /**
  * Podrobnosti dne po klepnutí na řádek (hlavně pro mobil, kde nejsou bubliny):
- * svátek, výjimka s běžnou dobou a akce z kalendáře.
+ * běžná doba u výjimky a akce z kalendáře. Svátky jsou v pruhu nad panely, tady ne.
  */
-function dayDetails(place, day, exception, holiday) {
+function dayDetails(place, day, exception) {
   const parts = [];
-  // prodejny nad 200 m² jsou v pruhu se svátky nad panely, tady jen název svátku
-  if (holiday) parts.push(`<li class="hours-detail hours-detail--holiday">${escapeHtml(holiday.join(' · '))}</li>`);
   if (exception) {
     // upravená doba je vidět v řádku; tady jen ta běžná (a důvod výjimky)
     parts.push(`<li class="hours-detail hours-detail--exception">Běžně: ${escapeHtml(intervalsText(regularIntervals(place, day)))}`
@@ -195,7 +193,7 @@ function placeCard(place, weekStart, now, { labelRow }) {
       intervals && !intervals.length && 'hours-day--closed',
       twoColumns && 'hours-day--two'].filter(Boolean).join(' ');
     const title = [`${DAY_SHORT[i]} ${formatShort(day)}`, holiday?.join(' · '), exception && `Výjimka: ${exceptionText(exception)}`].filter(Boolean).join(' – ');
-    const details = dayDetails(place, day, exception, holiday);
+    const details = dayDetails(place, day, exception);
     const key = `${place.id}|${day}`;
     const open = details && openDays.has(key);
     const expandable = details
