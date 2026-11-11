@@ -429,7 +429,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .month__day--holiday:hover { background: color-mix(in srgb, var(--holiday) 12%, var(--surface-2)); }
 .month__day--weekend .month__day-number { color: var(--holiday); }
 .month__weekday--weekend { color: var(--holiday); }
-.day__heading--off > span:not(.day__relative):not(.day__holiday) { color: var(--holiday); }
+/* fialově jen název dne; fazolky (prodejny, upozornění) mají vlastní barvu */
+.day__heading--off > span:not(.day__relative):not(.day__holiday):not(.day__shops) { color: var(--holiday); }
 .month__day--today { background: var(--today); box-shadow: inset 0 0 0 1px var(--accent-2); }
 .month__day--today .month__day-number { color: var(--accent-2); }
 .month__day--selected { box-shadow: inset 0 0 0 2px var(--accent); }
