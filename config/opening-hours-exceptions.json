@@ -52,6 +52,22 @@
       "editedAt": "2026-11-11T00:32:34.621Z"
     },
     {
+      "id": "xmwbi8vfu2yg",
+      "places": [
+        "svareci-technika-krejcik",
+        "d-studio-fit",
+        "cistirna-peri",
+        "autoservis-suchy",
+        "richtmoto"
+      ],
+      "from": "2026-11-17",
+      "to": "2026-11-17",
+      "hours": [],
+      "note": "",
+      "editedBy": "Radek",
+      "editedAt": "2026-11-11T02:33:40.600Z"
+    },
+    {
       "id": "xmwbdpapbp2u",
       "places": [
         "posta"
