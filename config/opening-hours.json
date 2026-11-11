@@ -79,6 +79,43 @@
       "checked": "ostopovice.cz, 10. 11. 2026"
     },
     {
+      "id": "knihovna",
+      "name": "Obecní knihovna",
+      "icon": "knihovna.png",
+      "category": "obec",
+      "address": "Lípová 67/15",
+      "email": "knihovna@ostopovice.cz",
+      "web": "https://www.knihovnaostopovice.cz/",
+      "note": "Knihy jde vrátit kdykoli do knihoboxu u knihovny.",
+      "hours": {
+        "mon": [
+          "10:00-14:00"
+        ],
+        "wed": [
+          "15:00-19:00"
+        ],
+        "thu": [
+          {
+            "time": "15:00-17:00",
+            "note": "knihovna dětem"
+          }
+        ]
+      },
+      "checked": "knihovnaostopovice.cz, 10. 11. 2026",
+      "social": {
+        "facebook": "https://www.facebook.com/knihovnaostopovice",
+        "instagram": "https://www.instagram.com/knihovna_ostopovice/"
+      },
+      "eventMatch": {
+        "sources": [
+          "knihovna"
+        ],
+        "locations": [
+          "knihovna ostopovice"
+        ]
+      }
+    },
+    {
       "id": "sberny-dvur",
       "name": "Sběrný dvůr",
       "icon": "tabler/recycle.svg",
@@ -125,43 +162,6 @@
         }
       ],
       "checked": "ostopovice.cz, 10. 11. 2026"
-    },
-    {
-      "id": "knihovna",
-      "name": "Obecní knihovna",
-      "icon": "knihovna.png",
-      "category": "obec",
-      "address": "Lípová 67/15",
-      "email": "knihovna@ostopovice.cz",
-      "web": "https://www.knihovnaostopovice.cz/",
-      "note": "Knihy jde vrátit kdykoli do knihoboxu u knihovny.",
-      "hours": {
-        "mon": [
-          "10:00-14:00"
-        ],
-        "wed": [
-          "15:00-19:00"
-        ],
-        "thu": [
-          {
-            "time": "15:00-17:00",
-            "note": "knihovna dětem"
-          }
-        ]
-      },
-      "checked": "knihovnaostopovice.cz, 10. 11. 2026",
-      "social": {
-        "facebook": "https://www.facebook.com/knihovnaostopovice",
-        "instagram": "https://www.instagram.com/knihovna_ostopovice/"
-      },
-      "eventMatch": {
-        "sources": [
-          "knihovna"
-        ],
-        "locations": [
-          "knihovna ostopovice"
-        ]
-      }
     },
     {
       "id": "posilovna",
