@@ -148,7 +148,229 @@
    "social": {
     "facebook": "https://www.facebook.com/knihovnaostopovice",
     "instagram": "https://www.instagram.com/knihovna_ostopovice/"
-   }
+   },
+   "events": [
+    {
+     "day": "2026-11-04",
+     "time": "8:30",
+     "title": "ZRUŠENO Lit jóga"
+    },
+    {
+     "day": "2026-11-05",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-11-07",
+     "time": "14:00",
+     "title": "Den věnovaný památce MUDr. Alfonse Sovadiny"
+    },
+    {
+     "day": "2026-11-09",
+     "time": "10:00",
+     "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)"
+    },
+    {
+     "day": "2026-11-10",
+     "time": "16:00",
+     "title": "Beseda, setkání a oslava jubilejí seniorů"
+    },
+    {
+     "day": "2026-11-11",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2026-11-12",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-11-14",
+     "time": "10:00",
+     "title": "Terapeutická jóga s Klárou / workshop"
+    },
+    {
+     "day": "2026-11-17",
+     "time": "19:00",
+     "title": "Charta 77: Souhlasím s Prohlášením / Měsíc Příběhů bezpráví"
+    },
+    {
+     "day": "2026-11-18",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2026-11-19",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-11-21",
+     "time": "18:00",
+     "title": "Radost je biologická nutnost"
+    },
+    {
+     "day": "2026-11-23",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2026-11-24",
+     "time": "10:00",
+     "title": "Chytře internetem / workshop pro seniory"
+    },
+    {
+     "day": "2026-11-24",
+     "time": "11:30",
+     "title": "Workshop, Chytře internetem"
+    },
+    {
+     "day": "2026-11-24",
+     "time": "18:00",
+     "title": "Jaká veřejnoprávní média chceme mít? / debata"
+    },
+    {
+     "day": "2026-11-25",
+     "time": "18:00",
+     "title": "Adventní dílna s Monikou Stoklasovou"
+    },
+    {
+     "day": "2026-11-26",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-11-26",
+     "time": "18:00",
+     "title": "Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u sv. Jakuba II."
+    },
+    {
+     "day": "2026-11-28",
+     "time": "14:00",
+     "title": "Den pro dětskou knihu 2026"
+    },
+    {
+     "day": "2026-11-30",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2026-12-02",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2026-12-03",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-12-03",
+     "time": "18:00",
+     "title": "Jaroslav Pulicar: V zimě"
+    },
+    {
+     "day": "2026-12-06",
+     "time": "16:00",
+     "title": "Vánoční Zpívárium / hlasový workshop"
+    },
+    {
+     "day": "2026-12-06",
+     "time": "18:30",
+     "title": "Zpívárium: Koledy / adventní koncert"
+    },
+    {
+     "day": "2026-12-07",
+     "time": "10:00",
+     "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)"
+    },
+    {
+     "day": "2026-12-07",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2026-12-09",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2026-12-10",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-12-11",
+     "time": "",
+     "title": "Vánoce s Karlem: Karel Hegner & Fashion Strings"
+    },
+    {
+     "day": "2026-12-14",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2026-12-15",
+     "time": "18:00",
+     "title": "Vánoce známé neznámé / přednáška"
+    },
+    {
+     "day": "2026-12-17",
+     "time": "15:00",
+     "title": "Knihovna dětem"
+    },
+    {
+     "day": "2026-12-19",
+     "time": "10:00",
+     "title": "Terapeutická jóga s Klárou / workshop"
+    },
+    {
+     "day": "2026-12-21",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2026-12-28",
+     "time": "19:00",
+     "title": "Pilates & zdravá záda"
+    },
+    {
+     "day": "2027-01-06",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2027-01-06",
+     "time": "18:00",
+     "title": "Výborová schůze"
+    },
+    {
+     "day": "2027-01-11",
+     "time": "10:00",
+     "title": "English Time for Little Ones / angličtina pro nejmenší (kurz 1. pololetí)"
+    },
+    {
+     "day": "2027-01-13",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2027-01-20",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2027-01-27",
+     "time": "8:30",
+     "title": "Lit jóga"
+    },
+    {
+     "day": "2027-02-03",
+     "time": "18:00",
+     "title": "Výborová schůze"
+    }
+   ]
   },
   {
    "id": "posilovna",
@@ -214,7 +436,19 @@
    },
    "social": {
     "instagram": "https://www.instagram.com/restauraceuvolejniku"
-   }
+   },
+   "events": [
+    {
+     "day": "2026-11-11",
+     "time": "16:00",
+     "title": "Martinské dostaveníčko"
+    },
+    {
+     "day": "2026-12-05",
+     "time": "16:00",
+     "title": "Mikulášské posezení"
+    }
+   ]
   },
   {
    "id": "senk",
@@ -376,7 +610,14 @@
    },
    "social": {
     "facebook": "https://www.facebook.com/people/Vechtrovna-n%C3%A1dra%C5%BEn%C3%AD-hosp%C5%AFdka/61556915914818/"
-   }
+   },
+   "events": [
+    {
+     "day": "2026-11-13",
+     "time": "19:00",
+     "title": "Vechtrovna: Hudební večer – BG JAM, D.U.H.A Band"
+    }
+   ]
   },
   {
    "id": "smisenka",
