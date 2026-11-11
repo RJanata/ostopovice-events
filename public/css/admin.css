@@ -124,3 +124,22 @@
 .date-picker__day.is-today { box-shadow: inset 0 0 0 1px var(--accent-2); }
 .date-picker__day.is-selected { background: var(--accent); color: var(--accent-text); }
 .hours-form__time { width: 5em; }
+
+/* náhled výjimky: místa × dny, před a po */
+.hours-preview { margin-top: 14px; }
+.hours-preview__title { margin: 0 0 6px; font-size: 0.95rem; }
+.hours-preview__scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+.hours-preview__table { border-collapse: collapse; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+.hours-preview__table th, .hours-preview__table td { padding: 5px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; white-space: nowrap; }
+.hours-preview__table tr:last-child > * { border-bottom: 0; }
+.hours-preview__table thead th { background: var(--surface-2); font-weight: 700; }
+.hours-preview__table thead th small { display: block; font-weight: 400; color: var(--holiday); }
+.hours-preview__table thead th.is-off { color: var(--holiday); }
+.hours-preview__table tbody th { position: sticky; left: 0; z-index: 1; background: var(--surface); font-weight: 600; }
+.hours-preview__before { display: block; color: var(--muted); font-size: 0.75rem; }
+.hours-preview__after { display: block; font-weight: 600; }
+.hours-preview__table td.is-changed .hours-preview__before { text-decoration: line-through; }
+.hours-preview__table td.is-changed { background: color-mix(in srgb, var(--exception) 10%, transparent); }
+.hours-preview__table td.is-changed .hours-preview__after { color: var(--exception); }
+/* výjimka, která už ten den platí: vidět v náhledu (fialově, ať se odliší od zadávané) */
+.hours-preview__before.is-exception { color: var(--holiday); font-weight: 600; }

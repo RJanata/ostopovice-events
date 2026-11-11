@@ -5,8 +5,6 @@
 // týdne promítnou a zvýrazní, svátky jsou u dne vyznačené. U názvu ikona „teď otevřeno / zavřeno“.
 
 const TIME_ZONE = 'Europe/Prague';
-const DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-const DAY_SHORT = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
 const DAY_ON = ['v pondělí', 'v úterý', 've středu', 've čtvrtek', 'v pátek', 'v sobotu', 'v neděli'];
 const UPCOMING_DAYS = 60; // jak daleko dopředu ukazovat plánované výjimky
 const CLOSING_SOON_MINUTES = 60; // zavírají do hodiny → oranžově s počtem minut
@@ -30,20 +28,9 @@ function pragueNow() {
   return { day: `${p.year}-${p.month}-${p.day}`, minutes: Number(p.hour) * 60 + Number(p.minute) };
 }
 
-const keyToDate = (key) => new Date(`${key}T00:00:00Z`);
-const addDays = (key, n) => { const d = keyToDate(key); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
-const weekdayIndex = (key) => (keyToDate(key).getUTCDay() + 6) % 7; // pondělí = 0
-const formatShort = (key) => `${Number(key.slice(8))}. ${Number(key.slice(5, 7))}.`;
-const toMinutes = (hhmm) => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
-const formatTime = (hhmm) => hhmm.replace(/^0/, '');
-
-/** ISO číslo týdne (sudý / lichý týden u sběrného dvora). */
-function isoWeek(key) {
-  const d = keyToDate(key);
-  d.setUTCDate(d.getUTCDate() + 3 - weekdayIndex(key)); // čtvrtek téhož týdne určuje rok i číslo týdne
-  const yearStart = Date.UTC(d.getUTCFullYear(), 0, 1);
-  return Math.ceil(((d - yearStart) / 864e5 + 1) / 7);
-}
+const {
+  DAY_SHORT, addDays, weekdayIndex, formatShort, toMinutes, formatTime, isoWeek, regularHours,
+} = window.OpeningHours; // opening-hours-core.js
 
 /** „10.–16. 11.“, přes konec měsíce „30. 11. – 6. 12.“ */
 function formatRange(from, to) {
@@ -53,32 +40,11 @@ function formatRange(from, to) {
 
 // ---------- Otevírací doba v konkrétní den ----------
 
-/** Pravidelná doba platná v daný den (sezóny „duben–říjen“ apod., i přes Nový rok). */
-function regularHours(place, day) {
-  if (!place.seasons) return { hours: place.hours, season: null };
-  const md = day.slice(5);
-  const season = place.seasons.find((s) => (s.from <= s.to ? md >= s.from && md <= s.to : md >= s.from || md <= s.to));
-  return { hours: season?.hours || {}, season };
-}
-
 /**
  * Intervaly otevření v daný den: [{ from, to, note }], prázdné = zavřeno, null = neznámé.
  * exception = výjimka, která ten den platí (má přednost před pravidelnou dobou).
  */
-function hoursOn(place, day) {
-  const exception = data.exceptions.find((x) => x.places.includes(place.id) && day >= x.from && day <= x.to) || null;
-  if (exception) {
-    return { exception, intervals: exception.hours.map((t) => ({ from: t.split('-')[0], to: t.split('-')[1] })) };
-  }
-  const { hours } = regularHours(place, day);
-  if (!hours) return { exception: null, intervals: null };
-  const week = isoWeek(day);
-  const intervals = (hours[DAYS[weekdayIndex(day)]] || [])
-    .map((item) => (typeof item === 'string' ? { time: item } : item))
-    .filter((item) => !item.weeks || (item.weeks === 'even') === (week % 2 === 0))
-    .map((item) => ({ from: item.time.split('-')[0], to: item.time.split('-')[1], note: item.note || '' }));
-  return { exception: null, intervals };
-}
+const hoursOn = (place, day) => window.OpeningHours.hoursOn(data.exceptions, place, day);
 
 /** Stav teď: { kind: open|soon|closed, text, minutes } (jen pro známou otevírací dobu). */
 function openStatus(place, now) {

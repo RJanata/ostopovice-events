@@ -93,17 +93,26 @@ function showEditor(value) {
 }
 
 let readOnly = false; // server správy otevírací doby nezná → jen prohlížení z veřejných dat
+// veřejná data webu: pravidelné otevírací doby a svátky pro náhled (server posílá jen seznam míst)
+let publicData = { places: [], holidays: {} };
+
+async function loadPublicData() {
+  try {
+    const response = await fetch('data/opening-hours.json', { cache: 'no-cache' });
+    if (response.ok) publicData = await response.json();
+  } catch { /* náhled pak ukáže jen výjimku */ }
+}
 
 async function load() {
   let result;
+  await loadPublicData();
   try {
     result = await api('/opening-hours');
     readOnly = false;
   } catch (err) {
     if (err.status !== 404) throw err;
     // starší api-server (bez /opening-hours) odpoví „Neznámá adresa“ → aspoň ukázat, co je na webu
-    const response = await fetch('data/opening-hours.json', { cache: 'no-cache' });
-    result = { ...(await response.json()), sha: null };
+    result = { ...publicData, sha: null };
     readOnly = true;
   }
   categories = result.categories;
@@ -113,6 +122,7 @@ async function load() {
   $('x-save').disabled = readOnly;
   renderPlaceSelect();
   renderList();
+  renderPreview();
   if (readOnly) throw new Error('Server správy (api.craz.cz) zatím otevírací doby nezná – je potřeba nasadit novou verzi api-serveru. Do té doby jde výjimky jen prohlížet.');
 }
 
@@ -232,6 +242,7 @@ function fillForm(x) {
     inputs.to.value = to ? formatTime(to) : '';
   });
   syncMode();
+  renderPreview();
 }
 
 /** Hodnoty formuláře → výjimka; při chybě vyhodí zprávu pro editora. */
@@ -294,6 +305,11 @@ function setupForm() {
   $('x-all').addEventListener('click', () => setSelectedPlaces(places.map((p) => p.id)));
   $('x-none').addEventListener('click', () => setSelectedPlaces([]));
   $('x-cancel').addEventListener('click', () => { fillForm(null); setMessage($('save-status'), ''); });
+  // náhled se překresluje při každé změně formuláře
+  $('exception-form').addEventListener('input', renderPreview);
+  $('exception-form').addEventListener('change', renderPreview);
+  $('x-all').addEventListener('click', renderPreview);
+  $('x-none').addEventListener('click', renderPreview);
   $('exception-form').addEventListener('submit', async (ev) => {
     ev.preventDefault();
     let x;
@@ -308,8 +324,75 @@ function setupForm() {
     $('x-save').disabled = true;
     const ok = await save(next, `Otevírací doby: ${editing ? 'úprava' : 'nová'} výjimka ${placesLabel(x.places)} ${formatRange(x)}`);
     $('x-save').disabled = false;
-    if (ok) fillForm(null);
+    // formulář zůstává vyplněný (místa, data, časy) — další podobnou výjimku jde zadat jen úpravou;
+    // po uložení nové výjimky je další uložení zase nová výjimka, po úpravě se dál upravuje ta samá
+    if (ok) renderPreview();
   });
+}
+
+// ---------- Náhled ----------
+
+const PREVIEW_MAX_DAYS = 31;
+const intervalsText = (list) => (list === null ? '?' : list.length
+  ? list.map((i) => `${formatTime(i.from)}–${formatTime(i.to)}`).join(', ')
+  : '—');
+
+/**
+ * Tabulka pod formulářem: vybraná místa × dny výjimky. U každého dne běžná otevírací doba
+ * (nebo jiná výjimka, která už ten den platí) a co z ní udělá právě zadávaná výjimka.
+ */
+function renderPreview() {
+  const box = $('x-preview');
+  if (!box) return;
+  const H = window.OpeningHours;
+  const selected = selectedPlaces();
+  const from = $('x-from').getIso();
+  const to = $('x-to').getIso() || from;
+  if (!selected.length || !from || !to || to < from) {
+    box.innerHTML = '<p class="admin-help">Náhled: vyberte místa a datum, ukáže se otevírací doba v těchto dnech před a po výjimce.</p>';
+    return;
+  }
+  // zadávaná výjimka (i nedovyplněná: neúplné časy se zatím přeskočí)
+  let draft = [];
+  if (document.querySelector('input[name="x-mode"]:checked').value === 'hours') {
+    draft = intervalInputs()
+      .map(({ from: f, to: t }) => [parseTime(f.value), parseTime(t.value)])
+      .filter(([a, b]) => a && b && b > a)
+      .map(([a, b]) => ({ from: a, to: b }));
+  }
+  const others = exceptions.filter((x) => x.id !== editingId);
+  const days = [];
+  for (let d = from; d <= to && days.length < PREVIEW_MAX_DAYS; d = H.addDays(d, 1)) days.push(d);
+  const fullById = Object.fromEntries((publicData.places || []).map((p) => [p.id, p]));
+
+  const head = days.map((d) => {
+    const holiday = publicData.holidays?.[d];
+    const weekend = H.weekdayIndex(d) >= 5;
+    return `<th class="${holiday || weekend ? 'is-off' : ''}"${holiday ? ` title="${escapeHtml(holiday.join(' · '))}"` : ''}>
+        ${H.DAY_SHORT[H.weekdayIndex(d)]} ${H.formatShort(d)}${holiday ? '<small>svátek</small>' : ''}</th>`;
+  }).join('');
+  const rows = selected.map((id) => {
+    const place = fullById[id] || places.find((p) => p.id === id) || { id };
+    const cells = days.map((d) => {
+      const before = H.hoursOn(others, place, d);
+      const beforeText = intervalsText(before.intervals);
+      const afterText = intervalsText(draft);
+      const changed = beforeText !== afterText;
+      return `<td class="${changed ? 'is-changed' : ''}">
+          <span class="hours-preview__before${before.exception ? ' is-exception' : ''}">${before.exception
+            ? `výjimka${before.exception.note ? ` (${escapeHtml(before.exception.note)})` : ''}: ${escapeHtml(beforeText)}`
+            : `běžně ${escapeHtml(beforeText)}`}</span>
+          <strong class="hours-preview__after">${escapeHtml(afterText)}</strong>
+        </td>`;
+    }).join('');
+    return `<tr><th scope="row">${escapeHtml(place.name || id)}</th>${cells}</tr>`;
+  }).join('');
+  const total = Math.round((H.keyToDate(to) - H.keyToDate(from)) / 864e5) + 1;
+  box.innerHTML = `<h3 class="hours-preview__title">Náhled</h3>
+    <div class="hours-preview__scroll"><table class="hours-preview__table">
+      <thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody>
+    </table></div>
+    ${total > days.length ? `<p class="admin-help">Ukázáno prvních ${days.length} dní z ${total}.</p>` : ''}`;
 }
 
 // ---------- Seznam ----------
