@@ -161,37 +161,6 @@
       "checked": "ostopovice.cz, 10. 11. 2026"
     },
     {
-      "id": "posilovna",
-      "name": "Venkovní posilovna",
-      "icon": "tabler/barbell.svg",
-      "category": "obec",
-      "hours": {
-        "mon": [
-          "08:00-20:00"
-        ],
-        "tue": [
-          "08:00-20:00"
-        ],
-        "wed": [
-          "08:00-20:00"
-        ],
-        "thu": [
-          "08:00-20:00"
-        ],
-        "fri": [
-          "08:00-20:00"
-        ],
-        "sat": [
-          "08:00-20:00"
-        ],
-        "sun": [
-          "08:00-20:00"
-        ]
-      },
-      "checked": "Radek, 11. 11. 2026",
-      "address": "U Dráhy 330/30"
-    },
-    {
       "id": "smisenka",
       "name": "Minimarket Smíšenka",
       "icon": "tabler/shopping-cart.svg",
