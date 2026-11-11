@@ -117,6 +117,7 @@ function eventsIcon(place, day) {
  */
 function dayDetails(place, day, exception, holiday) {
   const parts = [];
+  // prodejny nad 200 m² jsou v pruhu se svátky nad panely, tady jen název svátku
   if (holiday) parts.push(`<li class="hours-detail hours-detail--holiday">${escapeHtml(holiday.join(' · '))}</li>`);
   if (exception) {
     // upravená doba je vidět v řádku; tady jen ta běžná (a důvod výjimky)
@@ -267,6 +268,15 @@ function render() {
   $('week-range').innerHTML = `${formatRange(weekStart, addDays(weekStart, 6))} <small>${isoWeek(weekStart)}. týden</small>`;
   $('week-label').setAttribute('aria-pressed', String(state.week === 0));
   document.querySelector('[data-week="-1"]').disabled = state.week <= 0;
+
+  // svátky v týdnu nad panely (vidět i na mobilu): název a prodejny nad 200 m² otevřeno / zavřeno
+  const holidays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i)).filter((d) => data.holidays[d]);
+  $('week-holidays').hidden = !holidays.length;
+  $('week-holidays').innerHTML = holidays.map((d) => {
+    const shops = window.OpeningHours.bigShops(d, data.holidays[d]);
+    return `<p><strong>${DAY_SHORT[weekdayIndex(d)]} ${formatShort(d)}</strong> ${escapeHtml(data.holidays[d].join(' · '))}`
+      + `${shops ? ` <span class="hours-shops${shops.closed ? ' hours-shops--closed' : ''}" title="Zákon o prodejní době: obchody s prodejní plochou nad 200 m²">${escapeHtml(shops.text)}</span>` : ''}</p>`;
+  }).join('');
 
   renderFilter();
   const places = data.places.filter((p) => !state.category || p.category === state.category);

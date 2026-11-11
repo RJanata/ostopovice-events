@@ -389,7 +389,15 @@ function dayHeading(day, holidays) {
       ${relative ? `<span class="day__relative">${relative}</span>` : ''}
       <span>${escapeHtml(label.charAt(0).toUpperCase() + label.slice(1))}</span>
       ${holiday ? `<span class="day__holiday">${escapeHtml(holiday.join(' · '))}</span>` : ''}
+      ${shopsBadge(day, holiday)}
     </h2>`;
+}
+
+/** U státního svátku: mají prodejny nad 200 m² otevřeno, nebo zavřeno (opening-hours-core.js). */
+function shopsBadge(day, holiday) {
+  const shops = window.OpeningHours?.bigShops(day, holiday);
+  if (!shops) return '';
+  return `<span class="day__shops${shops.closed ? ' day__shops--closed' : ''}" title="Zákon o prodejní době: obchody s prodejní plochou nad 200 m²">${escapeHtml(shops.text)}</span>`;
 }
 
 // ---------- Zobrazení: seznam ----------
@@ -795,7 +803,7 @@ function renderMonth(events, holidays) {
             <span class="month__day-number">${Number(d.slice(8))}</span>
             ${regularMarks}${regularDots}
             ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změněné otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
-            ${holiday ? `<span class="month__day-holiday" title="${escapeHtml(holiday.join(' · '))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
+            ${holiday ? `<span class="month__day-holiday" title="${escapeHtml([holiday.join(' · '), window.OpeningHours?.bigShops(d, holiday)?.text].filter(Boolean).join('\n'))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
           </span>
         </button>`;
     }

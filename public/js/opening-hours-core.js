@@ -71,8 +71,25 @@ window.OpeningHours = (function () {
     return false;
   }
 
+  /**
+   * Prodejny nad 200 m² o státních svátcích (zákon č. 223/2016 Sb., o prodejní době):
+   * zavřeno 1. 1., Velikonoční pondělí, 8. 5., 28. 9., 28. 10., 25. a 26. 12.; Štědrý den jen do 12:00;
+   * ostatní svátky (Velký pátek, 1. 5., 5. a 6. 7., 17. 11.) otevřeno.
+   * holiday = názvy svátků toho dne (null = není svátek) → { closed, text } nebo null.
+   */
+  const SHOPS_CLOSED = ['01-01', '05-08', '09-28', '10-28', '12-25', '12-26'];
+  function bigShops(day, holiday) {
+    if (!holiday?.length) return null;
+    const md = day.slice(5);
+    if (md === '12-24') return { closed: false, text: 'Prodejny nad 200 m² otevřeno jen do 12:00' };
+    if (SHOPS_CLOSED.includes(md) || holiday.some((name) => /velikono[cč]n[ií] pond[eě]l[ií]/i.test(name))) {
+      return { closed: true, text: 'Prodejny nad 200 m² zavřeno' };
+    }
+    return { closed: false, text: 'Prodejny nad 200 m² otevřeno' };
+  }
+
   return {
-    DAYS, DAY_SHORT, keyToDate, addDays, weekdayIndex, formatShort, toMinutes, formatTime,
+    bigShops, DAYS, DAY_SHORT, keyToDate, addDays, weekdayIndex, formatShort, toMinutes, formatTime,
     isoWeek, regularHours, regularIntervals, exceptionOn, exceptionIntervals, hoursOn, exceptionChanges,
   };
 })();

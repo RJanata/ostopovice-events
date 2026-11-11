@@ -271,6 +271,14 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 }
 .day__relative { font-size: 0.8rem; font-weight: 600; color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.04em; }
 .day__holiday { font-size: 0.85rem; font-weight: 500; color: var(--holiday); }
+/* svátek: prodejny nad 200 m² otevřeno / zavřeno (fazolka u nadpisu dne) */
+.day__shops {
+  align-self: center; padding: 0 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; line-height: 1.7;
+  background: #dcf3e3; color: #14532d; cursor: help;
+}
+.day__shops--closed { background: #fbe1e1; color: #9b2c2c; }
+:root[data-theme="dark"] .day__shops { background: #1f3d2a; color: #9fdcb2; }
+:root[data-theme="dark"] .day__shops--closed { background: #44262a; color: #f2a8a8; }
 
 .event {
   display: grid; grid-template-columns: 92px 1fr auto; gap: 4px 14px;

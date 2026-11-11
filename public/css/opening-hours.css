@@ -162,3 +162,16 @@
 
 /* prázdný sloupec (jen odpolední doba) by neměl účaří a řádek by byl vyšší → neviditelná mezera */
 .hours-day__slot:empty::before { content: "\00a0"; }
+
+/* státní svátky v zobrazeném týdnu (nad panely) */
+.hours-holidays { margin: -4px 0 14px; padding: 8px 14px; border-radius: var(--radius); background: color-mix(in srgb, var(--holiday) 8%, var(--surface)); font-size: 0.88rem; color: var(--holiday); }
+.hours-holidays p { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; }
+.hours-holidays p + p { margin-top: 4px; }
+.hours-holidays strong { font-variant-numeric: tabular-nums; }
+.hours-shops {
+  padding: 0 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; line-height: 1.7;
+  background: #dcf3e3; color: #14532d; cursor: help;
+}
+.hours-shops--closed { background: #fbe1e1; color: #9b2c2c; }
+:root[data-theme="dark"] .hours-shops { background: #1f3d2a; color: #9fdcb2; }
+:root[data-theme="dark"] .hours-shops--closed { background: #44262a; color: #f2a8a8; }

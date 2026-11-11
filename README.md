@@ -112,6 +112,9 @@ Pohostinství / Služby (v adrese `#k=pohostinstvi`), u aktuálního týdne „O
   uvedeného místa, `locations` = místo akce, `titles` = název; regulární výrazy bez diakritiky). Takové akce
   (kromě dlouhodobých) jsou v panelu jako ikonka kalendáře u dne. Naopak kalendář akcí ukazuje u dne se změněnou
   otevírací dobou ikonku (i) a v seznamu souhrn „Změněné otevírací doby“ (čte `data/opening-hours.json`).
+- **Prodejny nad 200 m² o svátcích** (zákon č. 223/2016 Sb.): u každého státního svátku kalendář (u nadpisu dne)
+  i otevírací doby (pruh se svátky týdne nad panely) ukazují, zda mají otevřeno. Zavřeno 1. 1., Velikonoční pondělí,
+  8. 5., 28. 9., 28. 10., 25. a 26. 12., Štědrý den do 12:00; pravidlo je v `bigShops()` v `js/opening-hours-core.js`.
 - Sběr z obou souborů a ze státních svátků skládá `public/data/opening-hours.json`
   (`scripts/lib/opening-hours.js`, běží i při `--no-fetch`). Proběhlé výjimky starší 14 dní na web nejdou.
 
