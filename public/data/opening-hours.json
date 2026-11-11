@@ -76,53 +76,6 @@
    }
   },
   {
-   "id": "sberny-dvur",
-   "name": "Sběrný dvůr",
-   "icon": "tabler/recycle.svg",
-   "category": "obec",
-   "address": "Družstevní (za mostem)",
-   "phone": "+420 775 539 230",
-   "email": "sbernydvur@ostopovice.cz",
-   "web": "https://www.ostopovice.cz/odpadove-hospodarstvi#sberny_dvur",
-   "map": "https://mapy.com/cs/?source=firm&id=2253088",
-   "note": "Odpad přijímají jen od plátců poplatku za odpady.",
-   "seasons": [
-    {
-     "label": "Letní provoz (duben–říjen)",
-     "from": "04-01",
-     "to": "10-31",
-     "hours": {
-      "mon": [
-       "13:00-17:00"
-      ],
-      "wed": [
-       "13:00-18:00"
-      ],
-      "sat": [
-       "08:00-12:00"
-      ]
-     }
-    },
-    {
-     "label": "Zimní provoz (listopad–březen)",
-     "from": "11-01",
-     "to": "03-31",
-     "hours": {
-      "wed": [
-       "13:00-17:00"
-      ],
-      "sat": [
-       {
-        "time": "08:00-11:00",
-        "weeks": "even",
-        "note": "jen v sudém týdnu"
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
    "id": "knihovna",
    "name": "Obecní knihovna",
    "icon": "knihovna.png",
@@ -369,6 +322,53 @@
      "day": "2027-02-03",
      "time": "18:00",
      "title": "Výborová schůze"
+    }
+   ]
+  },
+  {
+   "id": "sberny-dvur",
+   "name": "Sběrný dvůr",
+   "icon": "tabler/recycle.svg",
+   "category": "obec",
+   "address": "Družstevní (za mostem)",
+   "phone": "+420 775 539 230",
+   "email": "sbernydvur@ostopovice.cz",
+   "web": "https://www.ostopovice.cz/odpadove-hospodarstvi#sberny_dvur",
+   "map": "https://mapy.com/cs/?source=firm&id=2253088",
+   "note": "Odpad přijímají jen od plátců poplatku za odpady.",
+   "seasons": [
+    {
+     "label": "Letní provoz (duben–říjen)",
+     "from": "04-01",
+     "to": "10-31",
+     "hours": {
+      "mon": [
+       "13:00-17:00"
+      ],
+      "wed": [
+       "13:00-18:00"
+      ],
+      "sat": [
+       "08:00-12:00"
+      ]
+     }
+    },
+    {
+     "label": "Zimní provoz (listopad–březen)",
+     "from": "11-01",
+     "to": "03-31",
+     "hours": {
+      "wed": [
+       "13:00-17:00"
+      ],
+      "sat": [
+       {
+        "time": "08:00-11:00",
+        "weeks": "even",
+        "note": "jen v sudém týdnu"
+       }
+      ]
+     }
     }
    ]
   },
