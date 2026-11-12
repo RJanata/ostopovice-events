@@ -1987,16 +1987,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-mcnjny@ostopovice-events
-DTSTAMP:20261012T101029Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Svoz pytlového odpadu
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
 DTSTAMP:20261112T100031Z
 DTSTART;VALUE=DATE:20261208
@@ -2005,6 +1995,16 @@ SUMMARY:Den otevřených dveří ve škole
 LOCATION:ZŠ/MŠ Ostopovice
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
