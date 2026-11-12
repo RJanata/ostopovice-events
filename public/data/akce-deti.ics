@@ -459,6 +459,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
 CATEGORIES:Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-k56p4y@ostopovice-events
+DTSTAMP:20261112T100031Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Den otevřených dveří ve škole
+LOCATION:ZŠ/MŠ Ostopovice
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-68gb6q@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261210T140000Z
