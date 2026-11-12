@@ -193,6 +193,15 @@
       "allDay": false,
       "editedBy": "Radek",
       "editedAt": "2026-11-12T09:58:23.992Z"
+    },
+    "skola-1hropan": {
+      "location": "Školní stodola",
+      "note": "Srdečně Vás zveme na charitativní polévku ve stodole! Naši druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Přineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetříte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.",
+      "start": "2026-11-16T10:30:00.000Z",
+      "end": "2026-11-16T11:30:00.000Z",
+      "allDay": false,
+      "editedBy": "Radek",
+      "editedAt": "2026-11-12T10:02:03.819Z"
     }
   }
 }
