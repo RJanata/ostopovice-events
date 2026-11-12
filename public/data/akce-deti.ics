@@ -288,13 +288,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:skola-1hropan@ostopovice-events
 DTSTAMP:20261028T093845Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
+DTSTART:20261116T103000Z
+DTEND:20261116T113000Z
 SUMMARY:Polévka ve stodole
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:2. ročník\nŠtědrost a laskavost v jednom hrnku.\n\nZdroj: 
- Škola
+LOCATION:Školní stodola
+DESCRIPTION:Srdečně Vás zveme na charitativní polévku ve stodole! Naš
+ i druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Př
+ ineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetř
+ íte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.\
+ n\n2. ročník\nŠtědrost a laskavost v jednom hrnku.\n\nZdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT

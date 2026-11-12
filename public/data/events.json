@@ -5516,17 +5516,22 @@
    "id": "skola-1hropan",
    "source": "skola",
    "title": "Polévka ve stodole",
-   "start": "2026-11-16",
-   "end": "2026-11-16",
-   "allDay": true,
-   "location": "",
+   "start": "2026-11-16T10:30:00.000Z",
+   "end": "2026-11-16T11:30:00.000Z",
+   "allDay": false,
+   "location": "Školní stodola",
    "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "2. ročník\nŠtědrost a laskavost v jednom hrnku.",
    "image": "",
    "categories": [
     "deti"
    ],
-   "added": "2026-10-28T09:38:45.482Z"
+   "added": "2026-10-28T09:38:45.482Z",
+   "note": "Srdečně Vás zveme na charitativní polévku ve stodole! Naši druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Přineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetříte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.",
+   "originalLocation": "",
+   "originalStart": "2026-11-16",
+   "originalEnd": "2026-11-16",
+   "originalAllDay": true
   },
   {
    "id": "svatky-1nmjbe3",
@@ -5586,12 +5591,12 @@
     "kultura",
     "obec"
    ],
+   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true,
-   "added": "2026-11-06T11:01:38.483Z"
+   "originalAllDay": true
   },
   {
    "id": "knihovna-xruv7p",
