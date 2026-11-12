@@ -5244,8 +5244,8 @@
     "seniori",
     "obec"
    ],
-   "added": "2026-10-08T14:26:43.000Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-6n99bx",
@@ -7071,6 +7071,27 @@
    ],
    "added": "2026-11-04T23:15:22.171Z",
    "hidden": false
+  },
+  {
+   "id": "pripravovane-1u78fs0",
+   "source": "pripravovane",
+   "title": "Tříkrálová sbírka",
+   "start": "2027-01-09",
+   "end": "2027-01-09",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti",
+    "cirkev"
+   ],
+   "categories": [
+    "deti",
+    "cirkev"
+   ],
+   "added": "2026-11-12T19:38:07.486Z"
   },
   {
    "id": "knihovna-1ulvu99",

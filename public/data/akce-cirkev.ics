@@ -238,4 +238,13 @@ DESCRIPTION:Zdroj: Nezařazené
 URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1u78fs0@ostopovice-events
+DTSTAMP:20261112T193807Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Tříkrálová sbírka
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev
+END:VEVENT
 END:VCALENDAR
