@@ -17,6 +17,20 @@
       "editedAt": "2026-11-11T11:48:40.422Z"
     },
     {
+      "id": "xmwdc5dkqscx",
+      "places": [
+        "vinoteka-pavel"
+      ],
+      "from": "2026-11-11",
+      "to": "2026-11-14",
+      "hours": [
+        "16:00-18:00"
+      ],
+      "note": "nemoc",
+      "editedBy": "Radek",
+      "editedAt": "2026-11-12T09:18:32.709Z"
+    },
+    {
       "id": "xmwbffajx1te",
       "places": [
         "vechtrovna"
