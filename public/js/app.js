@@ -486,7 +486,7 @@ function longEventsBlock(events, from) {
     </details>`;
 }
 
-// ---------- Změněné otevírací doby (výjimky ze stránky Otevírací doby) ----------
+// ---------- Změna otevírací doby (výjimky ze stránky Otevírací doby) ----------
 
 /** den → [{ names: ['Pošta Partner', …], text: 'zavřeno (Dovolená)' }] — místa se stejnou změnou spojená */
 let hoursChanges = new Map();
@@ -817,7 +817,7 @@ function renderMonth(events, holidays) {
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
             ${regularMarks}${regularDots}
-            ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změněné otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
+            ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změna otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml([holiday.join(' · '), window.OpeningHours?.bigShops(d, holiday)?.text].filter(Boolean).join('\n'))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
             ${!holiday && window.OpeningHours?.dayNotice(d) ? `<span class="month__day-holiday" title="${escapeHtml(window.OpeningHours.dayNotice(d).text)}">${escapeHtml(window.OpeningHours.dayNotice(d).label)}</span>` : ''}
           </span>
