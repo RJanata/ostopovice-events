@@ -3297,8 +3297,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3382,8 +3382,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3399,8 +3399,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3554,8 +3554,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3571,8 +3571,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -5100,8 +5100,8 @@
     "kultura",
     "cirkev"
    ],
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
-   "added": "2026-10-23T15:06:27.836Z"
+   "added": "2026-10-23T15:06:27.836Z",
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
   },
   {
    "id": "nezarazene-1twvpnd",
@@ -5244,8 +5244,8 @@
     "seniori",
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "seniori-6n99bx",
@@ -5507,10 +5507,10 @@
    "categories": [
     "obec"
    ],
+   "added": "2026-11-09T12:54:20.903Z",
    "hidden": true,
    "long": true,
-   "originalLong": null,
-   "added": "2026-11-09T12:54:20.903Z"
+   "originalLong": null
   },
   {
    "id": "skola-1hropan",
@@ -5558,11 +5558,11 @@
     "deti",
     "obec"
    ],
+   "added": "2026-11-06T17:25:51.053Z",
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true,
-   "added": "2026-11-06T17:25:51.053Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1ixvp6o",
@@ -5586,12 +5586,12 @@
     "kultura",
     "obec"
    ],
+   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true,
-   "added": "2026-11-06T11:01:38.483Z"
+   "originalAllDay": true
   },
   {
    "id": "knihovna-xruv7p",
@@ -7020,8 +7020,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "knihovna-1ulvu99",
@@ -7142,8 +7142,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-151pfly",
@@ -7231,8 +7231,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "svatky-anz2ks",
@@ -7276,8 +7276,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "seniori-1vg2pxf",
@@ -7521,8 +7521,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "svatky-1jy7eop",
@@ -7654,8 +7654,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1xl367q",
@@ -7769,8 +7769,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -7805,8 +7805,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-17vs6ua",
@@ -7858,8 +7858,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "svatky-179n2hh",
@@ -7910,8 +7910,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-8mppx6",
@@ -7962,8 +7962,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "seniori-13wrk4h",
@@ -8026,8 +8026,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "seniori-ucaasa",
