@@ -71,11 +71,6 @@
    },
    "events": [
     {
-     "day": "2026-11-04",
-     "time": "8:30",
-     "title": "ZRUŠENO Lit jóga"
-    },
-    {
      "day": "2026-11-05",
      "time": "15:00",
      "title": "Knihovna dětem"
@@ -541,7 +536,7 @@
   },
   {
    "id": "vinoteka-pavel",
-   "name": "Vinotéka Pavel",
+   "name": "Vinotéka Svět vín PŠ",
    "icon": "tabler/glass-full.svg",
    "category": "pohostinstvi",
    "address": "Na Rybníčku 1",
@@ -549,25 +544,22 @@
    "map": "https://mapy.com/cs/?source=firm&id=12912859",
    "hours": {
     "mon": [
-     "14:00-19:30"
+     "15:30-20:00"
     ],
     "tue": [
-     "14:00-19:30"
+     "15:30-20:00"
     ],
     "wed": [
-     "14:00-19:30"
+     "15:30-20:00"
     ],
     "thu": [
-     "14:00-19:30"
+     "15:30-20:00"
     ],
     "fri": [
-     "14:00-19:30"
+     "15:30-20:00"
     ],
     "sat": [
-     "14:00-19:30"
-    ],
-    "sun": [
-     "14:00-19:30"
+     "15:30-20:00"
     ]
    }
   },
@@ -710,9 +702,6 @@
   }
  ],
  "holidays": {
-  "2026-10-28": [
-   "Den vzniku samostatného československého státu"
-  ],
   "2026-11-17": [
    "Den boje za svobodu a demokracii"
   ],
