@@ -524,12 +524,12 @@ async function loadHoursChanges() {
 
 const hoursChangesText = (day) => (hoursChanges.get(day) || []).map((g) => `${g.names.join(', ')}: ${g.text}`).join('\n');
 
-/** Souhrn u dne v seznamu: „Změněné otevírací doby“ a místa se změnou. */
+/** Souhrn u dne v seznamu: „Změna otevírací doby“ a místa se změnou. */
 function hoursChangesBlock(day) {
   const groups = hoursChanges.get(day);
   if (!groups) return '';
   return `<div class="day__hours">
-      <a class="day__hours-title" href="oteviraci-doby#d=${day}">${ICON_INFO}Změněné otevírací doby</a>
+      <a class="day__hours-title" href="oteviraci-doby#d=${day}">${ICON_INFO}Změna otevírací doby</a>
       <ul>${groups.map((g) => `<li><strong>${escapeHtml(g.names.join(', '))}:</strong> ${escapeHtml(g.text)}</li>`).join('')}</ul>
     </div>`;
 }
