@@ -414,18 +414,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -437,6 +425,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1378,6 +1378,17 @@ URL:https://www.facebook.com/vechtrovna.official/posts/pfbid024jn1mibLjVgR3
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-i3e9k9@ostopovice-events
+DTSTAMP:20261112T163138Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Upozornění: Myslivecký hon
+LOCATION:k.ú. Ostopovice
+DESCRIPTION:Dbejte zvýšené opatrnosti při pohybu v přírodě předev
+ ším v dopoledních hodinách.\n\nZdroj: Nezařazené
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-dn14b9@ostopovice-events
 DTSTAMP:20261028T210714Z
 DTSTART:20261114T090000Z
@@ -1987,16 +1998,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-mcnjny@ostopovice-events
-DTSTAMP:20261012T101029Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Svoz pytlového odpadu
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
 DTSTAMP:20261112T100031Z
 DTSTART;VALUE=DATE:20261208
@@ -2005,6 +2006,16 @@ SUMMARY:Den otevřených dveří ve škole
 LOCATION:ZŠ/MŠ Ostopovice
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
