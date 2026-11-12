@@ -338,7 +338,7 @@
     },
     {
       "id": "vinoteka-pavel",
-      "name": "Vinotéka Pavel",
+      "name": "Vinotéka Svět vín PŠ",
       "icon": "tabler/glass-full.svg",
       "category": "pohostinstvi",
       "address": "Na Rybníčku 1",
@@ -346,25 +346,22 @@
       "map": "https://mapy.com/cs/?source=firm&id=12912859",
       "hours": {
         "mon": [
-          "14:00-19:30"
+          "15:30-20:00"
         ],
         "tue": [
-          "14:00-19:30"
+          "15:30-20:00"
         ],
         "wed": [
-          "14:00-19:30"
+          "15:30-20:00"
         ],
         "thu": [
-          "14:00-19:30"
+          "15:30-20:00"
         ],
         "fri": [
-          "14:00-19:30"
+          "15:30-20:00"
         ],
         "sat": [
-          "14:00-19:30"
-        ],
-        "sun": [
-          "14:00-19:30"
+          "15:30-20:00"
         ]
       },
       "checked": "firmy.cz (Pavel Štrba, dlouho neaktualizováno; Google uvádí ve středu od 15:30), 10. 11. 2026"
