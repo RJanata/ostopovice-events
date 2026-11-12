@@ -5999,23 +5999,6 @@
    "added": "2026-10-25T14:23:35.477Z"
   },
   {
-   "id": "skola-ulrkua",
-   "source": "skola",
-   "title": "Adventní jarmark",
-   "start": "2026-11-29",
-   "end": "2026-11-29",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
-   "description": "",
-   "image": "",
-   "categories": [
-    "deti",
-    "kultura"
-   ],
-   "added": "2026-10-28T09:38:45.482Z"
-  },
-  {
    "id": "pripravovane-7nr8c",
    "source": "pripravovane",
    "title": "Rozsvícení vánočního stromečku (1. adventní neděle)",
@@ -6036,6 +6019,28 @@
     "deti"
    ],
    "added": "2026-10-08T00:13:17.000Z"
+  },
+  {
+   "id": "skola-ulrkua",
+   "source": "skola",
+   "title": "Adventní jarmark a rozsvícení vánočního stromu",
+   "start": "2026-11-29T15:30:00.000Z",
+   "end": "2026-11-29T15:30:00.000Z",
+   "allDay": false,
+   "location": "U Kaple",
+   "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
+   "description": "",
+   "image": "",
+   "categories": [
+    "deti",
+    "kultura"
+   ],
+   "added": "2026-10-28T09:38:45.482Z",
+   "originalTitle": "Adventní jarmark",
+   "originalLocation": "",
+   "originalStart": "2026-11-29",
+   "originalEnd": "2026-11-29",
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1ytvbob",
