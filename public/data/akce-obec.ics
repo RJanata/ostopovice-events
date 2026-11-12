@@ -164,7 +164,7 @@ DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Uzávěrka příspěvků do Zpravodaje 26/4
 DESCRIPTION:Zdroj: Nezařazené
-CATEGORIES:Obec
+CATEGORIES:Obec,Ostatní
 END:VEVENT
 BEGIN:VEVENT
 UID:obec-3uu75f@ostopovice-events

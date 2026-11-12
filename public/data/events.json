@@ -5413,7 +5413,8 @@
     "obec"
    ],
    "categories": [
-    "obec"
+    "obec",
+    "ostatni"
    ],
    "added": "2026-10-30T17:05:23.958Z"
   },
@@ -5610,12 +5611,12 @@
     "kultura",
     "obec"
    ],
+   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true,
-   "added": "2026-11-06T11:01:38.483Z"
+   "originalAllDay": true
   },
   {
    "id": "knihovna-xruv7p",
