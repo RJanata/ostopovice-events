@@ -5432,6 +5432,7 @@
    "url": "",
    "description": "Dbejte zvýšené opatrnosti při pohybu v přírodě především v dopoledních hodinách.",
    "image": "",
+   "icon": "alert-triangle",
    "tagCategories": [
     "ostatni"
    ],
