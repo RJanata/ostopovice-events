@@ -8,23 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-sio3ig@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260914T080000Z
-DTEND:20260914T090000Z
-SUMMARY:English Time for Little Ones / angličtina pro nejmenší (kurz 1. 
- pololetí)
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
- ovodu rodičů. Společně se ponoříme do světa anglického příběhu\
- , který si nejen přečteme\, ale i prožijeme skrze pohybové hry\, pís
- ničky a jednoduché tvoření.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
- nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-0
- 9-14-10-00
-CATEGORIES:Pro děti,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-5wtuq2@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20260915T160000Z
