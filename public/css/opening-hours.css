@@ -211,6 +211,9 @@
 .today-row__events svg { width: 13px; height: 13px; flex: none; position: relative; top: 1px; }
 .today-row__event-time { font-weight: 600; font-variant-numeric: tabular-nums; }
 .today-row .hours-day__note, .today-row .hours-day__details { grid-column: 2 / -1; }
+/* řádky pod místem (akce, poznámka, běžná doba) nesmí šířkou ovlivnit sloupce — dlouhý název akce
+   by roztáhl sloupec s dobou (max-content), zúžil název a fazolka by ujela ze zarovnání */
+.today-row__events, .today-row .hours-day__note, .today-row .hours-day__details { contain: inline-size; }
 .today-row.hours-day--expandable:hover { background: var(--surface-2); }
 .hours-tools--week { margin-top: 0; justify-content: flex-end; }
 
@@ -218,9 +221,12 @@
   .today__list { grid-template-columns: 1fr; }
   /* telefon: jedna doba na řádku s názvem, dvě doby (pošta, úřad) na druhém řádku pod nimi;
      stav pořád ve stejném sloupci */
-  /* název nejvýš 12em (užší se zalomí), fazolka hned za ním, doba vpravo */
-  .today-row { grid-template-columns: 22px minmax(0, 12em) 6.4em minmax(max-content, 1fr); column-gap: 8px; }
+  /* název do zbytku místa, fazolka a doba v pevných sloupcích vpravo → fazolky pod sebou;
+     sloupec fazolky = nejširší fazolka („ještě 45 min“), doba = nejdelší jedna doba (11:00–22:00) */
+  .today-row { grid-template-columns: 22px minmax(0, 1fr) 5.2em 5.6em; column-gap: 8px; }
   .today-row__times { justify-self: end; }
+  /* dvě doby (pošta, úřad) se do sloupce nevejdou → na druhý řádek pod název */
+  .today-row--wide .today-row__times { grid-column: 2 / -1; grid-row: 2; }
   /* bez pevných sloupců: jen tak široké jako doba */
   .today-row.hours-day--two .hours-day__times { display: flex; gap: 0 10px; }
   .today-row .hours-day__slot:empty { display: none; }
@@ -252,13 +258,6 @@
 .today__tab[aria-selected="true"] { color: var(--heading); border-bottom-color: var(--accent-2); }
 .today__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .today__holiday { margin: -4px 0 12px; }
-
-/* úzký telefon: dvě doby (pošta, úřad) se vedle názvu a stavu nevejdou → pod ně */
-@media (max-width: 500px) {
-  /* úzký telefon: název do zbytku místa, doba v pevném sloupci → fazolky pořád pod sebou */
-  .today-row { grid-template-columns: 22px minmax(0, 1fr) 6.4em 5.6em; }
-  .today-row--wide .today-row__times { grid-column: 2 / -1; grid-row: 2; justify-self: end; }
-}
 
 /* upozornění ke dni (Silvestr) — žlutá fazolka */
 .hours-shops--notice { background: #fdf0c4; color: #7a5200; }
