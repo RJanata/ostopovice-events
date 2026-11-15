@@ -58,6 +58,10 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   Obrázek k akci (plakát, upoutávka): `#img: https://…` (kdekoli v popisu, adresa obrázku
   na webu) — v seznamu akcí se ukáže jako náhled vpravo, klepnutím celý. Má přednost před
   obrázkem ze zdroje (obec a knihovna obrázky dodávají samy) a z popisu zmizí.
+  Důležitá akce pro občany (svoz odpadu): `#dulezite` v popisu — v seznamu akcí žlutá karta
+  na začátku dne (i pravidelná, ne ve skupině „Pravidelné“), na stránce otevíracích dob
+  žlutý pruh nad přehledem Dnes/Zítra a v týdnu ikonka u míst s `"showImportant": true`
+  (sběrný dvůr).
   Dlouhodobá akce: `#long` v popisu = akce se v měsíci zobrazí jako tenká čára u čísel dnů
   a v seznamu mezi dlouhodobými, i když je kratší než 8 dní (i jednodenní) (bez štítku rozhoduje délka 8+ dní).
 - **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho

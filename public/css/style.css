@@ -339,6 +339,11 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event--cancelled .event__title { text-decoration: line-through; color: var(--muted); }
 .event--cancelled .event__time::after { content: "Zrušeno"; display: block; font-size: 0.75rem; color: #b3261e; font-weight: 600; }
 .event--past { opacity: 0.7; }
+/* důležitá akce (#dulezite — svoz odpadu): světle žlutá karta s okrajem, ať v seznamu nezapadne */
+.event--important { background: #fdf0c4; border-color: #f0dc94; border-left-color: #d9a400; }
+.event--important .event__title { color: #5c3d00; }
+:root[data-theme="dark"] .event--important { background: #3b311a; border-color: #5c4b22; border-left-color: #d9a400; }
+:root[data-theme="dark"] .event--important .event__title { color: #f5d27a; }
 
 /* pravidelné akce: sbalené do jednoho řádku na konci dne */
 .day__regular { margin: 0 0 8px; font-size: 0.9rem; }

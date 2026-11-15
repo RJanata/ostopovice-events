@@ -117,6 +117,29 @@ function eventsIcon(place, day) {
   return `<span class="hours-day__event" title="${escapeHtml(text)}" aria-label="${escapeHtml(`Akce: ${text}`)}">${ICON_EVENT}<span>${escapeHtml(time)}${list.length > 1 ? ` +${list.length - 1}` : ''}</span></span>`;
 }
 
+// důležité akce (#dulezite v kalendáři, např. svoz odpadu): [{ day, time, title, icon }]
+const importantOn = (day) => (data.important || []).filter((e) => e.day === day);
+
+/** Ikona důležité akce (vlastní ikona z kalendáře, jinak kalendářík). */
+function importantIcon(e) {
+  if (!e.icon) return ICON_EVENT;
+  const url = new URL(`icons/tabler/${e.icon}.svg`, document.baseURI).href;
+  return `<span class="cat-icon" style="--icon:url('${escapeHtml(url)}')"></span>`;
+}
+
+/** Týden: ikonky důležitých akcí u dne (jen u míst s showImportant — sběrný dvůr a svoz odpadu). */
+function importantIcons(place, day) {
+  if (!place.showImportant) return '';
+  return importantOn(day).map((e) => `<span class="hours-day__important" title="${escapeHtml(eventText(e))}" aria-label="${escapeHtml(eventText(e))}">${importantIcon(e)}</span>`).join('');
+}
+
+/** Dnes / Zítra: důležité akce dne v pruhu nad přehledem. */
+function importantBlock(day) {
+  const list = importantOn(day);
+  if (!list.length) return '';
+  return `<ul>${list.map((e) => `<li><a href="./#d=${day}">${importantIcon(e)}<span>${escapeHtml(eventText(e))}</span></a></li>`).join('')}</ul>`;
+}
+
 /**
  * Podrobnosti dne po klepnutí na řádek (hlavně pro mobil, kde nejsou bubliny):
  * běžná doba u výjimky a akce z kalendáře. Svátky jsou v pruhu nad panely, tady ne.
@@ -127,6 +150,9 @@ function dayDetails(place, day, exception) {
     // upravená doba je vidět v řádku; tady jen ta běžná (a důvod výjimky)
     parts.push(`<li class="hours-detail hours-detail--exception">Běžně: ${escapeHtml(intervalsText(regularIntervals(place, day)))}`
       + `${exception.note ? ` · ${escapeHtml(exception.note)}` : ''}</li>`);
+  }
+  if (place.showImportant) {
+    for (const e of importantOn(day)) parts.push(`<li class="hours-detail"><a href="./#d=${day}">${importantIcon(e)}${escapeHtml(eventText(e))}</a></li>`);
   }
   for (const e of eventsOn(place, day)) {
     // odkaz do kalendáře rovnou s vybraným dnem (#d=…)
@@ -199,7 +225,7 @@ function placeCard(place, weekStart, now, { labelRow }) {
     const expandable = details
       ? ` data-day-key="${escapeHtml(key)}" role="button" tabindex="0" aria-expanded="${open}"` : '';
     return `<li class="${classes}${details ? ' hours-day--expandable' : ''}${open ? ' hours-day--open' : ''}" title="${escapeHtml(title)}"${expandable}>
-        <span class="hours-day__name"><span class="hours-day__weekday">${DAY_SHORT[i]}</span><small class="hours-day__date"><span>${Number(day.slice(8))}.</span><span>${Number(day.slice(5, 7))}.</span></small>${eventsIcon(place, day)}</span>
+        <span class="hours-day__name"><span class="hours-day__weekday">${DAY_SHORT[i]}</span><small class="hours-day__date"><span>${Number(day.slice(8))}.</span><span>${Number(day.slice(5, 7))}.</span></small>${importantIcons(place, day)}${eventsIcon(place, day)}</span>
         <span class="hours-day__times"${regularInfo ? ` title="${escapeHtml(regularInfo)}"` : ''}>${timesHtml(intervals, twoColumns, regularInfo)}</span>
         ${exception?.note ? `<span class="hours-day__note">${escapeHtml(exception.note)}</span>` : ''}
         ${details ? `<ul class="hours-day__details"${open ? '' : ' hidden'}>${details}</ul>` : ''}
@@ -352,6 +378,8 @@ function renderToday(now, places) {
   const day = tomorrow ? addDays(now.day, 1) : now.day;
   $('today-holiday').innerHTML = dayInfo(day);
   $('today-holiday').hidden = !$('today-holiday').innerHTML;
+  $('today-important').innerHTML = importantBlock(day);
+  $('today-important').hidden = !$('today-important').innerHTML;
   // dva sloupce časů (dopoledne | odpoledne) pro celý přehled, ať jsou časy pod sebou
   const twoColumns = places.some((p) => hoursOn(p, day).intervals?.length === 2);
   $('today').innerHTML = data.categories

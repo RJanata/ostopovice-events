@@ -104,6 +104,19 @@ function extractImage(description) {
   return { image, description: text };
 }
 
+/**
+ * „#dulezite“ v popisu = důležitá akce pro občany (svoz odpadu…): v seznamu zvýrazněná
+ * i jako pravidelná, na stránce otevíracích dob nad přehledem dne.
+ */
+function extractImportant(description) {
+  let important = false;
+  const text = String(description || '').replace(/(^|\s)#(dulezite|důležité|important)(?![\p{L}\p{N}_-])/giu, (match, space) => {
+    important = true;
+    return space;
+  });
+  return { important, description: text };
+}
+
 /** „#long“ v popisu = vícedenní akce se zobrazí jako dlouhodobá (tenká čára), i když je kratší než 8 dní. */
 function extractLong(description) {
   let long = false;
@@ -138,7 +151,8 @@ async function ensureIcons(events) {
 }
 
 function finalizeEvent(raw, source, rules, tagMap) {
-  const longTagged = extractLong(raw.description);
+  const important = extractImportant(raw.description);
+  const longTagged = extractLong(important.description);
   const iconed = extractIcon(longTagged.description);
   const imaged = extractImage(iconed.description);
   const linked = extractLink(imaged.description);
@@ -158,6 +172,7 @@ function finalizeEvent(raw, source, rules, tagMap) {
   };
   if (iconed.icon) event.icon = iconed.icon;
   if (longTagged.long) event.long = true;
+  if (important.important) event.important = true;
   if (raw.extra) event.extra = raw.extra;
   if (raw.recurring) event.recurring = true;
   if (raw.shortTitle) event.shortTitle = raw.shortTitle;

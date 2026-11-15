@@ -262,3 +262,22 @@
 /* upozornění ke dni (Silvestr) — žlutá fazolka */
 .hours-shops--notice { background: #fdf0c4; color: #7a5200; }
 :root[data-theme="dark"] .hours-shops--notice { background: #45391a; color: #f5d27a; }
+
+/* důležité akce (#dulezite v kalendáři, např. svoz odpadu): pruh nad přehledem Dnes/Zítra — světle žlutě */
+.today__important {
+  margin: 0 0 12px; padding: 8px 14px; border-radius: var(--radius);
+  background: #fdf0c4; color: #7a5200; border: 1px solid #f0dc94;
+}
+.today__important ul { list-style: none; margin: 0; padding: 0; }
+.today__important li + li { margin-top: 4px; }
+.today__important a { display: inline-flex; align-items: center; gap: 8px; color: inherit; font-weight: 600; text-decoration: none; }
+.today__important a:hover { text-decoration: underline; }
+.today__important .cat-icon, .today__important svg { width: 20px; height: 20px; flex: none; }
+:root[data-theme="dark"] .today__important { background: #45391a; color: #f5d27a; border-color: #5c4b22; }
+/* týden: ikonka důležité akce u dne (sběrný dvůr) */
+.hours-day__important { display: inline-flex; align-self: center; margin-left: 6px; color: #b07800; cursor: help; }
+.hours-day__important + .hours-day__important { margin-left: 3px; }
+.hours-day__important .cat-icon, .hours-day__important svg { width: 15px; height: 15px; }
+:root[data-theme="dark"] .hours-day__important { color: #f5d27a; }
+.today__important .cat-icon, .hours-day__important .cat-icon, .hours-detail .cat-icon { background: currentColor; }
+.hours-detail .cat-icon { width: 12px; height: 12px; position: relative; top: 1px; }

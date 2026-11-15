@@ -108,8 +108,23 @@ export async function buildOpeningHours({ root, outFile, events, sourcesById, to
     for (let d = first; d <= last; d = addDays(d, 1)) (holidays[d] ||= []).push(e.title);
   }
 
+  // důležité akce (#dulezite, např. svoz odpadu): nad přehledem Dnes/Zítra, ikonka u míst se showImportant
+  const importantFrom = addDays(today, -EVENT_DAYS_BACK);
+  const importantTo = addDays(today, EVENT_DAYS_AHEAD);
+  const important = events
+    .filter((e) => e.important && !e.hidden)
+    .map((e) => ({
+      day: e.allDay ? e.start : pragueDay(new Date(e.start)),
+      time: e.allDay ? '' : timeFormatter.format(new Date(e.start)),
+      title: e.title,
+      ...(e.icon ? { icon: e.icon } : {}),
+    }))
+    .filter((e) => e.day >= importantFrom && e.day <= importantTo)
+    .sort((a, b) => a.day.localeCompare(b.day) || a.time.localeCompare(b.time));
+
   const output = {
     categories: config.categories,
+    important,
     // checked = poznámka pro nás, odkud je otevírací doba
     places: config.places.map(({ checked: _, eventMatch, ...place }) => {
       const list = placeEvents({ eventMatch }, events, sourcesById, today);

@@ -355,7 +355,7 @@ function eventCard(e, day) {
   const alsoIn = (e.alsoIn || []).map((id) => sourcesById[id]?.name).filter(Boolean);
   const description = e.description && normalize(e.description) !== normalize(e.title)
     ? `<details class="event__details"><summary>Podrobnosti</summary><p>${escapeHtml(e.description)}</p></details>` : '';
-  const classes = ['event', e.cancelled && 'event--cancelled', e._last < today && 'event--past'].filter(Boolean).join(' ');
+  const classes = ['event', e.important && 'event--important', e.cancelled && 'event--cancelled', e._last < today && 'event--past'].filter(Boolean).join(' ');
 
   return `
     <article class="${classes}" style="--icon-color:${escapeHtml(source.color)}">
@@ -523,9 +523,11 @@ function groupLabel(name, count) {
  */
 function dayEvents(list, day) {
   const sorted = [...list].sort(compareEvents);
-  const single = sorted.filter((e) => !e.recurring);
-  const regular = sorted.filter((e) => e.recurring);
-  let html = single.map((e) => eventCard(e, day)).join('');
+  // důležité akce (#dulezite — svoz odpadu) první a zvýrazněné, i pravidelné (ve skupině by zapadly)
+  const important = sorted.filter((e) => e.important);
+  const single = sorted.filter((e) => !e.recurring && !e.important);
+  const regular = sorted.filter((e) => e.recurring && !e.important);
+  let html = [...important, ...single].map((e) => eventCard(e, day)).join('');
   if (regular.length) {
     const names = [...new Set(regular.map((e) => e.title))].join(', ');
     html += `<details class="day__regular"${state.query ? ' open' : ''}>
