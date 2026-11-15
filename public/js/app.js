@@ -327,6 +327,21 @@ function renderFilters() {
 
 // ---------- Karta akce ----------
 
+/**
+ * Mobil: čas jako druhý řádek pod názvem (sloupec s časem je skrytý). Celodenní akce bez
+ * „celý den“ — jednodenní žádný řádek, vícedenní jen rozsah dní. Zrušená akce řádek má vždy (CSS „Zrušeno“).
+ */
+function mobileWhen(e, day) {
+  let text;
+  if (e.allDay) {
+    text = e._first === e._last ? '' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
+  } else {
+    text = timeLabel(e, day);
+  }
+  if (!text && !e.cancelled) return '';
+  return `<div class="event__when">${text}</div>`;
+}
+
 function timeLabel(e, day) {
   if (e.allDay) {
     if (e._first === e._last) return 'celý den';
@@ -359,9 +374,16 @@ function eventCard(e, day) {
 
   return `
     <article class="${classes}" style="--icon-color:${escapeHtml(source.color)}">
-      <div class="event__time">${timeLabel(e, day)}</div>
+      <div class="event__time">${e.important && e.allDay && e._first === e._last ? '' : timeLabel(e, day)}</div>
       <div class="event__body">
+        <div class="event__aside">
+          <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15l2.5 2.5 2.5-2.5"/></svg>
+          </button>
+          ${imageThumb(e)}
+        </div>
         <h3 class="event__title">${eventIcon(e)}${title}</h3>
+        ${mobileWhen(e, day)}
         <div class="event__meta">
           <span class="event__source">${sourceIcon(source, true)}${escapeHtml(source.name)}${alsoIn.length ? ` (i ${escapeHtml(alsoIn.join(', '))})` : ''}</span>
           ${e.location ? `<span>📍 ${escapeHtml(e.location)}</span>` : ''}
@@ -369,12 +391,6 @@ function eventCard(e, day) {
         </div>
         ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         ${description}
-      </div>
-      <div class="event__aside">
-        <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15l2.5 2.5 2.5-2.5"/></svg>
-        </button>
-        ${imageThumb(e)}
       </div>
     </article>`;
 }

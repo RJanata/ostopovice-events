@@ -281,16 +281,18 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 :root[data-theme="dark"] .day__shops--closed { background: #44262a; color: #f2a8a8; }
 
 .event {
-  display: grid; grid-template-columns: 92px 1fr auto; gap: 4px 14px;
+  display: grid; grid-template-columns: 92px 1fr; gap: 4px 14px;
   padding: 12px 14px; margin-bottom: 8px;
   background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--icon-color, var(--accent));
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .event__time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.95rem; }
 .event__time small { display: block; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+.event__when { display: none; } /* čas pod názvem jen na mobilu */
 .event__body { min-width: 0; }
 /* vpravo na kartě: stažení akce do kalendáře (.ics), za ní náhled obrázku */
-.event__aside { grid-column: -2; grid-row: 1; align-self: start; display: flex; align-items: flex-start; gap: 8px; }
+/* plovoucí vpravo nahoře v textu karty: název, popis i podrobnosti ho obtečou a pod ním mají celou šířku */
+.event__aside { float: right; display: flex; align-items: flex-start; gap: 8px; margin: 0 0 4px 10px; }
 .event__ics {
   display: inline-grid; place-items: center;
   width: 34px; height: 34px; margin: -6px -6px 0 0; border: 0; border-radius: 8px;
@@ -536,11 +538,15 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .page-switch { height: 34px; padding: 0 10px; font-size: 0.88rem; }
   .filters { margin: 8px 0 12px; }
   .search { max-width: none; }
-  .event { grid-template-columns: 1fr auto; }
-  .event__time, .event__body { grid-column: 1; }
-  .event__aside { grid-row: 1 / 3; gap: 6px; }
+  .event { grid-template-columns: 1fr; }
+  .event__aside { gap: 6px; margin-left: 8px; }
   .event__image { width: 56px; height: 56px; }
-  .event__time small { display: inline; margin-left: 6px; }
+  /* čas až pod názvem (event__when), sloupec s časem skrytý */
+  .event__time { display: none; }
+  .event__when { display: block; margin-top: 1px; font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.85rem; }
+  .event__when small { display: inline; margin-left: 6px; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+  .event--cancelled .event__when::after { content: "Zrušeno"; margin-left: 8px; font-size: 0.75rem; color: #b3261e; font-weight: 600; }
+  .event--cancelled .event__when:empty::after { margin-left: 0; }
   /* měsíc: akce jako barevné pruhy přes celou šířku dne (bez textu), vícedenní přes víc dnů */
   .month__week { grid-template-rows: 21px repeat(4, 9px) minmax(4px, 1fr); min-height: 64px; }
   .month__day { padding: 3px 4px 4px; }
