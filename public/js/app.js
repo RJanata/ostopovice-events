@@ -873,17 +873,19 @@ function renderMonth(events, holidays) {
       const regularDots = regular.length || hoursDot
         ? `<span class="month__regular-dots">${hoursDot}${regular.map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}<small hidden></small></span>`
         : '';
+      // počítač: ikony pravidelných akcí (nejvýš 3, se změnou otevírací doby 2 — „!“ je před nimi)
+      const maxRegular = hoursChanges.has(d) ? 2 : 3;
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
-          + `${regular.slice(0, 3).map(regularIcon).join('')}`
-          + `${regular.length > 3 ? `<small>+${regular.length - 3}</small>` : ''}</span>`
+          + `${regular.slice(0, maxRegular).map(regularIcon).join('')}`
+          + `${regular.length > maxRegular ? `<small>+${regular.length - maxRegular}</small>` : ''}</span>`
         : '';
       const label = `${formatDay(d, { weekday: 'long', day: 'numeric', month: 'long' })}: ${list.length} akcí`;
       cells += `<button type="button" class="${classes}" data-day="${d}" aria-label="${escapeHtml(label)}" style="grid-column:${i + 1}">
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
-            ${regularMarks}${regularDots}
             ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změna otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
+            ${regularMarks}${regularDots}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml([holiday.join(' · '), window.OpeningHours?.bigShops(d, holiday)?.text].filter(Boolean).join('\n'))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
             ${!holiday && window.OpeningHours?.dayNotice(d) ? `<span class="month__day-holiday" title="${escapeHtml(window.OpeningHours.dayNotice(d).text)}">${escapeHtml(window.OpeningHours.dayNotice(d).label)}</span>` : ''}
           </span>

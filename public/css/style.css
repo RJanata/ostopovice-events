@@ -395,7 +395,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* (i) jako další ikona za pravidelnými akcemi: stejná velikost, rozestup i výška jako ony */
 .month__day-hours { display: inline-grid; align-self: center; flex: none; position: relative; top: -1.5px; color: var(--hours-change); cursor: help; }
 .month__day-hours svg { width: 15px; height: 15px; stroke-width: 2.2; }
-.month__regular ~ .month__day-hours { margin-left: -4px; } /* rozestup hlavičky dne je 6 px, mezi ikonami 2 px */
+.month__day-hours + .month__regular { margin-left: -4px; } /* „!“ první, hned za ním ikony pravidelných akcí: rozestup hlavičky dne je 6 px, mezi ikonami 2 px */
 .day--empty .day__heading { position: static; color: var(--muted); font-weight: 600; }
 
 /* odkazy nad a pod seznamem (proběhlé, nově přidané, další akce) */
