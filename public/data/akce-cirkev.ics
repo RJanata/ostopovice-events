@@ -163,6 +163,19 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-11d7z4y@ostopovice-events
+DTSTAMP:20261115T115810Z
+DTSTART:20261118T170000Z
+DTEND:20261118T180000Z
+SUMMARY:Mše svatá
+LOCATION:Kaple Ostopovice
+DESCRIPTION:Posvěcení římských bazilik svatých apoštolů Pera a Pavl
+ a\nÚmysl: za Václava Dobšíka\, dvoje rodiče a za zemřelou přízeň\
+ n\nZdroj: Nezařazené
+URL:https://farnost.troubsko.cz/?q=content/porad-bohosluzeb
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1lcdi2k@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261125T170000Z
