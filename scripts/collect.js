@@ -94,6 +94,16 @@ function extractIcon(description) {
   return { icon, description: text };
 }
 
+/** „#img: https://…“ v popisu = obrázek k akci (plakát, upoutávka) — hlavně pro vlastní Google kalendáře. */
+function extractImage(description) {
+  let image = '';
+  const text = String(description || '').replace(/(^|\s)#img[^\S\n]*:[^\S\n]*(\S+)/gi, (match, space, url) => {
+    if (!image && /^https?:\/\//i.test(url)) image = url;
+    return space;
+  });
+  return { image, description: text };
+}
+
 /** „#long“ v popisu = vícedenní akce se zobrazí jako dlouhodobá (tenká čára), i když je kratší než 8 dní. */
 function extractLong(description) {
   let long = false;
@@ -130,7 +140,8 @@ async function ensureIcons(events) {
 function finalizeEvent(raw, source, rules, tagMap) {
   const longTagged = extractLong(raw.description);
   const iconed = extractIcon(longTagged.description);
-  const linked = extractLink(iconed.description);
+  const imaged = extractImage(iconed.description);
+  const linked = extractLink(imaged.description);
   const tagged = extractTags(linked.description, tagMap);
   const event = {
     id: `${source.id}-${shortHash(raw.uid)}`,
@@ -142,7 +153,8 @@ function finalizeEvent(raw, source, rules, tagMap) {
     location: raw.location || '',
     url: linked.url || raw.url || '',
     description: truncate(tagged.description),
-    image: raw.image || '',
+    // obrázek z popisu (#img:) má přednost před obrázkem ze zdroje
+    image: imaged.image || raw.image || '',
   };
   if (iconed.icon) event.icon = iconed.icon;
   if (longTagged.long) event.long = true;

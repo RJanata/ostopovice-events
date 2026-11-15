@@ -289,11 +289,34 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event__time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.95rem; }
 .event__time small { display: block; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
 .event__body { min-width: 0; }
-/* stažení akce do kalendáře (.ics) — ikona vpravo na kartě */
+/* vpravo na kartě: stažení akce do kalendáře (.ics), za ní náhled obrázku */
+.event__aside { grid-column: -2; grid-row: 1; align-self: start; display: flex; align-items: flex-start; gap: 8px; }
 .event__ics {
-  grid-column: -2; grid-row: 1; align-self: start; display: inline-grid; place-items: center;
+  display: inline-grid; place-items: center;
   width: 34px; height: 34px; margin: -6px -6px 0 0; border: 0; border-radius: 8px;
   background: none; color: var(--muted); cursor: pointer;
+}
+.event__ics:has(+ .event__image) { margin-right: 0; }
+.event__image {
+  display: block; flex: none; width: 72px; height: 72px; padding: 0; margin: -4px -6px -4px 0;
+  border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: var(--surface-2); cursor: zoom-in;
+}
+.event__image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.event__image:hover { box-shadow: 0 0 0 2px var(--accent); }
+.event__image:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* celý obrázek akce přes stránku */
+.image-dialog {
+  max-width: min(94vw, 1100px); max-height: 94vh; padding: 0; border: 0; border-radius: 10px;
+  background: var(--surface); color: var(--text); box-shadow: 0 10px 40px rgb(0 0 0 / 0.35); cursor: zoom-out;
+}
+.image-dialog::backdrop { background: rgb(0 0 0 / 0.72); }
+.image-dialog figure { margin: 0; }
+.image-dialog img { display: block; max-width: 100%; max-height: calc(94vh - 44px); margin: 0 auto; object-fit: contain; }
+.image-dialog figcaption { padding: 10px 44px 12px 14px; font-weight: 600; font-size: 0.95rem; }
+.image-dialog__close {
+  position: absolute; top: 6px; right: 6px; width: 34px; height: 34px; border: 0; border-radius: 50%;
+  background: rgb(0 0 0 / 0.55); color: #fff; font-size: 1.4rem; line-height: 1; cursor: pointer;
 }
 .event__ics:hover { color: var(--accent); background: var(--surface-2); }
 .event__ics:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
@@ -510,7 +533,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .search { max-width: none; }
   .event { grid-template-columns: 1fr auto; }
   .event__time, .event__body { grid-column: 1; }
-  .event__ics { grid-row: 1 / 3; }
+  .event__aside { grid-row: 1 / 3; gap: 6px; }
+  .event__image { width: 56px; height: 56px; }
   .event__time small { display: inline; margin-left: 6px; }
   /* měsíc: akce jako barevné pruhy přes celou šířku dne (bez textu), vícedenní přes víc dnů */
   .month__week { grid-template-rows: 21px repeat(4, 9px) minmax(4px, 1fr); min-height: 64px; }

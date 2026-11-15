@@ -55,6 +55,9 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
   do `public/icons/tabler/` (commituje se s daty), neexistující název jen zaloguje a ignoruje.
   Ikona se ukáže v kalendáři (místo ikony zdroje) i před názvem akce, v barvě její kategorie. Další aliasy jdou přidat
   do kategorie jako `"tags": ["deticky"]`.
+  Obrázek k akci (plakát, upoutávka): `#img: https://…` (kdekoli v popisu, adresa obrázku
+  na webu) — v seznamu akcí se ukáže jako náhled vpravo, klepnutím celý. Má přednost před
+  obrázkem ze zdroje (obec a knihovna obrázky dodávají samy) a z popisu zmizí.
   Dlouhodobá akce: `#long` v popisu = akce se v měsíci zobrazí jako tenká čára u čísel dnů
   a v seznamu mezi dlouhodobými, i když je kratší než 8 dní (i jednodenní) (bez štítku rozhoduje délka 8+ dní).
 - **`config/overrides.json`** — ruční opravy jednotlivých akcí podle `id` (najdeš ho

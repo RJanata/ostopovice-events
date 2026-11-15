@@ -370,10 +370,73 @@ function eventCard(e, day) {
         ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
         ${description}
       </div>
-      <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15l2.5 2.5 2.5-2.5"/></svg>
-      </button>
+      <div class="event__aside">
+        <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15l2.5 2.5 2.5-2.5"/></svg>
+        </button>
+        ${imageThumb(e)}
+      </div>
     </article>`;
+}
+
+/**
+ * Náhled obrázku akce (plakát, upoutávka) — klepnutím celý obrázek (openImage).
+ * Wix (knihovna) má originály v plném rozlišení (i jednotky MB) → náhled i celý obrázek
+ * si necháme zmenšit jeho službou; ostatní zdroje (obec, #img:) beze změny.
+ */
+function imageUrl(url, size) {
+  const wix = url.match(/^(https:\/\/static\.wixstatic\.com\/media\/)([^/?#]+)$/);
+  if (!wix) return url;
+  return `${wix[1]}${wix[2]}/v1/fit/w_${size},h_${size},q_85,enc_auto/${wix[2]}`;
+}
+
+function imageThumb(e) {
+  if (!e.image) return '';
+  return `<button type="button" class="event__image" data-image="${escapeHtml(imageUrl(e.image, 1600))}" data-image-title="${escapeHtml(e.title)}" title="Zobrazit obrázek" aria-label="Zobrazit obrázek k akci">`
+    + `<img src="${escapeHtml(imageUrl(e.image, 200))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></button>`;
+}
+
+/**
+ * Celý obrázek přes stránku; zavře klepnutí kamkoli nebo Esc. Hned se ukáže už stažený
+ * náhled (jinak by chvíli svítil předchozí obrázek), ostrý ho nahradí, až se stáhne.
+ */
+function openImage(src, title, thumb) {
+  const placeholder = thumb?.currentSrc;
+  let dialog = document.getElementById('image-dialog');
+  if (!dialog) {
+    dialog = document.createElement('dialog');
+    dialog.id = 'image-dialog';
+    dialog.className = 'image-dialog';
+    dialog.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>'
+      + '<button type="button" class="image-dialog__close" aria-label="Zavřít">×</button>';
+    dialog.addEventListener('click', () => dialog.close());
+    document.body.append(dialog);
+  }
+  // pokaždé nový <img>: prohlížeč by při změně src držel předchozí obrázek, než stáhne nový
+  const img = document.createElement('img');
+  img.referrerPolicy = 'no-referrer';
+  img.alt = title;
+  img.src = placeholder || src;
+  dialog.querySelector('img').replaceWith(img);
+  dialog.dataset.src = src;
+  dialog.querySelector('figcaption').textContent = title;
+  if (!placeholder || placeholder === src) {
+    dialog.showModal();
+    return;
+  }
+  // náhled roztáhnout na velikost, jakou bude mít ostrý obrázek (stejný poměr stran) → nic neposkočí
+  if (thumb.naturalWidth) {
+    const ratio = thumb.naturalWidth / thumb.naturalHeight;
+    img.style.width = `${Math.min(window.innerWidth * 0.94, 1100, (window.innerHeight * 0.94 - 44) * ratio)}px`;
+  }
+  dialog.showModal();
+  const full = new Image();
+  full.referrerPolicy = 'no-referrer';
+  full.onload = () => {
+    if (dialog.dataset.src !== src) return; // mezitím otevřený jiný obrázek
+    img.src = src;
+  };
+  full.src = src;
 }
 
 function dayHeading(day, holidays) {
@@ -1278,9 +1341,16 @@ function setupEvents() {
     update();
   });
 
+  // obrázek, který se nenačte (smazaný na webu zdroje, překlep v #img:), náhled schová
+  document.getElementById('view').addEventListener('error', (ev) => {
+    if (ev.target.matches?.('.event__image img')) ev.target.parentElement.remove();
+  }, true);
+
   document.getElementById('view').addEventListener('click', (ev) => {
     const icsButton = ev.target.closest('[data-ics-event]');
     if (icsButton) { downloadEvent(icsButton.dataset.icsEvent); return; }
+    const imageButton = ev.target.closest('[data-image]');
+    if (imageButton) { openImage(imageButton.dataset.image, imageButton.dataset.imageTitle, imageButton.querySelector('img')); return; }
     const action = ev.target.closest('[data-action]')?.dataset.action;
     // pruh akce leží nad buňkami dnů → vybrat den, na který se kliklo
     const dayButton = ev.target.closest('[data-day]') || (ev.target.closest('.month__pill')
