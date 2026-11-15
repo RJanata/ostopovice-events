@@ -19,6 +19,56 @@
    "icon": "tabler/beer.svg"
   }
  ],
+ "important": [
+  {
+   "day": "2026-11-10",
+   "time": "",
+   "title": "Svoz pytlového odpadu",
+   "icon": "moneybag"
+  },
+  {
+   "day": "2026-11-11",
+   "time": "",
+   "title": "Svoz komunálního odpadu",
+   "icon": "trash"
+  },
+  {
+   "day": "2026-11-24",
+   "time": "",
+   "title": "Svoz pytlového odpadu",
+   "icon": "moneybag"
+  },
+  {
+   "day": "2026-11-25",
+   "time": "",
+   "title": "Svoz komunálního odpadu",
+   "icon": "trash"
+  },
+  {
+   "day": "2026-12-08",
+   "time": "",
+   "title": "Svoz pytlového odpadu",
+   "icon": "moneybag"
+  },
+  {
+   "day": "2026-12-09",
+   "time": "",
+   "title": "Svoz komunálního odpadu",
+   "icon": "trash"
+  },
+  {
+   "day": "2026-12-22",
+   "time": "",
+   "title": "Svoz pytlového odpadu",
+   "icon": "moneybag"
+  },
+  {
+   "day": "2026-12-23",
+   "time": "",
+   "title": "Svoz komunálního odpadu",
+   "icon": "trash"
+  }
+ ],
  "places": [
   {
    "id": "obecni-urad",
@@ -309,6 +359,7 @@
   },
   {
    "id": "sberny-dvur",
+   "showImportant": true,
    "name": "Sběrný dvůr",
    "icon": "tabler/recycle.svg",
    "category": "obec",
