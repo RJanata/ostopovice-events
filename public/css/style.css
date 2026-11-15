@@ -474,7 +474,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 /* pravidelné akce na mobilu: plná kolečka vpravo od čísla dne */
 .month__regular-dots { display: none; gap: 2px; align-items: center; align-self: center; }
 .month__regular-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--icon-color); }
-.month__regular-dots i[hidden] { display: none; }
+.month__regular-dots i[hidden], .month__regular-dots small[hidden] { display: none; }
+.month__regular-dots small { font-size: 0.58rem; line-height: 1; font-weight: 600; letter-spacing: -0.04em; color: var(--muted); margin-left: -1px; }
 .month__more-short { display: none; }
 @media (max-width: 640px) { .month__more-short { display: inline; } }
 .month__selected { margin-top: 18px; }
@@ -515,7 +516,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   .month__week { grid-template-rows: 21px repeat(4, 9px) minmax(4px, 1fr); min-height: 64px; }
   .month__day { padding: 3px 4px 4px; }
   /* číslo a kolečka uvnitř rámečku dne (vybraný den 2 px, dnešní 1 px) */
-  .month__day-head { line-height: 16px; margin: 0; padding: 0 2px 0 0; }
+  /* hlavička smí do pravého paddingu dne (tečky a „+N“ jdou skoro ke kraji, viz fitRegularDots),
+     jinak by obsah přečníval mimo její podklad a čára dlouhodobé akce by ho přeškrtla;
+     padding 1 px = čára pokračuje hned za posledním znakem */
+  .month__day-head { line-height: 16px; margin: 0; padding: 0 1px 0 0; gap: 3px; max-width: calc(100% + 3px); }
   .month__day-number { top: 0; }
   .month__pill, .month__pill--before, .month__pill--after { height: 7px; padding: 0; margin: 0 2px; border-radius: 3px; background: color-mix(in srgb, var(--icon-color) 72%, var(--surface)); }
   .month__pill--before { margin-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }

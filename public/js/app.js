@@ -537,9 +537,10 @@ function hoursChangesBlock(day) {
 function renderDays(byDay, holidays) {
   return [...byDay.keys()].sort().map((day) => {
     const list = byDay.get(day);
-    const classes = ['day', !list.length && 'day--empty', day === state.selectedDay && 'day--selected'].filter(Boolean).join(' ');
-    const empty = !list.length && day === state.selectedDay ? '<p class="empty">Tento den žádné akce nejsou.</p>' : '';
     const changes = hoursChangesBlock(day);
+    // den jen se změnou otevírací doby má obsah → nadpis se ukotvuje jako u dne s akcemi
+    const classes = ['day', !list.length && !changes && 'day--empty', day === state.selectedDay && 'day--selected'].filter(Boolean).join(' ');
+    const empty = !list.length && day === state.selectedDay ? '<p class="empty">Tento den žádné akce nejsou.</p>' : '';
     // den jen se změnou otevírací doby (bez akcí) nehlásí „žádné akce“
     return `<section class="${classes}" id="day-${day}">${dayHeading(day, holidays)}${changes}${dayEvents(list, day)}${changes ? '' : empty}</section>`;
   }).join('');
@@ -801,11 +802,11 @@ function renderMonth(events, holidays) {
       const regular = list.filter((e) => e.recurring);
       // tečky (jen na mobilu): plné = jednorázové akce, obrysové = pravidelné
       // pravidelné akce na mobilu: plná kolečka vpravo od čísla dne (místo ikon);
-      // kolik se jich vejde vedle „+N“ v rohu, dořeší fitRegularDots
-      // změněná otevírací doba = oranžová tečka jako první (ta se při nedostatku místa schová poslední)
+      // kolik se jich vejde do šířky dne (a vedle „+N“ v rohu), dořeší fitRegularDots — zbytek ukáže „+N“
+      // změněná otevírací doba = oranžový trojúhelníček jako první (ten zůstává vždy)
       const hoursDot = hoursChanges.has(d) ? '<i class="month__hours-dot"></i>' : '';
       const regularDots = regular.length || hoursDot
-        ? `<span class="month__regular-dots">${hoursDot}${regular.slice(0, 3).map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}</span>`
+        ? `<span class="month__regular-dots">${hoursDot}${regular.map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}<small hidden></small></span>`
         : '';
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
@@ -981,14 +982,31 @@ function update({ keepHash = false } = {}) {
   if (!state.selectedDay || !tipEvent || tipEvent._first > state.selectedDay || tipEvent._last < state.selectedDay) hideEventTooltip();
 }
 
-/** Mobil: kolečka pravidelných akcí, která by se překrývala s „+N“ v rohu dne, skrýt. */
+/**
+ * Mobil: kolečka pravidelných akcí, která se nevejdou do šířky dne (nebo by se překrývala
+ * s „+N“ jednorázových akcí v rohu), skrýt a místo nich ukázat šedé „+N“.
+ * Trojúhelníček změny otevírací doby je první a zůstává vždy.
+ */
 function fitRegularDots() {
-  document.querySelectorAll('.month__regular-dots i').forEach((dot) => { dot.hidden = false; });
-  if (!narrowScreen.matches) return;
-  for (const more of document.querySelectorAll('.month__more[data-more-day]')) {
-    const dots = [...document.querySelectorAll(`[data-day="${more.dataset.moreDay}"] .month__regular-dots i`)];
-    const limit = (more.querySelector('.month__more-short') || more).getBoundingClientRect().left - 2;
-    while (dots.length && dots[dots.length - 1].getBoundingClientRect().right > limit) dots.pop().hidden = true;
+  for (const box of document.querySelectorAll('.month__regular-dots')) {
+    box.querySelectorAll('i').forEach((dot) => { dot.hidden = false; });
+    const rest = box.querySelector('small');
+    rest.hidden = true;
+    if (!narrowScreen.matches) continue;
+    const cell = box.closest('.month__day');
+    // až ke kraji dne (nejvýš 1 px do rámečku vybraného dne)
+    let limit = cell.getBoundingClientRect().right - 1;
+    const more = document.querySelector(`.month__more[data-more-day="${cell.dataset.day}"]`);
+    if (more) limit = Math.min(limit, (more.querySelector('.month__more-short') || more).getBoundingClientRect().left - 2);
+    const dots = [...box.querySelectorAll('i:not(.month__hours-dot)')];
+    const last = () => (rest.hidden ? box.lastElementChild.previousElementSibling : rest);
+    let hidden = 0;
+    while (dots.length && last().getBoundingClientRect().right > limit) {
+      dots.pop().hidden = true;
+      hidden += 1;
+      rest.textContent = `+${hidden}`;
+      rest.hidden = false;
+    }
   }
 }
 
