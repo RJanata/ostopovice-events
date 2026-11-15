@@ -281,7 +281,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 :root[data-theme="dark"] .day__shops--closed { background: #44262a; color: #f2a8a8; }
 
 .event {
-  display: grid; grid-template-columns: 92px 1fr; gap: 4px 14px;
+  /* sloupec času: „celý den“ i „17:00 / – 18:30“ se vejdou, rozsah vícedenní akce se zalomí */
+  display: grid; grid-template-columns: 68px 1fr; gap: 4px 12px;
   padding: 12px 14px; margin-bottom: 8px;
   background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--icon-color, var(--accent));
   border-radius: var(--radius); box-shadow: var(--shadow);
@@ -342,9 +343,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event--cancelled .event__time::after { content: "Zrušeno"; display: block; font-size: 0.75rem; color: #b3261e; font-weight: 600; }
 .event--past { opacity: 0.7; }
 /* důležitá akce (#dulezite — svoz odpadu): světle žlutá karta s okrajem, ať v seznamu nezapadne */
-.event--important { background: #fdf0c4; border-color: #f0dc94; border-left-color: #d9a400; }
+/* stejné světle žluté pozadí jako panel změny otevírací doby (--hours-change-bg) */
+.event--important { background: var(--hours-change-bg); border-left-color: #d9a400; }
 .event--important .event__title { color: #5c3d00; }
-:root[data-theme="dark"] .event--important { background: #3b311a; border-color: #5c4b22; border-left-color: #d9a400; }
+:root[data-theme="dark"] .event--important { border-left-color: #d9a400; }
 :root[data-theme="dark"] .event--important .event__title { color: #f5d27a; }
 
 /* pravidelné akce: sbalené do jednoho řádku na konci dne */
@@ -389,9 +391,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   background: var(--hours-change-bg); border: 1px solid var(--border); border-left: 4px solid var(--hours-change);
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
-.day__hours-title { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--hours-change); text-decoration: none; }
+/* nadpis stejně velký jako název akce (.event__title) */
+.day__hours-title { display: inline-flex; align-items: center; gap: 6px; font-size: 1.02rem; line-height: 1.35; font-weight: 700; color: var(--hours-change); text-decoration: none; }
 .day__hours-title:hover { text-decoration: underline; }
-.day__hours-title svg { width: 15px; height: 15px; }
+.day__hours-title svg { width: 17px; height: 17px; }
 .day__hours ul { margin: 2px 0 0; padding-left: 21px; }
 .day__hours li { margin: 1px 0; }
 /* (i) jako další ikona za pravidelnými akcemi: stejná velikost, rozestup i výška jako ony */
