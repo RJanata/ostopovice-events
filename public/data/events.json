@@ -5205,8 +5205,8 @@
     "seniori",
     "obec"
    ],
-   "added": "2026-10-08T14:26:43.000Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-6n99bx",
@@ -7955,7 +7955,7 @@
    "allDay": true,
    "location": "Sokolovna",
    "url": "",
-   "description": "",
+   "description": "#hody",
    "image": "",
    "tagCategories": [
     "zabava"
