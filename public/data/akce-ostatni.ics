@@ -50,4 +50,23 @@ DESCRIPTION:Dbejte zvýšené opatrnosti při pohybu v přírodě předev
  ším v dopoledních hodinách.\n\nZdroj: Nezařazené
 CATEGORIES:Ostatní
 END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-14t2cnl@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:Den Země
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-9gwfdg@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Májové políbení - sousedské setkání
+LOCATION:Bosonožská alej
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Ostatní
+END:VEVENT
 END:VCALENDAR

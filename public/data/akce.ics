@@ -365,6 +365,18 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -376,18 +388,6 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1938,16 +1938,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-k56p4y@ostopovice-events
-DTSTAMP:20261112T100031Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Den otevřených dveří ve škole
-LOCATION:ZŠ/MŠ Ostopovice
-DESCRIPTION:Zdroj: Nezařazené
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-mcnjny@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261208
@@ -1956,6 +1946,16 @@ SUMMARY:Svoz pytlového odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
 CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-k56p4y@ostopovice-events
+DTSTAMP:20261112T100031Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Den otevřených dveří ve škole
+LOCATION:ZŠ/MŠ Ostopovice
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
@@ -2304,6 +2304,15 @@ URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1w5yr9q@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Novoroční procházka
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-z4wk20@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20270106T073000Z
@@ -2436,7 +2445,7 @@ DTEND;VALUE=DATE:20270206
 SUMMARY:Poleskavský ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-bqtjo2@ostopovice-events
@@ -2457,7 +2466,17 @@ DTEND;VALUE=DATE:20270307
 SUMMARY:Sokolský ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-qe3kxx@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Dětský maškarní ples
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-17mco9b@ostopovice-events
@@ -2480,6 +2499,15 @@ LOCATION:Knihovna Ostopovice
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-xqkdrh@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Velikonoční dílna + sousedská hostina
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Tvoření
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1qf2qen@ostopovice-events
@@ -2610,6 +2638,35 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-14t2cnl@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:Den Země
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-sx73ya@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Pálení čarodějnic
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-9gwfdg@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Májové políbení - sousedské setkání
+LOCATION:Bosonožská alej
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-g6tg2g@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20270505T170000Z
@@ -2654,6 +2711,16 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura,Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1oa262h@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:Highway Fest
+LOCATION:U Hitlerova mostu
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Kultura,Zábava
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270530
@@ -2678,6 +2745,15 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-15o7u9t@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Pohádkový les
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-cwa9ta@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20270602T170000Z
@@ -2689,14 +2765,24 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1beoxjv@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Ostoběh
+LOCATION:U Hitlerova mostu
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-1xl367q@ostopovice-events
 DTSTAMP:20261008T143306Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:Předhodová zábava
 LOCATION:Sokolovna
-DESCRIPTION:#hody #mladehody\n\nZdroj: Připravované akce
-CATEGORIES:Kultura
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-yzooia@ostopovice-events
@@ -2717,7 +2803,7 @@ DTEND;VALUE=DATE:20270620
 SUMMARY:Mladé hody
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-hxt7lz@ostopovice-events
@@ -2728,6 +2814,16 @@ SUMMARY:Vycházka – Kounice
 DESCRIPTION:vlakem\, cestou kolem řeky\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ezhzrp@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270628
+SUMMARY:Krákor
+LOCATION:U Hitlerova mostu
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1qudqt8@ostopovice-events
@@ -2762,11 +2858,12 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
-UID:pripravovane-17vs6ua@ostopovice-events
-DTSTAMP:20261109T125420Z
-DTSTART:20270903T220000Z
-DTEND:20270903T230000Z
+UID:pripravovane-9e8v1n@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
 SUMMARY:Husa na dálnici
+LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
 URL:https://www.facebook.com/events/1068281589457456/
 CATEGORIES:Kultura
@@ -2797,13 +2894,23 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1qgbc5a@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
+SUMMARY:Gulášfest
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Zábava
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-s79oyy@ostopovice-events
 DTSTAMP:20261025T182909Z
 DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271003
 SUMMARY:Zvaní na babský hody
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Obec,Kultura
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-19rprkz@ostopovice-events
@@ -2823,7 +2930,26 @@ DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
 SUMMARY:Babský hody
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Obec,Kultura
+CATEGORIES:Kultura,Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1tvez5e@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271013
+SUMMARY:Vítání občánků
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Obec,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-okolb@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Dýňování
+LOCATION:Knihovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Tvoření
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-13xbtsl@ostopovice-events

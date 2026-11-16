@@ -936,6 +936,15 @@ URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1w5yr9q@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Novoroční procházka
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-z4wk20@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20270106T073000Z
@@ -1134,6 +1143,16 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1beoxjv@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Ostoběh
+LOCATION:U Hitlerova mostu
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-nb1gk6@ostopovice-events

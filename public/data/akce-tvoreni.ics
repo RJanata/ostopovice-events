@@ -34,4 +34,23 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-pro-detskou-knihu-2026
 CATEGORIES:Vzdělávání,Tvoření,Pro děti
 END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-xqkdrh@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Velikonoční dílna + sousedská hostina
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Tvoření
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-okolb@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Dýňování
+LOCATION:Knihovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Tvoření
+END:VEVENT
 END:VCALENDAR

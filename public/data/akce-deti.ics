@@ -519,6 +519,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
 CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-qe3kxx@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Dětský maškarní ples
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270410
@@ -579,6 +589,16 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-sx73ya@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Pálení čarodějnic
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Zábava
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270530
@@ -601,5 +621,33 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-15o7u9t@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Pohádkový les
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1tvez5e@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271013
+SUMMARY:Vítání občánků
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Obec,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-okolb@ostopovice-events
+DTSTAMP:20261116T025316Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Dýňování
+LOCATION:Knihovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Tvoření
 END:VEVENT
 END:VCALENDAR
