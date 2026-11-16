@@ -6025,7 +6025,6 @@
     "kultura",
     "deti"
    ],
-   "originalTitle": "Rozsvícení vánočního stromečku (1. adventní neděle)",
    "added": "2026-10-08T00:13:17.000Z"
   },
   {
@@ -6510,7 +6509,7 @@
    "location": "Knihovna Ostopovice",
    "url": "",
    "description": "",
-   "image": "https://craz/cz/cal/Fashionstrings_Vanoce_s_Karlem_2026_plakat_JPG.jpg",
+   "image": "https://craz.cz/cal/Fashionstrings_Vanoce_s_Karlem_2026_plakat_JPG.jpg",
    "icon": "clef",
    "tagCategories": [
     "kultura"
@@ -8394,7 +8393,7 @@
   {
    "id": "pripravovane-ndse1c",
    "source": "pripravovane",
-   "title": "Rozsvícení vánočního stromečku",
+   "title": "Adventní jarmark a rozsvícení vánočního stromečku",
    "start": "2027-11-28",
    "end": "2027-11-28",
    "allDay": true,
@@ -8402,6 +8401,7 @@
    "url": "",
    "description": "",
    "image": "",
+   "icon": "christmas-tree",
    "tagCategories": [
     "deti",
     "kultura"
