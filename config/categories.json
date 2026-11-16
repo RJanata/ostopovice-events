@@ -103,6 +103,7 @@
     {
       "id": "sport",
       "label": "Pohyb",
+      "shortLabel": "Sport/Pohyb",
       "color": "#2f6b47",
       "keywords": [
         "\\bzapas",
@@ -128,6 +129,7 @@
     {
       "id": "deti",
       "label": "Pro děti",
+      "shortLabel": "Děti",      
       "color": "#b06b12",
       "keywords": [
         "pro deti",
@@ -154,8 +156,7 @@
         "mladsi zaci",
         "pripravk"
       ],
-      "icon": "deti.svg",
-      "shortLabel": "Děti"
+      "icon": "deti.svg"
     },
     {
       "id": "seniori",
