@@ -516,7 +516,7 @@ function groupByDay(events, from, to, holidays, { holidayDays = true } = {}) {
       const d = `${y}-12-31`;
       if (d >= from && d <= to && window.OpeningHours?.dayNotice(d)) noticeDays.push(d);
     }
-    for (const day of [...holidays.keys(), ...hoursChanges.keys(), ...noticeDays]) {
+    for (const day of [...holidays.keys(), ...shownHoursChanges().keys(), ...noticeDays]) {
       if (day >= from && day <= to && !byDay.has(day)) byDay.set(day, []);
     }
   }
@@ -598,11 +598,13 @@ async function loadHoursChanges() {
   })).sort((a, b) => order[places.find((p) => p.name === a.names[0])?.id] - order[places.find((p) => p.name === b.names[0])?.id])]));
 }
 
-const hoursChangesText = (day) => (hoursChanges.get(day) || []).map((g) => `${g.names.join(', ')}: ${g.text}`).join('\n');
+// změny otevírací doby nepatří žádnému zdroji → jen bez filtru (jinak by se ukazovaly i k „Knihovna“ apod.)
+const shownHoursChanges = () => (isFilterActive() ? new Map() : hoursChanges);
+const hoursChangesText = (day) => (shownHoursChanges().get(day) || []).map((g) => `${g.names.join(', ')}: ${g.text}`).join('\n');
 
 /** Souhrn u dne v seznamu: „Změna otevírací doby“ a místa se změnou. */
 function hoursChangesBlock(day) {
-  const groups = hoursChanges.get(day);
+  const groups = shownHoursChanges().get(day);
   if (!groups) return '';
   return `<div class="day__hours">
       <a class="day__hours-title" href="oteviraci-doby#d=${day}">${ICON_INFO}Změna otevírací doby</a>
@@ -880,12 +882,12 @@ function renderMonth(events, holidays) {
       // pravidelné akce na mobilu: plná kolečka vpravo od čísla dne (místo ikon);
       // kolik se jich vejde do šířky dne (a vedle „+N“ v rohu), dořeší fitRegularDots — zbytek ukáže „+N“
       // změněná otevírací doba = oranžový trojúhelníček jako první (ten zůstává vždy)
-      const hoursDot = hoursChanges.has(d) ? '<i class="month__hours-dot"></i>' : '';
+      const hoursDot = shownHoursChanges().has(d) ? '<i class="month__hours-dot"></i>' : '';
       const regularDots = regular.length || hoursDot
         ? `<span class="month__regular-dots">${hoursDot}${regular.map((e) => `<i style="--icon-color:${escapeHtml(sourcesById[e.source]?.color || '#888')}"></i>`).join('')}<small hidden></small></span>`
         : '';
       // počítač: ikony pravidelných akcí (nejvýš 3, se změnou otevírací doby 2 — „!“ je před nimi)
-      const maxRegular = hoursChanges.has(d) ? 2 : 3;
+      const maxRegular = shownHoursChanges().has(d) ? 2 : 3;
       const regularMarks = regular.length
         ? `<span class="month__regular" title="${escapeHtml(`Pravidelné: ${[...new Set(regular.map((e) => e.title))].join(', ')}`)}">`
           + `${regular.slice(0, maxRegular).map(regularIcon).join('')}`
@@ -895,7 +897,7 @@ function renderMonth(events, holidays) {
       cells += `<button type="button" class="${classes}" data-day="${d}" aria-label="${escapeHtml(label)}" style="grid-column:${i + 1}">
           <span class="month__day-head">
             <span class="month__day-number">${Number(d.slice(8))}</span>
-            ${hoursChanges.has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změna otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
+            ${shownHoursChanges().has(d) ? `<span class="month__day-hours" title="${escapeHtml(`Změna otevírací doby:\n${hoursChangesText(d)}`)}">${ICON_INFO}</span>` : ''}
             ${regularMarks}${regularDots}
             ${holiday ? `<span class="month__day-holiday" title="${escapeHtml([holiday.join(' · '), window.OpeningHours?.bigShops(d, holiday)?.text].filter(Boolean).join('\n'))}">${escapeHtml(holiday.join(' · '))}</span>` : ''}
             ${!holiday && window.OpeningHours?.dayNotice(d) ? `<span class="month__day-holiday" title="${escapeHtml(window.OpeningHours.dayNotice(d).text)}">${escapeHtml(window.OpeningHours.dayNotice(d).label)}</span>` : ''}
