@@ -153,7 +153,7 @@ SUMMARY:Vycházka Brnem
 DESCRIPTION:Koniklecová louka\, Kamenná čtvrť (komentovaná prohlídka)
  \n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura/Umění
+CATEGORIES:Kultura/Umění,Sport/Pohyb,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1nfpmfk@ostopovice-events
@@ -163,7 +163,7 @@ DTEND;VALUE=DATE:20270430
 SUMMARY:Výlet – Třebíč
 DESCRIPTION:vlakem\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři
+CATEGORIES:Sport/Pohyb,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-g6tg2g@ostopovice-events

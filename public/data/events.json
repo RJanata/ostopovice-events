@@ -5200,8 +5200,8 @@
     "seniori",
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "seniori-6n99bx",
@@ -7444,8 +7444,9 @@
    "description": "Koniklecová louka, Kamenná čtvrť (komentovaná prohlídka)",
    "image": "",
    "categories": [
-    "seniori",
-    "kultura"
+    "kultura",
+    "sport",
+    "seniori"
    ],
    "added": "2026-11-04T23:15:22.171Z"
   },
@@ -7642,6 +7643,7 @@
    "description": "vlakem",
    "image": "",
    "categories": [
+    "sport",
     "seniori"
    ],
    "added": "2026-11-04T23:15:22.171Z"

@@ -1001,6 +1001,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-1vg2pxf@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Vycházka Brnem
+DESCRIPTION:Koniklecová louka\, Kamenná čtvrť (komentovaná prohlídka)
+ \n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Kultura/Umění,Sport/Pohyb,Senioři
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART;VALUE=DATE:20270410
@@ -1095,6 +1106,16 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport/Pohyb
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1nfpmfk@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:Výlet – Třebíč
+DESCRIPTION:vlakem\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Sport/Pohyb,Senioři
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4nac99@ostopovice-events
