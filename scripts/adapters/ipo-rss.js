@@ -17,6 +17,15 @@ function stripTracking(url) {
   }
 }
 
+function absoluteUrl(url, base) {
+  if (!url) return '';
+  try {
+    return new URL(url, base).toString();
+  } catch {
+    return '';
+  }
+}
+
 export async function fetchEvents(source) {
   const xml = await fetchText(source.url);
   const $ = cheerio.load(xml, { xml: true });
@@ -29,8 +38,10 @@ export async function fetchEvents(source) {
     const end = parseCzechDate(item.find('endDate').text()) || start;
     const guid = item.find('guid').text().trim();
     const html = item.find('content\\:encoded').text() || item.find('description').text();
-    const image = item.find('enclosure').attr('url')
-      || cheerio.load(html)('img').first().attr('src') || '';
+    // obrázek z obsahu má přednost: <enclosure> je jen ořezaný náhled na šířku (~509×298),
+    // v obsahu je plakát v plné velikosti a původním poměru stran
+    const image = absoluteUrl(cheerio.load(html)('img').first().attr('src'), source.url)
+      || item.find('enclosure').attr('url') || '';
 
     events.push({
       uid: guid || stripTracking(item.find('link').text().trim()),
