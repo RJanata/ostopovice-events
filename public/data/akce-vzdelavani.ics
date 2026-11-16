@@ -96,7 +96,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  0-12-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-4fxfej@ostopovice-events
@@ -171,7 +171,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  1-09-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-xruv7p@ostopovice-events
@@ -191,19 +191,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:skola-12aeqy8@ostopovice-events
-DTSTAMP:20261027T204348Z
-DTSTART:20261119T170000Z
-DTEND:20261119T170000Z
-SUMMARY:Chleba s máslem - o škole po škole
-LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
-  Ostopovice
-DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
- é.\n\nZdroj: Škola
-URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-5hhxij@ostopovice-events
 DTSTAMP:20261025T142335Z
 DTSTART:20261124T090000Z
@@ -218,16 +205,6 @@ DESCRIPTION:Podvodný e-mail\, podezřelá SMS nebo telefonát\, který zn
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
  hytre-internetem-workshop-pro-seniory
 CATEGORIES:Senioři,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
-UID:obec-1gjirkj@ostopovice-events
-DTSTAMP:20261106T172551Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Adventní dílna
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
-CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-11719fd@ostopovice-events
@@ -262,21 +239,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
 CATEGORIES:Kultura,Pro děti,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:knihovna-f6s4y4@ostopovice-events
-DTSTAMP:20261107T110525Z
-DTSTART:20261206T173000Z
-DTEND:20261206T190000Z
-SUMMARY:Zpívárium: Koledy / adventní koncert
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
- ších a současně méně známých českých\, moravských a slezských 
- koled v originálních aranžích zazpívá Eva Kratochvílová a účastn
- íci dílny Zpívárium.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
- pivarium-koledy-adventni-koncert
-CATEGORIES:Kultura,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-mrfa59@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261207T090000Z
@@ -291,7 +253,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  2-07-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8ulhgu@ostopovice-events
@@ -324,6 +286,6 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
  1-11-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 END:VCALENDAR

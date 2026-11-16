@@ -150,7 +150,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  0-12-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:obec-kbdo4r@ostopovice-events
@@ -250,7 +250,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  1-09-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1mho3qn@ostopovice-events
@@ -324,20 +324,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
 DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
  é.\n\nZdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1uclek6@ostopovice-events
-DTSTAMP:20261106T104843Z
-DTSTART:20261125T170000Z
-DTEND:20261125T170000Z
-SUMMARY:Adventní dílna s Monikou Stoklasovou
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
- zervace. Více informací na odkaze.\n\nZdroj: Nezařazené
-URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
- noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
-CATEGORIES:Pro děti,Obec
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1lwh7mo@ostopovice-events
@@ -441,7 +428,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  2-07-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
@@ -529,7 +516,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
  1-11-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events

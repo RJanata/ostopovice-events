@@ -504,7 +504,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  0-12-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-4fxfej@ostopovice-events
@@ -1197,7 +1197,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  1-09-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-pklxjw@ostopovice-events
@@ -1216,8 +1216,8 @@ DTSTART:20261110T150000Z
 DTEND:20261110T150000Z
 SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 16:00\, pořádá OÚ\, jen pro předem přihlášené senio
- ry s doprovodem\n\nZdroj: Klub seniorů
+DESCRIPTION:pořádá OÚ\, jen pro předem přihlášené seniory s doprov
+ odem\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Obec
 END:VEVENT
@@ -1252,7 +1252,7 @@ DTSTART:20261111T150000Z
 DTEND:20261111T150000Z
 SUMMARY:Martinské dostaveníčko
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
@@ -1499,7 +1499,7 @@ LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
 DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
  é.\n\nZdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-5a999r@ostopovice-events
@@ -1583,17 +1583,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Senioři,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:seniori-s7skij@ostopovice-events
-DTSTAMP:20261104T231522Z
-DTSTART:20261124T103000Z
-DTEND:20261124T103000Z
-SUMMARY:Workshop\, Chytře internetem
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 11:30\, pořádá Knihovna\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-86zh07@ostopovice-events
 DTSTAMP:20261030T204918Z
 DTSTART:20261124T170000Z
@@ -1614,10 +1603,12 @@ UID:obec-1gjirkj@ostopovice-events
 DTSTAMP:20261106T172551Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
-SUMMARY:Adventní dílna
-DESCRIPTION:Zdroj: Obec
+SUMMARY:Adventní dílna s Monikou Stoklasovou
+LOCATION:Knihovna
+DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
+ zervace do 22.11.2026. Více informací v odkaze.\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
-CATEGORIES:Kultura,Vzdělávání
+CATEGORIES:Kultura,Tvoření
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
@@ -1639,19 +1630,6 @@ LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1uclek6@ostopovice-events
-DTSTAMP:20261106T104843Z
-DTSTART:20261125T170000Z
-DTEND:20261125T170000Z
-SUMMARY:Adventní dílna s Monikou Stoklasovou
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
- zervace. Více informací na odkaze.\n\nZdroj: Nezařazené
-URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
- noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
-CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
@@ -1868,9 +1846,9 @@ DTSTART:20261205T150000Z
 DTEND:20261205T150000Z
 SUMMARY:Mikulášské posezení
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři
+CATEGORIES:Senioři,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1yrslfp@ostopovice-events
@@ -1913,7 +1891,7 @@ DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
  íci dílny Zpívárium.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
  pivarium-koledy-adventni-koncert
-CATEGORIES:Kultura,Vzdělávání
+CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-49umy8@ostopovice-events
@@ -1941,7 +1919,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2026-1
  2-07-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-e508kx@ostopovice-events
@@ -2169,7 +2147,7 @@ DESCRIPTION:Poslední jógový workshop roku 2026 v době zimního slunovra
   emoce.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  erapeuticka-joga-s-klarou-workshop-3
-CATEGORIES:Sport,Kultura
+CATEGORIES:Kultura,Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-43lv2n@ostopovice-events
@@ -2346,7 +2324,7 @@ DTSTART:20270106T170000Z
 DTEND:20270106T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2374,7 +2352,7 @@ DESCRIPTION:Hravý kurz angličtiny určený pro děti od 1 do 4 let v dopr
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  nglish-time-for-little-ones-anglictina-pro-nejmensi-kurz-1-pololeti-2027-0
  1-11-10-00
-CATEGORIES:Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1sj379a@ostopovice-events
@@ -2398,7 +2376,7 @@ DTEND;VALUE=DATE:20270117
 SUMMARY:Obecní ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8n0zo0@ostopovice-events
@@ -2421,9 +2399,9 @@ DTSTART:20270123T150000Z
 DTEND:20270123T150000Z
 SUMMARY:Ples seniorů
 LOCATION:Sokolovna
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-6ivxg9@ostopovice-events
@@ -2446,7 +2424,7 @@ DTSTART:20270203T170000Z
 DTEND:20270203T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2488,7 +2466,7 @@ DTSTART:20270319T150000Z
 DTEND:20270319T150000Z
 SUMMARY:Oslava jara
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
@@ -2499,7 +2477,7 @@ DTSTART:20270319T170000Z
 DTEND:20270319T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2510,7 +2488,7 @@ DTSTART:20270407T170000Z
 DTEND:20270407T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2638,7 +2616,7 @@ DTSTART:20270505T170000Z
 DTEND:20270505T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2673,7 +2651,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Sport,Kultura
+CATEGORIES:Senioři,Kultura,Sport
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
@@ -2706,7 +2684,7 @@ DTSTART:20270602T170000Z
 DTEND:20270602T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2727,7 +2705,7 @@ DTSTART:20270611T140000Z
 DTEND:20270611T140000Z
 SUMMARY:Setkání starších seniorů
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2758,7 +2736,7 @@ DTSTART:20270707T170000Z
 DTEND:20270707T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2779,7 +2757,7 @@ DTSTART:20270804T170000Z
 DTEND:20270804T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2814,7 +2792,7 @@ DTSTART:20270915T170000Z
 DTEND:20270915T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 19:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2834,7 +2812,7 @@ DTSTART:20271006T160000Z
 DTEND:20271006T160000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2854,7 +2832,7 @@ DTSTART:20271103T170000Z
 DTEND:20271103T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2865,7 +2843,7 @@ DTSTART:20271109T150000Z
 DTEND:20271109T150000Z
 SUMMARY:Oslava jubilejí
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
 END:VEVENT
@@ -2876,9 +2854,9 @@ DTSTART:20271112T150000Z
 DTEND:20271112T150000Z
 SUMMARY:Martinské posezení
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři
+CATEGORIES:Senioři,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1394qxk@ostopovice-events
@@ -2887,7 +2865,7 @@ DTSTART:20271201T170000Z
 DTEND:20271201T170000Z
 SUMMARY:Výborová schůze
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 18:00\n\nZdroj: Klub seniorů
+DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2898,8 +2876,8 @@ DTSTART:20271205T150000Z
 DTEND:20271205T150000Z
 SUMMARY:Mikulášské nadělování
 LOCATION:Restaurace U Volejníků
-DESCRIPTION:od 16:00\,\n(jednotné balíčky\, připraví Klub seniorů)\n\
- nZdroj: Klub seniorů
+DESCRIPTION:(jednotné balíčky\, připraví Klub seniorů)\n\nZdroj: Klub
+  seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
 END:VEVENT
@@ -2913,6 +2891,6 @@ LOCATION:Knihovna Ostopovice
 DESCRIPTION:Soutěž o nejlepší koláč\, "Co upeče trouba"\n\nZdroj: Kl
  ub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři
+CATEGORIES:Senioři,Zábava
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kalendář akcí v Ostopovicích – Zábava
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:seniori-iul29j@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20261205T150000Z
+DTEND:20261205T150000Z
+SUMMARY:Mikulášské posezení
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-133uvg@ostopovice-events
+DTSTAMP:20261007T224336Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Obecní ples
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-ea44zn@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20270123T150000Z
+DTEND:20270123T150000Z
+SUMMARY:Ples seniorů
+LOCATION:Sokolovna
+DESCRIPTION:Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-1fd3sgm@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART:20271112T150000Z
+DTEND:20271112T150000Z
+SUMMARY:Martinské posezení
+LOCATION:Restaurace U Volejníků
+DESCRIPTION:Zdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:seniori-10rlh32@ostopovice-events
+DTSTAMP:20261104T231522Z
+DTSTART;VALUE=DATE:20271208
+DTEND;VALUE=DATE:20271209
+SUMMARY:Sousedské posezení
+LOCATION:Knihovna Ostopovice
+DESCRIPTION:Soutěž o nejlepší koláč\, "Co upeče trouba"\n\nZdroj: Kl
+ ub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Zábava
+END:VEVENT
+END:VCALENDAR

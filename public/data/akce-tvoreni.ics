@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ostopovice-events//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kalendář akcí v Ostopovicích – Tvoření
+X-WR-TIMEZONE:Europe/Prague
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:obec-1gjirkj@ostopovice-events
+DTSTAMP:20261106T172551Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Adventní dílna s Monikou Stoklasovou
+LOCATION:Knihovna
+DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
+ zervace do 22.11.2026. Více informací v odkaze.\n\nZdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
+CATEGORIES:Kultura,Tvoření
+END:VEVENT
+END:VCALENDAR

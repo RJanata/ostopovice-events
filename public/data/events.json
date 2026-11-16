@@ -131,18 +131,39 @@
  ],
  "categories": [
   {
-   "id": "sport",
-   "label": "Sport",
-   "shortLabel": "Sport",
-   "color": "#2f6b47",
-   "icon": "sport.svg"
-  },
-  {
    "id": "kultura",
    "label": "Kultura",
    "shortLabel": "Kultura",
    "color": "#8a3a66",
    "icon": "kultura.svg"
+  },
+  {
+   "id": "zabava",
+   "label": "Zábava",
+   "shortLabel": "Zábava",
+   "color": "#c2334d",
+   "icon": "zabava.svg"
+  },
+  {
+   "id": "vzdelavani",
+   "label": "Vzdělávání",
+   "shortLabel": "Vzdělávání",
+   "color": "#0f6e8c",
+   "icon": "vzdelavani.svg"
+  },
+  {
+   "id": "tvoreni",
+   "label": "Tvoření",
+   "shortLabel": "Tvoření",
+   "color": "#4e8a1f",
+   "icon": "tvoreni.svg"
+  },
+  {
+   "id": "sport",
+   "label": "Sport",
+   "shortLabel": "Sport",
+   "color": "#2f6b47",
+   "icon": "sport.svg"
   },
   {
    "id": "deti",
@@ -157,13 +178,6 @@
    "shortLabel": "Senioři",
    "color": "#6b4ea0",
    "icon": "seniori.svg"
-  },
-  {
-   "id": "vzdelavani",
-   "label": "Vzdělávání",
-   "shortLabel": "Vzdělávání",
-   "color": "#0f6e8c",
-   "icon": "vzdelavani.svg"
   },
   {
    "id": "obec",
@@ -201,8 +215,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -269,8 +283,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_ed428f14c74e4541a57cc893289454bd~mv2.jpg",
    "categories": [
     "kultura",
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -565,8 +579,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -600,7 +614,7 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "zabava"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -861,8 +875,7 @@
    "description": "Vánoční koncert opřený o ojedinělý výběr nejkrásnějších a současně méně známých českých, moravských a slezských koled v originálních aranžích zazpívá Eva Kratochvílová a účastníci dílny Zpívárium, na cimbál je doprovodí Barbora Jagošová.",
    "image": "https://static.wixstatic.com/media/6e4a73_9aa3664a3daa442093ba079aca275ebc~mv2.jpeg",
    "categories": [
-    "kultura",
-    "vzdelavani"
+    "kultura"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -879,8 +892,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -946,8 +959,8 @@
    "description": "Hravý workshop angličtiny určený pro děti od 3 do 8 let s doprovodem. Společně se ponoříme do světa příběhu Silly Suzy Goose and the Christmas Star, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -1169,8 +1182,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -1420,7 +1433,7 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "zabava"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -1437,8 +1450,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -1799,7 +1812,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "v Restauraci u Volejníků, od 16:00",
+   "description": "v Restauraci u Volejníků",
    "image": "",
    "categories": [
     "seniori",
@@ -1837,8 +1850,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -2264,8 +2277,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -2594,8 +2607,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -2727,7 +2740,7 @@
    "description": "Vůně čerstvě upečeného chleba a chuť poctivého másla – kombinace, která v nás vyvolává pocit domova a klidu. Přijďte si vyzkoušet řemeslo, které provází lidstvo po tisíciletí, ale v dnešním spěchu na něj často zapomínáme.",
    "image": "https://static.wixstatic.com/media/11062b_9ca1647ccf014a4f939ab480cc4c97ba~mv2.jpg",
    "categories": [
-    "vzdelavani"
+    "tvoreni"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -2910,8 +2923,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_7694d905a1dc483f84a76cf91dc90f7f~mv2.jpg",
    "categories": [
     "kultura",
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -2927,9 +2940,8 @@
    "description": "Choo Choo. Už nám to jede! Co a kam? No, přece dobrodružný vlak na trase Brno – moře s knížkou Petra Horáčka Choo Choo. Cestou budou mosty a tunely, hory i les. A u moře, tam bude teprve zábava – vlny, rybičky, i nějaké překvapení... Tak si pobalte kufříky a rezervujte si místenku v knihovně!",
    "image": "https://static.wixstatic.com/media/6e4a73_3e00883ed6e846dda41be87b27f7f102~mv2.jpg",
    "categories": [
-    "kultura",
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -2963,8 +2975,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -3157,8 +3169,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "sport",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -3297,8 +3309,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -4070,8 +4082,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -5136,8 +5148,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -5195,7 +5207,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00, pořádá OÚ, jen pro předem přihlášené seniory s doprovodem",
+   "description": "pořádá OÚ, jen pro předem přihlášené seniory s doprovodem",
    "image": "",
    "categories": [
     "seniori",
@@ -5251,7 +5263,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori",
@@ -5683,8 +5695,7 @@
    "description": "Dílna, 18.00 až 20.00, školní jídlena, pro přihlášené.",
    "image": "",
    "categories": [
-    "deti",
-    "vzdelavani"
+    "deti"
    ],
    "added": "2026-10-27T20:43:48.297Z"
   },
@@ -5810,11 +5821,12 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 11:30, pořádá Knihovna",
+   "description": "pořádá Knihovna",
    "image": "",
    "categories": [
     "seniori"
    ],
+   "hidden": true,
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
@@ -5836,18 +5848,21 @@
   {
    "id": "obec-1gjirkj",
    "source": "obec",
-   "title": "Adventní dílna",
+   "title": "Adventní dílna s Monikou Stoklasovou",
    "start": "2026-11-25",
    "end": "2026-11-25",
    "allDay": true,
-   "location": "",
+   "location": "Knihovna",
    "url": "https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26",
    "description": "",
    "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047072&width=1216&height=1711",
    "categories": [
     "kultura",
-    "vzdelavani"
+    "tvoreni"
    ],
+   "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
+   "originalTitle": "Adventní dílna",
+   "originalLocation": "",
    "added": "2026-11-06T17:25:51.053Z"
   },
   {
@@ -5912,6 +5927,7 @@
     "deti",
     "obec"
    ],
+   "hidden": true,
    "added": "2026-11-06T10:48:43.168Z"
   },
   {
@@ -6226,10 +6242,11 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
-    "seniori"
+    "seniori",
+    "zabava"
    ],
    "added": "2026-11-04T23:15:22.171Z"
   },
@@ -6281,8 +6298,7 @@
    "description": "Vánoční koncert opřený o ojedinělý výběr nejkrásnějších a současně méně známých českých, moravských a slezských koled v originálních aranžích zazpívá Eva Kratochvílová a účastníci dílny Zpívárium.",
    "image": "https://static.wixstatic.com/media/6e4a73_9aa3664a3daa442093ba079aca275ebc~mv2.jpeg",
    "categories": [
-    "kultura",
-    "vzdelavani"
+    "kultura"
    ],
    "added": "2026-11-07T11:05:25.278Z"
   },
@@ -6320,8 +6336,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -6666,8 +6682,8 @@
    "description": "Poslední jógový workshop roku 2026 v době zimního slunovratu, čase ztišení, oslav návratu světla a vnitřní reflexe. Pomalá praxe a hluboké protažení zaměřené na močový měchýř, pánev a emoce.",
    "image": "https://static.wixstatic.com/media/6e4a73_4d2d3b8816954a23bb240841b8ab23c9~mv2.jpg",
    "categories": [
-    "sport",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-11-07T11:05:25.278Z"
   },
@@ -7031,7 +7047,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7073,8 +7089,8 @@
    "image": "https://static.wixstatic.com/media/6e4a73_78bc2b4d25694a37a04e488e32787cb1~mv2.jpg",
    "recurring": true,
    "categories": [
-    "deti",
-    "vzdelavani"
+    "vzdelavani",
+    "deti"
    ],
    "added": "2026-10-08T02:14:18.000Z"
   },
@@ -7107,7 +7123,7 @@
    "description": "",
    "image": "",
    "categories": [
-    "kultura"
+    "zabava"
    ],
    "added": "2026-10-07T22:43:36.000Z"
   },
@@ -7137,11 +7153,11 @@
    "allDay": false,
    "location": "Sokolovna",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "zabava"
    ],
    "alsoIn": [
     "pripravovane"
@@ -7174,7 +7190,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7246,7 +7262,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori",
@@ -7263,7 +7279,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7308,7 +7324,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7553,7 +7569,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7626,8 +7642,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "sport",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-11-06T17:25:51.053Z"
   },
@@ -7686,7 +7702,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7722,7 +7738,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7801,7 +7817,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7837,7 +7853,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7890,7 +7906,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 19:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7942,7 +7958,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -7994,7 +8010,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -8011,7 +8027,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori",
@@ -8028,10 +8044,11 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00",
+   "description": "",
    "image": "",
    "categories": [
-    "seniori"
+    "seniori",
+    "zabava"
    ],
    "added": "2026-11-04T23:15:22.171Z"
   },
@@ -8058,7 +8075,7 @@
    "allDay": false,
    "location": "Knihovna Ostopovice",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 18:00",
+   "description": "",
    "image": "",
    "categories": [
     "seniori"
@@ -8075,7 +8092,7 @@
    "allDay": false,
    "location": "Restaurace U Volejníků",
    "url": "https://www.klub-senioru-ostopovice.cz/clanky/program.html",
-   "description": "od 16:00,\n(jednotné balíčky, připraví Klub seniorů)",
+   "description": "(jednotné balíčky, připraví Klub seniorů)",
    "image": "",
    "categories": [
     "seniori"
@@ -8094,7 +8111,8 @@
    "description": "Soutěž o nejlepší koláč, \"Co upeče trouba\"",
    "image": "",
    "categories": [
-    "seniori"
+    "seniori",
+    "zabava"
    ],
    "added": "2026-11-04T23:15:22.171Z"
   }

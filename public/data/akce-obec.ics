@@ -142,8 +142,8 @@ DTSTART:20261110T150000Z
 DTEND:20261110T150000Z
 SUMMARY:Beseda\, setkání a oslava jubilejí seniorů
 LOCATION:Knihovna Ostopovice
-DESCRIPTION:od 16:00\, pořádá OÚ\, jen pro předem přihlášené senio
- ry s doprovodem\n\nZdroj: Klub seniorů
+DESCRIPTION:pořádá OÚ\, jen pro předem přihlášené seniory s doprov
+ odem\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Obec
 END:VEVENT
@@ -199,19 +199,6 @@ SUMMARY:Svoz komunálního odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-1uclek6@ostopovice-events
-DTSTAMP:20261106T104843Z
-DTSTART:20261125T170000Z
-DTEND:20261125T170000Z
-SUMMARY:Adventní dílna s Monikou Stoklasovou
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
- zervace. Více informací na odkaze.\n\nZdroj: Nezařazené
-URL:https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqae
- noPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l
-CATEGORIES:Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-mcnjny@ostopovice-events
