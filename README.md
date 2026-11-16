@@ -175,8 +175,10 @@ Ukázka na kopii stránky obce (`embed-demo/`): stáhnout `https://www.ostopovic
 do `embed-demo/raw/page.html`, styl `style.php` do `raw/style.css` a fonty do `raw/fonts/<oid>`
 (web obce je cizí adrese nepustí, CORS), pak `python -I scripts/build-embed-demo.py [adresa kalendáře]`
 (bez adresy `http://localhost:4173`, pro nasazení `https://kalendar.prolidiostopovice.cz`)
-a `node scripts/serve.js embed-demo 4174`. Vzniknou `index.html` (kalendář) a `oteviraci-doby.html`
-s relativními odkazy mezi sebou → složka jde nahrát kamkoli. Pravé červené menu: bez Svozu odpadu
+a `node scripts/serve.js embed-demo/embed_demo 4174`. Výstup jde do `embed-demo/embed_demo/` (lokální
+ukázka, iframe na localhost a písmo Sofia Pro), s ostrou adresou kalendáře do
+`embed-demo/embed_demo_craz.cz/` (k nahrání na craz.cz/dev/ostopovice.cz; bez Sofia Pro v iframe).
+V obou jsou `index.html` (kalendář) a `oteviraci-doby.html` s relativními odkazy mezi sebou. Pravé červené menu: bez Svozu odpadu
 a Krizového portálu, nově Otevírací doby; web obce přiřazuje ikony menu (a jeden přepis textu)
 podle POŘADÍ odkazů, ukázka to přebíjí vlastním stylem — při úpravě menu v IPO na to myslet.
 Stažené soubory obce se necommitují (`.gitignore`).

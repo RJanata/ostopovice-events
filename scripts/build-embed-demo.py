@@ -16,8 +16,10 @@ ROOT = Path(__file__).resolve().parent.parent / 'embed-demo'
 RAW = ROOT / 'raw'
 OBEC = 'https://www.ostopovice.cz'
 CALENDAR_URL = (sys.argv[1] if len(sys.argv) > 1 else 'http://localhost:4173').rstrip('/')
-# volitelně složka pro nahrání na web (jinak embed-demo/ vedle raw/)
-OUT = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else ROOT
+# výstup: lokální ukázka → embed-demo/embed_demo/, s ostrým kalendářem → embed-demo/embed_demo_craz.cz/
+# (k nahrání na craz.cz/dev/ostopovice.cz); třetí argument složku přepíše
+LOCAL = CALENDAR_URL.startswith('http://localhost')
+OUT = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else ROOT / ('embed_demo' if LOCAL else 'embed_demo_craz.cz')
 OUT.mkdir(parents=True, exist_ok=True)
 PAGES = {'calendar': 'index.html', 'hours': 'oteviraci-doby.html'}
 
@@ -55,7 +57,6 @@ SOFIA_DIR = ROOT.parent / 'public' / 'fonts' / 'sofia-pro'
 SOFIA_DIR.mkdir(parents=True, exist_ok=True)
 for name, oid in SOFIA.items():
     (SOFIA_DIR / name).write_bytes((RAW / 'fonts' / oid).read_bytes())
-LOCAL = CALENDAR_URL.startswith('http://localhost')
 
 FONT_URL = re.compile(r'/file\.php\?nid=18899&(amp;)?oid=(\d+)')
 
