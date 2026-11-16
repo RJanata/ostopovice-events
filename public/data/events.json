@@ -2083,7 +2083,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -2194,7 +2195,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -2511,7 +2513,8 @@
    "description": "Z Bílovic do Obřan",
    "image": "",
    "categories": [
-    "seniori"
+    "seniori",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -3102,7 +3105,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -3243,8 +3247,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3328,8 +3332,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3345,8 +3349,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3500,8 +3504,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3517,8 +3521,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -3550,7 +3554,8 @@
    "image": "",
    "categories": [
     "seniori",
-    "kultura"
+    "kultura",
+    "sport"
    ],
    "added": "2026-10-08T01:46:05.000Z"
   },
@@ -5054,8 +5059,8 @@
     "kultura",
     "cirkev"
    ],
-   "added": "2026-10-23T15:06:27.836Z",
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
+   "added": "2026-10-23T15:06:27.836Z"
   },
   {
    "id": "nezarazene-1twvpnd",
@@ -5200,8 +5205,8 @@
     "seniori",
     "obec"
    ],
-   "added": "2026-10-08T14:26:43.000Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-6n99bx",
@@ -5486,10 +5491,10 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-11-09T12:54:20.903Z",
    "hidden": true,
    "long": true,
-   "originalLong": null
+   "originalLong": null,
+   "added": "2026-11-09T12:54:20.903Z"
   },
   {
    "id": "skola-1hropan",
@@ -5505,12 +5510,28 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-28T09:38:45.482Z",
    "note": "Srdečně Vás zveme na charitativní polévku ve stodole! Naši druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Přineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetříte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.",
    "originalLocation": "",
    "originalStart": "2026-11-16",
    "originalEnd": "2026-11-16",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-28T09:38:45.482Z"
+  },
+  {
+   "id": "obec-o1n869",
+   "source": "obec",
+   "title": "Lampionový průvod",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/lampionovy-pruvod",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14078868&width=575&height=813",
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-16T11:03:13.794Z"
   },
   {
    "id": "svatky-1nmjbe3",
@@ -5542,11 +5563,11 @@
     "deti",
     "obec"
    ],
-   "added": "2026-11-06T17:25:51.053Z",
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T17:25:51.053Z"
   },
   {
    "id": "nezarazene-1ixvp6o",
@@ -5570,12 +5591,12 @@
     "kultura",
     "obec"
    ],
-   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T11:01:38.483Z"
   },
   {
    "id": "knihovna-xruv7p",
@@ -5705,8 +5726,8 @@
     "tvoreni",
     "deti"
    ],
-   "added": "2026-10-27T20:43:48.297Z",
-   "originalEnd": "2026-11-19T17:00:00.000Z"
+   "originalEnd": "2026-11-19T17:00:00.000Z",
+   "added": "2026-10-27T20:43:48.297Z"
   },
   {
    "id": "knihovna-5a999r",
@@ -5836,8 +5857,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "knihovna-86zh07",
@@ -5891,34 +5912,13 @@
    "categories": [
     "tvoreni"
    ],
-   "added": "2026-11-06T17:25:51.053Z",
    "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
    "originalTitle": "Adventní dílna",
    "originalLocation": "",
    "originalStart": "2026-11-25",
    "originalEnd": "2026-11-25",
-   "originalAllDay": true
-  },
-  {
-   "id": "nezarazene-1uclek6",
-   "source": "nezarazene",
-   "title": "Adventní dílna s Monikou Stoklasovou",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T17:00:00.000Z",
-   "allDay": false,
-   "location": "Knihovna Ostopovice",
-   "url": "https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqaenoPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l",
-   "description": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace. Více informací na odkaze.",
-   "image": "",
-   "icon": "christmas-tree",
-   "tagCategories": [
-    "tvoreni"
-   ],
-   "categories": [
-    "tvoreni"
-   ],
-   "added": "2026-11-06T10:48:43.168Z",
-   "hidden": true
+   "originalAllDay": true,
+   "added": "2026-11-06T17:25:51.053Z"
   },
   {
    "id": "nezarazene-1lcdi2k",
@@ -5939,6 +5939,27 @@
     "cirkev"
    ],
    "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1uclek6",
+   "source": "nezarazene",
+   "title": "Adventní dílna s Monikou Stoklasovou",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna Ostopovice",
+   "url": "https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqaenoPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l",
+   "description": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace. Více informací na odkaze.",
+   "image": "",
+   "icon": "christmas-tree",
+   "tagCategories": [
+    "tvoreni"
+   ],
+   "categories": [
+    "tvoreni"
+   ],
+   "hidden": true,
+   "added": "2026-11-06T10:48:43.168Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -6049,12 +6070,12 @@
     "deti",
     "kultura"
    ],
-   "added": "2026-10-28T09:38:45.482Z",
    "originalTitle": "Adventní jarmark",
    "originalLocation": "",
    "originalStart": "2026-11-29",
    "originalEnd": "2026-11-29",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-28T09:38:45.482Z"
   },
   {
    "id": "nezarazene-1ytvbob",
@@ -6371,25 +6392,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
-  },
-  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6410,6 +6412,25 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
@@ -7109,8 +7130,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1u78fs0",
@@ -7255,8 +7276,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-151pfly",
@@ -7365,8 +7386,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-qixv86",
@@ -7429,8 +7450,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-1vg2pxf",
@@ -7729,8 +7750,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "svatky-1jy7eop",
@@ -7902,8 +7923,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1beoxjv",
@@ -8057,8 +8078,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -8093,8 +8114,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-9e8v1n",
@@ -8146,8 +8167,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1qgbc5a",
@@ -8215,8 +8236,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-8mppx6",
@@ -8309,8 +8330,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-13wrk4h",
@@ -8459,8 +8480,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-505sqn",

@@ -50,6 +50,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
+UID:seniori-qedjwj@ostopovice-events
+DTSTAMP:20261008T014605Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Poznávací procházka Brnem
+DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
+URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
+CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-etqh79@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260925T063000Z

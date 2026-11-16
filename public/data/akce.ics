@@ -122,7 +122,7 @@ DTEND;VALUE=DATE:20260925
 SUMMARY:Poznávací procházka Brnem
 DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura/Umění
+CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-wwawfq@ostopovice-events
@@ -1392,6 +1392,16 @@ URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-o1n869@ostopovice-events
+DTSTAMP:20261116T110313Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Lampionový průvod
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/lampionovy-pruvod
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:obec-3uu75f@ostopovice-events
 DTSTAMP:20261106T172551Z
 DTSTART:20261117T160000Z
@@ -1939,16 +1949,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-k56p4y@ostopovice-events
-DTSTAMP:20261112T100031Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Den otevřených dveří ve škole
-LOCATION:ZŠ/MŠ Ostopovice
-DESCRIPTION:Zdroj: Nezařazené
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-mcnjny@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261208
@@ -1957,6 +1957,16 @@ SUMMARY:Svoz pytlového odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
 CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-k56p4y@ostopovice-events
+DTSTAMP:20261112T100031Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Den otevřených dveří ve škole
+LOCATION:ZŠ/MŠ Ostopovice
+DESCRIPTION:Zdroj: Nezařazené
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
