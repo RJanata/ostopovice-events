@@ -126,7 +126,7 @@ DESCRIPTION:12:30 mše svatá v kapli | 14:00 přednáška\n\nMUDr. Alfons
  ký lékař.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-venovany-pamatce-mudr-alfonse-sovadiny
-CATEGORIES:Kultura,Církev
+CATEGORIES:Kultura/Umění,Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-tdf4vb@ostopovice-events
@@ -248,7 +248,7 @@ DTEND;VALUE=DATE:20261227
 SUMMARY:Výstava ostopovického betlému
 LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Církev,Kultura
+CATEGORIES:Pro děti,Církev,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-13no6kx@ostopovice-events

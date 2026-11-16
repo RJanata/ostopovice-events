@@ -80,7 +80,7 @@ DESCRIPTION:LiStOVáNí vyjímá z pestrobarevné žánrové palety jednu v
  roj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  istovani-legenda-z-h
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-18abbrb@ostopovice-events
@@ -122,7 +122,7 @@ DTEND;VALUE=DATE:20260925
 SUMMARY:Poznávací procházka Brnem
 DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-wwawfq@ostopovice-events
@@ -299,7 +299,7 @@ DESCRIPTION:Obří opuštěné betonové silo již řadu let hyzdí panoram
  měnit tento trn v oku řady místních obyvatel (...)\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/f
  ilm-a-architektura-2026-the-silo-and-us
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-rtm79k@ostopovice-events
@@ -338,7 +338,7 @@ DESCRIPTION:Projekt Osmdesátdevět je nejdéle reprízovanou událostí Di
   a dá se tedy označit za (...)\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  ivadlo-feste-osmdesatdevet-aneb-trenazer-jedne-revoluce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-j0wy1x@ostopovice-events
@@ -428,7 +428,7 @@ DESCRIPTION:14:30 na návsi | 15:30 průvod obcí | 17:00 sokolovna – vys
  toupení | 20:00 hodová zábava\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-babsky-hody-10-10-2
  026
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3xp067@ostopovice-events
@@ -464,7 +464,7 @@ LOCATION:Stodola ZŠ a MŠ Ostopovice
 DESCRIPTION:Akce je určena dárcům a podporovatelům. Tedy také všem n
  ám kolem školy\, která má adoptivního bratra z Ugandy Dawise.\n\nZdro
  j: Nezařazené
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17yrhm2@ostopovice-events
@@ -602,7 +602,7 @@ DESCRIPTION:Autentický příběh o dospívání\, hledání vlastní ident
  vna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
  niha-dela-sceny-2-katka-uz-nebude-divna
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-r4oeo8@ostopovice-events
@@ -694,7 +694,7 @@ DESCRIPTION:Jmenuji se Lukáš Urban a vystavuji u Vás v Ostopovicích sv
  brazu v restauraci U Volejníků. Budu se na Vás těšit už tuto neděli
   od 16hod.\n\nS pozdravem\,\nLukáš Urban\n\nZdroj: Nezařazené
 URL:https://www.urbanartgallery.cz/komentovana-prohlidka-ostopovice/
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-s7pjp@ostopovice-events
@@ -760,7 +760,7 @@ DESCRIPTION:Oslava podzimu pro celou rodinu. Dýně\, dýně a zase dýně.
  mů.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  ynobrani-2
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1jf6wtg@ostopovice-events
@@ -1003,7 +1003,7 @@ DESCRIPTION:Monodrama na hraně skutečného svědectví a mystifikace\,  i
  identitou\, což jí umožnilo (...)\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/m
  ikro-teatro-la-picara
-CATEGORIES:Kultura,Vzdělávání
+CATEGORIES:Kultura/Umění,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-4hqvxt@ostopovice-events
@@ -1131,7 +1131,7 @@ DESCRIPTION:12:30 mše svatá v kapli | 14:00 přednáška\n\nMUDr. Alfons
  ký lékař.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-venovany-pamatce-mudr-alfonse-sovadiny
-CATEGORIES:Kultura,Církev
+CATEGORIES:Kultura/Umění,Církev
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1twvpnd@ostopovice-events
@@ -1143,7 +1143,7 @@ LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.facebook.com/groups/1140666252706973/posts/2892933856007970
  2/
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-813om6@ostopovice-events
@@ -1169,7 +1169,7 @@ DESCRIPTION:Kerak prčiška vykóřili s vlčmenem\; Kaizrova novodurová
  ch.\n\nNevhodné pro děti. Vstupenky na: https://goout.net/cs/pohadky-v-h
  antecu/szuvvny/\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/pozvanka-na-pohadky-v-hantecu
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-xpp5tx@ostopovice-events
@@ -1254,7 +1254,7 @@ SUMMARY:Martinské dostaveníčko
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-tdf4vb@ostopovice-events
@@ -1324,7 +1324,7 @@ DTEND:20261113T180000Z
 SUMMARY:Vechtrovna: Hudební večer – BG JAM\, D.U.H.A Band
 DESCRIPTION:Folk\, bluegrass\, blues\, jazz.\nRezervace na 725 015 013\n\nZ
  droj: Nezařazené
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-i3e9k9@ostopovice-events
@@ -1403,7 +1403,7 @@ DESCRIPTION:17:00 lampionový průvod (Kaple) | 17:30 pietní shromážděn
  Obec
 URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
  pruvod
-CATEGORIES:Kultura,Pro děti,Obec
+CATEGORIES:Kultura/Umění,Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-xruv7p@ostopovice-events
@@ -1420,7 +1420,7 @@ DESCRIPTION:Film Karla Strachoty přibližuje občanskou iniciativu Charta
  é vzpomínky a komentáře.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
  harta-77-souhlasim-s-prohlasenim-mesic-pribehu-bezpravi
-CATEGORIES:Kultura,Vzdělávání
+CATEGORIES:Kultura/Umění,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-305viz@ostopovice-events
@@ -1515,7 +1515,7 @@ DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
  ázračné efekty pro naše zdraví a náš mozek.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/r
  adost-je-biologicka-nutnost
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1qmi2ry@ostopovice-events
@@ -1596,7 +1596,7 @@ DESCRIPTION:Vláda chce zrušit poplatky a financovat ČT a ČRo ze státn
  Deníku Alarm Jan Bělíček.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  aka-verejnopravni-media-chceme-mit-debata
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
@@ -1699,7 +1699,7 @@ DTEND;VALUE=DATE:20261130
 SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Pro děti
+CATEGORIES:Kultura/Umění,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-ulrkua@ostopovice-events
@@ -1711,7 +1711,7 @@ SUMMARY:Vystoupení dětí: Adventní jarmark a rozsvícení vánočního s
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti,Kultura
+CATEGORIES:Pro děti,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1ytvbob@ostopovice-events
@@ -1828,7 +1828,7 @@ DESCRIPTION:Vernisáž výstavy brněnského momentního fotografa Jaroslav
  etra Mičky.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
  aroslav-pulicar-v-zime
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1tyoqhk@ostopovice-events
@@ -1865,7 +1865,7 @@ DESCRIPTION:Účastníci workshopu s Evou Kratochvílovou se dotknou zákla
  roj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
  anocni-zpivarium-hlasovy-workshop-2
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-23kdjr@ostopovice-events
@@ -1892,7 +1892,7 @@ DESCRIPTION:Vánoční koncert opřený o ojedinělý výběr nejkrásněj
  íci dílny Zpívárium.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
  pivarium-koledy-adventni-koncert
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-49umy8@ostopovice-events
@@ -1939,16 +1939,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-mcnjny@ostopovice-events
-DTSTAMP:20261012T101029Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Svoz pytlového odpadu
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
 DTSTAMP:20261112T100031Z
 DTSTART;VALUE=DATE:20261208
@@ -1957,6 +1947,16 @@ SUMMARY:Den otevřených dveří ve škole
 LOCATION:ZŠ/MŠ Ostopovice
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
@@ -2029,7 +2029,7 @@ DTEND;VALUE=DATE:20261212
 SUMMARY:Vánoce s Karlem: Fashion Strings & Karel Hegner
 LOCATION:Knihovna Ostopovice
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-poaoty@ostopovice-events
@@ -2039,7 +2039,7 @@ DTEND;VALUE=DATE:20261213
 SUMMARY:Folklórní soubor Háječek a Glonárky: Vánoční koledy
 DESCRIPTION:Vystoupení dětí a ostopovických žen.\n\nZdroj: Připravova
  né akce
-CATEGORIES:Kultura,Pro děti
+CATEGORIES:Kultura/Umění,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-124fe1l@ostopovice-events
@@ -2094,7 +2094,7 @@ DESCRIPTION:Označení Vánoce se často používá pro širší čas zahrn
  jsme věřící či nikoliv.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/v
  anoce-zname-nezname-prednaska
-CATEGORIES:Kultura,Vzdělávání
+CATEGORIES:Kultura/Umění,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-y8rz9p@ostopovice-events
@@ -2148,7 +2148,7 @@ DESCRIPTION:Poslední jógový workshop roku 2026 v době zimního slunovra
   emoce.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  erapeuticka-joga-s-klarou-workshop-3
-CATEGORIES:Kultura,Sport/Pohyb
+CATEGORIES:Kultura/Umění,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-43lv2n@ostopovice-events
@@ -2250,7 +2250,7 @@ DTEND;VALUE=DATE:20261227
 SUMMARY:Výstava ostopovického betlému
 LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Církev,Kultura
+CATEGORIES:Pro děti,Církev,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lzp45a@ostopovice-events
@@ -2456,7 +2456,7 @@ DTEND;VALUE=DATE:20270206
 SUMMARY:Poleskavský ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-bqtjo2@ostopovice-events
@@ -2467,7 +2467,7 @@ SUMMARY:Poznávací vycházka Brnem
 DESCRIPTION:komentovaná prohlídka\, židovské památky a synagoga\, tech
  nické památky\, vily atd.\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-o73ikv@ostopovice-events
@@ -2498,7 +2498,7 @@ SUMMARY:Oslava jara
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1q4rwib@ostopovice-events
@@ -2540,7 +2540,7 @@ SUMMARY:Vycházka Brnem
 DESCRIPTION:Koniklecová louka\, Kamenná čtvrť (komentovaná prohlídka)
  \n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
@@ -2695,7 +2695,7 @@ DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270516
 SUMMARY:Folklórní soubor Háječek: Vystoupení v Židlochovicích
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4nac99@ostopovice-events
@@ -2719,7 +2719,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Sport/Pohyb
+CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1oa262h@ostopovice-events
@@ -2729,7 +2729,7 @@ DTEND;VALUE=DATE:20270530
 SUMMARY:Highway Fest
 LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
@@ -2814,7 +2814,7 @@ DTEND;VALUE=DATE:20270620
 SUMMARY:Mladé hody
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-hxt7lz@ostopovice-events
@@ -2834,7 +2834,7 @@ DTEND;VALUE=DATE:20270628
 SUMMARY:Krákor
 LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1qudqt8@ostopovice-events
@@ -2855,7 +2855,7 @@ DTEND;VALUE=DATE:20270718
 SUMMARY:Velká letní noc
 LOCATION:U Tří Bříz
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-dtpt1i@ostopovice-events
@@ -2877,7 +2877,7 @@ SUMMARY:Husa na dálnici
 LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
 URL:https://www.facebook.com/events/1068281589457456/
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-nb1gk6@ostopovice-events
@@ -2921,7 +2921,7 @@ DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271003
 SUMMARY:Zvaní na babský hody
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-19rprkz@ostopovice-events
@@ -2941,7 +2941,7 @@ DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
 SUMMARY:Babský hody
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1tvez5e@ostopovice-events
@@ -2982,7 +2982,7 @@ SUMMARY:Oslava jubilejí
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1fd3sgm@ostopovice-events
@@ -3002,7 +3002,7 @@ DTSTART;VALUE=DATE:20271117
 DTEND;VALUE=DATE:20271118
 SUMMARY:Oslavy 17. listopadu - lampionový průvod⁠
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Kultura,Obec
+CATEGORIES:Pro děti,Kultura/Umění,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-xj4o6p@ostopovice-events
@@ -3022,7 +3022,7 @@ DTEND;VALUE=DATE:20271129
 SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Kultura
+CATEGORIES:Pro děti,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1ibcnny@ostopovice-events

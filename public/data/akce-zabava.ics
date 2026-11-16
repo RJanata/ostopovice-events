@@ -47,7 +47,7 @@ DTEND;VALUE=DATE:20270206
 SUMMARY:Poleskavský ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-o73ikv@ostopovice-events
@@ -77,7 +77,7 @@ DTEND;VALUE=DATE:20270530
 SUMMARY:Highway Fest
 LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1xl367q@ostopovice-events
@@ -97,7 +97,7 @@ DTEND;VALUE=DATE:20270620
 SUMMARY:Mladé hody
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1qgbc5a@ostopovice-events
@@ -116,7 +116,7 @@ DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
 SUMMARY:Babský hody
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Zábava
+CATEGORIES:Kultura/Umění,Zábava
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1fd3sgm@ostopovice-events

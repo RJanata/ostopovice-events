@@ -178,7 +178,7 @@ DESCRIPTION:17:00 lampionový průvod (Kaple) | 17:30 pietní shromážděn
  Obec
 URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
  pruvod
-CATEGORIES:Kultura,Pro děti,Obec
+CATEGORIES:Kultura/Umění,Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-tgptrf@ostopovice-events
@@ -256,6 +256,6 @@ DTSTART;VALUE=DATE:20271117
 DTEND;VALUE=DATE:20271118
 SUMMARY:Oslavy 17. listopadu - lampionový průvod⁠
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Kultura,Obec
+CATEGORIES:Pro děti,Kultura/Umění,Obec
 END:VEVENT
 END:VCALENDAR

@@ -295,7 +295,7 @@ DESCRIPTION:17:00 lampionový průvod (Kaple) | 17:30 pietní shromážděn
  Obec
 URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
  pruvod
-CATEGORIES:Kultura,Pro děti,Obec
+CATEGORIES:Kultura/Umění,Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8l3x3a@ostopovice-events
@@ -365,7 +365,7 @@ DTEND;VALUE=DATE:20261130
 SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Kultura,Pro děti
+CATEGORIES:Kultura/Umění,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-ulrkua@ostopovice-events
@@ -377,7 +377,7 @@ SUMMARY:Vystoupení dětí: Adventní jarmark a rozsvícení vánočního s
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti,Kultura
+CATEGORIES:Pro děti,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1gi8z6o@ostopovice-events
@@ -465,7 +465,7 @@ DTEND;VALUE=DATE:20261213
 SUMMARY:Folklórní soubor Háječek a Glonárky: Vánoční koledy
 DESCRIPTION:Vystoupení dětí a ostopovických žen.\n\nZdroj: Připravova
  né akce
-CATEGORIES:Kultura,Pro děti
+CATEGORIES:Kultura/Umění,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-6trsjz@ostopovice-events
@@ -501,7 +501,7 @@ DTEND;VALUE=DATE:20261227
 SUMMARY:Výstava ostopovického betlému
 LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Církev,Kultura
+CATEGORIES:Pro děti,Církev,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1u78fs0@ostopovice-events
@@ -668,7 +668,7 @@ DTSTART;VALUE=DATE:20271117
 DTEND;VALUE=DATE:20271118
 SUMMARY:Oslavy 17. listopadu - lampionový průvod⁠
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Kultura,Obec
+CATEGORIES:Pro děti,Kultura/Umění,Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-xj4o6p@ostopovice-events
@@ -688,7 +688,7 @@ DTEND;VALUE=DATE:20271129
 SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pro děti,Kultura
+CATEGORIES:Pro děti,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1ibcnny@ostopovice-events

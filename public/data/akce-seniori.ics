@@ -15,7 +15,7 @@ DTEND;VALUE=DATE:20260925
 SUMMARY:Poznávací procházka Brnem
 DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-6n99bx@ostopovice-events
@@ -38,7 +38,7 @@ SUMMARY:Martinské dostaveníčko
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-5hhxij@ostopovice-events
@@ -109,7 +109,7 @@ SUMMARY:Poznávací vycházka Brnem
 DESCRIPTION:komentovaná prohlídka\, židovské památky a synagoga\, tech
  nické památky\, vily atd.\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-17mco9b@ostopovice-events
@@ -120,7 +120,7 @@ SUMMARY:Oslava jara
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1q4rwib@ostopovice-events
@@ -153,7 +153,7 @@ SUMMARY:Vycházka Brnem
 DESCRIPTION:Koniklecová louka\, Kamenná čtvrť (komentovaná prohlídka)
  \n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1nfpmfk@ostopovice-events
@@ -186,7 +186,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Sport/Pohyb
+CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-cwa9ta@ostopovice-events
@@ -298,7 +298,7 @@ SUMMARY:Oslava jubilejí
 LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura
+CATEGORIES:Senioři,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1fd3sgm@ostopovice-events
