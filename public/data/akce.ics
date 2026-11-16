@@ -2242,6 +2242,16 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Církev,Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1jk17de@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Výstava ostopovického betlému
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev,Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-1lzp45a@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261227T160000Z
@@ -2985,6 +2995,44 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Zábava
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-vm1x4w@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:Oslavy 17. listopadu - lampionový průvod⁠
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Kultura,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-xj4o6p@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271126
+SUMMARY:Adventní dílna
+LOCATION:Knihovna
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Tvoření,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-ndse1c@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271129
+SUMMARY:Rozsvícení vánočního stromečku
+LOCATION:U Kaple
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-1ibcnny@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20271225
+SUMMARY:Adventní světýlka
+DESCRIPTION:Vánoční hra pro děti.\n\nZdroj: Připravované akce
+CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:seniori-1394qxk@ostopovice-events
 DTSTAMP:20261104T231522Z
 DTSTART:20271201T170000Z
@@ -2994,6 +3042,16 @@ LOCATION:Knihovna Ostopovice
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-505sqn@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271205
+DTEND;VALUE=DATE:20271206
+SUMMARY:Mikulášská nadílka
+LOCATION:park na Osvobození
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-ucaasa@ostopovice-events

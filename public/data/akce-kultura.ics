@@ -398,6 +398,16 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
 CATEGORIES:Kultura,Sport
 END:VEVENT
 BEGIN:VEVENT
+UID:pripravovane-1jk17de@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Výstava ostopovického betlému
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev,Kultura
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-151pfly@ostopovice-events
 DTSTAMP:20261008T142643Z
 DTSTART;VALUE=DATE:20270205
@@ -540,5 +550,24 @@ LOCATION:Restaurace U Volejníků
 DESCRIPTION:Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-vm1x4w@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:Oslavy 17. listopadu - lampionový průvod⁠
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Kultura,Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-ndse1c@ostopovice-events
+DTSTAMP:20261116T030036Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271129
+SUMMARY:Rozsvícení vánočního stromečku
+LOCATION:U Kaple
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Kultura
 END:VEVENT
 END:VCALENDAR
