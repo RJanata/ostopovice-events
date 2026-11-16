@@ -30,9 +30,32 @@
   window.addEventListener('load', report);
   setInterval(function () { if (document.body) report(); }, 500);
 
+  // Písmo Sofia Pro (web obce) z adresy, kterou pošle rodičovská stránka (data-sofia-fonts): placené
+  // písmo u nás být nesmí, rodič ho má. Jeho server musí pro naši doménu poslat
+  // Access-Control-Allow-Origin, jinak prohlížeč písmo nepustí a zůstane systémové.
+  var SOFIA = [['300', '', '300.woff2'], ['400', '', '400.woff2'], ['400', 'italic', '400-italic.woff2'],
+    ['500', '', '500.woff2'], ['600', '', '600.woff'], ['700', '', '700.woff2']];
+  function useSofia(base) {
+    var url;
+    try { url = new URL(base); } catch (e) { return; }
+    if (url.protocol !== 'https:' && url.hostname !== 'localhost') return;
+    if (document.getElementById('sofia-fonts')) return;
+    var css = SOFIA.map(function (f) {
+      var href = new URL(f[2], url).href.replace(/["\\]/g, '');
+      return '@font-face{font-family:"Sofia Pro";font-weight:' + f[0] + (f[1] ? ';font-style:' + f[1] : '')
+        + ';font-display:swap;src:url("' + href + '") format("' + (/\.woff2$/.test(f[2]) ? 'woff2' : 'woff') + '")}';
+    }).join('\n');
+    var style = document.createElement('style');
+    style.id = 'sofia-fonts';
+    style.textContent = css;
+    document.head.append(style);
+    document.documentElement.dataset.font = 'sofia';
+  }
+
   window.addEventListener('message', function (ev) {
     if (ev.source !== window.parent || !ev.data || ev.data.type !== 'ostopovice-calendar:ping') return;
     if (ev.data.pages) pages = ev.data.pages;
+    if (typeof ev.data.sofiaFonts === 'string') useSofia(ev.data.sofiaFonts);
     last = 0;
     report();
   });

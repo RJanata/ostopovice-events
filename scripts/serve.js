@@ -19,6 +19,7 @@ const TYPES = {
   '.png': 'image/png',
   '.ico': 'image/x-icon',
   '.woff2': 'font/woff2',
+  '.woff': 'font/woff',
   '.ics': 'text/calendar; charset=utf-8',
 };
 
@@ -32,7 +33,10 @@ createServer(async (req, res) => {
   }
   try {
     const body = await readFile(file);
-    res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
+    const headers = { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' };
+    // písma smí načíst i jiná adresa (ukázka vložení: jako .htaccess s CORS na craz.cz)
+    if (/\.woff2?$/.test(file)) headers['Access-Control-Allow-Origin'] = '*';
+    res.writeHead(200, headers);
     res.end(body);
   } catch {
     res.writeHead(404).end('Not found');

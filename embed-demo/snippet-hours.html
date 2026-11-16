@@ -17,7 +17,10 @@
     frame.contentWindow.postMessage({ type: 'ostopovice-calendar:ping', pages: {
       calendar: new URL(frame.getAttribute('data-calendar-page'), location.href).href,
       hours: new URL(frame.getAttribute('data-hours-page'), location.href).href,
-    } }, origin);
+    },
+    // volitelně písmo Sofia Pro z tohoto webu (data-sofia-fonts = složka s fonty, server musí povolit CORS)
+    sofiaFonts: frame.hasAttribute('data-sofia-fonts') ? new URL(frame.getAttribute('data-sofia-fonts'), location.href).href : undefined,
+    }, origin);
   });
 })();
 </script>

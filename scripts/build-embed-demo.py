@@ -57,6 +57,17 @@ SOFIA_DIR = ROOT.parent / 'public' / 'fonts' / 'sofia-pro'
 SOFIA_DIR.mkdir(parents=True, exist_ok=True)
 for name, oid in SOFIA.items():
     (SOFIA_DIR / name).write_bytes((RAW / 'fonts' / oid).read_bytes())
+# Ukázka na craz.cz: Sofia Pro pro iframe leží u ukázky (fonts/sofia-pro/), iframe si ji vezme podle
+# data-sofia-fonts; .htaccess (Apache ve Web Station na NASu) ji povolí ostrému kalendáři (CORS).
+if not LOCAL:
+    (OUT / 'fonts' / 'sofia-pro').mkdir(parents=True, exist_ok=True)
+    for name, oid in SOFIA.items():
+        (OUT / 'fonts' / 'sofia-pro' / name).write_bytes((RAW / 'fonts' / oid).read_bytes())
+    (OUT / 'fonts' / 'sofia-pro' / '.htaccess').write_text(
+        '# písmo smí načíst vložený kalendář (iframe z kalendar.prolidiostopovice.cz)\n'
+        '<IfModule mod_headers.c>\n'
+        f'  Header set Access-Control-Allow-Origin "{CALENDAR_URL}"\n'
+        '</IfModule>\n', encoding='utf-8', newline='\n')
 
 FONT_URL = re.compile(r'/file\.php\?nid=18899&(amp;)?oid=(\d+)')
 
@@ -120,6 +131,8 @@ def page(html, snippet_file, title):
     snippet = snippet.replace('https://kalendar.prolidiostopovice.cz', CALENDAR_URL)
     if LOCAL:  # písmo webu obce i v iframe (soubory jen lokálně)
         snippet = re.sub(r'(src="[^"]*/embed[^"?]*)"', r'\1?font=sofia"', snippet)
+    else:  # písmo z ukázky na craz.cz (viz .htaccess výš)
+        snippet = snippet.replace('<iframe class="ostopovice-embed"', '<iframe class="ostopovice-embed" data-sofia-fonts="fonts/sofia-pro/"')
     snippet = snippet.replace('data-calendar-page="/kalendar-akci"', f'data-calendar-page="{PAGES["calendar"]}"')
     snippet = snippet.replace('data-hours-page="/oteviraci-doby"', f'data-hours-page="{PAGES["hours"]}"')
     start, end = div_span(html, '<div class="ipopagetext">')
