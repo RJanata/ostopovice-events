@@ -1608,7 +1608,7 @@ LOCATION:Knihovna
 DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
  zervace do 22.11.2026. Více informací v odkaze.\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
-CATEGORIES:Kultura,Tvoření
+CATEGORIES:Tvoření
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-18htyay@ostopovice-events
@@ -1689,7 +1689,7 @@ DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
  j: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
  en-pro-detskou-knihu-2026
-CATEGORIES:Kultura,Pro děti,Vzdělávání
+CATEGORIES:Vzdělávání,Tvoření,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events

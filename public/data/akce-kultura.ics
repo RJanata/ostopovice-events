@@ -279,33 +279,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
 CATEGORIES:Kultura
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-1gjirkj@ostopovice-events
-DTSTAMP:20261106T172551Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Adventní dílna s Monikou Stoklasovou
-LOCATION:Knihovna
-DESCRIPTION:Výroba adventních věnců a vánočních dekorací. Nutná re
- zervace do 22.11.2026. Více informací v odkaze.\n\nZdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26
-CATEGORIES:Kultura,Tvoření
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-7mr33r@ostopovice-events
-DTSTAMP:20261025T142335Z
-DTSTART:20261128T130000Z
-DTEND:20261128T170000Z
-SUMMARY:Den pro dětskou knihu 2026
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Předvánoční (nejen) knižní festival pro malé i velké d
- ěti\, rodiče\, prarodiče\, tety i strejdy. Tentokrát věnovaný tvorb
- ě spisovatelky\, logopedky a speciální pedagožky Ester Staré.\n\nZdro
- j: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/d
- en-pro-detskou-knihu-2026
-CATEGORIES:Kultura,Pro děti,Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
 DTSTAMP:20261008T001317Z
 DTSTART;VALUE=DATE:20261129
