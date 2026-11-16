@@ -192,6 +192,10 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .filters--icons .chip--all { display: none; }
 .filters--icons .chip:not(.chip--all):not(.chip--plain) :is(.chip__label, .chip__label-short) { display: none; }
 .filters--icons .chip .cat-icon { width: 18px; height: 18px; }
+.filters--tight .chips { gap: 4px; }
+.filters--tight .chip:not(.chip--all):not(.chip--plain) { padding: 4px 3px; }
+/* vybraná „Ostatní“ (z odkazu) zůstává vidět */
+.filters--no-other #category-filter .chip[data-id="ostatni"]:not([aria-pressed="true"]) { display: none; }
 .filters--icons .chips__selected { display: block; margin-top: -2px; }
 .filters--icons .chips__selected:empty { display: none; }
 /* nadpis vlevo + souhrn pod štítky: mřížka, aby se řada nemohla potají zalomit pod nadpis */

@@ -258,6 +258,8 @@ const wrapsToMoreLines = (container) => {
  *   top   — nadpisy (Zdroj, Kategorie) nad štítky místo vlevo
  *   short — krátké názvy (Obec, Knihovna, Děti…)
  *   icons — jen ikony, pod řadou malý souhrn výběru
+ *   tight — ikony těsněji u sebe (menší odsazení a mezery)
+ *   no-other — skrytá kategorie „Ostatní“ (poslední záchrana na nejužších mobilech)
  */
 const FILTER_LEVELS = [
   [],
@@ -265,6 +267,8 @@ const FILTER_LEVELS = [
   ['top', 'short'],
   ['icons'],
   ['top', 'icons'],
+  ['top', 'icons', 'tight'],
+  ['top', 'icons', 'tight', 'no-other'],
 ];
 
 function fitFilters() {
@@ -276,6 +280,8 @@ function fitFilters() {
     filters.classList.toggle('filters--top', level.includes('top'));
     filters.classList.toggle('filters--short', level.includes('short'));
     filters.classList.toggle('filters--icons', level.includes('icons'));
+    filters.classList.toggle('filters--tight', level.includes('tight'));
+    filters.classList.toggle('filters--no-other', level.includes('no-other'));
     // „Pravidelné“ je na konci štítků; k nadpisu nahoru jde, jen když jsou nadpisy nahoře
     // a na konec štítků se nevejde
     filters.classList.remove('filters--regular-top');
