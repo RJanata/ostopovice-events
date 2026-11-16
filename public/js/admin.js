@@ -31,6 +31,9 @@ const $ = (id) => document.getElementById(id);
 
 // ---------- Pomocné ----------
 
+// ikona místa: klasický „pin“ (obrácená kapka) místo emoji 📍
+const ICON_PIN = '<svg class="pin-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+
 function escapeHtml(text) {
   return String(text ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 }
@@ -333,7 +336,7 @@ function renderList() {
     const placeEdited = 'location' in ch && ch.location !== baseLocation(e);
     const placeText = eff.location || (placeEdited ? 'místo odebráno' : '');
     const place = placeText
-      ? `<span${edited(placeEdited, baseLocation(e) || 'bez místa')}>📍 ${escapeHtml(placeText)}</span>`
+      ? `<span${edited(placeEdited, baseLocation(e) || 'bez místa')}>${ICON_PIN}${escapeHtml(placeText)}</span>`
       : '';
     const display = 'long' in ch ? `<span${edited(true)}>${LONG_LABELS[ch.long]}</span>` : '';
     const link = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">původní akce ↗</a>` : '';

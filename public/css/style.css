@@ -336,6 +336,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event__title .link-icon { width: 0.8em; height: 0.8em; margin-left: 4px; vertical-align: -0.05em; stroke-width: 2.2; color: var(--muted); }
 .event__title a:hover .link-icon { color: currentColor; }
 .event__note { margin: 6px 0 0; font-size: 0.9rem; white-space: pre-line; }
+.pin-icon { width: 1.05em; height: 1.05em; margin-right: 3px; vertical-align: -0.17em; }
 .event__meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 0.85rem; color: var(--muted); align-items: center; }
 .event__source { display: inline-flex; align-items: center; gap: 6px; }
 .event__tags { display: flex; flex-wrap: wrap; gap: 4px; }

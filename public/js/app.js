@@ -400,7 +400,7 @@ function eventCard(e, day) {
         ${mobileWhen(e, day)}
         <div class="event__meta">
           <span class="event__source">${sourceIcon(source, true)}${escapeHtml(source.name)}${alsoIn.length ? ` (i ${escapeHtml(alsoIn.join(', '))})` : ''}</span>
-          ${e.location ? `<span>📍 ${escapeHtml(e.location)}</span>` : ''}
+          ${e.location ? `<span>${ICON_PIN}${escapeHtml(e.location)}</span>` : ''}
           <span class="event__tags">${tags}</span>
         </div>
         ${e.note ? `<p class="event__note">${escapeHtml(e.note)}</p>` : ''}
@@ -588,6 +588,8 @@ let hoursChanges = new Map();
 
 // „!“ v trojúhelníku (Tabler alert-triangle), stejně jako u výjimek na stránce otevíracích dob
 // malá ikonka za odkazem v nadpisu akce (vidět, že jde kliknout); spojovač \u2060 ji drží u posledního slova
+// ikona místa: klasický „pin“ (obrácená kapka) místo emoji 📍
+const ICON_PIN = '<svg class="pin-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
 const ICON_LINK = '<svg class="link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>';
 const ICON_INFO = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"/><path d="M12 16h.01"/></svg>';
 
@@ -1247,7 +1249,7 @@ function setupEventTooltip() {
     tip.innerHTML = `
       ${time ? `<div class="event-tooltip__time">${time}</div>` : ''}
       <div class="event-tooltip__title">${escapeHtml(e.title)}</div>
-      ${e.location ? `<div>📍 ${escapeHtml(e.location)}</div>` : ''}
+      ${e.location ? `<div>${ICON_PIN}${escapeHtml(e.location)}</div>` : ''}
       ${e.note ? `<div class="event-tooltip__note">${escapeHtml(e.note)}</div>` : ''}
       <div class="event-tooltip__source">${source.icon ? sourceIcon(source, true) : ''}${escapeHtml(source.name)}</div>`;
     tip.hidden = false;
