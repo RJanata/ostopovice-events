@@ -102,8 +102,8 @@
     },
     {
       "id": "sport",
-      "label": "Pohyb",
-      "shortLabel": "Sport/Pohyb",
+      "label": "Sport/Pohyb",
+      "shortLabel": "Pohyb",
       "color": "#2f6b47",
       "keywords": [
         "\\bzapas",
