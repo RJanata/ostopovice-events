@@ -376,8 +376,10 @@ function renderToday(now, places) {
   // záložka Dnes / Zítra; u zítřka se stav (otevřeno / zavřeno) nezobrazuje
   const tomorrow = state.view === 'tomorrow';
   const day = tomorrow ? addDays(now.day, 1) : now.day;
-  $('today-holiday').innerHTML = dayInfo(day);
-  $('today-holiday').hidden = !$('today-holiday').innerHTML;
+  // svátek stejně jako na záložce Celý týden (podbarvený rámeček, den tučně)
+  const info = dayInfo(day);
+  $('today-holiday').innerHTML = info ? `<p><strong>${DAY_SHORT[weekdayIndex(day)]} ${formatShort(day)}</strong> ${info}</p>` : '';
+  $('today-holiday').hidden = !info;
   $('today-important').innerHTML = importantBlock(day);
   $('today-important').hidden = !$('today-important').innerHTML;
   // dva sloupce časů (dopoledne | odpoledne) pro celý přehled, ať jsou časy pod sebou
@@ -493,9 +495,11 @@ function setup() {
   });
   window.addEventListener('hashchange', () => { if (readHash()) writeHash(); render(); });
   const toggle = $('theme-toggle');
-  const sync = () => toggle.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
-  sync();
-  toggle.addEventListener('click', () => { window.toggleTheme(); sync(); });
+  if (toggle) { // ve vložené verzi (embed-oteviraci-doby.html) přepínač není
+    const sync = () => toggle.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
+    sync();
+    toggle.addEventListener('click', () => { window.toggleTheme(); sync(); });
+  }
   // stav „otevřeno / zavřeno“ se mění s časem → po minutě překreslit (jen když je stránka vidět)
   setInterval(() => { if (!document.hidden) render(); }, 60000);
 }
@@ -503,6 +507,7 @@ function setup() {
 /** Nadpis na víc řádků → tlačítka (přepnutí stránek, režim) se přesunou z úrovně nadpisu pod něj. */
 function setupHeaderFit() {
   const header = document.querySelector('.site-header');
+  if (!header) return; // embed-oteviraci-doby.html
   const title = header.querySelector('h1');
   const fit = () => {
     header.classList.remove('site-header--stacked');

@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Odlehčené otevírací doby pro vložení do jiného webu (iframe), např. www.ostopovice.cz.
+     Bez záhlaví, patičky a tmavého režimu; výšku obsahu hlásí rodičovské stránce (js/embed.js). -->
+<html lang="cs" class="embed">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Otevírací doby v Ostopovicích</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://kalendar.prolidiostopovice.cz/oteviraci-doby">
+  <!-- odkazy (weby provozoven, kalendář) otevírat v novém okně, ne uvnitř rámečku -->
+  <base target="_blank">
+  <link rel="stylesheet" href="css/style.css?v=dev">
+  <link rel="stylesheet" href="css/opening-hours.css?v=dev">
+  <script src="js/embed.js?v=dev" defer></script>
+  <script src="js/opening-hours-core.js?v=dev" defer></script>
+  <script src="js/opening-hours.js?v=dev" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <!-- filtr podle druhu je zatím skrytý (stránka má být jednoduchá); vrátit = odebrat hidden -->
+    <div class="hours-tools" hidden>
+      <div class="chips hours-filter" id="hours-filter" role="group" aria-label="Filtr podle druhu"></div>
+    </div>
+
+    <!-- záložky Dnes / Zítra / Celý týden (každá třetina šířky) -->
+    <div class="today__tabs" role="tablist" aria-label="Zobrazení">
+      <button type="button" class="today__tab" role="tab" data-day-view="today" aria-selected="true"></button>
+      <button type="button" class="today__tab" role="tab" data-day-view="tomorrow" aria-selected="false"></button>
+      <button type="button" class="today__tab" role="tab" data-day-view="week" aria-selected="false">Celý týden</button>
+    </div>
+
+    <!-- denní přehled (dnes / zítra): jeden řádek na místo -->
+    <section class="today" id="day-view" aria-label="Denní přehled">
+      <div class="hours-holidays" id="today-holiday" hidden></div>
+      <div class="today__important" id="today-important" hidden></div>
+      <div class="today__list" id="today"></div>
+    </section>
+
+    <!-- celý týden: panely míst se šipkami týdnů -->
+    <section id="week-view" aria-label="Celý týden" hidden>
+      <div class="hours-tools hours-tools--week">
+        <div class="hours-week" role="group" aria-label="Týden">
+          <span class="hours-week__range" id="week-range"></span>
+          <button type="button" class="icon-button" data-week="-1" aria-label="Předchozí týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button type="button" class="icon-button icon-button--text" data-week="0" id="week-label" title="Zpět na tento týden">Tento týden</button>
+          <button type="button" class="icon-button" data-week="1" aria-label="Další týden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <!-- státní svátky v zobrazeném týdnu: název a zda mají prodejny nad 200 m² otevřeno -->
+      <div id="week-holidays" class="hours-holidays" hidden></div>
+      <div id="hours" class="hours-grid" aria-live="polite"><p class="empty">Načítám otevírací doby…</p></div>
+    </section>
+  </main>
+</body>
+</html>

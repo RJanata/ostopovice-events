@@ -7,8 +7,9 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
-const PORT = Number(process.env.PORT) || 4173;
+// volitelně jiná složka a port: node scripts/serve.js embed-demo 4174 (ukázka vložení do webu obce)
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', process.argv[2] || 'public');
+const PORT = Number(process.argv[3] || process.env.PORT) || 4173;
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -17,6 +18,7 @@ const TYPES = {
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.ico': 'image/x-icon',
+  '.woff2': 'font/woff2',
   '.ics': 'text/calendar; charset=utf-8',
 };
 

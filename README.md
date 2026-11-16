@@ -153,6 +153,34 @@ celý týden ukazuje panely míst se šipkami týdnů. Filtr Obec / Pohostinstv�
 - „Zobrazit proběhlé akce (N)“ je jen v aktuálním měsíci a ukáže proběhlé akce od 1. dne měsíce.
 - Seznam pod kalendářem ukazuje jen akce vybraného měsíce (aktuální měsíc od dneška); „Zobrazit další akce – <měsíc> (N)“ přidá vždy jeden další měsíc; když za seznamem zbývá méně než 30 akcí (bez pravidelných), je místo něj „Zobrazit všechny další akce (N)“ a ukáže je naráz. Při hledání se ukážou všechny nalezené akce.
 
+## Vložení do jiného webu (embed.html, embed-oteviraci-doby.html)
+
+`/embed` (kalendář) a `/embed-oteviraci-doby` jsou odlehčené stránky pro iframe (např. na
+www.ostopovice.cz): bez záhlaví, patičky a tmavého režimu, pozadí `rgb(236, 236, 236)` jako web
+obce, šířku i okraje dává rodičovská stránka. Písmo systémové jako u nás; na zkoušku `?font=figtree` (OFL, `public/fonts/`)
+nebo `?font=sofia` = Sofia Pro jako web obce, JEN lokální ukázka (placené písmo, web obce ho jiné
+adrese nepustí; soubory kopíruje build ukázky do `public/fonts/sofia-pro/`, ta je v `.gitignore`).
+Odkazy se otevírají v novém okně, obrázek akce taky
+(dialog by ve vysokém rámečku skončil mimo obrazovku).
+
+Spolupráce s rodičovskou stránkou (`js/embed.js` + skript v `embed-demo/snippet-*.html`):
+- iframe se sám natáhnout neumí → embed posílá výšku obsahu zprávou `ostopovice-calendar:height`;
+  bez skriptu zůstane pevná výška z atributu `style` a obsah pod ní se uřízne,
+- rodič po načtení pošle `ostopovice-calendar:ping` s adresami svých stránek (`data-calendar-page`,
+  `data-hours-page`) → odkazy kalendář ↔ otevírací doby („Změna otevírací doby“, akce u místa)
+  vedou na stránky rodiče v celém okně, ne na kalendar.prolidiostopovice.cz,
+- `#d=…` / filtry z adresy rodičovské stránky skript předá do iframe.
+
+Ukázka na kopii stránky obce (`embed-demo/`): stáhnout `https://www.ostopovice.cz/kalendar-akci`
+do `embed-demo/raw/page.html`, styl `style.php` do `raw/style.css` a fonty do `raw/fonts/<oid>`
+(web obce je cizí adrese nepustí, CORS), pak `python -I scripts/build-embed-demo.py [adresa kalendáře]`
+(bez adresy `http://localhost:4173`, pro nasazení `https://kalendar.prolidiostopovice.cz`)
+a `node scripts/serve.js embed-demo 4174`. Vzniknou `index.html` (kalendář) a `oteviraci-doby.html`
+s relativními odkazy mezi sebou → složka jde nahrát kamkoli. Pravé červené menu: bez Svozu odpadu
+a Krizového portálu, nově Otevírací doby; web obce přiřazuje ikony menu (a jeden přepis textu)
+podle POŘADÍ odkazů, ukázka to přebíjí vlastním stylem — při úpravě menu v IPO na to myslet.
+Stažené soubory obce se necommitují (`.gitignore`).
+
 ## Návštěvnost
 
 Stránka při otevření pošle jeden požadavek na `https://stats.craz.cz/hit/ostopovice-events`

@@ -431,6 +431,8 @@ function imageThumb(e) {
  * náhled (jinak by chvíli svítil předchozí obrázek), ostrý ho nahradí, až se stáhne.
  */
 function openImage(src, title, thumb) {
+  // ve vloženém kalendáři je iframe vysoký jako celý obsah → dialog by byl uprostřed, mimo obrazovku
+  if (document.documentElement.classList.contains('embed')) { window.open(src, '_blank', 'noopener'); return; }
   const placeholder = thumb?.currentSrc;
   let dialog = document.getElementById('image-dialog');
   if (!dialog) {
@@ -1145,6 +1147,7 @@ function renderStatus() {
 }
 
 function renderFooter() {
+  if (!document.getElementById('generated-at')) return; // vložený kalendář (embed.html) je bez patičky
   document.getElementById('generated-at').textContent = new Date(data.generatedAt)
     .toLocaleString('cs-CZ', { timeZone: TIME_ZONE, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
   // svátky se nevypisují; vlastní Google kalendáře souhrnně jednou položkou, jejich doplňkové zdroje (farnost) zvlášť
@@ -1285,6 +1288,7 @@ let hideEventTooltip = () => {};
 /** Nadpis na víc řádků → přepínač režimu se přesune z úrovně nadpisu k podnadpisu. */
 function setupHeaderFit() {
   const header = document.querySelector('.site-header');
+  if (!header) return; // embed.html
   const title = header.querySelector('h1');
   const fit = () => {
     header.classList.remove('site-header--stacked');
@@ -1326,6 +1330,7 @@ function renderFiltersSummary() {
 
 function setupThemeToggle() {
   const button = document.getElementById('theme-toggle');
+  if (!button) return; // embed.html
   const sync = () => button.setAttribute('aria-pressed', String(document.documentElement.getAttribute('data-theme') === 'dark'));
   sync();
   button.addEventListener('click', () => { window.toggleTheme(); sync(); });

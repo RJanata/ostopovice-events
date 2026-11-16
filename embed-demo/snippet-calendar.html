@@ -1,0 +1,24 @@
+<!-- Kalendář akcí (kalendar.prolidiostopovice.cz) – kód pro vložení do webu obce.
+     data-calendar-page / data-hours-page = adresy stránek webu obce s kalendářem a s otevíracími dobami
+     (odkazy mezi nimi vedou tam). -->
+<div class="layout-container">
+<iframe class="ostopovice-embed" src="https://kalendar.prolidiostopovice.cz/embed" data-calendar-page="/kalendar-akci" data-hours-page="/oteviraci-doby" title="Kalendář akcí v Ostopovicích" scrolling="no" style="display:block;width:100%;height:1400px;border:0;"></iframe>
+<script>
+(function () {
+  var frame = document.currentScript.previousElementSibling;
+  var origin = new URL(frame.src).origin;
+  // vybraný den / filtry z adresy stránky (např. #d=2026-11-16) předat do rámečku
+  if (location.hash) frame.src = frame.src.split('#')[0] + location.hash;
+  window.addEventListener('message', function (ev) {
+    if (ev.source !== frame.contentWindow || !ev.data || ev.data.type !== 'ostopovice-calendar:height') return;
+    frame.style.height = ev.data.height + 'px';
+  });
+  frame.addEventListener('load', function () {
+    frame.contentWindow.postMessage({ type: 'ostopovice-calendar:ping', pages: {
+      calendar: new URL(frame.getAttribute('data-calendar-page'), location.href).href,
+      hours: new URL(frame.getAttribute('data-hours-page'), location.href).href,
+    } }, origin);
+  });
+})();
+</script>
+</div>
