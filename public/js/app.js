@@ -328,24 +328,19 @@ function renderFilters() {
 // ---------- Karta akce ----------
 
 /**
- * Mobil: čas jako druhý řádek pod názvem (sloupec s časem je skrytý). Celodenní akce bez
- * „celý den“ — jednodenní žádný řádek, vícedenní jen rozsah dní. Zrušená akce řádek má vždy (CSS „Zrušeno“).
+ * Mobil: čas jako druhý řádek pod názvem (sloupec s časem je skrytý). Celodenní jednodenní
+ * akce žádný řádek nemá. Zrušená akce řádek má vždy (CSS „Zrušeno“).
  */
 function mobileWhen(e, day) {
-  let text;
-  if (e.allDay) {
-    text = e._first === e._last ? '' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
-  } else {
-    text = timeLabel(e, day);
-  }
+  const text = timeLabel(e, day);
   if (!text && !e.cancelled) return '';
   return `<div class="event__when">${text}</div>`;
 }
 
+/** Čas akce; celodenní bez „celý den“ — jednodenní prázdný, vícedenní jen rozsah dní. */
 function timeLabel(e, day) {
   if (e.allDay) {
-    if (e._first === e._last) return 'celý den';
-    return `celý den<small>${formatShortDate(e._first)} – ${formatShortDate(e._last)}</small>`;
+    return e._first === e._last ? '' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
   }
   const start = new Date(e.start);
   const end = new Date(e.end || e.start);
@@ -374,7 +369,7 @@ function eventCard(e, day) {
 
   return `
     <article class="${classes}" style="--icon-color:${escapeHtml(source.color)}">
-      <div class="event__time">${e.important && e.allDay && e._first === e._last ? '' : timeLabel(e, day)}</div>
+      <div class="event__time">${timeLabel(e, day)}</div>
       <div class="event__body">
         <div class="event__aside">
           <button type="button" class="event__ics" data-ics-event="${escapeHtml(e.id)}" title="Stáhnout akci do kalendáře" aria-label="Stáhnout akci do kalendáře">
@@ -1203,7 +1198,7 @@ function setupSubscribe() {
 
 function tooltipTime(e) {
   if (e.allDay) {
-    return e._first === e._last ? 'celý den' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
+    return e._first === e._last ? '' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
   }
   const start = new Date(e.start);
   const end = new Date(e.end || e.start);
@@ -1225,8 +1220,9 @@ function setupEventTooltip() {
     const e = data?.events.find((x) => x.id === pill.dataset.eventId);
     if (!e) return;
     const source = sourcesById[e.source] || { name: e.source };
+    const time = [escapeHtml(tooltipTime(e)), e.cancelled && '<strong>zrušeno</strong>'].filter(Boolean).join(' · ');
     tip.innerHTML = `
-      <div class="event-tooltip__time">${escapeHtml(tooltipTime(e))}${e.cancelled ? ' · <strong>zrušeno</strong>' : ''}</div>
+      ${time ? `<div class="event-tooltip__time">${time}</div>` : ''}
       <div class="event-tooltip__title">${escapeHtml(e.title)}</div>
       ${e.location ? `<div>📍 ${escapeHtml(e.location)}</div>` : ''}
       ${e.note ? `<div class="event-tooltip__note">${escapeHtml(e.note)}</div>` : ''}

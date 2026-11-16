@@ -112,9 +112,9 @@ function eventsIcon(place, day) {
   const list = eventsOn(place, day);
   if (!list.length) return '';
   const text = list.map(eventText).join('\n');
-  const time = list[0].time || 'celý den';
+  const label = [list[0].time, list.length > 1 && `+${list.length - 1}`].filter(Boolean).join(' ');
   // není odkaz: klepnutí rozbalí řádek s podrobnostmi (tam je odkaz do kalendáře)
-  return `<span class="hours-day__event" title="${escapeHtml(text)}" aria-label="${escapeHtml(`Akce: ${text}`)}">${ICON_EVENT}<span>${escapeHtml(time)}${list.length > 1 ? ` +${list.length - 1}` : ''}</span></span>`;
+  return `<span class="hours-day__event" title="${escapeHtml(text)}" aria-label="${escapeHtml(`Akce: ${text}`)}">${ICON_EVENT}${label ? `<span>${escapeHtml(label)}</span>` : ''}</span>`;
 }
 
 // důležité akce (#dulezite v kalendáři, např. svoz odpadu): [{ day, time, title, icon }]
@@ -343,7 +343,7 @@ function todayRow(place, day, now, { showStatus, twoColumns }) {
       <span class="today-row__name">${title}${place.village ? ` <small>(${escapeHtml(place.village)})</small>` : ''}</span>
       <span class="today-row__status">${showStatus && known ? statusBadge(openStatus(place, now)) : ''}</span>
       <span class="hours-day__times today-row__times"${regularInfo ? ` title="${escapeHtml(regularInfo)}"` : ''}>${known ? timesHtml(intervals, twoColumns, regularInfo, { spanFullDay: true }) : '<span class="hours-day__closed">neznámá</span>'}</span>
-      ${events.length ? `<ul class="today-row__events">${events.map((e) => `<li><a href="./#d=${day}">${ICON_EVENT}<span class="today-row__event-time">${escapeHtml(e.time || 'celý den')}</span> ${escapeHtml(e.title)}</a></li>`).join('')}</ul>` : ''}
+      ${events.length ? `<ul class="today-row__events">${events.map((e) => `<li><a href="./#d=${day}">${ICON_EVENT}${e.time ? `<span class="today-row__event-time">${escapeHtml(e.time)}</span> ` : ''}${escapeHtml(e.title)}</a></li>`).join('')}</ul>` : ''}
       ${exception?.note ? `<span class="hours-day__note">${escapeHtml(exception.note)}</span>` : ''}
       ${details ? `<ul class="hours-day__details"${open ? '' : ' hidden'}>${details}</ul>` : ''}
     </li>`;
