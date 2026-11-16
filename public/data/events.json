@@ -189,22 +189,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-1jtxom6",
-   "source": "knihovna",
-   "title": "Jóga uzemnění s Klárou",
-   "start": "2025-10-11T08:00:00.000Z",
-   "end": "2025-10-11T10:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/joga-uzemneni-s-klarou",
-   "description": "Speciální jógový workshop s Klárou Judexovou u příležitosti Týdne knihoven. Uzemnění se, návrat k sobě. Harmonizace prvních tří energetickych center (čaker).",
-   "image": "https://static.wixstatic.com/media/6e4a73_0dc814c32f6849d1bb7a9ca505c5e60f~mv2.jpg",
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-eisw0c",
    "source": "knihovna",
    "title": "English Time for Little Ones / angličtina pro nejmenší s rodiči",
@@ -3876,6 +3860,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -3895,22 +3895,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5480,7 +5464,7 @@
    "location": "",
    "url": "https://www.ostopovice.cz/kalendar-akci/oznameni-o-zmene-oteviraci-doby-posty-partner",
    "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14054095",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14054093&width=988&height=743",
    "categories": [
     "obec"
    ],
@@ -5534,7 +5518,7 @@
    "location": "",
    "url": "https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-pruvod",
    "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047079",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047078&width=1216&height=1520",
    "categories": [
     "kultura",
     "deti",
@@ -5859,7 +5843,7 @@
    "location": "",
    "url": "https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26",
    "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047075",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047072&width=1216&height=1711",
    "categories": [
     "kultura",
     "vzdelavani"
@@ -5889,6 +5873,26 @@
    "added": "2026-10-12T10:10:29.283Z"
   },
   {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -5909,26 +5913,6 @@
     "obec"
    ],
    "added": "2026-11-06T10:48:43.168Z"
-  },
-  {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -6359,6 +6343,25 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
+  },
+  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6379,25 +6382,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
@@ -7065,7 +7049,7 @@
    "location": "",
    "url": "",
    "description": "",
-   "image": "",
+   "image": "https://craz.cz/cal/tri_kralove_2027.jpg",
    "tagCategories": [
     "deti",
     "cirkev"
