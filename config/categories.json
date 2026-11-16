@@ -102,7 +102,7 @@
     },
     {
       "id": "sport",
-      "label": "Sport",
+      "label": "Pohyb",
       "color": "#2f6b47",
       "keywords": [
         "\\bzapas",
@@ -123,7 +123,7 @@
         "turistik",
         "pochod"
       ],
-      "icon": "sport.svg"
+      "icon": "pohyb.svg"
     },
     {
       "id": "deti",

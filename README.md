@@ -28,7 +28,7 @@ zdroje (RSS, Wix, rozpis hřiště, Google iCal)
 
 - **`config/sources.json`** — seznam zdrojů. Nový Google kalendář = zkopírovat blok `pripravovane`,
   změnit `id`, `name`, `url` (veřejná adresa ve formátu iCal), `icon` a `color`.
-  - `categories` — kategorie, které dostane každá akce zdroje (Sokol → Sport)
+  - `categories` — kategorie, které dostane každá akce zdroje (Sokol → Pohyb)
   - `fallbackCategories` — jen když pravidla nic nenajdou (obec → Obec, knihovna → Kultura)
   - `skipRules: true` — pravidla podle klíčových slov se nepoužijí
   - `village` — obec; až budou zdroje z víc obcí, objeví se na webu filtr „Obec“
