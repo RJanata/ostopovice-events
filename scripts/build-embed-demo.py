@@ -6,7 +6,7 @@
 # Odkazy na kalendář a otevírací doby vedou na tyto lokální stránky (relativně → složka jde nasadit
 # kamkoli), ostatní odkazy, styly a obrázky na živý web obce.
 #
-# Spuštění: C:\Utilities\Python\python.exe -I scripts/build-embed-demo.py [adresa kalendáře]
+# Spuštění: C:\Utilities\Python\python.exe -I scripts/build-embed-demo.py [adresa kalendáře] [výstupní složka]
 #   bez adresy: http://localhost:4173 (npm run serve); pro nasazení https://kalendar.prolidiostopovice.cz
 import re
 import sys
@@ -16,6 +16,9 @@ ROOT = Path(__file__).resolve().parent.parent / 'embed-demo'
 RAW = ROOT / 'raw'
 OBEC = 'https://www.ostopovice.cz'
 CALENDAR_URL = (sys.argv[1] if len(sys.argv) > 1 else 'http://localhost:4173').rstrip('/')
+# volitelně složka pro nahrání na web (jinak embed-demo/ vedle raw/)
+OUT = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else ROOT
+OUT.mkdir(parents=True, exist_ok=True)
 PAGES = {'calendar': 'index.html', 'hours': 'oteviraci-doby.html'}
 
 
@@ -39,17 +42,19 @@ def cut(html, opening):
 # Fonty web obce cizí adrese nepustí (CORS) → lokálně (raw/fonts/<oid>, stažené curl);
 # ostatní adresy ve stylu absolutně na živý web.
 fonts = {p.name for p in (RAW / 'fonts').iterdir() if p.read_bytes()[:4] in (b'wOF2', b'wOFF')}
-(ROOT / 'fonts').mkdir(exist_ok=True)
+(OUT / 'fonts').mkdir(exist_ok=True)
 for name in fonts:
-    (ROOT / 'fonts' / f'{name}.woff2').write_bytes((RAW / 'fonts' / name).read_bytes())
+    (OUT / 'fonts' / f'{name}.woff2').write_bytes((RAW / 'fonts' / name).read_bytes())
 
 # Sofia Pro i pro vložený kalendář (?font=sofia) — JEN pro lokální ukázku: placené písmo obce,
 # public/fonts/sofia-pro/ je v .gitignore, takže se na kalendar.prolidiostopovice.cz nedostane.
-SOFIA = {'300': '8115825', '400': '8115826', '400-italic': '8115827', '500': '8117773', '600': '8116134', '700': '8115823'}
+# (řez 600 má web obce jako woff2 omylem PostScript Type 1 → použitý jeho záložní .woff)
+SOFIA = {'300.woff2': '8115825', '400.woff2': '8115826', '400-italic.woff2': '8115827', '500.woff2': '8117773',
+         '600.woff': '8116138', '700.woff2': '8115823'}
 SOFIA_DIR = ROOT.parent / 'public' / 'fonts' / 'sofia-pro'
 SOFIA_DIR.mkdir(parents=True, exist_ok=True)
 for name, oid in SOFIA.items():
-    (SOFIA_DIR / f'{name}.woff2').write_bytes((RAW / 'fonts' / oid).read_bytes())
+    (SOFIA_DIR / name).write_bytes((RAW / 'fonts' / oid).read_bytes())
 LOCAL = CALENDAR_URL.startswith('http://localhost')
 
 FONT_URL = re.compile(r'/file\.php\?nid=18899&(amp;)?oid=(\d+)')
@@ -62,7 +67,7 @@ def font_to(prefix):
 css = (RAW / 'style.css').read_text(encoding='utf-8')
 css = FONT_URL.sub(font_to('fonts/'), css)
 css = re.sub(r"url\((['\"]?)/(?!/)", rf'url(\1{OBEC}/', css)
-(ROOT / 'style.css').write_text(css, encoding='utf-8')
+(OUT / 'style.css').write_text(css, encoding='utf-8')
 
 # Úpravy jen pro ukázku: menší mezera pod drobečkovou navigací, bez cookie lišty,
 # ikony pravého menu (web je přiřazuje podle pořadí odkazů, to se změnilo).
@@ -86,6 +91,8 @@ src = (RAW / 'page.html').read_text(encoding='utf-8')
 # „Měsíční přehled akcí“ je v HTML jinde, do .ipopagetext ho přesouvá až skript webu → pryč taky
 src = cut(src, '<div class="data-aggregator-calendar"')
 src = cut(src, '<div id="snippet-cookiesConfirmation-euCookiesSnp">')
+# ukázka nemá být ve vyhledávačích
+src = src.replace('<meta name="robots" content="index,follow" />', '<meta name="robots" content="noindex,nofollow" />')
 src = re.sub(r"<script src='https://www\.google\.com/recaptcha[^>]*></script>", '', src)
 src = re.sub(r'href="/style\.php[^"]*"', 'href="style.css"', src, count=1)
 src = src.replace('</head>', DEMO_STYLE + '</head>', 1)
@@ -126,5 +133,5 @@ def page(html, snippet_file, title):
 for name, snippet_file, title in (('calendar', 'snippet-calendar.html', 'Kalendář akcí'),
                                   ('hours', 'snippet-hours.html', 'Otevírací doby')):
     html = page(src, snippet_file, title)
-    (ROOT / PAGES[name]).write_text(html, encoding='utf-8')
-    print(f'embed-demo/{PAGES[name]} ({len(html)} B)')
+    (OUT / PAGES[name]).write_text(html, encoding='utf-8')
+    print(f'{OUT / PAGES[name]} ({len(html)} B)')
