@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//ostopovice-events//CS
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Kalendář akcí v Ostopovicích – Pohyb
+X-WR-CALNAME:Kalendář akcí v Ostopovicích – Sport/Pohyb
 X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
@@ -19,7 +19,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-09-18-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-r9judn@ostopovice-events
@@ -31,7 +31,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Avia
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 22:17\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-99mghm@ostopovice-events
@@ -47,7 +47,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-09-21-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-etqh79@ostopovice-events
@@ -61,7 +61,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-09-25-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1xbiz8z@ostopovice-events
@@ -77,7 +77,7 @@ DESCRIPTION:Téma solar\, moje hodnota (slinivka\, slezina). Skrze jógovou
  to orgány velice důležité.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  erapeuticka-joga-s-klarou-workshop
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-61m6q1@ostopovice-events
@@ -93,7 +93,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-09-28-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1sc0v88@ostopovice-events
@@ -107,7 +107,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-10-02-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-yb369y@ostopovice-events
@@ -118,7 +118,7 @@ SUMMARY:Národní házená: Přípravky · turnaj
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-p1n0tv@ostopovice-events
@@ -130,7 +130,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Nýřa
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 16:15\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-rtm79k@ostopovice-events
@@ -142,7 +142,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Příc
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 14:16\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-62g964@ostopovice-events
@@ -154,7 +154,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3xp067@ostopovice-events
@@ -166,7 +166,7 @@ SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – 1. N
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 7:6\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-ashlf7@ostopovice-events
@@ -178,7 +178,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – 1. N
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 19:10\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17yrhm2@ostopovice-events
@@ -190,7 +190,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1f0nfl@ostopovice-events
@@ -201,7 +201,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1mncwcw@ostopovice-events
@@ -213,7 +213,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-136fyqt@ostopovice-events
@@ -227,7 +227,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-10-16-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4gkhvx@ostopovice-events
@@ -239,7 +239,7 @@ SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ J
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 13:7\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-5hg2on@ostopovice-events
@@ -251,7 +251,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ J
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 30:7\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1mwjzye@ostopovice-events
@@ -263,7 +263,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Tym
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 11:14\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1ngj7cc@ostopovice-events
@@ -275,7 +275,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Nez
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 17:14\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-s7pjp@ostopovice-events
@@ -287,7 +287,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p9bqpu@ostopovice-events
@@ -298,7 +298,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-s0i3bz@ostopovice-events
@@ -314,7 +314,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-10-19-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1ld5nrc@ostopovice-events
@@ -326,7 +326,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-178aiil@ostopovice-events
@@ -341,7 +341,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
  ruseno-lit-joga-2026-10-23-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1okkrm7@ostopovice-events
@@ -353,7 +353,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Svi
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 13:20\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17bzm8e@ostopovice-events
@@ -365,7 +365,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-hegyht@ostopovice-events
@@ -376,7 +376,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-iknwj2@ostopovice-events
@@ -392,7 +392,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-10-26-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-17arpiu@ostopovice-events
@@ -404,7 +404,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-18ijhrd@ostopovice-events
@@ -416,7 +416,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1cv7bra@ostopovice-events
@@ -427,7 +427,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-4al37h@ostopovice-events
@@ -443,7 +443,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-11-02-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-77zcpu@ostopovice-events
@@ -458,7 +458,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
  ruseno-lit-joga-2026-11-04-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-z5i70h@ostopovice-events
@@ -470,7 +470,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-813om6@ostopovice-events
@@ -482,7 +482,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-xpp5tx@ostopovice-events
@@ -493,7 +493,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-smt9ac@ostopovice-events
@@ -507,7 +507,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-11-11-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-172znxv@ostopovice-events
@@ -519,7 +519,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-dn14b9@ostopovice-events
@@ -535,7 +535,7 @@ DESCRIPTION:Pravidelná dávka terapeutické jógy\, tentokrát zaměřená
  ěle. Zaměříme se na hrudní koš a paže.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  erapeuticka-joga-s-klarou-workshop-2
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-40if0o@ostopovice-events
@@ -547,7 +547,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1849gn@ostopovice-events
@@ -558,7 +558,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-305viz@ostopovice-events
@@ -572,7 +572,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-11-18-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1bvi37w@ostopovice-events
@@ -584,7 +584,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1qmi2ry@ostopovice-events
@@ -596,7 +596,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-10cpt7l@ostopovice-events
@@ -607,7 +607,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-12uvg9g@ostopovice-events
@@ -623,7 +623,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-11-23-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1p8xtg0@ostopovice-events
@@ -635,7 +635,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1ytvbob@ostopovice-events
@@ -647,7 +647,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1b4q7w4@ostopovice-events
@@ -658,7 +658,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1jipog0@ostopovice-events
@@ -674,7 +674,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-11-30-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-z5c1kj@ostopovice-events
@@ -688,7 +688,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-12-02-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-fhd90@ostopovice-events
@@ -700,7 +700,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-23kdjr@ostopovice-events
@@ -712,7 +712,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-49umy8@ostopovice-events
@@ -723,7 +723,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-e508kx@ostopovice-events
@@ -739,7 +739,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-12-07-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1b9o4oi@ostopovice-events
@@ -753,7 +753,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2026-12-09-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1tzallt@ostopovice-events
@@ -765,7 +765,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-124fe1l@ostopovice-events
@@ -777,7 +777,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-yb9sgi@ostopovice-events
@@ -788,7 +788,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1ds5txp@ostopovice-events
@@ -804,7 +804,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-12-14-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1jvsl19@ostopovice-events
@@ -816,7 +816,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-fb3yam@ostopovice-events
@@ -831,7 +831,7 @@ DESCRIPTION:Poslední jógový workshop roku 2026 v době zimního slunovra
   emoce.\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
  erapeuticka-joga-s-klarou-workshop-3
-CATEGORIES:Kultura,Pohyb
+CATEGORIES:Kultura,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-43lv2n@ostopovice-events
@@ -843,7 +843,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1cavwt8@ostopovice-events
@@ -854,7 +854,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-l0efdh@ostopovice-events
@@ -870,7 +870,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-12-21-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1k4cikh@ostopovice-events
@@ -882,7 +882,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lzp45a@ostopovice-events
@@ -894,7 +894,7 @@ LOCATION:Sokolovna (venkovní hřiště)
 DESCRIPTION:Marek Vašák tel. +420 724 063 294 - muži všech věkových k
  ategorií.\n\n #fotbal\nicon:ball-football\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-9erqml@ostopovice-events
@@ -905,7 +905,7 @@ SUMMARY:Cvičení ženy
 LOCATION:Sokolovna
 DESCRIPTION:cvičitelka Ivana Budíková\n\nZdroj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1hodbme@ostopovice-events
@@ -921,7 +921,7 @@ DESCRIPTION:Pravidelné pondělní lekce pilates pro zdravá záda s lektor
  zde.\n\nKontakt na lektorku: 723 370 423\n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
  ilates-zdrava-zada-2026-12-28-19-00
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-6aq36l@ostopovice-events
@@ -933,7 +933,7 @@ LOCATION:Sokolovna
 DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1w5yr9q@ostopovice-events
@@ -942,7 +942,7 @@ DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:Novoroční procházka
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-z4wk20@ostopovice-events
@@ -956,7 +956,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2027-01-06-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1sj379a@ostopovice-events
@@ -970,7 +970,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2027-01-13-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8n0zo0@ostopovice-events
@@ -984,7 +984,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2027-01-20-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-6ivxg9@ostopovice-events
@@ -998,7 +998,7 @@ DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
  \n\nZdroj: Knihovna
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
  it-joga-2027-01-27-08-30
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-50muru@ostopovice-events
@@ -1010,7 +1010,7 @@ SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – TJ S
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1d38y02@ostopovice-events
@@ -1022,7 +1022,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – TJ S
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1qskqny@ostopovice-events
@@ -1034,7 +1034,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ S. Ky
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-3mlot0@ostopovice-events
@@ -1046,7 +1046,7 @@ SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – Drak
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18ctu95@ostopovice-events
@@ -1058,7 +1058,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1tq34ir@ostopovice-events
@@ -1070,7 +1070,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – Drak
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-1s6ir4t@ostopovice-events
@@ -1082,7 +1082,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Plzeň
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4ddw29@ostopovice-events
@@ -1094,7 +1094,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – Sokol Kr
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4nac99@ostopovice-events
@@ -1106,7 +1106,7 @@ SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – SK Studé
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-1fcxmvf@ostopovice-events
@@ -1118,7 +1118,7 @@ DESCRIPTION:poznávací zájezd s turistikou\nLázně Lipová: Schrothovy l
  ázně\, Priessnitzovy lázně\nVelké Losiny: zámek\nJeseník: oběd\n\n
  Zdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura,Pohyb
+CATEGORIES:Senioři,Kultura,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-4qn92v@ostopovice-events
@@ -1130,7 +1130,7 @@ SUMMARY:Národní házená: Mladší žáci · TJ Sokol Ostopovice – SK A
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-18cwzr4@ostopovice-events
@@ -1142,7 +1142,7 @@ SUMMARY:Národní házená: Starší žáci · TJ Sokol Ostopovice – SK A
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Zdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Pohyb,Pro děti
+CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-1beoxjv@ostopovice-events
@@ -1152,7 +1152,7 @@ DTEND;VALUE=DATE:20270607
 SUMMARY:Ostoběh
 LOCATION:U Hitlerova mostu
 DESCRIPTION:Zdroj: Připravované akce
-CATEGORIES:Pohyb
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:seniori-nb1gk6@ostopovice-events
@@ -1166,6 +1166,6 @@ DESCRIPTION:poznávací zájezd s turistikou\nPřírodní rezervace – "Sm
  y Vary\, Mariánské lázně\nUbytování: Hotel Krakonoš\, Mariánské L
  ázně\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Pohyb,Senioři
+CATEGORIES:Sport/Pohyb,Senioři
 END:VEVENT
 END:VCALENDAR
