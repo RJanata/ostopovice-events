@@ -317,14 +317,14 @@ BEGIN:VEVENT
 UID:skola-12aeqy8@ostopovice-events
 DTSTAMP:20261027T204348Z
 DTSTART:20261119T170000Z
-DTEND:20261119T170000Z
+DTEND:20261119T190000Z
 SUMMARY:Chleba s máslem - o škole po škole
 LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
   Ostopovice
 DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
  é.\n\nZdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
-CATEGORIES:Pro děti
+CATEGORIES:Vzdělávání,Tvoření,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1lwh7mo@ostopovice-events
@@ -362,7 +362,7 @@ UID:pripravovane-7nr8c@ostopovice-events
 DTSTAMP:20261008T001317Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-SUMMARY:Rozsvícení vánočního stromečku (1. adventní neděle)
+SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Kultura,Pro děti
@@ -372,7 +372,8 @@ UID:skola-ulrkua@ostopovice-events
 DTSTAMP:20261028T093845Z
 DTSTART:20261129T153000Z
 DTEND:20261129T153000Z
-SUMMARY:Adventní jarmark a rozsvícení vánočního stromu
+SUMMARY:Vystoupení dětí: Adventní jarmark a rozsvícení vánočního s
+ tromu
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Škola
 URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1

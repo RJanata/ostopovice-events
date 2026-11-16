@@ -5195,8 +5195,8 @@
     "seniori",
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "seniori-6n99bx",
@@ -5688,16 +5688,19 @@
    "source": "skola",
    "title": "Chleba s máslem - o škole po škole",
    "start": "2026-11-19T17:00:00.000Z",
-   "end": "2026-11-19T17:00:00.000Z",
+   "end": "2026-11-19T19:00:00.000Z",
    "allDay": false,
    "location": "",
    "url": "https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1",
    "description": "Dílna, 18.00 až 20.00, školní jídlena, pro přihlášené.",
    "image": "",
    "categories": [
+    "vzdelavani",
+    "tvoreni",
     "deti"
    ],
-   "added": "2026-10-27T20:43:48.297Z"
+   "added": "2026-10-27T20:43:48.297Z",
+   "originalEnd": "2026-11-19T17:00:00.000Z"
   },
   {
    "id": "knihovna-5a999r",
@@ -5846,25 +5849,6 @@
    "added": "2026-10-30T20:49:18.688Z"
   },
   {
-   "id": "obec-1gjirkj",
-   "source": "obec",
-   "title": "Adventní dílna s Monikou Stoklasovou",
-   "start": "2026-11-25",
-   "end": "2026-11-25",
-   "allDay": true,
-   "location": "Knihovna",
-   "url": "https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047072&width=1216&height=1711",
-   "categories": [
-    "tvoreni"
-   ],
-   "added": "2026-11-06T17:25:51.053Z",
-   "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
-   "originalTitle": "Adventní dílna",
-   "originalLocation": ""
-  },
-  {
    "id": "nezarazene-18htyay",
    "source": "nezarazene",
    "title": "Svoz komunálního odpadu",
@@ -5885,6 +5869,28 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "obec-1gjirkj",
+   "source": "obec",
+   "title": "Adventní dílna s Monikou Stoklasovou",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna",
+   "url": "https://www.ostopovice.cz/kalendar-akci/adventni-dilna_26",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14047072&width=1216&height=1711",
+   "categories": [
+    "tvoreni"
+   ],
+   "added": "2026-11-06T17:25:51.053Z",
+   "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
+   "originalTitle": "Adventní dílna",
+   "originalLocation": "",
+   "originalStart": "2026-11-25",
+   "originalEnd": "2026-11-25",
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1uclek6",
@@ -6002,7 +6008,7 @@
   {
    "id": "pripravovane-7nr8c",
    "source": "pripravovane",
-   "title": "Rozsvícení vánočního stromečku (1. adventní neděle)",
+   "title": "Adventní jarmark a rozsvícení vánočního stromečku",
    "start": "2026-11-29",
    "end": "2026-11-29",
    "allDay": true,
@@ -6019,12 +6025,13 @@
     "kultura",
     "deti"
    ],
-   "added": "2026-10-08T00:13:17.000Z"
+   "added": "2026-10-08T00:13:17.000Z",
+   "originalTitle": "Rozsvícení vánočního stromečku (1. adventní neděle)"
   },
   {
    "id": "skola-ulrkua",
    "source": "skola",
-   "title": "Adventní jarmark a rozsvícení vánočního stromu",
+   "title": "Vystoupení dětí: Adventní jarmark a rozsvícení vánočního stromu",
    "start": "2026-11-29T15:30:00.000Z",
    "end": "2026-11-29T15:30:00.000Z",
    "allDay": false,

@@ -191,6 +191,19 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Kultura,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
+UID:skola-12aeqy8@ostopovice-events
+DTSTAMP:20261027T204348Z
+DTSTART:20261119T170000Z
+DTEND:20261119T190000Z
+SUMMARY:Chleba s máslem - o škole po škole
+LOCATION:Mateřská škola a Základní škola Ostopovice\, Školní 2/18\,
+  Ostopovice
+DESCRIPTION:Dílna\, 18.00 až 20.00\, školní jídlena\, pro přihlášen
+ é.\n\nZdroj: Škola
+URL:https://www.canva.com/design/DAGxcmxsJ1s/4lR4hImhURClAKt9NXl7dg/view#1
+CATEGORIES:Vzdělávání,Tvoření,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-5hhxij@ostopovice-events
 DTSTAMP:20261025T142335Z
 DTSTART:20261124T090000Z
