@@ -3,7 +3,8 @@
   "categories": [
     {
       "id": "kultura",
-      "label": "Kultura",
+      "label": "Kultura/Umění",
+      "shortLabel": "Kultura",
       "color": "#8a3a66",
       "keywords": [
         "\\bhody\\b",
