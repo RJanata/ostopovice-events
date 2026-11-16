@@ -5195,8 +5195,8 @@
     "seniori",
     "obec"
    ],
-   "added": "2026-10-08T14:26:43.000Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-08T14:26:43.000Z"
   },
   {
    "id": "seniori-6n99bx",
@@ -6025,8 +6025,8 @@
     "kultura",
     "deti"
    ],
-   "added": "2026-10-08T00:13:17.000Z",
-   "originalTitle": "Rozsvícení vánočního stromečku (1. adventní neděle)"
+   "originalTitle": "Rozsvícení vánočního stromečku (1. adventní neděle)",
+   "added": "2026-10-08T00:13:17.000Z"
   },
   {
    "id": "skola-ulrkua",
@@ -6503,14 +6503,14 @@
   {
    "id": "pripravovane-14ym9v0",
    "source": "pripravovane",
-   "title": "Vánoce s Karlem: Karel Hegner & Fashion Strings",
+   "title": "Vánoce s Karlem: Fashion Strings & Karel Hegner",
    "start": "2026-12-11",
    "end": "2026-12-11",
    "allDay": true,
    "location": "Knihovna Ostopovice",
    "url": "",
    "description": "",
-   "image": "",
+   "image": "https://craz/cz/cal/Fashionstrings_Vanoce_s_Karlem_2026_plakat_JPG.jpg",
    "icon": "clef",
    "tagCategories": [
     "kultura"
