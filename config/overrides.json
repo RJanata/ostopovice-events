@@ -230,6 +230,18 @@
       "hidden": true,
       "editedBy": "Radek",
       "editedAt": "2026-11-16T01:48:31.157Z"
+    },
+    "skola-12aeqy8": {
+      "categories": [
+        "vzdelavani",
+        "tvoreni",
+        "deti"
+      ],
+      "start": "2026-11-19T17:00:00.000Z",
+      "end": "2026-11-19T19:00:00.000Z",
+      "allDay": false,
+      "editedBy": "Radek",
+      "editedAt": "2026-11-16T03:10:36.027Z"
     }
   }
 }
