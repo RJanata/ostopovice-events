@@ -393,20 +393,31 @@ function mountEditForm(slot, e) {
 
   // datum a čas (prázdný čas = celodenní akce)
   const { when } = eff;
+  // datum d. m. rrrr s kalendářem od pondělí, čas jako text ve 24h formátu (nativní pole se řídí jazykem prohlížeče)
+  const startDate = DatePicker.attach(form.elements.startDate);
+  const endDate = DatePicker.attach(form.elements.endDate);
   if (when.allDay) {
-    form.elements.startDate.value = when.start;
-    form.elements.endDate.value = when.end && when.end !== when.start ? when.end : '';
+    startDate.setIso(when.start);
+    endDate.setIso(when.end && when.end !== when.start ? when.end : '');
   } else {
     const from = toPragueParts(when.start);
     const to = toPragueParts(when.end || when.start);
-    form.elements.startDate.value = from.date;
-    form.elements.startTime.value = from.time;
-    form.elements.endDate.value = to.date !== from.date ? to.date : '';
-    form.elements.endTime.value = when.end && when.end !== when.start ? to.time : '';
+    startDate.setIso(from.date);
+    form.elements.startTime.value = DatePicker.formatTime(from.time);
+    endDate.setIso(to.date !== from.date ? to.date : '');
+    form.elements.endTime.value = when.end && when.end !== when.start ? DatePicker.formatTime(to.time) : '';
+  }
+  // kalendář konce se otevře na měsíci začátku
+  const syncEndDefault = () => { endDate.dataset.defaultIso = startDate.getIso() || ''; };
+  startDate.addEventListener('change', syncEndDefault);
+  startDate.addEventListener('blur', syncEndDefault);
+  syncEndDefault();
+  for (const input of [form.elements.startTime, form.elements.endTime]) {
+    input.addEventListener('blur', () => { const t = DatePicker.parseTime(input.value); if (t) input.value = DatePicker.formatTime(t); });
   }
   form.querySelector('.admin-original-when').textContent = `Ze zdroje: ${formatWhen(baseWhen(e))}`;
 
-  const whenInputs = form.querySelectorAll('.admin-when input');
+  const whenInputs = form.querySelectorAll('.admin-when input, .admin-when button');
   const syncScope = () => {
     const series = count > 1 && form.elements.scope.value === 'series';
     whenInputs.forEach((i) => { i.disabled = series; });
@@ -489,11 +500,18 @@ function mountEditForm(slot, e) {
 
 /** Datum a čas z formuláře → { start, end, allDay } ve formátu events.json */
 function readWhen(form) {
-  const startDate = form.elements.startDate.value;
-  const startTime = form.elements.startTime.value;
-  const endDate = form.elements.endDate.value || startDate;
-  const endTime = form.elements.endTime.value;
+  const startDate = form.elements.startDate.getIso();
+  const startTime = DatePicker.parseTime(form.elements.startTime.value) || '';
+  const endDate = form.elements.endDate.getIso() || startDate;
+  const endTime = DatePicker.parseTime(form.elements.endTime.value) || '';
+  if (startDate === null) throw new Error('Neplatné datum začátku – zadejte ho jako d. m. rrrr (např. 17. 11. 2026).');
+  if (form.elements.endDate.getIso() === null) throw new Error('Neplatné datum konce – zadejte ho jako d. m. rrrr (např. 17. 11. 2026).');
   if (!startDate) throw new Error('Vyplňte datum začátku.');
+  for (const [name, label] of [['startTime', 'začátku'], ['endTime', 'konce']]) {
+    if (form.elements[name].value.trim() && !DatePicker.parseTime(form.elements[name].value)) {
+      throw new Error(`Neplatný čas ${label} – zadejte ho jako 17:00 (24hodinový formát).`);
+    }
+  }
   if (!startTime) {
     if (endTime) throw new Error('Bez času začátku je akce celodenní – smažte i čas konce, nebo doplňte čas začátku.');
     if (endDate < startDate) throw new Error('Konec akce je dřív než začátek.');

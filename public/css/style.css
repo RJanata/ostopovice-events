@@ -292,7 +292,9 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .event__time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.95rem; }
-.event__time small { display: block; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+.event__time .when { display: inline-flex; flex-direction: column; }
+.event__time .when__sep { display: none; }
+.event__time .when__to { margin-top: 2px; padding-top: 2px; border-top: 1px solid var(--border); }
 .event__when { display: none; } /* čas pod názvem jen na mobilu */
 .event__body { min-width: 0; }
 /* vpravo na kartě: stažení akce do kalendáře (.ics), za ní náhled obrázku */
@@ -331,6 +333,8 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 .event__title { margin: 0; font-size: 1.02rem; line-height: 1.35; }
 .event__title a { color: inherit; text-decoration: none; }
 .event__title a:hover { text-decoration: underline; }
+.event__title .link-icon { width: 0.8em; height: 0.8em; margin-left: 4px; vertical-align: -0.05em; stroke-width: 2.2; color: var(--muted); }
+.event__title a:hover .link-icon { color: currentColor; }
 .event__note { margin: 6px 0 0; font-size: 0.9rem; white-space: pre-line; }
 .event__meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 0.85rem; color: var(--muted); align-items: center; }
 .event__source { display: inline-flex; align-items: center; gap: 6px; }
@@ -551,7 +555,7 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
   /* čas až pod názvem (event__when), sloupec s časem skrytý */
   .event__time { display: none; }
   .event__when { display: block; margin-top: 1px; font-variant-numeric: tabular-nums; font-weight: 600; font-size: 0.85rem; }
-  .event__when small { display: inline; margin-left: 6px; font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+  .event__when .when { white-space: nowrap; }
   .event--cancelled .event__when::after { content: "Zrušeno"; margin-left: 8px; font-size: 0.75rem; color: #b3261e; font-weight: 600; }
   .event--cancelled .event__when:empty::after { margin-left: 0; }
   /* měsíc: akce jako barevné pruhy přes celou šířku dne (bez textu), vícedenní přes víc dnů */

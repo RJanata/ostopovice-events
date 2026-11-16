@@ -3,6 +3,8 @@
 // Výběr data v českém formátu (d. m. rrrr) s kalendářem od pondělí. Nativní <input type="date">
 // se řídí jazykem prohlížeče (v anglickém mm/dd/yyyy a týden od neděle), proto vlastní.
 //   DatePicker.attach(input) → input.getIso() ('' = prázdné, null = neplatné), input.setIso('2026-11-11')
+// Čas se zadává jako text ve 24h formátu (nativní <input type="time"> má v angličtině AM/PM):
+//   DatePicker.parseTime('8') → '08:00', DatePicker.formatTime('08:00') → '8:00'
 (function () {
   const MONTHS = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
   const WEEKDAYS = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
@@ -19,6 +21,17 @@
     if (date.getUTCMonth() !== mo - 1 || date.getUTCDate() !== d) return null;
     return toIso(y, mo, d);
   }
+
+  /** „8:00“, „8.00“, „800“, „8“ → "08:00"; neplatné → null */
+  function parseTime(text) {
+    const m = String(text || '').trim().match(/^(\d{1,2})(?:[:.]?(\d{2}))?$/);
+    if (!m) return null;
+    const h = Number(m[1]);
+    const min = Number(m[2] || 0);
+    if (h > 24 || min > 59 || (h === 24 && min)) return null;
+    return `${pad(h)}:${pad(min)}`;
+  }
+  const formatTime = (hhmm) => String(hhmm || '').replace(/^0(?=\d)/, '');
 
   const todayIso = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Prague', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
@@ -106,5 +119,5 @@
     return input;
   }
 
-  window.DatePicker = { attach, parse, format };
+  window.DatePicker = { attach, parse, format, parseTime, formatTime };
 })();

@@ -25,16 +25,7 @@ function escapeHtml(text) {
 }
 
 const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: TIME_ZONE, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-const formatTime = (hhmm) => hhmm.replace(/^0(?=\d)/, '');
-/** „8:00“, „8.00“, „800“, „8“ → "08:00"; neplatné → null */
-function parseTime(text) {
-  const m = String(text || '').trim().match(/^(\d{1,2})(?:[:.]?(\d{2}))?$/);
-  if (!m) return null;
-  const h = Number(m[1]);
-  const min = Number(m[2] || 0);
-  if (h > 24 || min > 59 || (h === 24 && min)) return null;
-  return `${String(h).padStart(2, '0')}:${String(min).padStart(2, '0')}`;
-}
+const { formatTime, parseTime } = DatePicker; // „8“ → "08:00", "08:00" → „8:00“
 const formatDate = (key) => `${Number(key.slice(8))}. ${Number(key.slice(5, 7))}. ${key.slice(0, 4)}`;
 const formatRange = (x) => (x.from === x.to ? formatDate(x.from) : `${formatDate(x.from)} – ${formatDate(x.to)}`);
 const formatHours = (hours) => (hours.length ? hours.map((h) => h.split('-').map((t) => t.replace(/^0(?=\d)/, '')).join('–')).join(', ') : 'zavřeno');

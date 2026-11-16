@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css?v=dev">
   <link rel="stylesheet" href="css/admin.css?v=dev">
   <script src="js/theme.js?v=dev"></script>
+  <script src="js/date-picker.js?v=dev" defer></script>
   <script src="js/admin.js?v=dev" defer></script>
 </head>
 <body>
@@ -93,9 +94,9 @@
         <legend>Datum a čas</legend>
         <div class="admin-when__row">
           <label>Od <input type="date" name="startDate"></label>
-          <label><input type="time" name="startTime"></label>
+          <label><input type="text" name="startTime" class="hours-form__time" placeholder="17:00" inputmode="numeric" aria-label="Čas začátku"></label>
           <label>do <input type="date" name="endDate"></label>
-          <label><input type="time" name="endTime"></label>
+          <label><input type="text" name="endTime" class="hours-form__time" placeholder="19:00" inputmode="numeric" aria-label="Čas konce"></label>
         </div>
         <small>Bez času = celodenní akce. Datum konce vyplňte jen u vícedenní akce. <span class="admin-original-when"></span></small>
         <small class="admin-when-series" hidden>Datum a čas lze měnit jen pro jeden termín – přepněte níže na „jen tento termín“.</small>

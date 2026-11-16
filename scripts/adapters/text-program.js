@@ -29,6 +29,13 @@ const MONTH_HEADING = /^(leden|únor|březen|duben|květen|červen|červenec|srp
 const SECTION_BREAK = /^(\*[\s*]*|_{3,}|program na rok.*|průběžně.*)$/i;
 const TIME = /\bod\s+(\d{1,2})[:.](\d{2})/i;
 
+/** „v Restauraci u Volejníků, od 16:00 hod.“ → „v Restauraci u Volejníků“ (čas je zvlášť ve startu) */
+const stripTime = (line) => line
+  .replace(/\s*\bod\s+\d{1,2}[:.]\d{2}(?:\s*(?:hod|h)\b\.?)?/gi, '')
+  .replace(/\s*,\s*(?=,|$)/g, '')
+  .replace(/^\s*,\s*/, '')
+  .trim();
+
 /** HTML → řádky textu (br a blokové prvky = nový řádek). */
 function htmlToLines(html, selector) {
   const $ = cheerio.load(html);
@@ -84,6 +91,7 @@ export async function fetchEvents(source) {
   return items.map(({ date: d, title, details }) => {
     const fullText = [d.line, title, ...details].join('\n');
     const time = fullText.match(TIME);
+    const useTime = Boolean(time) && d.start === d.end;
     const place = places.find((p) => new RegExp(p.match, 'i').test(normalize(fullText)));
     const isPlace = (part) => place && new RegExp(place.match, 'i').test(normalize(part));
     // z názvu vypustit části, které jsou zvlášť jako místo a čas („…, v Restauraci u Volejníků, od 16:00“,
@@ -97,10 +105,11 @@ export async function fetchEvents(source) {
       title: cleanTitle,
       location: place?.name || '',
       url: source.link || source.url,
-      description: details.join('\n'),
+      // čas začátku je ve startu → z popisu pryč (jinak se na webu ukazoval podruhé)
+      description: (useTime ? details.map(stripTime).filter(Boolean) : details).join('\n'),
       cancelled: /\bzrusen/i.test(normalize(fullText)),
     };
-    if (time && d.start === d.end) {
+    if (useTime) {
       const [y, m, day] = d.start.split('-').map(Number);
       const start = fromPragueTime(y, m, day, Number(time[1]), Number(time[2]));
       return { ...base, start: start.toISOString(), end: start.toISOString(), allDay: false };

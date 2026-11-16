@@ -343,19 +343,32 @@ function mobileWhen(e, day) {
   return `<div class="event__when">${text}</div>`;
 }
 
-/** Čas akce; celodenní bez „celý den“ — jednodenní prázdný, vícedenní jen rozsah dní. */
+/**
+ * Čas akce; celodenní bez „celý den“ — jednodenní prázdný, vícedenní jen rozsah dní.
+ * Začátek i konec stejným písmem; CSS je na mobilu dá vedle sebe („17:00–18:30“),
+ * na počítači pod sebe bez pomlčky, oddělené čarou.
+ */
 function timeLabel(e, day) {
+  let from;
+  let to = '';
   if (e.allDay) {
-    return e._first === e._last ? '' : `${formatShortDate(e._first)} – ${formatShortDate(e._last)}`;
+    if (e._first === e._last) return '';
+    from = formatShortDate(e._first);
+    to = formatShortDate(e._last);
+  } else {
+    const start = new Date(e.start);
+    const end = new Date(e.end || e.start);
+    if (e._first !== e._last) {
+      // první den stačí čas, další dny i datum začátku
+      from = day === e._first ? timeFormatter.format(start) : `${formatShortDate(e._first)} ${timeFormatter.format(start)}`;
+      to = `${formatShortDate(e._last)} ${timeFormatter.format(end)}`;
+    } else {
+      from = timeFormatter.format(start);
+      if (end > start) to = timeFormatter.format(end);
+    }
   }
-  const start = new Date(e.start);
-  const end = new Date(e.end || e.start);
-  if (e._first !== e._last) {
-    const from = day === e._first ? timeFormatter.format(start) : `od ${formatShortDate(e._first)}`;
-    return `${from}<small>do ${formatShortDate(e._last)} ${timeFormatter.format(end)}</small>`;
-  }
-  const endText = end > start ? `<small>– ${timeFormatter.format(end)}</small>` : '';
-  return `${timeFormatter.format(start)}${endText}`;
+  const toHtml = to ? `<span class="when__sep">–</span><span class="when__to">${to}</span>` : '';
+  return `<span class="when"><span class="when__from">${from}</span>${toHtml}</span>`;
 }
 
 function eventCard(e, day) {
@@ -366,7 +379,7 @@ function eventCard(e, day) {
     .map((c) => `<span class="tag" style="--chip-color:${escapeHtml(c.color)}">${categoryIcon(c)}${escapeHtml(c.label)}</span>`)
     .join('');
   const title = e.url
-    ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>`
+    ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}\u2060${ICON_LINK}</a>`
     : escapeHtml(e.title);
   const alsoIn = (e.alsoIn || []).map((id) => sourcesById[id]?.name).filter(Boolean);
   const description = e.description && normalize(e.description) !== normalize(e.title)
@@ -574,6 +587,8 @@ function longEventsBlock(events, from) {
 let hoursChanges = new Map();
 
 // „!“ v trojúhelníku (Tabler alert-triangle), stejně jako u výjimek na stránce otevíracích dob
+// malá ikonka za odkazem v nadpisu akce (vidět, že jde kliknout); spojovač \u2060 ji drží u posledního slova
+const ICON_LINK = '<svg class="link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>';
 const ICON_INFO = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"/><path d="M12 16h.01"/></svg>';
 
 async function loadHoursChanges() {
