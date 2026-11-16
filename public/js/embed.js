@@ -24,6 +24,11 @@
     new ResizeObserver(report).observe(document.body);
     report();
   });
+  // Pojistka: v rámečku z JINÉHO webu (kalendar.prolidiostopovice.cz na www.ostopovice.cz) Chrome
+  // ResizeObserver po prvním hlášení nedoručoval → výšku navíc kontrolovat v intervalu
+  // (zpráva odejde jen při změně, takže to nic nestojí).
+  window.addEventListener('load', report);
+  setInterval(function () { if (document.body) report(); }, 500);
 
   window.addEventListener('message', function (ev) {
     if (ev.source !== window.parent || !ev.data || ev.data.type !== 'ostopovice-calendar:ping') return;
