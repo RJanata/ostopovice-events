@@ -160,8 +160,8 @@ www.ostopovice.cz): bez záhlaví, patičky a tmavého režimu, pozadí `rgb(236
 obce, šířku i okraje dává rodičovská stránka. Písmo systémové jako u nás; na zkoušku `?font=figtree` (OFL, `public/fonts/`)
 nebo `?font=sofia` = Sofia Pro jako web obce, JEN lokální ukázka (placené písmo, web obce ho jiné
 adrese nepustí; soubory kopíruje build ukázky do `public/fonts/sofia-pro/`, ta je v `.gitignore`).
-Odkazy se otevírají v novém okně, obrázek akce taky
-(dialog by ve vysokém rámečku skončil mimo obrazovku).
+Odkazy se otevírají v novém okně. Obrázek akce se otevře ve stejném dialogu jako na webu, jen
+usazeném do části rámečku, která je právě vidět (`visibleArea()` v app.js, IntersectionObserver).
 
 Spolupráce s rodičovskou stránkou (`js/embed.js` + skript v `embed-demo/snippet-*.html`):
 - iframe se sám natáhnout neumí → embed posílá výšku obsahu zprávou `ostopovice-calendar:height`;
@@ -169,7 +169,12 @@ Spolupráce s rodičovskou stránkou (`js/embed.js` + skript v `embed-demo/snipp
 - rodič po načtení pošle `ostopovice-calendar:ping` s adresami svých stránek (`data-calendar-page`,
   `data-hours-page`) → odkazy kalendář ↔ otevírací doby („Změna otevírací doby“, akce u místa)
   vedou na stránky rodiče v celém okně, ne na kalendar.prolidiostopovice.cz,
-- `#d=…` / filtry z adresy rodičovské stránky skript předá do iframe.
+- `#d=…` / filtry z adresy rodičovské stránky skript předá do iframe,
+- otevřený obrázek akce: embed pošle `ostopovice-calendar:shade` (`on: true/false`), rodič ztmaví
+  celou stránku a iframe (ztmavený zevnitř) vyzvedne nad ztmavení (z-index; jinak by světlá zůstala
+  lišta menu a plovoucí bublina Munipolis, které leží přes rámeček). Když iframe vyzvednout nejde,
+  ztmaví se jen okolí rámečku stínem. Klepnutím vedle pošle zpět `ostopovice-calendar:close-image`.
+  Bez skriptu se ztmaví jen rámeček.
 
 Ukázka na kopii stránky obce (`embed-demo/`): stáhnout `https://www.ostopovice.cz/kalendar-akci`
 do `embed-demo/raw/page.html`, styl `style.php` do `raw/style.css` a fonty do `raw/fonts/<oid>`

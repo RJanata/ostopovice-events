@@ -52,8 +52,19 @@
     document.documentElement.dataset.font = 'sofia';
   }
 
+  // otevřený obrázek akce: rámeček si ztmaví sám sebe (::backdrop), zbytek stránky ztmaví rodič;
+  // klepnutí do jeho ztmavení obrázek zavře (zpráva close-image)
+  document.addEventListener('embed:shade', function (ev) {
+    window.parent.postMessage({ type: 'ostopovice-calendar:shade', on: !!ev.detail }, '*');
+  });
+
   window.addEventListener('message', function (ev) {
-    if (ev.source !== window.parent || !ev.data || ev.data.type !== 'ostopovice-calendar:ping') return;
+    if (ev.source !== window.parent || !ev.data) return;
+    if (ev.data.type === 'ostopovice-calendar:close-image') {
+      document.querySelectorAll('dialog[open]').forEach(function (d) { d.close(); });
+      return;
+    }
+    if (ev.data.type !== 'ostopovice-calendar:ping') return;
     if (ev.data.pages) pages = ev.data.pages;
     if (typeof ev.data.sofiaFonts === 'string') useSofia(ev.data.sofiaFonts);
     last = 0;

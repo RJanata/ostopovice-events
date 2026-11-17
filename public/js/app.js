@@ -430,9 +430,11 @@ function imageThumb(e) {
  * Celý obrázek přes stránku; zavře klepnutí kamkoli nebo Esc. Hned se ukáže už stažený
  * náhled (jinak by chvíli svítil předchozí obrázek), ostrý ho nahradí, až se stáhne.
  */
-function openImage(src, title, thumb) {
-  // ve vloženém kalendáři je iframe vysoký jako celý obsah → dialog by byl uprostřed, mimo obrazovku
-  if (document.documentElement.classList.contains('embed')) { window.open(src, '_blank', 'noopener'); return; }
+async function openImage(src, title, thumb) {
+  // ve vloženém kalendáři je iframe vysoký jako celý obsah → dialog by byl uprostřed rámečku,
+  // mimo obrazovku; usadí se proto do části rámečku, která je právě vidět
+  const area = document.documentElement.classList.contains('embed') ? await visibleArea() : null;
+  const viewHeight = area ? area.height : window.innerHeight;
   const placeholder = thumb?.currentSrc;
   let dialog = document.getElementById('image-dialog');
   if (!dialog) {
@@ -442,8 +444,11 @@ function openImage(src, title, thumb) {
     dialog.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>'
       + '<button type="button" class="image-dialog__close" aria-label="Zavřít">×</button>';
     dialog.addEventListener('click', () => dialog.close());
+    // vložený kalendář: okolní stránku ztmaví rodič (js/embed.js mu to přepošle)
+    dialog.addEventListener('close', () => document.dispatchEvent(new CustomEvent('embed:shade', { detail: false })));
     document.body.append(dialog);
   }
+  if (area) document.dispatchEvent(new CustomEvent('embed:shade', { detail: true }));
   // pokaždé nový <img>: prohlížeč by při změně src držel předchozí obrázek, než stáhne nový
   const img = document.createElement('img');
   img.referrerPolicy = 'no-referrer';
@@ -452,6 +457,11 @@ function openImage(src, title, thumb) {
   dialog.querySelector('img').replaceWith(img);
   dialog.dataset.src = src;
   dialog.querySelector('figcaption').textContent = title;
+  // výška okna pro CSS (vh by ve vloženém kalendáři byla výška celého rámečku); top + bottom
+  // s automatickými okraji vycentrují dialog ve viditelné části
+  dialog.style.setProperty('--view-h', `${viewHeight}px`);
+  dialog.style.top = area ? `${area.top}px` : '';
+  dialog.style.bottom = area ? `${window.innerHeight - area.bottom}px` : '';
   if (!placeholder || placeholder === src) {
     dialog.showModal();
     return;
@@ -459,7 +469,7 @@ function openImage(src, title, thumb) {
   // náhled roztáhnout na velikost, jakou bude mít ostrý obrázek (stejný poměr stran) → nic neposkočí
   if (thumb.naturalWidth) {
     const ratio = thumb.naturalWidth / thumb.naturalHeight;
-    img.style.width = `${Math.min(window.innerWidth * 0.94, 1100, (window.innerHeight * 0.94 - 44) * ratio)}px`;
+    img.style.width = `${Math.min(window.innerWidth * 0.94, 1100, (viewHeight * 0.94 - 44) * ratio)}px`;
   }
   dialog.showModal();
   const full = new Image();
@@ -469,6 +479,25 @@ function openImage(src, title, thumb) {
     img.src = src;
   };
   full.src = src;
+}
+
+/**
+ * Viditelná část vloženého kalendáře (souřadnice v rámečku). Rámeček nescrolluje, scrolluje
+ * stránka obce a do ní z cizí domény nevidíme — IntersectionObserver ale průnik s oknem
+ * prohlížeče hlásí i přes hranici domén. První hlášení přijde po observe() s dalším
+ * vykreslením; kdyby nepřišlo (stránka se nevykresluje), za 300 ms platí celý rámeček.
+ */
+function visibleArea() {
+  const whole = () => new DOMRect(0, 0, window.innerWidth, window.innerHeight);
+  return new Promise(resolve => {
+    const io = new IntersectionObserver(([entry]) => {
+      io.disconnect();
+      const r = entry.intersectionRect;
+      resolve(r.height > 0 ? r : whole());
+    });
+    io.observe(document.documentElement);
+    setTimeout(() => { io.disconnect(); resolve(whole()); }, 300);
+  });
 }
 
 function dayHeading(day, holidays) {

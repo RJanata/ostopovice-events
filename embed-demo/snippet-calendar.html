@@ -9,8 +9,61 @@
   var origin = new URL(frame.src).origin;
   // vybraný den / filtry z adresy stránky (např. #d=2026-11-16) předat do rámečku
   if (location.hash) frame.src = frame.src.split('#')[0] + location.hash;
+  // otevřený obrázek akce: celá stránka se ztmaví a rámeček (ztmavený zevnitř, s obrázkem) se
+  // vyzvedne nad ztmavení — i nad lištu menu a plovoucí bubliny. Klepnutí vedle obrázek zavře.
+  // Kdyby rámeček nad ztmavení vyzvednout nešlo (předek s vlastní vrstvou, např. transform),
+  // ztmaví se jen okolí rámečku stínem.
+  var DARK = 'rgba(0,0,0,0.72)';
+  var shade = null, frameStyle = null;
+  function placeHole() {
+    var r = frame.getBoundingClientRect();
+    shade.firstChild.style.cssText = 'position:absolute;left:' + r.left + 'px;top:' + r.top + 'px;width:' + r.width
+      + 'px;height:' + r.height + 'px;box-shadow:0 0 0 200vmax ' + DARK;
+  }
+  function frameOnTop() {
+    var r = frame.getBoundingClientRect();
+    var x = (Math.max(r.left, 0) + Math.min(r.right, innerWidth)) / 2;
+    var y = (Math.max(r.top, 0) + Math.min(r.bottom, innerHeight)) / 2;
+    return document.elementFromPoint(x, y) === frame;
+  }
+  function setShade(on) {
+    if (on && !shade) {
+      shade = document.createElement('div');
+      shade.style.cssText = 'position:fixed;inset:0;z-index:2147483646;overflow:hidden;cursor:zoom-out;background:' + DARK;
+      shade.appendChild(document.createElement('div'));
+      shade.addEventListener('click', function () {
+        frame.contentWindow.postMessage({ type: 'ostopovice-calendar:close-image' }, origin);
+        setShade(false);
+      });
+      document.body.appendChild(shade);
+      frameStyle = { position: frame.style.position, zIndex: frame.style.zIndex };
+      if (getComputedStyle(frame).position === 'static') frame.style.position = 'relative';
+      frame.style.zIndex = '2147483647';
+      if (!frameOnTop()) {
+        frame.style.position = frameStyle.position;
+        frame.style.zIndex = frameStyle.zIndex;
+        frameStyle = null;
+        shade.style.background = 'transparent';
+        placeHole();
+        window.addEventListener('scroll', placeHole, { passive: true });
+        window.addEventListener('resize', placeHole);
+      }
+    } else if (!on && shade) {
+      shade.remove();
+      shade = null;
+      if (frameStyle) {
+        frame.style.position = frameStyle.position;
+        frame.style.zIndex = frameStyle.zIndex;
+        frameStyle = null;
+      }
+      window.removeEventListener('scroll', placeHole);
+      window.removeEventListener('resize', placeHole);
+    }
+  }
   window.addEventListener('message', function (ev) {
-    if (ev.source !== frame.contentWindow || !ev.data || ev.data.type !== 'ostopovice-calendar:height') return;
+    if (ev.source !== frame.contentWindow || !ev.data) return;
+    if (ev.data.type === 'ostopovice-calendar:shade') setShade(ev.data.on);
+    if (ev.data.type !== 'ostopovice-calendar:height') return;
     frame.style.height = ev.data.height + 'px';
   });
   frame.addEventListener('load', function () {

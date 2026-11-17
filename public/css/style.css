@@ -316,12 +316,12 @@ svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-wi
 
 /* celý obrázek akce přes stránku */
 .image-dialog {
-  max-width: min(94vw, 1100px); max-height: 94vh; padding: 0; border: 0; border-radius: 10px;
+  max-width: min(94vw, 1100px); max-height: calc(var(--view-h, 100vh) * 0.94); padding: 0; border: 0; border-radius: 10px;
   background: var(--surface); color: var(--text); box-shadow: 0 10px 40px rgb(0 0 0 / 0.35); cursor: zoom-out;
 }
 .image-dialog::backdrop { background: rgb(0 0 0 / 0.72); }
 .image-dialog figure { margin: 0; }
-.image-dialog img { display: block; max-width: 100%; max-height: calc(94vh - 44px); margin: 0 auto; object-fit: contain; }
+.image-dialog img { display: block; max-width: 100%; max-height: calc(var(--view-h, 100vh) * 0.94 - 44px); margin: 0 auto; object-fit: contain; }
 .image-dialog figcaption { padding: 10px 44px 12px 14px; font-weight: 600; font-size: 0.95rem; }
 .image-dialog__close {
   position: absolute; top: 6px; right: 6px; width: 34px; height: 34px; border: 0; border-radius: 50%;
