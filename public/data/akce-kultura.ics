@@ -409,6 +409,19 @@ DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Církev,Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
+UID:knihovna-qt54mf@ostopovice-events
+DTSTAMP:20261117T001528Z
+DTSTART:20270116T080000Z
+DTEND:20270116T150000Z
+SUMMARY:Píšu\, kreslím. Záznamy každodennosti / deníkový workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Workshop zaměřený na kreativní psaní se spisovatelkou Mark
+ étou Pilátovou a ilustrátorkou Andreou Tachezy.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ isu-kreslim-zaznamy-kazdodennosti-denikovy-workshop
+CATEGORIES:Kultura/Umění
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-151pfly@ostopovice-events
 DTSTAMP:20261008T142643Z
 DTSTART;VALUE=DATE:20270205

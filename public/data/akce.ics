@@ -8,39 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-szvdeo@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260917T130000Z
-DTEND:20260917T150000Z
-SUMMARY:Knihovna dětem
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
- ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
- jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
- knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
- st.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
- nihovna-detem-2026-09-17-15-00
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-11nudir@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260917T160000Z
-DTEND:20260917T180000Z
-SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
-  sv. Jakuba I.
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:První část přednášky Aleše Svobody o nejbizarnějším n
- álezu brněnského podzemí. Historie objevení kostnice pod bývalým sv
- atojakubským hřbitovem\, který byl založen na místě dnešního Jakub
- ského náměstí i zajímavosti související s pohřbíváním a pohřeb
- ními rituály.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
- ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-i
-CATEGORIES:Vzdělávání
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-57htld@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260918T063000Z
@@ -365,18 +332,6 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -388,6 +343,18 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1423,20 +1390,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/c
 CATEGORIES:Kultura/Umění,Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
-UID:knihovna-305viz@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261118T073000Z
-DTEND:20261118T084000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-11-18-08-30
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-1ukocgo@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261118T170000Z
@@ -1471,22 +1424,6 @@ DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-8l3x3a@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261119T140000Z
-DTEND:20261119T160000Z
-SUMMARY:Knihovna dětem
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
- ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
- jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
- knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
- st.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
- nihovna-detem-2026-11-19-15-00
-CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:skola-12aeqy8@ostopovice-events
@@ -2397,6 +2334,19 @@ SUMMARY:Obecní ples
 LOCATION:Sokolovna
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Zábava
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-qt54mf@ostopovice-events
+DTSTAMP:20261117T001528Z
+DTSTART:20270116T080000Z
+DTEND:20270116T150000Z
+SUMMARY:Píšu\, kreslím. Záznamy každodennosti / deníkový workshop
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Workshop zaměřený na kreativní psaní se spisovatelkou Mark
+ étou Pilátovou a ilustrátorkou Andreou Tachezy.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
+ isu-kreslim-zaznamy-kazdodennosti-denikovy-workshop
+CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-8n0zo0@ostopovice-events

@@ -3247,8 +3247,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-s3etba",
@@ -3332,8 +3332,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-7r5spe",
@@ -3349,8 +3349,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-1hielbe",
@@ -3504,8 +3504,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "skola-18rk5l9",
@@ -3521,8 +3521,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-12T20:49:02.880Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-10-12T20:49:02.880Z"
   },
   {
    "id": "knihovna-99mghm",
@@ -3877,6 +3877,22 @@
    "added": "2026-10-08T08:57:48.000Z"
   },
   {
+   "id": "nezarazene-qi21ye",
+   "source": "nezarazene",
+   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
+   "start": "2026-10-07T16:30:00.000Z",
+   "end": "2026-10-07T16:30:00.000Z",
+   "allDay": false,
+   "location": "Restaurace U Volejníků",
+   "url": "https://www.facebook.com/events/1454231353296252",
+   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
+   "image": "",
+   "categories": [
+    "ostatni"
+   ],
+   "added": "2026-10-08T02:28:26.000Z"
+  },
+  {
    "id": "nezarazene-62g964",
    "source": "nezarazene",
    "title": "Cvičení ženy",
@@ -3896,22 +3912,6 @@
     "sport"
    ],
    "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "nezarazene-qi21ye",
-   "source": "nezarazene",
-   "title": "Společně pro Ostopovice: Společně na pivo (nebo limo)",
-   "start": "2026-10-07T16:30:00.000Z",
-   "end": "2026-10-07T16:30:00.000Z",
-   "allDay": false,
-   "location": "Restaurace U Volejníků",
-   "url": "https://www.facebook.com/events/1454231353296252",
-   "description": "Zaujal vás náš volební program, chcete se na něco zeptat nebo jen poznat naše kandidátky a kandidáty?Tak se za námi zastavte! Těšíme se na viděnou!",
-   "image": "",
-   "categories": [
-    "ostatni"
-   ],
-   "added": "2026-10-08T02:28:26.000Z"
   },
   {
    "id": "knihovna-nmnfay",
@@ -5059,8 +5059,8 @@
     "kultura",
     "cirkev"
    ],
-   "added": "2026-10-23T15:06:27.836Z",
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
+   "added": "2026-10-23T15:06:27.836Z"
   },
   {
    "id": "nezarazene-1twvpnd",
@@ -5491,10 +5491,10 @@
    "categories": [
     "obec"
    ],
-   "added": "2026-11-09T12:54:20.903Z",
    "hidden": true,
    "long": true,
-   "originalLong": null
+   "originalLong": null,
+   "added": "2026-11-09T12:54:20.903Z"
   },
   {
    "id": "skola-1hropan",
@@ -5510,12 +5510,12 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-10-28T09:38:45.482Z",
    "note": "Srdečně Vás zveme na charitativní polévku ve stodole! Naši druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Přineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetříte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.",
    "originalLocation": "",
    "originalStart": "2026-11-16",
    "originalEnd": "2026-11-16",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-28T09:38:45.482Z"
   },
   {
    "id": "obec-o1n869",
@@ -5531,8 +5531,8 @@
    "categories": [
     "deti"
    ],
-   "added": "2026-11-16T11:03:13.794Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-16T11:03:13.794Z"
   },
   {
    "id": "svatky-1nmjbe3",
@@ -5564,11 +5564,11 @@
     "deti",
     "obec"
    ],
-   "added": "2026-11-06T17:25:51.053Z",
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T17:25:51.053Z"
   },
   {
    "id": "nezarazene-1ixvp6o",
@@ -5592,12 +5592,12 @@
     "kultura",
     "obec"
    ],
-   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T11:01:38.483Z"
   },
   {
    "id": "knihovna-xruv7p",
@@ -5615,23 +5615,6 @@
     "vzdelavani"
    ],
    "added": "2026-10-25T14:23:35.477Z"
-  },
-  {
-   "id": "knihovna-305viz",
-   "source": "knihovna",
-   "title": "Lit jóga",
-   "start": "2026-11-18T07:30:00.000Z",
-   "end": "2026-11-18T08:40:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/lit-joga-2026-11-18-08-30",
-   "description": "Základy hatha a fyzio jógy, principy zdravého pohybu s Adélou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).",
-   "image": "https://static.wixstatic.com/media/11062b_2da359218b49441cad60711d3ec8b3c8~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
   },
   {
    "id": "nezarazene-1ukocgo",
@@ -5695,23 +5678,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "knihovna-8l3x3a",
-   "source": "knihovna",
-   "title": "Knihovna dětem",
-   "start": "2026-11-19T14:00:00.000Z",
-   "end": "2026-11-19T16:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/knihovna-detem-2026-11-19-15-00",
-   "description": "Čas, kdy otevíráme dveře všem dětem, které u nás chtějí pobýt, ať už s rodiči, prarodiči nebo kamarády. K dispozici jsou deskovky, knihy a materiály k tvoření pro volnou zábavu i naše knihovnice Markéta s inspirací a programem pro zájemce o vedenou činnost.",
-   "image": "https://static.wixstatic.com/media/6e4a73_02b3cb2084f7491098ee3d19c8b27c96~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "skola-12aeqy8",
    "source": "skola",
    "title": "Chleba s máslem - o škole po škole",
@@ -5727,8 +5693,8 @@
     "tvoreni",
     "deti"
    ],
-   "added": "2026-10-27T20:43:48.297Z",
-   "originalEnd": "2026-11-19T17:00:00.000Z"
+   "originalEnd": "2026-11-19T17:00:00.000Z",
+   "added": "2026-10-27T20:43:48.297Z"
   },
   {
    "id": "knihovna-5a999r",
@@ -5858,8 +5824,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "knihovna-86zh07",
@@ -5913,34 +5879,13 @@
    "categories": [
     "tvoreni"
    ],
-   "added": "2026-11-06T17:25:51.053Z",
    "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
    "originalTitle": "Adventní dílna",
    "originalLocation": "",
    "originalStart": "2026-11-25",
    "originalEnd": "2026-11-25",
-   "originalAllDay": true
-  },
-  {
-   "id": "nezarazene-1uclek6",
-   "source": "nezarazene",
-   "title": "Adventní dílna s Monikou Stoklasovou",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T17:00:00.000Z",
-   "allDay": false,
-   "location": "Knihovna Ostopovice",
-   "url": "https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqaenoPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l",
-   "description": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace. Více informací na odkaze.",
-   "image": "",
-   "icon": "christmas-tree",
-   "tagCategories": [
-    "tvoreni"
-   ],
-   "categories": [
-    "tvoreni"
-   ],
-   "added": "2026-11-06T10:48:43.168Z",
-   "hidden": true
+   "originalAllDay": true,
+   "added": "2026-11-06T17:25:51.053Z"
   },
   {
    "id": "nezarazene-1lcdi2k",
@@ -5961,6 +5906,27 @@
     "cirkev"
    ],
    "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
+   "id": "nezarazene-1uclek6",
+   "source": "nezarazene",
+   "title": "Adventní dílna s Monikou Stoklasovou",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna Ostopovice",
+   "url": "https://www.facebook.com/Ostopovice/posts/pfbid02RBuQw1em38ib1Vj1rxDqaenoPeRPcJpAgeiJTSRFPKAh2qTjWeESYzKiZhwtfxq8l",
+   "description": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace. Více informací na odkaze.",
+   "image": "",
+   "icon": "christmas-tree",
+   "tagCategories": [
+    "tvoreni"
+   ],
+   "categories": [
+    "tvoreni"
+   ],
+   "hidden": true,
+   "added": "2026-11-06T10:48:43.168Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -6071,12 +6037,12 @@
     "deti",
     "kultura"
    ],
-   "added": "2026-10-28T09:38:45.482Z",
    "originalTitle": "Adventní jarmark",
    "originalLocation": "",
    "originalStart": "2026-11-29",
    "originalEnd": "2026-11-29",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-10-28T09:38:45.482Z"
   },
   {
    "id": "nezarazene-1ytvbob",
@@ -7131,8 +7097,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1u78fs0",
@@ -7210,6 +7176,22 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
+   "id": "knihovna-qt54mf",
+   "source": "knihovna",
+   "title": "Píšu, kreslím. Záznamy každodennosti / deníkový workshop",
+   "start": "2027-01-16T08:00:00.000Z",
+   "end": "2027-01-16T15:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pisu-kreslim-zaznamy-kazdodennosti-denikovy-workshop",
+   "description": "Workshop zaměřený na kreativní psaní se spisovatelkou Markétou Pilátovou a ilustrátorkou Andreou Tachezy.",
+   "image": "https://static.wixstatic.com/media/375cf2e2eaa9491dab9792f3477206c9.jpg",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-11-17T00:15:28.587Z"
+  },
+  {
    "id": "knihovna-8n0zo0",
    "source": "knihovna",
    "title": "Lit jóga",
@@ -7277,8 +7259,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-151pfly",
@@ -7387,8 +7369,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-qixv86",
@@ -7451,8 +7433,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-1vg2pxf",
@@ -7751,8 +7733,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "svatky-1jy7eop",
@@ -7924,8 +7906,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1beoxjv",
@@ -8079,8 +8061,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -8115,8 +8097,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-9e8v1n",
@@ -8168,8 +8150,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-1qgbc5a",
@@ -8237,8 +8219,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-8mppx6",
@@ -8331,8 +8313,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "seniori-13wrk4h",
@@ -8481,8 +8463,8 @@
    "categories": [
     "seniori"
    ],
-   "added": "2026-11-04T23:15:22.171Z",
-   "hidden": false
+   "hidden": false,
+   "added": "2026-11-04T23:15:22.171Z"
   },
   {
    "id": "pripravovane-505sqn",
