@@ -203,40 +203,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-eisw0c",
-   "source": "knihovna",
-   "title": "English Time for Little Ones / angličtina pro nejmenší s rodiči",
-   "start": "2025-10-13T08:00:00.000Z",
-   "end": "2025-10-13T09:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/english-time-for-little-ones-anglictina-pro-nejmensi-s-rodici-2025-10-13-10-00",
-   "description": "Hravý kurz angličtiny určený pro děti od 1 do 4 let v doprovodu rodičů. Společně se ponoříme do světa anglického příběhu, který si nejen přečteme, ale i prožijeme skrze pohybové hry, písničky a jednoduché tvoření.",
-   "image": "https://static.wixstatic.com/media/6e4a73_e86924b6dccb43059ccace9f1c216536~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "vzdelavani",
-    "deti"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
-   "id": "knihovna-ilaa21",
-   "source": "knihovna",
-   "title": "Stop úrazům / interaktivní preventivní přednáška",
-   "start": "2025-10-13T16:00:00.000Z",
-   "end": "2025-10-13T17:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/stop-urazum-interaktivni-preventivni-prednaska",
-   "description": "Napadlo vás někdy, jaké to je žít s ochrnutím? Věděli jste, že být vozíčkářem neznamená jen nehýbat nohama? Kolo, motorka, lyže, skoky do vody, automobil... nejen tady může pár vteřin definovat zbytek života.",
-   "image": "https://static.wixstatic.com/media/949c5aef51724256b31ea56be6b3690c.jpg",
-   "categories": [
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-bepbig",
    "source": "knihovna",
    "title": "Pilates & zdravá záda",
@@ -5553,7 +5519,7 @@
    "source": "obec",
    "title": "Oslavy 17. listopadu - lampionový průvod",
    "start": "2026-11-17T16:00:00.000Z",
-   "end": "2026-11-17T16:00:00.000Z",
+   "end": "2026-11-17T18:00:00.000Z",
    "allDay": false,
    "location": "",
    "url": "https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-pruvod",
@@ -6359,6 +6325,25 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
+  },
+  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6379,25 +6364,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
@@ -7299,6 +7265,22 @@
     "kultura"
    ],
    "added": "2026-11-04T23:15:22.171Z"
+  },
+  {
+   "id": "knihovna-1vjgdu5",
+   "source": "knihovna",
+   "title": "Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u sv. Jakuba III.",
+   "start": "2027-03-04T17:00:00.000Z",
+   "end": "2027-03-04T19:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/tajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-iii",
+   "description": "Třetí část přednášky Aleše Svobody o nejbizarnějším nálezu brněnského podzemí. Historie objevení kostnice pod bývalým svatojakubským hřbitovem, který byl založen na místě dnešního Jakubského náměstí, i zajímavosti související s pohřbíváním a pohřebními rituály.",
+   "image": "https://static.wixstatic.com/media/6e4a73_844158cb120744f1adca110551034ed7~mv2.jpg",
+   "categories": [
+    "vzdelavani"
+   ],
+   "added": "2026-11-17T23:31:29.219Z"
   },
   {
    "id": "pripravovane-o73ikv",

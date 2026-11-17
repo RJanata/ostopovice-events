@@ -8,20 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-57htld@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260918T063000Z
-DTEND:20260918T074000Z
-SUMMARY:Lit jóga
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Základy hatha a fyzio jógy\, principy zdravého pohybu s Adé
- lou Rujzl. Děti jako doprovod vítány. Vstupné 100 Kč (dítě zdarma).
- \n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- it-joga-2026-09-18-08-30
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:sokol-r9judn@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20260920T090000Z
@@ -1362,7 +1348,7 @@ BEGIN:VEVENT
 UID:obec-3uu75f@ostopovice-events
 DTSTAMP:20261106T172551Z
 DTSTART:20261117T160000Z
-DTEND:20261117T160000Z
+DTEND:20261117T180000Z
 SUMMARY:Oslavy 17. listopadu - lampionový průvod
 DESCRIPTION:17:00 lampionový průvod (Kaple) | 17:30 pietní shromážděn
  í (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 proj
@@ -1875,16 +1861,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-mcnjny@ostopovice-events
-DTSTAMP:20261012T101029Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Svoz pytlového odpadu
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
 DTSTAMP:20261112T100031Z
 DTSTART;VALUE=DATE:20261208
@@ -1893,6 +1869,16 @@ SUMMARY:Den otevřených dveří ve škole
 LOCATION:ZŠ/MŠ Ostopovice
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
@@ -2417,6 +2403,23 @@ DESCRIPTION:komentovaná prohlídka\, židovské památky a synagoga\, tech
  nické památky\, vily atd.\n\nZdroj: Klub seniorů
 URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura/Umění
+END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1vjgdu5@ostopovice-events
+DTSTAMP:20261117T233129Z
+DTSTART:20270304T170000Z
+DTEND:20270304T190000Z
+SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
+  sv. Jakuba III.
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Třetí část přednášky Aleše Svobody o nejbizarnějším 
+ nálezu brněnského podzemí. Historie objevení kostnice pod bývalým s
+ vatojakubským hřbitovem\, který byl založen na místě dnešního Jaku
+ bského náměstí\, i zajímavosti související s pohřbíváním a poh
+ řebními rituály.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-iii
+CATEGORIES:Vzdělávání
 END:VEVENT
 BEGIN:VEVENT
 UID:pripravovane-o73ikv@ostopovice-events

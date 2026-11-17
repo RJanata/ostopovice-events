@@ -21,12 +21,6 @@
  ],
  "important": [
   {
-   "day": "2026-11-10",
-   "time": "",
-   "title": "Svoz pytlového odpadu",
-   "icon": "moneybag"
-  },
-  {
    "day": "2026-11-11",
    "time": "",
    "title": "Svoz komunálního odpadu",
@@ -120,11 +114,6 @@
     "instagram": "https://www.instagram.com/knihovna_ostopovice/"
    },
    "events": [
-    {
-     "day": "2026-11-10",
-     "time": "16:00",
-     "title": "Beseda, setkání a oslava jubilejí seniorů"
-    },
     {
      "day": "2026-11-11",
      "time": "8:30",
@@ -304,6 +293,11 @@
      "day": "2027-02-03",
      "time": "18:00",
      "title": "Výborová schůze"
+    },
+    {
+     "day": "2027-03-04",
+     "time": "18:00",
+     "title": "Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u sv. Jakuba III."
     }
    ]
   },

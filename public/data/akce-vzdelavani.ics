@@ -284,4 +284,21 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/e
  1-11-10-00
 CATEGORIES:Vzdělávání,Pro děti
 END:VEVENT
+BEGIN:VEVENT
+UID:knihovna-1vjgdu5@ostopovice-events
+DTSTAMP:20261117T233129Z
+DTSTART:20270304T170000Z
+DTEND:20270304T190000Z
+SUMMARY:Tajemství brněnského podzemí: Jakubské náměstí a Kostnice u
+  sv. Jakuba III.
+LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
+DESCRIPTION:Třetí část přednášky Aleše Svobody o nejbizarnějším 
+ nálezu brněnského podzemí. Historie objevení kostnice pod bývalým s
+ vatojakubským hřbitovem\, který byl založen na místě dnešního Jaku
+ bského náměstí\, i zajímavosti související s pohřbíváním a poh
+ řebními rituály.\n\nZdroj: Knihovna
+URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
+ ajemstvi-brnenskeho-podzemi-jakubske-namesti-a-kostnice-u-sv-jakuba-iii
+CATEGORIES:Vzdělávání
+END:VEVENT
 END:VCALENDAR
