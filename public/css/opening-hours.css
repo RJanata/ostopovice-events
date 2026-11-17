@@ -1,6 +1,10 @@
 /* Otevírací doby — doplněk ke style.css (stejné barvy, karty jako akce) */
 
 :root { --exception: #b45309; --open: #2f6b47; }
+/* šířka jedné doby („11:00–22:00“) — sloupce, ať jsou časy pod sebou; Sofia Pro (web obce) je o 10 % širší */
+:root { --interval-w: 5.3em; --card-min: 245px; }
+/* nejužší karta týdne = název dne + dvě doby vedle sebe */
+.embed[data-font="sofia"] { --interval-w: 5.85em; --card-min: 270px; }
 :root[data-theme="dark"] { --exception: #f0a24b; --open: #7fc79a; }
 
 .hours-tools {
@@ -24,7 +28,7 @@
 
 /* karty vedle sebe: na počítači 3–4, na mobilu 2. Každá karta má pět částí (název, podřádek,
    dny, poznámky, kontakty) na sdílených řádcích mřížky (subgrid) → dny v řadě začínají na stejné výšce */
-.hours-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(245px, 1fr)); column-gap: 12px; row-gap: 0; }
+.hours-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr)); column-gap: 12px; row-gap: 0; }
 
 .hours-card {
   display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 6px; min-width: 0;
@@ -117,8 +121,8 @@
 .hours-day--two .hours-day__times {
   /* sloupce pevné šířky (časy pod sebou); mezera mezi dopolednem a odpolednem až 1.8em, v užším
      panelu jen tolik, kolik zbývá (100 % − dva sloupce), ať odpolední časy nepřetékají */
-  display: grid; grid-template-columns: repeat(2, 5.3em); justify-content: end;
-  column-gap: clamp(0.5em, calc(100% - 10.6em), 1.8em);
+  display: grid; grid-template-columns: repeat(2, var(--interval-w)); justify-content: end;
+  column-gap: clamp(0.5em, calc(100% - 2 * var(--interval-w)), 1.8em);
 }
 .hours-day--two .hours-day__closed { grid-column: 1 / -1; justify-self: end; }
 .hours-day__interval { white-space: nowrap; }
@@ -151,7 +155,7 @@
    rozložení řádků stejné jako na počítači — i s daty u dnů */
 @media (max-width: 640px) {
   .hours-tools { margin: 10px 0 12px; }
-  .hours-cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); column-gap: 10px; }
+  .hours-cards { grid-template-columns: repeat(auto-fill, minmax(max(260px, var(--card-min)), 1fr)); column-gap: 10px; }
   .hours-card { margin-bottom: 10px; }
 }
 }
@@ -189,7 +193,10 @@
   display: grid; grid-template-columns: 22px minmax(0, 12em) 6.4em minmax(max-content, 1fr); column-gap: 10px; align-items: baseline;
   padding: 6px 6px; margin: 0 -6px; border-radius: 6px; font-size: 0.92rem;
 }
-.today-row + .today-row { border-top: 1px solid var(--border); }
+/* oddělovač řádků jako samostatná čára: border-top by se kvůli zaobleným rohům (zvýraznění dneška,
+   hover) na koncích ohýbal */
+.today-row + .today-row { position: relative; }
+.today-row + .today-row::before { content: ""; position: absolute; top: 0; left: 0; right: 0; border-top: 1px solid var(--border); }
 .today-row__icon { align-self: center; display: inline-grid; }
 .today-row__icon .cat-icon { width: 20px; height: 20px; background: var(--heading); }
 .today-row__icon .source-icon { width: 20px; height: 20px; }
@@ -213,15 +220,14 @@
 /* řádky pod místem (akce, poznámka, běžná doba) nesmí šířkou ovlivnit sloupce — dlouhý název akce
    by roztáhl sloupec s dobou (max-content), zúžil název a fazolka by ujela ze zarovnání */
 .today-row__events, .today-row .hours-day__note, .today-row .hours-day__details { contain: inline-size; }
-.today-row.hours-day--expandable:hover { background: var(--surface-2); }
 .hours-tools--week { margin-top: 0; justify-content: flex-end; }
 
 /* jeden široký sloupec panelů (seznam pod 2 × 480 px + mezera, nad šířkou telefonu): název do zbytku
    místa, fazolka a doba v pevných sloupcích vpravo → fazolka u doby, ne hned za názvem vlevo */
 .today__list { container: today-list / inline-size; }
 @container today-list (min-width: 609px) and (max-width: 971.98px) {
-  /* doba 12em = dvě doby (2 × 5.3em) a odstup od fazolky */
-  .today-row { grid-template-columns: 22px minmax(0, 1fr) 6.4em 12em; }
+  /* dvě doby (2 × --interval-w) a odstup od fazolky */
+  .today-row { grid-template-columns: 22px minmax(0, 1fr) 6.4em calc(2 * var(--interval-w) + 1.4em); }
 }
 
 @media (max-width: 640px) {
@@ -235,9 +241,9 @@
    sloupec fazolky = nejširší fazolka („ještě 45 min“), doba = nejdelší jedna doba (11:00–22:00) */
 @container today-list (max-width: 608.98px) {
   /* volné místo si dělí název a doba (1.4 : 1) → fazolka zhruba uprostřed, ne nalepená na době;
-     doba min. 6.6em = nejdelší doba i s výstrahou (⚠ 12:00–15:00). Šířky nezávisí na obsahu,
+     doba min. --interval-w + 1.3em = nejdelší doba i s výstrahou (⚠ 12:00–15:00). Šířky nezávisí na obsahu,
      takže fazolky zůstanou ve všech řádcích pod sebou. */
-  .today-row { grid-template-columns: 22px minmax(0, 1.4fr) 5.4em minmax(6.6em, 1fr); column-gap: 8px; }
+  .today-row { grid-template-columns: 22px minmax(0, 1.4fr) 5.4em minmax(calc(var(--interval-w) + 1.3em), 1fr); column-gap: 8px; }
   .today-row__times { justify-self: end; }
   /* dvě doby (pošta, úřad) se do sloupce nevejdou → na druhý řádek pod název */
   .today-row--wide .today-row__times { grid-column: 2 / -1; grid-row: 2; }
@@ -247,7 +253,7 @@
 }
 /* telefon na výšku: každý pixel pro název, fazolka a doba v nejužších pevných sloupcích */
 @container today-list (max-width: 400px) {
-  .today-row { grid-template-columns: 22px minmax(0, 1fr) 5.2em 5.6em; }
+  .today-row { grid-template-columns: 22px minmax(0, 1fr) 5.2em calc(var(--interval-w) + 0.3em); }
 }
 
 /* záložky Dnes / Zítra / Celý týden: každá přesně třetina šířky */
