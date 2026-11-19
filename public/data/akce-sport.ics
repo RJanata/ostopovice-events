@@ -8,18 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:sokol-r9judn@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260920T090000Z
-DTEND:20260920T101500Z
-SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Avia 
- Čakovice
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Výsledek: 22:17\n\nZdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-99mghm@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260921T170000Z

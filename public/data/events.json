@@ -203,23 +203,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-bepbig",
-   "source": "knihovna",
-   "title": "Pilates & zdravá záda",
-   "start": "2025-10-15T17:00:00.000Z",
-   "end": "2025-10-15T18:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/pilates-zdrava-zada-2025-10-15-19-00",
-   "description": "Pravidelné pondělní lekce pilates pro zdravá záda s lektorkou Marií Pražákovou. Cena za lekci je 100,-, prosíme o platbu v hotovosti na místě. Vlastní podložku s sebou.\n\nKapacita sálu je omezená, prosíme nejlépe o rezervaci místa předem vyplněním formuláře zde.\n\nKontakt na lektorku: 723 370 423",
-   "image": "https://static.wixstatic.com/media/6e4a73_acb7384564b8458aa26d817ed39d2dfc~mv2.jpg",
-   "recurring": true,
-   "categories": [
-    "sport"
-   ],
-   "added": "2026-10-08T02:14:18.000Z"
-  },
-  {
    "id": "knihovna-vvag70",
    "source": "knihovna",
    "title": "Hravý klub pro školčátka (3-6)",
@@ -5854,26 +5837,6 @@
    "added": "2026-11-06T17:25:51.053Z"
   },
   {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
-  },
-  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -5893,6 +5856,26 @@
    ],
    "hidden": true,
    "added": "2026-11-06T10:48:43.168Z"
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",

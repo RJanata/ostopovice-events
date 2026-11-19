@@ -8,34 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:sokol-r9judn@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260920T090000Z
-DTEND:20260920T101500Z
-SUMMARY:Národní házená: 1. liga muži · Sokol Ostopovice – TJ Avia 
- Čakovice
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Výsledek: 22:17\n\nZdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
-UID:knihovna-1cms3ic@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260920T170000Z
-DTEND:20260920T180000Z
-SUMMARY:Listování: Legenda Z+H
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:LiStOVáNí vyjímá z pestrobarevné žánrové palety jednu v
- ýjimku – cestopis. Navíc\, jeho autory jsou opravdové legendy\, Miros
- lav Zikmund a Jiří Hanzelka. Popasovat se s knihami\, které více než 
- po padesáti letech upravil Miroslav Zikmund\, je opravdová výzva.\n\nZd
- roj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
- istovani-legenda-z-h
-CATEGORIES:Kultura/Umění
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-18abbrb@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20260921T140000Z
