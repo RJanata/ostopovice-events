@@ -269,4 +269,14 @@ SUMMARY:Tříkrálová sbírka
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Církev
 END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-zjaazp@ostopovice-events
+DTSTAMP:20261119T131230Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Betlémské světlo
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev
+END:VEVENT
 END:VCALENDAR
