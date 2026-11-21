@@ -101,18 +101,6 @@ URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
-UID:sokol-zrf819@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261003T070000Z
-DTEND:20261003T081500Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice B 
- – TJ Sokol Ostopovice A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Výsledek: 3:7\n\nZdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:sokol-ydh7ke@ostopovice-events
 DTSTAMP:20261121T124108Z
 DTSTART:20261003T075400Z
@@ -133,18 +121,6 @@ SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A
  – TJ Sokol Vracov
 LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 8:9\n\nZdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-x9issi@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261003T090600Z
-DTEND:20261003T102100Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice B 
- – 1. NH BRNO
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Výsledek: 6:5\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
@@ -599,102 +575,6 @@ DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-5tjic@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T081300Z
-DTEND:20261122T092800Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice B 
- – TJ Sokol Ostopovice A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1ywxzsh@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T085200Z
-DTEND:20261122T100700Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice B 
- – 1. NH BRNO
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1y2z6pk@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T090500Z
-DTEND:20261122T102000Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A 
- – TJ Sokol Vracov B
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1go3ni@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T095700Z
-DTEND:20261122T111200Z
-SUMMARY:Národní házená: Mladší přípravka · TJ Sokol Ostopovice –
-  TJ Miroslav A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1sjaac3@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T095700Z
-DTEND:20261122T111200Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A 
- – TJ Miroslav
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1ur73vv@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T114100Z
-DTEND:20261122T125600Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice B 
- – Draken Brno
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-16lcgk@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T120700Z
-DTEND:20261122T132200Z
-SUMMARY:Národní házená: Mladší přípravka · TJ Sokol Ostopovice –
-  TJ Sokol Vracov A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-wwa4rc@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T120700Z
-DTEND:20261122T132200Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A 
- – TJ Sokol Vracov A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1qmi2ry@ostopovice-events

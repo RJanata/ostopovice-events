@@ -259,30 +259,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/r
 CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
-UID:sokol-1go3ni@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T095700Z
-DTEND:20261122T111200Z
-SUMMARY:Národní házená: Mladší přípravka · TJ Sokol Ostopovice –
-  TJ Miroslav A
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-1sjaac3@ostopovice-events
-DTSTAMP:20261121T124108Z
-DTSTART:20261122T095700Z
-DTEND:20261122T111200Z
-SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A 
- – TJ Miroslav
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-86zh07@ostopovice-events
 DTSTAMP:20261030T204918Z
 DTSTART:20261124T170000Z
