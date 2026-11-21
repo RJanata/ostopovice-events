@@ -279,4 +279,14 @@ LOCATION:Kaple sv. Jana Křtitele
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Církev
 END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-eqtgwy@ostopovice-events
+DTSTAMP:20261121T124108Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Výstava ostopovického betlému
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev,Kultura/Umění
+END:VEVENT
 END:VCALENDAR

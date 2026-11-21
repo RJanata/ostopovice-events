@@ -18,6 +18,18 @@ URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
 CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
+UID:sokol-11vj6c@ostopovice-events
+DTSTAMP:20261121T124108Z
+DTSTART:20261003T070000Z
+DTEND:20261003T081500Z
+SUMMARY:Národní házená: Mladší přípravka · TJ Sokol Ostopovice –
+  TJ Miroslav
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
+DESCRIPTION:Výsledek: 14:1\n\nZdroj: TJ Sokol
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:knihovna-1nuh5w8@ostopovice-events
 DTSTAMP:20261007T224336Z
 DTSTART:20261003T160000Z
@@ -245,6 +257,30 @@ DESCRIPTION:Hudba má blahodárný vliv na náš nervový systém. Pomáhá
 URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/r
  adost-je-biologicka-nutnost
 CATEGORIES:Kultura/Umění
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1go3ni@ostopovice-events
+DTSTAMP:20261121T124108Z
+DTSTART:20261122T095700Z
+DTEND:20261122T111200Z
+SUMMARY:Národní házená: Mladší přípravka · TJ Sokol Ostopovice –
+  TJ Miroslav A
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
+DESCRIPTION:Zdroj: TJ Sokol
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:sokol-1sjaac3@ostopovice-events
+DTSTAMP:20261121T124108Z
+DTSTART:20261122T095700Z
+DTEND:20261122T111200Z
+SUMMARY:Národní házená: Starší přípravka · TJ Sokol Ostopovice A 
+ – TJ Miroslav
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
+DESCRIPTION:Zdroj: TJ Sokol
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-86zh07@ostopovice-events
@@ -567,5 +603,15 @@ SUMMARY:Adventní jarmark a rozsvícení vánočního stromečku
 LOCATION:U Kaple
 DESCRIPTION:Zdroj: Připravované akce
 CATEGORIES:Pro děti,Kultura/Umění
+END:VEVENT
+BEGIN:VEVENT
+UID:pripravovane-eqtgwy@ostopovice-events
+DTSTAMP:20261121T124108Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Výstava ostopovického betlému
+LOCATION:Kaple sv. Jana Křtitele
+DESCRIPTION:Zdroj: Připravované akce
+CATEGORIES:Pro děti,Církev,Kultura/Umění
 END:VEVENT
 END:VCALENDAR
