@@ -203,24 +203,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-1j074ty",
-   "source": "knihovna",
-   "title": "Mikro-teatro: Když na podzim vlaštovičky / divadlo pro děti",
-   "start": "2025-10-17T14:30:00.000Z",
-   "end": "2025-10-17T15:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/mikro-teatro-kdyz-na-podzim-vlastovicky-divadlo-pro-deti",
-   "description": "Na jaře ze semínka vyrostla rostlina, v létě nám darovala plody a na podzim pomalu ztrácí svou krásu a sílu. Věrka už ví, že je to přirozený koloběh přírody. Zorka však dělá všechno pro to, aby rostlinu zachránila. Zorka se nemůže smířit s tím, že přichází podzim a příroda se ukládá ke spánku.",
-   "image": "https://static.wixstatic.com/media/6e4a73_ed428f14c74e4541a57cc893289454bd~mv2.jpg",
-   "categories": [
-    "kultura",
-    "vzdelavani",
-    "deti"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-1pf109y",
    "source": "knihovna",
    "title": "Dýňobraní",
@@ -1024,9 +1006,9 @@
    "added": "2026-10-08T01:46:05.000Z"
   },
   {
-   "id": "svatky-228dsr",
+   "id": "svatky-1qa1ho1",
    "source": "svatky",
-   "title": "Nový rok",
+   "title": "Den obnovy samostatného českého státu",
    "start": "2026-01-01",
    "end": "2026-01-01",
    "allDay": true,
@@ -1038,9 +1020,9 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
-   "id": "svatky-1qa1ho1",
+   "id": "svatky-228dsr",
    "source": "svatky",
-   "title": "Den obnovy samostatného českého státu",
+   "title": "Nový rok",
    "start": "2026-01-01",
    "end": "2026-01-01",
    "allDay": true,
@@ -5914,12 +5896,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 1:5",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice B – TJ Sokol Ostopovice A",
-    "score": ""
+    "score": "1:5"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice B – TJ Sokol Ostopovice A",
    "categories": [
@@ -5938,12 +5920,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 4:6",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice B – 1. NH BRNO",
-    "score": ""
+    "score": "4:6"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice B – 1. NH BRNO",
    "categories": [
@@ -5962,12 +5944,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 8:4",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice A – TJ Sokol Vracov B",
-    "score": ""
+    "score": "8:4"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice A – TJ Sokol Vracov B",
    "categories": [
@@ -5986,12 +5968,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 8:2",
    "image": "",
    "extra": {
     "competition": "Mladší přípravka",
     "teams": "TJ Sokol Ostopovice – TJ Miroslav A",
-    "score": ""
+    "score": "8:2"
    },
    "shortTitle": "Mladší přípravka · TJ Sokol Ostopovice – TJ Miroslav A",
    "categories": [
@@ -6011,12 +5993,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 10:2",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice A – TJ Miroslav",
-    "score": ""
+    "score": "10:2"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice A – TJ Miroslav",
    "categories": [
@@ -6036,12 +6018,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 5:8",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice B – Draken Brno",
-    "score": ""
+    "score": "5:8"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice B – Draken Brno",
    "categories": [
@@ -6060,12 +6042,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 6:2",
    "image": "",
    "extra": {
     "competition": "Mladší přípravka",
     "teams": "TJ Sokol Ostopovice – TJ Sokol Vracov A",
-    "score": ""
+    "score": "6:2"
    },
    "shortTitle": "Mladší přípravka · TJ Sokol Ostopovice – TJ Sokol Vracov A",
    "categories": [
@@ -6084,12 +6066,12 @@
    "allDay": false,
    "location": "",
    "url": "https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice",
-   "description": "",
+   "description": "Výsledek: 6:8",
    "image": "",
    "extra": {
     "competition": "Starší přípravka",
     "teams": "TJ Sokol Ostopovice A – TJ Sokol Vracov A",
-    "score": ""
+    "score": "6:8"
    },
    "shortTitle": "Starší přípravka · TJ Sokol Ostopovice A – TJ Sokol Vracov A",
    "categories": [
@@ -6275,26 +6257,6 @@
    "added": "2026-11-06T17:25:51.053Z"
   },
   {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
-  },
-  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -6314,6 +6276,26 @@
    ],
    "hidden": true,
    "added": "2026-11-06T10:48:43.168Z"
+  },
+  {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -7407,9 +7389,9 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "svatky-1czmhhu",
+   "id": "svatky-14rwgfa",
    "source": "svatky",
-   "title": "Den obnovy samostatného českého státu",
+   "title": "Nový rok",
    "start": "2027-01-01",
    "end": "2027-01-01",
    "allDay": true,
@@ -7421,9 +7403,9 @@
    "added": "2026-10-07T22:43:36.000Z"
   },
   {
-   "id": "svatky-14rwgfa",
+   "id": "svatky-1czmhhu",
    "source": "svatky",
-   "title": "Nový rok",
+   "title": "Den obnovy samostatného českého státu",
    "start": "2027-01-01",
    "end": "2027-01-01",
    "allDay": true,
@@ -8922,6 +8904,20 @@
    "added": "2026-11-04T23:15:22.171Z"
   },
   {
+   "id": "svatky-1307yow",
+   "source": "svatky",
+   "title": "Štědrý den",
+   "start": "2027-12-24",
+   "end": "2027-12-24",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-11-22T12:37:00.553Z"
+  },
+  {
    "id": "pripravovane-zjaazp",
    "source": "pripravovane",
    "title": "Betlémské světlo",
@@ -8941,6 +8937,34 @@
     "cirkev"
    ],
    "added": "2026-11-19T13:12:30.445Z"
+  },
+  {
+   "id": "svatky-uhotpv",
+   "source": "svatky",
+   "title": "1. svátek vánoční",
+   "start": "2027-12-25",
+   "end": "2027-12-25",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-11-22T12:37:00.553Z"
+  },
+  {
+   "id": "svatky-n3px32",
+   "source": "svatky",
+   "title": "2. svátek vánoční",
+   "start": "2027-12-26",
+   "end": "2027-12-26",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-11-22T12:37:00.553Z"
   },
   {
    "id": "pripravovane-eqtgwy",

@@ -109,11 +109,6 @@
    },
    "events": [
     {
-     "day": "2026-11-14",
-     "time": "10:00",
-     "title": "Terapeutická jóga s Klárou / workshop"
-    },
-    {
      "day": "2026-11-17",
      "time": "19:00",
      "title": "Charta 77: Souhlasím s Prohlášením / Měsíc Příběhů bezpráví"
@@ -725,8 +720,8 @@
    "2. svátek vánoční"
   ],
   "2027-01-01": [
-   "Den obnovy samostatného českého státu",
-   "Nový rok"
+   "Nový rok",
+   "Den obnovy samostatného českého státu"
   ],
   "2027-03-26": [
    "Velký pátek"
