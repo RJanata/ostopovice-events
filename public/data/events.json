@@ -6257,6 +6257,26 @@
    "added": "2026-11-06T17:25:51.053Z"
   },
   {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Bohoslužba: Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -6278,24 +6298,24 @@
    "added": "2026-11-06T10:48:43.168Z"
   },
   {
-   "id": "nezarazene-1lcdi2k",
+   "id": "nezarazene-4suete",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-11-25T17:00:00.000Z",
    "end": "2026-11-25T18:00:00.000Z",
    "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
+   "location": "Kaple Ostopovice",
+   "url": "https://farnost.troubsko.cz/?q=content/porad-bohosluzeb",
+   "description": "Sv. Kateřiny Alexandrijské, panny a mučednice\nÚmysl: za Josefa a Františku Pernických, děti, rodiče Burianovy, syna Zdeňka a vnuka",
    "image": "",
-   "recurring": true,
    "tagCategories": [
     "cirkev"
    ],
    "categories": [
     "cirkev"
    ],
-   "added": "2026-10-08T08:57:48.000Z"
+   "feed": "farnost-troubsko",
+   "added": "2026-11-22T21:47:43.160Z"
   },
   {
    "id": "nezarazene-1p8xtg0",
@@ -6368,6 +6388,22 @@
     "deti"
    ],
    "added": "2026-10-25T14:23:35.477Z"
+  },
+  {
+   "id": "obec-ja1cre",
+   "source": "obec",
+   "title": "Rozsvícení vánočního stromu a adventní jarmark",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "allDay": true,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-adventni-jarmark",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14096515&width=1215&height=1719",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-11-22T21:47:43.160Z"
   },
   {
    "id": "pripravovane-7nr8c",

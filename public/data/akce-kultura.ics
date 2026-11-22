@@ -275,6 +275,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/j
 CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-ja1cre@ostopovice-events
+DTSTAMP:20261122T214743Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Rozsvícení vánočního stromu a adventní jarmark
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-a
+ dventni-jarmark
+CATEGORIES:Kultura/Umění
+END:VEVENT
+BEGIN:VEVENT
 UID:pripravovane-7nr8c@ostopovice-events
 DTSTAMP:20261008T001317Z
 DTSTART;VALUE=DATE:20261129

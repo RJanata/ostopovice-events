@@ -186,6 +186,19 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-4suete@ostopovice-events
+DTSTAMP:20261122T214743Z
+DTSTART:20261125T170000Z
+DTEND:20261125T180000Z
+SUMMARY:Mše svatá
+LOCATION:Kaple Ostopovice
+DESCRIPTION:Sv. Kateřiny Alexandrijské\, panny a mučednice\nÚmysl: za J
+ osefa a Františku Pernických\, děti\, rodiče Burianovy\, syna Zdeňka 
+ a vnuka\n\nZdroj: Nezařazené
+URL:https://farnost.troubsko.cz/?q=content/porad-bohosluzeb
+CATEGORIES:Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-t6lsf0@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261202T170000Z
