@@ -199,6 +199,18 @@ URL:https://farnost.troubsko.cz/?q=content/porad-bohosluzeb
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-ja1cre@ostopovice-events
+DTSTAMP:20261122T214743Z
+DTSTART:20261129T133000Z
+DTEND:20261129T170000Z
+SUMMARY:Rozsvícení vánočního stromu a adventní jarmark
+DESCRIPTION:14:30 Jarmark | 16:30 Vystoupení dětí MŠ/ZŠ | 17:00 slovo 
+ faráře a starosty a rozsvícení stromu\n\nZdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-a
+ dventni-jarmark
+CATEGORIES:Kultura/Umění,Pro děti,Obec,Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-t6lsf0@ostopovice-events
 DTSTAMP:20261008T085748Z
 DTSTART:20261202T170000Z

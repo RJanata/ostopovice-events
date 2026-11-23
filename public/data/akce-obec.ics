@@ -201,6 +201,18 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-ja1cre@ostopovice-events
+DTSTAMP:20261122T214743Z
+DTSTART:20261129T133000Z
+DTEND:20261129T170000Z
+SUMMARY:Rozsvícení vánočního stromu a adventní jarmark
+DESCRIPTION:14:30 Jarmark | 16:30 Vystoupení dětí MŠ/ZŠ | 17:00 slovo 
+ faráře a starosty a rozsvícení stromu\n\nZdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-a
+ dventni-jarmark
+CATEGORIES:Kultura/Umění,Pro děti,Obec,Církev
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-mcnjny@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261208

@@ -3161,8 +3161,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-s3etba",
@@ -3246,8 +3246,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-7r5spe",
@@ -3263,8 +3263,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1hielbe",
@@ -3395,8 +3395,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-t3rwvw",
@@ -3442,8 +3442,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1luqka",
@@ -3490,8 +3490,8 @@
     "kultura",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-r9judn",
@@ -3561,8 +3561,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "skola-18rk5l9",
@@ -3578,8 +3578,8 @@
    "categories": [
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-12T20:49:02.880Z"
+   "added": "2026-10-12T20:49:02.880Z",
+   "hidden": true
   },
   {
    "id": "knihovna-99mghm",
@@ -3847,8 +3847,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-ydh7ke",
@@ -3917,8 +3917,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-p1n0tv",
@@ -5234,8 +5234,8 @@
     "kultura",
     "cirkev"
    ],
-   "note": "12:30 mše svatá v kapli | 14:00 přednáška",
-   "added": "2026-10-23T15:06:27.836Z"
+   "added": "2026-10-23T15:06:27.836Z",
+   "note": "12:30 mše svatá v kapli | 14:00 přednáška"
   },
   {
    "id": "nezarazene-1twvpnd",
@@ -5380,8 +5380,8 @@
     "seniori",
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "seniori-6n99bx",
@@ -5685,12 +5685,12 @@
    "categories": [
     "deti"
    ],
+   "added": "2026-10-28T09:38:45.482Z",
    "note": "Srdečně Vás zveme na charitativní polévku ve stodole! Naši druháčci pro Vás uvaří lahodnou krémovou zeleninovou polévku. Přineste si s sebou prosím vlastní oblíbený hrnek a lžičku — ušetříte nám práci a z Všeho vlastního hrníčku Vám bude chutnat lépe.",
    "originalLocation": "",
    "originalStart": "2026-11-16",
    "originalEnd": "2026-11-16",
-   "originalAllDay": true,
-   "added": "2026-10-28T09:38:45.482Z"
+   "originalAllDay": true
   },
   {
    "id": "obec-o1n869",
@@ -5767,12 +5767,12 @@
     "kultura",
     "obec"
    ],
+   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true,
-   "added": "2026-11-06T11:01:38.483Z"
+   "originalAllDay": true
   },
   {
    "id": "knihovna-xruv7p",
@@ -5868,8 +5868,8 @@
     "tvoreni",
     "deti"
    ],
-   "originalEnd": "2026-11-19T17:00:00.000Z",
-   "added": "2026-10-27T20:43:48.297Z"
+   "added": "2026-10-27T20:43:48.297Z",
+   "originalEnd": "2026-11-19T17:00:00.000Z"
   },
   {
    "id": "knihovna-5a999r",
@@ -5908,8 +5908,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1ywxzsh",
@@ -5932,8 +5932,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1y2z6pk",
@@ -5956,8 +5956,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1go3ni",
@@ -5981,8 +5981,8 @@
     "kultura",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1sjaac3",
@@ -6006,8 +6006,8 @@
     "kultura",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-1ur73vv",
@@ -6030,8 +6030,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-16lcgk",
@@ -6054,8 +6054,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "sokol-wwa4rc",
@@ -6078,8 +6078,8 @@
     "sport",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-11-21T12:41:08.498Z"
+   "added": "2026-11-21T12:41:08.498Z",
+   "hidden": true
   },
   {
    "id": "nezarazene-1qmi2ry",
@@ -6154,8 +6154,8 @@
    "categories": [
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-11-23T11:51:40.155Z"
+   "added": "2026-11-23T11:51:40.155Z",
+   "hidden": true
   },
   {
    "id": "nezarazene-tgptrf",
@@ -6210,8 +6210,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": true,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": true
   },
   {
    "id": "knihovna-86zh07",
@@ -6265,13 +6265,13 @@
    "categories": [
     "tvoreni"
    ],
+   "added": "2026-11-06T17:25:51.053Z",
    "note": "Výroba adventních věnců a vánočních dekorací. Nutná rezervace do 22.11.2026. Více informací v odkaze.",
    "originalTitle": "Adventní dílna",
    "originalLocation": "",
    "originalStart": "2026-11-25",
    "originalEnd": "2026-11-25",
-   "originalAllDay": true,
-   "added": "2026-11-06T17:25:51.053Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1lcdi2k",
@@ -6311,8 +6311,8 @@
    "categories": [
     "tvoreni"
    ],
-   "hidden": true,
-   "added": "2026-11-06T10:48:43.168Z"
+   "added": "2026-11-06T10:48:43.168Z",
+   "hidden": true
   },
   {
    "id": "nezarazene-4suete",
@@ -6369,8 +6369,8 @@
    "categories": [
     "obec"
    ],
-   "hidden": true,
-   "added": "2026-11-23T11:51:40.155Z"
+   "added": "2026-11-23T11:51:40.155Z",
+   "hidden": true
   },
   {
    "id": "knihovna-1lwh7mo",
@@ -6424,23 +6424,6 @@
    "added": "2026-10-25T14:23:35.477Z"
   },
   {
-   "id": "obec-ja1cre",
-   "source": "obec",
-   "title": "Rozsvícení vánočního stromu a adventní jarmark",
-   "start": "2026-11-29",
-   "end": "2026-11-29",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-adventni-jarmark",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14096515&width=1215&height=1719",
-   "categories": [
-    "kultura",
-    "deti"
-   ],
-   "added": "2026-11-22T21:47:43.160Z"
-  },
-  {
    "id": "pripravovane-7nr8c",
    "source": "pripravovane",
    "title": "Adventní jarmark a rozsvícení vánočního stromečku",
@@ -6460,8 +6443,31 @@
     "kultura",
     "deti"
    ],
-   "hidden": true,
-   "added": "2026-10-08T00:13:17.000Z"
+   "added": "2026-10-08T00:13:17.000Z",
+   "hidden": true
+  },
+  {
+   "id": "obec-ja1cre",
+   "source": "obec",
+   "title": "Rozsvícení vánočního stromu a adventní jarmark",
+   "start": "2026-11-29T13:30:00.000Z",
+   "end": "2026-11-29T17:00:00.000Z",
+   "allDay": false,
+   "location": "",
+   "url": "https://www.ostopovice.cz/kalendar-akci/rozsviceni-vanocniho-stromu-a-adventni-jarmark",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14096515&width=1215&height=1719",
+   "categories": [
+    "kultura",
+    "deti",
+    "obec",
+    "cirkev"
+   ],
+   "added": "2026-11-22T21:47:43.160Z",
+   "note": "14:30 Jarmark | 16:30 Vystoupení dětí MŠ/ZŠ | 17:00 slovo faráře a starosty a rozsvícení stromu",
+   "originalStart": "2026-11-29",
+   "originalEnd": "2026-11-29",
+   "originalAllDay": true
   },
   {
    "id": "skola-ulrkua",
@@ -6478,12 +6484,12 @@
     "deti",
     "kultura"
    ],
+   "added": "2026-10-28T09:38:45.482Z",
    "originalTitle": "Adventní jarmark",
    "originalLocation": "",
    "originalStart": "2026-11-29",
    "originalEnd": "2026-11-29",
-   "originalAllDay": true,
-   "added": "2026-10-28T09:38:45.482Z"
+   "originalAllDay": true
   },
   {
    "id": "nezarazene-1ytvbob",
@@ -6955,8 +6961,8 @@
    "categories": [
     "kultura"
    ],
-   "hidden": true,
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "obec-rp57wb",
@@ -6972,13 +6978,13 @@
    "categories": [
     "kultura"
    ],
+   "added": "2026-11-23T11:51:40.155Z",
    "note": "Vstupenky k dispozici na GOOUT (https://goout.net/cs/vanoce-s-karlem/szswnpy).",
    "originalTitle": "Vánoce s Karlem: Fashion strings a Karel Hegner",
    "originalLocation": "",
    "originalStart": "2026-12-11",
    "originalEnd": "2026-12-11",
-   "originalAllDay": true,
-   "added": "2026-11-23T11:51:40.155Z"
+   "originalAllDay": true
   },
   {
    "id": "pripravovane-poaoty",
@@ -7561,8 +7567,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1u78fs0",
@@ -7723,8 +7729,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-151pfly",
@@ -7849,8 +7855,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-qixv86",
@@ -7913,8 +7919,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "seniori-1vg2pxf",
@@ -8213,8 +8219,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "svatky-1jy7eop",
@@ -8386,8 +8392,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1beoxjv",
@@ -8541,8 +8547,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1dkhbnn",
@@ -8577,8 +8583,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-9e8v1n",
@@ -8630,8 +8636,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-1qgbc5a",
@@ -8699,8 +8705,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-8mppx6",
@@ -8793,8 +8799,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "seniori-13wrk4h",
@@ -8943,8 +8949,8 @@
    "categories": [
     "seniori"
    ],
-   "hidden": false,
-   "added": "2026-11-04T23:15:22.171Z"
+   "added": "2026-11-04T23:15:22.171Z",
+   "hidden": false
   },
   {
    "id": "pripravovane-505sqn",
