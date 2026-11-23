@@ -328,11 +328,16 @@
     },
     "obec-rp57wb": {
       "title": "Vánoce s Karlem: Fashion Strings a Karel Hegner",
+      "location": "Knihovna",
       "categories": [
         "kultura"
       ],
+      "note": "Vstupenky k dispozici na GOOUT (https://goout.net/cs/vanoce-s-karlem/szswnpy).",
+      "start": "2026-12-11T16:00:00.000Z",
+      "end": "2026-12-11T16:00:00.000Z",
+      "allDay": false,
       "editedBy": "Radek",
-      "editedAt": "2026-11-23T11:55:34.068Z"
+      "editedAt": "2026-11-23T11:59:42.373Z"
     }
   }
 }
