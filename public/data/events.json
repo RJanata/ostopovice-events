@@ -6938,7 +6938,7 @@
   {
    "id": "obec-rp57wb",
    "source": "obec",
-   "title": "Vánoce s Karlem: Fashion strings a Karel Hegner",
+   "title": "Vánoce s Karlem: Fashion Strings a Karel Hegner",
    "start": "2026-12-11",
    "end": "2026-12-11",
    "allDay": true,
@@ -6947,9 +6947,10 @@
    "description": "",
    "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14098482&width=1215&height=1719",
    "categories": [
-    "obec"
+    "kultura"
    ],
-   "added": "2026-11-23T11:51:40.155Z"
+   "added": "2026-11-23T11:51:40.155Z",
+   "originalTitle": "Vánoce s Karlem: Fashion strings a Karel Hegner"
   },
   {
    "id": "pripravovane-14ym9v0",
@@ -6969,7 +6970,8 @@
    "categories": [
     "kultura"
    ],
-   "added": "2026-10-08T14:26:43.000Z"
+   "added": "2026-10-08T14:26:43.000Z",
+   "hidden": true
   },
   {
    "id": "pripravovane-poaoty",

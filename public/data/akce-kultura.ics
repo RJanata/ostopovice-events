@@ -345,13 +345,14 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/z
 CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT
-UID:pripravovane-14ym9v0@ostopovice-events
-DTSTAMP:20261008T142643Z
+UID:obec-rp57wb@ostopovice-events
+DTSTAMP:20261123T115140Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
-SUMMARY:Vánoce s Karlem: Fashion Strings & Karel Hegner
-LOCATION:Knihovna Ostopovice
-DESCRIPTION:Zdroj: Připravované akce
+SUMMARY:Vánoce s Karlem: Fashion Strings a Karel Hegner
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings
+ -a-karel-hegner
 CATEGORIES:Kultura/Umění
 END:VEVENT
 BEGIN:VEVENT

@@ -243,17 +243,6 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-rp57wb@ostopovice-events
-DTSTAMP:20261123T115140Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:Vánoce s Karlem: Fashion strings a Karel Hegner
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings
- -a-karel-hegner
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-1pqulka@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261222
