@@ -316,10 +316,16 @@
     "obec-ja1cre": {
       "categories": [
         "kultura",
-        "deti"
+        "deti",
+        "obec",
+        "cirkev"
       ],
+      "note": "14:30 Jarmark | 16:30 Vystoupení dětí MŠ/ZŠ | 17:00 slovo faráře a starosty a rozsvícení stromu",
+      "start": "2026-11-29T13:30:00.000Z",
+      "end": "2026-11-29T17:00:00.000Z",
+      "allDay": false,
       "editedBy": "Radek",
-      "editedAt": "2026-11-23T11:53:05.231Z"
+      "editedAt": "2026-11-23T15:12:15.940Z"
     },
     "pripravovane-14ym9v0": {
       "hidden": true,
