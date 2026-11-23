@@ -294,6 +294,18 @@ URL:https://farnost.troubsko.cz/
 CATEGORIES:Církev
 END:VEVENT
 BEGIN:VEVENT
+UID:nezarazene-62g964@ostopovice-events
+DTSTAMP:20261008T021418Z
+DTSTART:20261007T163000Z
+DTEND:20261007T173000Z
+SUMMARY:Cvičení ženy
+LOCATION:Sokolovna
+DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
+ roj: Nezařazené
+URL:https://www.ostopovice.cz/spolky-a-kluby
+CATEGORIES:Sport/Pohyb
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-qi21ye@ostopovice-events
 DTSTAMP:20261008T022826Z
 DTSTART:20261007T163000Z
@@ -305,18 +317,6 @@ DESCRIPTION:Zaujal vás náš volební program\, chcete se na něco zeptat
  ěšíme se na viděnou!\n\nZdroj: Nezařazené
 URL:https://www.facebook.com/events/1454231353296252
 CATEGORIES:Ostatní
-END:VEVENT
-BEGIN:VEVENT
-UID:nezarazene-62g964@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20261007T163000Z
-DTEND:20261007T173000Z
-SUMMARY:Cvičení ženy
-LOCATION:Sokolovna
-DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
- roj: Nezařazené
-URL:https://www.ostopovice.cz/spolky-a-kluby
-CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-nmnfay@ostopovice-events
@@ -1455,17 +1455,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
-UID:obec-1n8squd@ostopovice-events
-DTSTAMP:20261123T115140Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:Jaká veřejnoprávní media chceme mít?
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/jaka-verejnopravni-media-chceme
- -mit
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-tgptrf@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261124
@@ -1564,17 +1553,6 @@ DESCRIPTION:rehabilitační cvičení\, cvičitelka Jana Spiříková\n\nZd
  roj: Nezařazené
 URL:https://www.ostopovice.cz/spolky-a-kluby
 CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
-UID:obec-1ou2a3b@ostopovice-events
-DTSTAMP:20261123T115140Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Tajemství brněnského podzemí: kostnece
-DESCRIPTION:Zdroj: Obec
-URL:https://www.ostopovice.cz/kalendar-akci/tajemstvi-brnenskeho-podzemi-ko
- stnece
-CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:knihovna-1lwh7mo@ostopovice-events
@@ -1873,16 +1851,6 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/p
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
-UID:nezarazene-mcnjny@ostopovice-events
-DTSTAMP:20261012T101029Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
-SUMMARY:Svoz pytlového odpadu
-DESCRIPTION:Zdroj: Nezařazené
-URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
-CATEGORIES:Obec
-END:VEVENT
-BEGIN:VEVENT
 UID:nezarazene-k56p4y@ostopovice-events
 DTSTAMP:20261112T100031Z
 DTSTART;VALUE=DATE:20261208
@@ -1891,6 +1859,16 @@ SUMMARY:Den otevřených dveří ve škole
 LOCATION:ZŠ/MŠ Ostopovice
 DESCRIPTION:Zdroj: Nezařazené
 CATEGORIES:Pro děti
+END:VEVENT
+BEGIN:VEVENT
+UID:nezarazene-mcnjny@ostopovice-events
+DTSTAMP:20261012T101029Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Svoz pytlového odpadu
+DESCRIPTION:Zdroj: Nezařazené
+URL:https://www.ostopovice.cz/odpadove-hospodarstvi#pytlovy_sber_odpadu
+CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
 UID:nezarazene-1lwap3v@ostopovice-events
