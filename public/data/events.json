@@ -6936,23 +6936,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "obec-rp57wb",
-   "source": "obec",
-   "title": "Vánoce s Karlem: Fashion Strings a Karel Hegner",
-   "start": "2026-12-11",
-   "end": "2026-12-11",
-   "allDay": true,
-   "location": "",
-   "url": "https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings-a-karel-hegner",
-   "description": "",
-   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14098482&width=1215&height=1719",
-   "categories": [
-    "kultura"
-   ],
-   "added": "2026-11-23T11:51:40.155Z",
-   "originalTitle": "Vánoce s Karlem: Fashion strings a Karel Hegner"
-  },
-  {
    "id": "pripravovane-14ym9v0",
    "source": "pripravovane",
    "title": "Vánoce s Karlem: Fashion Strings & Karel Hegner",
@@ -6972,6 +6955,28 @@
    ],
    "added": "2026-10-08T14:26:43.000Z",
    "hidden": true
+  },
+  {
+   "id": "obec-rp57wb",
+   "source": "obec",
+   "title": "Vánoce s Karlem: Fashion Strings a Karel Hegner",
+   "start": "2026-12-11T16:00:00.000Z",
+   "end": "2026-12-11T16:00:00.000Z",
+   "allDay": false,
+   "location": "Knihovna",
+   "url": "https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings-a-karel-hegner",
+   "description": "",
+   "image": "https://www.ostopovice.cz/image.php?nid=18899&oid=14098482&width=1215&height=1719",
+   "categories": [
+    "kultura"
+   ],
+   "added": "2026-11-23T11:51:40.155Z",
+   "note": "Vstupenky k dispozici na GOOUT (https://goout.net/cs/vanoce-s-karlem/szswnpy).",
+   "originalTitle": "Vánoce s Karlem: Fashion strings a Karel Hegner",
+   "originalLocation": "",
+   "originalStart": "2026-12-11",
+   "originalEnd": "2026-12-11",
+   "originalAllDay": true
   },
   {
    "id": "pripravovane-poaoty",

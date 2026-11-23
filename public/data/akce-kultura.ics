@@ -347,10 +347,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:obec-rp57wb@ostopovice-events
 DTSTAMP:20261123T115140Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
+DTSTART:20261211T160000Z
+DTEND:20261211T160000Z
 SUMMARY:Vánoce s Karlem: Fashion Strings a Karel Hegner
-DESCRIPTION:Zdroj: Obec
+LOCATION:Knihovna
+DESCRIPTION:Vstupenky k dispozici na GOOUT (https://goout.net/cs/vanoce-s-k
+ arlem/szswnpy).\n\nZdroj: Obec
 URL:https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings
  -a-karel-hegner
 CATEGORIES:Kultura/Umění
