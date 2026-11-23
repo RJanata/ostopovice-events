@@ -181,6 +181,17 @@ URL:https://www.ostopovice.cz/kalendar-akci/oslavy-17-listopadu-lampionovy-
 CATEGORIES:Kultura/Umění,Pro děti,Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1n8squd@ostopovice-events
+DTSTAMP:20261123T115140Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Jaká veřejnoprávní media chceme mít?
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/jaka-verejnopravni-media-chceme
+ -mit
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-tgptrf@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261124
@@ -201,6 +212,17 @@ URL:https://www.ostopovice.cz/odpadove-hospodarstvi
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
+UID:obec-1ou2a3b@ostopovice-events
+DTSTAMP:20261123T115140Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Tajemství brněnského podzemí: kostnece
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/tajemstvi-brnenskeho-podzemi-ko
+ stnece
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
 UID:nezarazene-mcnjny@ostopovice-events
 DTSTAMP:20261012T101029Z
 DTSTART;VALUE=DATE:20261208
@@ -218,6 +240,17 @@ DTEND;VALUE=DATE:20261210
 SUMMARY:Svoz komunálního odpadu
 DESCRIPTION:Zdroj: Nezařazené
 URL:https://www.ostopovice.cz/odpadove-hospodarstvi
+CATEGORIES:Obec
+END:VEVENT
+BEGIN:VEVENT
+UID:obec-rp57wb@ostopovice-events
+DTSTAMP:20261123T115140Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Vánoce s Karlem: Fashion strings a Karel Hegner
+DESCRIPTION:Zdroj: Obec
+URL:https://www.ostopovice.cz/kalendar-akci/vanoce-s-karlem-fashion-strings
+ -a-karel-hegner
 CATEGORIES:Obec
 END:VEVENT
 BEGIN:VEVENT
