@@ -8,16 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:seniori-qedjwj@ostopovice-events
-DTSTAMP:20261008T014605Z
-DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260925
-SUMMARY:Poznávací procházka Brnem
-DESCRIPTION:Náplavkou Od Ronda k Anthroposu\n\nZdroj: Klub seniorů
-URL:https://www.klub-senioru-ostopovice.cz/clanky/program.html
-CATEGORIES:Senioři,Kultura/Umění,Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-etqh79@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260925T063000Z
@@ -78,6 +68,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/l
 CATEGORIES:Sport/Pohyb
 END:VEVENT
 BEGIN:VEVENT
+UID:sokol-yb369y@ostopovice-events
+DTSTAMP:20261007T224336Z
+DTSTART:20261003T070000Z
+DTEND:20261003T081500Z
+SUMMARY:Národní házená: Přípravky · turnaj
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
+DESCRIPTION:Zdroj: TJ Sokol
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport/Pohyb,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-11vj6c@ostopovice-events
 DTSTAMP:20261121T124108Z
 DTSTART:20261003T070000Z
@@ -88,17 +89,6 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 14:1\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-yb369y@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20261003T070000Z
-DTEND:20261003T081500Z
-SUMMARY:Národní házená: Přípravky · turnaj
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-ydh7ke@ostopovice-events

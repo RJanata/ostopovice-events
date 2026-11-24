@@ -8,22 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-wwawfq@ostopovice-events
-DTSTAMP:20261008T021418Z
-DTSTART:20260924T130000Z
-DTEND:20260924T150000Z
-SUMMARY:Knihovna dětem
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Čas\, kdy otevíráme dveře všem dětem\, které u nás cht
- ějí pobýt\, ať už s rodiči\, prarodiči nebo kamarády. K dispozici 
- jsou deskovky\, knihy a materiály k tvoření pro volnou zábavu i naše 
- knihovnice Markéta s inspirací a programem pro zájemce o vedenou činno
- st.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
- nihovna-detem-2026-09-24-15-00
-CATEGORIES:Pro děti
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-9ylsch@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20261001T130000Z
@@ -40,6 +24,17 @@ URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/k
 CATEGORIES:Pro děti
 END:VEVENT
 BEGIN:VEVENT
+UID:sokol-yb369y@ostopovice-events
+DTSTAMP:20261007T224336Z
+DTSTART:20261003T070000Z
+DTEND:20261003T081500Z
+SUMMARY:Národní házená: Přípravky · turnaj
+LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
+DESCRIPTION:Zdroj: TJ Sokol
+URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
+CATEGORIES:Sport/Pohyb,Pro děti
+END:VEVENT
+BEGIN:VEVENT
 UID:sokol-11vj6c@ostopovice-events
 DTSTAMP:20261121T124108Z
 DTSTART:20261003T070000Z
@@ -50,17 +45,6 @@ LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
 DESCRIPTION:Výsledek: 14:1\n\nZdroj: TJ Sokol
 URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
 CATEGORIES:Sport/Pohyb,Kultura/Umění,Pro děti
-END:VEVENT
-BEGIN:VEVENT
-UID:sokol-yb369y@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20261003T070000Z
-DTEND:20261003T081500Z
-SUMMARY:Národní házená: Přípravky · turnaj
-LOCATION:TJ Sokol Ostopovice\, Osvobození 17/4\, Ostopovice
-DESCRIPTION:Zdroj: TJ Sokol
-URL:https://nhjmop.cz/hriste.php?oddil=TJ+Sokol+Ostopovice
-CATEGORIES:Sport/Pohyb,Pro děti
 END:VEVENT
 BEGIN:VEVENT
 UID:sokol-ydh7ke@ostopovice-events
