@@ -4018,7 +4018,7 @@
   {
    "id": "nezarazene-ubr66k",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-10-07T16:00:00.000Z",
    "end": "2026-10-07T17:00:00.000Z",
    "allDay": false,
@@ -4337,7 +4337,7 @@
   {
    "id": "nezarazene-a7wk58",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-10-14T16:00:00.000Z",
    "end": "2026-10-14T17:00:00.000Z",
    "allDay": false,
@@ -4651,7 +4651,7 @@
   {
    "id": "nezarazene-1jf6wtg",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-10-21T16:00:00.000Z",
    "end": "2026-10-21T17:00:00.000Z",
    "allDay": false,
@@ -4919,7 +4919,7 @@
   {
    "id": "nezarazene-lne1qq",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-10-28T17:00:00.000Z",
    "end": "2026-10-28T18:00:00.000Z",
    "allDay": false,
@@ -5093,7 +5093,7 @@
   {
    "id": "nezarazene-1j4sg4t",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-11-04T17:00:00.000Z",
    "end": "2026-11-04T18:00:00.000Z",
    "allDay": false,
@@ -5443,7 +5443,7 @@
   {
    "id": "nezarazene-tdf4vb",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-11-11T17:00:00.000Z",
    "end": "2026-11-11T18:00:00.000Z",
    "allDay": false,
@@ -5751,12 +5751,12 @@
     "kultura",
     "obec"
    ],
-   "added": "2026-11-06T11:01:38.483Z",
    "hidden": true,
    "note": "17:00 lampionový průvod (Kaple) | 17:30 pietní shromáždění (Pomník padlých) | 18:00 sousedské setkání (Knihovna) | 19:00 projekce dokumentu (Knihovna) | 4.-20.11. výstava (Stodola školy)",
    "originalStart": "2026-11-17",
    "originalEnd": "2026-11-17",
-   "originalAllDay": true
+   "originalAllDay": true,
+   "added": "2026-11-06T11:01:38.483Z"
   },
   {
    "id": "knihovna-xruv7p",
@@ -5778,7 +5778,7 @@
   {
    "id": "nezarazene-1ukocgo",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-11-18T17:00:00.000Z",
    "end": "2026-11-18T18:00:00.000Z",
    "allDay": false,
@@ -6275,13 +6275,13 @@
    "categories": [
     "tvoreni"
    ],
-   "added": "2026-11-06T10:48:43.168Z",
-   "hidden": true
+   "hidden": true,
+   "added": "2026-11-06T10:48:43.168Z"
   },
   {
    "id": "nezarazene-1lcdi2k",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-11-25T17:00:00.000Z",
    "end": "2026-11-25T18:00:00.000Z",
    "allDay": false,
@@ -6573,7 +6573,7 @@
   {
    "id": "nezarazene-t6lsf0",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-12-02T17:00:00.000Z",
    "end": "2026-12-02T18:00:00.000Z",
    "allDay": false,
@@ -6790,6 +6790,25 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
+  },
+  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6810,25 +6829,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
@@ -6872,7 +6872,7 @@
   {
    "id": "nezarazene-1fepbq5",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-12-09T17:00:00.000Z",
    "end": "2026-12-09T18:00:00.000Z",
    "allDay": false,
@@ -7070,7 +7070,7 @@
   {
    "id": "nezarazene-y8rz9p",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-12-16T17:00:00.000Z",
    "end": "2026-12-16T18:00:00.000Z",
    "allDay": false,
@@ -7248,7 +7248,7 @@
   {
    "id": "nezarazene-18rc5up",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-12-23T17:00:00.000Z",
    "end": "2026-12-23T18:00:00.000Z",
    "allDay": false,
@@ -7435,7 +7435,7 @@
   {
    "id": "nezarazene-13no6kx",
    "source": "nezarazene",
-   "title": "Bohoslužba: Mše svatá",
+   "title": "Mše svatá",
    "start": "2026-12-30T17:00:00.000Z",
    "end": "2026-12-30T18:00:00.000Z",
    "allDay": false,
