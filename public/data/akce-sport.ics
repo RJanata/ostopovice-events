@@ -8,22 +8,6 @@ X-WR-TIMEZONE:Europe/Prague
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:knihovna-1xbiz8z@ostopovice-events
-DTSTAMP:20261007T224336Z
-DTSTART:20260926T080000Z
-DTEND:20260926T100000Z
-SUMMARY:Terapeutická jóga s Klárou / workshop
-LOCATION:Obecní knihovna Ostopovice\, Lípová 67/15\, Ostopovice
-DESCRIPTION:Téma solar\, moje hodnota (slinivka\, slezina). Skrze jógovou
-  praxi a různých vědomých technik si uvědomíme vlastní sílu a hodn
- otu. Orgány slinivka a slezina jsou úzce propojené se solárním energe
- tickym centrem. Znát svoji hodnotu a ustát si ji ve své síle je pro ty
- to orgány velice důležité.\n\nZdroj: Knihovna
-URL:https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/t
- erapeuticka-joga-s-klarou-workshop
-CATEGORIES:Sport/Pohyb
-END:VEVENT
-BEGIN:VEVENT
 UID:knihovna-61m6q1@ostopovice-events
 DTSTAMP:20261008T021418Z
 DTSTART:20260928T170000Z

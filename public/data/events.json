@@ -203,38 +203,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-yy8g0v",
-   "source": "knihovna",
-   "title": "Hernička mezi knihami / pohybovky",
-   "start": "2025-10-21T07:00:00.000Z",
-   "end": "2025-10-21T09:00:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/hernicka-mezi-knihami-pohybovky-4",
-   "description": "Pravidelné dopolední herničky pro nejmenší děti. Setkávání plné tvoření, hudby, tance, hraní a radosti z pohybu.\n\nProgram je určený pro děti od 0 do 3 let v doprovodu dospělého. Dospělý zodpovídá za doprovázené dítě.\n\nS sebou: přezůvky, deku nebo podložku na sezení a válení na zemi, svačinu pro děti.\n\nMinimální doporučený příspěvek: 50,-\n\nAktivity připravuje Anna Juklová.",
-   "image": "https://static.wixstatic.com/media/9efc7356ddba4f339859809959fdeef9.jpg",
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
-   "id": "knihovna-8ebr9c",
-   "source": "knihovna",
-   "title": "Historie Ostopovic: Lidová kultura v Ostopovicích",
-   "start": "2025-10-21T16:00:00.000Z",
-   "end": "2025-10-21T17:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/historie-ostopovic-lidova-kultura-v-ostopovicich",
-   "description": "Přednáška se bude věnovat nejen tzv. tradiční lidové kultuře v Ostopovicích, ale i současným podobám etnokulturních tradic v této obci, pohybovat se tedy bude v období 19.–21. století. Posluchače seznámí jednak se základními fakty o nejdůležitějších oblastech lidové kultury, jednak s prameny, (...)",
-   "image": "https://static.wixstatic.com/media/11062b_f58acb44b9804d3db227197cb5c97c61~mv2.jpg",
-   "categories": [
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-v742w6",
    "source": "knihovna",
    "title": "Tajemství brněnského podzemí: Zelný trh (I.)",
@@ -6258,6 +6226,26 @@
    "added": "2026-11-06T17:25:51.053Z"
   },
   {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -6277,26 +6265,6 @@
    ],
    "hidden": true,
    "added": "2026-11-06T10:48:43.168Z"
-  },
-  {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-4suete",
@@ -6790,6 +6758,25 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
+  },
+  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6810,25 +6797,6 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
-  },
-  {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
