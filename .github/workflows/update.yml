@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment-retry.outputs.page_url }}
     steps:
       # Vždy aktuální stav main, ne commit, který běh spustil: běhy čekají ve frontě (concurrency)
       # a předchozí běh mezitím mohl uložit nová data → jinak konflikt v public/data při pushi.
@@ -118,9 +118,20 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
+      # GitHub občas právě nahraný artefakt ještě nevidí („No artifacts named github-pages
+      # were found“), i když nahrání prošlo — za chvíli už tam je. Proto druhý pokus po pauze.
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Pauza před druhým pokusem o nasazení
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - id: deployment-retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
