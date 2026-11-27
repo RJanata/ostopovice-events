@@ -203,23 +203,6 @@
  ],
  "events": [
   {
-   "id": "knihovna-v742w6",
-   "source": "knihovna",
-   "title": "Tajemství brněnského podzemí: Zelný trh (I.)",
-   "start": "2025-10-22T16:00:00.000Z",
-   "end": "2025-10-22T17:30:00.000Z",
-   "allDay": false,
-   "location": "",
-   "url": "https://www.knihovnaostopovice.cz/podrobnosti-o-ud-losti-a-registrace/tajemstvi-brnenskeho-podzemi-zelny-trh-i",
-   "description": "Přednáška znalce brněnského podzemí Aleše Svobody odhalí nejvíce podsklepenou část historického jádra Brna. Hosty provede sklepením, které je dnes částečně přístupné jako Labyrint pod Zelným trhem, ale i nepřístupnými sklepeními Lídlova domu, objektu divadla Na provázku a kašny Parnas.",
-   "image": "https://static.wixstatic.com/media/6e4a73_66e17b8b69aa4d839df5bd5c277d9b58~mv2.jpg",
-   "categories": [
-    "kultura",
-    "vzdelavani"
-   ],
-   "added": "2026-10-07T22:43:36.000Z"
-  },
-  {
    "id": "knihovna-hoi055",
    "source": "knihovna",
    "title": "Hravý klub pro školáky (6+)",
@@ -6226,6 +6209,26 @@
    "originalAllDay": true
   },
   {
+   "id": "nezarazene-1lcdi2k",
+   "source": "nezarazene",
+   "title": "Mše svatá",
+   "start": "2026-11-25T17:00:00.000Z",
+   "end": "2026-11-25T18:00:00.000Z",
+   "allDay": false,
+   "location": "Kaple sv. Jana Křtitele",
+   "url": "https://farnost.troubsko.cz/",
+   "description": "",
+   "image": "",
+   "recurring": true,
+   "tagCategories": [
+    "cirkev"
+   ],
+   "categories": [
+    "cirkev"
+   ],
+   "added": "2026-10-08T08:57:48.000Z"
+  },
+  {
    "id": "nezarazene-1uclek6",
    "source": "nezarazene",
    "title": "Adventní dílna s Monikou Stoklasovou",
@@ -6245,26 +6248,6 @@
    ],
    "hidden": true,
    "added": "2026-11-06T10:48:43.168Z"
-  },
-  {
-   "id": "nezarazene-1lcdi2k",
-   "source": "nezarazene",
-   "title": "Mše svatá",
-   "start": "2026-11-25T17:00:00.000Z",
-   "end": "2026-11-25T18:00:00.000Z",
-   "allDay": false,
-   "location": "Kaple sv. Jana Křtitele",
-   "url": "https://farnost.troubsko.cz/",
-   "description": "",
-   "image": "",
-   "recurring": true,
-   "tagCategories": [
-    "cirkev"
-   ],
-   "categories": [
-    "cirkev"
-   ],
-   "added": "2026-10-08T08:57:48.000Z"
   },
   {
    "id": "nezarazene-4suete",
@@ -6758,25 +6741,6 @@
    "added": "2026-10-08T02:14:18.000Z"
   },
   {
-   "id": "nezarazene-k56p4y",
-   "source": "nezarazene",
-   "title": "Den otevřených dveří ve škole",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "allDay": true,
-   "location": "ZŠ/MŠ Ostopovice",
-   "url": "",
-   "description": "",
-   "image": "",
-   "tagCategories": [
-    "deti"
-   ],
-   "categories": [
-    "deti"
-   ],
-   "added": "2026-11-12T10:00:31.201Z"
-  },
-  {
    "id": "nezarazene-mcnjny",
    "source": "nezarazene",
    "title": "Svoz pytlového odpadu",
@@ -6797,6 +6761,25 @@
     "obec"
    ],
    "added": "2026-10-12T10:10:29.283Z"
+  },
+  {
+   "id": "nezarazene-k56p4y",
+   "source": "nezarazene",
+   "title": "Den otevřených dveří ve škole",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "allDay": true,
+   "location": "ZŠ/MŠ Ostopovice",
+   "url": "",
+   "description": "",
+   "image": "",
+   "tagCategories": [
+    "deti"
+   ],
+   "categories": [
+    "deti"
+   ],
+   "added": "2026-11-12T10:00:31.201Z"
   },
   {
    "id": "nezarazene-1lwap3v",
@@ -9041,6 +9024,34 @@
     "kultura"
    ],
    "added": "2026-11-21T12:41:08.498Z"
+  },
+  {
+   "id": "svatky-1ahomgy",
+   "source": "svatky",
+   "title": "Den obnovy samostatného českého státu",
+   "start": "2028-01-01",
+   "end": "2028-01-01",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-11-27T00:36:54.393Z"
+  },
+  {
+   "id": "svatky-s3cqgw",
+   "source": "svatky",
+   "title": "Nový rok",
+   "start": "2028-01-01",
+   "end": "2028-01-01",
+   "allDay": true,
+   "location": "",
+   "url": "",
+   "description": "Státní svátek",
+   "image": "",
+   "categories": [],
+   "added": "2026-11-27T00:36:54.393Z"
   }
  ]
 }
